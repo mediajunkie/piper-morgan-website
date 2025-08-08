@@ -1,0 +1,150 @@
+[
+  {
+    "title": "From Broken Tests to Perfect Architecture: The Great Cleanup",
+    "excerpt": "July 14Continue reading on Building Piper Morgan »",
+    "url": "https://medium.com/building-piper-morgan/from-broken-tests-to-perfect-architecture-the-great-cleanup-2575d3526323?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 4, 2025",
+    "publishedAtISO": "Mon, 04 Aug 2025 14:26:31 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/2575d3526323"
+  },
+  {
+    "title": "The Action Humanizer: Teaching AI to Speak Human",
+    "excerpt": "July 13, later that dayContinue reading on Building Piper Morgan »",
+    "url": "https://medium.com/building-piper-morgan/the-action-humanizer-teaching-ai-to-speak-human-9fbbf6932838?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 4, 2025",
+    "publishedAtISO": "Mon, 04 Aug 2025 14:13:58 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Product Management",
+      "Llm",
+      "Llm Development"
+    ],
+    "guid": "https://medium.com/p/9fbbf6932838"
+  },
+  {
+    "title": "From 2% to 87%: The Great Test Suite Recovery",
+    "excerpt": "July 13Continue reading on Building Piper Morgan »",
+    "url": "https://medium.com/building-piper-morgan/from-2-to-87-the-great-test-suite-recovery-b7c3ef25cbdc?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 4, 2025",
+    "publishedAtISO": "Mon, 04 Aug 2025 13:59:01 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Llm Development",
+      "Genai",
+      "Llm"
+    ],
+    "guid": "https://medium.com/p/b7c3ef25cbdc"
+  },
+  {
+    "title": "When Your AI Writes 500 Lines of Boilerplate (And Why That’s Actually Useful)",
+    "excerpt": "Part 4 of of the reconstructed “Lost Weekend” at the beginning of this project, as best as we can determine!“You finished it all?”May 30, later in the day“Can you program this for me?”That simple q...",
+    "url": "https://medium.com/building-piper-morgan/when-your-ai-writes-500-lines-of-boilerplate-and-why-thats-actually-useful-084611e312ea?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 3, 2025",
+    "publishedAtISO": "Sun, 03 Aug 2025 19:28:26 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Genai",
+      "Product Management",
+      "Llm Development"
+    ],
+    "guid": "https://medium.com/p/084611e312ea"
+  },
+  {
+    "title": "Chasing Rabbits (A Debugging Story)",
+    "excerpt": "The Lost Weekend, Part 3 of 4, or debugging with Gemini a prototype that Claude threw together:“I’m gonna gitcha!”May 31, earlyWhat did it mean?AssertionError: NoneSix hours later, I finally unders...",
+    "url": "https://medium.com/building-piper-morgan/chasing-rabbits-a-debugging-story-40f084dc3095?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 3, 2025",
+    "publishedAtISO": "Sun, 03 Aug 2025 13:49:47 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Genai",
+      "Product Management",
+      "Llm Development"
+    ],
+    "guid": "https://medium.com/p/40f084dc3095"
+  },
+  {
+    "title": "The Demo That Needed Documentation",
+    "excerpt": "“The Lost Weekend” Part 2 of 4, when “it works on my machine” isn’t enough“I’m not prepared!”May 30, later that dayPart 1 of this story crashed my browser. Which feels perfect for a weekend where e...",
+    "url": "https://medium.com/building-piper-morgan/the-demo-that-needed-documentation-ccb351b91629?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 2, 2025",
+    "publishedAtISO": "Sat, 02 Aug 2025 20:55:38 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Genai",
+      "Product Management",
+      "Llm"
+    ],
+    "guid": "https://medium.com/p/ccb351b91629"
+  },
+  {
+    "title": "When Claude Took a Break (And Gemini Stepped In)",
+    "excerpt": "Time for one more flashback to the “lost weekend” two days into this project, reconstructed after the fact from a Gemini log so long I couldn’t get back to the head of it without crashing my browse...",
+    "url": "https://medium.com/building-piper-morgan/when-claude-took-a-break-and-gemini-stepped-in-922fd802460e?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 2, 2025",
+    "publishedAtISO": "Sat, 02 Aug 2025 12:10:23 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Genai",
+      "Llm",
+      "Product Mangement"
+    ],
+    "guid": "https://medium.com/p/922fd802460e"
+  },
+  {
+    "title": "The AI Detective Squad: When Three Agents Solve One Mystery",
+    "excerpt": "July 12Continue reading on Building Piper Morgan »",
+    "url": "https://medium.com/building-piper-morgan/the-ai-detective-squad-when-three-agents-solve-one-mystery-987eb4c5cc42?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 1, 2025",
+    "publishedAtISO": "Fri, 01 Aug 2025 14:33:21 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Llm Development",
+      "Llm",
+      "Genai"
+    ],
+    "guid": "https://medium.com/p/987eb4c5cc42"
+  },
+  {
+    "title": "Three Bugs, One Victory: The Day We Finally Shipped PM-011",
+    "excerpt": "July 12Continue reading on Building Piper Morgan »",
+    "url": "https://medium.com/building-piper-morgan/three-bugs-one-victory-the-day-we-finally-shipped-pm-011-cc07dca2a5e9?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 1, 2025",
+    "publishedAtISO": "Fri, 01 Aug 2025 14:25:30 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Product Management",
+      "Llm Development",
+      "Genai"
+    ],
+    "guid": "https://medium.com/p/cc07dca2a5e9"
+  },
+  {
+    "title": "Two-Fisted Coding: Wrangling Robot Programmers When You’re Just a PM",
+    "excerpt": "July 9, 2025Continue reading on Building Piper Morgan »",
+    "url": "https://medium.com/building-piper-morgan/two-fisted-coding-wrangling-robot-programmers-when-youre-just-a-pm-c619de609a42?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 1, 2025",
+    "publishedAtISO": "Fri, 01 Aug 2025 14:10:41 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Product Management",
+      "Llm",
+      "Llm Development"
+    ],
+    "guid": "https://medium.com/p/c619de609a42"
+  }
+]

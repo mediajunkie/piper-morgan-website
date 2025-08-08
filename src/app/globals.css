@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+/* Design System CSS Variables */
+:root {
+  /* Brand Colors */
+  --primary-teal: #2DD4BF;
+  --primary-orange: #FB923C;
+
+  /* Text Colors */
+  --text-dark: #1F2937;
+  --text-light: #6B7280;
+
+  /* Background Colors */
+  --background: #FFFFFF;
+  --surface: #F9FAFB;
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+
+  /* Spacing and Layout */
+  --max-width: 1200px;
+  --content-padding: 1rem;
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px; /* Base font size */
+}
+
+body {
+  background: var(--background);
+  color: var(--text-dark);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Scale */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-dark);
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 1rem 0;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 4vw, 3.75rem);
+}
+
+h2 {
+  font-size: clamp(1.875rem, 3.5vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+h4 {
+  font-size: clamp(1.25rem, 2.5vw, 1.875rem);
+}
+
+p {
+  margin: 0 0 1rem 0;
+  color: var(--text-dark);
+}
+
+a {
+  color: var(--primary-teal);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #14B8A6; /* teal-600 */
+}
+
+/* Focus Styles for Accessibility */
+:focus-visible {
+  outline: 2px solid var(--primary-teal);
+  outline-offset: 2px;
+}
+
+/* Button Reset */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* Image Optimization */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Skip to Content Link */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--text-dark);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 1000;
+  border-radius: 4px;
+}
+
+.skip-to-content:focus {
+  top: 6px;
+}
+
+/* Utility Classes */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--content-padding);
+}
+
+/* Animation Utilities */
+@media (prefers-reduced-motion: no-preference) {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Responsive Design Helpers */
+@media (min-width: 640px) {
+  :root {
+    --content-padding: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --content-padding: 3rem;
+  }
+}
