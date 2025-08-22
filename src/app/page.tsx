@@ -24,7 +24,7 @@ export default function Home() {
     <main className="min-h-screen">
       {/* Hero Section */}
       <Hero
-        headline="When a Learning Project Gets Wings"
+        headline="Started Out Vibe Coding, Soon Hit the Harder Stuff"
         subheadline={
           <div className="space-y-4">
             <p>
@@ -196,41 +196,6 @@ export default function Home() {
                   Watch how systematic thinking translates AI potential into practical value, without the usual hype cycle noise.
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Current Reality Check Section */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-text-dark mb-8">
-              Current Reality Check
-            </h2>
-            <div className="bg-primary-teal/10 p-8 rounded-lg mb-8">
-              <h3 className="text-2xl font-bold text-text-dark mb-4">
-                Where We Actually Are
-              </h3>
-              <p className="text-lg text-text-light mb-4">
-                <strong>This is a learning project that has grown wings.</strong> We&apos;re not a startup, we&apos;re not taking funding, and we&apos;re definitely not claiming to have solved product management.
-              </p>
-              <p className="text-lg text-text-light">
-                What we <em>have</em> done is discover repeatable patterns for AI-augmented PM work that maintain human judgment while systematically capturing and sharing what works.
-              </p>
-            </div>
-            
-            <div className="space-y-4">
-              <h4 className="text-xl font-semibold text-text-dark">Recent breakthroughs include:</h4>
-              <ul className="text-lg text-text-light space-y-2 pl-6">
-                <li>• Integration of systematic verification into rapid development cycles</li>
-                <li>• Agent coordination patterns that prevent the usual AI collaboration chaos</li>
-                <li>• <span className="text-primary-orange">[FACT CHECK: Current development milestones needed]</span></li>
-                <li>• <span className="text-primary-orange">[PERSONAL EXAMPLE: Recent &quot;aha&quot; moment needed]</span></li>
-              </ul>
-              <p className="text-lg text-text-light mt-6">
-                <strong>What&apos;s next:</strong> Continuing to build in public, sharing what we learn, and discovering whether these patterns scale beyond one learning PM and his robot programming assistants.
-              </p>
             </div>
           </div>
         </div>
