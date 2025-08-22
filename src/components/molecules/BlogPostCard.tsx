@@ -31,7 +31,7 @@ export function BlogPostCard({
   tags = [],
   href,
   external = false,
-  author = 'Christian Rondeau',
+  author = 'Christian Crumlish',
   compact = false,
   className = '',
 }: BlogPostCardProps) {

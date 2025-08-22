@@ -21,7 +21,7 @@ const socialLinks: FooterLink[] = [
   },
   {
     label: 'LinkedIn',
-    href: 'https://linkedin.com/in/christianrondeau',
+    href: 'https://linkedin.com/in/christiancrumlish',
     external: true
   },
   {

@@ -92,7 +92,7 @@ export async function fetchMediumPosts(): Promise<MediumPost[]> {
         excerpt: extractExcerpt(item.contentEncoded || item.content || '', item.title || ''),
         url: item.link || '',
         publishedAt: formatDate(item.pubDate || new Date().toISOString()),
-        author: item.creator || 'Christian Rondeau',
+        author: item.creator || 'Christian Crumlish',
         readingTime: extractReadingTime(item.contentEncoded || item.content || ''),
         tags: extractTags(item.categories),
         guid: item.guid || item.link || ''
@@ -115,7 +115,7 @@ export async function fetchMediumPosts(): Promise<MediumPost[]> {
             excerpt: extractExcerpt(item.contentEncoded || item.content || '', item.title || ''),
             url: item.link || '',
             publishedAt: formatDate(item.pubDate || new Date().toISOString()),
-            author: item.creator || 'Christian Rondeau',
+            author: item.creator || 'Christian Crumlish',
             readingTime: extractReadingTime(item.contentEncoded || item.content || ''),
             tags: extractTags(item.categories),
             guid: item.guid || item.link || ''

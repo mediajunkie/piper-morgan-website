@@ -26,7 +26,7 @@ export default function Home() {
       <Hero
         headline="Started Out Vibe Coding, Soon Hit the Harder Stuff"
         subheadline={
-          <div className="space-y-4">
+          <div className="space-y-4 text-center">
             <p>
               What started as a curiosity about AI-powered product management has turned into something unexpected: a systematic methodology for human-AI collaboration that actually works.
             </p>

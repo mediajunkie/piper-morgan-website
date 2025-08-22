@@ -83,7 +83,7 @@ async function fetchMediumPosts() {
         url: item.link || '',
         publishedAt: formatDate(item.pubDate || new Date().toISOString()),
         publishedAtISO: item.pubDate || new Date().toISOString(),
-        author: item.creator || 'Christian Rondeau',
+        author: item.creator || 'Christian Crumlish',
         readingTime: extractReadingTime(item.contentEncoded || item.content || ''),
         tags: extractTags(item.categories),
         guid: item.guid || item.link || ''
@@ -105,7 +105,7 @@ async function fetchMediumPosts() {
         url: "https://medium.com/building-piper-morgan/the-question-that-started-everything-5a69f9a2af0b",
         publishedAt: "Jul 5, 2024",
         publishedAtISO: "2024-07-05T00:00:00Z",
-        author: "Christian Rondeau",
+        author: "Christian Crumlish",
         readingTime: "5 min read",
         tags: ["Origin Story", "Vision", "AI"],
         guid: "https://medium.com/building-piper-morgan/the-question-that-started-everything-5a69f9a2af0b"
@@ -116,7 +116,7 @@ async function fetchMediumPosts() {
         url: "https://medium.com/building-piper-morgan/the-pm-who-automated-himself-or-at-least-tried-to-b1d8c2dd5f40",
         publishedAt: "Jul 12, 2024",
         publishedAtISO: "2024-07-12T00:00:00Z",
-        author: "Christian Rondeau",
+        author: "Christian Crumlish",
         readingTime: "7 min read",
         tags: ["Automation", "Product Management", "Learning"],
         guid: "https://medium.com/building-piper-morgan/the-pm-who-automated-himself-or-at-least-tried-to-b1d8c2dd5f40"
@@ -127,7 +127,7 @@ async function fetchMediumPosts() {
         url: "https://medium.com/building-piper-morgan/the-demo-that-killed-the-prototype-f0aad9fa3a4a",
         publishedAt: "Jul 19, 2024",
         publishedAtISO: "2024-07-19T00:00:00Z",
-        author: "Christian Rondeau",
+        author: "Christian Crumlish",
         readingTime: "6 min read",
         tags: ["Prototyping", "Learning", "Architecture"],
         guid: "https://medium.com/building-piper-morgan/the-demo-that-killed-the-prototype-f0aad9fa3a4a"

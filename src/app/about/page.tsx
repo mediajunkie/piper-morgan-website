@@ -121,7 +121,7 @@ export default function AboutPage() {
               </h2>
               <div className="bg-gradient-to-r from-primary-teal/5 to-primary-orange/5 p-8 rounded-card">
                 <p className="text-lg text-text-light mb-6">
-                  Christian Rondeau is a product management professional with deep expertise in civic technology, systematic methodology development, and AI integration. Through Piper Morgan, he's demonstrating how AI can systematically enhance rather than replace human PM expertise.
+                  Christian Crumlish is a product management professional with deep expertise in civic technology, systematic methodology development, and AI integration. Through Piper Morgan, he's demonstrating how AI can systematically enhance rather than replace human PM expertise.
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -162,7 +162,7 @@ export default function AboutPage() {
                     Follow on Twitter
                   </CTAButton>
                   <CTAButton
-                    href="https://linkedin.com/in/christianrondeau"
+                    href="https://linkedin.com/in/christiancrumlish"
                     variant="outline"
                     size="sm"
                     external
