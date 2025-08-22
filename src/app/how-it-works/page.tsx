@@ -35,14 +35,14 @@ export default function HowItWorksPage() {
           href: "/newsletter"
         }}
         background="gradient"
-        align="center"
+        align="left"
       />
 
       {/* Four Pillars Section */}
       <section id="four-pillars" className="py-16 bg-surface">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="mb-12">
               <h2 className="text-3xl font-bold text-text-dark mb-6">
                 The Four Pillars of Excellence
               </h2>
@@ -140,7 +140,7 @@ export default function HowItWorksPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="mb-12">
               <h2 className="text-3xl font-bold text-text-dark mb-6">
                 The Excellence Flywheel
               </h2>
@@ -151,7 +151,7 @@ export default function HowItWorksPage() {
 
             <div className="bg-gradient-to-r from-primary-teal/10 to-primary-orange/10 p-8 rounded-card mb-8">
               <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
-                <div className="text-center">
+                <div className="">
                   <div className="bg-white p-4 rounded-lg shadow-sm mb-2">
                     <div className="font-semibold text-text-dark">Verify Patterns</div>
                     <div className="text-sm text-text-light">2-3 minutes</div>
@@ -159,7 +159,7 @@ export default function HowItWorksPage() {
                   <div className="text-primary-teal text-2xl hidden md:block">↓</div>
                 </div>
 
-                <div className="text-center">
+                <div className="">
                   <div className="bg-white p-4 rounded-lg shadow-sm mb-2">
                     <div className="font-semibold text-text-dark">Analyze Architecture</div>
                     <div className="text-sm text-text-light">3-5 minutes</div>
@@ -167,7 +167,7 @@ export default function HowItWorksPage() {
                   <div className="text-primary-orange text-2xl hidden md:block">↓</div>
                 </div>
 
-                <div className="text-center">
+                <div className="">
                   <div className="bg-white p-4 rounded-lg shadow-sm mb-2">
                     <div className="font-semibold text-text-dark">Design Solution</div>
                     <div className="text-sm text-text-light">2-3 minutes</div>
@@ -175,7 +175,7 @@ export default function HowItWorksPage() {
                   <div className="text-primary-teal text-2xl hidden md:block">↓</div>
                 </div>
 
-                <div className="text-center">
+                <div className="">
                   <div className="bg-white p-4 rounded-lg shadow-sm mb-2">
                     <div className="font-semibold text-text-dark">Implement</div>
                     <div className="text-sm text-text-light">5-10 minutes</div>
@@ -183,7 +183,7 @@ export default function HowItWorksPage() {
                   <div className="text-primary-orange text-2xl hidden md:block">↓</div>
                 </div>
 
-                <div className="text-center">
+                <div className="">
                   <div className="bg-white p-4 rounded-lg shadow-sm mb-2">
                     <div className="font-semibold text-text-dark">Test & Document</div>
                     <div className="text-sm text-text-light">5-8 minutes</div>
@@ -192,7 +192,7 @@ export default function HowItWorksPage() {
                 </div>
               </div>
 
-              <div className="text-center mt-6">
+              <div className="mt-6">
                 <p className="text-text-dark font-medium">
                   Total Implementation Time: <span className="text-primary-teal font-bold">15-30 minutes</span>
                 </p>
@@ -209,7 +209,7 @@ export default function HowItWorksPage() {
       <section className="py-16 bg-surface">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="mb-12">
               <h2 className="text-3xl font-bold text-text-dark mb-6">
                 Proven Results
               </h2>
@@ -219,7 +219,7 @@ export default function HowItWorksPage() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center p-8 bg-white rounded-card shadow-component">
+              <div className="p-8 bg-white rounded-card shadow-component">
                 <div className="text-5xl font-bold text-primary-teal mb-4">15min</div>
                 <div className="text-xl font-semibold text-text-dark mb-2">ADR Migrations</div>
                 <div className="text-text-light">Previously 2+ hours</div>
@@ -228,7 +228,7 @@ export default function HowItWorksPage() {
                 </div>
               </div>
 
-              <div className="text-center p-8 bg-white rounded-card shadow-component">
+              <div className="p-8 bg-white rounded-card shadow-component">
                 <div className="text-5xl font-bold text-primary-orange mb-4">100%</div>
                 <div className="text-xl font-semibold text-text-dark mb-2">Test Coverage</div>
                 <div className="text-text-light">During rapid development</div>
@@ -237,7 +237,7 @@ export default function HowItWorksPage() {
                 </div>
               </div>
 
-              <div className="text-center p-8 bg-white rounded-card shadow-component">
+              <div className="p-8 bg-white rounded-card shadow-component">
                 <div className="text-5xl font-bold text-primary-teal mb-4">0</div>
                 <div className="text-xl font-semibold text-text-dark mb-2">Architectural Drift</div>
                 <div className="text-text-light">Across 50+ implementations</div>
@@ -254,7 +254,7 @@ export default function HowItWorksPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="mb-12">
               <h2 className="text-3xl font-bold text-text-dark mb-6">
                 Technical Foundation
               </h2>
@@ -287,7 +287,7 @@ export default function HowItWorksPage() {
               </div>
             </div>
 
-            <div className="text-center mt-12">
+            <div className="mt-12">
               <CTAButton
                 href="/blog"
                 variant="outline"

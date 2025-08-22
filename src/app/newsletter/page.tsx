@@ -64,7 +64,7 @@ export default function NewsletterPage() {
       {/* Value Proposition */}
       <section className="bg-surface py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-text-dark mb-6">
               Why PM Professionals Choose Our Newsletter
             </h2>
@@ -117,7 +117,7 @@ export default function NewsletterPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-text-dark text-center mb-12">
+            <h2 className="text-3xl font-bold text-text-dark mb-12">
               Recent Newsletter Highlights
             </h2>
 
@@ -162,7 +162,7 @@ export default function NewsletterPage() {
               </div>
             </div>
 
-            <div className="text-center mt-12">
+            <div className="mt-12">
               <CTAButton
                 href="/blog"
                 variant="outline"

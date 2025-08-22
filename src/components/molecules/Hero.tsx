@@ -7,7 +7,7 @@ export interface HeroProps {
   /** Optional highlight text that appears in accent color */
   highlightText?: string;
   /** Subheadline or description text */
-  subheadline: string;
+  subheadline: string | React.ReactNode;
   /** Primary call-to-action button */
   primaryCTA?: {
     text: string;
@@ -43,12 +43,12 @@ export function Hero({
   primaryCTA,
   secondaryCTA,
   background = 'default',
-  align = 'center',
+  align = 'left',
   showLogo = false,
   className = '',
 }: HeroProps) {
   const containerClasses = [
-    'py-16 md:py-24',
+    'pt-16 md:pt-24 pb-8 md:pb-12',
     backgroundClasses[background],
     className,
   ].filter(Boolean).join(' ');
@@ -85,12 +85,12 @@ export function Hero({
             )}
           </h1>
 
-          <p className="text-lg md:text-xl text-text-light mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className={`text-lg md:text-xl text-text-light mb-8 leading-relaxed ${align === 'center' ? 'max-w-3xl mx-auto' : 'max-w-3xl'}`}>
             {subheadline}
           </p>
 
           {(primaryCTA || secondaryCTA) && (
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className={`flex flex-col sm:flex-row gap-4 items-center ${align === 'center' ? 'justify-center' : 'justify-start'}`}>
               {primaryCTA && (
                 <CTAButton
                   href={primaryCTA.href}

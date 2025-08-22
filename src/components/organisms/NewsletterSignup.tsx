@@ -98,7 +98,7 @@ export function NewsletterSignup({
   if (status === 'success') {
     return (
       <div className={containerClasses}>
-        <div className="text-center">
+        <div className="">
           <div className="w-16 h-16 bg-primary-teal rounded-full flex items-center justify-center mx-auto mb-4">
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -117,7 +117,7 @@ export function NewsletterSignup({
 
   return (
     <div className={containerClasses}>
-      <div className={compact ? 'text-center' : 'max-w-2xl mx-auto text-center'}>
+      <div className={compact ? '' : 'max-w-2xl mx-auto'}>
         <h3 className={`text-2xl font-semibold ${textColor} mb-4`}>
           {title}
         </h3>
@@ -166,7 +166,7 @@ export function NewsletterSignup({
           </div>
 
           {status === 'error' && errorMessage && (
-            <p className="text-red-500 text-sm text-center">
+            <p className="text-red-500 text-sm">
               {errorMessage}
             </p>
           )}

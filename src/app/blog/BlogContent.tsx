@@ -13,7 +13,7 @@ export default function BlogContent() {
       <section id="recent-posts" className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="mb-12">
               <h2 className="text-3xl font-bold text-text-dark mb-6">
                 Building-in-Public Updates
               </h2>
@@ -40,7 +40,7 @@ export default function BlogContent() {
             </div>
 
             {/* Medium Integration Notice */}
-            <div className="bg-gradient-to-r from-primary-teal/5 to-primary-orange/5 p-8 rounded-card text-center mb-12">
+            <div className="bg-gradient-to-r from-primary-teal/5 to-primary-orange/5 p-8 rounded-card mb-12">
               <h3 className="text-2xl font-semibold text-text-dark mb-4">
                 Full Building-in-Public Collection on Medium
               </h3>

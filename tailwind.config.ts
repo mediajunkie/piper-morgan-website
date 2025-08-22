@@ -77,6 +77,14 @@ const config: Config = {
           'Cantarell',
           'sans-serif',
         ],
+        display: [
+          'Hoss Round',
+          'Inter',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'sans-serif',
+        ],
       },
       fontSize: {
         // Fluid typography scaling
