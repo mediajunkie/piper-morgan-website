@@ -86,7 +86,7 @@ export function getDefaultWebsiteContent() {
     siteMetadata: {
       title: 'Piper Morgan - AI Product Management Assistant',
       description: 'AI-powered Product Management Assistant demonstrating systematic excellence through transparent, building-in-public development.',
-      author: 'Christian Rondeau',
+      author: 'Christian Crumlish',
       url: 'https://pipermorgan.ai',
     },
   };

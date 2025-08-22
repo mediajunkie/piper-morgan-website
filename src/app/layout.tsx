@@ -43,12 +43,13 @@ export const metadata: Metadata = {
     title: websiteContent.siteMetadata.title,
     description: websiteContent.siteMetadata.description,
     url: websiteContent.siteMetadata.url,
+    locale: 'en_US',
     images: [
       {
-        url: '/images/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: websiteContent.siteMetadata.title,
+        url: '/assets/pm-logo.png',
+        width: 400,
+        height: 400,
+        alt: 'Piper Morgan - AI Product Management Assistant logo featuring a teal dolphin',
       },
     ],
   },
@@ -56,7 +57,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: websiteContent.siteMetadata.title,
     description: websiteContent.siteMetadata.description,
-    images: ['/images/twitter-card.png'],
+    images: ['/assets/pm-logo.png'],
     creator: '@mediajunkie',
   },
   verification: {
