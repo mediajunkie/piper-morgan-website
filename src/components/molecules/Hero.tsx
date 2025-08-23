@@ -85,9 +85,9 @@ export function Hero({
             )}
           </h1>
 
-          <p className={`text-lg md:text-xl text-text-light mb-8 leading-relaxed ${align === 'center' ? 'max-w-3xl mx-auto' : 'max-w-3xl'}`}>
+          <div className={`text-lg md:text-xl text-text-light mb-8 leading-relaxed ${align === 'center' ? 'max-w-3xl mx-auto text-center' : 'max-w-3xl'}`}>
             {subheadline}
-          </p>
+          </div>
 
           {(primaryCTA || secondaryCTA) && (
             <div className={`flex flex-col sm:flex-row gap-4 items-center ${align === 'center' ? 'justify-center' : 'justify-start'}`}>
