@@ -3,7 +3,7 @@ import { generateSEOMetadata } from '@/lib/domain-utils';
 import { Hero, NewsletterSignup } from '@/components';
 
 const seoData = generateSEOMetadata(
-  'Piper Morgan - Intelligent Product Management Assistant,
+  'Piper Morgan - Intelligent Product Management Assistant',
   'What started as curiosity about AI-powered product management became a systematic methodology for human-AI collaboration. Follow Christian Crumlish documenting every breakthrough and failure in building-in-public transparency.',
   { canonical: 'https://pipermorgan.ai' }
 );
@@ -82,7 +82,7 @@ export default function Home() {
                   Excellence Flywheel methodology
                 </h3>
                 <p className="text-text-light">
-                  A <a href="/how-it-works" className="text-primary-teal hover:underline">systematic approach to AI-human collaboration that scales</a> from 15-minute task automation to complex architectural decisions.</a>
+                  A <a href="/how-it-works" className="text-primary-teal hover:underline">systematic approach to AI-human collaboration that scales</a> from 15-minute task automation to complex architectural decisions.
                 </p>
               </div>
 
@@ -139,8 +139,9 @@ export default function Home() {
             <div className="space-y-4">
               <h4 className="text-xl font-semibold text-text-dark">Recent breakthroughs include:</h4>
               <ul className="text-lg text-text-light space-y-2 pl-6">
-                <li>• Multi-agent orchestration baked into workflows with negligible overhead</li>                 <li>• Integration of systematic verification into rapid development cycles</li>
-                <li>• Agent coordination patterns that prevent the usual AI collaboration chaos <em>and feed recursively into Piper’s education</em></li>
+                <li>• Multi-agent orchestration baked into workflows with negligible overhead</li>
+                <li>• Integration of systematic verification into rapid development cycles</li>
+                <li>• Agent coordination patterns that prevent the usual AI collaboration chaos <em>and feed recursively into Piper's education</em></li>
               </ul>
               <p className="text-lg text-text-light mt-6">
                 <strong>What's next:</strong> Continuing to build in public, sharing what we learn, and discovering whether these patterns scale beyond one learning PM and his robot programming assistants.
@@ -243,7 +244,7 @@ export default function Home() {
         </div>
       </section>
 
-<!-- redundant with the signups above but may be useful when the Growing Piper series starts on this site or when we host the canonical version of the blog series here and do our own newsletter off of LinkedIn?
+{/* redundant with the signups above but may be useful when the Growing Piper series starts on this site or when we host the canonical version of the blog series here and do our own newsletter off of LinkedIn?
 
       {/* Newsletter Section */}
       <section className="py-12">
@@ -279,8 +280,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-—>
 
       {/* Questions Section */}
       <section className="bg-surface py-12">

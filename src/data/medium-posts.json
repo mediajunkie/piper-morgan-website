@@ -1,150 +1,132 @@
 [
   {
-    "title": "From Broken Tests to Perfect Architecture: The Great Cleanup",
-    "excerpt": "July 14Continue reading on Building Piper Morgan »",
-    "url": "https://medium.com/building-piper-morgan/from-broken-tests-to-perfect-architecture-the-great-cleanup-2575d3526323?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 4, 2025",
-    "publishedAtISO": "Mon, 04 Aug 2025 14:26:31 GMT",
+    "title": "When Overconfidence Meets rm -rf",
+    "excerpt": "“Oops!”It’s the weekend and time for another flashback post more about process or insight than the daily building narrative. At this point, we are exactly one month into the project:June 27“I’ve be...",
+    "url": "https://medium.com/building-piper-morgan/when-overconfidence-meets-rm-rf-2f355444ec38?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 23, 2025",
+    "publishedAtISO": "Sat, 23 Aug 2025 15:17:31 GMT",
     "author": "christian crumlish",
     "readingTime": "5 min read",
     "tags": [
       "Building in Public"
     ],
-    "guid": "https://medium.com/p/2575d3526323"
+    "guid": "https://medium.com/p/2f355444ec38"
   },
   {
-    "title": "The Action Humanizer: Teaching AI to Speak Human",
-    "excerpt": "July 13, later that dayContinue reading on Building Piper Morgan »",
-    "url": "https://medium.com/building-piper-morgan/the-action-humanizer-teaching-ai-to-speak-human-9fbbf6932838?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 4, 2025",
-    "publishedAtISO": "Mon, 04 Aug 2025 14:13:58 GMT",
+    "title": "The Day My AI Agents Learned to Coordinate Themselves (and I Learned to Let Them)",
+    "excerpt": "“I think they’re ready”August 15“Very satisfying collaboration!” I said at the end of Friday’s session.What made it satisfying wasn’t just that we’d delivered PM-033d — a complete multi-agent coord...",
+    "url": "https://medium.com/building-piper-morgan/the-day-my-ai-agents-learned-to-coordinate-themselves-and-i-learned-to-let-them-02d04196ad8e?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 22, 2025",
+    "publishedAtISO": "Fri, 22 Aug 2025 13:19:58 GMT",
     "author": "christian crumlish",
     "readingTime": "5 min read",
     "tags": [
-      "Product Management",
-      "Llm",
-      "Llm Development"
+      "Building in Public"
     ],
-    "guid": "https://medium.com/p/9fbbf6932838"
+    "guid": "https://medium.com/p/02d04196ad8e"
   },
   {
-    "title": "From 2% to 87%: The Great Test Suite Recovery",
-    "excerpt": "July 13Continue reading on Building Piper Morgan »",
-    "url": "https://medium.com/building-piper-morgan/from-2-to-87-the-great-test-suite-recovery-b7c3ef25cbdc?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 4, 2025",
-    "publishedAtISO": "Mon, 04 Aug 2025 13:59:01 GMT",
+    "title": "How Reusing Patterns Compounds Your Acceleration",
+    "excerpt": "“A stitch in time, saves nine!”August 14The GitHub issue numbered PM-033c was estimated to take 2–3 hours. We delivered it in 18 minutes.Not through shortcuts or corner-cutting. Not by building som...",
+    "url": "https://medium.com/building-piper-morgan/how-reusing-patterns-compounds-your-acceleration-60d2a0d7acbd?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 21, 2025",
+    "publishedAtISO": "Thu, 21 Aug 2025 13:30:23 GMT",
     "author": "christian crumlish",
     "readingTime": "5 min read",
     "tags": [
-      "Llm Development",
-      "Genai",
-      "Llm"
+      "Building in Public"
     ],
-    "guid": "https://medium.com/p/b7c3ef25cbdc"
+    "guid": "https://medium.com/p/60d2a0d7acbd"
   },
   {
-    "title": "When Your AI Writes 500 Lines of Boilerplate (And Why That’s Actually Useful)",
-    "excerpt": "Part 4 of of the reconstructed “Lost Weekend” at the beginning of this project, as best as we can determine!“You finished it all?”May 30, later in the day“Can you program this for me?”That simple q...",
-    "url": "https://medium.com/building-piper-morgan/when-your-ai-writes-500-lines-of-boilerplate-and-why-thats-actually-useful-084611e312ea?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 3, 2025",
-    "publishedAtISO": "Sun, 03 Aug 2025 19:28:26 GMT",
+    "title": "The Uncomfortable Victory: When Completion Beats Innovation",
+    "excerpt": "“I’ve got a great idea for after we finish this one!”August 13Yesterday I wrote about how our methodology saved us from overpromising on performance metrics. Today I discovered we might have been c...",
+    "url": "https://medium.com/building-piper-morgan/the-uncomfortable-victory-when-completing-beats-innovating-97c356c12d55?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 20, 2025",
+    "publishedAtISO": "Wed, 20 Aug 2025 12:17:57 GMT",
     "author": "christian crumlish",
     "readingTime": "5 min read",
     "tags": [
-      "Genai",
-      "Product Management",
-      "Llm Development"
+      "Building in Public"
     ],
-    "guid": "https://medium.com/p/084611e312ea"
+    "guid": "https://medium.com/p/97c356c12d55"
   },
   {
-    "title": "Chasing Rabbits (A Debugging Story)",
-    "excerpt": "The Lost Weekend, Part 3 of 4, or debugging with Gemini a prototype that Claude threw together:“I’m gonna gitcha!”May 31, earlyWhat did it mean?AssertionError: NoneSix hours later, I finally unders...",
-    "url": "https://medium.com/building-piper-morgan/chasing-rabbits-a-debugging-story-40f084dc3095?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 3, 2025",
-    "publishedAtISO": "Sun, 03 Aug 2025 13:49:47 GMT",
+    "title": "The Day Our Methodology Saved Us from Our Own Hype",
+    "excerpt": "“Don’t believe the hype!”August 12Tuesday evening I was reviewing what the Lead Developer called “a transformational day” and the Chief Architect described as “strategic breakthrough,” when I notic...",
+    "url": "https://medium.com/building-piper-morgan/the-day-our-methodology-saved-us-from-our-own-hype-35a91d794dc3?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 19, 2025",
+    "publishedAtISO": "Tue, 19 Aug 2025 13:11:08 GMT",
     "author": "christian crumlish",
     "readingTime": "5 min read",
     "tags": [
-      "Genai",
-      "Product Management",
-      "Llm Development"
+      "Building in Public"
     ],
-    "guid": "https://medium.com/p/40f084dc3095"
+    "guid": "https://medium.com/p/35a91d794dc3"
   },
   {
-    "title": "The Demo That Needed Documentation",
-    "excerpt": "“The Lost Weekend” Part 2 of 4, when “it works on my machine” isn’t enough“I’m not prepared!”May 30, later that dayPart 1 of this story crashed my browser. Which feels perfect for a weekend where e...",
-    "url": "https://medium.com/building-piper-morgan/the-demo-that-needed-documentation-ccb351b91629?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 2, 2025",
-    "publishedAtISO": "Sat, 02 Aug 2025 20:55:38 GMT",
+    "title": "The 28,000-line Foundation that Made 4 Hours Feel Like Magic",
+    "excerpt": "“Just like we designed it”August 11The morning started with a simple experiment: run five canonical queries as a daily standup with Piper. “What’s your name and role?” “What day is it?” “What shoul...",
+    "url": "https://medium.com/building-piper-morgan/the-28-000-line-foundation-that-made-4-hours-feel-like-magic-82eafb4548f7?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 19, 2025",
+    "publishedAtISO": "Tue, 19 Aug 2025 13:05:45 GMT",
     "author": "christian crumlish",
     "readingTime": "5 min read",
     "tags": [
-      "Genai",
-      "Product Management",
-      "Llm"
+      "Building in Public"
     ],
-    "guid": "https://medium.com/p/ccb351b91629"
+    "guid": "https://medium.com/p/82eafb4548f7"
   },
   {
-    "title": "When Claude Took a Break (And Gemini Stepped In)",
-    "excerpt": "Time for one more flashback to the “lost weekend” two days into this project, reconstructed after the fact from a Gemini log so long I couldn’t get back to the head of it without crashing my browse...",
-    "url": "https://medium.com/building-piper-morgan/when-claude-took-a-break-and-gemini-stepped-in-922fd802460e?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 2, 2025",
-    "publishedAtISO": "Sat, 02 Aug 2025 12:10:23 GMT",
+    "title": "The Archaeology Expedition That Found Automation Gold",
+    "excerpt": "“Wait till Indy hear’s about this!”August 10So there I was at 8:34 AM on “Security Sunday,” doing what any reasonable person does when deploying AI agents for systematic work — having a meta-conver...",
+    "url": "https://medium.com/building-piper-morgan/the-archaeology-expedition-that-found-automation-gold-b10058d924af?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 18, 2025",
+    "publishedAtISO": "Mon, 18 Aug 2025 14:37:32 GMT",
     "author": "christian crumlish",
     "readingTime": "5 min read",
     "tags": [
-      "Genai",
-      "Llm",
-      "Product Mangement"
+      "Building in Public"
     ],
-    "guid": "https://medium.com/p/922fd802460e"
+    "guid": "https://medium.com/p/b10058d924af"
   },
   {
-    "title": "The AI Detective Squad: When Three Agents Solve One Mystery",
-    "excerpt": "July 12Continue reading on Building Piper Morgan »",
-    "url": "https://medium.com/building-piper-morgan/the-ai-detective-squad-when-three-agents-solve-one-mystery-987eb4c5cc42?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 1, 2025",
-    "publishedAtISO": "Fri, 01 Aug 2025 14:33:21 GMT",
+    "title": "What We Found When We Actually Looked (and What We Had Built While We Weren’t Looking)",
+    "excerpt": "“When did we build that?August 9That Saturday started with a simple question: “What’s the real status of PM-005?”I’d written about building the feedback system ages ago, but you know how it is. Sys...",
+    "url": "https://medium.com/building-piper-morgan/what-we-found-when-we-actually-looked-and-what-we-had-built-while-we-werent-looking-7c43e28211f3?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 18, 2025",
+    "publishedAtISO": "Mon, 18 Aug 2025 14:27:56 GMT",
     "author": "christian crumlish",
     "readingTime": "5 min read",
     "tags": [
-      "Llm Development",
-      "Llm",
-      "Genai"
+      "Building in Public"
     ],
-    "guid": "https://medium.com/p/987eb4c5cc42"
+    "guid": "https://medium.com/p/7c43e28211f3"
   },
   {
-    "title": "Three Bugs, One Victory: The Day We Finally Shipped PM-011",
-    "excerpt": "July 12Continue reading on Building Piper Morgan »",
-    "url": "https://medium.com/building-piper-morgan/three-bugs-one-victory-the-day-we-finally-shipped-pm-011-cc07dca2a5e9?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 1, 2025",
-    "publishedAtISO": "Fri, 01 Aug 2025 14:25:30 GMT",
+    "title": "The Documentation Debt That Almost Buried Our Breakthrough (And the Systematic Approach That Saved…",
+    "excerpt": "The Documentation Debt That Almost Buried Our Breakthrough (And the Systematic Approach That Saved It)“I found the pony!”August 8Picture this: you’ve just built something extraordinary. Your conver...",
+    "url": "https://medium.com/building-piper-morgan/the-documentation-debt-that-almost-buried-our-breakthrough-and-the-systematic-approach-that-saved-e22e491dab71?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 15, 2025",
+    "publishedAtISO": "Fri, 15 Aug 2025 13:28:03 GMT",
     "author": "christian crumlish",
     "readingTime": "5 min read",
     "tags": [
-      "Product Management",
-      "Llm Development",
-      "Genai"
+      "Building in Public"
     ],
-    "guid": "https://medium.com/p/cc07dca2a5e9"
+    "guid": "https://medium.com/p/e22e491dab71"
   },
   {
-    "title": "Two-Fisted Coding: Wrangling Robot Programmers When You’re Just a PM",
-    "excerpt": "July 9, 2025Continue reading on Building Piper Morgan »",
-    "url": "https://medium.com/building-piper-morgan/two-fisted-coding-wrangling-robot-programmers-when-youre-just-a-pm-c619de609a42?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 1, 2025",
-    "publishedAtISO": "Fri, 01 Aug 2025 14:10:41 GMT",
+    "title": "When 44 Minutes of Foundation Work Enables 9 Minutes of Magic",
+    "excerpt": "“All that preparation really paid off”August 7Here’s a story about choosing systematic repair over feature velocity — and discovering why foundation quality isn’t overhead, it’s velocity multiplica...",
+    "url": "https://medium.com/building-piper-morgan/when-44-minutes-of-foundation-work-enables-9-minutes-of-magic-f18755220580?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 15, 2025",
+    "publishedAtISO": "Fri, 15 Aug 2025 12:57:42 GMT",
     "author": "christian crumlish",
     "readingTime": "5 min read",
     "tags": [
-      "Product Management",
-      "Llm",
-      "Llm Development"
+      "Building in Public"
     ],
-    "guid": "https://medium.com/p/c619de609a42"
+    "guid": "https://medium.com/p/f18755220580"
   }
 ]
