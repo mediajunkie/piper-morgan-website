@@ -14,9 +14,8 @@ interface NavigationItem {
 const navigationItems: NavigationItem[] = [
   { label: 'Home', href: '/' },
   { label: 'How It Works', href: '/how-it-works' },
-  { label: 'About', href: '/about' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'Newsletter', href: '/newsletter' },
+  { label: 'What We\'ve Learned', href: '/what-weve-learned' },
+  { label: 'Get Involved', href: '/get-involved' },
 ];
 
 export default function Navigation() {

@@ -8,9 +8,9 @@ interface FooterLink {
 
 const footerLinks: FooterLink[] = [
   { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'Newsletter', href: '/newsletter' },
+  { label: 'How It Works', href: '/how-it-works' },
+  { label: 'What We\'ve Learned', href: '/what-weve-learned' },
+  { label: 'Get Involved', href: '/get-involved' },
 ];
 
 const socialLinks: FooterLink[] = [
@@ -94,10 +94,10 @@ export default function Footer() {
 
             <div className="mt-6">
               <Link
-                href="/newsletter"
+                href="/get-involved"
                 className="inline-block bg-primary-teal text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-teal-600 transition-colors"
               >
-                Subscribe
+                Get Involved
               </Link>
             </div>
           </div>
