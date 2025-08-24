@@ -15,13 +15,8 @@ const footerLinks: FooterLink[] = [
 
 const socialLinks: FooterLink[] = [
   {
-    label: 'Twitter',
-    href: 'https://twitter.com/mediajunkie',
-    external: true
-  },
-  {
     label: 'LinkedIn',
-    href: 'https://linkedin.com/in/christiancrumlish',
+    href: 'https://linkedin.com/in/mediajunkie',
     external: true
   },
   {
@@ -29,6 +24,16 @@ const socialLinks: FooterLink[] = [
     href: 'https://github.com/mediajunkie',
     external: true
   },
+  {
+    label: 'Mastodon',
+    href: 'https://xoxo.zone/@xian',
+    external: true
+  },
+  {
+    label: 'Bluesky',
+    href: 'https://bsky.app/profile/xianlandia.com',
+    external: true
+  },  
 ];
 
 export default function Footer() {
@@ -110,7 +115,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center space-x-6 mt-4 md:mt-0">
               <span className="text-gray-400 text-sm">
-                Made with systematic excellence
+                made with systematic kindess
               </span>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-primary-teal rounded-full animate-pulse"></div>
