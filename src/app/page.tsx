@@ -204,6 +204,17 @@ export default function Home() {
                 assistants.
               </p>
             </div>
+
+            {/* Technical Credibility */}
+            <div className="bg-gradient-to-r from-primary-teal/5 to-primary-orange/5 p-6 rounded-lg mt-8">
+              <p className="text-text-light">
+                <strong>For technical users:</strong> All development work is documented with full architectural decisions, implementation details, and systematic methodology at{' '}
+                <a href="https://pmorgan.tech" className="text-primary-teal hover:underline" target="_blank" rel="noopener noreferrer">
+                  pmorgan.tech
+                </a>
+                {' '}— comprehensive technical documentation for developers who want to understand how these patterns actually work.
+              </p>
+            </div>
           </div>
         </div>
       </section>

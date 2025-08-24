@@ -13,6 +13,11 @@ const footerLinks: FooterLink[] = [
   { label: 'Get Involved', href: '/get-involved' },
 ];
 
+const developerLinks: FooterLink[] = [
+  { label: 'Technical Docs', href: 'https://pmorgan.tech', external: true },
+  { label: 'GitHub', href: 'https://github.com/mediajunkie', external: true },
+];
+
 const socialLinks: FooterLink[] = [
   {
     label: 'LinkedIn',
@@ -40,7 +45,7 @@ export default function Footer() {
   return (
     <footer className="bg-text-dark text-white">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-5 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
@@ -105,6 +110,28 @@ export default function Footer() {
                 Get Involved
               </Link>
             </div>
+          </div>
+
+          {/* Developer Resources */}
+          <div>
+            <h3 className="font-semibold mb-4">Developers</h3>
+            <ul className="space-y-2">
+              {developerLinks.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    target={link.external ? '_blank' : undefined}
+                    rel={link.external ? 'noopener noreferrer' : undefined}
+                    className="text-gray-300 hover:text-primary-teal transition-colors"
+                  >
+                    {link.label}
+                    {link.external && (
+                      <span className="ml-1 text-xs">↗</span>
+                    )}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 

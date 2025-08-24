@@ -427,6 +427,25 @@ export default function HowItWorksPage() {
                 </ul>
               </div>
 
+              <div className="bg-primary-teal/10 p-6 rounded-lg mt-8">
+                <div className="text-center">
+                  <p className="text-text-dark font-medium mb-4">
+                    <strong>Technical Implementation Details</strong>
+                  </p>
+                  <p className="text-text-light mb-4">
+                    For developers and technical leaders who want to understand the architectural decisions, code patterns, and systematic development methodology behind these frameworks.
+                  </p>
+                  <a
+                    href="https://pmorgan.tech"
+                    className="inline-block bg-primary-teal text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-600 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Technical Documentation →
+                  </a>
+                </div>
+              </div>
+
               <div className="text-center pt-8">
                 <p className="mb-6">
                   <strong>Want to follow along?</strong> The <a href="https://medium.com/building-piper-morgan" className="text-primary-teal hover:underline" target="_blank" rel="noopener noreferrer">Building Piper Morgan blog series</a> documents our ongoing discoveries, including the failures and course corrections.
