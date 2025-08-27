@@ -7,6 +7,8 @@ export { Hero } from './molecules/Hero';
 export type { HeroProps } from './molecules/Hero';
 export { BlogPostCard } from './molecules/BlogPostCard';
 export type { BlogPostCardProps } from './molecules/BlogPostCard';
+export { MethodologyDiagram } from './molecules/MethodologyDiagram';
+export type { MethodologyDiagramProps } from './molecules/MethodologyDiagram';
 
 // Organisms
 export { NewsletterSignup } from './organisms/NewsletterSignup';
