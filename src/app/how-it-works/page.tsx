@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import { generateSEOMetadata } from '@/lib/domain-utils';
+import { MethodologyDiagram } from '@/components';
 
 const seoData = generateSEOMetadata(
-  'How It Works - Systematic AI Collaboration',
-  'The methodology behind building Piper Morgan and how you can apply these patterns to your own AI work',
+  'How It Works - Systematic AI Collaboration Methodology',
+  'Learn the Excellence Flywheel methodology for AI-human collaboration. Five proven patterns for systematic AI adoption with 15-minute ADR migrations and zero architectural drift.',
   { canonical: 'https://pipermorgan.ai/how-it-works' }
 );
 
@@ -76,7 +77,7 @@ export default function HowItWorksPage() {
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid lg:grid-cols-3 gap-8">
                   <div>
                     <h4 className="text-lg font-semibold text-text-dark mb-3">The Problem</h4>
                     <p className="text-text-light mb-6">
@@ -86,6 +87,13 @@ export default function HowItWorksPage() {
                     <h4 className="text-lg font-semibold text-text-dark mb-3">Our Pattern</h4>
                     <p className="text-text-light">
                       Systematic verification before action, not random checking after problems emerge.
+                    </p>
+                  </div>
+
+                  <div className="flex flex-col items-center justify-center">
+                    <MethodologyDiagram pattern="verification" className="mb-4" />
+                    <p className="text-sm text-text-light text-center">
+                      Always verify AI suggestions before acting
                     </p>
                   </div>
 
@@ -122,7 +130,7 @@ export default function HowItWorksPage() {
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid lg:grid-cols-3 gap-8">
                   <div>
                     <h4 className="text-lg font-semibold text-text-dark mb-3">The Problem</h4>
                     <p className="text-text-light mb-6">
@@ -132,6 +140,13 @@ export default function HowItWorksPage() {
                     <h4 className="text-lg font-semibold text-text-dark mb-3">Our Pattern</h4>
                     <p className="text-text-light">
                       Strategic deployment of different AI tools based on their specific strengths, with clear handoff protocols.
+                    </p>
+                  </div>
+
+                  <div className="flex flex-col items-center justify-center">
+                    <MethodologyDiagram pattern="multi-agent" className="mb-4" />
+                    <p className="text-sm text-text-light text-center">
+                      Coordinate specialized AI tools through clear handoffs
                     </p>
                   </div>
 
@@ -170,7 +185,7 @@ export default function HowItWorksPage() {
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid lg:grid-cols-3 gap-8">
                   <div>
                     <h4 className="text-lg font-semibold text-text-dark mb-3">The Problem</h4>
                     <p className="text-text-light mb-6">
@@ -180,6 +195,13 @@ export default function HowItWorksPage() {
                     <h4 className="text-lg font-semibold text-text-dark mb-3">Our Pattern</h4>
                     <p className="text-text-light">
                       Systematic approaches that make quality faster, not slower.
+                    </p>
+                  </div>
+
+                  <div className="flex flex-col items-center justify-center">
+                    <MethodologyDiagram pattern="excellence" className="mb-4" />
+                    <p className="text-sm text-text-light text-center">
+                      Quality systems create a reinforcing cycle of speed and reliability
                     </p>
                   </div>
 
@@ -218,7 +240,7 @@ export default function HowItWorksPage() {
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid lg:grid-cols-3 gap-8">
                   <div>
                     <h4 className="text-lg font-semibold text-text-dark mb-3">The Problem</h4>
                     <p className="text-text-light mb-6">
@@ -228,6 +250,13 @@ export default function HowItWorksPage() {
                     <h4 className="text-lg font-semibold text-text-dark mb-3">Our Pattern</h4>
                     <p className="text-text-light">
                       Systematic frameworks for adapting AI approaches based on specific context and requirements.
+                    </p>
+                  </div>
+
+                  <div className="flex flex-col items-center justify-center">
+                    <MethodologyDiagram pattern="context" className="mb-4" />
+                    <p className="text-sm text-text-light text-center">
+                      Adapt AI approach based on stakes, timeline, and audience
                     </p>
                   </div>
 
@@ -266,7 +295,7 @@ export default function HowItWorksPage() {
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid lg:grid-cols-3 gap-8">
                   <div>
                     <h4 className="text-lg font-semibold text-text-dark mb-3">The Problem</h4>
                     <p className="text-text-light mb-6">
@@ -276,6 +305,13 @@ export default function HowItWorksPage() {
                     <h4 className="text-lg font-semibold text-text-dark mb-3">Our Pattern</h4>
                     <p className="text-text-light">
                       Structured approach to evaluating AI implementations across technical, business, and human dimensions.
+                    </p>
+                  </div>
+
+                  <div className="flex flex-col items-center justify-center">
+                    <MethodologyDiagram pattern="risk" className="mb-4" />
+                    <p className="text-sm text-text-light text-center">
+                      Evaluate AI implementations across technical, business, and human dimensions
                     </p>
                   </div>
 
@@ -300,6 +336,99 @@ export default function HowItWorksPage() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Excellence Flywheel Methodology Deep Dive */}
+      <section className="bg-gradient-to-r from-primary-teal/5 to-primary-orange/5 py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold text-text-dark mb-8 text-center">
+              The Excellence Flywheel Methodology
+            </h2>
+            <p className="text-xl text-text-light mb-12 text-center max-w-4xl mx-auto">
+              Our breakthrough methodology turns each implementation into accelerated future work. Through systematic verification, multi-agent coordination, and transparent development, we've achieved implementation speeds that seemed impossible while maintaining 100% quality standards.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-12 mb-12">
+              <div className="bg-white p-8 rounded-card shadow-component">
+                <h3 className="text-2xl font-semibold text-text-dark mb-6">
+                  The Four Pillars
+                </h3>
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-semibold text-text-dark mb-2">
+                      1. Systematic Verification First
+                    </h4>
+                    <p className="text-text-light text-sm">
+                      Always check existing patterns before implementing. This single practice delivers 300-500% speed improvements by eliminating assumption debugging.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-text-dark mb-2">
+                      2. Test-Driven Development
+                    </h4>
+                    <p className="text-text-light text-sm">
+                      Tests drive architecture decisions. 100% coverage maintained even during rapid development cycles, ensuring reliability at scale.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-text-dark mb-2">
+                      3. Multi-Agent Coordination
+                    </h4>
+                    <p className="text-text-light text-sm">
+                      Strategic deployment of specialized AI agents with clear handoff protocols. Building value systematically rather than working in isolation.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-text-dark mb-2">
+                      4. GitHub-First Tracking
+                    </h4>
+                    <p className="text-text-light text-sm">
+                      Every decision tracked with clear acceptance criteria and systematic documentation. Zero architectural drift through explicit decision-making.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-8 rounded-card shadow-component">
+                <h3 className="text-2xl font-semibold text-text-dark mb-6">
+                  Proven Breakthrough Results
+                </h3>
+                <div className="space-y-6">
+                  <div className="border-l-4 border-primary-teal pl-4">
+                    <p className="font-semibold text-text-dark">15-minute ADR migrations</p>
+                    <p className="text-text-light text-sm">Previously required 2+ hours of manual work</p>
+                  </div>
+                  <div className="border-l-4 border-primary-orange pl-4">
+                    <p className="font-semibold text-text-dark">Zero architectural drift</p>
+                    <p className="text-text-light text-sm">Across 50+ complex implementations</p>
+                  </div>
+                  <div className="border-l-4 border-primary-teal pl-4">
+                    <p className="font-semibold text-text-dark">642x performance improvements</p>
+                    <p className="text-text-light text-sm">Through systematic optimization patterns</p>
+                  </div>
+                  <div className="border-l-4 border-primary-orange pl-4">
+                    <p className="font-semibold text-text-dark">100% test success rates</p>
+                    <p className="text-text-light text-sm">Maintained during rapid feature development</p>
+                  </div>
+                  <div className="border-l-4 border-primary-teal pl-4">
+                    <p className="font-semibold text-text-dark">Ethics-first architecture</p>
+                    <p className="text-text-light text-sm">Makes violations technically impossible</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-primary-teal/10 to-primary-orange/10 p-8 rounded-card">
+              <h3 className="text-2xl font-semibold text-text-dark mb-4 text-center">
+                The Compound Effect
+              </h3>
+              <p className="text-text-light text-lg text-center max-w-4xl mx-auto">
+                Each verified pattern becomes a reusable asset. Each test becomes future confidence. Each documentation update becomes team knowledge. This creates a flywheel where every implementation makes the next one faster and more reliable.
+              </p>
             </div>
           </div>
         </div>
@@ -359,101 +488,122 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      {/* Getting Started */}
-      <section className="bg-surface py-16">
+      {/* Enhanced Getting Started */}
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-text-dark mb-12 text-center">
-              Getting Started
+              Implementing These Patterns in Your Work
             </h2>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white p-8 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold text-text-dark mb-4">
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div className="bg-white p-8 rounded-card shadow-component">
+                <div className="w-12 h-12 bg-primary-teal rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">1</span>
+                </div>
+                <h3 className="text-xl font-semibold text-text-dark mb-4 text-center">
                   If You're New to AI Collaboration
                 </h3>
-                <ol className="space-y-3 text-text-light">
-                  <li><strong>1. Start with Verification-First</strong>: Pick one AI tool and one type of task. Build systematic checking habits before expanding.</li>
-                  <li><strong>2. Document what works</strong>: Keep notes on which prompts, approaches, and verification methods produce good results.</li>
-                  <li><strong>3. Expand gradually</strong>: Add new tools or new types of tasks only after you've established good patterns with current ones.</li>
-                </ol>
+                <ul className="space-y-2 text-text-light">
+                  <li>• Start with Verification-First for one AI tool and task type</li>
+                  <li>• Document what prompts and approaches work consistently</li>
+                  <li>• Build systematic checking habits before expanding scope</li>
+                  <li>• Focus on quality patterns over quantity of AI interactions</li>
+                </ul>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold text-text-dark mb-4">
+              <div className="bg-white p-8 rounded-card shadow-component">
+                <div className="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">2</span>
+                </div>
+                <h3 className="text-xl font-semibold text-text-dark mb-4 text-center">
                   If You're Already Using AI Tools
                 </h3>
-                <ol className="space-y-3 text-text-light">
-                  <li><strong>1. Audit your current approach</strong>: Which of these patterns are you already using informally?</li>
-                  <li><strong>2. Systematize what's working</strong>: Turn informal habits into explicit frameworks you can teach others.</li>
-                  <li><strong>3. Address the gaps</strong>: Which patterns would help with your current AI collaboration challenges?</li>
-                </ol>
+                <ul className="space-y-2 text-text-light">
+                  <li>• Audit current approaches against these five patterns</li>
+                  <li>• Systematize informal habits into explicit frameworks</li>
+                  <li>• Address gaps in verification and coordination</li>
+                  <li>• Test Excellence Flywheel approach with current projects</li>
+                </ul>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold text-text-dark mb-4">
-                  If You're Evaluating AI for Your Organization
+              <div className="bg-white p-8 rounded-card shadow-component">
+                <div className="w-12 h-12 bg-primary-teal rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">3</span>
+                </div>
+                <h3 className="text-xl font-semibold text-text-dark mb-4 text-center">
+                  If You're Leading AI Adoption
                 </h3>
-                <ol className="space-y-3 text-text-light">
-                  <li><strong>1. Start with Risk-Based Evaluation</strong>: Use the framework to assess potential AI implementations systematically.</li>
-                  <li><strong>2. Pilot with Excellence Flywheel</strong>: Test whether quality-first approaches actually accelerate results.</li>
-                  <li><strong>3. Build capability systematically</strong>: Focus on developing organizational competence in human-AI collaboration, not just tool adoption.</li>
-                </ol>
+                <ul className="space-y-2 text-text-light">
+                  <li>• Use Risk-Based Evaluation for systematic assessment</li>
+                  <li>• Pilot Excellence Flywheel to test quality-speed integration</li>
+                  <li>• Build organizational competence in human-AI collaboration</li>
+                  <li>• Invest in process design alongside tool deployment</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-surface p-8 rounded-card">
+              <h3 className="text-2xl font-semibold text-text-dark mb-6 text-center">
+                What We're Still Learning
+              </h3>
+              <p className="text-text-light mb-6 text-center max-w-4xl mx-auto">
+                This methodology emerges from building Piper Morgan, but the patterns appear to apply beyond product management and software development. We're continuing to test these approaches and document what works.
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-8 mb-8">
+                <div>
+                  <h4 className="font-semibold text-text-dark mb-3">Current areas of exploration</h4>
+                  <ul className="space-y-1 text-text-light">
+                    <li>• How patterns apply across different roles and industries</li>
+                    <li>• Most effective verification approaches for different AI output types</li>
+                    <li>• Scaling multi-agent coordination across larger teams</li>
+                    <li>• Integration with existing product development workflows</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-text-dark mb-3">Get involved in methodology development</h4>
+                  <ul className="space-y-1 text-text-light">
+                    <li>• Follow the <a href="https://medium.com/building-piper-morgan" className="text-primary-teal hover:underline">Building Piper Morgan series</a></li>
+                    <li>• Test patterns in your own work and share results</li>
+                    <li>• Join 635+ PM professionals learning systematic AI collaboration</li>
+                    <li>• Contribute perspectives from your professional context</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <a
+                  href="/get-involved"
+                  className="inline-block bg-primary-teal text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-600 transition-colors"
+                >
+                  Follow the Methodology Development
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What We're Still Learning */}
-      <section className="py-16">
+      {/* Technical Documentation Link */}
+      <section className="bg-surface py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-text-dark mb-8">
-              What We're Still Learning
-            </h2>
-            <div className="prose max-w-none text-lg text-text-light space-y-6">
-              <p>
-                This methodology emerges from building Piper Morgan, but the patterns appear to apply beyond product management and software development. We're continuing to test these approaches and document what works.
+            <div className="bg-primary-teal/10 p-8 rounded-card text-center">
+              <h3 className="text-2xl font-semibold text-text-dark mb-4">
+                Technical Implementation Details
+              </h3>
+              <p className="text-text-light mb-6 max-w-2xl mx-auto">
+                For developers and technical leaders who want to understand the architectural decisions, code patterns, and systematic development methodology behind these frameworks.
               </p>
-
-              <div className="bg-gradient-to-r from-primary-teal/10 to-primary-orange/10 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-text-dark mb-4">Current areas of exploration</h3>
-                <ul className="space-y-2 text-text-light">
-                  <li>• How these patterns apply to different roles and industries</li>
-                  <li>• Which verification approaches are most effective for different types of AI output</li>
-                  <li>• How to scale multi-agent coordination across larger teams</li>
-                  <li>• Integration with existing product development and design workflows</li>
-                </ul>
-              </div>
-
-              <div className="bg-primary-teal/10 p-6 rounded-lg mt-8">
-                <div className="text-center">
-                  <p className="text-text-dark font-medium mb-4">
-                    <strong>Technical Implementation Details</strong>
-                  </p>
-                  <p className="text-text-light mb-4">
-                    For developers and technical leaders who want to understand the architectural decisions, code patterns, and systematic development methodology behind these frameworks.
-                  </p>
-                  <a
-                    href="https://pmorgan.tech"
-                    className="inline-block bg-primary-teal text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-600 transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Technical Documentation →
-                  </a>
-                </div>
-              </div>
-
-              <div className="text-center pt-8">
-                <p className="mb-6">
-                  <strong>Want to follow along?</strong> The <a href="https://medium.com/building-piper-morgan" className="text-primary-teal hover:underline" target="_blank" rel="noopener noreferrer">Building Piper Morgan blog series</a> documents our ongoing discoveries, including the failures and course corrections.
-                </p>
-                <p>
-                  <strong>Interested in testing these patterns?</strong> <a href="/get-involved" className="text-primary-teal hover:underline">Get involved</a> - we're always looking for perspectives from other practitioners.
-                </p>
-              </div>
+              <a
+                href="https://pmorgan.tech"
+                className="inline-block bg-primary-teal text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-600 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Technical Documentation →
+              </a>
             </div>
           </div>
         </div>

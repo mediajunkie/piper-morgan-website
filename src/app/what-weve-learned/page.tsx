@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import { generateSEOMetadata } from '@/lib/domain-utils';
+import { Hero, NewsletterSignup } from '@/components';
 
 const seoData = generateSEOMetadata(
-  'What We\'ve Learned - Building AI Systems That Actually Work',
-  'Insights from three months of intensive AI development that you won\'t find in the hype cycle',
+  'What We\'ve Learned - AI Development Insights by Christian Crumlish',
+  'Discoveries from three months of systematic AI development that counter conventional wisdom. Practical insights for PM and UX leaders from building-in-public methodology development.',
   { canonical: 'https://pipermorgan.ai/what-weve-learned' }
 );
 
@@ -22,15 +23,77 @@ export default function WhatWeveLearnedPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-teal/10 to-primary-orange/10 py-16">
+      <Hero
+        headline="What We've Learned:"
+        highlightText="Building AI Systems That Actually Work"
+        subheadline="Insights from three months of intensive AI development by Christian Crumlish - discoveries that counter conventional AI wisdom and demonstrate systematic human-AI collaboration."
+        primaryCTA={{
+          text: "See How Our Methodology Works",
+          href: "/how-it-works"
+        }}
+        secondaryCTA={{
+          text: "Follow the Journey",
+          href: "/get-involved"
+        }}
+        background="gradient"
+        align="center"
+      />
+
+      {/* Meet Christian - Credibility Context */}
+      <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-text-dark mb-6">
-              What We've Learned
-            </h1>
-            <p className="text-xl text-text-light mb-8">
-              Insights from three months of intensive AI development that you won't find in the hype cycle
-            </p>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-r from-primary-teal/5 to-primary-orange/5 p-8 rounded-card mb-16">
+              <h2 className="text-3xl font-bold text-text-dark mb-6">
+                Meet Christian: The Context Behind These Discoveries
+              </h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <p className="text-lg text-text-light mb-6">
+                    Christian Crumlish is a product management professional with deep expertise in civic technology, systematic methodology development, and AI integration. Through building Piper Morgan, he's demonstrating how AI can systematically enhance rather than replace human PM expertise.
+                  </p>
+                  <ul className="space-y-2 text-text-light">
+                    <li>• <strong className="text-text-dark">Senior Product Manager</strong> with civic technology focus at Kind Systems</li>
+                    <li>• <strong className="text-text-dark">AI Integration Pioneer</strong> developing practical human-AI collaboration patterns</li>
+                    <li>• <strong className="text-text-dark">Systematic Excellence Advocate</strong> proving rigorous methodology accelerates development</li>
+                    <li>• <strong className="text-text-dark">Building-in-Public Practitioner</strong> sharing every decision and lesson learned</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-text-dark mb-3">Vision for PM × AI</h4>
+                  <p className="text-text-light mb-4">
+                    "AI doesn't replace PM judgment—it amplifies it systematically. Through transparent methodology development and ethical-first architecture, we're proving that human-AI collaboration can achieve capabilities neither could reach alone."
+                  </p>
+                  <p className="text-text-light">
+                    <strong>Current Mission:</strong> Demonstrate that AI-augmented product management, done with systematic excellence, creates compound value that transforms strategic work.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="bg-white/50 p-6 rounded-lg mt-8">
+                <h4 className="font-semibold text-text-dark mb-3">Why This Context Matters</h4>
+                <p className="text-text-light">
+                  The insights shared below come from hands-on experience building an AI system systematically while maintaining PM judgment and strategic thinking. This isn't theoretical AI advice—it's battle-tested patterns from actual development work.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof Integration */}
+      <section className="pb-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="bg-white p-6 rounded-card shadow-sm max-w-md mx-auto">
+              <p className="text-text-dark font-semibold mb-2">
+                Building-in-Public Community
+              </p>
+              <p className="text-2xl font-bold text-primary-teal">635+</p>
+              <p className="text-text-light">
+                PM professionals following this systematic methodology development
+              </p>
+            </div>
           </div>
         </div>
       </section>
