@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { generateSEOMetadata } from '@/lib/domain-utils';
-import { MethodologyDiagram } from '@/components';
 
 const seoData = generateSEOMetadata(
   'How It Works - Systematic AI Collaboration Methodology',
@@ -91,7 +90,12 @@ export default function HowItWorksPage() {
                   </div>
 
                   <div className="flex flex-col items-center justify-center">
-                    <MethodologyDiagram pattern="verification" className="mb-4" />
+                    <div className="w-48 h-32 bg-gradient-to-r from-primary-teal/10 to-primary-teal/20 rounded-lg flex items-center justify-center mb-4">
+                      <div className="text-center">
+                        <div className="text-2xl mb-2">🔍</div>
+                        <p className="text-xs font-medium text-primary-teal">Verification Flow</p>
+                      </div>
+                    </div>
                     <p className="text-sm text-text-light text-center">
                       Always verify AI suggestions before acting
                     </p>
@@ -144,7 +148,12 @@ export default function HowItWorksPage() {
                   </div>
 
                   <div className="flex flex-col items-center justify-center">
-                    <MethodologyDiagram pattern="multi-agent" className="mb-4" />
+                    <div className="w-48 h-32 bg-gradient-to-r from-primary-orange/10 to-primary-orange/20 rounded-lg flex items-center justify-center mb-4">
+                      <div className="text-center">
+                        <div className="text-2xl mb-2">🤝</div>
+                        <p className="text-xs font-medium text-primary-orange">Agent Coordination</p>
+                      </div>
+                    </div>
                     <p className="text-sm text-text-light text-center">
                       Coordinate specialized AI tools through clear handoffs
                     </p>
@@ -199,7 +208,12 @@ export default function HowItWorksPage() {
                   </div>
 
                   <div className="flex flex-col items-center justify-center">
-                    <MethodologyDiagram pattern="excellence" className="mb-4" />
+                    <div className="w-48 h-32 bg-gradient-to-r from-primary-teal/10 to-primary-teal/20 rounded-lg flex items-center justify-center mb-4">
+                      <div className="text-center">
+                        <div className="text-2xl mb-2">⚡</div>
+                        <p className="text-xs font-medium text-primary-teal">Excellence Flywheel</p>
+                      </div>
+                    </div>
                     <p className="text-sm text-text-light text-center">
                       Quality systems create a reinforcing cycle of speed and reliability
                     </p>
@@ -254,7 +268,12 @@ export default function HowItWorksPage() {
                   </div>
 
                   <div className="flex flex-col items-center justify-center">
-                    <MethodologyDiagram pattern="context" className="mb-4" />
+                    <div className="w-48 h-32 bg-gradient-to-r from-primary-orange/10 to-primary-orange/20 rounded-lg flex items-center justify-center mb-4">
+                      <div className="text-center">
+                        <div className="text-2xl mb-2">🎯</div>
+                        <p className="text-xs font-medium text-primary-orange">Context Adaptation</p>
+                      </div>
+                    </div>
                     <p className="text-sm text-text-light text-center">
                       Adapt AI approach based on stakes, timeline, and audience
                     </p>
@@ -309,7 +328,12 @@ export default function HowItWorksPage() {
                   </div>
 
                   <div className="flex flex-col items-center justify-center">
-                    <MethodologyDiagram pattern="risk" className="mb-4" />
+                    <div className="w-48 h-32 bg-gradient-to-r from-primary-teal/10 to-primary-teal/20 rounded-lg flex items-center justify-center mb-4">
+                      <div className="text-center">
+                        <div className="text-2xl mb-2">⚖️</div>
+                        <p className="text-xs font-medium text-primary-teal">Risk Evaluation</p>
+                      </div>
+                    </div>
                     <p className="text-sm text-text-light text-center">
                       Evaluate AI implementations across technical, business, and human dimensions
                     </p>
