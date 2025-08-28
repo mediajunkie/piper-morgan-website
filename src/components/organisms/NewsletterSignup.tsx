@@ -69,9 +69,19 @@ export function NewsletterSignup({
     setErrorMessage('');
 
     try {
-      // In a real implementation, this would integrate with ConvertKit API
-      // For now, we'll simulate the API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to subscribe');
+      }
 
       setStatus('success');
       setEmail('');
@@ -79,9 +89,13 @@ export function NewsletterSignup({
       if (onSignup) {
         onSignup(email);
       }
-    } catch {
+    } catch (error) {
       setStatus('error');
-      setErrorMessage('Something went wrong. Please try again.');
+      setErrorMessage(
+        error instanceof Error 
+          ? error.message 
+          : 'Something went wrong. Please try again.'
+      );
     }
   };
 

@@ -1,0 +1,66 @@
+name: Update Medium Blog Posts
+
+on:
+  schedule:
+    # Runs daily at 11:30 AM Pacific (7:30 PM UTC)
+    - cron: '30 19 * * *'
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  update-posts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch Medium posts
+        run: node scripts/fetch-blog-posts.js
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet src/data/medium-posts.json; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "No new blog posts found"
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "New blog posts detected"
+          fi
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add src/data/medium-posts.json
+          git commit -m "🤖 Auto-update Medium blog posts
+
+          Daily automated update of blog posts from Medium RSS feed.
+          
+          🤖 Generated with [Claude Code](https://claude.ai/code)
+          
+          Co-Authored-By: Claude <noreply@anthropic.com>"
+          git push
+
+      - name: Trigger site rebuild
+        if: steps.changes.outputs.changes == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.repos.createDispatchEvent({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              event_type: 'blog-posts-updated'
+            })

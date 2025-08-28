@@ -1,5 +1,83 @@
 [
   {
+    "title": "The Puzzle Pieces Finally Click: How to Tell If You’re Building Tools or Just Collecting Code",
+    "excerpt": "“We need to connect these bits”August 20It was a Wednesday morning, and I was watching my agents work in parallel — Code doing systematic testing infrastructure, Cursor researching persistent conte...",
+    "url": "https://medium.com/building-piper-morgan/the-puzzle-pieces-finally-click-how-to-tell-if-youre-building-tools-or-just-collecting-code-fb20a09a9d8f?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 27, 2025",
+    "publishedAtISO": "Wed, 27 Aug 2025 12:39:47 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/fb20a09a9d8f"
+  },
+  {
+    "title": "From Archaeological Mystery to Infrastructure Triumph",
+    "excerpt": "“They really knew how to build”August 19Tuesday started with a weeks-old mystery: Why does our TLDR system hang for two minutes before timing out? And ended with the discovery that we’d built a sop...",
+    "url": "https://medium.com/building-piper-morgan/from-archaeological-mystery-to-infrastructure-triumph-1ede9b664c68?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 26, 2025",
+    "publishedAtISO": "Tue, 26 Aug 2025 14:19:54 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/1ede9b664c68"
+  },
+  {
+    "title": "Systematic Persistence Through Operational Chaos",
+    "excerpt": "“Don’t look back”August 18Monday morning started with a beautiful four-item execution plan and the naive assumption that Sunday’s systematic documentation would smoothly flow into operational reali...",
+    "url": "https://medium.com/building-piper-morgan/systematic-persistence-through-operational-chaos-f067fd8f4d7d?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 26, 2025",
+    "publishedAtISO": "Tue, 26 Aug 2025 13:47:14 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/f067fd8f4d7d"
+  },
+  {
+    "title": "The Satisfying Discipline of Turning Insights into Architecture",
+    "excerpt": "“Just like we planned it”August 17Sunday morning, Peet’s coffee in hand, faced with a delicious problem: too many strategic insights and not enough formal architecture to hold them.Saturday’s conve...",
+    "url": "https://medium.com/building-piper-morgan/the-satisfying-discipline-of-turning-insights-into-architecture-cbe20baa23c3?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 25, 2025",
+    "publishedAtISO": "Mon, 25 Aug 2025 14:56:37 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/cbe20baa23c3"
+  },
+  {
+    "title": "The Convergence Day: How to Tell if You’re Having Breakthroughs or Just Drinking Your Own Kool-Aid",
+    "excerpt": "“You’re friend’s smart!”August 16After a week of frantic development I was ready for Saturday morning, coffee in hand, thinking I’d do some light planning and reflection work. You know, the kind of...",
+    "url": "https://medium.com/building-piper-morgan/the-convergence-day-how-to-tell-if-youre-having-breakthroughs-or-just-drinking-your-own-kool-aid-49e65eb92e82?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 25, 2025",
+    "publishedAtISO": "Mon, 25 Aug 2025 14:42:47 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/49e65eb92e82"
+  },
+  {
+    "title": "Why I Created an AI Chief of Staff",
+    "excerpt": "“You’re hired!”A flashback to early July, about five weeks into this project, when I realized I needed to establish another dedicated role on my team of LLMs.July 3Today I spun up a new type of AI ...",
+    "url": "https://medium.com/building-piper-morgan/why-i-created-an-ai-chief-of-staff-dcbd5e7c988e?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 24, 2025",
+    "publishedAtISO": "Sun, 24 Aug 2025 12:07:11 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/dcbd5e7c988e"
+  },
+  {
     "title": "When Overconfidence Meets rm -rf",
     "excerpt": "“Oops!”It’s the weekend and time for another flashback post more about process or insight than the daily building narrative. At this point, we are exactly one month into the project:June 27“I’ve be...",
     "url": "https://medium.com/building-piper-morgan/when-overconfidence-meets-rm-rf-2f355444ec38?source=rss----982e21163f8b---4",
@@ -50,83 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/97c356c12d55"
-  },
-  {
-    "title": "The Day Our Methodology Saved Us from Our Own Hype",
-    "excerpt": "“Don’t believe the hype!”August 12Tuesday evening I was reviewing what the Lead Developer called “a transformational day” and the Chief Architect described as “strategic breakthrough,” when I notic...",
-    "url": "https://medium.com/building-piper-morgan/the-day-our-methodology-saved-us-from-our-own-hype-35a91d794dc3?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 19, 2025",
-    "publishedAtISO": "Tue, 19 Aug 2025 13:11:08 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/35a91d794dc3"
-  },
-  {
-    "title": "The 28,000-line Foundation that Made 4 Hours Feel Like Magic",
-    "excerpt": "“Just like we designed it”August 11The morning started with a simple experiment: run five canonical queries as a daily standup with Piper. “What’s your name and role?” “What day is it?” “What shoul...",
-    "url": "https://medium.com/building-piper-morgan/the-28-000-line-foundation-that-made-4-hours-feel-like-magic-82eafb4548f7?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 19, 2025",
-    "publishedAtISO": "Tue, 19 Aug 2025 13:05:45 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/82eafb4548f7"
-  },
-  {
-    "title": "The Archaeology Expedition That Found Automation Gold",
-    "excerpt": "“Wait till Indy hear’s about this!”August 10So there I was at 8:34 AM on “Security Sunday,” doing what any reasonable person does when deploying AI agents for systematic work — having a meta-conver...",
-    "url": "https://medium.com/building-piper-morgan/the-archaeology-expedition-that-found-automation-gold-b10058d924af?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 18, 2025",
-    "publishedAtISO": "Mon, 18 Aug 2025 14:37:32 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/b10058d924af"
-  },
-  {
-    "title": "What We Found When We Actually Looked (and What We Had Built While We Weren’t Looking)",
-    "excerpt": "“When did we build that?August 9That Saturday started with a simple question: “What’s the real status of PM-005?”I’d written about building the feedback system ages ago, but you know how it is. Sys...",
-    "url": "https://medium.com/building-piper-morgan/what-we-found-when-we-actually-looked-and-what-we-had-built-while-we-werent-looking-7c43e28211f3?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 18, 2025",
-    "publishedAtISO": "Mon, 18 Aug 2025 14:27:56 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/7c43e28211f3"
-  },
-  {
-    "title": "The Documentation Debt That Almost Buried Our Breakthrough (And the Systematic Approach That Saved…",
-    "excerpt": "The Documentation Debt That Almost Buried Our Breakthrough (And the Systematic Approach That Saved It)“I found the pony!”August 8Picture this: you’ve just built something extraordinary. Your conver...",
-    "url": "https://medium.com/building-piper-morgan/the-documentation-debt-that-almost-buried-our-breakthrough-and-the-systematic-approach-that-saved-e22e491dab71?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 15, 2025",
-    "publishedAtISO": "Fri, 15 Aug 2025 13:28:03 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/e22e491dab71"
-  },
-  {
-    "title": "When 44 Minutes of Foundation Work Enables 9 Minutes of Magic",
-    "excerpt": "“All that preparation really paid off”August 7Here’s a story about choosing systematic repair over feature velocity — and discovering why foundation quality isn’t overhead, it’s velocity multiplica...",
-    "url": "https://medium.com/building-piper-morgan/when-44-minutes-of-foundation-work-enables-9-minutes-of-magic-f18755220580?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 15, 2025",
-    "publishedAtISO": "Fri, 15 Aug 2025 12:57:42 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/f18755220580"
   }
 ]
