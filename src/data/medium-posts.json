@@ -1,5 +1,18 @@
 [
   {
+    "title": "The Enhanced Prompting Breakthrough: When Better Instructions Beat Smarter Models",
+    "excerpt": "“You’ve got your marching orders”August 21Thursday started with a crisis that turned into a revelation.My Code agent was attempting to create a new database without checking if one already existed....",
+    "url": "https://medium.com/building-piper-morgan/the-enhanced-prompting-breakthrough-when-better-instructions-beat-smarter-models-e37d6a2b9d06?source=rss----982e21163f8b---4",
+    "publishedAt": "Aug 28, 2025",
+    "publishedAtISO": "Thu, 28 Aug 2025 13:36:53 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/e37d6a2b9d06"
+  },
+  {
     "title": "The Puzzle Pieces Finally Click: How to Tell If You’re Building Tools or Just Collecting Code",
     "excerpt": "“We need to connect these bits”August 20It was a Wednesday morning, and I was watching my agents work in parallel — Code doing systematic testing infrastructure, Cursor researching persistent conte...",
     "url": "https://medium.com/building-piper-morgan/the-puzzle-pieces-finally-click-how-to-tell-if-youre-building-tools-or-just-collecting-code-fb20a09a9d8f?source=rss----982e21163f8b---4",
@@ -115,18 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/60d2a0d7acbd"
-  },
-  {
-    "title": "The Uncomfortable Victory: When Completion Beats Innovation",
-    "excerpt": "“I’ve got a great idea for after we finish this one!”August 13Yesterday I wrote about how our methodology saved us from overpromising on performance metrics. Today I discovered we might have been c...",
-    "url": "https://medium.com/building-piper-morgan/the-uncomfortable-victory-when-completing-beats-innovating-97c356c12d55?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 20, 2025",
-    "publishedAtISO": "Wed, 20 Aug 2025 12:17:57 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/97c356c12d55"
   }
 ]
