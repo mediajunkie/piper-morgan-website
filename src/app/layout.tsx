@@ -92,6 +92,7 @@ export default function RootLayout({
             *{box-sizing:border-box}
             html{scroll-behavior:smooth;font-size:16px;margin:0;padding:0;border:none;outline:none}
             body{background:#FFFFFF;color:#1F2937;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell',sans-serif;line-height:1.6;margin:0;padding:0;border:none;outline:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+            nav{border:none !important;outline:none !important}
             .container{max-width:1200px;margin:0 auto;padding:0 1rem}
             .mx-auto{margin-left:auto;margin-right:auto}
             .max-w-4xl{max-width:56rem}
