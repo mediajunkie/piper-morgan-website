@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { generateSEOMetadata } from "@/lib/domain-utils";
-import { Hero, NewsletterSignup, CTAButton } from "@/components";
+import { Hero, NewsletterSignup, NewsletterErrorBoundary, CTAButton } from "@/components";
 
 const seoData = generateSEOMetadata(
   "Get Involved - Join 576+ PM Professionals Learning Systematic AI Collaboration",
@@ -57,21 +57,27 @@ export default function GetInvolvedPage() {
               </p>
             </div>
 
-            <NewsletterSignup
-              title="Weekly Methodology Insights"
-              description="Watch as we transform AI-assisted product management from experiment to systematic practice through transparent development and rigorous methodology."
-              benefits={[
-                "Weekly methodology insights and breakthrough discoveries",
-                "Behind-the-scenes development updates and decision rationale",
-                "Early access to new tools and systematic frameworks",
-                "Practical templates and patterns you can immediately apply",
-                "Direct insight into human-AI collaboration patterns that actually work",
-                "Exclusive case studies and implementation learnings",
-              ]}
-              background="surface"
-              compact={false}
-              privacyNotice="No spam, unsubscribe anytime. Join the growing community of PM professionals learning systematic excellence."
-            />
+            <NewsletterErrorBoundary>
+              <NewsletterSignup
+                title="Weekly Methodology Insights"
+                description="Watch as we transform AI-assisted product management from experiment to systematic practice through transparent development and rigorous methodology."
+                benefits={[
+                  "Weekly methodology insights and breakthrough discoveries",
+                  "Behind-the-scenes development updates and decision rationale",
+                  "Early access to new tools and systematic frameworks",
+                  "Practical templates and patterns you can immediately apply",
+                  "Direct insight into human-AI collaboration patterns that actually work",
+                  "Exclusive case studies and implementation learnings",
+                ]}
+                background="surface"
+                compact={false}
+                source="get-involved"
+                metadata={{
+                  page_context: "primary-engagement-cta"
+                }}
+                privacyNotice="No spam, unsubscribe anytime. Join the growing community of PM professionals learning systematic excellence."
+              />
+            </NewsletterErrorBoundary>
 
             <div className="mt-8">
               <div className="bg-white p-6 rounded-card shadow-sm max-w-2xl mx-auto">

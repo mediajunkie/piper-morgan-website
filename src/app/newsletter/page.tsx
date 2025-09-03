@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { generateSEOMetadata } from '@/lib/domain-utils';
-import { Hero, NewsletterSignup, CTAButton } from '@/components';
+import { Hero, NewsletterSignup, NewsletterErrorBoundary, CTAButton } from '@/components';
 
 const seoData = generateSEOMetadata(
   'Join the Systematic Excellence Community - Newsletter',
@@ -42,21 +42,27 @@ export default function NewsletterPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <NewsletterSignup
-              title="Join 576+ PM professionals learning systematic excellence"
-              description="Get weekly insights into our methodology development, breakthrough discoveries, and practical frameworks you can apply to your own PM work. Watch as we transform AI-assisted product management from experiment to systematic practice."
-              benefits={[
-                "Weekly methodology insights and breakthrough discoveries",
-                "Behind-the-scenes development updates and decision rationale",
-                "Early access to new tools and systematic frameworks",
-                "Practical templates and patterns you can immediately apply",
-                "Direct insight into human-AI collaboration patterns that actually work",
-                "Exclusive case studies and implementation learnings"
-              ]}
-              background="surface"
-              compact={false}
-              privacyNotice="No spam, unsubscribe anytime. Join the growing community of PM professionals learning systematic excellence."
-            />
+            <NewsletterErrorBoundary>
+              <NewsletterSignup
+                title="Join 576+ PM professionals learning systematic excellence"
+                description="Get weekly insights into our methodology development, breakthrough discoveries, and practical frameworks you can apply to your own PM work. Watch as we transform AI-assisted product management from experiment to systematic practice."
+                benefits={[
+                  "Weekly methodology insights and breakthrough discoveries",
+                  "Behind-the-scenes development updates and decision rationale",
+                  "Early access to new tools and systematic frameworks",
+                  "Practical templates and patterns you can immediately apply",
+                  "Direct insight into human-AI collaboration patterns that actually work",
+                  "Exclusive case studies and implementation learnings"
+                ]}
+                background="surface"
+                compact={false}
+                source="newsletter"
+                metadata={{
+                  page_context: "direct-newsletter-interest"
+                }}
+                privacyNotice="No spam, unsubscribe anytime. Join the growing community of PM professionals learning systematic excellence."
+              />
+            </NewsletterErrorBoundary>
           </div>
         </div>
       </section>

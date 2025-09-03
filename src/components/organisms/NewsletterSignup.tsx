@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import Link from 'next/link';
 import { CTAButton } from '@/components/atoms/CTAButton';
 
 export interface NewsletterSignupProps {
@@ -24,6 +25,14 @@ export interface NewsletterSignupProps {
   background?: 'default' | 'surface' | 'dark';
   /** Additional CSS classes */
   className?: string;
+  /** Source page identifier for tracking */
+  source?: string;
+  /** Additional metadata for segmentation */
+  metadata?: {
+    referrer?: string;
+    utm_source?: string;
+    page_context?: string;
+  };
   /** Callback for successful signup */
   onSignup?: (email: string) => void;
 }
@@ -45,16 +54,28 @@ export function NewsletterSignup({
   ],
   placeholder = "Enter your email address",
   submitText = "Subscribe",
-  successMessage = "Thank you for subscribing! Check your email to confirm.",
+  successMessage = "Thank you for subscribing! ConvertKit will send you a confirmation email shortly. Please check your inbox (and spam folder) and click the confirmation link to complete your subscription.",
   privacyNotice = "No spam, unsubscribe at any time.",
   compact = false,
   background = 'surface',
   className = '',
+  source = 'unknown',
+  metadata = {},
   onSignup,
 }: NewsletterSignupProps) {
   const [email, setEmail] = useState('');
+  const [gdprConsent, setGdprConsent] = useState(false);
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
+  const successRef = useRef<HTMLDivElement>(null);
+
+  // Scroll to success message when status changes to success
+  useEffect(() => {
+    if (status === 'success' && successRef.current) {
+      successRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      successRef.current.focus();
+    }
+  }, [status]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -65,26 +86,53 @@ export function NewsletterSignup({
       return;
     }
 
+    if (!gdprConsent) {
+      setStatus('error');
+      setErrorMessage('Please accept the privacy policy to subscribe.');
+      return;
+    }
+
     setStatus('loading');
     setErrorMessage('');
 
     try {
-      const response = await fetch('/api/newsletter', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email }),
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || 'Failed to subscribe');
+      // Submit directly to ConvertKit (works with static export)
+      const CONVERTKIT_FORM_ID = process.env.NEXT_PUBLIC_CONVERTKIT_FORM_ID;
+      
+      if (!CONVERTKIT_FORM_ID) {
+        throw new Error('Newsletter signup is not configured. Please try again later.');
       }
 
+      // Prepare form data for ConvertKit
+      const formData = new FormData();
+      formData.append('email_address', email);
+      formData.append('first_name', ''); // Optional: could add name field later
+      
+      // Add source tracking as custom fields (if supported by your ConvertKit form)
+      formData.append('fields[signup_source]', source);
+      formData.append('fields[page_context]', metadata?.page_context || '');
+      formData.append('fields[gdpr_consent]', 'true');
+      formData.append('fields[consent_timestamp]', new Date().toISOString());
+      formData.append('fields[referrer]', typeof document !== 'undefined' ? document.referrer || 'direct' : 'server');
+
+      const response = await fetch(`https://app.convertkit.com/forms/${CONVERTKIT_FORM_ID}/subscriptions`, {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors' // Required for direct ConvertKit submission
+      });
+
+      // Note: no-cors mode means we can't check response status
+      // ConvertKit will handle the confirmation email flow
       setStatus('success');
       setEmail('');
+
+      // Track successful conversion
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        (window as any).gtag('event', 'newsletter_signup', {
+          source: source,
+          method: 'direct_convertkit_form'
+        });
+      }
 
       if (onSignup) {
         onSignup(email);
@@ -111,18 +159,27 @@ export function NewsletterSignup({
 
   if (status === 'success') {
     return (
-      <div className={containerClasses}>
-        <div className="">
+      <div 
+        ref={successRef}
+        className={containerClasses}
+        tabIndex={-1}
+        role="alert"
+        aria-live="polite"
+      >
+        <div className="text-center">
           <div className="w-16 h-16 bg-primary-teal rounded-full flex items-center justify-center mx-auto mb-4">
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
           </div>
           <h3 className={`text-2xl font-semibold ${textColor} mb-2`}>
-            Welcome aboard!
+            Welcome aboard! 
           </h3>
-          <p className={subtextColor}>
+          <p className={`${subtextColor} mb-4`}>
             {successMessage}
+          </p>
+          <p className={`text-sm ${subtextColor}`}>
+            📧 <strong>Important:</strong> Check your email inbox (and spam folder) for the confirmation link.
           </p>
         </div>
       </div>
@@ -179,11 +236,37 @@ export function NewsletterSignup({
             </CTAButton>
           </div>
 
-          {status === 'error' && errorMessage && (
-            <p className="text-red-500 text-sm">
-              {errorMessage}
-            </p>
-          )}
+          <div className="space-y-3">
+            <label className="flex items-start gap-2 text-sm cursor-pointer">
+              <input 
+                type="checkbox" 
+                checked={gdprConsent}
+                onChange={(e) => setGdprConsent(e.target.checked)}
+                className="mt-0.5 h-4 w-4 text-primary-teal bg-white border-gray-300 rounded focus:ring-primary-teal focus:ring-2"
+                disabled={status === 'loading'}
+                required
+                aria-describedby="gdpr-consent-text"
+              />
+              <span id="gdpr-consent-text" className={subtextColor}>
+                I agree to receive marketing communications and acknowledge that my data will be processed according to the{' '}
+                <Link 
+                  href="/privacy" 
+                  className="text-primary-teal hover:underline focus:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Privacy Policy
+                </Link>
+                . I understand I can unsubscribe at any time.
+              </span>
+            </label>
+
+            {status === 'error' && errorMessage && (
+              <p className="text-red-500 text-sm" role="alert">
+                {errorMessage}
+              </p>
+            )}
+          </div>
         </form>
 
         <p className={`text-sm ${subtextColor} mt-4`}>

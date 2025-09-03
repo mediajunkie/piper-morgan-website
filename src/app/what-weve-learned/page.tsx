@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { generateSEOMetadata } from "@/lib/domain-utils";
-import { Hero, NewsletterSignup } from "@/components";
+import { Hero } from "@/components";
 
 const seoData = generateSEOMetadata(
   "What We've Learned - AI Development Insights by Christian Crumlish",

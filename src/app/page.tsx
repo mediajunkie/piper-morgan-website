@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { generateSEOMetadata } from "@/lib/domain-utils";
-import { Hero, NewsletterSignup } from "@/components";
+import { Hero } from "@/components";
 
 const seoData = generateSEOMetadata(
   "Piper Morgan - Intelligent Product Management Assistant",

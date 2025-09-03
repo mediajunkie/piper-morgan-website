@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { generateSEOMetadata } from '@/lib/domain-utils';
-import { Hero, CTAButton, NewsletterSignup } from '@/components';
+import { Hero, CTAButton, NewsletterSignup, NewsletterErrorBoundary } from '@/components';
 
 const seoData = generateSEOMetadata(
   'About Piper Morgan',
@@ -188,20 +188,26 @@ export default function AboutPage() {
       <section className="bg-text-dark py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
-            <NewsletterSignup
-              title="Join the systematic excellence journey"
-              description="Get behind-the-scenes insights into our methodology development, breakthrough discoveries, and practical frameworks you can apply to your own PM work. Watch as we transform AI-assisted product management from experiment to systematic practice."
-              benefits={[
-                "Weekly methodology insights and breakthrough discoveries",
-                "Behind-the-scenes development updates and decision rationale",
-                "Early access to new tools and systematic frameworks",
-                "Practical templates and patterns you can immediately apply",
-                "Direct insight into human-AI collaboration patterns that actually work"
-              ]}
-              background="dark"
-              compact={false}
-              privacyNotice="No spam, unsubscribe anytime. Join 576+ PM professionals learning systematic excellence."
-            />
+            <NewsletterErrorBoundary>
+              <NewsletterSignup
+                title="Join the systematic excellence journey"
+                description="Get behind-the-scenes insights into our methodology development, breakthrough discoveries, and practical frameworks you can apply to your own PM work. Watch as we transform AI-assisted product management from experiment to systematic practice."
+                benefits={[
+                  "Weekly methodology insights and breakthrough discoveries",
+                  "Behind-the-scenes development updates and decision rationale",
+                  "Early access to new tools and systematic frameworks",
+                  "Practical templates and patterns you can immediately apply",
+                  "Direct insight into human-AI collaboration patterns that actually work"
+                ]}
+                background="dark"
+                compact={false}
+                source="about"
+                metadata={{
+                  page_context: "about-page-engagement"
+                }}
+                privacyNotice="No spam, unsubscribe anytime. Join 576+ PM professionals learning systematic excellence."
+              />
+            </NewsletterErrorBoundary>
           </div>
         </div>
       </section>
