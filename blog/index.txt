@@ -1,14 +1,15 @@
 1:"$Sreact.fragment"
-3:I[5506,["261","static/chunks/261-d96cbc4bcae2a93c.js","642","static/chunks/642-034ab8e670d838db.js","831","static/chunks/app/blog/page-08bd9fffa7f207b6.js"],"default"]
+3:I[5506,["261","static/chunks/261-d96cbc4bcae2a93c.js","642","static/chunks/642-e15c1cd77afc44b9.js","831","static/chunks/app/blog/page-08bd9fffa7f207b6.js"],"default"]
 4:I[7555,[],""]
 5:I[1295,[],""]
 f:I[8393,[],""]
-:HL["/_next/static/css/79753a52587b969a.css","style"]
-2:T89e,
+:HL["/_next/static/css/c105a224fcdc181f.css","style"]
+2:T8de,
             @font-face{font-family:'Inter';src:url('/fonts/inter-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
             *{box-sizing:border-box}
             html{scroll-behavior:smooth;font-size:16px;margin:0;padding:0;border:none;outline:none}
             body{background:#FFFFFF;color:#1F2937;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell',sans-serif;line-height:1.6;margin:0;padding:0;border:none;outline:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+            nav{border:none !important;outline:none !important}
             .container{max-width:1200px;margin:0 auto;padding:0 1rem}
             .mx-auto{margin-left:auto;margin-right:auto}
             .max-w-4xl{max-width:56rem}
@@ -40,10 +41,10 @@ f:I[8393,[],""]
             @media (min-width:1024px){
               .lg\:text-6xl{font-size:3.75rem;line-height:1}
             }
-          0:{"P":null,"b":"Vx9OVwvvvGpmiJSYSasBu","p":"","c":["","blog",""],"i":false,"f":[[["",{"children":["blog",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/79753a52587b969a.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"font-inter","children":[["$","head",null,{"children":[["$","link",null,{"rel":"dns-prefetch","href":"//pipermorgan.ai"}],["$","link",null,{"rel":"preconnect","href":"https://pipermorgan.ai"}],["$","link",null,{"rel":"preload","as":"image","href":"/assets/pm-logo.png"}],["$","link",null,{"rel":"preload","href":"/fonts/inter-latin.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preload","href":"/fonts/HossRound-Regular.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],["$","body",null,{"className":"font-sans antialiased","children":[["$","a",null,{"href":"#main-content","className":"skip-to-content","children":"Skip to main content"}],["$","$L3",null,{}],["$","div",null,{"id":"main-content","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"className":"min-h-screen","children":["$","div",null,{"className":"container mx-auto max-w-4xl pt-16 md:pt-24 pb-8 md:pb-12 px-4 text-center","children":["$L6","$L7","$L8","$L9"]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],"$La","$Lb"]}]]}]]}],{"children":["blog","$Lc",{"children":["__PAGE__","$Ld",{},null,false]},null,false]},null,false],"$Le",false]],"m":"$undefined","G":["$f",[]],"s":false,"S":true}
-10:I[6874,["261","static/chunks/261-d96cbc4bcae2a93c.js","642","static/chunks/642-034ab8e670d838db.js","831","static/chunks/app/blog/page-08bd9fffa7f207b6.js"],""]
-12:I[9795,["261","static/chunks/261-d96cbc4bcae2a93c.js","177","static/chunks/app/layout-e2b03d7c9ab8c5f2.js"],"default"]
-13:I[4196,["261","static/chunks/261-d96cbc4bcae2a93c.js","642","static/chunks/642-034ab8e670d838db.js","831","static/chunks/app/blog/page-08bd9fffa7f207b6.js"],"default"]
+          0:{"P":null,"b":"DRKRRK3fWBE0zGDP-wKvQ","p":"","c":["","blog",""],"i":false,"f":[[["",{"children":["blog",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c105a224fcdc181f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"font-inter","children":[["$","head",null,{"children":[["$","link",null,{"rel":"dns-prefetch","href":"//pipermorgan.ai"}],["$","link",null,{"rel":"preconnect","href":"https://pipermorgan.ai"}],["$","link",null,{"rel":"preload","as":"image","href":"/assets/pm-logo.png"}],["$","link",null,{"rel":"preload","href":"/fonts/inter-latin.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preload","href":"/fonts/HossRound-Regular.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],["$","body",null,{"className":"font-sans antialiased","children":[["$","a",null,{"href":"#main-content","className":"skip-to-content","children":"Skip to main content"}],["$","$L3",null,{}],["$","div",null,{"id":"main-content","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"className":"min-h-screen","children":["$","div",null,{"className":"container mx-auto max-w-4xl pt-16 md:pt-24 pb-8 md:pb-12 px-4 text-center","children":["$L6","$L7","$L8","$L9"]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],"$La","$Lb"]}]]}]]}],{"children":["blog","$Lc",{"children":["__PAGE__","$Ld",{},null,false]},null,false]},null,false],"$Le",false]],"m":"$undefined","G":["$f",[]],"s":false,"S":true}
+10:I[6874,["261","static/chunks/261-d96cbc4bcae2a93c.js","642","static/chunks/642-e15c1cd77afc44b9.js","831","static/chunks/app/blog/page-08bd9fffa7f207b6.js"],""]
+12:I[9795,["261","static/chunks/261-d96cbc4bcae2a93c.js","177","static/chunks/app/layout-ee212c0b2e84666f.js"],"default"]
+13:I[4196,["261","static/chunks/261-d96cbc4bcae2a93c.js","642","static/chunks/642-e15c1cd77afc44b9.js","831","static/chunks/app/blog/page-08bd9fffa7f207b6.js"],"default"]
 14:I[9665,[],"OutletBoundary"]
 16:I[4911,[],"AsyncMetadataOutlet"]
 18:I[9665,[],"ViewportBoundary"]
