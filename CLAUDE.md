@@ -107,6 +107,39 @@ Components follow **Atomic Design** with full TypeScript definitions:
 - Image optimization disabled (`images: { unoptimized: true }`)
 - Trailing slashes enabled for better URL consistency
 - Build-time linting/type-checking skipped (handled separately)
+- Security headers configured for static export compatibility
+
+### Static Export Limitations & Design Decisions
+
+**❌ What Static Export Cannot Do:**
+- **No Server-Side Runtime**: No API routes, middleware, or ISR
+- **No Dynamic Caching**: No `revalidate` or stale-while-revalidate strategies
+- **No Rate Limiting**: Client-side only, relies on external service limits
+- **No Server-Side CORS**: CORS handled by external APIs or browser policies
+
+**✅ How We Handle These Constraints:**
+
+**External API Integration:**
+- **ConvertKit**: Direct form submission to external endpoint
+- **Medium RSS**: Build-time fetch with scheduled rebuilds (not runtime)
+- **Google Analytics**: Client-side tracking via gtag.js
+
+**Caching Strategy:**
+- **Build-time caching**: Medium posts fetched during CI/CD and cached in JSON
+- **Scheduled rebuilds**: Daily GitHub Actions runs for content freshness
+- **Client-side caching**: Browser caching via proper HTTP headers
+
+**Security Approach:**
+- **Content Security Policy**: Configured in `next.config.ts` headers
+- **No exposed secrets**: Only public environment variables in static export
+- **External service authentication**: Direct API integration (ConvertKit, GA4)
+
+**Performance Optimizations:**
+- **Static asset optimization**: Build-time optimization via Next.js
+- **External script loading**: Proper loading strategies for third-party scripts
+- **Image optimization disabled**: Relies on proper source image sizing
+
+This architecture prioritizes **simplicity, reliability, and zero server costs** while maintaining professional functionality through strategic external service integration.
 
 ## Deployment Process
 
