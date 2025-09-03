@@ -1,4 +1,5 @@
 import { CTAButton } from '@/components/atoms/CTAButton';
+import { trackBlogClick } from '@/lib/analytics';
 
 export interface BlogPostCardProps {
   /** Blog post title */
@@ -35,6 +36,10 @@ export function BlogPostCard({
   compact = false,
   className = '',
 }: BlogPostCardProps) {
+  
+  const handleBlogClick = () => {
+    trackBlogClick(title, href, 'blog_page');
+  };
   const cardClasses = [
     'bg-white rounded-card shadow-component hover:shadow-component-hover transition-all duration-200',
     'border border-gray-100 hover:border-primary-teal/20',
@@ -111,6 +116,7 @@ export function BlogPostCard({
             variant="outline"
             size="sm"
             fullWidth={compact}
+            onClick={handleBlogClick}
           >
             {external ? 'Read on Medium' : 'Read More'}
           </CTAButton>

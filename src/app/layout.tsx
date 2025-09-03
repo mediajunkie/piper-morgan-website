@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { getDefaultWebsiteContent } from '@/lib/domain-utils';
 
 const websiteContent = getDefaultWebsiteContent();
@@ -134,6 +135,7 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
+        <GoogleAnalytics />
       </body>
     </html>
   );

@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { CTAButton } from '@/components/atoms/CTAButton';
+import { trackNewsletterSignup } from '@/lib/analytics';
 
 export interface NewsletterSignupProps {
   /** Title for the signup section */
@@ -127,12 +128,7 @@ export function NewsletterSignup({
       setEmail('');
 
       // Track successful conversion
-      if (typeof window !== 'undefined' && (window as any).gtag) {
-        (window as any).gtag('event', 'newsletter_signup', {
-          source: source,
-          method: 'direct_convertkit_form'
-        });
-      }
+      trackNewsletterSignup(source, 'direct_convertkit_form');
 
       if (onSignup) {
         onSignup(email);
