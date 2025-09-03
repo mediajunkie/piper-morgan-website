@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pipermorgan.ai/sitemap.xml
+
+# Allow all search engines to crawl the site
+# No restrictions - we want maximum visibility
+
+# Common crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block access to private/admin areas (none exist but good practice)
+Disallow: /api/
+Disallow: /.well-known/
+
+# Allow access to assets
+Allow: /assets/
+Allow: /fonts/
+Allow: /_next/
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1
