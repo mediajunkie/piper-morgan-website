@@ -17,3 +17,7 @@ export type { NewsletterSignupProps } from './organisms/NewsletterSignup';
 // Layout Components
 export { default as Navigation } from './Navigation';
 export { default as Footer } from './Footer';
+
+// Error Boundaries
+export { default as NewsletterErrorBoundary } from './boundaries/NewsletterErrorBoundary';
+export { default as BlogErrorBoundary } from './boundaries/BlogErrorBoundary';

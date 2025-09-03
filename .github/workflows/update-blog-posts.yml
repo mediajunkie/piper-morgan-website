@@ -9,6 +9,8 @@ on:
 jobs:
   update-posts:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -63,4 +65,41 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               event_type: 'blog-posts-updated'
+            })
+
+      - name: Notify on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = 'Medium Blog Posts Update Failed';
+            const body = `
+            ## 🚨 Medium Blog Posts Update Failed
+            
+            **Workflow:** Update Medium Blog Posts  
+            **Run:** [#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})  
+            **Trigger:** ${{ github.event_name }}  
+            **Branch:** ${{ github.ref_name }}  
+            **Commit:** [\`${{ github.sha }}\`](${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }})  
+            
+            The scheduled blog post update has failed. This may be due to:
+            - Medium RSS feed unavailable
+            - Network connectivity issues  
+            - Repository permissions problems
+            - Script execution errors
+            
+            Please check the [workflow logs](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details.
+            
+            **Next Steps:**
+            1. Check Medium RSS feed: https://medium.com/feed/building-piper-morgan
+            2. Review workflow logs for specific error details
+            3. Manually trigger workflow if needed: [Actions → Update Medium Blog Posts → Run workflow](${{ github.server_url }}/${{ github.repository }}/actions/workflows/update-blog-posts.yml)
+            `;
+            
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: title,
+              body: body,
+              labels: ['bug', 'automation', 'medium-rss']
             })
