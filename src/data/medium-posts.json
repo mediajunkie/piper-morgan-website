@@ -1,5 +1,18 @@
 [
   {
+    "title": "Verification Theater and the Chaos We Don’t See",
+    "excerpt": "“All cleaned up!”August 27Another day, another victory over chaos. Or so we thought.It started as the easiest kind of Tuesday morning: our Notion integration was “100% OPERATIONAL” (according to th...",
+    "url": "https://medium.com/building-piper-morgan/verification-theater-and-the-chaos-we-dont-see-98f1c8575c90?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 3, 2025",
+    "publishedAtISO": "Wed, 03 Sep 2025 13:42:00 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/98f1c8575c90"
+  },
+  {
     "title": "The Day After: When Methodological Muscle Memory Kicks Back In",
     "excerpt": "“ 🎶 Side-by-side on my piano keyboard…”August 26Twenty-four hours after Monday’s methodological crisis, I watched my development process operate with the kind of smooth efficiency I’d dreamed abou...",
     "url": "https://medium.com/building-piper-morgan/the-day-after-when-methodological-muscle-memory-kicks-back-in-c9419e72a716?source=rss----982e21163f8b---4",
@@ -115,18 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/fb20a09a9d8f"
-  },
-  {
-    "title": "From Archaeological Mystery to Infrastructure Triumph",
-    "excerpt": "“They really knew how to build”August 19Tuesday started with a weeks-old mystery: Why does our TLDR system hang for two minutes before timing out? And ended with the discovery that we’d built a sop...",
-    "url": "https://medium.com/building-piper-morgan/from-archaeological-mystery-to-infrastructure-triumph-1ede9b664c68?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 26, 2025",
-    "publishedAtISO": "Tue, 26 Aug 2025 14:19:54 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/1ede9b664c68"
   }
 ]
