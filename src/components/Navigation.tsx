@@ -55,10 +55,10 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`font-medium transition-colors ${
+                className={`font-medium transition-all duration-200 hover-lift ${
                   isActive(item.href)
-                    ? 'text-primary-teal'
-                    : 'text-text-light hover:text-text-dark'
+                    ? 'text-primary-teal font-semibold'
+                    : 'text-text-light hover:text-primary-teal hover:font-semibold'
                 }`}
               >
                 {item.label}

@@ -228,7 +228,7 @@ export function NewsletterSignup({
               disabled={status === 'loading'}
               className="sm:w-auto w-full"
             >
-              {submitText}
+              {status === 'loading' ? 'Subscribing...' : submitText}
             </CTAButton>
           </div>
 

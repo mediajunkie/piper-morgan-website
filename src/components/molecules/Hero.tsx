@@ -63,20 +63,20 @@ export function Hero({
       <div className={contentClasses}>
         <div className="max-w-4xl mx-auto">
           {showLogo && (
-            <div className="mb-8 flex justify-center">
-              <div className="relative w-32 h-32 md:w-40 md:h-40">
+            <div className={`mb-8 ${align === 'center' ? 'flex justify-center' : 'flex justify-start'}`}>
+              <div className="relative w-64 h-20 md:w-80 md:h-24">
                 <Image
-                  src="/assets/pm-logo.png"
-                  alt="Piper Morgan Logo"
+                  src="/assets/pm-logo-lockup.png"
+                  alt="Piper Morgan - AI Product Management Assistant"
                   fill
-                  className="object-contain"
+                  className="object-contain object-left"
                   priority
                 />
               </div>
             </div>
           )}
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-dark mb-6 leading-tight">
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-text-dark mb-6 leading-tight">
             {headline}
             {highlightText && (
               <span className="block text-primary-teal mt-2">

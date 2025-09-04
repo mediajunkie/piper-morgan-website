@@ -24,6 +24,7 @@ export default function Home() {
     <main className="min-h-screen">
       {/* Hero Section */}
       <Hero
+        showLogo={true}
         headline="Started Out Vibe Coding, Soon Hit the Harder Stuff"
         subheadline={
           <div className="space-y-4">

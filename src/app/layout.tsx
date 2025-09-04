@@ -93,6 +93,27 @@ export default function RootLayout({
             html{scroll-behavior:smooth;font-size:16px;margin:0;padding:0;border:none;outline:none}
             body{background:#FFFFFF;color:#1F2937;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell',sans-serif;line-height:1.6;margin:0;padding:0;border:none;outline:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
             nav{border:none !important;outline:none !important}
+            h1,h2,h3,h4,h5,h6{font-family:'Hoss Round','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+            p,div,span{max-width:75ch;line-height:1.7}
+            .text-content{max-width:65ch}
+            @media (max-width:768px){
+              h1{font-size:2rem;line-height:1.2}
+              h2{font-size:1.5rem;line-height:1.3}
+              h3{font-size:1.25rem;line-height:1.4}
+            }
+            @media (prefers-reduced-motion: reduce){
+              *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}
+            }
+            a:hover{color:#14B8A6;transition:color 0.2s ease}
+            .hover-lift:hover{transform:translateY(-2px);transition:transform 0.2s ease}
+            button:focus,a:focus{outline:2px solid #2DD4BF;outline-offset:2px;border-radius:4px}
+            .section-spacing{margin-bottom:4rem}
+            .component-spacing{margin-bottom:1.5rem}
+            .micro-spacing{margin-bottom:0.5rem}
+            @media (min-width:768px){
+              .section-spacing{margin-bottom:6rem}
+              .component-spacing{margin-bottom:2rem}
+            }
             .container{max-width:1200px;margin:0 auto;padding:0 1rem}
             .mx-auto{margin-left:auto;margin-right:auto}
             .max-w-4xl{max-width:56rem}

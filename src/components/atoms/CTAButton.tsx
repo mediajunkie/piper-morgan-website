@@ -52,6 +52,9 @@ const variantClasses = {
     'shadow-component',
     'hover:shadow-component-hover',
     'hover:-translate-y-0.5',
+    'hover:scale-105',
+    'font-bold',
+    'text-lg',
   ].join(' '),
   secondary: [
     'bg-primary-orange',
@@ -61,6 +64,7 @@ const variantClasses = {
     'shadow-component',
     'hover:shadow-component-hover',
     'hover:-translate-y-0.5',
+    'font-medium',
   ].join(' '),
   outline: [
     'bg-white',
@@ -72,6 +76,8 @@ const variantClasses = {
     'focus:ring-primary-teal',
     'shadow-component',
     'hover:shadow-component-hover',
+    'hover:-translate-y-0.5',
+    'font-medium',
   ].join(' '),
 };
 
