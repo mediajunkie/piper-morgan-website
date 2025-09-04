@@ -122,31 +122,79 @@ class LinkedInStatsFetcher {
   }
 
   /**
-   * Method 3: Use Puppeteer (requires puppeteer package)
-   * Uncomment to enable - requires: npm install puppeteer
+   * Method 3: Use Puppeteer for automated browser scraping
    */
-  /*
   async fetchWithPuppeteer() {
     try {
       const puppeteer = await import('puppeteer');
       console.log('🔄 Launching headless browser to fetch LinkedIn stats...');
       
-      const browser = await puppeteer.launch({ headless: true });
+      const browser = await puppeteer.default.launch({ 
+        headless: 'new',
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
+      });
       const page = await browser.newPage();
       
-      await page.goto(LINKEDIN_NEWSLETTER_URL, { waitUntil: 'networkidle2' });
+      // Set a realistic user agent
+      await page.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
       
-      // Wait for and extract subscriber count
+      console.log('📄 Navigating to LinkedIn newsletter page...');
+      await page.goto(LINKEDIN_NEWSLETTER_URL, { 
+        waitUntil: 'networkidle2',
+        timeout: 30000 
+      });
+      
+      // Wait a bit for dynamic content
+      await new Promise(resolve => setTimeout(resolve, 3000));
+      
+      // Try multiple selectors to find subscriber count
       const subscriberCount = await page.evaluate(() => {
-        const elements = document.querySelectorAll('*');
-        for (const el of elements) {
-          if (el.textContent && el.textContent.match(/\d+\s*subscribers?/i)) {
-            const match = el.textContent.match(/(\d+(?:,\d+)*)\s*subscribers?/i);
-            if (match) {
-              return parseInt(match[1].replace(/,/g, ''));
+        // Pattern 1: Look for text containing "subscribers"
+        const patterns = [
+          /(\d+(?:,\d+)*)\s*subscribers?/i,
+          /(\d+(?:,\d+)*)\s*follower/i,
+          /(\d+(?:,\d+)*)\s*member/i
+        ];
+        
+        // Check all text elements
+        const walker = document.createTreeWalker(
+          document.body,
+          NodeFilter.SHOW_TEXT,
+          null,
+          false
+        );
+        
+        let node;
+        while (node = walker.nextNode()) {
+          const text = node.textContent.trim();
+          if (text) {
+            for (const pattern of patterns) {
+              const match = text.match(pattern);
+              if (match) {
+                const count = parseInt(match[1].replace(/,/g, ''));
+                if (count > 100 && count < 100000) { // Sanity check
+                  return count;
+                }
+              }
             }
           }
         }
+        
+        // Pattern 2: Check aria-labels and titles
+        const elements = document.querySelectorAll('[aria-label], [title]');
+        for (const el of elements) {
+          const text = (el.getAttribute('aria-label') || '') + ' ' + (el.getAttribute('title') || '');
+          for (const pattern of patterns) {
+            const match = text.match(pattern);
+            if (match) {
+              const count = parseInt(match[1].replace(/,/g, ''));
+              if (count > 100 && count < 100000) {
+                return count;
+              }
+            }
+          }
+        }
+        
         return null;
       });
       
@@ -155,14 +203,19 @@ class LinkedInStatsFetcher {
       if (subscriberCount) {
         console.log(`✅ Scraped subscriber count: ${subscriberCount}`);
         return subscriberCount;
+      } else {
+        console.log('⚠️  Could not find subscriber count on page');
+        console.log('💡 Tip: The page might require login or LinkedIn may have changed their layout');
       }
       
     } catch (error) {
       console.log('⚠️  Puppeteer scraping failed:', error.message);
+      if (error.message.includes('TimeoutError')) {
+        console.log('💡 Tip: LinkedIn might be blocking automated access or the page is loading slowly');
+      }
     }
     return null;
   }
-  */
 
   /**
    * Main update process
@@ -180,10 +233,10 @@ class LinkedInStatsFetcher {
       newCount = await this.fetchWithCookie();
     }
 
-    // Uncomment to try Puppeteer
-    // if (!newCount) {
-    //   newCount = await this.fetchWithPuppeteer();
-    // }
+    // Try Puppeteer if other methods fail
+    if (!newCount) {
+      newCount = await this.fetchWithPuppeteer();
+    }
 
     if (newCount) {
       const oldCount = stats.linkedinSubscribers.count;

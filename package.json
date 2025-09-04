@@ -2,6 +2,7 @@
   "name": "site",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "prebuild": "node scripts/fetch-blog-posts.js && node scripts/fetch-linkedin-stats.js",
@@ -24,6 +25,7 @@
     "jsonwebtoken": "^9.0.2",
     "next": "15.4.5",
     "nodemailer": "^7.0.6",
+    "puppeteer": "^24.18.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "rss-parser": "^3.13.0"
