@@ -30,7 +30,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="bg-white sticky top-0 z-50 border-0">
+    <nav className="bg-white sticky top-0 z-50 border-0" role="navigation" aria-label="Main navigation">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -57,8 +57,8 @@ export default function Navigation() {
                 href={item.href}
                 className={`font-medium transition-all duration-200 hover-lift ${
                   isActive(item.href)
-                    ? 'text-primary-teal font-semibold'
-                    : 'text-text-light hover:text-primary-teal hover:font-semibold'
+                    ? 'text-primary-teal-text font-semibold'
+                    : 'text-text-light hover:text-primary-teal-text hover:font-semibold'
                 }`}
               >
                 {item.label}
@@ -68,7 +68,7 @@ export default function Navigation() {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="md:hidden p-3 rounded-lg hover:bg-gray-100 transition-colors min-h-[44px] min-w-[44px]"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle mobile menu"
             aria-expanded={isMobileMenuOpen}
@@ -108,7 +108,7 @@ export default function Navigation() {
                   href={item.href}
                   className={`px-2 py-3 rounded-lg font-medium transition-colors ${
                     isActive(item.href)
-                      ? 'text-primary-teal bg-primary-teal/10'
+                      ? 'text-primary-teal-text bg-primary-teal/10'
                       : 'text-text-light hover:text-text-dark hover:bg-gray-50'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}

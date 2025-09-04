@@ -59,7 +59,7 @@ export function BlogPostCard({
               href={href}
               target={external ? '_blank' : undefined}
               rel={external ? 'noopener noreferrer' : undefined}
-              className="hover:text-primary-teal transition-colors"
+              className="hover:text-primary-teal-text transition-colors"
             >
               {title}
               {external && <span className="ml-1 text-sm">↗</span>}
@@ -80,7 +80,7 @@ export function BlogPostCard({
               {tags.slice(0, 3).map((tag, index) => (
                 <span
                   key={index}
-                  className="inline-block px-3 py-1 bg-primary-teal/10 text-primary-teal text-xs font-medium rounded-full"
+                  className="inline-block px-3 py-1 bg-primary-teal/10 text-primary-teal-text text-xs font-medium rounded-full"
                 >
                   {tag}
                 </span>

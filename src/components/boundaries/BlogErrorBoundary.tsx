@@ -127,7 +127,7 @@ class BlogErrorBoundary extends Component<Props, State> {
                       </div>
                       <div className="flex flex-wrap gap-2 mb-4">
                         {post.tags.map((tag, tagIndex) => (
-                          <span key={tagIndex} className="px-2 py-1 bg-primary-teal/10 text-primary-teal rounded text-xs">
+                          <span key={tagIndex} className="px-2 py-1 bg-primary-teal/10 text-primary-teal-text rounded text-xs">
                             {tag}
                           </span>
                         ))}

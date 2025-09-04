@@ -63,7 +63,7 @@ class NewsletterErrorBoundary extends Component<Props, State> {
                 href="https://medium.com/building-piper-morgan"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 border border-primary-teal text-primary-teal rounded-button hover:bg-primary-teal/5 transition-colors text-center"
+                className="px-6 py-3 border border-primary-teal text-primary-teal-text rounded-button hover:bg-primary-teal/5 transition-colors text-center"
               >
                 Follow on Medium Instead
               </a>

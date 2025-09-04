@@ -60,7 +60,7 @@ export default function BlogContent() {
                     <li>• <strong>AI-Augmented PM:</strong> Real experiences integrating AI into product management work</li>
                     <li>• <strong>Weekend Sprint Chronicles:</strong> Intensive development sessions with measured results</li>
                   </ul>
-                  <p className="text-sm text-primary-teal mt-4 font-semibold">
+                  <p className="text-sm text-primary-teal-text mt-4 font-semibold">
                     ✅ RSS integration complete - posts update automatically!
                   </p>
                 </div>

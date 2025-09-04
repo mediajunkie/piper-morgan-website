@@ -43,7 +43,7 @@ const socialLinks: FooterLink[] = [
 
 export default function Footer() {
   return (
-    <footer className="bg-text-dark text-white">
+    <footer className="bg-text-dark text-white" role="contentinfo" aria-label="Site footer">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-5 gap-8">
           {/* Brand */}
@@ -72,7 +72,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-300 hover:text-primary-teal transition-colors"
+                    className="text-gray-300 hover:text-primary-teal-text transition-colors py-1 inline-block"
                   >
                     {link.label}
                   </Link>
@@ -91,7 +91,7 @@ export default function Footer() {
                     href={link.href}
                     target={link.external ? '_blank' : undefined}
                     rel={link.external ? 'noopener noreferrer' : undefined}
-                    className="text-gray-300 hover:text-primary-teal transition-colors"
+                    className="text-gray-300 hover:text-primary-teal-text transition-colors py-1 inline-block"
                   >
                     {link.label}
                     {link.external && (
@@ -122,7 +122,7 @@ export default function Footer() {
                     href={link.href}
                     target={link.external ? '_blank' : undefined}
                     rel={link.external ? 'noopener noreferrer' : undefined}
-                    className="text-gray-300 hover:text-primary-teal transition-colors"
+                    className="text-gray-300 hover:text-primary-teal-text transition-colors py-1 inline-block"
                   >
                     {link.label}
                     {link.external && (

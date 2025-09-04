@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function GetInvolvedPage() {
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <Hero
         headline="Follow the systematic excellence"
@@ -151,7 +151,7 @@ export default function GetInvolvedPage() {
                 </p>
                 <a
                   href="https://www.linkedin.com/newsletters/building-piper-morgan-7346158338541305856/"
-                  className="inline-flex items-center text-primary-teal font-medium hover:underline"
+                  className="inline-flex items-center text-primary-teal-text font-medium hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -190,7 +190,7 @@ export default function GetInvolvedPage() {
               </p>
               <a
                 href="https://rosenverse.rosenfeldmedia.com/videos/the-pygmalion-effect-in-which-a-vibe-coding-experiment-becomes-a-million-lines"
-                className="inline-flex items-center text-primary-teal font-medium hover:underline"
+                className="inline-flex items-center text-primary-teal-text font-medium hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -262,7 +262,7 @@ export default function GetInvolvedPage() {
             </div>
 
             <details className="bg-gradient-to-r from-primary-teal/5 to-primary-orange/5 p-6 rounded-card">
-              <summary className="text-xl font-semibold text-text-dark cursor-pointer hover:text-primary-teal">
+              <summary className="text-xl font-semibold text-text-dark cursor-pointer hover:text-primary-teal-text">
                 More Ways to Get Involved →
               </summary>
               <div className="mt-6 space-y-6">
@@ -280,7 +280,7 @@ export default function GetInvolvedPage() {
                     Contact:{" "}
                     <a
                       href="mailto:info@pipermorgan.ai"
-                      className="text-primary-teal hover:underline"
+                      className="text-primary-teal-text hover:underline"
                     >
                       info@pipermorgan.ai
                     </a>
@@ -316,7 +316,7 @@ export default function GetInvolvedPage() {
                     Professional inquiries:{" "}
                     <a
                       href="mailto:info@pipermorgan.ai"
-                      className="text-primary-teal hover:underline"
+                      className="text-primary-teal-text hover:underline"
                     >
                       info@pipermorgan.ai
                     </a>
@@ -346,7 +346,7 @@ export default function GetInvolvedPage() {
               Questions about getting involved?{" "}
               <a
                 href="mailto:info@pipermorgan.ai"
-                className="text-primary-teal hover:underline"
+                className="text-primary-teal-text hover:underline"
               >
                 Contact Christian directly
               </a>
@@ -359,6 +359,6 @@ export default function GetInvolvedPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

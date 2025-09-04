@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function HowItWorksPage() {
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <Hero
         headline="How It Works"
@@ -864,7 +864,7 @@ export default function HowItWorksPage() {
                       • Follow the{" "}
                       <a
                         href="https://medium.com/building-piper-morgan"
-                        className="text-primary-teal hover:underline"
+                        className="text-primary-teal-text hover:underline"
                       >
                         Building Piper Morgan series
                       </a>
@@ -919,6 +919,6 @@ export default function HowItWorksPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

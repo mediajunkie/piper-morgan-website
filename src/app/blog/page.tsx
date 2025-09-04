@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   return (
-    <main>
+    <div>
       {/* Hero Section */}
       <Hero
         headline="Building-in-public:"
@@ -41,6 +41,6 @@ export default function BlogPage() {
       />
 
       <BlogContent />
-    </main>
+    </div>
   );
 }

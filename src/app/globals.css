@@ -23,6 +23,7 @@
 :root {
   /* Brand Colors */
   --primary-teal: #2DD4BF;
+  --primary-teal-text: #0D9488;  /* WCAG AA compliant variant for text */
   --primary-orange: #FB923C;
 
   /* Text Colors */

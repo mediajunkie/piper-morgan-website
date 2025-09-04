@@ -104,9 +104,11 @@ export default function RootLayout({
             @media (prefers-reduced-motion: reduce){
               *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}
             }
-            a:hover{color:#14B8A6;transition:color 0.2s ease}
+            a:hover{color:#0D9488;transition:color 0.2s ease}
             .hover-lift:hover{transform:translateY(-2px);transition:transform 0.2s ease}
             button:focus,a:focus{outline:2px solid #2DD4BF;outline-offset:2px;border-radius:4px}
+            .skip-to-content{position:absolute;top:-100px;left:0;z-index:999;padding:8px 16px;background:#1F2937;color:white;text-decoration:none;border-radius:0 0 4px 0;transition:top 0.3s}
+            .skip-to-content:focus{top:0;outline:2px solid #2DD4BF;outline-offset:2px}
             .section-spacing{margin-bottom:4rem}
             .component-spacing{margin-bottom:1.5rem}
             .micro-spacing{margin-bottom:0.5rem}
@@ -124,7 +126,7 @@ export default function RootLayout({
             .mb-8{margin-bottom:2rem}
             .text-left{text-align:left}
             .text-center{text-align:center}
-            .text-primary-teal{color:#2DD4BF}
+            .text-primary-teal-text{color:#0F766E}
             .text-text-dark{color:#1F2937}
             .text-text-light{color:#6B7280}
             .font-bold{font-weight:700}
@@ -153,9 +155,9 @@ export default function RootLayout({
           Skip to main content
         </a>
         <Navigation />
-        <div id="main-content">
+        <main id="main-content" role="main">
           {children}
-        </div>
+        </main>
         <Footer />
         <GoogleAnalytics />
       </body>

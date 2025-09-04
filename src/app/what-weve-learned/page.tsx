@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function WhatWeveLearnedPage() {
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <Hero
         headline="What We've Learned:"
@@ -89,9 +89,9 @@ export default function WhatWeveLearnedPage() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-text-dark mb-3">
+                  <h3 className="font-semibold text-text-dark mb-3">
                     Vision for PM × AI
-                  </h4>
+                  </h3>
                   <p className="text-text-light mb-4">
                     "AI doesn't replace PM judgment—it amplifies it
                     systematically. Through transparent methodology development
@@ -109,9 +109,9 @@ export default function WhatWeveLearnedPage() {
               </div>
 
               <div className="bg-white/50 p-6 rounded-lg mt-8">
-                <h4 className="font-semibold text-text-dark mb-3">
+                <h3 className="font-semibold text-text-dark mb-3">
                   Why This Context Matters
-                </h4>
+                </h3>
                 <p className="text-text-light">
                   The insights shared below come from hands-on experience
                   building an AI system systematically while maintaining PM
@@ -133,7 +133,7 @@ export default function WhatWeveLearnedPage() {
               <p className="text-text-dark font-semibold mb-2">
                 Building-in-Public Community
               </p>
-              <p className="text-2xl font-bold text-primary-teal">635+</p>
+              <p className="text-2xl font-bold text-primary-teal-text">635+</p>
               <p className="text-text-light">
                 PM professionals following this systematic methodology
                 development
@@ -754,7 +754,7 @@ export default function WhatWeveLearnedPage() {
                 Follow the{" "}
                 <a
                   href="https://medium.com/building-piper-morgan"
-                  className="text-primary-teal hover:underline"
+                  className="text-primary-teal-text hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -767,7 +767,7 @@ export default function WhatWeveLearnedPage() {
                 <strong>Ready to test these patterns in your own work?</strong>{" "}
                 <a
                   href="/get-involved"
-                  className="text-primary-teal hover:underline"
+                  className="text-primary-teal-text hover:underline"
                 >
                   Get involved
                 </a>{" "}
@@ -778,6 +778,6 @@ export default function WhatWeveLearnedPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

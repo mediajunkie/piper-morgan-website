@@ -197,7 +197,7 @@ export function NewsletterSignup({
           <ul className="text-left space-y-3 mb-8 max-w-md mx-auto">
             {benefits.map((benefit, index) => (
               <li key={index} className="flex items-start">
-                <span className="text-primary-teal mr-3 font-bold text-lg">✓</span>
+                <span className="text-primary-teal-text mr-3 font-bold text-lg">✓</span>
                 <span className={subtextColor}>{benefit}</span>
               </li>
             ))}
@@ -238,7 +238,7 @@ export function NewsletterSignup({
                 type="checkbox" 
                 checked={gdprConsent}
                 onChange={(e) => setGdprConsent(e.target.checked)}
-                className="mt-0.5 h-4 w-4 text-primary-teal bg-white border-gray-300 rounded focus:ring-primary-teal focus:ring-2"
+                className="mt-1 h-5 w-5 text-primary-teal-text bg-white border-gray-300 rounded focus:ring-primary-teal focus:ring-2"
                 disabled={status === 'loading'}
                 required
                 aria-describedby="gdpr-consent-text"
@@ -247,7 +247,7 @@ export function NewsletterSignup({
                 I agree to receive marketing communications and acknowledge that my data will be processed according to the{' '}
                 <Link 
                   href="/privacy" 
-                  className="text-primary-teal hover:underline focus:underline"
+                  className="text-primary-teal-text hover:underline focus:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

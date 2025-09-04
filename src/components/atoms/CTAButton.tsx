@@ -68,12 +68,12 @@ const variantClasses = {
   ].join(' '),
   outline: [
     'bg-white',
-    'text-primary-teal',
+    'text-primary-teal-text',
     'border-2',
-    'border-primary-teal',
-    'hover:bg-primary-teal',
+    'border-primary-teal-text',
+    'hover:bg-primary-teal-text',
     'hover:text-white',
-    'focus:ring-primary-teal',
+    'focus:ring-primary-teal-text',
     'shadow-component',
     'hover:shadow-component-hover',
     'hover:-translate-y-0.5',
@@ -82,7 +82,7 @@ const variantClasses = {
 };
 
 const sizeClasses = {
-  sm: 'px-4 py-2 text-sm rounded-button',
+  sm: 'px-4 py-3 text-sm rounded-button min-h-[44px]', // WCAG AA compliant 44px minimum
   md: 'px-6 py-3 text-base rounded-button',
   lg: 'px-8 py-4 text-lg rounded-button',
 };

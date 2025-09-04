@@ -13,11 +13,11 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       <div className="container mx-auto max-w-4xl pt-16 md:pt-24 pb-8 md:pb-12 px-4 text-center">
         {/* 404 Header */}
         <div className="mb-8">
-          <h1 className="text-8xl md:text-9xl font-bold text-primary-teal mb-4">
+          <h1 className="text-8xl md:text-9xl font-bold text-primary-teal-text mb-4">
             404
           </h1>
           <h2 className="text-3xl md:text-4xl font-semibold text-text-dark mb-4">
@@ -42,7 +42,7 @@ export default function NotFound() {
                 href="/"
                 className="block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group"
               >
-                <h4 className="font-semibold text-text-dark group-hover:text-primary-teal">
+                <h4 className="font-semibold text-text-dark group-hover:text-primary-teal-text">
                   🏠 Homepage
                 </h4>
                 <p className="text-sm text-text-light mt-1">
@@ -54,7 +54,7 @@ export default function NotFound() {
                 href="/how-it-works"
                 className="block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group"
               >
-                <h4 className="font-semibold text-text-dark group-hover:text-primary-teal">
+                <h4 className="font-semibold text-text-dark group-hover:text-primary-teal-text">
                   ⚙️ How It Works
                 </h4>
                 <p className="text-sm text-text-light mt-1">
@@ -68,7 +68,7 @@ export default function NotFound() {
                 href="/what-weve-learned"
                 className="block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group"
               >
-                <h4 className="font-semibold text-text-dark group-hover:text-primary-teal">
+                <h4 className="font-semibold text-text-dark group-hover:text-primary-teal-text">
                   💡 What We've Learned
                 </h4>
                 <p className="text-sm text-text-light mt-1">
@@ -80,7 +80,7 @@ export default function NotFound() {
                 href="/get-involved"
                 className="block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group"
               >
-                <h4 className="font-semibold text-text-dark group-hover:text-primary-teal">
+                <h4 className="font-semibold text-text-dark group-hover:text-primary-teal-text">
                   🚀 Get Involved
                 </h4>
                 <p className="text-sm text-text-light mt-1">
@@ -114,6 +114,6 @@ export default function NotFound() {
           </p>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

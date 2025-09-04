@@ -12,7 +12,8 @@ const config: Config = {
       colors: {
         // Primary brand colors from design system
         primary: {
-          teal: '#2DD4BF',
+          teal: '#2DD4BF',           // Original - for backgrounds/buttons
+          'teal-text': '#0F766E',    // WCAG AA compliant variant - 5.47:1 contrast on white
           orange: '#FB923C',
         },
         // Text colors

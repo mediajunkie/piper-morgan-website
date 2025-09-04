@@ -107,14 +107,14 @@ export default function PrivacyPolicy() {
               <ul className="list-disc pl-6 space-y-2 mb-6">
                 <li>Your email and consent data are stored on ConvertKit's secure servers</li>
                 <li>ConvertKit may process data in the United States under appropriate safeguards</li>
-                <li>You can review ConvertKit's privacy policy at: <a href="https://convertkit.com/privacy" className="text-primary-teal hover:underline" target="_blank" rel="noopener noreferrer">https://convertkit.com/privacy</a></li>
+                <li>You can review ConvertKit's privacy policy at: <a href="https://convertkit.com/privacy" className="text-primary-teal-text hover:underline" target="_blank" rel="noopener noreferrer">https://convertkit.com/privacy</a></li>
               </ul>
 
               <h3 className="text-xl font-semibold text-text-dark mb-3">
                 Website Hosting
               </h3>
               <p className="mb-6">
-                Our website is hosted on <strong>GitHub Pages</strong>, which may collect basic server logs including IP addresses and request information. GitHub is GDPR-compliant and you can review their privacy policy at: <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" className="text-primary-teal hover:underline" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.
+                Our website is hosted on <strong>GitHub Pages</strong>, which may collect basic server logs including IP addresses and request information. GitHub is GDPR-compliant and you can review their privacy policy at: <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" className="text-primary-teal-text hover:underline" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.
               </p>
 
               <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg mb-6">
@@ -161,7 +161,7 @@ export default function PrivacyPolicy() {
               <div className="bg-primary-teal/10 p-4 rounded-lg mt-6">
                 <p className="text-text-dark">
                   <strong>To exercise any of these rights:</strong> Contact us at{' '}
-                  <a href="mailto:privacy@pipermorgan.ai" className="text-primary-teal hover:underline">
+                  <a href="mailto:privacy@pipermorgan.ai" className="text-primary-teal-text hover:underline">
                     privacy@pipermorgan.ai
                   </a>{' '}
                   or use the unsubscribe link in any newsletter email.
@@ -269,14 +269,14 @@ export default function PrivacyPolicy() {
               </p>
               
               <div className="space-y-2">
-                <p><strong>Email:</strong> <a href="mailto:privacy@pipermorgan.ai" className="text-primary-teal hover:underline">privacy@pipermorgan.ai</a></p>
-                <p><strong>Website:</strong> <a href="https://pipermorgan.ai" className="text-primary-teal hover:underline">https://pipermorgan.ai</a></p>
+                <p><strong>Email:</strong> <a href="mailto:privacy@pipermorgan.ai" className="text-primary-teal-text hover:underline">privacy@pipermorgan.ai</a></p>
+                <p><strong>Website:</strong> <a href="https://pipermorgan.ai" className="text-primary-teal-text hover:underline">https://pipermorgan.ai</a></p>
                 <p><strong>Response Time:</strong> We aim to respond to privacy inquiries within 7 business days</p>
               </div>
             </section>
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

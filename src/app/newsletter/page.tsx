@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function NewsletterPage() {
   return (
-    <main>
+    <div>
       {/* Hero Section */}
       <Hero
         headline="Join the systematic excellence"
@@ -180,6 +180,6 @@ export default function NewsletterPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

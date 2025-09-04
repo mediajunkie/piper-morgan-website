@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main>
+    <div>
       {/* Hero Section */}
       <Hero
         headline="Building in public:"
@@ -211,6 +211,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

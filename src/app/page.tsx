@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <Hero
         showLogo={true}
@@ -106,7 +106,7 @@ export default function Home() {
                   A{" "}
                   <a
                     href="/how-it-works"
-                    className="text-primary-teal hover:underline"
+                    className="text-primary-teal-text hover:underline"
                   >
                     systematic approach to AI-human collaboration that scales
                   </a>{" "}
@@ -210,7 +210,7 @@ export default function Home() {
             <div className="bg-gradient-to-r from-primary-teal/5 to-primary-orange/5 p-6 rounded-lg mt-8">
               <p className="text-text-light">
                 <strong>For technical users:</strong> All development work is documented with full architectural decisions, implementation details, and systematic methodology at{' '}
-                <a href="https://pmorgan.tech" className="text-primary-teal hover:underline" target="_blank" rel="noopener noreferrer">
+                <a href="https://pmorgan.tech" className="text-primary-teal-text hover:underline" target="_blank" rel="noopener noreferrer">
                   pmorgan.tech
                 </a>
                 {' '}— comprehensive technical documentation for developers who want to understand how these patterns actually work.
@@ -315,7 +315,7 @@ export default function Home() {
                   Plus, announcements.{" "}
                   <a
                     href="https://www.linkedin.com/newsletters/building-piper-morgan-7346158338541305856/"
-                    className="text-primary-teal hover:underline"
+                    className="text-primary-teal-text hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -333,7 +333,7 @@ export default function Home() {
                   insight posts always free to read.{" "}
                   <a
                     href="https://medium.com/building-piper-morgan"
-                    className="text-primary-teal hover:underline"
+                    className="text-primary-teal-text hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -356,7 +356,7 @@ export default function Home() {
                   means for your career, and systematic kindness.{" "}
                   <a
                     href="https://rosenverse.rosenfeldmedia.com/videos/the-pygmalion-effect-in-which-a-vibe-coding-experiment-becomes-a-million-lines"
-                    className="text-primary-teal hover:underline"
+                    className="text-primary-teal-text hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -449,7 +449,7 @@ export default function Home() {
                 Want to dig deeper? Check out{" "}
                 <a
                   href="/how-it-works"
-                  className="text-primary-teal hover:underline"
+                  className="text-primary-teal-text hover:underline"
                 >
                   How It Works
                 </a>{" "}
@@ -459,6 +459,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
