@@ -14,6 +14,7 @@
     "fetch-posts": "node scripts/fetch-blog-posts.js"
   },
   "dependencies": {
+    "@sentry/nextjs": "^10.9.0",
     "@tailwindcss/typography": "^0.5.16",
     "next": "15.4.5",
     "react": "19.1.0",
