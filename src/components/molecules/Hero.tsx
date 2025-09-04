@@ -76,16 +76,16 @@ export function Hero({
             </div>
           )}
 
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-text-dark mb-6 leading-tight">
+          <h1 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-text-dark mb-8 leading-tight">
             {headline}
             {highlightText && (
-              <span className="block text-primary-teal-text mt-2">
+              <span className="block text-primary-teal-text mt-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
                 {highlightText}
               </span>
             )}
           </h1>
 
-          <div className={`text-lg md:text-xl text-text-light mb-8 leading-relaxed ${align === 'center' ? 'max-w-3xl mx-auto text-center' : 'max-w-3xl'}`}>
+          <div className={`text-base sm:text-lg md:text-xl text-text-light mb-8 leading-relaxed ${align === 'center' ? 'max-w-3xl mx-auto text-center' : 'max-w-3xl'}`}>
             {subheadline}
           </div>
 

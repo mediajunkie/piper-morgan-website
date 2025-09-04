@@ -55,7 +55,7 @@ export function NewsletterSignup({
   ],
   placeholder = "Enter your email address",
   submitText = "Subscribe",
-  successMessage = "Thank you for subscribing! ConvertKit will send you a confirmation email shortly. Please check your inbox (and spam folder) and click the confirmation link to complete your subscription.",
+  successMessage = "We've sent you a confirmation email with a verification link. Please check your inbox (and spam folder) and click the link to complete your subscription and start receiving our systematic AI collaboration insights.",
   privacyNotice = "No spam, unsubscribe at any time.",
   compact = false,
   background = 'surface',
@@ -97,38 +97,44 @@ export function NewsletterSignup({
     setErrorMessage('');
 
     try {
-      // Submit directly to ConvertKit (works with static export)
-      const CONVERTKIT_FORM_ID = process.env.NEXT_PUBLIC_CONVERTKIT_FORM_ID;
-      
-      if (!CONVERTKIT_FORM_ID) {
-        throw new Error('Newsletter signup is not configured. Please try again later.');
-      }
-
-      // Prepare form data for ConvertKit
-      const formData = new FormData();
-      formData.append('email_address', email);
-      formData.append('first_name', ''); // Optional: could add name field later
-      
-      // Add source tracking as custom fields (if supported by your ConvertKit form)
-      formData.append('fields[signup_source]', source);
-      formData.append('fields[page_context]', metadata?.page_context || '');
-      formData.append('fields[gdpr_consent]', 'true');
-      formData.append('fields[consent_timestamp]', new Date().toISOString());
-      formData.append('fields[referrer]', typeof document !== 'undefined' ? document.referrer || 'direct' : 'server');
-
-      const response = await fetch(`https://app.convertkit.com/forms/${CONVERTKIT_FORM_ID}/subscriptions`, {
+      // Submit to our self-hosted newsletter API
+      const response = await fetch('/api/newsletter-signup', {
         method: 'POST',
-        body: formData,
-        mode: 'no-cors' // Required for direct ConvertKit submission
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          source,
+          metadata: {
+            ...metadata,
+            page_context: metadata?.page_context || '',
+            gdpr_consent: true,
+            consent_timestamp: new Date().toISOString(),
+            referrer: typeof document !== 'undefined' ? document.referrer || 'direct' : 'server',
+          }
+        }),
       });
 
-      // Note: no-cors mode means we can't check response status
-      // ConvertKit will handle the confirmation email flow
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to subscribe');
+      }
+
+      // Handle different response statuses
+      if (data.status === 'already_subscribed') {
+        setStatus('error');
+        setErrorMessage('You are already subscribed to our newsletter.');
+        return;
+      }
+
+      // Success - verification email sent
       setStatus('success');
       setEmail('');
 
       // Track successful conversion
-      trackNewsletterSignup(source, 'direct_convertkit_form');
+      trackNewsletterSignup(source, 'self_hosted_api');
 
       if (onSignup) {
         onSignup(email);
@@ -169,7 +175,7 @@ export function NewsletterSignup({
             </svg>
           </div>
           <h3 className={`text-2xl font-semibold ${textColor} mb-2`}>
-            Welcome aboard! 
+            Check your email! 
           </h3>
           <p className={`${subtextColor} mb-4`}>
             {successMessage}

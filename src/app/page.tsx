@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { generateSEOMetadata } from "@/lib/domain-utils";
 import { Hero } from "@/components";
+import siteStats from "@/data/site-stats.json";
 
 const seoData = generateSEOMetadata(
   "Piper Morgan - Intelligent Product Management Assistant",
@@ -51,22 +52,21 @@ export default function Home() {
             </p>
           </div>
         }
-        showLogo={true}
         background="gradient"
         align="center"
       />
 
       {/* What You're Following Section */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-text-dark mb-8">
-              What we’re doing
+            <h2 className="text-2xl sm:text-3xl font-bold text-text-dark mb-8">
+              What we're doing
             </h2>
-            <h3 className="text-2xl font-semibold text-text-dark mb-6">
+            <h3 className="text-xl sm:text-2xl font-semibold text-text-dark mb-6">
               Building in public
             </h3>
-            <div className="prose max-w-none text-lg text-text-light space-y-6">
+            <div className="prose max-w-none text-base sm:text-lg text-text-light space-y-6">
               <p>
                 When I started this project in May 2025, I had a simple
                 question: Could AI actually help product managers work more
@@ -90,16 +90,16 @@ export default function Home() {
       </section>
 
       {/* What We've Discovered Section */}
-      <section className="bg-surface py-12">
-        <div className="container mx-auto px-4">
+      <section className="bg-surface py-16 md:py-20">
+        <div className="container mx-auto">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-text-dark mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-text-dark mb-12">
               Discovered so far…
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-white p-8 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold text-text-dark mb-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
+              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
+                <h3 className="text-lg sm:text-xl font-semibold text-text-dark mb-4">
                   Excellence Flywheel methodology
                 </h3>
                 <p className="text-text-light">
@@ -115,8 +115,8 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold text-text-dark mb-4">
+              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
+                <h3 className="text-lg sm:text-xl font-semibold text-text-dark mb-4">
                   Multi-agent coordination
                 </h3>
                 <p className="text-text-light">
@@ -128,8 +128,8 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold text-text-dark mb-4">
+              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
+                <h3 className="text-lg sm:text-xl font-semibold text-text-dark mb-4">
                   Verification before implementation
                 </h3>
                 <p className="text-text-light">
@@ -139,8 +139,8 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold text-text-dark mb-4">
+              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
+                <h3 className="text-lg sm:text-xl font-semibold text-text-dark mb-4">
                   GitHub-first tracking and transparency
                 </h3>
                 <p className="text-text-light">
@@ -155,24 +155,24 @@ export default function Home() {
       </section>
 
       {/* Current Reality Check Section */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-text-dark mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-text-dark mb-8">
               Current reality check
             </h2>
             <div className="bg-primary-teal/10 p-8 rounded-lg mb-8">
-              <h3 className="text-2xl font-bold text-text-dark mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-text-dark mb-4">
                 Where we actually are
               </h3>
-              <p className="text-lg text-text-light mb-4">
+              <p className="text-base sm:text-lg text-text-light mb-4">
                 <strong>
                   This is a learning project that has grown wings.
                 </strong>{" "}
                 We're not a startup, we're not taking funding, and we're
                 definitely not claiming to have solved product management.
               </p>
-              <p className="text-lg text-text-light">
+              <p className="text-base sm:text-lg text-text-light">
                 What we <em>have</em> done is discover repeatable patterns for
                 AI-augmented PM work that maintain human judgment while
                 systematically capturing and sharing what works.
@@ -180,10 +180,10 @@ export default function Home() {
             </div>
 
             <div className="space-y-4">
-              <h4 className="text-xl font-semibold text-text-dark">
+              <h4 className="text-lg sm:text-xl font-semibold text-text-dark">
                 Recent breakthroughs include:
               </h4>
-              <ul className="text-lg text-text-light space-y-2 pl-6">
+              <ul className="text-base sm:text-lg text-text-light space-y-2 pl-6">
                 <li>
                   • Multi-agent orchestration baked into workflows with
                   negligible overhead
@@ -198,7 +198,7 @@ export default function Home() {
                   <em>and feed recursively into Piper's education</em>
                 </li>
               </ul>
-              <p className="text-lg text-text-light mt-6">
+              <p className="text-base sm:text-lg text-text-light mt-6">
                 <strong>What's next:</strong> Continuing to build in public,
                 sharing what we learn, and discovering whether these patterns
                 scale beyond one learning PM and his robot programming
@@ -221,16 +221,16 @@ export default function Home() {
       </section>
 
       {/* Why Follow This Journey Section */}
-      <section className="bg-surface py-12">
-        <div className="container mx-auto px-4">
+      <section className="bg-surface py-16 md:py-20">
+        <div className="container mx-auto">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-text-dark mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-text-dark mb-12">
               Why follow this journey?
             </h2>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white p-8 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold text-text-dark mb-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
+                <h3 className="text-lg sm:text-xl font-semibold text-text-dark mb-4">
                   For founders, senior product people, and UX designers and
                   strategists
                 </h3>
@@ -251,8 +251,8 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold text-text-dark mb-4">
+              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
+                <h3 className="text-lg sm:text-xl font-semibold text-text-dark mb-4">
                   For architects, lead developers, unicorns, and other makers
                 </h3>
                 <p className="text-text-light mb-4">
@@ -277,8 +277,8 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold text-text-dark mb-4">
+              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
+                <h3 className="text-lg sm:text-xl font-semibold text-text-dark mb-4">
                   For other AI-curious professionals
                 </h3>
                 <p className="text-text-light">
@@ -292,21 +292,24 @@ export default function Home() {
       </section>
 
       {/* Get Involved Section */}
-      <section className="bg-surface py-12">
-        <div className="container mx-auto px-4">
+      <section className="bg-surface py-16 md:py-20">
+        <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-text-dark mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-text-dark mb-8">
               Get involved
             </h2>
 
-            <h3 className="text-2xl font-semibold text-text-dark mb-6">
+            <h3 className="text-xl sm:text-2xl font-semibold text-text-dark mb-6">
               Follow the learning
             </h3>
 
             <div className="space-y-6 mb-8">
               <div>
-                <p className="text-lg text-text-light mb-4">
-                  <strong>Building Piper Morgan</strong> (LinkedIn Newsletter):
+                <p className="text-base sm:text-lg text-text-light mb-4">
+                  <strong>Building Piper Morgan</strong> (LinkedIn Newsletter
+                  {siteStats.linkedinSubscribers.count && (
+                    <span className="text-primary-teal-text font-semibold"> • {siteStats.linkedinSubscribers.count} subscribers</span>
+                  )}):
                   Daily blog posts narrating the development and architectural
                   design process blow by blow with updates on discoveries,
                   breakthroughs, and the occasional technical debt confessional.
@@ -325,7 +328,7 @@ export default function Home() {
               </div>
 
               <div>
-                <p className="text-lg text-text-light mb-4">
+                <p className="text-base sm:text-lg text-text-light mb-4">
                   <strong>Building Piper Morgan</strong> (Medium Publication):
                   For the impatient, blog posts appear on Medium roughly a week
                   after development and a good six weeks before they make it to
@@ -343,7 +346,7 @@ export default function Home() {
               </div>
 
               <div>
-                <p className="text-lg text-text-light mb-4">
+                <p className="text-base sm:text-lg text-text-light mb-4">
                   <strong>The Pygmalion Effect</strong> (Rosenverse): A free
                   talk I gave in August 2025 (requires signup) for a primary
                   audience of mid-level and senior UX practitioners, covering
@@ -366,7 +369,7 @@ export default function Home() {
               </div>
 
               <div>
-                <p className="text-lg text-text-light">
+                <p className="text-base sm:text-lg text-text-light">
                   <strong>This Site:</strong> Methodology documentation, pattern
                   catalog, and the occasional deep dive into what we&apos;re
                   learning. For those for whom the blog is a mite too technical
@@ -384,8 +387,8 @@ export default function Home() {
       {/* redundant with the signups above but may be useful when the Growing Piper series starts on this site or when we host the canonical version of the blog series here and do our own newsletter off of LinkedIn?
 
       Newsletter Section:
-      <section className="py-12">
-        <div className="container mx-auto px-4">
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-text-dark mb-6">
               Newsletter: Learning Along
@@ -428,20 +431,20 @@ export default function Home() {
       */}
 
       {/* Questions Section */}
-      <section className="bg-surface py-12">
-        <div className="container mx-auto px-4">
+      <section className="bg-surface py-16 md:py-20">
+        <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-text-dark mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-text-dark mb-8">
               Questions?
             </h2>
             <div className="space-y-6">
-              <p className="text-lg text-text-light">
+              <p className="text-base sm:text-lg text-text-light">
                 This is an experiment in transparent development and systematic
                 learning. If you&apos;re curious about specific patterns, want
                 to share similar experiences, or just want to follow along, the
                 best way to stay connected is through the newsletter.
               </p>
-              <p className="text-lg text-text-light">
+              <p className="text-base sm:text-lg text-text-light">
                 We&apos;re learning in public because the best discoveries
                 happen when smart people share what actually works.
               </p>

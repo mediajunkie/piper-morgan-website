@@ -1,0 +1,15 @@
+{
+  "linkedinSubscribers": {
+    "count": 659,
+    "lastUpdated": "2025-01-04",
+    "description": "LinkedIn Newsletter Subscribers"
+  },
+  "mediumFollowers": {
+    "count": null,
+    "description": "Medium Publication Followers"
+  },
+  "githubStars": {
+    "count": null,
+    "description": "GitHub Repository Stars"
+  }
+}
