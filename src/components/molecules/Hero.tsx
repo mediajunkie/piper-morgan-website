@@ -69,7 +69,7 @@ export function Hero({
                   src="/assets/pm-logo-lockup.png"
                   alt="Piper Morgan - AI Product Management Assistant"
                   fill
-                  className="object-contain object-left"
+                  className={`object-contain ${align === 'center' ? 'object-center' : 'object-left'}`}
                   priority
                 />
               </div>
