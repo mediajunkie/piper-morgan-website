@@ -64,7 +64,7 @@ export function Hero({
         <div className="max-w-4xl mx-auto">
           {showLogo && (
             <div className={`mb-8 ${align === 'center' ? 'flex justify-center' : 'flex justify-start'}`}>
-              <div className="relative w-64 h-20 md:w-80 md:h-24">
+              <div className="relative w-72 h-24 md:w-96 md:h-28">
                 <Image
                   src="/assets/pm-logo-lockup.png"
                   alt="Piper Morgan - AI Product Management Assistant"
@@ -76,7 +76,7 @@ export function Hero({
             </div>
           )}
 
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-text-dark mb-6 leading-tight">
+          <h1 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-text-dark mb-8 leading-tight">
             {headline}
             {highlightText && (
               <span className="block text-primary-teal-text mt-2">
