@@ -94,7 +94,8 @@ export default function RootLayout({
             body{background:#FFFFFF;color:#1F2937;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell',sans-serif;line-height:1.6;margin:0;padding:0;border:none;outline:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
             nav{border:none !important;outline:none !important}
             h1,h2,h3,h4,h5,h6{font-family:'Hoss Round','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
-            p,div,span{max-width:75ch;line-height:1.7}
+            p,span{max-width:75ch;line-height:1.7}
+            .text-content div{max-width:75ch;line-height:1.7}
             .text-content{max-width:65ch}
             @media (max-width:640px){
               h1{font-size:1.75rem;line-height:1.2}
@@ -122,11 +123,11 @@ export default function RootLayout({
               .section-spacing{margin-bottom:6rem}
               .component-spacing{margin-bottom:2rem}
             }
-            .container{width:100%;margin:0 auto;padding:0 1rem}
-            @media (min-width:640px){.container{padding:0 1.5rem}}
-            @media (min-width:768px){.container{padding:0 2rem}}
-            @media (min-width:1024px){.container{max-width:1024px;padding:0 2rem}}
-            @media (min-width:1200px){.container{max-width:1200px;padding:0 2rem}}
+            .site-container{width:100%;max-width:1200px;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+            @media (min-width:640px){.site-container{padding-left:1.5rem;padding-right:1.5rem}}
+            @media (min-width:768px){.site-container{padding-left:2rem;padding-right:2rem}}
+            @media (min-width:1024px){.site-container{max-width:1200px}}
+            @media (min-width:1200px){.site-container{max-width:1200px}}
             .section-padding{padding-top:4rem;padding-bottom:4rem}
             @media (min-width:768px){.section-padding{padding-top:5rem;padding-bottom:5rem}}
             .mx-auto{margin-left:auto;margin-right:auto}
