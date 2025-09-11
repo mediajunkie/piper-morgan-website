@@ -2,15 +2,14 @@ import type { NextConfig } from "next";
 import { withSentryConfig } from '@sentry/nextjs';
 
 const nextConfig: NextConfig = {
-  // Server-side functionality enabled for email infrastructure
-  // output: 'export', // Disabled to enable API routes and server features
+  // Enable static export for GitHub Pages deployment
+  output: 'export',
 
-  // No basePath needed for server deployment
+  // No basePath needed for custom domain deployment
 
-  // Enable image optimization for server deployment
+  // Disable image optimization for static export
   images: {
-    unoptimized: false,
-    domains: ['localhost'], // Add production domains as needed
+    unoptimized: true,
   },
 
   // Configure trailing slashes for better URL consistency
