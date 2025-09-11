@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-const Parser = require('rss-parser');
-const fs = require('fs').promises;
-const path = require('path');
+import Parser from 'rss-parser';
+import { promises as fs } from 'fs';
+import { join } from 'path';
 
 const parser = new Parser({
   customFields: {
@@ -150,10 +150,10 @@ async function main() {
     const posts = await fetchMediumPosts();
 
     if (posts.length > 0) {
-      const dataDir = path.join(process.cwd(), 'src', 'data');
+      const dataDir = join(process.cwd(), 'src', 'data');
       await fs.mkdir(dataDir, { recursive: true });
 
-      const cachePath = path.join(dataDir, 'medium-posts.json');
+      const cachePath = join(dataDir, 'medium-posts.json');
       await fs.writeFile(
         cachePath,
         JSON.stringify(posts, null, 2),

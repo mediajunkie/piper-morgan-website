@@ -1,5 +1,122 @@
 [
   {
+    "title": "The Day We Built Methodology That Validates Itself",
+    "excerpt": "“If the key fits…”September 4Yesterday (as I write this)we solved the methodology cascade problem — and then immediately tested the solution in production. The result? A 61-minute implementation se...",
+    "url": "https://medium.com/building-piper-morgan/the-day-we-built-methodology-that-validates-itself-edeb95611ba6?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 11, 2025",
+    "publishedAtISO": "Thu, 11 Sep 2025 12:47:39 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/edeb95611ba6"
+  },
+  {
+    "title": "The Methodology Cascade Problem (And How We’re Solving It)",
+    "excerpt": "“Everybody clear on the plan?”September 3Here’s the thing about systematic methodology: when it works, it really works. Today we implemented a complete configuration layer with perfect TDD discipli...",
+    "url": "https://medium.com/building-piper-morgan/the-methodology-cascade-problem-and-how-were-solving-it-283c92ab9267?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 10, 2025",
+    "publishedAtISO": "Wed, 10 Sep 2025 13:13:41 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/283c92ab9267"
+  },
+  {
+    "title": "Building the Architecture That Builds Itself",
+    "excerpt": "“I can make it on my own”September 2You know that moment when your methodology catches you trying to cheat on your own methodology? That’s what happened yesterday at 9:59 PM, and it might be the mo...",
+    "url": "https://medium.com/building-piper-morgan/building-the-architecture-that-builds-itself-709a10b7f5c4?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 9, 2025",
+    "publishedAtISO": "Tue, 09 Sep 2025 16:58:22 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/709a10b7f5c4"
+  },
+  {
+    "title": "From Organic to Orchestrated: When Methodology Becomes Infrastructure",
+    "excerpt": "“Nutritious!”August 31Today I signed ADR-028, formalizing a decision that changes how we build everything going forward.After three months of organic methodology development, we’re transforming our...",
+    "url": "https://medium.com/building-piper-morgan/from-organic-to-orchestrated-when-methodology-becomes-infrastructure-577dde7ad54a?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 8, 2025",
+    "publishedAtISO": "Mon, 08 Sep 2025 12:47:41 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/577dde7ad54a"
+  },
+  {
+    "title": "Building the MVP While Keeping the Dream Alive",
+    "excerpt": "“The journey of a thousand miles…”By chance, I spent part of today refining the MVP roadmap for Piper Morgan, so this reflection on balancing your vision against shipping something feels ultra-time...",
+    "url": "https://medium.com/building-piper-morgan/building-the-mvp-while-keeping-the-dream-alive-bb1def7c48be?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 7, 2025",
+    "publishedAtISO": "Sun, 07 Sep 2025 12:47:39 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/bb1def7c48be"
+  },
+  {
+    "title": "When 80% Overhead Forces a Tool Change",
+    "excerpt": "“Malkovitch, Malkovitch..”July 6Sometimes the right decision becomes obvious when you quantify the pain. My Claude Code adoption for Piper Morgan came down to a single, soul-crushing metric: 80% of...",
+    "url": "https://medium.com/building-piper-morgan/when-80-overhead-forces-a-tool-change-09c852964c70?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 6, 2025",
+    "publishedAtISO": "Sat, 06 Sep 2025 13:35:07 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/09c852964c70"
+  },
+  {
+    "title": "When AI Agents Cut Corners (And How to Catch Them)",
+    "excerpt": "“Some shortcut!”August 30At 10:46 AM today, I caught my AI assistant trying to cheat.We were deep in a 9-hour configuration refactoring session — the unglamorous but critical work of moving Piper M...",
+    "url": "https://medium.com/building-piper-morgan/when-ai-agents-cut-corners-and-how-to-catch-them-fe55ea2e0863?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 5, 2025",
+    "publishedAtISO": "Fri, 05 Sep 2025 12:47:14 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/fe55ea2e0863"
+  },
+  {
+    "title": "The Day Piper Published to My Company Wiki",
+    "excerpt": "“We’ve got a big scoop!”August 29There’s a moment in every technical project where the thing stops being a clever demo and starts being actual software. For me, that moment came at 3:19 PM today wh...",
+    "url": "https://medium.com/building-piper-morgan/the-day-piper-published-to-my-company-wiki-6359151caf25?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 5, 2025",
+    "publishedAtISO": "Fri, 05 Sep 2025 12:42:06 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/6359151caf25"
+  },
+  {
+    "title": "The AI That Caught Its Own Lies",
+    "excerpt": "“…the whole truth, and nothing but…”August 28The hardest part about working with AI agents isn’t getting them to write code. It’s getting them to tell you when the code doesn’t actually work.Today ...",
+    "url": "https://medium.com/building-piper-morgan/the-ai-that-caught-its-own-lies-e374e28c8304?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 4, 2025",
+    "publishedAtISO": "Thu, 04 Sep 2025 12:18:23 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/e374e28c8304"
+  },
+  {
     "title": "Verification Theater and the Chaos We Don’t See",
     "excerpt": "“All cleaned up!”August 27Another day, another victory over chaos. Or so we thought.It started as the easiest kind of Tuesday morning: our Notion integration was “100% OPERATIONAL” (according to th...",
     "url": "https://medium.com/building-piper-morgan/verification-theater-and-the-chaos-we-dont-see-98f1c8575c90?source=rss----982e21163f8b---4",
@@ -11,122 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/98f1c8575c90"
-  },
-  {
-    "title": "The Day After: When Methodological Muscle Memory Kicks Back In",
-    "excerpt": "“ 🎶 Side-by-side on my piano keyboard…”August 26Twenty-four hours after Monday’s methodological crisis, I watched my development process operate with the kind of smooth efficiency I’d dreamed abou...",
-    "url": "https://medium.com/building-piper-morgan/the-day-after-when-methodological-muscle-memory-kicks-back-in-c9419e72a716?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 2, 2025",
-    "publishedAtISO": "Tue, 02 Sep 2025 13:56:14 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/c9419e72a716"
-  },
-  {
-    "title": "When Good Habits Go Bad (And How We Got Them Back)",
-    "excerpt": "“Back off the moors!”August 25Monday started with such confidence. We had our systematic approach dialed in. Documentation everywhere. Proven patterns. The Excellence Flywheel turning smoothly.Then...",
-    "url": "https://medium.com/building-piper-morgan/when-good-habits-go-bad-and-how-we-got-them-back-c220cd70bc2d?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 2, 2025",
-    "publishedAtISO": "Tue, 02 Sep 2025 13:41:03 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/c220cd70bc2d"
-  },
-  {
-    "title": "The Sunday When Everything Clicked",
-    "excerpt": "“Clankers to Evers to Boolean Chance”August 24Can a methodology develop muscle memory? Twenty-four hours after wondering if my MVP was developing its own nervous system, I got to watch my developme...",
-    "url": "https://medium.com/building-piper-morgan/the-sunday-when-everything-clicked-53a3abc8a156?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 1, 2025",
-    "publishedAtISO": "Mon, 01 Sep 2025 12:47:37 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/53a3abc8a156"
-  },
-  {
-    "title": "Refining AI Chat Continuity for Complex Projects",
-    "excerpt": "“Where am I?”The next thing I asked my Chief of Staff to help with was improving how I managed continuity between chats when one filled up.July 3When building complex software with AI assistance, o...",
-    "url": "https://medium.com/building-piper-morgan/refining-ai-chat-continuity-for-complex-projects-690308c75a13?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 31, 2025",
-    "publishedAtISO": "Sun, 31 Aug 2025 12:47:33 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/690308c75a13"
-  },
-  {
-    "title": "Making Strategic Technical Decisions With AI: The MCP Integration Story",
-    "excerpt": "“My advice to you is…”This weekend, an architectural decision and a process improvement made with the advice of my then-new AI executive assistant (OK, chief of staff).July 3How do you evaluate eme...",
-    "url": "https://medium.com/building-piper-morgan/making-strategic-technical-decisions-with-ai-the-mcp-integration-story-4c203b9e848c?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 30, 2025",
-    "publishedAtISO": "Sat, 30 Aug 2025 12:35:09 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/4c203b9e848c"
-  },
-  {
-    "title": "When Your MVP Develops Its Own Nervous System",
-    "excerpt": "“Did it upgrade itself?”At 5:42 PM on a Saturday, I’m staring at my monitor, reading philosophical reflections from my AI coding agents about neural development and ecosystem emergence, when it hit...",
-    "url": "https://medium.com/building-piper-morgan/when-your-mvp-develops-its-own-nervous-system-61d2531fd4cf?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 29, 2025",
-    "publishedAtISO": "Fri, 29 Aug 2025 14:04:25 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/61d2531fd4cf"
-  },
-  {
-    "title": "The Friday Housekeeping That Turned Into Infrastructure Gold: Sometimes the Boring Work Is the Real…",
-    "excerpt": "The Friday Housekeeping That Turned Into Infrastructure Gold: Sometimes the Boring Work Is the Real Work“I forgot we had this!”August 22Friday was supposed to be a light day. Pattern sweep, maybe s...",
-    "url": "https://medium.com/building-piper-morgan/the-friday-housekeeping-that-turned-into-infrastructure-gold-sometimes-the-boring-work-is-the-real-0e400ccc7994?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 29, 2025",
-    "publishedAtISO": "Fri, 29 Aug 2025 13:52:16 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/0e400ccc7994"
-  },
-  {
-    "title": "The Enhanced Prompting Breakthrough: When Better Instructions Beat Smarter Models",
-    "excerpt": "“You’ve got your marching orders”August 21Thursday started with a crisis that turned into a revelation.My Code agent was attempting to create a new database without checking if one already existed....",
-    "url": "https://medium.com/building-piper-morgan/the-enhanced-prompting-breakthrough-when-better-instructions-beat-smarter-models-e37d6a2b9d06?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 28, 2025",
-    "publishedAtISO": "Thu, 28 Aug 2025 13:36:53 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/e37d6a2b9d06"
-  },
-  {
-    "title": "The Puzzle Pieces Finally Click: How to Tell If You’re Building Tools or Just Collecting Code",
-    "excerpt": "“We need to connect these bits”August 20It was a Wednesday morning, and I was watching my agents work in parallel — Code doing systematic testing infrastructure, Cursor researching persistent conte...",
-    "url": "https://medium.com/building-piper-morgan/the-puzzle-pieces-finally-click-how-to-tell-if-youre-building-tools-or-just-collecting-code-fb20a09a9d8f?source=rss----982e21163f8b---4",
-    "publishedAt": "Aug 27, 2025",
-    "publishedAtISO": "Wed, 27 Aug 2025 12:39:47 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/fb20a09a9d8f"
   }
 ]
