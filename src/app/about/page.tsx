@@ -41,7 +41,7 @@ export default function AboutPage() {
 
       {/* Content Sections */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto">
 
             {/* Origin Story */}
@@ -186,7 +186,7 @@ export default function AboutPage() {
 
       {/* Newsletter CTA */}
       <section className="bg-text-dark py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-2xl mx-auto">
             <NewsletterErrorBoundary>
               <NewsletterSignup

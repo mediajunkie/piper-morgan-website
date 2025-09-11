@@ -44,7 +44,7 @@ const socialLinks: FooterLink[] = [
 export default function Footer() {
   return (
     <footer className="bg-text-dark text-white" role="contentinfo" aria-label="Site footer">
-      <div className="container mx-auto px-4 py-12">
+      <div className="site-container py-12">
         <div className="grid md:grid-cols-5 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">

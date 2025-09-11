@@ -42,7 +42,7 @@ export default function WhatWeveLearnedPage() {
 
       {/* Meet Christian - Credibility Context */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-r from-primary-teal/5 to-primary-orange/5 p-8 rounded-card mb-16">
               <h2 className="text-3xl font-bold text-text-dark mb-6">
@@ -127,7 +127,7 @@ export default function WhatWeveLearnedPage() {
 
       {/* Social Proof Integration */}
       <section className="pb-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="text-center mb-16">
             <div className="bg-white p-6 rounded-card shadow-sm max-w-md mx-auto">
               <p className="text-text-dark font-semibold mb-2">
@@ -145,7 +145,7 @@ export default function WhatWeveLearnedPage() {
 
       {/* The Biggest Surprise */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-text-dark mb-8">
               The Biggest Surprise: Verification Accelerates Rather Than Slows
@@ -201,7 +201,7 @@ export default function WhatWeveLearnedPage() {
 
       {/* Key Insights Grid */}
       <section className="bg-surface py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8 space-y-0">
               {/* Context Problem */}
@@ -378,7 +378,7 @@ export default function WhatWeveLearnedPage() {
 
       {/* More Key Insights */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto space-y-12">
             {/* Quality Paradox */}
             <div className="bg-gradient-to-r from-primary-teal/5 to-primary-orange/5 p-8 rounded-lg">
@@ -532,7 +532,7 @@ export default function WhatWeveLearnedPage() {
 
       {/* Transparency & Scale */}
       <section className="bg-surface py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               {/* Transparency Advantage */}
@@ -641,7 +641,7 @@ export default function WhatWeveLearnedPage() {
 
       {/* What This Means */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-text-dark mb-12 text-center">
               What This Means for Your AI Strategy
@@ -724,7 +724,7 @@ export default function WhatWeveLearnedPage() {
 
       {/* Bottom Line */}
       <section className="bg-gradient-to-r from-primary-teal/10 to-primary-orange/10 py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-text-dark mb-8">
               The Bottom Line

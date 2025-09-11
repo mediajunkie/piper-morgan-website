@@ -34,7 +34,7 @@ export default function HowItWorksPage() {
 
       {/* Core Insight */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-text-dark mb-8">
               The Core Insight
@@ -58,7 +58,7 @@ export default function HowItWorksPage() {
 
       {/* Five Patterns */}
       <section className="bg-surface py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-text-dark mb-12 text-center">
               The Five Patterns That Make It Work
@@ -538,7 +538,7 @@ export default function HowItWorksPage() {
 
       {/* Excellence Flywheel Methodology Deep Dive */}
       <section className="bg-gradient-to-r from-primary-teal/5 to-primary-orange/5 py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-text-dark mb-8 text-center">
               The Excellence Flywheel Methodology
@@ -666,7 +666,7 @@ export default function HowItWorksPage() {
 
       {/* Why This Approach Works */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-text-dark mb-8">
               Why This Approach Works
@@ -750,7 +750,7 @@ export default function HowItWorksPage() {
 
       {/* Enhanced Getting Started */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-text-dark mb-12 text-center">
               Implementing These Patterns in Your Work
@@ -896,7 +896,7 @@ export default function HowItWorksPage() {
 
       {/* Technical Documentation Link */}
       <section className="bg-surface py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto">
             <div className="bg-primary-teal/10 p-8 rounded-card text-center">
               <h3 className="text-2xl font-semibold text-text-dark mb-4">

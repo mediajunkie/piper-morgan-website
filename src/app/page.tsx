@@ -58,7 +58,7 @@ export default function Home() {
 
       {/* What You're Following Section */}
       <section className="py-16 md:py-20">
-        <div className="container mx-auto">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold text-text-dark mb-8">
               What we're doing
@@ -91,7 +91,7 @@ export default function Home() {
 
       {/* What We've Discovered Section */}
       <section className="bg-surface py-16 md:py-20">
-        <div className="container mx-auto">
+        <div className="site-container">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold text-text-dark mb-12">
               Discovered so far…
@@ -156,7 +156,7 @@ export default function Home() {
 
       {/* Current Reality Check Section */}
       <section className="py-16 md:py-20">
-        <div className="container mx-auto">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold text-text-dark mb-8">
               Current reality check
@@ -222,7 +222,7 @@ export default function Home() {
 
       {/* Why Follow This Journey Section */}
       <section className="bg-surface py-16 md:py-20">
-        <div className="container mx-auto">
+        <div className="site-container">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold text-text-dark mb-12">
               Why follow this journey?
@@ -293,7 +293,7 @@ export default function Home() {
 
       {/* Get Involved Section */}
       <section className="bg-surface py-16 md:py-20">
-        <div className="container mx-auto">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold text-text-dark mb-8">
               Get involved
@@ -388,7 +388,7 @@ export default function Home() {
 
       Newsletter Section:
       <section className="py-12 md:py-16">
-        <div className="container mx-auto">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-text-dark mb-6">
               Newsletter: Learning Along
@@ -432,7 +432,7 @@ export default function Home() {
 
       {/* Questions Section */}
       <section className="bg-surface py-16 md:py-20">
-        <div className="container mx-auto">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold text-text-dark mb-8">
               Questions?

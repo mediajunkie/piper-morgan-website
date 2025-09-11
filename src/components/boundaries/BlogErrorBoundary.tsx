@@ -72,7 +72,7 @@ class BlogErrorBoundary extends Component<Props, State> {
 
       return (
         <section id="recent-posts" className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="site-container">
             <div className="max-w-6xl mx-auto">
               {/* Error Notice */}
               <div className="bg-yellow-50 border border-yellow-200 p-6 rounded-card mb-8">

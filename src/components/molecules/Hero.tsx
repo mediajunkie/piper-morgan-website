@@ -54,7 +54,7 @@ export function Hero({
   ].filter(Boolean).join(' ');
 
   const contentClasses = [
-    'container mx-auto px-4',
+    'site-container',
     align === 'center' ? 'text-center' : 'text-left',
   ].join(' ');
 

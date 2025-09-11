@@ -40,7 +40,7 @@ export default function NewsletterPage() {
 
       {/* Main Newsletter Signup */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-3xl mx-auto">
             <NewsletterErrorBoundary>
               <NewsletterSignup
@@ -69,7 +69,7 @@ export default function NewsletterPage() {
 
       {/* Value Proposition */}
       <section className="bg-surface py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-text-dark mb-6">
               Why PM Professionals Choose Our Newsletter
@@ -121,7 +121,7 @@ export default function NewsletterPage() {
 
       {/* Sample Content Preview */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-text-dark mb-12">
               Recent Newsletter Highlights

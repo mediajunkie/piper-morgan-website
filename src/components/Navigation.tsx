@@ -31,7 +31,7 @@ export default function Navigation() {
 
   return (
     <nav className="bg-white sticky top-0 z-50 border-0" role="navigation" aria-label="Main navigation">
-      <div className="container mx-auto px-4">
+      <div className="site-container">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">

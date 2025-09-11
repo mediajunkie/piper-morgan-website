@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function NotFound() {
   return (
     <div className="min-h-screen">
-      <div className="container mx-auto max-w-4xl pt-16 md:pt-24 pb-8 md:pb-12 px-4 text-center">
+      <div className="site-container max-w-4xl pt-16 md:pt-24 pb-8 md:pb-12 text-center">
         {/* 404 Header */}
         <div className="mb-8">
           <h1 className="text-8xl md:text-9xl font-bold text-primary-teal-text mb-4">

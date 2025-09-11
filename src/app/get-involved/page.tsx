@@ -42,7 +42,7 @@ export default function GetInvolvedPage() {
 
       {/* Primary Newsletter Engagement */}
       <section className="py-16" id="newsletter">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-text-dark mb-4">
@@ -129,7 +129,7 @@ export default function GetInvolvedPage() {
 
       {/* Current Content Streams */}
       <section className="bg-surface py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-text-dark mb-8">
               Follow the Building-in-Public Journey
@@ -203,7 +203,7 @@ export default function GetInvolvedPage() {
 
       {/* Future Content & More Engagement */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-text-dark mb-8">
               What's Coming + More Ways to Engage
@@ -330,7 +330,7 @@ export default function GetInvolvedPage() {
 
       {/* The Bottom Line */}
       <section className="bg-text-dark py-16">
-        <div className="container mx-auto px-4">
+        <div className="site-container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-white mb-6">
               Learning in Public Because the Best Discoveries Happen When Smart
