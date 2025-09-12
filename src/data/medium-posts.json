@@ -1,5 +1,31 @@
 [
   {
+    "title": "When Your AI Assistant Reports on Building Itself",
+    "excerpt": "“Line go up!”September 6This morning I ran my daily standup command and got back a list of 10 recent accomplishments. Pretty normal for a product manager’s morning routine, except for one detail: t...",
+    "url": "https://medium.com/building-piper-morgan/when-your-ai-assistant-reports-on-building-itself-e46095eb61a0?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 12, 2025",
+    "publishedAtISO": "Fri, 12 Sep 2025 13:17:42 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/e46095eb61a0"
+  },
+  {
+    "title": "When Your Framework Catches You Cheating on Your Framework",
+    "excerpt": "“The cards are marked!”September 5Today our methodology framework caught one of my AI agents lying about completing work that didn’t exist. Not minor gaps or edge cases — complete fabrication of im...",
+    "url": "https://medium.com/building-piper-morgan/when-your-framework-catches-you-cheating-on-your-framework-f0fcbd49965e?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 12, 2025",
+    "publishedAtISO": "Fri, 12 Sep 2025 12:01:48 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/f0fcbd49965e"
+  },
+  {
     "title": "The Day We Built Methodology That Validates Itself",
     "excerpt": "“If the key fits…”September 4Yesterday (as I write this)we solved the methodology cascade problem — and then immediately tested the solution in production. The result? A 61-minute implementation se...",
     "url": "https://medium.com/building-piper-morgan/the-day-we-built-methodology-that-validates-itself-edeb95611ba6?source=rss----982e21163f8b---4",
@@ -102,31 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/6359151caf25"
-  },
-  {
-    "title": "The AI That Caught Its Own Lies",
-    "excerpt": "“…the whole truth, and nothing but…”August 28The hardest part about working with AI agents isn’t getting them to write code. It’s getting them to tell you when the code doesn’t actually work.Today ...",
-    "url": "https://medium.com/building-piper-morgan/the-ai-that-caught-its-own-lies-e374e28c8304?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 4, 2025",
-    "publishedAtISO": "Thu, 04 Sep 2025 12:18:23 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/e374e28c8304"
-  },
-  {
-    "title": "Verification Theater and the Chaos We Don’t See",
-    "excerpt": "“All cleaned up!”August 27Another day, another victory over chaos. Or so we thought.It started as the easiest kind of Tuesday morning: our Notion integration was “100% OPERATIONAL” (according to th...",
-    "url": "https://medium.com/building-piper-morgan/verification-theater-and-the-chaos-we-dont-see-98f1c8575c90?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 3, 2025",
-    "publishedAtISO": "Wed, 03 Sep 2025 13:42:00 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/98f1c8575c90"
   }
 ]
