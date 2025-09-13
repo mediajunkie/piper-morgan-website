@@ -1,5 +1,18 @@
 [
   {
+    "title": "The Archaeology of Code: How Session Logs Became Stories",
+    "excerpt": "“The Rosetta stones!”Flashing back to early July, about five weeks into this project, when I realized I could use my session logs to write blog posts about the Piper Morgan project, which led to th...",
+    "url": "https://medium.com/building-piper-morgan/the-archaeology-of-code-how-session-logs-became-stories-6a49dea29795?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 13, 2025",
+    "publishedAtISO": "Sat, 13 Sep 2025 12:49:12 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/6a49dea29795"
+  },
+  {
     "title": "When Your AI Assistant Reports on Building Itself",
     "excerpt": "“Line go up!”September 6This morning I ran my daily standup command and got back a list of 10 recent accomplishments. Pretty normal for a product manager’s morning routine, except for one detail: t...",
     "url": "https://medium.com/building-piper-morgan/when-your-ai-assistant-reports-on-building-itself-e46095eb61a0?source=rss----982e21163f8b---4",
@@ -115,18 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/fe55ea2e0863"
-  },
-  {
-    "title": "The Day Piper Published to My Company Wiki",
-    "excerpt": "“We’ve got a big scoop!”August 29There’s a moment in every technical project where the thing stops being a clever demo and starts being actual software. For me, that moment came at 3:19 PM today wh...",
-    "url": "https://medium.com/building-piper-morgan/the-day-piper-published-to-my-company-wiki-6359151caf25?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 5, 2025",
-    "publishedAtISO": "Fri, 05 Sep 2025 12:42:06 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/6359151caf25"
   }
 ]
