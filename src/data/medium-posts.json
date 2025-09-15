@@ -1,5 +1,31 @@
 [
   {
+    "title": "The Fractal Edge: When Problems Get Smaller, Not Fewer",
+    "excerpt": "“It’s getting better”September 8Sometimes the most encouraging thing about a development day isn’t that you solved all the problems. It’s that the problems got smaller.Monday started with our web i...",
+    "url": "https://medium.com/building-piper-morgan/the-fractal-edge-when-problems-get-smaller-not-fewer-5be76c5cf5de?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 15, 2025",
+    "publishedAtISO": "Mon, 15 Sep 2025 14:07:37 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/5be76c5cf5de"
+  },
+  {
+    "title": "When Methodology Meets Reality: Building While Learning",
+    "excerpt": "“See how we’re getting better at this?”September 7Some days your systematic process saves you. Other days it teaches you something about itself while saving you. Sunday was the second kind.The goal...",
+    "url": "https://medium.com/building-piper-morgan/when-methodology-meets-reality-building-while-learning-0d83dcb92553?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 15, 2025",
+    "publishedAtISO": "Mon, 15 Sep 2025 13:24:13 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/0d83dcb92553"
+  },
+  {
     "title": "Digital Archaeology of a Lost AI Development Weekend",
     "excerpt": "“Looks like you were chillin’”Part two of archaeology-flashback weekend, as I realized that two days I spent “cheating on” Claude with Gemini could also be retroactively digested into critical earl...",
     "url": "https://medium.com/building-piper-morgan/digital-archaeology-of-a-lost-ai-development-weekend-263831a13e10?source=rss----982e21163f8b---4",
@@ -102,31 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/577dde7ad54a"
-  },
-  {
-    "title": "Building the MVP While Keeping the Dream Alive",
-    "excerpt": "“The journey of a thousand miles…”By chance, I spent part of today refining the MVP roadmap for Piper Morgan, so this reflection on balancing your vision against shipping something feels ultra-time...",
-    "url": "https://medium.com/building-piper-morgan/building-the-mvp-while-keeping-the-dream-alive-bb1def7c48be?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 7, 2025",
-    "publishedAtISO": "Sun, 07 Sep 2025 12:47:39 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/bb1def7c48be"
-  },
-  {
-    "title": "When 80% Overhead Forces a Tool Change",
-    "excerpt": "“Malkovitch, Malkovitch..”July 6Sometimes the right decision becomes obvious when you quantify the pain. My Claude Code adoption for Piper Morgan came down to a single, soul-crushing metric: 80% of...",
-    "url": "https://medium.com/building-piper-morgan/when-80-overhead-forces-a-tool-change-09c852964c70?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 6, 2025",
-    "publishedAtISO": "Sat, 06 Sep 2025 13:35:07 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/09c852964c70"
   }
 ]
