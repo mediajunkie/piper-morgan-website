@@ -1,5 +1,18 @@
 [
   {
+    "title": "Train Tracks vs Free-for-All: When Methodology Becomes Infrastructure",
+    "excerpt": "“We’re on track!”September 10Three months ago, every development session was a creative adventure. Multiple AI agents working in parallel, discovering solutions through exploration, occasional bril...",
+    "url": "https://medium.com/building-piper-morgan/train-tracks-vs-free-for-all-when-methodology-becomes-infrastructure-4ecc40d907e0?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 17, 2025",
+    "publishedAtISO": "Wed, 17 Sep 2025 14:34:39 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/4ecc40d907e0"
+  },
+  {
     "title": "The Two-Line Fix That Took All Day: Why Process Is Product",
     "excerpt": "“They’re intertwingled!”September 9Started my morning standup routine at 6:40 AM, coffee in hand, ready for Monday’s ritual check-in with my AI assistant. Click the Dock icon. Nothing. Try the web ...",
     "url": "https://medium.com/building-piper-morgan/the-two-line-fix-that-took-all-day-why-process-is-product-12b31efe360b?source=rss----982e21163f8b---4",
@@ -115,18 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/283c92ab9267"
-  },
-  {
-    "title": "Building the Architecture That Builds Itself",
-    "excerpt": "“I can make it on my own”September 2You know that moment when your methodology catches you trying to cheat on your own methodology? That’s what happened yesterday at 9:59 PM, and it might be the mo...",
-    "url": "https://medium.com/building-piper-morgan/building-the-architecture-that-builds-itself-709a10b7f5c4?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 9, 2025",
-    "publishedAtISO": "Tue, 09 Sep 2025 16:58:22 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/709a10b7f5c4"
   }
 ]
