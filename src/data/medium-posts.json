@@ -1,5 +1,18 @@
 [
   {
+    "title": "We Spent Four Days on Boring Work. Day Five, We Gave Our AI a Personality",
+    "excerpt": "“I’m ready — let’s do this!”September 11Monday through Wednesday this week looked like this: debt clearing, methodology refinement, pattern catalog organization, broken link fixes, session log debu...",
+    "url": "https://medium.com/building-piper-morgan/we-spent-four-days-on-boring-work-day-five-we-gave-our-ai-a-personality-eb3ec58e6284?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 18, 2025",
+    "publishedAtISO": "Thu, 18 Sep 2025 12:31:48 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/eb3ec58e6284"
+  },
+  {
     "title": "Train Tracks vs Free-for-All: When Methodology Becomes Infrastructure",
     "excerpt": "“We’re on track!”September 10Three months ago, every development session was a creative adventure. Multiple AI agents working in parallel, discovering solutions through exploration, occasional bril...",
     "url": "https://medium.com/building-piper-morgan/train-tracks-vs-free-for-all-when-methodology-becomes-infrastructure-4ecc40d907e0?source=rss----982e21163f8b---4",
@@ -115,18 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/edeb95611ba6"
-  },
-  {
-    "title": "The Methodology Cascade Problem (And How We’re Solving It)",
-    "excerpt": "“Everybody clear on the plan?”September 3Here’s the thing about systematic methodology: when it works, it really works. Today we implemented a complete configuration layer with perfect TDD discipli...",
-    "url": "https://medium.com/building-piper-morgan/the-methodology-cascade-problem-and-how-were-solving-it-283c92ab9267?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 10, 2025",
-    "publishedAtISO": "Wed, 10 Sep 2025 13:13:41 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/283c92ab9267"
   }
 ]
