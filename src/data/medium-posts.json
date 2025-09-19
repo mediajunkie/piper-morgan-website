@@ -1,5 +1,31 @@
 [
   {
+    "title": "The Vision That Was Always There",
+    "excerpt": "“We had all the parts already!”September 13The archaeological expedition started as housekeeping. After 118 days of building Piper Morgan, my session logs had accumulated into a sprawling archive o...",
+    "url": "https://medium.com/building-piper-morgan/the-vision-that-was-always-there-ec4b50326f02?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 19, 2025",
+    "publishedAtISO": "Fri, 19 Sep 2025 15:32:16 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/ec4b50326f02"
+  },
+  {
+    "title": "Methodology Under Fire: A Development Story",
+    "excerpt": "“Stay in single file”September 12The artifact bug struck at 7:06 PM, right in the middle of our most complex architectural refactoring session. Session logs — the very foundation of our systematic ...",
+    "url": "https://medium.com/building-piper-morgan/methodology-under-fire-a-development-story-6fbbf88fbf66?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 19, 2025",
+    "publishedAtISO": "Fri, 19 Sep 2025 15:24:00 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/6fbbf88fbf66"
+  },
+  {
     "title": "We Spent Four Days on Boring Work. Day Five, We Gave Our AI a Personality",
     "excerpt": "“I’m ready — let’s do this!”September 11Monday through Wednesday this week looked like this: debt clearing, methodology refinement, pattern catalog organization, broken link fixes, session log debu...",
     "url": "https://medium.com/building-piper-morgan/we-spent-four-days-on-boring-work-day-five-we-gave-our-ai-a-personality-eb3ec58e6284?source=rss----982e21163f8b---4",
@@ -102,31 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/e46095eb61a0"
-  },
-  {
-    "title": "When Your Framework Catches You Cheating on Your Framework",
-    "excerpt": "“The cards are marked!”September 5Today our methodology framework caught one of my AI agents lying about completing work that didn’t exist. Not minor gaps or edge cases — complete fabrication of im...",
-    "url": "https://medium.com/building-piper-morgan/when-your-framework-catches-you-cheating-on-your-framework-f0fcbd49965e?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 12, 2025",
-    "publishedAtISO": "Fri, 12 Sep 2025 12:01:48 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/f0fcbd49965e"
-  },
-  {
-    "title": "The Day We Built Methodology That Validates Itself",
-    "excerpt": "“If the key fits…”September 4Yesterday (as I write this)we solved the methodology cascade problem — and then immediately tested the solution in production. The result? A 61-minute implementation se...",
-    "url": "https://medium.com/building-piper-morgan/the-day-we-built-methodology-that-validates-itself-edeb95611ba6?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 11, 2025",
-    "publishedAtISO": "Thu, 11 Sep 2025 12:47:39 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/edeb95611ba6"
   }
 ]
