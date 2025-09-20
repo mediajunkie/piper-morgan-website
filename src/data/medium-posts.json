@@ -1,5 +1,18 @@
 [
   {
+    "title": "The Just-in-Time Retrospective: How Fresh Session Logs Became Our Content Strategy",
+    "excerpt": "“Remind me what we did next?”July 12 to 15Most development teams do retrospectives weeks or months after the work is done. By then, the energy has faded, the details have blurred, and you’re left t...",
+    "url": "https://medium.com/building-piper-morgan/the-just-in-time-retrospective-how-fresh-session-logs-became-our-content-strategy-2fc8034af04f?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 20, 2025",
+    "publishedAtISO": "Sat, 20 Sep 2025 12:47:42 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/2fc8034af04f"
+  },
+  {
     "title": "The Vision That Was Always There",
     "excerpt": "“We had all the parts already!”September 13The archaeological expedition started as housekeeping. After 118 days of building Piper Morgan, my session logs had accumulated into a sprawling archive o...",
     "url": "https://medium.com/building-piper-morgan/the-vision-that-was-always-there-ec4b50326f02?source=rss----982e21163f8b---4",
@@ -115,18 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/6a49dea29795"
-  },
-  {
-    "title": "When Your AI Assistant Reports on Building Itself",
-    "excerpt": "“Line go up!”September 6This morning I ran my daily standup command and got back a list of 10 recent accomplishments. Pretty normal for a product manager’s morning routine, except for one detail: t...",
-    "url": "https://medium.com/building-piper-morgan/when-your-ai-assistant-reports-on-building-itself-e46095eb61a0?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 12, 2025",
-    "publishedAtISO": "Fri, 12 Sep 2025 13:17:42 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/e46095eb61a0"
   }
 ]
