@@ -1,5 +1,18 @@
 [
   {
+    "title": "The Three-AI Orchestra: Lessons from Coordinating Multiple AI Agents",
+    "excerpt": "“Let’s take it from the top”July 12, 13, 16 and 195Here’s what happens when you start treating AI agents like specialized team members instead of generic assistants: you accidentally create a coord...",
+    "url": "https://medium.com/building-piper-morgan/the-three-ai-orchestra-lessons-from-coordinating-multiple-ai-agents-0aeb570e3298?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 21, 2025",
+    "publishedAtISO": "Sun, 21 Sep 2025 12:47:44 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/0aeb570e3298"
+  },
+  {
     "title": "The Just-in-Time Retrospective: How Fresh Session Logs Became Our Content Strategy",
     "excerpt": "“Remind me what we did next?”July 12 to 15Most development teams do retrospectives weeks or months after the work is done. By then, the energy has faded, the details have blurred, and you’re left t...",
     "url": "https://medium.com/building-piper-morgan/the-just-in-time-retrospective-how-fresh-session-logs-became-our-content-strategy-2fc8034af04f?source=rss----982e21163f8b---4",
@@ -115,18 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/263831a13e10"
-  },
-  {
-    "title": "The Archaeology of Code: How Session Logs Became Stories",
-    "excerpt": "“The Rosetta stones!”Flashing back to early July, about five weeks into this project, when I realized I could use my session logs to write blog posts about the Piper Morgan project, which led to th...",
-    "url": "https://medium.com/building-piper-morgan/the-archaeology-of-code-how-session-logs-became-stories-6a49dea29795?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 13, 2025",
-    "publishedAtISO": "Sat, 13 Sep 2025 12:49:12 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/6a49dea29795"
   }
 ]
