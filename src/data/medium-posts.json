@@ -1,5 +1,31 @@
 [
   {
+    "title": "The Strategic Pause",
+    "excerpt": "“…”September 14There’s a moment in every swing’s arc where momentum carries you to the highest point and physics takes over. For just an instant, you hang there — not moving backward anymore, not y...",
+    "url": "https://medium.com/building-piper-morgan/the-strategic-pause-46c9aa742bef?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 22, 2025",
+    "publishedAtISO": "Mon, 22 Sep 2025 13:41:06 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/46c9aa742bef"
+  },
+  {
+    "title": "When You Need to Go Into Inchworm Mode",
+    "excerpt": "“Measuring the marigolds…”September 15By Monday morning, I could feel it happening again. That familiar cognitive fragmentation — attention scattered across too many dimensions, the urge to tackle ...",
+    "url": "https://medium.com/building-piper-morgan/when-you-need-to-go-into-inchworm-mode-9b7bbd23a16c?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 22, 2025",
+    "publishedAtISO": "Mon, 22 Sep 2025 13:21:51 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/9b7bbd23a16c"
+  },
+  {
     "title": "The Three-AI Orchestra: Lessons from Coordinating Multiple AI Agents",
     "excerpt": "“Let’s take it from the top”July 12, 13, 16 and 195Here’s what happens when you start treating AI agents like specialized team members instead of generic assistants: you accidentally create a coord...",
     "url": "https://medium.com/building-piper-morgan/the-three-ai-orchestra-lessons-from-coordinating-multiple-ai-agents-0aeb570e3298?source=rss----982e21163f8b---4",
@@ -102,31 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/5be76c5cf5de"
-  },
-  {
-    "title": "When Methodology Meets Reality: Building While Learning",
-    "excerpt": "“See how we’re getting better at this?”September 7Some days your systematic process saves you. Other days it teaches you something about itself while saving you. Sunday was the second kind.The goal...",
-    "url": "https://medium.com/building-piper-morgan/when-methodology-meets-reality-building-while-learning-0d83dcb92553?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 15, 2025",
-    "publishedAtISO": "Mon, 15 Sep 2025 13:24:13 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/0d83dcb92553"
-  },
-  {
-    "title": "Digital Archaeology of a Lost AI Development Weekend",
-    "excerpt": "“Looks like you were chillin’”Part two of archaeology-flashback weekend, as I realized that two days I spent “cheating on” Claude with Gemini could also be retroactively digested into critical earl...",
-    "url": "https://medium.com/building-piper-morgan/digital-archaeology-of-a-lost-ai-development-weekend-263831a13e10?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 14, 2025",
-    "publishedAtISO": "Sun, 14 Sep 2025 12:46:16 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/263831a13e10"
   }
 ]
