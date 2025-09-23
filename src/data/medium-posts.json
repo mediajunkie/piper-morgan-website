@@ -1,5 +1,31 @@
 [
   {
+    "title": "Back in the Optimist Bird Seat",
+    "excerpt": "“Just like a swiss watch”September 16Three days ago, I was cognitively fried. The kind of exhaustion where every decision feels overwhelming, where context-switching between architectural decisions...",
+    "url": "https://medium.com/building-piper-morgan/a-perback-in-the-optimist-bird-seat-4407ec7dfb6c?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 23, 2025",
+    "publishedAtISO": "Tue, 23 Sep 2025 12:46:25 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/4407ec7dfb6c"
+  },
+  {
+    "title": "When Your Methodology Holds Under Pressure",
+    "excerpt": "“There’s calm in your eye.”September 15Monday morning brought the kind of convergence that usually sends me into crisis mode: a UI regression blocking all testing, documentation work piling up, str...",
+    "url": "https://medium.com/building-piper-morgan/when-your-methodology-holds-under-pressure-d7bf51a718a3?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 23, 2025",
+    "publishedAtISO": "Tue, 23 Sep 2025 05:05:08 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/d7bf51a718a3"
+  },
+  {
     "title": "The Strategic Pause",
     "excerpt": "“…”September 14There’s a moment in every swing’s arc where momentum carries you to the highest point and physics takes over. For just an instant, you hang there — not moving backward anymore, not y...",
     "url": "https://medium.com/building-piper-morgan/the-strategic-pause-46c9aa742bef?source=rss----982e21163f8b---4",
@@ -102,31 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/4ecc40d907e0"
-  },
-  {
-    "title": "The Two-Line Fix That Took All Day: Why Process Is Product",
-    "excerpt": "“They’re intertwingled!”September 9Started my morning standup routine at 6:40 AM, coffee in hand, ready for Monday’s ritual check-in with my AI assistant. Click the Dock icon. Nothing. Try the web ...",
-    "url": "https://medium.com/building-piper-morgan/the-two-line-fix-that-took-all-day-why-process-is-product-12b31efe360b?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 16, 2025",
-    "publishedAtISO": "Tue, 16 Sep 2025 14:10:48 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/12b31efe360b"
-  },
-  {
-    "title": "The Fractal Edge: When Problems Get Smaller, Not Fewer",
-    "excerpt": "“It’s getting better”September 8Sometimes the most encouraging thing about a development day isn’t that you solved all the problems. It’s that the problems got smaller.Monday started with our web i...",
-    "url": "https://medium.com/building-piper-morgan/the-fractal-edge-when-problems-get-smaller-not-fewer-5be76c5cf5de?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 15, 2025",
-    "publishedAtISO": "Mon, 15 Sep 2025 14:07:37 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/5be76c5cf5de"
   }
 ]
