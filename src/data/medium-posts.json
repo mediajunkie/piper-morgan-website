@@ -1,5 +1,18 @@
 [
   {
+    "title": "When Your Agents Disagree (And That’s OK)",
+    "excerpt": "“What about that thing?”September 17Here’s the thing about working with multiple AI agents: they’re going to disagree with each other. And if you’re like most people, your first instinct is probabl...",
+    "url": "https://medium.com/building-piper-morgan/when-your-agents-disagree-and-thats-ok-81b764fa5de2?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 24, 2025",
+    "publishedAtISO": "Wed, 24 Sep 2025 12:46:56 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/81b764fa5de2"
+  },
+  {
     "title": "Back in the Optimist Bird Seat",
     "excerpt": "“Just like a swiss watch”September 16Three days ago, I was cognitively fried. The kind of exhaustion where every decision feels overwhelming, where context-switching between architectural decisions...",
     "url": "https://medium.com/building-piper-morgan/a-perback-in-the-optimist-bird-seat-4407ec7dfb6c?source=rss----982e21163f8b---4",
@@ -115,18 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/eb3ec58e6284"
-  },
-  {
-    "title": "Train Tracks vs Free-for-All: When Methodology Becomes Infrastructure",
-    "excerpt": "“We’re on track!”September 10Three months ago, every development session was a creative adventure. Multiple AI agents working in parallel, discovering solutions through exploration, occasional bril...",
-    "url": "https://medium.com/building-piper-morgan/train-tracks-vs-free-for-all-when-methodology-becomes-infrastructure-4ecc40d907e0?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 17, 2025",
-    "publishedAtISO": "Wed, 17 Sep 2025 14:34:39 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/4ecc40d907e0"
   }
 ]
