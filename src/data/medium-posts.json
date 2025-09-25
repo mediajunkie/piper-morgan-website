@@ -1,5 +1,18 @@
 [
   {
+    "title": "When Good Process Meets Bad Architecture: The Layer 4 Investigation",
+    "excerpt": "“They didn’t finish the job”September 18Sometimes the process works exactly as designed, but what it reveals isn’t what you hoped to find.Thursday started with what looked like a straightforward de...",
+    "url": "https://medium.com/building-piper-morgan/when-good-process-meets-bad-architecture-the-layer-4-investigation-f3a6145f8f71?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 25, 2025",
+    "publishedAtISO": "Thu, 25 Sep 2025 12:51:25 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/f3a6145f8f71"
+  },
+  {
     "title": "When Your Agents Disagree (And That’s OK)",
     "excerpt": "“What about that thing?”September 17Here’s the thing about working with multiple AI agents: they’re going to disagree with each other. And if you’re like most people, your first instinct is probabl...",
     "url": "https://medium.com/building-piper-morgan/when-your-agents-disagree-and-thats-ok-81b764fa5de2?source=rss----982e21163f8b---4",
@@ -115,18 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/6fbbf88fbf66"
-  },
-  {
-    "title": "We Spent Four Days on Boring Work. Day Five, We Gave Our AI a Personality",
-    "excerpt": "“I’m ready — let’s do this!”September 11Monday through Wednesday this week looked like this: debt clearing, methodology refinement, pattern catalog organization, broken link fixes, session log debu...",
-    "url": "https://medium.com/building-piper-morgan/we-spent-four-days-on-boring-work-day-five-we-gave-our-ai-a-personality-eb3ec58e6284?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 18, 2025",
-    "publishedAtISO": "Thu, 18 Sep 2025 12:31:48 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/eb3ec58e6284"
   }
 ]
