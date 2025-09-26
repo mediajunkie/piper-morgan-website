@@ -1,5 +1,31 @@
 [
   {
+    "title": "The Discipline of Boring: Why Saturday’s Foundation Work Matters More Than Monday’s Features",
+    "excerpt": "“Setting the table for success”September 20Saturday morning brought the urge to keep building.Friday’s Great Refactor planning had been a breakthrough. The path from “literally impossible” to “seve...",
+    "url": "https://medium.com/building-piper-morgan/the-discipline-of-boring-why-saturdays-foundation-work-matters-more-than-monday-s-features-b590180b511c?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 26, 2025",
+    "publishedAtISO": "Fri, 26 Sep 2025 14:27:28 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/b590180b511c"
+  },
+  {
+    "title": "The Great Refactor: From Impossible to Inevitable",
+    "excerpt": "“I think I’ve got it!”September 19I had dreams about the project last night.Not the usual anxiety dreams where code refuses to compile or demos crash in front of stakeholders. These were deep proce...",
+    "url": "https://medium.com/building-piper-morgan/the-great-refactor-from-impossible-to-inevitable-fef75c085cc7?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 26, 2025",
+    "publishedAtISO": "Fri, 26 Sep 2025 07:45:05 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/fef75c085cc7"
+  },
+  {
     "title": "When Good Process Meets Bad Architecture: The Layer 4 Investigation",
     "excerpt": "“They didn’t finish the job”September 18Sometimes the process works exactly as designed, but what it reveals isn’t what you hoped to find.Thursday started with what looked like a straightforward de...",
     "url": "https://medium.com/building-piper-morgan/when-good-process-meets-bad-architecture-the-layer-4-investigation-f3a6145f8f71?source=rss----982e21163f8b---4",
@@ -102,31 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/2fc8034af04f"
-  },
-  {
-    "title": "The Vision That Was Always There",
-    "excerpt": "“We had all the parts already!”September 13The archaeological expedition started as housekeeping. After 118 days of building Piper Morgan, my session logs had accumulated into a sprawling archive o...",
-    "url": "https://medium.com/building-piper-morgan/the-vision-that-was-always-there-ec4b50326f02?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 19, 2025",
-    "publishedAtISO": "Fri, 19 Sep 2025 15:32:16 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/ec4b50326f02"
-  },
-  {
-    "title": "Methodology Under Fire: A Development Story",
-    "excerpt": "“Stay in single file”September 12The artifact bug struck at 7:06 PM, right in the middle of our most complex architectural refactoring session. Session logs — the very foundation of our systematic ...",
-    "url": "https://medium.com/building-piper-morgan/methodology-under-fire-a-development-story-6fbbf88fbf66?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 19, 2025",
-    "publishedAtISO": "Fri, 19 Sep 2025 15:24:00 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/6fbbf88fbf66"
   }
 ]
