@@ -1,5 +1,18 @@
 [
   {
+    "title": "The Three Questions Every AI Builder Should Ask",
+    "excerpt": "“We come seeking wisdom”July 22Eight weeks into this project I was staring at a roadmap that claimed my AI assistant was nowhere near ready for real work, while simultaneously reading reports of it...",
+    "url": "https://medium.com/building-piper-morgan/the-three-questions-every-ai-builder-should-ask-ee6fae671129?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 27, 2025",
+    "publishedAtISO": "Sat, 27 Sep 2025 13:47:50 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/ee6fae671129"
+  },
+  {
     "title": "The Discipline of Boring: Why Saturday’s Foundation Work Matters More Than Monday’s Features",
     "excerpt": "“Setting the table for success”September 20Saturday morning brought the urge to keep building.Friday’s Great Refactor planning had been a breakthrough. The path from “literally impossible” to “seve...",
     "url": "https://medium.com/building-piper-morgan/the-discipline-of-boring-why-saturdays-foundation-work-matters-more-than-monday-s-features-b590180b511c?source=rss----982e21163f8b---4",
@@ -115,18 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/0aeb570e3298"
-  },
-  {
-    "title": "The Just-in-Time Retrospective: How Fresh Session Logs Became Our Content Strategy",
-    "excerpt": "“Remind me what we did next?”July 12 to 15Most development teams do retrospectives weeks or months after the work is done. By then, the energy has faded, the details have blurred, and you’re left t...",
-    "url": "https://medium.com/building-piper-morgan/the-just-in-time-retrospective-how-fresh-session-logs-became-our-content-strategy-2fc8034af04f?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 20, 2025",
-    "publishedAtISO": "Sat, 20 Sep 2025 12:47:42 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/2fc8034af04f"
   }
 ]
