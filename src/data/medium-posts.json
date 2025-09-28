@@ -1,5 +1,18 @@
 [
   {
+    "title": "Whipping AI Chaos Toward Quality with the Excellence Flywheel",
+    "excerpt": "“The faster we go the rounder we get!”July 23Exhausted as I was from a day spent transforming Piper Morgan from prototype to production tool, I suggested we press on for one more session:“Let’s cap...",
+    "url": "https://medium.com/building-piper-morgan/whipping-ai-chaos-toward-quality-with-the-excellence-flywheel-f14232150d04?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 28, 2025",
+    "publishedAtISO": "Sun, 28 Sep 2025 14:46:25 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/f14232150d04"
+  },
+  {
     "title": "The Three Questions Every AI Builder Should Ask",
     "excerpt": "“We come seeking wisdom”July 22Eight weeks into this project I was staring at a roadmap that claimed my AI assistant was nowhere near ready for real work, while simultaneously reading reports of it...",
     "url": "https://medium.com/building-piper-morgan/the-three-questions-every-ai-builder-should-ask-ee6fae671129?source=rss----982e21163f8b---4",
@@ -115,18 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/9b7bbd23a16c"
-  },
-  {
-    "title": "The Three-AI Orchestra: Lessons from Coordinating Multiple AI Agents",
-    "excerpt": "“Let’s take it from the top”July 12, 13, 16 and 195Here’s what happens when you start treating AI agents like specialized team members instead of generic assistants: you accidentally create a coord...",
-    "url": "https://medium.com/building-piper-morgan/the-three-ai-orchestra-lessons-from-coordinating-multiple-ai-agents-0aeb570e3298?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 21, 2025",
-    "publishedAtISO": "Sun, 21 Sep 2025 12:47:44 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/0aeb570e3298"
   }
 ]
