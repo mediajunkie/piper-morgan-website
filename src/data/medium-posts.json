@@ -1,5 +1,31 @@
 [
   {
+    "title": "The 24-Hour Test",
+    "excerpt": "“It’s working!”September 22Twenty-four hours after building infrastructure to teach machines to teach machines, I got to find out if it actually worked.The test came in the form of CORE-GREAT-1 — o...",
+    "url": "https://medium.com/building-piper-morgan/the-24-hour-test-698b8a61909a?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 29, 2025",
+    "publishedAtISO": "Mon, 29 Sep 2025 12:59:05 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/698b8a61909a"
+  },
+  {
+    "title": "Teaching Machines to Teach Machines",
+    "excerpt": "“Root students, please welcome your new teacher trainee!”September 21“We do these things not because they are easy, but because we thought they would be easy!”This Kennedy quote parody which showed...",
+    "url": "https://medium.com/building-piper-morgan/teaching-machines-to-teach-machines-a786faceb01a?source=rss----982e21163f8b---4",
+    "publishedAt": "Sep 29, 2025",
+    "publishedAtISO": "Mon, 29 Sep 2025 01:39:59 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/a786faceb01a"
+  },
+  {
     "title": "Whipping AI Chaos Toward Quality with the Excellence Flywheel",
     "excerpt": "“The faster we go the rounder we get!”July 23Exhausted as I was from a day spent transforming Piper Morgan from prototype to production tool, I suggested we press on for one more session:“Let’s cap...",
     "url": "https://medium.com/building-piper-morgan/whipping-ai-chaos-toward-quality-with-the-excellence-flywheel-f14232150d04?source=rss----982e21163f8b---4",
@@ -102,31 +128,5 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/d7bf51a718a3"
-  },
-  {
-    "title": "The Strategic Pause",
-    "excerpt": "“…”September 14There’s a moment in every swing’s arc where momentum carries you to the highest point and physics takes over. For just an instant, you hang there — not moving backward anymore, not y...",
-    "url": "https://medium.com/building-piper-morgan/the-strategic-pause-46c9aa742bef?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 22, 2025",
-    "publishedAtISO": "Mon, 22 Sep 2025 13:41:06 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/46c9aa742bef"
-  },
-  {
-    "title": "When You Need to Go Into Inchworm Mode",
-    "excerpt": "“Measuring the marigolds…”September 15By Monday morning, I could feel it happening again. That familiar cognitive fragmentation — attention scattered across too many dimensions, the urge to tackle ...",
-    "url": "https://medium.com/building-piper-morgan/when-you-need-to-go-into-inchworm-mode-9b7bbd23a16c?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 22, 2025",
-    "publishedAtISO": "Mon, 22 Sep 2025 13:21:51 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/9b7bbd23a16c"
   }
 ]
