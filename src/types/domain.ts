@@ -114,6 +114,7 @@ export interface BlogPost {
   tags: string[];
   url: string;
   mediumUrl: string;
+  featuredImage?: string;
 }
 
 // Newsletter signup data

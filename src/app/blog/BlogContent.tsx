@@ -35,6 +35,7 @@ export default function BlogContent() {
                     tags={post.tags}
                     href={post.url}
                     author={post.author}
+                    featuredImage={post.featuredImage}
                     external
                   />
                 ))}

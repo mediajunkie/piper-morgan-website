@@ -64,7 +64,7 @@ export default function NotFound() {
             </div>
             
             <div className="space-y-4">
-              <Link 
+              <Link
                 href="/what-weve-learned"
                 className="block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group"
               >
@@ -75,8 +75,20 @@ export default function NotFound() {
                   Building-in-public insights and breakthroughs
                 </p>
               </Link>
-              
-              <Link 
+
+              <Link
+                href="/blog"
+                className="block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group"
+              >
+                <h4 className="font-semibold text-text-dark group-hover:text-primary-teal-text">
+                  📝 Journey
+                </h4>
+                <p className="text-sm text-text-light mt-1">
+                  Follow our building-in-public blog posts
+                </p>
+              </Link>
+
+              <Link
                 href="/get-involved"
                 className="block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group"
               >

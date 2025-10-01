@@ -10,6 +10,7 @@ const footerLinks: FooterLink[] = [
   { label: 'Home', href: '/' },
   { label: 'How It Works', href: '/how-it-works' },
   { label: 'What We\'ve Learned', href: '/what-weve-learned' },
+  { label: 'Journey', href: '/blog' },
   { label: 'Get Involved', href: '/get-involved' },
 ];
 

@@ -1,4 +1,3 @@
-import { CTAButton } from '@/components/atoms/CTAButton';
 import { trackBlogClick } from '@/lib/analytics';
 
 export interface BlogPostCardProps {
@@ -18,6 +17,8 @@ export interface BlogPostCardProps {
   external?: boolean;
   /** Author name */
   author?: string;
+  /** Featured image URL */
+  featuredImage?: string;
   /** Compact layout variant */
   compact?: boolean;
   /** Additional CSS classes */
@@ -33,95 +34,80 @@ export function BlogPostCard({
   href,
   external = false,
   author = 'Christian Crumlish',
+  featuredImage,
   compact = false,
   className = '',
 }: BlogPostCardProps) {
-  
+
   const handleBlogClick = () => {
     trackBlogClick(title, href, 'blog_page');
   };
+
   const cardClasses = [
     'bg-white rounded-card shadow-component hover:shadow-component-hover transition-all duration-200',
-    'border border-gray-100 hover:border-primary-teal/20',
-    compact ? 'p-6' : 'p-8',
+    'border border-gray-100 hover:border-primary-teal/20 hover:bg-gray-50/50',
+    'overflow-hidden group',
     className,
   ].filter(Boolean).join(' ');
 
   return (
     <article className={cardClasses}>
-      <div className="flex flex-col h-full">
-        {/* Header */}
-        <div className="mb-4">
-          <h3 className={`font-bold text-text-dark mb-3 leading-tight ${
-            compact ? 'text-lg' : 'text-xl'
-          }`}>
-            <a
-              href={href}
-              target={external ? '_blank' : undefined}
-              rel={external ? 'noopener noreferrer' : undefined}
-              className="hover:text-primary-teal-text transition-colors"
-            >
-              {title}
-              {external && <span className="ml-1 text-sm">↗</span>}
-            </a>
-          </h3>
-
-          <p className={`text-text-light leading-relaxed ${
-            compact ? 'text-sm' : 'text-base'
-          }`}>
-            {excerpt}
-          </p>
-        </div>
-
-        {/* Tags */}
-        {tags.length > 0 && (
-          <div className="mb-4">
-            <div className="flex flex-wrap gap-2">
-              {tags.slice(0, 3).map((tag, index) => (
-                <span
-                  key={index}
-                  className="inline-block px-3 py-1 bg-primary-teal/10 text-primary-teal-text text-xs font-medium rounded-full"
-                >
-                  {tag}
-                </span>
-              ))}
-              {tags.length > 3 && (
-                <span className="inline-block px-3 py-1 bg-gray-100 text-text-light text-xs font-medium rounded-full">
-                  +{tags.length - 3} more
-                </span>
-              )}
-            </div>
+      <a
+        href={href}
+        target={external ? '_blank' : undefined}
+        rel={external ? 'noopener noreferrer' : undefined}
+        className="flex flex-col h-full cursor-pointer"
+        onClick={handleBlogClick}
+      >
+        {/* Featured Image */}
+        {featuredImage && (
+          <div className="relative w-full h-48 md:h-56 bg-gray-100 overflow-hidden flex-shrink-0">
+            <img
+              src={featuredImage}
+              alt={title}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              loading="lazy"
+            />
           </div>
         )}
 
-        {/* Footer */}
-        <div className="mt-auto">
-          <div className="flex items-center justify-between text-sm text-text-light mb-4">
-            <div className="flex items-center space-x-4">
-              <span>{author}</span>
-              <span>•</span>
+        <div className={`flex flex-col flex-grow ${compact ? 'p-6' : 'p-8'}`}>
+          {/* Tags Badge */}
+          {tags.length > 0 && (
+            <div className="mb-3">
+              <span className="inline-block px-3 py-1 bg-primary-teal/10 text-primary-teal-text text-xs font-medium rounded-full">
+                {tags[0]}
+              </span>
+            </div>
+          )}
+
+          {/* Title */}
+          <h3 className={`font-bold text-text-dark leading-tight group-hover:text-primary-teal-text transition-colors flex-grow ${
+            compact ? 'text-lg' : 'text-xl md:text-2xl'
+          }`}>
+            {title}
+          </h3>
+
+          {/* Footer */}
+          <div className="mt-auto pt-6">
+            {/* Metadata with improved spacing */}
+            <div className="flex items-center text-sm text-gray-600 mb-3 flex-wrap gap-x-2 gap-y-1">
               <time dateTime={publishedAt}>{publishedAt}</time>
               {readingTime && (
                 <>
-                  <span>•</span>
+                  <span className="text-gray-400">•</span>
                   <span>{readingTime}</span>
                 </>
               )}
             </div>
-          </div>
 
-          <CTAButton
-            href={href}
-            external={external}
-            variant="outline"
-            size="sm"
-            fullWidth={compact}
-            onClick={handleBlogClick}
-          >
-            {external ? 'Read on Medium' : 'Read More'}
-          </CTAButton>
+            {/* Read More Link */}
+            <div className="text-primary-teal-text font-medium text-sm group-hover:underline">
+              Read More →
+            </div>
+          </div>
         </div>
-      </div>
+      </a>
     </article>
   );
 }

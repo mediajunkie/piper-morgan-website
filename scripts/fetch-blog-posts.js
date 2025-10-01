@@ -9,6 +9,8 @@ const parser = new Parser({
     item: [
       ['dc:creator', 'creator'],
       ['content:encoded', 'contentEncoded'],
+      ['media:thumbnail', 'thumbnail'],
+      ['media:content', 'mediaContent'],
     ]
   }
 });
@@ -66,6 +68,39 @@ function extractTags(categories) {
   );
 }
 
+// Extract featured image from RSS item
+function extractFeaturedImage(item) {
+  // Try multiple sources for the image
+
+  // 1. Check for enclosure (common in RSS feeds)
+  if (item.enclosure && item.enclosure.url) {
+    return item.enclosure.url;
+  }
+
+  // 2. Check for thumbnail
+  if (item.thumbnail && typeof item.thumbnail === 'string') {
+    return item.thumbnail;
+  }
+  if (item.thumbnail && item.thumbnail.$ && item.thumbnail.$.url) {
+    return item.thumbnail.$.url;
+  }
+
+  // 3. Check for media:content
+  if (item.mediaContent && item.mediaContent.$ && item.mediaContent.$.url) {
+    return item.mediaContent.$.url;
+  }
+
+  // 4. Parse from content:encoded HTML
+  if (item.contentEncoded) {
+    const imgMatch = item.contentEncoded.match(/<img[^>]+src="([^">]+)"/i);
+    if (imgMatch && imgMatch[1]) {
+      return imgMatch[1];
+    }
+  }
+
+  return null;
+}
+
 async function fetchMediumPosts() {
   const posts = [];
 
@@ -77,6 +112,7 @@ async function fetchMediumPosts() {
     console.log(`✅ Found ${feed.items.length} posts in publication feed`);
 
     for (const item of feed.items.slice(0, 10)) {
+      const featuredImage = extractFeaturedImage(item);
       const post = {
         title: item.title || 'Untitled',
         excerpt: extractExcerpt(item.contentEncoded || item.content || '', item.title || ''),
@@ -86,11 +122,13 @@ async function fetchMediumPosts() {
         author: item.creator || 'Christian Crumlish',
         readingTime: extractReadingTime(item.contentEncoded || item.content || ''),
         tags: extractTags(item.categories),
-        guid: item.guid || item.link || ''
+        guid: item.guid || item.link || '',
+        featuredImage: featuredImage
       };
 
       posts.push(post);
-      console.log(`  📝 ${post.title} (${post.publishedAt})`);
+      const imageStatus = featuredImage ? '🖼️' : '📝';
+      console.log(`  ${imageStatus} ${post.title} (${post.publishedAt})`);
     }
 
   } catch (error) {
