@@ -40,7 +40,7 @@ export default function BlogPage() {
         align="center"
       />
 
-      <BlogContent />
+      <BlogContent currentPage={1} />
     </div>
   );
 }

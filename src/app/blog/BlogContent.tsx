@@ -1,11 +1,21 @@
 'use client';
 
-import { BlogPostCard, NewsletterSignup, NewsletterErrorBoundary, BlogErrorBoundary, CTAButton } from '@/components';
+import { BlogPostCard, NewsletterSignup, NewsletterErrorBoundary, BlogErrorBoundary, CTAButton, Pagination } from '@/components';
 import mediumPosts from '@/data/medium-posts.json';
 
-export default function BlogContent() {
-  // Use the first 6 posts for the main grid
-  const featuredPosts = mediumPosts.slice(0, 6);
+const POSTS_PER_PAGE = 24;
+
+interface BlogContentProps {
+  currentPage?: number;
+}
+
+export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
+  // Calculate pagination
+  const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+  const endIndex = startIndex + POSTS_PER_PAGE;
+  const paginatedPosts = mediumPosts.slice(startIndex, endIndex);
+  const totalPages = Math.ceil(mediumPosts.length / POSTS_PER_PAGE);
+  const totalPosts = mediumPosts.length;
 
   return (
     <>
@@ -18,14 +28,18 @@ export default function BlogContent() {
                 <h2 className="text-3xl font-bold text-text-dark mb-6">
                   Building-in-Public Updates
                 </h2>
-                <p className="text-xl text-text-light">
+                <p className="text-xl text-text-light mb-4">
                   Deep dives into our methodology breakthroughs, systematic excellence patterns, and transparent AI-powered product management development. Learn from our systematic approach as we build it.
+                </p>
+                {/* Post Count Indicator */}
+                <p className="text-sm text-gray-600">
+                  Showing {startIndex + 1}-{Math.min(endIndex, totalPosts)} of {totalPosts} posts
                 </p>
               </div>
 
-              {/* Featured Posts Grid - Dynamically loaded from RSS */}
+              {/* Posts Grid - Dynamically loaded from RSS */}
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                {featuredPosts.map((post, index) => (
+                {paginatedPosts.map((post, index) => (
                   <BlogPostCard
                     key={post.guid || index}
                     title={post.title}
@@ -40,6 +54,13 @@ export default function BlogContent() {
                   />
                 ))}
               </div>
+
+              {/* Pagination */}
+              <Pagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                className="mb-12"
+              />
 
               {/* Medium Integration Notice */}
               <div className="bg-gradient-to-r from-primary-teal/5 to-primary-orange/5 p-8 rounded-card mb-12">

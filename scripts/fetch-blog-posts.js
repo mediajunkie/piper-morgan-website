@@ -111,7 +111,7 @@ async function fetchMediumPosts() {
 
     console.log(`✅ Found ${feed.items.length} posts in publication feed`);
 
-    for (const item of feed.items.slice(0, 10)) {
+    for (const item of feed.items.slice(0, 33)) {
       const featuredImage = extractFeaturedImage(item);
       const post = {
         title: item.title || 'Untitled',

@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { generateSEOMetadata } from "@/lib/domain-utils";
-import { Hero, NewsletterSignup, NewsletterErrorBoundary, CTAButton } from "@/components";
+import {
+  Hero,
+  NewsletterSignup,
+  NewsletterErrorBoundary,
+  CTAButton,
+} from "@/components";
 
 const seoData = generateSEOMetadata(
   "Get Involved - Join 576+ PM Professionals Learning Systematic AI Collaboration",
@@ -26,7 +31,7 @@ export default function GetInvolvedPage() {
       <Hero
         headline="Follow the systematic excellence"
         highlightText="methodology development"
-        subheadline="Get weekly insights into our breakthrough discoveries, behind-the-scenes development updates, and practical frameworks you can apply to your own AI collaboration work. Join 635+ PM professionals learning systematic AI collaboration."
+        subheadline="Get weekly insights into our breakthrough discoveries, behind-the-scenes development updates, and practical frameworks you can apply to your own AI collaboration work. Join 678+ PM professionals learning systematic AI collaboration."
         primaryCTA={{
           text: "Join the Community",
           href: "#newsletter",
@@ -46,7 +51,7 @@ export default function GetInvolvedPage() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-text-dark mb-4">
-                Join 635+ PM Professionals Learning Systematic Excellence
+                Join 678+ PM Professionals Learning Systematic Excellence
               </h2>
               <p className="text-xl text-text-light">
                 Get weekly insights into our methodology development,
@@ -73,7 +78,7 @@ export default function GetInvolvedPage() {
                 compact={false}
                 source="get-involved"
                 metadata={{
-                  page_context: "primary-engagement-cta"
+                  page_context: "primary-engagement-cta",
                 }}
                 privacyNotice="No spam, unsubscribe anytime. Join the growing community of PM professionals learning systematic excellence."
               />

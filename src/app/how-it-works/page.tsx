@@ -871,7 +871,7 @@ export default function HowItWorksPage() {
                     </li>
                     <li>• Test patterns in your own work and share results</li>
                     <li>
-                      • Join 635+ PM professionals learning systematic AI
+                      • Join 678+ PM professionals learning systematic AI
                       collaboration
                     </li>
                     <li>
