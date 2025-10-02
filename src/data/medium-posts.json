@@ -1,5 +1,19 @@
 [
   {
+    "title": "The Quiet Satisfaction of the Successful Inchworm",
+    "excerpt": "“Nice work today!”September 25At 9:46 PM on Thursday, after six days of systematic work, I closed CORE-GREAT-1. QueryRouter — stuck at 75% completion for months with disabling TODO comments — was f...",
+    "url": "https://medium.com/building-piper-morgan/the-quiet-satisfaction-of-the-successful-inchworm-433429cb8a5a?source=rss----982e21163f8b---4",
+    "publishedAt": "Oct 2, 2025",
+    "publishedAtISO": "Thu, 02 Oct 2025 13:30:35 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/433429cb8a5a",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*bpBT5XoKx20r8JG3ub01RQ.png"
+  },
+  {
     "title": "Doing the Deep Work",
     "excerpt": "“Let’s take our time and see everything”September 24Seven hours after declaring we needed to “complete GREAT-1 and have no other priorities until we do,” I got to see what that discipline actually ...",
     "url": "https://medium.com/building-piper-morgan/doing-the-deep-work-704e26cccf03?source=rss----982e21163f8b---4",
@@ -124,19 +138,5 @@
     ],
     "guid": "https://medium.com/p/f3a6145f8f71",
     "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*o_Ax-1mkb6CvWiqZeYvwCw.png"
-  },
-  {
-    "title": "When Your Agents Disagree (And That’s OK)",
-    "excerpt": "“What about that thing?”September 17Here’s the thing about working with multiple AI agents: they’re going to disagree with each other. And if you’re like most people, your first instinct is probabl...",
-    "url": "https://medium.com/building-piper-morgan/when-your-agents-disagree-and-thats-ok-81b764fa5de2?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 24, 2025",
-    "publishedAtISO": "Wed, 24 Sep 2025 12:46:56 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/81b764fa5de2",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*7r8bJQ_y9MTL7ODiqWaUtQ.png"
   }
 ]
