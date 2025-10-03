@@ -1,5 +1,33 @@
 [
   {
+    "title": "Building the Cathedral: When AI Agents Need the Big Picture",
+    "excerpt": "“I’m helping xian make Piper Morgan!”September 27“The problem,” I told my Lead Developer at 5:02 PM Saturday, “is that the agents are laying bricks instead of building a cathedral.”Then I explained...",
+    "url": "https://medium.com/building-piper-morgan/building-the-cathedral-when-ai-agents-need-the-big-picture-50b9dfb0b2af?source=rss----982e21163f8b---4",
+    "publishedAt": "Oct 3, 2025",
+    "publishedAtISO": "Fri, 03 Oct 2025 14:17:51 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/50b9dfb0b2af",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*8MuFWHcoLH2WSuP0l-G6fQ.png"
+  },
+  {
+    "title": "The Foundations Were Indeed Already There",
+    "excerpt": "“I just need to put it all together now!”September 26The day after closing CORE-GREAT-1, I started GREAT-2A expecting another week of systematic debugging and careful construction. Instead, I disco...",
+    "url": "https://medium.com/building-piper-morgan/the-foundations-were-indeed-already-there-7701c04a1497?source=rss----982e21163f8b---4",
+    "publishedAt": "Oct 3, 2025",
+    "publishedAtISO": "Fri, 03 Oct 2025 14:11:58 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/7701c04a1497",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*d9joCEu8gPDW6z5rL4GzTQ.png"
+  },
+  {
     "title": "The Quiet Satisfaction of the Successful Inchworm",
     "excerpt": "“Nice work today!”September 25At 9:46 PM on Thursday, after six days of systematic work, I closed CORE-GREAT-1. QueryRouter — stuck at 75% completion for months with disabling TODO comments — was f...",
     "url": "https://medium.com/building-piper-morgan/the-quiet-satisfaction-of-the-successful-inchworm-433429cb8a5a?source=rss----982e21163f8b---4",
@@ -110,33 +138,5 @@
     ],
     "guid": "https://medium.com/p/b590180b511c",
     "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*nWIIQEj7X6ZbilnSoBCAJQ.png"
-  },
-  {
-    "title": "The Great Refactor: From Impossible to Inevitable",
-    "excerpt": "“I think I’ve got it!”September 19I had dreams about the project last night.Not the usual anxiety dreams where code refuses to compile or demos crash in front of stakeholders. These were deep proce...",
-    "url": "https://medium.com/building-piper-morgan/the-great-refactor-from-impossible-to-inevitable-fef75c085cc7?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 26, 2025",
-    "publishedAtISO": "Fri, 26 Sep 2025 07:45:05 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/fef75c085cc7",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*9mM16JBXYuJzjtw9vC7VgA.png"
-  },
-  {
-    "title": "When Good Process Meets Bad Architecture: The Layer 4 Investigation",
-    "excerpt": "“They didn’t finish the job”September 18Sometimes the process works exactly as designed, but what it reveals isn’t what you hoped to find.Thursday started with what looked like a straightforward de...",
-    "url": "https://medium.com/building-piper-morgan/when-good-process-meets-bad-architecture-the-layer-4-investigation-f3a6145f8f71?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 25, 2025",
-    "publishedAtISO": "Thu, 25 Sep 2025 12:51:25 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/f3a6145f8f71",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*o_Ax-1mkb6CvWiqZeYvwCw.png"
   }
 ]
