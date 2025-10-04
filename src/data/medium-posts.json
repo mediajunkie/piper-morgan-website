@@ -1,5 +1,19 @@
 [
   {
+    "title": "When Good Decisions Disappear: The Hidden Cost of Chat-Based Development",
+    "excerpt": "“Where have you been?Why excellent tactical choices need systematic institutional memoryAugust 5The discoveryIt started with a routine tracking audit. We’d had an exceptional development day — the ...",
+    "url": "https://medium.com/building-piper-morgan/when-good-decisions-disappear-the-hidden-cost-of-chat-based-development-4148a6ebdab1?source=rss----982e21163f8b---4",
+    "publishedAt": "Oct 4, 2025",
+    "publishedAtISO": "Sat, 04 Oct 2025 14:03:53 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/4148a6ebdab1",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*r3WnZr3GH3bJ5jD7zhuEEw.png"
+  },
+  {
     "title": "Building the Cathedral: When AI Agents Need the Big Picture",
     "excerpt": "“I’m helping xian make Piper Morgan!”September 27“The problem,” I told my Lead Developer at 5:02 PM Saturday, “is that the agents are laying bricks instead of building a cathedral.”Then I explained...",
     "url": "https://medium.com/building-piper-morgan/building-the-cathedral-when-ai-agents-need-the-big-picture-50b9dfb0b2af?source=rss----982e21163f8b---4",
@@ -124,19 +138,5 @@
     ],
     "guid": "https://medium.com/p/ee6fae671129",
     "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*Z5DVeHnwTpZQk0u9-oA-Gg.png"
-  },
-  {
-    "title": "The Discipline of Boring: Why Saturday’s Foundation Work Matters More Than Monday’s Features",
-    "excerpt": "“Setting the table for success”September 20Saturday morning brought the urge to keep building.Friday’s Great Refactor planning had been a breakthrough. The path from “literally impossible” to “seve...",
-    "url": "https://medium.com/building-piper-morgan/the-discipline-of-boring-why-saturdays-foundation-work-matters-more-than-monday-s-features-b590180b511c?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 26, 2025",
-    "publishedAtISO": "Fri, 26 Sep 2025 14:27:28 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/b590180b511c",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*nWIIQEj7X6ZbilnSoBCAJQ.png"
   }
 ]
