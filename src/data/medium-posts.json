@@ -1,5 +1,19 @@
 [
   {
+    "title": "I Asked Claude to Find Every Time I Dropped the Ball (And What We Learned)",
+    "excerpt": "“You just need reminders!”August 9, 2025Here’s a confession: I suspected I was forgetting things. Not just the usual “where did I put my keys” stuff, but systematic project things. Habits I’d plann...",
+    "url": "https://medium.com/building-piper-morgan/i-asked-claude-to-find-every-time-i-dropped-the-ball-and-what-we-learned-7f74897824a7?source=rss----982e21163f8b---4",
+    "publishedAt": "Oct 5, 2025",
+    "publishedAtISO": "Sun, 05 Oct 2025 14:34:29 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/7f74897824a7",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*irRWEbNz-co78Hr6czXlTA.png"
+  },
+  {
     "title": "When Good Decisions Disappear: The Hidden Cost of Chat-Based Development",
     "excerpt": "“Where have you been?Why excellent tactical choices need systematic institutional memoryAugust 5The discoveryIt started with a routine tracking audit. We’d had an exceptional development day — the ...",
     "url": "https://medium.com/building-piper-morgan/when-good-decisions-disappear-the-hidden-cost-of-chat-based-development-4148a6ebdab1?source=rss----982e21163f8b---4",
@@ -124,19 +138,5 @@
     ],
     "guid": "https://medium.com/p/f14232150d04",
     "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*QRnGY6AWUu5gYMJxxs8v0Q.png"
-  },
-  {
-    "title": "The Three Questions Every AI Builder Should Ask",
-    "excerpt": "“We come seeking wisdom”July 22Eight weeks into this project I was staring at a roadmap that claimed my AI assistant was nowhere near ready for real work, while simultaneously reading reports of it...",
-    "url": "https://medium.com/building-piper-morgan/the-three-questions-every-ai-builder-should-ask-ee6fae671129?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 27, 2025",
-    "publishedAtISO": "Sat, 27 Sep 2025 13:47:50 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/ee6fae671129",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*Z5DVeHnwTpZQk0u9-oA-Gg.png"
   }
 ]
