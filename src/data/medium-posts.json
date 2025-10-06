@@ -1,5 +1,33 @@
 [
   {
+    "title": "Solving the 80% Pattern",
+    "excerpt": "September 29Monday morning at 9:37 AM, with all three routers complete from Sunday night’s work, the migration phase looked straightforward. Six services importing adapters directly. Replace import...",
+    "url": "https://medium.com/building-piper-morgan/solving-the-80-pattern-a1dc0ddb8966?source=rss----982e21163f8b---4",
+    "publishedAt": "Oct 6, 2025",
+    "publishedAtISO": "Mon, 06 Oct 2025 13:10:39 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/a1dc0ddb8966",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*MYde63qnUEaEhNwBNME-OA.png"
+  },
+  {
+    "title": "Three Integrations Walk Into a Bar",
+    "excerpt": "“What’ll it be?”September 28Sunday afternoon at 4:14 PM, I opened my laptop expecting a straightforward router completion task. The gameplan looked clean: finish three integration routers (Slack, N...",
+    "url": "https://medium.com/building-piper-morgan/three-integrations-walk-into-a-bar-f748ce4c2db1?source=rss----982e21163f8b---4",
+    "publishedAt": "Oct 6, 2025",
+    "publishedAtISO": "Mon, 06 Oct 2025 13:00:58 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/f748ce4c2db1",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*grvkaMObknRqcbQy0H1CrA.png"
+  },
+  {
     "title": "I Asked Claude to Find Every Time I Dropped the Ball (And What We Learned)",
     "excerpt": "“You just need reminders!”August 9, 2025Here’s a confession: I suspected I was forgetting things. Not just the usual “where did I put my keys” stuff, but systematic project things. Habits I’d plann...",
     "url": "https://medium.com/building-piper-morgan/i-asked-claude-to-find-every-time-i-dropped-the-ball-and-what-we-learned-7f74897824a7?source=rss----982e21163f8b---4",
@@ -110,33 +138,5 @@
     ],
     "guid": "https://medium.com/p/698b8a61909a",
     "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*nc5DbEFwIHqqGIhz19EBPg.png"
-  },
-  {
-    "title": "Teaching Machines to Teach Machines",
-    "excerpt": "“Root students, please welcome your new teacher trainee!”September 21“We do these things not because they are easy, but because we thought they would be easy!”This Kennedy quote parody which showed...",
-    "url": "https://medium.com/building-piper-morgan/teaching-machines-to-teach-machines-a786faceb01a?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 29, 2025",
-    "publishedAtISO": "Mon, 29 Sep 2025 01:39:59 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/a786faceb01a",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*uBFYWYzch0rXv9I8YkCSKg.png"
-  },
-  {
-    "title": "Whipping AI Chaos Toward Quality with the Excellence Flywheel",
-    "excerpt": "“The faster we go the rounder we get!”July 23Exhausted as I was from a day spent transforming Piper Morgan from prototype to production tool, I suggested we press on for one more session:“Let’s cap...",
-    "url": "https://medium.com/building-piper-morgan/whipping-ai-chaos-toward-quality-with-the-excellence-flywheel-f14232150d04?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 28, 2025",
-    "publishedAtISO": "Sun, 28 Sep 2025 14:46:25 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/f14232150d04",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*QRnGY6AWUu5gYMJxxs8v0Q.png"
   }
 ]
