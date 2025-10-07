@@ -1,5 +1,19 @@
 [
   {
+    "title": "Think Like a Time Lord and Stop Watching the Clock",
+    "excerpt": "“We have all the time we need”September 30A day without drama: Tuesday’s GREAT-2C session completed in 2 hours and 7 minutes with zero major issues, two sophisticated spatial architectures verified...",
+    "url": "https://medium.com/building-piper-morgan/think-like-a-time-lord-and-stop-watching-the-clock-71b3b5ee49a0?source=rss----982e21163f8b---4",
+    "publishedAt": "Oct 7, 2025",
+    "publishedAtISO": "Tue, 07 Oct 2025 14:02:39 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/71b3b5ee49a0",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*Rkep1oaUr5cQMxpTzyxYzg.png"
+  },
+  {
     "title": "Solving the 80% Pattern",
     "excerpt": "September 29Monday morning at 9:37 AM, with all three routers complete from Sunday night’s work, the migration phase looked straightforward. Six services importing adapters directly. Replace import...",
     "url": "https://medium.com/building-piper-morgan/solving-the-80-pattern-a1dc0ddb8966?source=rss----982e21163f8b---4",
@@ -124,19 +138,5 @@
     ],
     "guid": "https://medium.com/p/44e1dc125be4",
     "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*VvW_q7sYE4Rb1pa9Mi_w6Q.png"
-  },
-  {
-    "title": "The 24-Hour Test",
-    "excerpt": "“It’s working!”September 22Twenty-four hours after building infrastructure to teach machines to teach machines, I got to find out if it actually worked.The test came in the form of CORE-GREAT-1 — o...",
-    "url": "https://medium.com/building-piper-morgan/the-24-hour-test-698b8a61909a?source=rss----982e21163f8b---4",
-    "publishedAt": "Sep 29, 2025",
-    "publishedAtISO": "Mon, 29 Sep 2025 12:59:05 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/698b8a61909a",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*nc5DbEFwIHqqGIhz19EBPg.png"
   }
 ]
