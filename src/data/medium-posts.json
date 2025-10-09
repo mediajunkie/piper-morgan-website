@@ -1,5 +1,19 @@
 [
   {
+    "title": "The Plugin Architecture Nobody Asked For",
+    "excerpt": "“It powers anything!”October 3Yesterday we built a plugin system for four plugins. If that sounds like over-engineering, let me explain why it’s not completely ridiculous.The setupGREAT-3A — our th...",
+    "url": "https://medium.com/building-piper-morgan/the-plugin-architecture-nobody-asked-for-650da4a52669?source=rss----982e21163f8b---4",
+    "publishedAt": "Oct 9, 2025",
+    "publishedAtISO": "Thu, 09 Oct 2025 12:54:52 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/650da4a52669",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*rl2Iv59lNeDhQlcUVK27hw.png"
+  },
+  {
     "title": "The Third Pattern: When Investigation Rewrites Your Assumptions",
     "excerpt": "“The rain tastes like yesterday’s regrets…”October 1We started the day with a clear mission: Calendar integration was the only service without spatial intelligence, sitting at 85% complete with a s...",
     "url": "https://medium.com/building-piper-morgan/the-third-pattern-when-investigation-rewrites-your-assumptions-ffc8f69c6327?source=rss----982e21163f8b---4",
@@ -124,19 +138,5 @@
     ],
     "guid": "https://medium.com/p/433429cb8a5a",
     "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*bpBT5XoKx20r8JG3ub01RQ.png"
-  },
-  {
-    "title": "Doing the Deep Work",
-    "excerpt": "“Let’s take our time and see everything”September 24Seven hours after declaring we needed to “complete GREAT-1 and have no other priorities until we do,” I got to see what that discipline actually ...",
-    "url": "https://medium.com/building-piper-morgan/doing-the-deep-work-704e26cccf03?source=rss----982e21163f8b---4",
-    "publishedAt": "Oct 1, 2025",
-    "publishedAtISO": "Wed, 01 Oct 2025 13:33:55 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/704e26cccf03",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*dlSmuOKDTm933LXy0Exc4g.png"
   }
 ]
