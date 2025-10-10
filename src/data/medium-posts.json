@@ -1,5 +1,33 @@
 [
   {
+    "title": "Three Days to Production: When Steady Momentum Beats Racing Ahead",
+    "excerpt": "“We made it!”October 4At 6:48 PM on Saturday, my Lead Developer sent the final validation report for GREAT-3D. The numbers were almost absurd: 120 plugin tests passing, performance targets exceeded...",
+    "url": "https://medium.com/building-piper-morgan/three-days-to-production-when-steady-momentum-beats-racing-ahead-04799048f5ea?source=rss----982e21163f8b---4",
+    "publishedAt": "Oct 10, 2025",
+    "publishedAtISO": "Fri, 10 Oct 2025 14:26:01 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/04799048f5ea",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*1pOsvI3NFCnH6oMYc0Ikpg.png"
+  },
+  {
+    "title": "The Day Everything Went Right: When Fast Means Unbroken",
+    "excerpt": "“Mornin’ boss!”October 3At 4:50 PM on Friday, my Lead Developer — Claude Sonnet 4.5, if we’re being formal — sent me the completion summary for GREAT-3B. The numbers looked almost suspicious: 48 te...",
+    "url": "https://medium.com/building-piper-morgan/the-day-everything-went-right-when-fast-means-unbroken-b859b2b9de2f?source=rss----982e21163f8b---4",
+    "publishedAt": "Oct 10, 2025",
+    "publishedAtISO": "Fri, 10 Oct 2025 14:09:55 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/b859b2b9de2f",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*Tmfjf6aZvJjZORv3g6V_xg.png"
+  },
+  {
     "title": "The Plugin Architecture Nobody Asked For",
     "excerpt": "“It powers anything!”October 3Yesterday we built a plugin system for four plugins. If that sounds like over-engineering, let me explain why it’s not completely ridiculous.The setupGREAT-3A — our th...",
     "url": "https://medium.com/building-piper-morgan/the-plugin-architecture-nobody-asked-for-650da4a52669?source=rss----982e21163f8b---4",
@@ -110,33 +138,5 @@
     ],
     "guid": "https://medium.com/p/50b9dfb0b2af",
     "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*8MuFWHcoLH2WSuP0l-G6fQ.png"
-  },
-  {
-    "title": "The Foundations Were Indeed Already There",
-    "excerpt": "“I just need to put it all together now!”September 26The day after closing CORE-GREAT-1, I started GREAT-2A expecting another week of systematic debugging and careful construction. Instead, I disco...",
-    "url": "https://medium.com/building-piper-morgan/the-foundations-were-indeed-already-there-7701c04a1497?source=rss----982e21163f8b---4",
-    "publishedAt": "Oct 3, 2025",
-    "publishedAtISO": "Fri, 03 Oct 2025 14:11:58 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/7701c04a1497",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*d9joCEu8gPDW6z5rL4GzTQ.png"
-  },
-  {
-    "title": "The Quiet Satisfaction of the Successful Inchworm",
-    "excerpt": "“Nice work today!”September 25At 9:46 PM on Thursday, after six days of systematic work, I closed CORE-GREAT-1. QueryRouter — stuck at 75% completion for months with disabling TODO comments — was f...",
-    "url": "https://medium.com/building-piper-morgan/the-quiet-satisfaction-of-the-successful-inchworm-433429cb8a5a?source=rss----982e21163f8b---4",
-    "publishedAt": "Oct 2, 2025",
-    "publishedAtISO": "Thu, 02 Oct 2025 13:30:35 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/433429cb8a5a",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*bpBT5XoKx20r8JG3ub01RQ.png"
   }
 ]
