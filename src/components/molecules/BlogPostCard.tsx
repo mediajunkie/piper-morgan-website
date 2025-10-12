@@ -9,6 +9,8 @@ export interface BlogPostCardProps {
   publishedAt: string;
   /** Work date (when the work actually happened) - Phase 6 */
   workDate?: string;
+  /** Category (building or insight) - Phase 7 */
+  category?: 'building' | 'insight';
   /** Estimated reading time */
   readingTime?: string;
   /** Post tags */
@@ -32,6 +34,7 @@ export function BlogPostCard({
   excerpt,
   publishedAt,
   workDate,
+  category,
   readingTime,
   tags = [],
   href,
@@ -75,11 +78,15 @@ export function BlogPostCard({
         )}
 
         <div className={`flex flex-col flex-grow ${compact ? 'p-6' : 'p-8'}`}>
-          {/* Tags Badge */}
-          {tags.length > 0 && (
+          {/* Category Badge (Phase 7) */}
+          {category && (
             <div className="mb-3">
-              <span className="inline-block px-3 py-1 bg-primary-teal/10 dark:bg-primary-teal/20 text-primary-teal-text dark:text-primary-teal text-xs font-medium rounded-full">
-                {tags[0]}
+              <span className={`inline-block px-3 py-1 text-xs font-medium rounded-full ${
+                category === 'building'
+                  ? 'bg-primary-teal/10 dark:bg-primary-teal/20 text-primary-teal-text dark:text-primary-teal'
+                  : 'bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange'
+              }`}>
+                {category === 'building' ? 'Building' : 'Insight'}
               </span>
             </div>
           )}

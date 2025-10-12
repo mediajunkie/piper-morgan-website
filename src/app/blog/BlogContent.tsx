@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { BlogPostCard, NewsletterSignup, NewsletterErrorBoundary, BlogErrorBoundary, CTAButton, Pagination } from '@/components';
 import mediumPosts from '@/data/medium-posts.json';
 import { sortByWorkDate } from '@/lib/blog-utils';
@@ -7,19 +8,33 @@ import { sortByWorkDate } from '@/lib/blog-utils';
 const POSTS_PER_PAGE = 24;
 
 // Sort posts by work date (chronological order of when work happened)
-const sortedPosts = sortByWorkDate(mediumPosts, 'desc');
+const allSortedPosts = sortByWorkDate(mediumPosts, 'desc');
 
 interface BlogContentProps {
   currentPage?: number;
 }
 
+type Category = 'all' | 'building' | 'insight';
+
 export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
-  // Calculate pagination (using work date sorted posts)
+  // Phase 7: Category filtering state
+  const [selectedCategory, setSelectedCategory] = useState<Category>('all');
+
+  // Filter posts by category
+  const filteredPosts = selectedCategory === 'all'
+    ? allSortedPosts
+    : allSortedPosts.filter((post: any) => post.category === selectedCategory);
+
+  // Calculate pagination (using filtered posts)
   const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
   const endIndex = startIndex + POSTS_PER_PAGE;
-  const paginatedPosts = sortedPosts.slice(startIndex, endIndex);
-  const totalPages = Math.ceil(sortedPosts.length / POSTS_PER_PAGE);
-  const totalPosts = sortedPosts.length;
+  const paginatedPosts = filteredPosts.slice(startIndex, endIndex);
+  const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
+  const totalPosts = filteredPosts.length;
+
+  // Category counts
+  const buildingCount = allSortedPosts.filter((p: any) => p.category === 'building').length;
+  const insightCount = allSortedPosts.filter((p: any) => p.category === 'insight').length;
 
   return (
     <>
@@ -32,12 +47,47 @@ export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
                 <h2 className="text-3xl font-bold text-text-dark mb-6">
                   Building-in-Public Updates
                 </h2>
-                <p className="text-xl text-text-light mb-4">
+                <p className="text-xl text-text-light mb-6">
                   Deep dives into our methodology breakthroughs, systematic excellence patterns, and transparent AI-powered product management development. Learn from our systematic approach as we build it.
                 </p>
+
+                {/* Phase 7: Category Filter Tabs */}
+                <div className="flex flex-wrap gap-3 mb-6">
+                  <button
+                    onClick={() => setSelectedCategory('all')}
+                    className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
+                      selectedCategory === 'all'
+                        ? 'bg-primary-teal text-white shadow-md'
+                        : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
+                    }`}
+                  >
+                    All Posts ({allSortedPosts.length})
+                  </button>
+                  <button
+                    onClick={() => setSelectedCategory('building')}
+                    className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
+                      selectedCategory === 'building'
+                        ? 'bg-primary-teal text-white shadow-md'
+                        : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
+                    }`}
+                  >
+                    Building ({buildingCount})
+                  </button>
+                  <button
+                    onClick={() => setSelectedCategory('insight')}
+                    className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
+                      selectedCategory === 'insight'
+                        ? 'bg-primary-teal text-white shadow-md'
+                        : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
+                    }`}
+                  >
+                    Insights ({insightCount})
+                  </button>
+                </div>
+
                 {/* Post Count Indicator */}
-                <p className="text-sm text-gray-600">
-                  Showing {startIndex + 1}-{Math.min(endIndex, totalPosts)} of {totalPosts} posts
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Showing {startIndex + 1}-{Math.min(endIndex, totalPosts)} of {totalPosts} {selectedCategory !== 'all' ? `${selectedCategory} ` : ''}posts
                 </p>
               </div>
 
@@ -55,6 +105,7 @@ export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
                     href={post.url}
                     author={post.author}
                     featuredImage={post.featuredImage}
+                    category={post.category}
                   />
                 ))}
               </div>

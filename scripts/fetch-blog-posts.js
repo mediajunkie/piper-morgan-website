@@ -379,6 +379,11 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
           post.workDateISO = dateToISO(metadata.workDate);
         }
 
+        // Add category from CSV (Phase 7: Category System)
+        if (metadata.category) {
+          post.category = metadata.category;
+        }
+
         csvMergedCount++;
       }
     }
