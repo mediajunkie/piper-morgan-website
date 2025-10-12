@@ -55,9 +55,10 @@ export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
                 <div className="flex flex-wrap gap-3 mb-6">
                   <button
                     onClick={() => setSelectedCategory('all')}
-                    className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
+                    style={selectedCategory === 'all' ? { backgroundColor: '#2DD4BF', color: '#FFFFFF' } : undefined}
+                    className={`px-8 py-3 rounded-full font-medium transition-all duration-200 ${
                       selectedCategory === 'all'
-                        ? 'bg-primary-teal text-white shadow-md'
+                        ? 'shadow-md'
                         : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
                     }`}
                   >
@@ -65,9 +66,10 @@ export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
                   </button>
                   <button
                     onClick={() => setSelectedCategory('building')}
-                    className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
+                    style={selectedCategory === 'building' ? { backgroundColor: '#2DD4BF', color: '#FFFFFF' } : undefined}
+                    className={`px-8 py-3 rounded-full font-medium transition-all duration-200 ${
                       selectedCategory === 'building'
-                        ? 'bg-primary-teal text-white shadow-md'
+                        ? 'shadow-md'
                         : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
                     }`}
                   >
@@ -75,9 +77,10 @@ export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
                   </button>
                   <button
                     onClick={() => setSelectedCategory('insight')}
-                    className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
+                    style={selectedCategory === 'insight' ? { backgroundColor: '#2DD4BF', color: '#FFFFFF' } : undefined}
+                    className={`px-8 py-3 rounded-full font-medium transition-all duration-200 ${
                       selectedCategory === 'insight'
-                        ? 'bg-primary-teal text-white shadow-md'
+                        ? 'shadow-md'
                         : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
                     }`}
                   >

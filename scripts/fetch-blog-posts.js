@@ -282,11 +282,14 @@ async function fetchRssPosts() {
 async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
   console.log('\n🔀 Merging new posts with archive and CSV metadata...');
 
-  // Create map of existing posts by GUID
+  // Create map of existing posts by hashId (normalized from GUID)
+  // This prevents duplicates when Medium provides different GUID formats for same post
   const existingMap = new Map();
   existingPosts.forEach(post => {
-    const key = post.guid || post.link;
-    existingMap.set(key, post);
+    const hashId = extractPostId(post.guid || post.link);
+    if (hashId) {
+      existingMap.set(hashId, post);
+    }
   });
 
   let newPostsCount = 0;
@@ -295,8 +298,10 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
 
   // Process RSS posts
   for (const rssPost of rssPosts) {
-    const key = rssPost.guid || rssPost.link;
-    const existing = existingMap.get(key);
+    const hashId = extractPostId(rssPost.guid || rssPost.link);
+    if (!hashId) continue; // Skip if we can't extract hashId
+    
+    const existing = existingMap.get(hashId);
 
     if (!existing) {
       // New post! Download image if available
@@ -333,8 +338,8 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
       delete rssPost.postId;
       // Note: fullContent, subtitle, canonicalLink are kept for updateBlogContent()
 
-      // Add to map
-      existingMap.set(key, rssPost);
+      // Add to map using hashId
+      existingMap.set(hashId, rssPost);
       newPostsCount++;
 
     } else if (existing.thumbnail && existing.thumbnail.startsWith('http')) {
