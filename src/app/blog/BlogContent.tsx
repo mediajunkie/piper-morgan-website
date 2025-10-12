@@ -1,9 +1,47 @@
 'use client';
 
 import { BlogPostCard, NewsletterSignup, NewsletterErrorBoundary, BlogErrorBoundary, CTAButton, Pagination } from '@/components';
-import mediumPosts from '@/data/medium-posts.json';
+import mediumPostsRaw from '@/data/medium-posts.json';
 
 const POSTS_PER_PAGE = 24;
+
+// Transform raw RSS data to expected format
+function formatDate(dateString: string): string {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  });
+}
+
+function extractReadingTime(content: string): string {
+  const match = content?.match(/(\d+)\s*min\s*read/i);
+  return match ? `${match[1]} min read` : '5 min read';
+}
+
+// Extract post ID from URL
+function extractPostId(url: string): string | null {
+  if (!url) return null;
+  const match = url.match(/([a-f0-9]{12})(?:\?|$)/);
+  return match ? match[1] : null;
+}
+
+// Transform posts to expected format
+const mediumPosts = mediumPostsRaw.map((post: any) => {
+  const postId = extractPostId(post.guid || post.link);
+
+  return {
+    ...post,
+    excerpt: post.contentSnippet || post.content?.substring(0, 200) || '',
+    url: `/blog/${postId}`,
+    mediumUrl: post.link,
+    publishedAt: formatDate(post.pubDate || post.isoDate),
+    readingTime: extractReadingTime(post.content || ''),
+    tags: post.categories || ['Building in Public'],
+    featuredImage: post.thumbnail
+  };
+});
 
 interface BlogContentProps {
   currentPage?: number;
@@ -50,7 +88,6 @@ export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
                     href={post.url}
                     author={post.author}
                     featuredImage={post.featuredImage}
-                    external
                   />
                 ))}
               </div>

@@ -1,7 +1,46 @@
 'use client';
 
 import { BlogPostCard, CTAButton } from '@/components';
-import mediumPosts from '@/data/medium-posts.json';
+import mediumPostsRaw from '@/data/medium-posts.json';
+
+// Format date helper
+function formatDate(dateString: string): string {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  });
+}
+
+// Extract reading time helper
+function extractReadingTime(content: string): string {
+  const match = content?.match(/(\d+)\s*min\s*read/i);
+  return match ? `${match[1]} min read` : '5 min read';
+}
+
+// Extract post ID from URL
+function extractPostId(url: string): string | null {
+  if (!url) return null;
+  const match = url.match(/([a-f0-9]{12})(?:\?|$)/);
+  return match ? match[1] : null;
+}
+
+// Transform posts to expected format
+const mediumPosts = mediumPostsRaw.map((post: any) => {
+  const postId = extractPostId(post.guid || post.link);
+
+  return {
+    ...post,
+    excerpt: post.contentSnippet || post.content?.substring(0, 200) || '',
+    url: `/blog/${postId}`,
+    mediumUrl: post.link,
+    publishedAt: formatDate(post.pubDate || post.isoDate),
+    readingTime: extractReadingTime(post.content || ''),
+    tags: post.categories || ['Building in Public'],
+    featuredImage: post.thumbnail
+  };
+});
 
 export default function HomePageBlog() {
   // Use the first 3 posts for the homepage
@@ -41,7 +80,7 @@ export default function HomePageBlog() {
                 tags={post.tags}
                 href={post.url}
                 author={post.author}
-                external
+                featuredImage={post.featuredImage}
                 compact
               />
             ))}
