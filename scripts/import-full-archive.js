@@ -119,16 +119,52 @@ function extractReadingTime(content) {
 }
 
 /**
+ * Parse incomplete date from CSV and convert to 2025 date
+ * Handles formats like "Oct 5" or "Sat Aug 9"
+ */
+function parseIncompleteDateTo2025(dateString) {
+  if (!dateString) return null;
+
+  // Remove day-of-week prefix if present (e.g., "Sat Aug 9" -> "Aug 9")
+  const cleaned = dateString.replace(/^(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s+/, '');
+
+  // Parse as 2025 date by prepending year
+  const dateWith2025 = `${cleaned} 2025`;
+  const date = new Date(dateWith2025);
+
+  // Validate the date parsed correctly
+  if (isNaN(date.getTime())) {
+    console.warn(`  ⚠️  Could not parse date: "${dateString}"`);
+    return null;
+  }
+
+  return date;
+}
+
+/**
  * Format date to display format
  */
 function formatDate(dateString) {
   if (!dateString) return '';
-  const date = new Date(dateString);
+  const date = parseIncompleteDateTo2025(dateString);
+  if (!date) return '';
+
   return date.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'short',
     day: 'numeric'
   });
+}
+
+/**
+ * Format date to ISO format
+ */
+function formatDateISO(dateString) {
+  if (!dateString) return '';
+  const date = parseIncompleteDateTo2025(dateString);
+  if (!date) return '';
+
+  return date.toISOString();
 }
 
 /**
@@ -227,19 +263,26 @@ function mergeAllSources(csvPosts, blogContent) {
     // Generate slug
     const slug = generateSlug(csvPost.title);
 
+    // Parse dates properly with year 2025
+    const pubDateStr = csvPost.mediumDate || csvPost.workDate;
+    const workDateStr = csvPost.workDate;
+
     // Build post object
     const post = {
       title: csvPost.title,
       excerpt: content ? extractExcerpt(content.content, csvPost.title) : '',
       url: `/blog/${slug}`,
-      publishedAt: csvPost.mediumDate || csvPost.workDate,
-      publishedAtISO: csvPost.mediumDate || csvPost.workDate,
+      publishedAt: formatDate(pubDateStr),
+      publishedAtISO: formatDateISO(pubDateStr),
       author: content?.author || 'christian crumlish',
       readingTime: content ? extractReadingTime(content.content) : '5 min read',
       tags: [csvPost.theme || 'Building in Public'],
       guid: csvPost.url,
       featuredImage: csvPost.imageSlug ? `/assets/blog-images/${csvPost.imageSlug}` : null,
       slug: slug,
+      // Store work date separately for Phase 6 chronological sorting
+      workDate: formatDate(workDateStr),
+      workDateISO: formatDateISO(workDateStr),
     };
 
     if (content) {

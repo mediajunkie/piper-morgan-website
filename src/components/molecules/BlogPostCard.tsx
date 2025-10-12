@@ -5,8 +5,10 @@ export interface BlogPostCardProps {
   title: string;
   /** Post excerpt or description */
   excerpt: string;
-  /** Publication date */
+  /** Publication date (when posted to Medium) */
   publishedAt: string;
+  /** Work date (when the work actually happened) - Phase 6 */
+  workDate?: string;
   /** Estimated reading time */
   readingTime?: string;
   /** Post tags */
@@ -29,6 +31,7 @@ export function BlogPostCard({
   title,
   excerpt,
   publishedAt,
+  workDate,
   readingTime,
   tags = [],
   href,
@@ -90,9 +93,19 @@ export function BlogPostCard({
 
           {/* Footer */}
           <div className="mt-auto pt-6">
-            {/* Metadata with improved spacing */}
+            {/* Temporal Metadata (Phase 6: Work Date Chronology) */}
             <div className="flex items-center text-sm text-gray-600 dark:text-gray-400 mb-3 flex-wrap gap-x-2 gap-y-1">
-              <time dateTime={publishedAt}>{publishedAt}</time>
+              {workDate && workDate !== publishedAt ? (
+                <>
+                  <span className="text-primary-teal-text dark:text-primary-teal font-medium">Work:</span>
+                  <time dateTime={workDate}>{workDate}</time>
+                  <span className="text-gray-400 dark:text-gray-600">•</span>
+                  <span className="text-gray-500 dark:text-gray-500">Published:</span>
+                  <time dateTime={publishedAt}>{publishedAt}</time>
+                </>
+              ) : (
+                <time dateTime={publishedAt}>{publishedAt}</time>
+              )}
               {readingTime && (
                 <>
                   <span className="text-gray-400 dark:text-gray-600">•</span>

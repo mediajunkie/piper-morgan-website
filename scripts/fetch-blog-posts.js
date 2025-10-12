@@ -45,6 +45,16 @@ function extractPostId(url) {
 }
 
 /**
+ * Convert YYYY-MM-DD date to ISO format
+ */
+function dateToISO(dateString) {
+  if (!dateString) return '';
+  const date = new Date(dateString);
+  if (isNaN(date.getTime())) return '';
+  return date.toISOString();
+}
+
+/**
  * Extract featured image URL from content
  */
 function extractFeaturedImageUrl(content) {
@@ -362,6 +372,13 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
       if (metadata && metadata.slug) {
         post.slug = metadata.slug;
         post.url = `/blog/${metadata.slug}`; // Set slug-based URL
+
+        // Add work date from CSV (Phase 6: Work Date Chronology)
+        if (metadata.workDate) {
+          post.workDate = formatDate(metadata.workDate);
+          post.workDateISO = dateToISO(metadata.workDate);
+        }
+
         csvMergedCount++;
       }
     }

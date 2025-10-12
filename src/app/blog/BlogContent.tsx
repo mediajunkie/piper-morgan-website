@@ -2,20 +2,24 @@
 
 import { BlogPostCard, NewsletterSignup, NewsletterErrorBoundary, BlogErrorBoundary, CTAButton, Pagination } from '@/components';
 import mediumPosts from '@/data/medium-posts.json';
+import { sortByWorkDate } from '@/lib/blog-utils';
 
 const POSTS_PER_PAGE = 24;
+
+// Sort posts by work date (chronological order of when work happened)
+const sortedPosts = sortByWorkDate(mediumPosts, 'desc');
 
 interface BlogContentProps {
   currentPage?: number;
 }
 
 export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
-  // Calculate pagination
+  // Calculate pagination (using work date sorted posts)
   const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
   const endIndex = startIndex + POSTS_PER_PAGE;
-  const paginatedPosts = mediumPosts.slice(startIndex, endIndex);
-  const totalPages = Math.ceil(mediumPosts.length / POSTS_PER_PAGE);
-  const totalPosts = mediumPosts.length;
+  const paginatedPosts = sortedPosts.slice(startIndex, endIndex);
+  const totalPages = Math.ceil(sortedPosts.length / POSTS_PER_PAGE);
+  const totalPosts = sortedPosts.length;
 
   return (
     <>
@@ -45,6 +49,7 @@ export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
                     title={post.title}
                     excerpt={post.excerpt}
                     publishedAt={post.publishedAt}
+                    workDate={post.workDate}
                     readingTime={post.readingTime}
                     tags={post.tags}
                     href={post.url}
