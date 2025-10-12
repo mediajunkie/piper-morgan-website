@@ -85,6 +85,28 @@ function extractExcerpt(content, title) {
 }
 
 /**
+ * Extract reading time from content
+ */
+function extractReadingTime(content) {
+  if (!content) return '5 min read';
+  const match = content.match(/(\d+)\s*min\s*read/i);
+  return match ? `${match[1]} min read` : '5 min read';
+}
+
+/**
+ * Format date to display format
+ */
+function formatDate(dateString) {
+  if (!dateString) return '';
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  });
+}
+
+/**
  * Extract title from HTML content
  */
 function extractTitle(content) {
@@ -209,20 +231,25 @@ async function fetchRssPosts() {
       }
 
       const fullContent = item.contentEncoded || item.content || '';
+      const pubDate = item.pubDate || new Date().toUTCString();
+      const isoDate = item.isoDate || new Date(pubDate).toISOString();
 
+      // Transform to consistent format (matches BlogContent.tsx expectations)
       const post = {
         title: item.title || 'Untitled',
-        link: item.link || '',
-        pubDate: item.pubDate || new Date().toUTCString(),
+        excerpt: extractExcerpt(fullContent, item.title || ''),
+        url: item.link || '', // Will be updated to slug-based URL later
+        publishedAt: formatDate(pubDate),
+        publishedAtISO: pubDate,
         author: item.creator || 'christian crumlish',
-        content: extractExcerpt(fullContent, item.title || ''),
-        contentSnippet: extractExcerpt(fullContent, item.title || ''),
+        readingTime: extractReadingTime(fullContent),
+        tags: item.categories || ['Building in Public'],
         guid: item.guid || item.link || '',
-        categories: item.categories || ['Building in Public'],
-        isoDate: item.isoDate || new Date(item.pubDate).toISOString(),
+        featuredImage: extractFeaturedImageUrl(fullContent),
+
+        // Keep these for internal processing
         featuredImageUrl: extractFeaturedImageUrl(fullContent),
         postId: postId,
-        // Store full HTML content for new posts
         fullContent: fullContent,
         subtitle: extractSubtitle(fullContent),
         canonicalLink: item.link || ''
@@ -283,8 +310,9 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
 
       // Merge CSV metadata if available
       const metadata = getMetadataByHashId(csvMetadata, rssPost.postId);
-      if (metadata) {
+      if (metadata && metadata.slug) {
         rssPost.slug = metadata.slug;
+        rssPost.url = `/blog/${metadata.slug}`; // Update URL to slug-based
         console.log(`  🏷️  Merged CSV metadata: slug="${metadata.slug}"`);
       } else {
         console.log(`  ⚠️  No CSV metadata found for ${rssPost.postId}`);
@@ -328,11 +356,12 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
   // Merge CSV metadata for ALL posts (not just new ones)
   let csvMergedCount = 0;
   mergedPosts.forEach(post => {
-    const postId = extractPostId(post.guid || post.link);
+    const postId = extractPostId(post.guid || post.link || post.url);
     if (postId) {
       const metadata = getMetadataByHashId(csvMetadata, postId);
       if (metadata && metadata.slug) {
         post.slug = metadata.slug;
+        post.url = `/blog/${metadata.slug}`; // Set slug-based URL
         csvMergedCount++;
       }
     }
@@ -340,8 +369,8 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
 
   // Sort by date (newest first)
   mergedPosts.sort((a, b) => {
-    const dateA = new Date(a.isoDate || a.pubDate);
-    const dateB = new Date(b.isoDate || b.pubDate);
+    const dateA = new Date(a.publishedAtISO || a.isoDate || a.pubDate);
+    const dateB = new Date(b.publishedAtISO || b.isoDate || b.pubDate);
     return dateB - dateA;
   });
 

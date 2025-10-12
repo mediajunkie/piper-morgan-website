@@ -136,8 +136,8 @@ export default async function BlogPostPage({
     <>
       <LegacyRedirect slug={slug} />
       <BlogPostContent
-        post={post}
-        content={content}
+        post={post as any}
+        content={content as any}
       />
     </>
   );

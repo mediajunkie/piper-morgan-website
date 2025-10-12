@@ -1,38 +1,9 @@
 'use client';
 
 import { BlogPostCard, NewsletterSignup, NewsletterErrorBoundary, BlogErrorBoundary, CTAButton, Pagination } from '@/components';
-import mediumPostsRaw from '@/data/medium-posts.json';
+import mediumPosts from '@/data/medium-posts.json';
 
 const POSTS_PER_PAGE = 24;
-
-// Transform raw RSS data to expected format
-function formatDate(dateString: string): string {
-  const date = new Date(dateString);
-  return date.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric'
-  });
-}
-
-function extractReadingTime(content: string): string {
-  const match = content?.match(/(\d+)\s*min\s*read/i);
-  return match ? `${match[1]} min read` : '5 min read';
-}
-
-// Transform posts to expected format
-const mediumPosts = mediumPostsRaw.map((post: any) => {
-  return {
-    ...post,
-    excerpt: post.contentSnippet || post.content?.substring(0, 200) || '',
-    url: `/blog/${post.slug}`,
-    mediumUrl: post.link,
-    publishedAt: formatDate(post.pubDate || post.isoDate),
-    readingTime: extractReadingTime(post.content || ''),
-    tags: post.categories || ['Building in Public'],
-    featuredImage: post.thumbnail
-  };
-});
 
 interface BlogContentProps {
   currentPage?: number;
@@ -68,7 +39,7 @@ export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
 
               {/* Posts Grid - Dynamically loaded from RSS */}
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                {paginatedPosts.map((post, index) => (
+                {paginatedPosts.map((post: any, index: number) => (
                   <BlogPostCard
                     key={post.guid || index}
                     title={post.title}

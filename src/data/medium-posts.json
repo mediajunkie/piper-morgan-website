@@ -1,155 +1,5 @@
 [
   {
-    "title": "Systemic Kindness: Building Methodology That Feels Supportive",
-    "excerpt": "“You’ve got this!”August 14“Systematize kindness, and systematize excellence in a kind fashion.”That phrase stopped me in my tracks during today’s planning session. We were discussing how Piper cou...",
-    "url": "https://medium.com/building-piper-morgan/systemic-kindness-building-methodology-that-feels-supportive-f38cde251d9d?source=rss----982e21163f8b---4",
-    "publishedAt": "Oct 11, 2025",
-    "publishedAtISO": "Sat, 11 Oct 2025 13:36:39 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/f38cde251d9d",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*By20zSUIkSFsK3awaA3_PA.png",
-    "slug": "systemic-kindness"
-  },
-  {
-    "title": "Three Days to Production: When Steady Momentum Beats Racing Ahead",
-    "excerpt": "“We made it!”October 4At 6:48 PM on Saturday, my Lead Developer sent the final validation report for GREAT-3D. The numbers were almost absurd: 120 plugin tests passing, performance targets exceeded...",
-    "url": "https://medium.com/building-piper-morgan/three-days-to-production-when-steady-momentum-beats-racing-ahead-04799048f5ea?source=rss----982e21163f8b---4",
-    "publishedAt": "Oct 10, 2025",
-    "publishedAtISO": "Fri, 10 Oct 2025 14:26:01 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/04799048f5ea",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*1pOsvI3NFCnH6oMYc0Ikpg.png",
-    "slug": "three-days-to-production"
-  },
-  {
-    "title": "The Day Everything Went Right: When Fast Means Unbroken",
-    "excerpt": "“Mornin’ boss!”October 3At 4:50 PM on Friday, my Lead Developer — Claude Sonnet 4.5, if we’re being formal — sent me the completion summary for GREAT-3B. The numbers looked almost suspicious: 48 te...",
-    "url": "https://medium.com/building-piper-morgan/the-day-everything-went-right-when-fast-means-unbroken-b859b2b9de2f?source=rss----982e21163f8b---4",
-    "publishedAt": "Oct 10, 2025",
-    "publishedAtISO": "Fri, 10 Oct 2025 14:09:55 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/b859b2b9de2f",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*Tmfjf6aZvJjZORv3g6V_xg.png",
-    "slug": "the-day-everything-went-right"
-  },
-  {
-    "title": "The Plugin Architecture Nobody Asked For",
-    "excerpt": "“It powers anything!”October 3Yesterday we built a plugin system for four plugins. If that sounds like over-engineering, let me explain why it’s not completely ridiculous.The setupGREAT-3A — our th...",
-    "url": "https://medium.com/building-piper-morgan/the-plugin-architecture-nobody-asked-for-650da4a52669?source=rss----982e21163f8b---4",
-    "publishedAt": "Oct 9, 2025",
-    "publishedAtISO": "Thu, 09 Oct 2025 12:54:52 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/650da4a52669",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*rl2Iv59lNeDhQlcUVK27hw.png",
-    "slug": "the-plugin-architecture-nobody-asked-for"
-  },
-  {
-    "title": "The Third Pattern: When Investigation Rewrites Your Assumptions",
-    "excerpt": "“The rain tastes like yesterday’s regrets…”October 1We started the day with a clear mission: Calendar integration was the only service without spatial intelligence, sitting at 85% complete with a s...",
-    "url": "https://medium.com/building-piper-morgan/the-third-pattern-when-investigation-rewrites-your-assumptions-ffc8f69c6327?source=rss----982e21163f8b---4",
-    "publishedAt": "Oct 8, 2025",
-    "publishedAtISO": "Wed, 08 Oct 2025 13:55:10 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/ffc8f69c6327",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*JCe7VbCsXTy7tiNHHvwtIQ.png",
-    "slug": "the-third-pattern"
-  },
-  {
-    "title": "Think Like a Time Lord and Stop Watching the Clock",
-    "excerpt": "“We have all the time we need”September 30A day without drama: Tuesday’s GREAT-2C session completed in 2 hours and 7 minutes with zero major issues, two sophisticated spatial architectures verified...",
-    "url": "https://medium.com/building-piper-morgan/think-like-a-time-lord-and-stop-watching-the-clock-71b3b5ee49a0?source=rss----982e21163f8b---4",
-    "publishedAt": "Oct 7, 2025",
-    "publishedAtISO": "Tue, 07 Oct 2025 14:02:39 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/71b3b5ee49a0",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*Rkep1oaUr5cQMxpTzyxYzg.png",
-    "slug": "think-like-a-time-lord-and"
-  },
-  {
-    "title": "Solving the 80% Pattern",
-    "excerpt": "September 29Monday morning at 9:37 AM, with all three routers complete from Sunday night’s work, the migration phase looked straightforward. Six services importing adapters directly. Replace import...",
-    "url": "https://medium.com/building-piper-morgan/solving-the-80-pattern-a1dc0ddb8966?source=rss----982e21163f8b---4",
-    "publishedAt": "Oct 6, 2025",
-    "publishedAtISO": "Mon, 06 Oct 2025 13:10:39 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/a1dc0ddb8966",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*MYde63qnUEaEhNwBNME-OA.png",
-    "slug": "solving-the-80-pattern"
-  },
-  {
-    "title": "Three Integrations Walk Into a Bar",
-    "excerpt": "“What’ll it be?”September 28Sunday afternoon at 4:14 PM, I opened my laptop expecting a straightforward router completion task. The gameplan looked clean: finish three integration routers (Slack, N...",
-    "url": "https://medium.com/building-piper-morgan/three-integrations-walk-into-a-bar-f748ce4c2db1?source=rss----982e21163f8b---4",
-    "publishedAt": "Oct 6, 2025",
-    "publishedAtISO": "Mon, 06 Oct 2025 13:00:58 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/f748ce4c2db1",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*grvkaMObknRqcbQy0H1CrA.png",
-    "slug": "three-integrations-walk-into-a-bar"
-  },
-  {
-    "title": "I Asked Claude to Find Every Time I Dropped the Ball (And What We Learned)",
-    "excerpt": "“You just need reminders!”August 9, 2025Here’s a confession: I suspected I was forgetting things. Not just the usual “where did I put my keys” stuff, but systematic project things. Habits I’d plann...",
-    "url": "https://medium.com/building-piper-morgan/i-asked-claude-to-find-every-time-i-dropped-the-ball-and-what-we-learned-7f74897824a7?source=rss----982e21163f8b---4",
-    "publishedAt": "Oct 5, 2025",
-    "publishedAtISO": "Sun, 05 Oct 2025 14:34:29 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/7f74897824a7",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*irRWEbNz-co78Hr6czXlTA.png",
-    "slug": "i-asked-claude-to-find-every"
-  },
-  {
-    "title": "When Good Decisions Disappear: The Hidden Cost of Chat-Based Development",
-    "excerpt": "“Where have you been?Why excellent tactical choices need systematic institutional memoryAugust 5The discoveryIt started with a routine tracking audit. We’d had an exceptional development day — the ...",
-    "url": "https://medium.com/building-piper-morgan/when-good-decisions-disappear-the-hidden-cost-of-chat-based-development-4148a6ebdab1?source=rss----982e21163f8b---4",
-    "publishedAt": "Oct 4, 2025",
-    "publishedAtISO": "Sat, 04 Oct 2025 14:03:53 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/4148a6ebdab1",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*r3WnZr3GH3bJ5jD7zhuEEw.png",
-    "slug": "when-good-decisions-disappear"
-  },
-  {
     "title": "Why the Future of AI UX is Orchestration, Not Intelligence",
     "link": "https://medium.com/building-piper-morgan/why-the-future-of-ai-ux-is-orchestration-not-intelligence-8aacc89aecc9?source=rss----982e21163f8b---4",
     "pubDate": "Sun, 12 Oct 2025 13:37:57 GMT",
@@ -165,6 +15,157 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/why-the-future-of-ai-ux-is-orchestration-not-intelligence-8aacc89aecc9?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "slug": "why-the-future-of-ai-ux"
+    "slug": "why-the-future-of-ai-ux",
+    "url": "/blog/why-the-future-of-ai-ux"
+  },
+  {
+    "title": "Systemic Kindness: Building Methodology That Feels Supportive",
+    "excerpt": "“You’ve got this!”August 14“Systematize kindness, and systematize excellence in a kind fashion.”That phrase stopped me in my tracks during today’s planning session. We were discussing how Piper cou...",
+    "url": "/blog/systemic-kindness",
+    "publishedAt": "Oct 11, 2025",
+    "publishedAtISO": "Sat, 11 Oct 2025 13:36:39 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/f38cde251d9d",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*By20zSUIkSFsK3awaA3_PA.png",
+    "slug": "systemic-kindness"
+  },
+  {
+    "title": "Three Days to Production: When Steady Momentum Beats Racing Ahead",
+    "excerpt": "“We made it!”October 4At 6:48 PM on Saturday, my Lead Developer sent the final validation report for GREAT-3D. The numbers were almost absurd: 120 plugin tests passing, performance targets exceeded...",
+    "url": "/blog/three-days-to-production",
+    "publishedAt": "Oct 10, 2025",
+    "publishedAtISO": "Fri, 10 Oct 2025 14:26:01 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/04799048f5ea",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*1pOsvI3NFCnH6oMYc0Ikpg.png",
+    "slug": "three-days-to-production"
+  },
+  {
+    "title": "The Day Everything Went Right: When Fast Means Unbroken",
+    "excerpt": "“Mornin’ boss!”October 3At 4:50 PM on Friday, my Lead Developer — Claude Sonnet 4.5, if we’re being formal — sent me the completion summary for GREAT-3B. The numbers looked almost suspicious: 48 te...",
+    "url": "/blog/the-day-everything-went-right",
+    "publishedAt": "Oct 10, 2025",
+    "publishedAtISO": "Fri, 10 Oct 2025 14:09:55 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/b859b2b9de2f",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*Tmfjf6aZvJjZORv3g6V_xg.png",
+    "slug": "the-day-everything-went-right"
+  },
+  {
+    "title": "The Plugin Architecture Nobody Asked For",
+    "excerpt": "“It powers anything!”October 3Yesterday we built a plugin system for four plugins. If that sounds like over-engineering, let me explain why it’s not completely ridiculous.The setupGREAT-3A — our th...",
+    "url": "/blog/the-plugin-architecture-nobody-asked-for",
+    "publishedAt": "Oct 9, 2025",
+    "publishedAtISO": "Thu, 09 Oct 2025 12:54:52 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/650da4a52669",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*rl2Iv59lNeDhQlcUVK27hw.png",
+    "slug": "the-plugin-architecture-nobody-asked-for"
+  },
+  {
+    "title": "The Third Pattern: When Investigation Rewrites Your Assumptions",
+    "excerpt": "“The rain tastes like yesterday’s regrets…”October 1We started the day with a clear mission: Calendar integration was the only service without spatial intelligence, sitting at 85% complete with a s...",
+    "url": "/blog/the-third-pattern",
+    "publishedAt": "Oct 8, 2025",
+    "publishedAtISO": "Wed, 08 Oct 2025 13:55:10 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/ffc8f69c6327",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*JCe7VbCsXTy7tiNHHvwtIQ.png",
+    "slug": "the-third-pattern"
+  },
+  {
+    "title": "Think Like a Time Lord and Stop Watching the Clock",
+    "excerpt": "“We have all the time we need”September 30A day without drama: Tuesday’s GREAT-2C session completed in 2 hours and 7 minutes with zero major issues, two sophisticated spatial architectures verified...",
+    "url": "/blog/think-like-a-time-lord-and",
+    "publishedAt": "Oct 7, 2025",
+    "publishedAtISO": "Tue, 07 Oct 2025 14:02:39 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/71b3b5ee49a0",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*Rkep1oaUr5cQMxpTzyxYzg.png",
+    "slug": "think-like-a-time-lord-and"
+  },
+  {
+    "title": "Solving the 80% Pattern",
+    "excerpt": "September 29Monday morning at 9:37 AM, with all three routers complete from Sunday night’s work, the migration phase looked straightforward. Six services importing adapters directly. Replace import...",
+    "url": "/blog/solving-the-80-pattern",
+    "publishedAt": "Oct 6, 2025",
+    "publishedAtISO": "Mon, 06 Oct 2025 13:10:39 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/a1dc0ddb8966",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*MYde63qnUEaEhNwBNME-OA.png",
+    "slug": "solving-the-80-pattern"
+  },
+  {
+    "title": "Three Integrations Walk Into a Bar",
+    "excerpt": "“What’ll it be?”September 28Sunday afternoon at 4:14 PM, I opened my laptop expecting a straightforward router completion task. The gameplan looked clean: finish three integration routers (Slack, N...",
+    "url": "/blog/three-integrations-walk-into-a-bar",
+    "publishedAt": "Oct 6, 2025",
+    "publishedAtISO": "Mon, 06 Oct 2025 13:00:58 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/f748ce4c2db1",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*grvkaMObknRqcbQy0H1CrA.png",
+    "slug": "three-integrations-walk-into-a-bar"
+  },
+  {
+    "title": "I Asked Claude to Find Every Time I Dropped the Ball (And What We Learned)",
+    "excerpt": "“You just need reminders!”August 9, 2025Here’s a confession: I suspected I was forgetting things. Not just the usual “where did I put my keys” stuff, but systematic project things. Habits I’d plann...",
+    "url": "/blog/i-asked-claude-to-find-every",
+    "publishedAt": "Oct 5, 2025",
+    "publishedAtISO": "Sun, 05 Oct 2025 14:34:29 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/7f74897824a7",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*irRWEbNz-co78Hr6czXlTA.png",
+    "slug": "i-asked-claude-to-find-every"
+  },
+  {
+    "title": "When Good Decisions Disappear: The Hidden Cost of Chat-Based Development",
+    "excerpt": "“Where have you been?Why excellent tactical choices need systematic institutional memoryAugust 5The discoveryIt started with a routine tracking audit. We’d had an exceptional development day — the ...",
+    "url": "/blog/when-good-decisions-disappear",
+    "publishedAt": "Oct 4, 2025",
+    "publishedAtISO": "Sat, 04 Oct 2025 14:03:53 GMT",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "https://medium.com/p/4148a6ebdab1",
+    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*r3WnZr3GH3bJ5jD7zhuEEw.png",
+    "slug": "when-good-decisions-disappear"
   }
 ]
