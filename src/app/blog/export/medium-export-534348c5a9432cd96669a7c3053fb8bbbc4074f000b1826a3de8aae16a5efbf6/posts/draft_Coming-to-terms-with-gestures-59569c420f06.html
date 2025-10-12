@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Coming to terms with gestures</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Coming to terms with gestures</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+When I joined CloudOn, we were coming off a very successful launch, and the technique of virtualizing and streaming a remote application to…
+</section>
+<section data-field="body" class="e-content">
+<section name="2f32" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h2 name="e065" id="e065" class="graf graf--h2 graf--leading graf--title">Touch, turn, drag, done</h2><h3 name="e6cd" id="e6cd" class="graf graf--h3 graf-after--h2">with ‘gesture first’</h3><p name="7a9a" id="7a9a" class="graf graf--p graf-after--h3">Something huge happened when touch-based interfaces became the norm. It opened up a whole world of possibilities to make interactions faster, more natural, based more directly on <a href="http://psychsciencenotes.blogspot.co.uk/2013/04/embodied-cognition-in-practice-some.html" data-href="http://psychsciencenotes.blogspot.co.uk/2013/04/embodied-cognition-in-practice-some.html" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">the way we think and do things in the real world</a>:</p><blockquote name="435d" id="435d" class="graf graf--blockquote graf-after--p">If I can see it, I might be able to reach out and touch it. If I can touch it, I should be able to do things to it, such as take it, remove it, examine it, change it, etc.</blockquote><p name="864a" id="864a" class="graf graf--p graf-after--blockquote">For us this starts with gestures, with a ‘gesture first’ approach.</p><h4 name="bcf7" id="bcf7" class="graf graf--h4 graf-after--p">What we mean when we say ‘gesture first’</h4><p name="032e" id="032e" class="graf graf--p graf-after--h4">With CloudOn you can create, edit, style, and share docs just by touching and gesturing. As we consider the many different aspects of working on docs, from creating to reviewing and sharing them, we ask ourselves first if there isn’t a way to make this available as a natural gesture.</p><p name="7e6f" id="7e6f" class="graf graf--p graf-after--p">Taking this approach, we’ve been able to shed (or, really, avoid building in the first place) hundreds of dialogs and confirmations and other interface crutches. Our controls stay out of the way until needed, appear in context and at your fingertips, and respond to gestures in consistent ways that help you learn what else you can do.</p><p name="0f03" id="0f03" class="graf graf--p graf-after--p">To be honest, we have only just begun to deliver on this approach, but I can share a few of the design choices we’ve made in our “gesture map” to illustrate how we apply this thinking.</p><h4 name="3ea5" id="3ea5" class="graf graf--h4 graf-after--p">The plain page metaphor</h4><p name="83b4" id="83b4" class="graf graf--p graf-after--h4">First of all, it must be said that CloudOn offers the largest document area of any editor on the market. (We know, we measured them, and we made this a top priority.) OK, but so what? Well, one big idea is that we’re going back to the cleanliness and simplicity of plain piece of paper.</p><p name="53d2" id="53d2" class="graf graf--p graf-after--p">The page is in front of you. What you put in on it, what you do with it, what you have to say and how. That’s all you. Our job is to get out of your way, until you need something.</p><p name="9361" id="9361" class="graf graf--p graf-after--p">We killed the Ribbon. File menu bars (glorified or otherwise) dont work when your fingers tend to be down neat he bottom of a touch screen or typing on a keyboard. When you need a tool, you can bring it up by touching an object or with our lean, efficient custom toolbars.</p><p name="cd99" id="cd99" class="graf graf--p graf-after--p">Similarly, Undo is there when you need it, not when you don’t.</p><h4 name="597e" id="597e" class="graf graf--h4 graf-after--p">Touch based selection — goodbye arrow keys</h4><p name="e4ab" id="e4ab" class="graf graf--p graf-after--h4">We’ve made text selection as easy as tapping with one, two, or three fingers, and extension of text selection as easy as dragging, and we will continue applying these approaches to other objects:</p><p name="e610" id="e610" class="graf graf--p graf-after--p"><em class="markup--em markup--p-em">image from sample doc goes here</em></p><h4 name="3683" id="3683" class="graf graf--h4 graf-after--p">Dragging text selections, resize, rewrap</h4><p name="3c65" id="3c65" class="graf graf--p graf-after--h4">Cut and paste was cool in its day, and then drag and drop felt a lot smoothe, but it still uses pointing, clicking, floating arrows and so on. We think it’s way easier to select some text and then drag it to a new location with your finger.</p><p name="fb41" id="fb41" class="graf graf--p graf-after--p">Resizing a selection is a simple touch-and-drag motion on the toolbar:</p><p name="c227" id="c227" class="graf graf--p graf-after--p"><a href="https://www.dropbox.com/s/d1p76hrexsdkjnu/resize%20font.mov?dl=0" data-href="https://www.dropbox.com/s/d1p76hrexsdkjnu/resize%20font.mov?dl=0" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">https://www.dropbox.com/s/d1p76hrexsdkjnu/resize%20font.mov?dl=0</a></p><h4 name="f477" id="f477" class="graf graf--h4 graf-after--p">Rotating, resizing, and dragging pictures</h4><p name="fa4e" id="fa4e" class="graf graf--p graf-after--h4">Images in documents make them come to life. It’s never been easier to snap a picture of a whiteboard or notepad or napkin and drop it directly in place in your doc. </p><p name="609b" id="609b" class="graf graf--p graf-after--p">Move it right where you want it, just by dragging:</p><p name="9ef0" id="9ef0" class="graf graf--p graf-after--p"><a href="https://www.dropbox.com/s/k1r5u200yw73s40/move%20image.mov?dl=0" data-href="https://www.dropbox.com/s/k1r5u200yw73s40/move%20image.mov?dl=0" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">https://www.dropbox.com/s/k1r5u200yw73s40/move%20image.mov?dl=0</a> (move image)</p><p name="e3de" id="e3de" class="graf graf--p graf-after--p">Resize it by hand:</p><p name="bdb7" id="bdb7" class="graf graf--p graf-after--p"><a href="https://www.dropbox.com/s/umememjnczkldq7/resize%20image.mov?dl=0" data-href="https://www.dropbox.com/s/umememjnczkldq7/resize%20image.mov?dl=0" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">https://www.dropbox.com/s/umememjnczkldq7/resize%20image.mov?dl=0</a> (resize image)</p><p name="5ccf" id="5ccf" class="graf graf--p graf-after--p">Even turn it on its end:</p><p name="e921" id="e921" class="graf graf--p graf-after--p"><a href="https://www.dropbox.com/s/2g36x2tye4s87hw/rotate%20image.mov?dl=0" data-href="https://www.dropbox.com/s/2g36x2tye4s87hw/rotate%20image.mov?dl=0" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">https://www.dropbox.com/s/2g36x2tye4s87hw/rotate%20image.mov?dl=0</a> (rotate image)</p><p name="19da" id="19da" class="graf graf--p graf-after--p">There’s something so satisfying about doing this directly with your hands. Try it and see!</p><h4 name="009d" id="009d" class="graf graf--h4 graf-after--p">More to come</h4><p name="9f47" id="9f47" class="graf graf--p graf-after--h4">We’ll keep working to improve and extend this approach, tackling additional objects that are useful in documents (such as tables), and well as bringing that same at-your-fingertips ease to review and discussion of work in progress.</p><h4 name="5921" id="5921" class="graf graf--h4 graf-after--p">Gesture first</h4><p name="32df" id="32df" class="graf graf--p graf-after--h4 graf--trailing">As a rule, when we are considering how to extend or improve the functionality of CloudOn, we think of gestures first. If there is any possible way to provide the feature in context, immediate (on touch), and through gestures (with minimal context shifting) then we will do it that way. Over time, we hope you won’t even notice.</p></div></div></section>
+</section>
+<footer><p><a href="https://medium.com/p/59569c420f06">View original.</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 9, 2025.</p></footer></article></body></html>

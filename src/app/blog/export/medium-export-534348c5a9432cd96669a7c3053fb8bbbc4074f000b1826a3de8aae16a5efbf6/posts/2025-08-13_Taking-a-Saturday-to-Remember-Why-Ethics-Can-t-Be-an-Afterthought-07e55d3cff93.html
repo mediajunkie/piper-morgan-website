@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Taking a Saturday to Remember Why Ethics Can’t Be an Afterthought</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Taking a Saturday to Remember Why Ethics Can’t Be an Afterthought</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+August 2
+</section>
+<section data-field="body" class="e-content">
+<section name="e3e4" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="cd7c" id="cd7c" class="graf graf--h3 graf--leading graf--title">Taking a Saturday to Remember Why Ethics Can’t Be an Afterthought</h3><figure name="3ddc" id="3ddc" class="graf graf--figure graf--startsWithDoubleQuote graf-after--h3"><img class="graf-image" data-image-id="1*kVecK2r2mEbZvoygFwq0RQ.png" data-width="1536" data-height="1024" data-is-featured="true" alt="An ethical robot helps a granny across the street" src="https://cdn-images-1.medium.com/max/800/1*kVecK2r2mEbZvoygFwq0RQ.png"><figcaption class="imageCaption">“Thank you, young person!”</figcaption></figure><p name="d2f0" id="d2f0" class="graf graf--p graf-after--figure"><em class="markup--em markup--p-em">August 2</em></p><p name="5a2d" id="5a2d" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--p"><span class="graf-dropCap">C</span>oming off a week of frenetic building — 71-minute implementations, cascade failure prevention, systematic methodology validation — I hit the brakes and decided to spend Saturday thinking about something completely different:</p><p name="425b" id="425b" class="graf graf--p graf-after--p"><em class="markup--em markup--p-em">What happens when we build AI without thinking hard enough about the values we’re embedding?</em></p><p name="f532" id="f532" class="graf graf--p graf-after--p">The trigger was reading yet another article about people using ChatGPT as their therapist. Not as a supplement to professional help, not as a journal prompt generator, but as their actual mental health support system. No privacy protections. No licensing requirements. No professional ethics framework. Just a chatbot optimized for engagement, collecting data on people’s most vulnerable moments.</p><p name="920b" id="920b" class="graf graf--p graf-after--p">And apparently, that’s just fine with the companies building these systems. Growth metrics matter. User engagement matters. The actual wellbeing of the humans using the product? That’s somebody else’s problem.</p><h3 name="39ee" id="39ee" class="graf graf--h3 graf-after--p">When product managers don’t compromise</h3><p name="d52b" id="d52b" class="graf graf--p graf-after--h3">Here’s the thing about being a product manager in a traditional business context: you compromise. A lot. It’s actually one of our core skills — balancing competing interests, finding the viable middle ground, shipping something that’s good enough rather than perfect.</p><p name="25bd" id="25bd" class="graf graf--p graf-after--p">Most of the time, this is exactly what you want from a PM. But it also means that your pet ideas about doing things the right way, the ethical way, the way that prioritizes human welfare over engagement metrics — those ideas often don’t make it past the business-case review.</p><blockquote name="4bd2" id="4bd2" class="graf graf--blockquote graf--startsWithDoubleQuote graf-after--p">“We’d love to build comprehensive privacy protections, but it’ll delay the launch by three months.”</blockquote><blockquote name="91b1" id="91b1" class="graf graf--blockquote graf--startsWithDoubleQuote graf-after--blockquote">“Ethics review sounds great, but we don’t have budget for a dedicated role.”</blockquote><blockquote name="5e08" id="5e08" class="graf graf--blockquote graf--startsWithDoubleQuote graf-after--blockquote">“Professional boundaries are important, but users seem to like the more personal interactions.”</blockquote><p name="f834" id="f834" class="graf graf--p graf-after--blockquote">Running Piper Morgan as a personal project with a $0 stack changes that equation entirely. I can afford to take the time to do things right without being irresponsible with other people’s time or money. Which means I can finally build something according to my actual values instead of the highest-ROI compromise version of my values.</p><h3 name="f084" id="f084" class="graf graf--h3 graf-after--p">The architecture of impossibility</h3><p name="7fc2" id="7fc2" class="graf graf--p graf-after--h3">So yesterday, instead of diving into PM-036 (monitoring infrastructure) or tackling the backlog, I spent the day with my Chief Architect designing what we’re calling “ethics-first architecture.” The core idea is simple: make harmful behavior architecturally impossible, not just against policy.</p><p name="dacf" id="dacf" class="graf graf--p graf-after--p">Instead of building AI capabilities and then trying to govern them after the fact, we’re embedding ethical principles directly into Piper’s foundation. Every interaction passes through boundary enforcement before any AI processing happens.</p><p name="a73c" id="a73c" class="graf graf--p graf-after--p">Certain types of harmful interactions — romantic overtures, therapy requests, harassment — are technically impossible, not just discouraged. Kind of like the way my Chevy Bolt refuses to go faster than 92 mph (or so I hear).</p><p name="3d3c" id="3d3c" class="graf graf--p graf-after--p">Here’s what that looks like in practice:</p><p name="6e9b" id="6e9b" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Human Empowerment</strong>: Piper amplifies human capability but never replaces human judgment. Critical decisions require explicit human approval through non-bypassable confirmation dialogs.</p><p name="08f6" id="08f6" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">System Integrity</strong>: Piper learns from interaction patterns and metadata, not personal content. If it detects unhealthy dependency patterns, it proactively suggests human collaboration.</p><p name="64a1" id="64a1" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Project Excellence</strong>: Quality and safety are never compromised for speed. If Piper doesn’t have enough information to give a good answer, it says so instead of guessing.</p><p name="ae8f" id="ae8f" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Professional Boundaries</strong>: Piper maintains colleague-appropriate interactions at all times. The system is designed to recognize and redirect inappropriate conversations with clear, professional explanations.</p><h3 name="4e3a" id="4e3a" class="graf graf--h3 graf-after--p">Testing and fine-tuning ethics at $0 scale</h3><p name="981c" id="981c" class="graf graf--p graf-after--h3">One of the most interesting challenges we discovered: How do you test organizational ethics processes when you don’t have an organization yet?</p><p name="9c0d" id="9c0d" class="graf graf--p graf-after--p">Our solution is beautifully weird: LLM simulation. We’re going to create multiple AI instances that role-play different stakeholders — “ethics board members,” “adversarial users,” “concerned employees” — and run them through ethical dilemmas to test our principles and decision-making frameworks.</p><p name="45ec" id="45ec" class="graf graf--p graf-after--p">Essentially, we’re using AI to simulate the human dynamics that would normally require hiring people, conducting meetings, and running actual organizational processes. It’s like Monte Carlo simulation for ethics governance.</p><p name="8bc5" id="8bc5" class="graf graf--p graf-after--p">This lets us validate our ethical frameworks and identify gaps before we ever involve real humans in potentially harmful situations. And it costs nothing but API calls and engineering time.</p><h3 name="7590" id="7590" class="graf graf--h3 graf-after--p">The uncomfortable truth about agency</h3><p name="51ad" id="51ad" class="graf graf--p graf-after--h3">Of course, there’s a darker side to this whole personal-project-with-principles approach. The same autonomy that lets me prioritize ethics over engagement metrics would equally empower someone with terrible values to build the Torture Nexus if they wanted to.</p><p name="7a55" id="7a55" class="graf graf--p graf-after--p">Agency is morally neutral. The tools and methodologies I’m using to build ethical AI — systematic development, architectural enforcement, comprehensive testing — could just as easily be used to build systems that cause harm efficiently and at scale.</p><p name="08cb" id="08cb" class="graf graf--p graf-after--p">That’s the uncomfortable truth about technological capability: it amplifies both our best and worst impulses. Which makes it even more important that those of us who care about human welfare take the time to do this work thoughtfully.</p><h3 name="ba61" id="ba61" class="graf graf--h3 graf-after--p">Starting implementation immediately</h3><p name="82b3" id="82b3" class="graf graf--p graf-after--h3">The practical outcome of that Saturday’s reflection was PM-087: Values &amp; Principles Architecture, positioned as our P0 foundational requirement. Before Piper gets any autonomous capabilities, before it learns from user behavior, before it can suggest actions — we’re building the ethical infrastructure that makes harmful behavior impossible.</p><p name="3e65" id="3e65" class="graf graf--p graf-after--p">That same afternoon we started implementing that architecture. Boundary enforcement services, audit transparency systems, the frameworks that will ensure Piper never becomes another engagement-optimized system that’s willing to harm users for growth.</p><p name="9023" id="9023" class="graf graf--p graf-after--p">It’s going to take longer than just building features and hoping for the best. But I’ve seen what happens when we treat ethics as an afterthought. The people using ChatGPT as therapy deserve better. The people who will eventually use Piper Morgan also deserve better.</p><p name="2971" id="2971" class="graf graf--p graf-after--p graf--trailing">And honestly? I sleep better knowing I took the time to think this through properly.</p></div></div></section><section name="8256" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="bc5d" id="bc5d" class="graf graf--p graf--leading"><em class="markup--em markup--p-em">Next on Building Piper Morgan: Six Infrastructure Victories and a Dead Show or how I managed to fit in a whole development day before heading to Golden Gate Park in the middle of the Days Between (aka “Jerry Week”).</em></p><p name="59a1" id="59a1" class="graf graf--p graf-after--p graf--trailing"><em class="markup--em markup--p-em">Have you ever had to compromise on values for business reasons? How do you balance doing the right thing with getting things done? I’m learning that having the freedom to prioritize principles over metrics feels simultaneously liberating and terrifying.</em></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mediajunkie" class="p-author h-card">christian crumlish</a> on <a href="https://medium.com/p/07e55d3cff93"><time class="dt-published" datetime="2025-08-13T14:57:54.789Z">August 13, 2025</time></a>.</p><p><a href="https://medium.com/@mediajunkie/taking-a-saturday-to-remember-why-ethics-cant-be-an-afterthought-07e55d3cff93" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 9, 2025.</p></footer></article></body></html>

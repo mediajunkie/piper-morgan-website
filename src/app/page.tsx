@@ -90,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* What We've Discovered Section */}
-      <section className="bg-surface py-16 md:py-20">
+      <section className="bg-surface-var py-16 md:py-20">
         <div className="site-container">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold text-text-dark mb-12">
@@ -98,7 +98,7 @@ export default function Home() {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
-              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
+              <div className="card-bg p-6 md:p-8 rounded-lg shadow-sm">
                 <h3 className="text-lg sm:text-xl font-semibold text-text-dark mb-4">
                   Excellence Flywheel methodology
                 </h3>
@@ -115,7 +115,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
+              <div className="card-bg p-6 md:p-8 rounded-lg shadow-sm">
                 <h3 className="text-lg sm:text-xl font-semibold text-text-dark mb-4">
                   Multi-agent coordination
                 </h3>
@@ -128,7 +128,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
+              <div className="card-bg p-6 md:p-8 rounded-lg shadow-sm">
                 <h3 className="text-lg sm:text-xl font-semibold text-text-dark mb-4">
                   Verification before implementation
                 </h3>
@@ -139,7 +139,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
+              <div className="card-bg p-6 md:p-8 rounded-lg shadow-sm">
                 <h3 className="text-lg sm:text-xl font-semibold text-text-dark mb-4">
                   GitHub-first tracking and transparency
                 </h3>
@@ -221,7 +221,7 @@ export default function Home() {
       </section>
 
       {/* Why Follow This Journey Section */}
-      <section className="bg-surface py-16 md:py-20">
+      <section className="bg-surface-var py-16 md:py-20">
         <div className="site-container">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold text-text-dark mb-12">
@@ -229,7 +229,7 @@ export default function Home() {
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
+              <div className="card-bg p-6 md:p-8 rounded-lg shadow-sm">
                 <h3 className="text-lg sm:text-xl font-semibold text-text-dark mb-4">
                   For founders, senior product people, and UX designers and
                   strategists
@@ -251,7 +251,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
+              <div className="card-bg p-6 md:p-8 rounded-lg shadow-sm">
                 <h3 className="text-lg sm:text-xl font-semibold text-text-dark mb-4">
                   For architects, lead developers, unicorns, and other makers
                 </h3>
@@ -277,7 +277,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
+              <div className="card-bg p-6 md:p-8 rounded-lg shadow-sm">
                 <h3 className="text-lg sm:text-xl font-semibold text-text-dark mb-4">
                   For other AI-curious professionals
                 </h3>
@@ -292,7 +292,7 @@ export default function Home() {
       </section>
 
       {/* Get Involved Section */}
-      <section className="bg-surface py-16 md:py-20">
+      <section className="bg-surface-var py-16 md:py-20">
         <div className="site-container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold text-text-dark mb-8">
@@ -431,7 +431,7 @@ export default function Home() {
       */}
 
       {/* Questions Section */}
-      <section className="bg-surface py-16 md:py-20">
+      <section className="bg-surface-var py-16 md:py-20">
         <div className="site-container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold text-text-dark mb-8">

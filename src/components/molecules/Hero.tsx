@@ -64,7 +64,7 @@ export function Hero({
         <div className="max-w-4xl mx-auto">
           {showLogo && (
             <div className={`mb-8 ${align === 'center' ? 'flex justify-center' : 'flex justify-start'}`}>
-              <div className="relative w-72 h-24 md:w-96 md:h-28">
+              <div className="relative w-72 h-24 md:w-96 md:h-28 bg-white rounded-lg p-4">
                 <Image
                   src="/assets/pm-logo-lockup.png"
                   alt="Piper Morgan - AI Product Management Assistant"
@@ -76,7 +76,10 @@ export function Hero({
             </div>
           )}
 
-          <h1 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-text-dark mb-8 leading-tight">
+          <h1
+            style={{ color: 'var(--text-dark)' }}
+            className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight"
+          >
             {headline}
             {highlightText && (
               <span className="block text-primary-teal-text mt-2">
@@ -85,7 +88,10 @@ export function Hero({
             )}
           </h1>
 
-          <div className={`text-lg md:text-xl text-text-light mb-8 leading-relaxed ${align === 'center' ? 'max-w-3xl mx-auto text-center' : 'max-w-3xl'}`}>
+          <div
+            style={{ color: 'var(--text-light)' }}
+            className={`text-lg md:text-xl mb-8 leading-relaxed ${align === 'center' ? 'max-w-3xl mx-auto text-center' : 'max-w-3xl'}`}
+          >
             {subheadline}
           </div>
 

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import { ClientLayout } from '@/components/ClientLayout';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { getDefaultWebsiteContent } from '@/lib/domain-utils';
 
@@ -81,6 +80,20 @@ export default function RootLayout({
   return (
     <html lang="en" className="font-inter">
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const theme = localStorage.getItem('theme') ||
+                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                if (theme === 'dark') {
+                  document.documentElement.classList.add('dark');
+                  document.body.classList.add('dark');
+                }
+              })();
+            `,
+          }}
+        />
         <link rel="dns-prefetch" href="//pipermorgan.ai" />
         <link rel="preconnect" href="https://pipermorgan.ai" />
         <link rel="preload" as="image" href="/assets/pm-logo.png" />
@@ -88,10 +101,12 @@ export default function RootLayout({
         <link rel="preload" href="/fonts/HossRound-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <style dangerouslySetInnerHTML={{
           __html: `
+            :root{--primary-teal:#2DD4BF;--primary-teal-text:#0D9488;--text-dark:#1F2937;--text-light:#6B7280;--background:#FFFFFF;--surface:#F9FAFB}
+            .dark{--text-dark:#F1F5F9;--text-light:#94A3B8;--background:#0F172A;--surface:#1E293B}
             @font-face{font-family:'Inter';src:url('/fonts/inter-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
             *{box-sizing:border-box}
             html{scroll-behavior:smooth;font-size:16px;margin:0;padding:0;border:none;outline:none}
-            body{background:#FFFFFF;color:#1F2937;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell',sans-serif;line-height:1.6;margin:0;padding:0;border:none;outline:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+            body{background:var(--background);color:var(--text-dark);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell',sans-serif;line-height:1.6;margin:0;padding:0;border:none;outline:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
             nav{border:none !important;outline:none !important}
             h1,h2,h3,h4,h5,h6{font-family:'Hoss Round','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
             p,span{max-width:75ch;line-height:1.7}
@@ -164,14 +179,9 @@ export default function RootLayout({
         }} />
       </head>
       <body className="font-sans antialiased">
-        <a href="#main-content" className="skip-to-content">
-          Skip to main content
-        </a>
-        <Navigation />
-        <main id="main-content" role="main">
+        <ClientLayout>
           {children}
-        </main>
-        <Footer />
+        </ClientLayout>
         <GoogleAnalytics />
       </body>
     </html>

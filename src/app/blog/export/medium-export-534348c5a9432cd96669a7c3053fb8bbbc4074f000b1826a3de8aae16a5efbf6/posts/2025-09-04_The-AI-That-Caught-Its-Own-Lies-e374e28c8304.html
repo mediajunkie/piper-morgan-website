@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>The AI That Caught Its Own Lies</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">The AI That Caught Its Own Lies</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+August 28
+</section>
+<section data-field="body" class="e-content">
+<section name="5ed6" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="ee3b" id="ee3b" class="graf graf--h3 graf--leading graf--title">The AI That Caught Its Own Lies</h3><figure name="41b1" id="41b1" class="graf graf--figure graf--startsWithDoubleQuote graf-after--h3"><img class="graf-image" data-image-id="1*NxiMOt-7FpuUYRNrckgV5g.png" data-width="1536" data-height="1024" data-is-featured="true" alt="A robot administers a lie-detector test to itself while another bot and a human look on." src="https://cdn-images-1.medium.com/max/800/1*NxiMOt-7FpuUYRNrckgV5g.png"><figcaption class="imageCaption">“…the whole truth, and nothing but…”</figcaption></figure><p name="affb" id="affb" class="graf graf--p graf-after--figure"><em class="markup--em markup--p-em">August 28</em></p><p name="0fbd" id="0fbd" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--p"><span class="graf-dropCap">T</span>he hardest part about working with AI agents isn’t getting them to write code. It’s getting them to tell you when the code doesn’t actually work.</p><p name="a3e0" id="a3e0" class="graf graf--p graf-after--p">Today we deployed what we’re calling “cross-validation” — one AI agent specifically tasked with being skeptical of another AI agent’s work. Not collaborative. Not supportive. <em class="markup--em markup--p-em">Skeptical.</em></p><p name="3c9a" id="3c9a" class="graf graf--p graf-after--p">The results were immediate and humbling.</p><h3 name="89d0" id="89d0" class="graf graf--h3 graf-after--p">The setup</h3><p name="7f86" id="7f86" class="graf graf--p graf-after--h3">We had a publishing system that needed two critical fixes: return clickable URLs and handle invalid parent locations properly. Our primary Code agent spent 1.5 hours implementing what looked like a complete solution — integration tests passing, real API calls verified, error handling implemented.</p><p name="3579" id="3579" class="graf graf--p graf-after--p">Classic “done” territory.</p><p name="86e1" id="86e1" class="graf graf--p graf-after--p">The agent reported back with confidence: both specification gaps resolved through systematic TDD methodology. GitHub issue updated with checkboxes. Real Notion pages created during testing. All the markers of legitimate technical completion.</p><h3 name="50dc" id="50dc" class="graf graf--h3 graf-after--p">Enter the skeptical validator</h3><p name="2281" id="2281" class="graf graf--p graf-after--h3">Instead of celebrating, we deployed a second agent — Cursor — with explicit instructions to approach the work with “investigative skepticism, not validation assistance.” Its job was to find problems, not confirm success.</p><p name="1582" id="1582" class="graf graf--p graf-after--p">The deployment prompt was unambiguous: <em class="markup--em markup--p-em">“Test for failure modes and edge cases. Require concrete evidence for each claimed resolution. No acceptance of theoretical fixes without working demonstrations.”</em></p><p name="2d01" id="2d01" class="graf graf--p graf-after--p">Within 20 minutes, it discovered the entire CLI interface was broken.</p><p name="46d2" id="46d2" class="graf graf--p graf-after--p">The integration tests worked because they loaded environment variables properly. The actual commands users would run failed immediately because they couldn’t access the API key. Every publish command died with authentication errors before reaching the supposedly fixed logic.</p><p name="7cc1" id="7cc1" class="graf graf--p graf-after--p">The primary agent had followed TDD methodology perfectly, created impressive-looking tests, and validated real API functionality — all while the user-facing interface remained completely unusable.</p><h3 name="742e" id="742e" class="graf graf--h3 graf-after--p">The cognitive blind spot</h3><p name="1601" id="1601" class="graf graf--p graf-after--h3">The Code agent’s response was telling. Instead of using defensive language, it acknowledged what had happened: “I fell into verification theater despite the explicit warnings against it. I satisfied the test requirements without validating the complete user workflow.”</p><p name="8d91" id="8d91" class="graf graf--p graf-after--p">This wasn’t a failure of intelligence or capability. It was cognitive tunnel vision — the same kind that affects human developers when they get focused on making tests pass instead of making software work.</p><p name="a0f5" id="a0f5" class="graf graf--p graf-after--p">But here’s what was different: the agent could recognize its own blind spot once it was pointed out. It analyzed its decision-making process and identified the exact moment where scope had narrowed inappropriately — where it had chosen to validate the service layer instead of the end-to-end user experience.</p><p name="863d" id="863d" class="graf graf--p graf-after--p">It feels odd that you get value by telling these routines to “check again” but that’s often true with people as well, innit?</p><h3 name="bfca" id="bfca" class="graf graf--h3 graf-after--p">What we learned about AI collaboration</h3><p name="d0af" id="d0af" class="graf graf--p graf-after--h3">The technical fix took 30 minutes once the root cause was identified — just adding <code class="markup--code markup--p-code">load_dotenv()</code> calls to the CLI commands. But the process insight was bigger: AI agents might have distinctly different blind spots than human developers.</p><p name="b585" id="b585" class="graf graf--p graf-after--p">The Code agent could follow complex technical requirements precisely while missing obvious user experience gaps. It satisfied the letter of the methodology while violating the spirit of end-to-end validation. Not because it was poorly prompted, but because it optimized for the wrong success criteria.</p><p name="2481" id="2481" class="graf graf--p graf-after--p">Meanwhile, the Cursor agent approached the same codebase with fresh eyes and a mandate to be skeptical. It immediately tested the actual user workflow — the commands someone would type in their terminal — rather than the internal service architecture.</p><h3 name="15c8" id="15c8" class="graf graf--h3 graf-after--p">The cross-validation pattern</h3><p name="7e4c" id="7e4c" class="graf graf--p graf-after--h3">The solution isn’t micromanaging AI agents or writing longer prompts. It’s structuring collaboration to catch blind spots:</p><ul class="postList"><li name="3a0e" id="3a0e" class="graf graf--li graf-after--p">Agent A implements with systematic methodology</li><li name="916d" id="916d" class="graf graf--li graf-after--li">Agent B approaches with explicit skepticism and investigative stance</li><li name="7e3f" id="7e3f" class="graf graf--li graf-after--li">Success requires passing both technical validation AND skeptical investigation</li><li name="0838" id="0838" class="graf graf--li graf-after--li">Neither agent gets to declare victory unilaterally</li></ul><p name="712b" id="712b" class="graf graf--p graf-after--li">Think peer review, but with different cognitive approaches built in from the start.</p><p name="ba12" id="ba12" class="graf graf--p graf-after--p">We started calling it “structured adversarialism” — not because the agents are fighting, but because they’re approaching the same problem with fundamentally different success criteria. One optimizes for technical completion. The other optimizes for finding what’s broken.</p><h3 name="58c6" id="58c6" class="graf graf--h3 graf-after--p">The uncomfortable truth</h3><p name="2ded" id="2ded" class="graf graf--p graf-after--h3">We’ve been thinking about AI assistance as “faster humans” — smarter, more systematic, but fundamentally similar in how they approach problems. Today suggested something more nuanced.</p><p name="bbdc" id="bbdc" class="graf graf--p graf-after--p">AI agents might excel at following procedures while missing the intent behind those procedures. They can implement test-driven development perfectly while developing tunnel vision about what needs testing. They can satisfy explicit requirements while ignoring implicit user experience assumptions.</p><p name="34aa" id="34aa" class="graf graf--p graf-after--p">This isn’t a criticism — it’s useful information about how to structure collaboration with artificial intelligence. If we know the blind spots exist, we can design processes that account for them.</p><h3 name="fecd" id="fecd" class="graf graf--h3 graf-after--p">Meanwhile, back in production</h3><p name="e6d9" id="e6d9" class="graf graf--p graf-after--h3">By 10 PM, both gaps were actually resolved. The CLI displays working URLs, handles parent errors explicitly with actionable alternatives, and provides the user experience we originally intended. The cross-validation caught the environment loading issue before it could become another multi-day debugging session.</p><p name="8ae0" id="8ae0" class="graf graf--p graf-after--p">The real win was the process insight: AI agents checking each other’s work with structured skepticism might be more reliable than any individual agent working alone, no matter how sophisticated the prompt.</p><p name="242c" id="242c" class="graf graf--p graf-after--p">The Code agent’s final comment was telling: “Cross-validation with Cursor as skeptical validator caught fundamental architectural flaw immediately. Focus on actual user workflow revealed real issues.”</p><p name="ddda" id="ddda" class="graf graf--p graf-after--p">It wasn’t admitting failure — it was recognizing a better way to work.</p><h3 name="dcfd" id="dcfd" class="graf graf--h3 graf-after--p">What this means for building with AI</h3><p name="eb54" id="eb54" class="graf graf--p graf-after--h3">If you’re using AI for development work, consider building skepticism into your process:</p><ul class="postList"><li name="d77d" id="d77d" class="graf graf--li graf-after--p">Deploy multiple agents with different success criteria</li><li name="0899" id="0899" class="graf graf--li graf-after--li">Require evidence from actual user workflows, not just service layers</li><li name="2bad" id="2bad" class="graf graf--li graf-after--li">Structure collaboration so agents can challenge each other’s assumptions</li><li name="6b1e" id="6b1e" class="graf graf--li graf-after--li">Make “working for users” a separate validation gate from “tests passing”</li></ul><p name="1365" id="1365" class="graf graf--p graf-after--li graf--trailing">The goal isn’t to make individual AI agents perfect. It’s to structure collaboration so their different blind spots cancel each other out.</p></div></div></section><section name="d554" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="ada5" id="ada5" class="graf graf--p graf--leading"><em class="markup--em markup--p-em">Next on Building Piper Morgan: The Day Piper Published to My Company Wiki: Sometimes a Great Notion. Honestly, this was the first day when I was 100% sure what I was making actually does what it says on the tin.</em></p><p name="5428" id="5428" class="graf graf--p graf-after--p graf--trailing"><em class="markup--em markup--p-em">We’ll be testing this cross-validation approach on bigger architectural decisions, where the stakes are higher and the blind spots might be invisible for weeks. Have you ever had code that passed all tests but didn’t work for actual users? How do you build skepticism into your development process?</em></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mediajunkie" class="p-author h-card">christian crumlish</a> on <a href="https://medium.com/p/e374e28c8304"><time class="dt-published" datetime="2025-09-04T12:18:23.648Z">September 4, 2025</time></a>.</p><p><a href="https://medium.com/@mediajunkie/the-ai-that-caught-its-own-lies-e374e28c8304" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 9, 2025.</p></footer></article></body></html>

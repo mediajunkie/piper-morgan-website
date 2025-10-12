@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>When TDD Saves Your Architecture</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">When TDD Saves Your Architecture</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+June 25, 2025
+</section>
+<section data-field="body" class="e-content">
+<section name="0be6" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="f367" id="f367" class="graf graf--h3 graf--leading graf--title">When TDD Saves Your Architecture</h3><figure name="f8b7" id="f8b7" class="graf graf--figure graf--startsWithDoubleQuote graf-after--h3"><img class="graf-image" data-image-id="1*qEtsuBBWZFlLq9l_-UiTmQ.png" data-width="1536" data-height="1024" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*qEtsuBBWZFlLq9l_-UiTmQ.png"><figcaption class="imageCaption">“Here I come to save the day!”</figcaption></figure><p name="fb4c" id="fb4c" class="graf graf--p graf-after--figure"><em class="markup--em markup--p-em">June 25, 2025</em></p><p name="d0a4" id="d0a4" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--p"><span class="graf-dropCap">T</span>hirty-four tests. Zero compromises. One unshakeable foundation.</p><p name="d7d7" id="d7d7" class="graf graf--p graf-after--p">This is the story of how Test-Driven Development didn’t just help me build features — it saved my architecture from death by a thousand shortcuts.</p><p name="f0aa" id="f0aa" class="graf graf--p graf-after--p">Sometimes the discipline of writing tests first forces you to make better decisions than you would have made if you were just trying to ship quickly.</p><h3 name="bcef" id="bcef" class="graf graf--h3 graf-after--p">The pressure to cut corners</h3><p name="2007" id="2007" class="graf graf--p graf-after--h3">File analysis seemed straightforward enough. Read CSV files, extract data, return some statistics. Maybe use a library, maybe hardcode a few things, get it working and move on to the next feature.</p><p name="71d4" id="71d4" class="graf graf--p graf-after--p">The pressure was real: I had a working integration pipeline waiting for actual file analysis. The temptation was to just make it work, clean it up later. We’d marked PM-011 done ages ago and while supposed just “testing” the UI we were now finding that whatever had claimed to work under the hood by passing unit, integration, and orchestration tests was now failing in actual use.</p><p name="f5f0" id="f5f0" class="graf graf--p graf-after--p">But we’d made this commitment to Test-Driven Development for this feature: Write the test first, watch it fail for the right reason, implement just enough to pass, refactor if needed. When tempted to skip a step, or alter a test to make it pass, resist!</p><h3 name="0af8" id="0af8" class="graf graf--h3 graf-after--p">TDD catches what code review misses</h3><p name="3479" id="3479" class="graf graf--p graf-after--h3">The first test I wrote was for path traversal security. Basic stuff — make sure user-provided file paths can’t escape the upload directory.</p><p name="63be" id="63be" class="graf graf--p graf-after--p">The test failed. Good.</p><p name="33e7" id="33e7" class="graf graf--p graf-after--p">I implemented basic validation. The test passed. Also good.</p><p name="0223" id="0223" class="graf graf--p graf-after--p">But when we looked at the implementation, Claude realized it was wrong. The path validation was checking after normalization, not before. A classic security vulnerability that would have been easy to miss in code review but impossible to miss when the test made the expectation explicit, or so I’m told?</p><p name="cd67" id="cd67" class="graf graf--p graf-after--p">TDD didn’t just catch a bug — it caught a security hole before it made it into the codebase.</p><h3 name="e786" id="e786" class="graf graf--h3 graf-after--p">Domain models stay sacred</h3><p name="c251" id="c251" class="graf graf--p graf-after--h3">Here’s where TDD really proved its worth. As we built analyzers for different file types, tests started expecting specific output formats. The CSV analyzer test wanted detailed statistics, the document analyzer expected key findings, the text analyzer needed content summaries.</p><p name="3bae" id="3bae" class="graf graf--p graf-after--p">The easy fix would have been to modify the domain models — add fields here, change structures there, whatever makes the tests pass.</p><p name="0aae" id="0aae" class="graf graf--p graf-after--p">But I’d learned this lesson the hard way before: <strong class="markup--strong markup--p-strong">domain models are sacred</strong>. They represent the business logic contract. Tests conform to models, not the other way around.</p><p name="7156" id="7156" class="graf graf--p graf-after--p">So instead of changing the <code class="markup--code markup--p-code">AnalysisResult</code> model, we used the metadata field for variable content. Instead of adding type-specific fields, we designed the analyzers to work within the established contract.</p><p name="daf9" id="daf9" class="graf graf--p graf-after--p">The result: a consistent domain model that every analyzer could implement cleanly, without special cases or architectural exceptions.</p><h3 name="0981" id="0981" class="graf graf--h3 graf-after--p">The factory pattern emerges</h3><p name="08de" id="08de" class="graf graf--p graf-after--h3">Twenty tests in, a pattern started emerging. I was creating analyzers in every test, duplicating setup code, and making assumptions about how they’d be instantiated in production.</p><p name="49ff" id="49ff" class="graf graf--p graf-after--p">TDD forced the question: how should these components actually be created and wired together?</p><p name="3e07" id="3e07" class="graf graf--p graf-after--p">The answer was a “factory pattern” following the existing codebase conventions:</p><ul class="postList"><li name="7f80" id="7f80" class="graf graf--li graf-after--p">Stateless factory with per-call dependency injection</li><li name="f707" id="f707" class="graf graf--li graf-after--li">Clear registration of analyzer types</li><li name="3a73" id="3a73" class="graf graf--li graf-after--li">Easy extension with new file formats</li><li name="17a1" id="17a1" class="graf graf--li graf-after--li">Thread-safe concurrent creation</li></ul><p name="889f" id="889f" class="graf graf--p graf-after--li">The factory pattern didn’t emerge from architectural planning — it emerged from the pressure of writing clean, maintainable tests.</p><h3 name="be12" id="be12" class="graf graf--h3 graf-after--p">Security, performance, and error handling</h3><p name="876e" id="876e" class="graf graf--p graf-after--h3">Because we were the writing tests first, we had to address edge cases before implementing happy paths:</p><ul class="postList"><li name="35a5" id="35a5" class="graf graf--li graf-after--p">What happens with corrupted files?</li><li name="1c79" id="1c79" class="graf graf--li graf-after--li">How do we handle files that are too large?</li><li name="fbd2" id="fbd2" class="graf graf--li graf-after--li">What about malformed CSV data?</li><li name="3d2c" id="3d2c" class="graf graf--li graf-after--li">How do we validate file types safely?</li></ul><p name="c405" id="c405" class="graf graf--p graf-after--li">Each edge case became a test. Each test forced architectural decisions. Should we throw exceptions or return error results? How do we communicate partial failures? What’s the boundary between domain logic and infrastructure concerns?</p><p name="303d" id="303d" class="graf graf--p graf-after--p">The tests didn’t just verify behavior — they designed the behavior by making trade-offs explicit.</p><p name="2488" id="2488" class="graf graf--p graf-after--p">Of course I mostly just sat and watched this part, but it was educational!</p><h3 name="2712" id="2712" class="graf graf--h3 graf-after--p">The 34-test milestone</h3><p name="f1a3" id="f1a3" class="graf graf--p graf-after--h3">When I hit 34 passing tests, something interesting had happened. I wasn’t just testing file analysis — I’d built a comprehensive security layer, a flexible factory system, proper error handling, and clean domain model compliance.</p><p name="dc87" id="dc87" class="graf graf--p graf-after--p">All driven by the discipline of test-first development.</p><p name="cddf" id="cddf" class="graf graf--p graf-after--p">The architecture wasn’t planned in advance. It emerged from the pressure of writing testable code, handling edge cases explicitly, and maintaining consistency across components.</p><h3 name="3f0f" id="3f0f" class="graf graf--h3 graf-after--p">What TDD really does</h3><p name="8790" id="8790" class="graf graf--p graf-after--h3">TDD isn’t about testing — it’s about design. Writing tests first forces you to think about interfaces before implementations, contracts before code, edge cases before optimizations.</p><p name="923c" id="923c" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Tests reveal design problems early.</strong> Bad interfaces are hard to test. Complex dependencies make setup painful. Unclear contracts lead to confusing assertions.</p><p name="cc98" id="cc98" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Tests force explicit decisions.</strong> Should this throw an exception or return an error? How should components communicate? What are the actual requirements vs. nice-to-have features?</p><p name="624b" id="624b" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Tests prevent architectural drift.</strong> When every behavior is specified in a test, shortcuts become obvious and uncomfortable. The test suite becomes a guardian of consistency.</p><h3 name="a8ff" id="a8ff" class="graf graf--h3 graf-after--p">Another friggin’ compound effect</h3><p name="2d95" id="2d95" class="graf graf--p graf-after--h3">Here’s the really interesting part: the 34 tests didn’t just validate 34 behaviors. They created a foundation that made subsequent development faster and more reliable.</p><p name="0119" id="0119" class="graf graf--p graf-after--p">When integration time came, the file analysis components dropped in cleanly. When error scenarios arose, the handling was already built in. When new file types needed support, the factory pattern made extension straightforward.</p><p name="6890" id="6890" class="graf graf--p graf-after--p">Good tests don’t just catch bugs — they prevent entire categories of problems from emerging.</p><h3 name="bbd1" id="bbd1" class="graf graf--h3 graf-after--p">A lesson about discipline</h3><p name="dc96" id="dc96" class="graf graf--p graf-after--h3">The temptation to skip tests is always strongest when you’re building something new, when the pressure to ship is high, when “we’ll add tests later” seems reasonable.</p><p name="4b05" id="4b05" class="graf graf--p graf-after--p">But TDD is most valuable exactly when it feels most inconvenient. When the architecture is fluid, when requirements are emerging, when shortcuts beckon — that’s when the discipline of test-first development pays the highest dividends.</p><p name="ba07" id="ba07" class="graf graf--p graf-after--p graf--trailing">Not because tests catch bugs, but because tests force good decisions.</p></div></div></section><section name="5bb7" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="acd1" id="acd1" class="graf graf--p graf--leading"><em class="markup--em markup--p-em">Next on Building Piper Morgan: “The 48-Hour Rollercoaster” — From ‘LIFE SAVER!!!’ to ‘Failed attempt to recreate lost work’ and back to triumph.</em></p><p name="8abc" id="8abc" class="graf graf--p graf-after--p graf--trailing"><em class="markup--em markup--p-em">What’s your experience with TDD influencing architecture? I’m curious whether others find that test-first development changes not just how they verify code, but how they design it.</em></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mediajunkie" class="p-author h-card">christian crumlish</a> on <a href="https://medium.com/p/ca9c8039b20d"><time class="dt-published" datetime="2025-07-25T13:45:16.334Z">July 25, 2025</time></a>.</p><p><a href="https://medium.com/@mediajunkie/when-tdd-saves-your-architecture-ca9c8039b20d" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 9, 2025.</p></footer></article></body></html>

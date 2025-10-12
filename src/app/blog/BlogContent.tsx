@@ -20,21 +20,12 @@ function extractReadingTime(content: string): string {
   return match ? `${match[1]} min read` : '5 min read';
 }
 
-// Extract post ID from URL
-function extractPostId(url: string): string | null {
-  if (!url) return null;
-  const match = url.match(/([a-f0-9]{12})(?:\?|$)/);
-  return match ? match[1] : null;
-}
-
 // Transform posts to expected format
 const mediumPosts = mediumPostsRaw.map((post: any) => {
-  const postId = extractPostId(post.guid || post.link);
-
   return {
     ...post,
     excerpt: post.contentSnippet || post.content?.substring(0, 200) || '',
-    url: `/blog/${postId}`,
+    url: `/blog/${post.slug}`,
     mediumUrl: post.link,
     publishedAt: formatDate(post.pubDate || post.isoDate),
     readingTime: extractReadingTime(post.content || ''),

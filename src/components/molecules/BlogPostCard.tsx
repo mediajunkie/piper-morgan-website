@@ -44,8 +44,8 @@ export function BlogPostCard({
   };
 
   const cardClasses = [
-    'bg-white rounded-card shadow-component hover:shadow-component-hover transition-all duration-200',
-    'border border-gray-100 hover:border-primary-teal/20 hover:bg-gray-50/50',
+    'bg-white dark:bg-dark-surface rounded-card shadow-component hover:shadow-component-hover transition-all duration-200',
+    'border border-gray-100 dark:border-gray-800 hover:border-primary-teal/20 dark:hover:border-primary-teal/30 hover:bg-gray-50/50 dark:hover:bg-gray-800/50',
     'overflow-hidden group',
     className,
   ].filter(Boolean).join(' ');
@@ -61,7 +61,7 @@ export function BlogPostCard({
       >
         {/* Featured Image */}
         {featuredImage && (
-          <div className="relative w-full h-48 md:h-56 bg-gray-100 overflow-hidden flex-shrink-0">
+          <div className="relative w-full h-48 md:h-56 bg-gray-100 dark:bg-gray-800 overflow-hidden flex-shrink-0">
             <img
               src={featuredImage}
               alt={title}
@@ -75,14 +75,14 @@ export function BlogPostCard({
           {/* Tags Badge */}
           {tags.length > 0 && (
             <div className="mb-3">
-              <span className="inline-block px-3 py-1 bg-primary-teal/10 text-primary-teal-text text-xs font-medium rounded-full">
+              <span className="inline-block px-3 py-1 bg-primary-teal/10 dark:bg-primary-teal/20 text-primary-teal-text dark:text-primary-teal text-xs font-medium rounded-full">
                 {tags[0]}
               </span>
             </div>
           )}
 
           {/* Title */}
-          <h3 className={`font-bold text-text-dark leading-tight group-hover:text-primary-teal-text transition-colors flex-grow ${
+          <h3 className={`font-bold text-text-dark dark:text-dark-text leading-tight group-hover:text-primary-teal-text dark:group-hover:text-primary-teal transition-colors flex-grow ${
             compact ? 'text-lg' : 'text-xl md:text-2xl'
           }`}>
             {title}
@@ -91,18 +91,18 @@ export function BlogPostCard({
           {/* Footer */}
           <div className="mt-auto pt-6">
             {/* Metadata with improved spacing */}
-            <div className="flex items-center text-sm text-gray-600 mb-3 flex-wrap gap-x-2 gap-y-1">
+            <div className="flex items-center text-sm text-gray-600 dark:text-gray-400 mb-3 flex-wrap gap-x-2 gap-y-1">
               <time dateTime={publishedAt}>{publishedAt}</time>
               {readingTime && (
                 <>
-                  <span className="text-gray-400">•</span>
+                  <span className="text-gray-400 dark:text-gray-600">•</span>
                   <span>{readingTime}</span>
                 </>
               )}
             </div>
 
             {/* Read More Link */}
-            <div className="text-primary-teal-text font-medium text-sm group-hover:underline">
+            <div className="text-primary-teal-text dark:text-primary-teal font-medium text-sm group-hover:underline">
               Read More →
             </div>
           </div>

@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>The Architectural Reckoning: When Three Experts Agree You Should Start Over</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">The Architectural Reckoning: When Three Experts Agree You Should Start Over</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Still June 1, 2025
+</section>
+<section data-field="body" class="e-content">
+<section name="6411" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="0194" id="0194" class="graf graf--h3 graf--leading graf--title">The Architectural Reckoning: When Three Experts Agree You Should Start Over</h3><p name="f7c4" id="f7c4" class="graf graf--p graf-after--h3"><em class="markup--em markup--p-em">Still June 1, 2025</em></p><figure name="f276" id="f276" class="graf graf--figure graf--startsWithDoubleQuote graf-after--p"><img class="graf-image" data-image-id="1*09Lt6eM9ASnjwOPQv-ATXg.png" data-width="1536" data-height="1024" data-is-featured="true" alt="Three wise robots review a person’s plan for his own robot" src="https://cdn-images-1.medium.com/max/800/1*09Lt6eM9ASnjwOPQv-ATXg.png"><figcaption class="imageCaption">“Hmmmmmm”</figcaption></figure><p name="2beb" id="2beb" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--figure"><span class="graf-dropCap">T</span>here I was, knee-deep in a proof-of-concept that mostly worked, when I decided to get a second opinion. And a third. What happened next taught me something important about knowing when to stop polishing and start over.</p><h3 name="45aa" id="45aa" class="graf graf--h3 graf-after--p">The setup</h3><p name="8cd9" id="8cd9" class="graf graf--p graf-after--h3">After building a functional POC that could create GitHub issues from natural language, I found myself at that familiar crossroads every developer knows: Do I refactor this into something production-ready, or do I throw it all away and start fresh?</p><p name="53d6" id="53d6" class="graf graf--p graf-after--p">The POC worked. It could:</p><ul class="postList"><li name="49d3" id="49d3" class="graf graf--li graf-after--p">Ingest PM documents into a vector database</li><li name="6fca" id="6fca" class="graf graf--li graf-after--li">Answer questions about them</li><li name="f903" id="f903" class="graf graf--li graf-after--li">Create GitHub issues with Claude’s help</li><li name="e28d" id="e28d" class="graf graf--li graf-after--li">Even review existing tickets</li></ul><p name="61ee" id="61ee" class="graf graf--p graf-after--li">But something felt off. The code was getting messier with each feature. Imports were tangled. The architecture was emerging organically rather than being designed. Classic symptoms of a POC that’s overstayed its welcome.</p><h3 name="3cd6" id="3cd6" class="graf graf--h3 graf-after--p">Getting multiple perspectives</h3><p name="d0ca" id="d0ca" class="graf graf--p graf-after--h3">Here’s where it gets interesting. Instead of just asking Claude Opus (my usual architectural consultant), I decided to get multiple perspectives. I asked both Claude and Gemini to review my POC and propose architectures for “Piper Morgan 1.0.”</p><p name="956e" id="956e" class="graf graf--p graf-after--p">Then — and this is the key bit — I had another Claude instance synthesize both proposals into a unified plan.</p><p name="a078" id="a078" class="graf graf--p graf-after--p">The consensus was unanimous: Start over.</p><h3 name="db0d" id="db0d" class="graf graf--h3 graf-after--p">The moment of clarity</h3><p name="1322" id="1322" class="graf graf--p graf--startsWithDoubleQuote graf-after--h3">“OK, so am I right in thinking that if I want to go ahead with this new synthesized plan that the other items we were discussing are effectively moot and/or will be subsumed or obviated in building ‘Piper Morgan 1.0’ (vs 0.1)?”</p><p name="7add" id="7add" class="graf graf--p graf-after--p">Claude’s response was instructive:</p><blockquote name="c30d" id="c30d" class="graf graf--blockquote graf--startsWithDoubleQuote graf-after--p"><em class="markup--em markup--blockquote-em">“YES, you’re absolutely right! The current POC served its purpose brilliantly — it proved the concept and revealed what’s needed. But pursuing the synthesized ‘Piper Morgan 1.0’ plan means…”</em></blockquote><p name="4390" id="4390" class="graf graf--p graf-after--blockquote">What followed was a comprehensive list of everything that would become irrelevant:</p><ul class="postList"><li name="d76e" id="d76e" class="graf graf--li graf-after--p">Refactoring the POC</li><li name="fffb" id="fffb" class="graf graf--li graf-after--li">Fixing the Sonnet vs Opus confusion in current code</li><li name="6389" id="6389" class="graf graf--li graf-after--li">Restoring the broken Streamlit UI</li><li name="f455" id="f455" class="graf graf--li graf-after--li">Debugging the empty knowledge base context</li><li name="1732" id="1732" class="graf graf--li graf-after--li">That pesky milestone bug</li></ul><p name="44b5" id="44b5" class="graf graf--p graf-after--li">All of it. Moot.</p><h3 name="ae20" id="ae20" class="graf graf--h3 graf-after--p">The architecture they all agreed on</h3><p name="5821" id="5821" class="graf graf--p graf-after--h3">The proposed architecture was ambitious but grounded:</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="sql" name="1ae7" id="1ae7" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-keyword">User</span> Interfaces → Conversation Layer → Intelligence Engine <br />→ Execution Layer → Integration Layer → Knowledge <span class="hljs-operator">&amp;</span> Learning Layer</span></pre><p name="bd80" id="bd80" class="graf graf--p graf-after--pre">Key principles everyone agreed on:</p><ol class="postList"><li name="2342" id="2342" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">Domain-First Architecture</strong>: Start with rich PM domain models, not tool integrations</li><li name="99a8" id="99a8" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Event-Driven Core</strong>: Enable real-time learning and asynchronous operations</li><li name="dcba" id="dcba" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Plugin Everything</strong>: Every external system is a plugin from day one</li><li name="4989" id="4989" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">AI-Native Design</strong>: LLMs aren’t just for text generation — they’re the reasoning engine</li><li name="bc38" id="bc38" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Learning-Centric</strong>: Every interaction teaches the system something</li></ol><h3 name="23b1" id="23b1" class="graf graf--h3 graf-after--li">The path not taken</h3><p name="72ab" id="72ab" class="graf graf--p graf-after--h3">Claude laid out the choice beautifully:</p><p name="d31a" id="d31a" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Path A</strong>: Keep patching the POC (maybe 2–3 months before hitting a wall)<br> <strong class="markup--strong markup--p-strong">Path B</strong>: Build Piper Morgan 1.0 right (4–6 months to surpass POC functionality)</p><p name="8858" id="8858" class="graf graf--p graf-after--p">The thing is, when three different AI systems independently tell you to start over, and their reasoning all converges on the same architectural principles, you should probably listen.</p><p name="2065" id="2065" class="graf graf--p graf-after--p">(I also ran these plans by some of my senior colleagues for a sniff test. Mostly their reaction was that it looked enterprise-grade for a hobby project and that the documentation had the sort of thoroughness only AIs have the patience for.)</p><h3 name="b9c0" id="b9c0" class="graf graf--h3 graf-after--p">The comedy begins</h3><p name="b216" id="b216" class="graf graf--p graf-after--h3">Of course, making the decision to start over was the easy part. Actually starting over? That’s where things got interesting.</p><p name="78c0" id="78c0" class="graf graf--p graf-after--p">There was that time I tried to run <code class="markup--code markup--p-code">streamlist</code> instead of <code class="markup--code markup--p-code">streamlit</code>. Classic muscle memory fail. Then I discovered my Python environment was completely borked from moving directories. &quot;Command not found: python&quot; despite having (venv) in my prompt.</p><p name="6ae6" id="6ae6" class="graf graf--p graf-after--p">The virtual environment was activated but pointing to the wrong Python. Hours of debugging later, I learned that moving a project with an active venv is like trying to transplant a tree by just moving the leaves.</p><p name="6317" id="6317" class="graf graf--p graf-after--p">But these little frustrations were nothing compared to what was coming.</p><h3 name="675a" id="675a" class="graf graf--h3 graf-after--p">What I did learn</h3><p name="8b1d" id="8b1d" class="graf graf--p graf-after--h3">Sometimes the bravest thing you can do is admit that your proof-of-concept has taught you everything it can teach you. The POC’s job was to prove the concept and reveal the challenges. It did both brilliantly.</p><p name="c9f0" id="c9f0" class="graf graf--p graf-after--p">The mistake would have been trying to evolve it into something it was never meant to be. As Claude put it: “Don’t polish a prototype when you’re building the real thing.”</p><h3 name="6483" id="6483" class="graf graf--h3 graf-after--p">The decision point</h3><p name="71cd" id="71cd" class="graf graf--p graf-after--h3">Looking back, this was the moment Piper Morgan transformed from an experiment into a real project. Not when I wrote the first line of code, not when the POC started working, but when I accepted that the POC needed to die for the platform to live.</p><p name="15e8" id="15e8" class="graf graf--p graf-after--p">The POC got me here. Now it was time to build the real thing.</p><p name="4bba" id="4bba" class="graf graf--p graf-after--p graf--trailing">All those tactical issues we were discussing? They just became irrelevant in the best possible way — I was building something better from the ground up.</p></div></div></section><section name="4a0e" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="b81c" id="b81c" class="graf graf--p graf--leading"><em class="markup--em markup--p-em">Next in Building Piper Morgan: How we built enterprise infrastructure for $0 (and why “free” doesn’t mean “cheap”)</em></p><p name="038b" id="038b" class="graf graf--p graf-after--p graf--trailing"><em class="markup--em markup--p-em">Ever feel disappointed because something turned out to be harder than it looked at first, but also kind of excited about learning to do it the right way?</em></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mediajunkie" class="p-author h-card">christian crumlish</a> on <a href="https://medium.com/p/1f9581a41633"><time class="dt-published" datetime="2025-07-11T16:52:42.980Z">July 11, 2025</time></a>.</p><p><a href="https://medium.com/@mediajunkie/the-architectural-reckoning-when-three-experts-agree-you-should-start-over-1f9581a41633" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 9, 2025.</p></footer></article></body></html>

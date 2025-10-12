@@ -1,0 +1,899 @@
+{
+  "unmatchedPosts": [
+    {
+      "postId": "a143610ce7f9",
+      "title": "REPLACE with Overconfidence post: The Great Git Directory Massacre (And Other Cautionary Tales)",
+      "date": "Fri Jun 27",
+      "url": "https://medium.com/building-piper-morgan/the-great-git-directory-massacre-and-other-cautionary-tales-a143610ce7f9",
+      "content": ""
+    },
+    {
+      "postId": "5a69f9a2af0b",
+      "title": "The Question That Started Everything",
+      "date": "Tue May 27",
+      "url": "https://medium.com/building-piper-morgan/the-question-that-started-everything-5a69f9a2af0b",
+      "content": ""
+    },
+    {
+      "postId": "b1d8c2dd5f40",
+      "title": "The PM Who Automated Himself (Or at Least Tried To)",
+      "date": "Wed May 28",
+      "url": "https://medium.com/building-piper-morgan/the-pm-who-automated-himself-or-at-least-tried-to-b1d8c2dd5f40",
+      "content": ""
+    },
+    {
+      "postId": "f0aad9fa3a4a",
+      "title": "The Demo That Killed the Prototype",
+      "date": "Thu May 29",
+      "url": "https://medium.com/building-piper-morgan/the-demo-that-killed-the-prototype-f0aad9fa3a4a",
+      "content": ""
+    },
+    {
+      "postId": "b75918602942",
+      "title": "The Great Rebuild: Starting Over When Starting Over Is the Only Option",
+      "date": "Thu May 29",
+      "url": "https://medium.com/building-piper-morgan/the-great-rebuild-starting-over-when-starting-over-is-the-only-option-b75918602942",
+      "content": ""
+    },
+    {
+      "postId": "cc7f4b96b621",
+      "title": "The RAG Revelation: When Your Prototype Answers Back",
+      "date": "Thu May 29",
+      "url": "https://medium.com/building-piper-morgan/the-rag-revelation-when-your-proof-of-concept-answers-back-cc7f4b96b621",
+      "content": ""
+    },
+    {
+      "postId": "bb06005611cb",
+      "title": "From Research Question to Working Prototype: Building an AI PM Assistant from Scratch",
+      "date": "Thu May 29",
+      "url": "https://medium.com/building-piper-morgan/from-research-question-to-working-prototype-building-an-ai-pm-assistant-from-scratch-bb06005611cb",
+      "content": ""
+    },
+    {
+      "postId": "c7207687f711",
+      "title": "From CLI to GitHub Integration: When Prototypes Meet Real Workflows",
+      "date": "Thu May 29",
+      "url": "https://medium.com/building-piper-morgan/from-cli-to-web-app-when-prototypes-meet-real-workflows-c7207687f711",
+      "content": ""
+    },
+    {
+      "postId": "1f9581a41633",
+      "title": "The Architectural Reckoning: When Three Experts Agree You Should Start Over",
+      "date": "Thu May 29",
+      "url": "https://medium.com/building-piper-morgan/the-architectural-reckoning-when-three-experts-agree-you-should-start-over-1f9581a41633",
+      "content": ""
+    },
+    {
+      "postId": "9efacddc4804",
+      "title": "Naming Piper Morgan",
+      "date": "Thu May 29",
+      "url": "https://medium.com/building-piper-morgan/naming-piper-morgan-9efacddc4804",
+      "content": ""
+    },
+    {
+      "postId": "922fd802460e",
+      "title": "7/11: When Claude Took a Break (And Gemini Stepped In)",
+      "date": "Fri May 30",
+      "url": "https://medium.com/building-piper-morgan/when-claude-took-a-break-and-gemini-stepped-in-922fd802460e",
+      "content": ""
+    },
+    {
+      "postId": "ccb351b91629",
+      "title": "The Demo That Needed Documentation",
+      "date": "Fri May 30",
+      "url": "https://medium.com/building-piper-morgan/the-demo-that-needed-documentation-ccb351b91629",
+      "content": ""
+    },
+    {
+      "postId": "40f084dc3095",
+      "title": "Chasing Rabbits (A Debugging Story)",
+      "date": "Sat May 31",
+      "url": "https://medium.com/building-piper-morgan/chasing-rabbits-a-debugging-story-40f084dc3095",
+      "content": ""
+    },
+    {
+      "postId": "084611e312ea",
+      "title": "When Your AI Writes 500 Lines of Boilerplate (And Why That's Actually Useful)",
+      "date": "Sat May 31",
+      "url": "https://medium.com/building-piper-morgan/when-your-ai-writes-500-lines-of-boilerplate-and-why-thats-actually-useful-084611e312ea",
+      "content": ""
+    },
+    {
+      "postId": "078e056a87e4",
+      "title": "The $0 Bootstrap Stack: Building Enterprise Infrastructure for Free (With Upgrade Paths)",
+      "date": "Sun Jun 1",
+      "url": "https://medium.com/building-piper-morgan/the-0-bootstrap-stack-building-enterprise-infrastructure-for-free-with-upgrade-paths-078e056a87e4",
+      "content": ""
+    },
+    {
+      "postId": "647704d46558",
+      "title": "Domain-First Development: Actually Building What We Designed",
+      "date": "Mon Jun 2",
+      "url": "https://medium.com/building-piper-morgan/domain-first-development-actually-building-what-we-designed-647704d46558",
+      "content": ""
+    },
+    {
+      "postId": "13896a87b7a9",
+      "title": "From Task Executor to Problem Solver (comes befofe Domain-First Dev)",
+      "date": "Mon Jun 2",
+      "url": "https://medium.com/building-piper-morgan/from-task-executor-to-problem-solver-13896a87b7a9",
+      "content": ""
+    },
+    {
+      "postId": "4c04e304a3a7",
+      "title": "Building AI That Actually Thinks About Product Work",
+      "date": "Mon Jun 2",
+      "url": "https://medium.com/building-piper-morgan/building-ai-that-actually-thinks-about-product-work-4c04e304a3a7",
+      "content": ""
+    },
+    {
+      "postId": "d9f839597278",
+      "title": "Persistence of Memory: AI Can't Learn without It",
+      "date": "Mon Jun 2",
+      "url": "https://medium.com/building-piper-morgan/persistence-of-memory-ai-cant-learn-without-it-d9f839597278",
+      "content": ""
+    },
+    {
+      "postId": "aab04037831e",
+      "title": "The Learning Infrastructure Gambit",
+      "date": "Tue Jun 3",
+      "url": "https://medium.com/building-piper-morgan/the-learning-infrastructure-gambit-aab04037831e",
+      "content": ""
+    },
+    {
+      "postId": "4734f6e9f442",
+      "title": "Knowledge Hierarchies and Dependency Hell",
+      "date": "Wed Jun 4",
+      "url": "https://medium.com/building-piper-morgan/knowledge-hierarchies-and-dependency-hell-4734f6e9f442?source=user_profile_page---------4-------------7f4f3524879----------------------",
+      "content": ""
+    },
+    {
+      "postId": "a858bf183c21",
+      "title": "From Scaffolding to Flight: Before the Training Wheels Come Off",
+      "date": "Thu Jun 5",
+      "url": "https://medium.com/building-piper-morgan/from-scaffolding-to-flight-before-the-training-wheels-come-off-a858bf183c21",
+      "content": ""
+    },
+    {
+      "postId": "da41a68cd59b",
+      "title": "Taking Stock: The Value of Pausing to Document and Plan",
+      "date": "Fri Jun 6",
+      "url": "https://medium.com/building-piper-morgan/taking-stock-the-value-of-pausing-to-document-and-plan-da41a68cd59b",
+      "content": ""
+    },
+    {
+      "postId": "f6d7fac93e1f",
+      "title": "Modeling What PMs Do for Piper",
+      "date": "Sat Jun 7",
+      "url": "https://medium.com/building-piper-morgan/modeling-what-pms-do-for-piper-f6d7fac93e1f",
+      "content": ""
+    },
+    {
+      "postId": "360bd682551e",
+      "title": "Small Scripts Win: Building Knowledge That Actually Knows Things",
+      "date": "Sun Jun 8",
+      "url": "https://medium.com/building-piper-morgan/small-scripts-win-building-knowledge-that-actually-knows-things-360bd682551e",
+      "content": ""
+    },
+    {
+      "postId": "b5bb0c2c9384",
+      "title": "Bidirectional Intelligence: Teaching AI to Critique, Not Just Create",
+      "date": "Mon Jun 9",
+      "url": "https://mediajunkie.medium.com/bidirectional-intelligence-teaching-ai-to-critique-not-just-create-b5bb0c2c9384",
+      "content": ""
+    },
+    {
+      "postId": "32c8ed94248d",
+      "title": "7/22: Keeping Your AI Project on Track: Lessons from Building a Product Management Assistant",
+      "date": "Sat Jun 14",
+      "url": "https://medium.com/building-piper-morgan/keeping-your-ai-project-on-track-lessons-from-building-a-product-management-assistant-32c8ed94248d",
+      "content": ""
+    },
+    {
+      "postId": "201f17c5cfbf",
+      "title": "From Architecture Drift to Working AI",
+      "date": "Sun Jun 15",
+      "url": "https://medium.com/building-piper-morgan/from-architecture-drift-to-working-ai-201f17c5cfbf",
+      "content": ""
+    },
+    {
+      "postId": "0caeeadf7ef5",
+      "title": "7/20: When Multiple AIs Can Still Drift Together",
+      "date": "Sun Jun 15",
+      "url": "https://medium.com/building-piper-morgan/when-multiple-ais-can-still-drift-together-0caeeadf7ef5",
+      "content": ""
+    },
+    {
+      "postId": "7d71c9e5316d",
+      "title": "7/22: When Architecture Principles Trump Tactical Convenience",
+      "date": "Mon Jun 16",
+      "url": "https://medium.com/building-piper-morgan/when-architecture-principles-trump-tactical-convenience-7d71c9e5316d",
+      "content": ""
+    },
+    {
+      "postId": "117b25fa6bae",
+      "title": "7/20: Digging Out of the Complexity Hole",
+      "date": "Tue Jun 17",
+      "url": "https://medium.com/building-piper-morgan/digging-out-of-the-complexity-hole-117b25fa6bae",
+      "content": ""
+    },
+    {
+      "postId": "34c725384254",
+      "title": "7/20: Successful Prototype Syndrome",
+      "date": "Thu Jun 19",
+      "url": "https://medium.com/building-piper-morgan/successful-prototype-syndrome-34c725384254",
+      "content": ""
+    },
+    {
+      "postId": "98ad7b8cefd0",
+      "title": "When Your Docs Lie",
+      "date": "Sat Jun 21",
+      "url": "https://medium.com/building-piper-morgan/when-your-docs-lie-98ad7b8cefd0",
+      "content": ""
+    },
+    {
+      "postId": "0b19d8a13665",
+      "title": "7/16 to 7/18: The Cascade Effect: How Testing the UI Led to Architectural Discoveries",
+      "date": "Mon Jun 23",
+      "url": "https://medium.com/building-piper-morgan/the-cascade-effect-how-testing-the-ui-led-to-architectural-discoveries-0b19d8a13665",
+      "content": ""
+    },
+    {
+      "postId": "2965731c90bc",
+      "title": "Day Zero or Deja Zero: When Chaos Became a Claude Project",
+      "date": "Mon Jun 23",
+      "url": "https://medium.com/building-piper-morgan/day-zero-or-d%C3%A9j%C3%A0-zero-when-chaos-became-a-claude-project-2965731c90bc",
+      "content": ""
+    },
+    {
+      "postId": "72145777c406",
+      "title": "The Integration Reality Check",
+      "date": "Tue Jun 24",
+      "url": "https://medium.com/building-piper-morgan/the-integration-reality-check-72145777c406",
+      "content": ""
+    },
+    {
+      "postId": "ca9c8039b20d",
+      "title": "When TDD Saves Your Architecture",
+      "date": "Wed Jun 25",
+      "url": "https://medium.com/building-piper-morgan/when-tdd-saves-your-architecture-ca9c8039b20d",
+      "content": ""
+    },
+    {
+      "postId": "b4d9193ec579",
+      "title": "The 48-hour rollercoaster: from working tests to ‘Failed attempt’ and back to ‘LIFE SAVER !!!”’",
+      "date": "Thu Jun 26",
+      "url": "https://medium.com/building-piper-morgan/the-48-hour-rollercoaster-from-working-tests-to-failed-attempt-and-back-to-life-saver-b4d9193ec579",
+      "content": ""
+    },
+    {
+      "postId": "160bc294b0b5",
+      "title": "7/20: The Technical Debt Reckoning",
+      "date": "Thu Jun 26",
+      "url": "https://medium.com/building-piper-morgan/the-technical-debt-reckoning-160bc294b0b5",
+      "content": ""
+    },
+    {
+      "postId": "3d696dbf2803",
+      "title": "Integration Reveals All: How Building File Analysis Exposed Hidden Architecture",
+      "date": "Fri Jun 27",
+      "url": "https://medium.com/building-piper-morgan/integration-reveals-all-how-building-file-analysis-exposed-hidden-architecture-3d696dbf2803",
+      "content": ""
+    },
+    {
+      "postId": "c00a94c09c2c",
+      "title": "7/20: When Your Tests Tell You What Your Code Should Do",
+      "date": "Fri Jun 27",
+      "url": "https://medium.com/building-piper-morgan/when-your-tests-tell-you-what-your-code-should-do-c00a94c09c2c",
+      "content": ""
+    },
+    {
+      "postId": "0822585cb51a",
+      "title": "7/20: Following Your Own Patterns",
+      "date": "Fri Jun 27",
+      "url": "https://medium.com/building-piper-morgan/following-your-own-patterns-0822585cb51a",
+      "content": ""
+    },
+    {
+      "postId": "5243027aa9f6",
+      "title": "7/22: Battle-Testing GitHub Integration: When Recovery Becomes Learning",
+      "date": "Sun Jun 29",
+      "url": "https://medium.com/building-piper-morgan/battle-testing-your-architecture-when-recovery-becomes-learning-5243027aa9f6",
+      "content": ""
+    },
+    {
+      "postId": "4660787e98a1",
+      "title": "Teaching an AI to Sound Like Me (Without Losing My Mind)",
+      "date": "Mon Jun 30",
+      "url": "https://medium.com/building-piper-morgan/teaching-an-ai-to-write-like-me-without-losing-my-mind-4660787e98a1",
+      "content": ""
+    },
+    {
+      "postId": "336d98a417e4",
+      "title": "The Real Bugs Live in the UI (A Testing Reality Check)",
+      "date": "Tue Jul 1",
+      "url": "https://medium.com/building-piper-morgan/the-real-bugs-live-in-the-ui-a-testing-reality-check-336d98a417e4",
+      "content": ""
+    },
+    {
+      "postId": "7fc3aadc2a3b",
+      "title": "The Day We Stopped Fighting the System",
+      "date": "Thu Jul 3",
+      "url": "https://medium.com/building-piper-morgan/the-day-we-stopped-fighting-the-system-or-how-i-stopped-worrying-and-learned-to-love-synthesis-7fc3aadc2a3b",
+      "content": ""
+    },
+    {
+      "postId": "437a3ec04316",
+      "title": "The Day We Taught Piper to Summarize (Almost)",
+      "date": "Fri Jul 4",
+      "url": "https://medium.com/building-piper-morgan/the-day-we-taught-piper-to-summarize-almost-437a3ec04316",
+      "content": ""
+    },
+    {
+      "postId": "03c685be122a",
+      "title": "The Zeno's Paradox of Debugging: A Weekend with Piper Morgan",
+      "date": "Sun Jul 6",
+      "url": "https://medium.com/building-piper-morgan/the-zenos-paradox-of-debugging-a-weekend-with-piper-morgan-03c685be122a",
+      "content": ""
+    },
+    {
+      "postId": "7aaec260ede5",
+      "title": "The Debugging Cascade: A 90-Minute Journey Through Integration Hell",
+      "date": "Mon Jul 7",
+      "url": "https://medium.com/building-piper-morgan/the-debugging-cascade-a-90-minute-journey-through-integration-hell-7aaec260ede5",
+      "content": ""
+    },
+    {
+      "postId": "4e6f997a80cf",
+      "title": "The Coordination Tax: When Copy-Paste Becomes Your Biggest Bottleneck",
+      "date": "Tue Jul 8",
+      "url": "https://medium.com/building-piper-morgan/the-coordination-tax-when-copy-paste-becomes-your-biggest-bottleneck-4e6f997a80cf",
+      "content": ""
+    },
+    {
+      "postId": "c619de609a42",
+      "title": "7/8: Two-Fisted Coding: Wrangling Robot Programmers When You're Just a PM",
+      "date": "Tue Jul 8",
+      "url": "https://medium.com/building-piper-morgan/two-fisted-coding-wrangling-robot-programmers-when-youre-just-a-pm-c619de609a42",
+      "content": ""
+    },
+    {
+      "postId": "cc07dca2a5e9",
+      "title": "Three Bugs, One Victory: The Day We Finally Shipped PM-011",
+      "date": "Sat Jul 12",
+      "url": "https://medium.com/building-piper-morgan/three-bugs-one-victory-the-day-we-finally-shipped-pm-011-cc07dca2a5e9",
+      "content": ""
+    },
+    {
+      "postId": "987eb4c5cc42",
+      "title": "The AI Detective Squad: When Three Agents Solve One Mystery",
+      "date": "Sat Jul 12",
+      "url": "https://medium.com/building-piper-morgan/the-ai-detective-squad-when-three-agents-solve-one-mystery-987eb4c5cc42",
+      "content": ""
+    },
+    {
+      "postId": "b7c3ef25cbdc",
+      "title": "From 2% to 87%: The Great Test Suite Recovery",
+      "date": "Sun Jul 13",
+      "url": "https://medium.com/building-piper-morgan/from-2-to-87-the-great-test-suite-recovery-b7c3ef25cbdc",
+      "content": ""
+    },
+    {
+      "postId": "9fbbf6932838",
+      "title": "The Action Humanizer: Teaching AI to Speak Human",
+      "date": "Sun Jul 13",
+      "url": "https://medium.com/building-piper-morgan/the-action-humanizer-teaching-ai-to-speak-human-9fbbf6932838",
+      "content": ""
+    },
+    {
+      "postId": "2575d3526323",
+      "title": "7/12-7/13, 7/15 chat: From Broken Tests to Perfect Architecture: The Great Cleanup of July 14",
+      "date": "Mon Jul 14",
+      "url": "https://medium.com/building-piper-morgan/from-broken-tests-to-perfect-architecture-the-great-cleanup-2575d3526323",
+      "content": ""
+    },
+    {
+      "postId": "cde7eb0b6605",
+      "title": "7/12-7/13, 7/15 chat: When the Pupil Outsmarts the Teacher?",
+      "date": "Tue Jul 15",
+      "url": "https://medium.com/building-piper-morgan/when-the-pupil-outsmarts-the-teacher-the-day-piper-outgrew-its-tests-cde7eb0b6605",
+      "content": ""
+    },
+    {
+      "postId": "c70e69a245ea",
+      "title": "7/16 chat: When Your Tests Lie: A Victory Disguised as Crisis",
+      "date": "Wed Jul 16",
+      "url": "https://medium.com/building-piper-morgan/when-your-tests-lie-a-victory-disguised-as-crisis-c70e69a245ea",
+      "content": ""
+    },
+    {
+      "postId": "1e15183972a7",
+      "title": "7/16 chat: The 5-Minute Day: When TDD Meets AI-Assisted Development",
+      "date": "Thu Jul 17",
+      "url": "https://medium.com/building-piper-morgan/the-5-minute-day-when-tdd-meets-ai-assisted-development-1e15183972a7",
+      "content": ""
+    }
+  ],
+  "orphanImages": [
+    {
+      "filename": "robot-archer.png",
+      "name": "robot-archer",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-archer.png"
+    },
+    {
+      "filename": "robot-archer.webp",
+      "name": "robot-archer",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-archer.webp"
+    },
+    {
+      "filename": "robot-blind-curve.png",
+      "name": "robot-blind-curve",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-blind-curve.png"
+    },
+    {
+      "filename": "robot-blind-curve.webp",
+      "name": "robot-blind-curve",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-blind-curve.webp"
+    },
+    {
+      "filename": "robot-blueprints.png",
+      "name": "robot-blueprints",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-blueprints.png"
+    },
+    {
+      "filename": "robot-blueprints.webp",
+      "name": "robot-blueprints",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-blueprints.webp"
+    },
+    {
+      "filename": "robot-boxers.webp",
+      "name": "robot-boxers",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-boxers.webp"
+    },
+    {
+      "filename": "robot-bugs.png",
+      "name": "robot-bugs",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-bugs.png"
+    },
+    {
+      "filename": "robot-bugs.webp",
+      "name": "robot-bugs",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-bugs.webp"
+    },
+    {
+      "filename": "robot-cards.webp",
+      "name": "robot-cards",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-cards.webp"
+    },
+    {
+      "filename": "robot-champagne.png",
+      "name": "robot-champagne",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-champagne.png"
+    },
+    {
+      "filename": "robot-champagne.webp",
+      "name": "robot-champagne",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-champagne.webp"
+    },
+    {
+      "filename": "robot-cleanup.png",
+      "name": "robot-cleanup",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-cleanup.png"
+    },
+    {
+      "filename": "robot-cleanup.webp",
+      "name": "robot-cleanup",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-cleanup.webp"
+    },
+    {
+      "filename": "robot-conductor.webp",
+      "name": "robot-conductor",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-conductor.webp"
+    },
+    {
+      "filename": "robot-detectives.png",
+      "name": "robot-detectives",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-detectives.png"
+    },
+    {
+      "filename": "robot-dig.png",
+      "name": "robot-dig",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-dig.png"
+    },
+    {
+      "filename": "robot-discover.png",
+      "name": "robot-discover",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-discover.png"
+    },
+    {
+      "filename": "robot-docs.webp",
+      "name": "robot-docs",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-docs.webp"
+    },
+    {
+      "filename": "robot-doctors.png",
+      "name": "robot-doctors",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-doctors.png"
+    },
+    {
+      "filename": "robot-doctors.webp",
+      "name": "robot-doctors",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-doctors.webp"
+    },
+    {
+      "filename": "robot-dogsled.png",
+      "name": "robot-dogsled",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-dogsled.png"
+    },
+    {
+      "filename": "robot-dogsled.webp",
+      "name": "robot-dogsled",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-dogsled.webp"
+    },
+    {
+      "filename": "robot-dr-evil.png",
+      "name": "robot-dr-evil",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-dr-evil.png"
+    },
+    {
+      "filename": "robot-driver.webp",
+      "name": "robot-driver",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-driver.webp"
+    },
+    {
+      "filename": "robot-easy.png",
+      "name": "robot-easy",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-easy.png"
+    },
+    {
+      "filename": "robot-easy.webp",
+      "name": "robot-easy",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-easy.webp"
+    },
+    {
+      "filename": "robot-ethics.png",
+      "name": "robot-ethics",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-ethics.png"
+    },
+    {
+      "filename": "robot-ethics.webp",
+      "name": "robot-ethics",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-ethics.webp"
+    },
+    {
+      "filename": "robot-filing.png",
+      "name": "robot-filing",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-filing.png"
+    },
+    {
+      "filename": "robot-found.webp",
+      "name": "robot-found",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-found.webp"
+    },
+    {
+      "filename": "robot-foundation.png",
+      "name": "robot-foundation",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-foundation.png"
+    },
+    {
+      "filename": "robot-fractal copy.png",
+      "name": "robot-fractal copy",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-fractal copy.png"
+    },
+    {
+      "filename": "robot-fractal-chaos.png",
+      "name": "robot-fractal-chaos",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-fractal-chaos.png"
+    },
+    {
+      "filename": "robot-handoff.png",
+      "name": "robot-handoff",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-handoff.png"
+    },
+    {
+      "filename": "robot-help.png",
+      "name": "robot-help",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-help.png"
+    },
+    {
+      "filename": "robot-hero.png",
+      "name": "robot-hero",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-hero.png"
+    },
+    {
+      "filename": "robot-hero.webp",
+      "name": "robot-hero",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-hero.webp"
+    },
+    {
+      "filename": "robot-hole.webp",
+      "name": "robot-hole",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-hole.webp"
+    },
+    {
+      "filename": "robot-horses.png",
+      "name": "robot-horses",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-horses.png"
+    },
+    {
+      "filename": "robot-knight.webp",
+      "name": "robot-knight",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-knight.webp"
+    },
+    {
+      "filename": "robot-logs.webp",
+      "name": "robot-logs",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-logs.webp"
+    },
+    {
+      "filename": "robot-mirror.png",
+      "name": "robot-mirror",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-mirror.png"
+    },
+    {
+      "filename": "robot-mirror.webp",
+      "name": "robot-mirror",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-mirror.webp"
+    },
+    {
+      "filename": "robot-mosquito.webp",
+      "name": "robot-mosquito",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-mosquito.webp"
+    },
+    {
+      "filename": "robot-pass-fail.png",
+      "name": "robot-pass-fail",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-pass-fail.png"
+    },
+    {
+      "filename": "robot-pass-fail.webp",
+      "name": "robot-pass-fail",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-pass-fail.webp"
+    },
+    {
+      "filename": "robot-passfail.png",
+      "name": "robot-passfail",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-passfail.png"
+    },
+    {
+      "filename": "robot-pupil.png",
+      "name": "robot-pupil",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-pupil.png"
+    },
+    {
+      "filename": "robot-pupil.webp",
+      "name": "robot-pupil",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-pupil.webp"
+    },
+    {
+      "filename": "robot-rabbits.png",
+      "name": "robot-rabbits",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-rabbits.png"
+    },
+    {
+      "filename": "robot-rabbits.webp",
+      "name": "robot-rabbits",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-rabbits.webp"
+    },
+    {
+      "filename": "robot-report.png",
+      "name": "robot-report",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-report.png"
+    },
+    {
+      "filename": "robot-report.webp",
+      "name": "robot-report",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-report.webp"
+    },
+    {
+      "filename": "robot-rollercoaster.png",
+      "name": "robot-rollercoaster",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-rollercoaster.png"
+    },
+    {
+      "filename": "robot-rollercoaster.webp",
+      "name": "robot-rollercoaster",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-rollercoaster.webp"
+    },
+    {
+      "filename": "robot-sailboat.webp",
+      "name": "robot-sailboat",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-sailboat.webp"
+    },
+    {
+      "filename": "robot-self-build?.png",
+      "name": "robot-self-build?",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-self-build?.png"
+    },
+    {
+      "filename": "robot-skaters.webp",
+      "name": "robot-skaters",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-skaters.webp"
+    },
+    {
+      "filename": "robot-smartbug.png",
+      "name": "robot-smartbug",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-smartbug.png"
+    },
+    {
+      "filename": "robot-speech.png",
+      "name": "robot-speech",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-speech.png"
+    },
+    {
+      "filename": "robot-speech.webp",
+      "name": "robot-speech",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-speech.webp"
+    },
+    {
+      "filename": "robot-stars.webp",
+      "name": "robot-stars",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-stars.webp"
+    },
+    {
+      "filename": "robot-taxes.png",
+      "name": "robot-taxes",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-taxes.png"
+    },
+    {
+      "filename": "robot-taxes.webp",
+      "name": "robot-taxes",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-taxes.webp"
+    },
+    {
+      "filename": "robot-test.png",
+      "name": "robot-test",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-test.png"
+    },
+    {
+      "filename": "robot-test.webp",
+      "name": "robot-test",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-test.webp"
+    },
+    {
+      "filename": "robot-third-arm.png",
+      "name": "robot-third-arm",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-third-arm.png"
+    },
+    {
+      "filename": "robot-third-arm.webp",
+      "name": "robot-third-arm",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-third-arm.webp"
+    },
+    {
+      "filename": "robot-tv.webp",
+      "name": "robot-tv",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-tv.webp"
+    },
+    {
+      "filename": "robot-understudy.png",
+      "name": "robot-understudy",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-understudy.png"
+    },
+    {
+      "filename": "robot-understudy.webp",
+      "name": "robot-understudy",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-understudy.webp"
+    },
+    {
+      "filename": "robot-unprepared.png",
+      "name": "robot-unprepared",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-unprepared.png"
+    },
+    {
+      "filename": "robot-unprepared.webp",
+      "name": "robot-unprepared",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-unprepared.webp"
+    },
+    {
+      "filename": "robot-victory.png",
+      "name": "robot-victory",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-victory.png"
+    },
+    {
+      "filename": "robot-victory.webp",
+      "name": "robot-victory",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-victory.webp"
+    },
+    {
+      "filename": "robot-waterfall.png",
+      "name": "robot-waterfall",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-waterfall.png"
+    },
+    {
+      "filename": "robot-waterfall.webp",
+      "name": "robot-waterfall",
+      "ext": ".webp",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robot-waterfall.webp"
+    },
+    {
+      "filename": "robots-cranking.png",
+      "name": "robots-cranking",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robots-cranking.png"
+    },
+    {
+      "filename": "robots-docs.png",
+      "name": "robots-docs",
+      "ext": ".png",
+      "path": "/Users/xian/Development/piper-morgan-website/public/assets/blog-images/source/robots-docs.png"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Train Tracks vs Free-for-All: When Methodology Becomes Infrastructure</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Train Tracks vs Free-for-All: When Methodology Becomes Infrastructure</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+September 10
+</section>
+<section data-field="body" class="e-content">
+<section name="844c" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="5814" id="5814" class="graf graf--h3 graf--leading graf--title">Train Tracks vs Free-for-All: When Methodology Becomes Infrastructure</h3><figure name="2414" id="2414" class="graf graf--figure graf--startsWithDoubleQuote graf-after--h3"><img class="graf-image" data-image-id="1*XOWA3konK2TXslRL4gZvHA.png" data-width="1536" data-height="1024" data-is-featured="true" alt="A robot and person ride a locoonotive train through some hills" src="https://cdn-images-1.medium.com/max/800/1*XOWA3konK2TXslRL4gZvHA.png"><figcaption class="imageCaption">“We’re on track!”</figcaption></figure><p name="23b6" id="23b6" class="graf graf--p graf-after--figure"><em class="markup--em markup--p-em">September 10</em></p><p name="5b28" id="5b28" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--p"><span class="graf-dropCap">T</span>hree months ago, every development session was a creative adventure. Multiple AI agents working in parallel, discovering solutions through exploration, occasional brilliant breakthroughs mixed with spectacular collisions. Today we spent seven hours transforming “5297ms” into “5.3s (under target)” — and when an agent declared it “95% complete” without the UI actually showing the formatted metrics, I sent it back to finish the job.</p><p name="aad3" id="aad3" class="graf graf--p graf-after--p">We’ve built train tracks where there used to be a free-for-all roadway.</p><h3 name="15d8" id="15d8" class="graf graf--h3 graf-after--p">The last 5% that contains 100% of the value</h3><p name="b57a" id="b57a" class="graf graf--p graf-after--h3">Confession: I am not the most thorough person you will ever meet. Ask my wife about the cabinet doors left ajar and dishes in the sink. I’m trying! It’s a life long struggle to finish what I’m doing before bolting to do something else. So… I get it. But software doesn’t run if you don’t finish the job.</p><p name="49e4" id="49e4" class="graf graf--p graf-after--p">Around 4 PM today, our Code Agent validated the morning’s work and found that while we had beautiful backend utilities formatting metrics perfectly, and the API was returning human-readable data, the actual user interface — the thing humans see — was still showing raw milliseconds. The agent’s assessment? “95% complete, excellent implementation.”</p><p name="9919" id="9919" class="graf graf--p graf-after--p">Here’s the thing about that missing 5%: if users can’t see “5.3s (under target)” and instead see “5297ms”, then we’ve delivered exactly zero value. The backend could be calculating metrics in seventeen dimensions of sophistication, but if the UI shows raw numbers, we’ve built an elaborate system that helps no one.</p><p name="a6d2" id="a6d2" class="graf graf--p graf-after--p">This isn’t perfectionism. It’s the difference between a train that runs on tracks and a train sitting in a station looking pretty.</p><p name="20f3" id="20f3" class="graf graf--p graf-after--p">I suppose I can’t blame the bots for not understanding that if the human being doesn’t get the results they need at the human-computer coalface, er, interface, then it doesn’t matter that the software ran “pretty well.”</p><h3 name="c1f9" id="c1f9" class="graf graf--h3 graf-after--p">From creative chaos to systematic execution</h3><p name="b019" id="b019" class="graf graf--p graf-after--h3">As my comms chief AI noted when reviewing the session logs, “We can trace exactly how the coordination improved hour by hour.” This was something I was not aware of from inside the work: When you’re living it minute by minute, you miss the pattern. When you zoom out, you see the methodology evolving in real-time.</p><p name="ee3b" id="ee3b" class="graf graf--p graf-after--p">This morning, both agents independently created the same formatting functions. Classic parallel work collision — the kind of creative redundancy that feels productive but wastes effort. By afternoon, we’d shifted to sequential handoffs: Code Agent creates the backend foundation, explicitly documents what’s ready, Cursor Agent builds the enhancement layer on top. No collision, no confusion, just systematic progress.</p><p name="1e1e" id="1e1e" class="graf graf--p graf-after--p">The shift from parallel creativity today to sequential execution isn’t giving up on innovation. It’s building infrastructure that enables reliable innovation. (We’ve also tightened up our prompt templates so that it’s clear who is to do what. Claude Code is usually clear on its job but often Cursor just grabs tasks without paying attention to who was assigned what, so we’ve made that crystal clear when we do want parallel execution.)</p><h3 name="efd9" id="efd9" class="graf graf--h3 graf-after--p">The session log bug as perfect metaphor</h3><p name="efea" id="efea" class="graf graf--p graf-after--h3">Here’s something deliciously meta: throughout this entire systematic methodology evolution, there’s been one persistent bug that I almost certainly introduced myself. We’ve been trying to impose strict structure on how the various roles do their logging tied, all tied to the Claude.ai system prompt (which the UI called “Project instructions” but the bots see and refer to as CLAUDE.md.</p><p name="30c4" id="30c4" class="graf graf--p graf-after--p">Every new session this week, my various AI agents (in the cloud, the ones on the ground do not have this issue) try to create properly formatted session logs, and every time now they create plain text instead of formatted markdown. I mean they write markdown but it doesn’t get rendered as HTML. It’s annoying, hard to read, and it makes me waste time every time.</p><p name="9d27" id="9d27" class="graf graf--p graf-after--p">It’s been happening for days. It’s actually frustrating. It’s also hilarious, I guess? The worst part is I just know it’s my own fault, but Anthropic has been spewing weird artifact bug lately that are definitely <em class="markup--em markup--p-em">not</em> my fault and it’s hard to tell what exactly is causing what, and how.</p><p name="08c2" id="08c2" class="graf graf--p graf-after--p">Even our most systematic processes have these persistent gremlins. The session log bug has become like a friend who always shows up late — annoying but somehow endearing. As one reader told me recently, she enjoys these comic moments of failure and introspection and even feels like she’s “in the room with me” every day.</p><p name="e906" id="e906" class="graf graf--p graf-after--p">Well, today she would have heard me muttering about markdown formatting for the fifth session in a row.</p><h3 name="86f4" id="86f4" class="graf graf--h3 graf-after--p">The accumulating returns of systematic documentation</h3><p name="5d47" id="5d47" class="graf graf--p graf-after--h3">When you document everything systematically — even the failures, especially the failures — you create something more valuable than clean code. You create a learning system. Today’s multi-agent coordination <em class="markup--em markup--p-em">problems</em> will become tomorrow’s coordination <em class="markup--em markup--p-em">patterns</em>. The “95% complete” <em class="markup--em markup--p-em">pushback</em> becomes a quality <em class="markup--em markup--p-em">standard</em>. The session log <em class="markup--em markup--p-em">bug</em> becomes… well, it becomes a running gag, but also eventually a <em class="markup--em markup--p-em">fix</em>. (At least I hope so!)</p><p name="2e7b" id="2e7b" class="graf graf--p graf-after--p">This accumulating value (there, used a synonym!) compounds over time. Each session’s lessons cascade into the next. The train tracks we’re laying aren’t just for today’s journey — they’re permanent infrastructure for every journey after.</p><h3 name="cad1" id="cad1" class="graf graf--h3 graf-after--p">When constraints become enablers</h3><p name="e8e9" id="e8e9" class="graf graf--p graf-after--h3">The paradox of systematic methodology: the more constraints you add, the faster you can move. Train tracks seem limiting until you realize they let you go 200 mph without worrying about steering. Our Excellence Flywheel, session logs, phase conventions, evidence requirements — they’re not overhead. They’re the rails that prevent us from veering into the weeds.</p><p name="3b2f" id="3b2f" class="graf graf--p graf-after--p">Today’s seven-hour journey from raw metrics to human-readable display wasn’t slow because of methodology. It was reliable because of methodology. When the Code Agent tried to declare victory at 95%, the methodology said “check the actual UI.” When parallel work created duplication, the methodology turned to sequential handoffs. When the session log formatting broke (again), we documented it (again) and kept moving.</p><h3 name="1bb4" id="1bb4" class="graf graf--h3 graf-after--p">The evolution continues</h3><p name="1606" id="1606" class="graf graf--p graf-after--h3">We’re still working out kinks in multi-agent coordination. The chain-of-prompting sometimes loses context between handoffs. The session-log bug persists like a methodological poltergeist. But here’s what’s changed: these aren’t surprises anymore. They’re known issues being systematically addressed.</p><p name="9931" id="9931" class="graf graf--p graf-after--p graf--trailing">Three months ago, I was building through pure exploration — exciting but exhausting. Today, we’re laying track mile by mile — less thrilling but profoundly more effective. The infrastructure constrains us to success rather than allowing us to wander toward it.</p></div></div></section><section name="477d" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="255c" id="255c" class="graf graf--p graf--leading"><em class="markup--em markup--p-em">Next on Building Piper Morgan: We Spent Four Days on Boring Work. Day Five, We Gave Our AI a Personality because all work and no play makes xian a dull geek.</em></p><p name="b7ac" id="b7ac" class="graf graf--p graf-after--p graf--trailing"><em class="markup--em markup--p-em">When have you seen creative chaos transform into systematic execution in your own work? Was it liberating or limiting?</em></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mediajunkie" class="p-author h-card">christian crumlish</a> on <a href="https://medium.com/p/4ecc40d907e0"><time class="dt-published" datetime="2025-09-17T14:34:39.098Z">September 17, 2025</time></a>.</p><p><a href="https://medium.com/@mediajunkie/train-tracks-vs-free-for-all-when-methodology-becomes-infrastructure-4ecc40d907e0" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 9, 2025.</p></footer></article></body></html>

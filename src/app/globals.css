@@ -43,6 +43,28 @@
   --content-padding: 1rem;
 }
 
+/* Dark Mode CSS Variables */
+.dark {
+  --text-dark: #F1F5F9;
+  --text-light: #94A3B8;
+  --background: #0F172A;
+  --surface: #1E293B;
+}
+
+/* Dark mode utility classes that work with CSS variables */
+.card-bg {
+  background: var(--surface);
+  transition: background-color 0.2s;
+}
+
+.dark .card-bg {
+  background: var(--surface);
+}
+
+.bg-surface-var {
+  background: var(--surface);
+}
+
 /* Base Styles */
 * {
   box-sizing: border-box;
@@ -86,6 +108,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
   margin: 0 0 1rem 0;
   letter-spacing: -0.02em;
+  transition: color 0.2s;
 }
 
 h1 {
@@ -106,7 +129,8 @@ h4 {
 
 p {
   margin: 0 0 1rem 0;
-  color: var(--text-dark);
+  color: var(--text-light);
+  transition: color 0.2s;
 }
 
 a {

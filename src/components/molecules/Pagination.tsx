@@ -80,14 +80,14 @@ export function Pagination({
       {hasPrevious ? (
         <Link
           href={getPageUrl(currentPage - 1)}
-          className="px-4 py-2 text-sm font-medium text-text-dark hover:text-primary-teal-text hover:bg-gray-50 rounded-lg transition-colors"
+          className="px-4 py-2 text-sm font-medium text-text-dark dark:text-dark-text hover:text-primary-teal-text dark:hover:text-primary-teal hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors"
           aria-label="Go to previous page"
         >
           ← Previous
         </Link>
       ) : (
         <span
-          className="px-4 py-2 text-sm font-medium text-gray-400 cursor-not-allowed"
+          className="px-4 py-2 text-sm font-medium text-gray-400 dark:text-gray-600 cursor-not-allowed"
           aria-disabled="true"
         >
           ← Previous
@@ -101,7 +101,7 @@ export function Pagination({
             return (
               <span
                 key={`ellipsis-${index}`}
-                className="px-2 py-2 text-text-light"
+                className="px-2 py-2 text-text-light dark:text-gray-500"
                 aria-hidden="true"
               >
                 ...
@@ -118,8 +118,8 @@ export function Pagination({
               href={getPageUrl(pageNumber)}
               className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                 isActive
-                  ? 'bg-primary-teal text-white'
-                  : 'text-text-dark hover:text-primary-teal-text hover:bg-gray-50'
+                  ? 'bg-primary-teal dark:bg-primary-teal text-white'
+                  : 'text-text-dark dark:text-dark-text hover:text-primary-teal-text dark:hover:text-primary-teal hover:bg-gray-50 dark:hover:bg-gray-800'
               }`}
               aria-label={`Go to page ${pageNumber}`}
               aria-current={isActive ? 'page' : undefined}
@@ -131,7 +131,7 @@ export function Pagination({
       </div>
 
       {/* Mobile: Show only current page */}
-      <div className="sm:hidden px-4 py-2 text-sm font-medium text-text-dark">
+      <div className="sm:hidden px-4 py-2 text-sm font-medium text-text-dark dark:text-dark-text">
         Page {currentPage} of {totalPages}
       </div>
 
@@ -139,14 +139,14 @@ export function Pagination({
       {hasNext ? (
         <Link
           href={getPageUrl(currentPage + 1)}
-          className="px-4 py-2 text-sm font-medium text-text-dark hover:text-primary-teal-text hover:bg-gray-50 rounded-lg transition-colors"
+          className="px-4 py-2 text-sm font-medium text-text-dark dark:text-dark-text hover:text-primary-teal-text dark:hover:text-primary-teal hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors"
           aria-label="Go to next page"
         >
           Next →
         </Link>
       ) : (
         <span
-          className="px-4 py-2 text-sm font-medium text-gray-400 cursor-not-allowed"
+          className="px-4 py-2 text-sm font-medium text-gray-400 dark:text-gray-600 cursor-not-allowed"
           aria-disabled="true"
         >
           Next →

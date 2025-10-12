@@ -8,9 +8,9 @@ import { notFound } from 'next/navigation';
 const POSTS_PER_PAGE = 24;
 
 interface PageProps {
-  params: {
+  params: Promise<{
     pageNumber: string;
-  };
+  }>;
 }
 
 // Generate static params for all pages
@@ -27,7 +27,8 @@ export async function generateStaticParams() {
 
 // Generate metadata for each page
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const pageNumber = parseInt(params.pageNumber, 10);
+  const resolvedParams = await params;
+  const pageNumber = parseInt(resolvedParams.pageNumber, 10);
   const totalPages = Math.ceil(mediumPosts.length / POSTS_PER_PAGE);
 
   // Validate page number
@@ -56,8 +57,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default function BlogPageNumber({ params }: PageProps) {
-  const pageNumber = parseInt(params.pageNumber, 10);
+export default async function BlogPageNumber({ params }: PageProps) {
+  const resolvedParams = await params;
+  const pageNumber = parseInt(resolvedParams.pageNumber, 10);
   const totalPages = Math.ceil(mediumPosts.length / POSTS_PER_PAGE);
 
   // Validate page number and redirect to 404 if invalid

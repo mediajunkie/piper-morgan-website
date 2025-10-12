@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>The Zeno’s Paradox of Debugging: A Weekend with Piper Morgan</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">The Zeno’s Paradox of Debugging: A Weekend with Piper Morgan</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Jul 6, 2025
+</section>
+<section data-field="body" class="e-content">
+<section name="07b2" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="1135" id="1135" class="graf graf--h3 graf--leading graf--title">The Zeno’s Paradox of Debugging: A Weekend with Piper Morgan</h3><figure name="6946" id="6946" class="graf graf--figure graf--startsWithDoubleQuote graf-after--h3"><img class="graf-image" data-image-id="1*TNKrsG6cvoTpAAJsK5SGCQ.png" data-width="1536" data-height="1024" data-is-featured="true" alt="A robot archer shoots an arrow at a target" src="https://cdn-images-1.medium.com/max/800/1*TNKrsG6cvoTpAAJsK5SGCQ.png"><figcaption class="imageCaption">“Halfway there!”</figcaption></figure><p name="34b9" id="34b9" class="graf graf--p graf-after--figure"><em class="markup--em markup--p-em">Jul 6, 2025</em></p><p name="647a" id="647a" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--p"><span class="graf-dropCap">It</span> should have been a simple request: “Please summarize that file I just uploaded.”</p><p name="685b" id="685b" class="graf graf--p graf-after--p">How hard could it be, right? We had all the pieces — file upload working, storage functional, an LLM ready to summarize. The feature had even worked in previous sessions. Yet this deceptively simple request led me through what I can only describe as Zeno’s paradox in software form.</p><h3 name="40b0" id="40b0" class="graf graf--h3 graf-after--p">Sometimes the last mile really is the longest</h3><p name="0062" id="0062" class="graf graf--p graf-after--h3">You know the ancient Greek paradox where you can never reach your destination because you always have to cover half the remaining distance first? That’s exactly what debugging this document summarization feature felt like.</p><p name="edfb" id="edfb" class="graf graf--p graf-after--p">I don’t know if “real” programmers also experience this phenomenon, but the emotional ride (believing that each new fix, each time a bot assistant crows “I found the issue!” that the feature will finally work, only to get no response, or the same error, or — at best — a fresh error message and something new to debug) can get exhausting.</p><h3 name="de64" id="de64" class="graf graf--h3 graf-after--p">The layers of the onion</h3><p name="7d80" id="7d80" class="graf graf--p graf-after--h3">Each “fix” peeled back another layer, revealing new problems that looked identical from the outside but were completely different underneath:</p><h4 name="cf1e" id="cf1e" class="graf graf--h4 graf-after--p">Layer 1: The NoneType error</h4><ul class="postList"><li name="3a1e" id="3a1e" class="graf graf--li graf-after--h4"><strong class="markup--strong markup--li-strong">Symptom</strong>: “Workflow completed successfully!” (but no summary)</li><li name="fcef" id="fcef" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Reality</strong>: Workflow retrieval was crashing on null data</li><li name="f2fd" id="f2fd" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Fix</strong>: Add proper null checking</li><li name="acf0" id="acf0" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Result</strong>: Still no summary, but now we could see the workflow was stuck</li></ul><h4 name="f785" id="f785" class="graf graf--h4 graf-after--li">Layer 2: The polling loop of doom</h4><ul class="postList"><li name="c230" id="c230" class="graf graf--li graf-after--h4"><strong class="markup--strong markup--li-strong">Symptom</strong>: “Workflow completed successfully!” (but no summary)</li><li name="d90c" id="d90c" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Reality</strong>: Workflow created but never executed</li><li name="adf6" id="adf6" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Fix</strong>: Discovered missing background task in file disambiguation flow</li><li name="58ff" id="58ff" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Result</strong>: Workflow executes! But… still no summary</li></ul><h4 name="827a" id="827a" class="graf graf--h4 graf-after--li">Layer 3: The wrong drawer</h4><ul class="postList"><li name="146b" id="146b" class="graf graf--li graf-after--h4"><strong class="markup--strong markup--li-strong">Symptom</strong>: “Workflow completed successfully!” (but no summary)</li><li name="7588" id="7588" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Reality</strong>: Looking for summary in <code class="markup--code markup--li-code">workflow.context</code> instead of <code class="markup--code markup--li-code">workflow.result.data</code></li><li name="e32c" id="e32c" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Fix</strong>: Update extraction logic</li><li name="b083" id="b083" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Result</strong>: Still no summary… wait, what?</li></ul><h4 name="46d4" id="46d4" class="graf graf--h4 graf-after--li">Layer 4: The lying error message</h4><ul class="postList"><li name="3d87" id="3d87" class="graf graf--li graf-after--h4"><strong class="markup--strong markup--li-strong">Symptom</strong>: “I’ve completed the analysis but couldn’t generate a summary”</li><li name="3354" id="3354" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Reality</strong>: Summary exists! The check is just wrong</li><li name="45e1" id="45e1" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Fix</strong>: One conditional to rule them all (pending)</li></ul><p name="5478" id="5478" class="graf graf--p graf-after--li">The maddening thing? Each layer had exactly the same user-facing symptom but completely different root causes.</p><h3 name="0798" id="0798" class="graf graf--h3 graf-after--p">The coordination dance</h3><p name="0cdd" id="0cdd" class="graf graf--p graf-after--h3">What fascinated me wasn’t just the bugs themselves, but the human side of debugging complex systems:</p><p name="08ad" id="08ad" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Copy-paste fatigue</strong>: How many times can you send the same logs and say “it’s still not working” before you start questioning your own sanity?</p><p name="a62c" id="a62c" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Context switching</strong>: Each layer required different mental models. Database queries, workflow orchestration, API response formatting, error handling — my brain kept having to shift gears.</p><p name="eb98" id="eb98" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">The “We Fixed It!” loop</strong>: That moment of celebration when you solve a problem, only to discover it revealed the <em class="markup--em markup--p-em">real</em> problem underneath. (This happened four times.)</p><p name="4aea" id="4aea" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Explanation exhaustion</strong>: “No, this is a different problem with the same symptom” becomes a surprisingly common phrase.</p><p name="57e1" id="57e1" class="graf graf--p graf-after--p">It’d be like peeling off the layers of an onion only to find you’ve still got a whole onion.</p><h3 name="78f7" id="78f7" class="graf graf--h3 graf-after--p">Lessons in architectural archaeology</h3><p name="3f8a" id="3f8a" class="graf graf--p graf-after--h3">What made this particularly challenging was that each fix was correct and necessary. We weren’t going in circles — we were drilling down through geological layers of issues that had accumulated over time:</p><ol class="postList"><li name="2893" id="2893" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">A hasty null check skip</strong> (Layer 1) — probably from some earlier “quick fix”</li><li name="1835" id="1835" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">An incomplete code path</strong> for file references (Layer 2) — feature shipped before edge cases were handled</li><li name="fbdc" id="fbdc" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">A data location mismatch</strong> (Layer 3) — left hand not knowing what the right hand was doing</li><li name="6607" id="6607" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Error handling that was too pessimistic</strong> (Layer 4) — defensive coding gone wrong</li></ol><p name="11e3" id="11e3" class="graf graf--p graf-after--li">Each layer told a story about past development decisions. Technical debt really is like sedimentary rock — it builds up over time, and debugging becomes the archaeological dig that reveals each stratum’s story.</p><h3 name="4c41" id="4c41" class="graf graf--h3 graf-after--p">The beauty of persistent state</h3><p name="ac9d" id="ac9d" class="graf graf--p graf-after--h3">Despite the frustration, there’s something genuinely beautiful about how well-designed systems preserve evidence at each layer. Database logs showed successful execution. Task results proved the summary was generated. The final response revealed the formatting bug.</p><p name="711c" id="711c" class="graf graf--p graf-after--p">Each layer left breadcrumbs. The system was <em class="markup--em markup--p-em">working</em> — it was just hiding its success from the user. Sometimes I think our software can be more honest about its internal state than we can about our own.</p><h3 name="dffd" id="dffd" class="graf graf--h3 graf-after--p">Almost there (the eternal refrain)</h3><p name="dbe5" id="dbe5" class="graf graf--p graf-after--h3">As I write this, we’re one conditional check away from victory. The document summarization pipeline works perfectly end-to-end. The summary is sitting in the database, generated successfully, waiting patiently. We just need to convince the API to share it with the user.</p><p name="b579" id="b579" class="graf graf--p graf-after--p">It’s like having a beautifully wrapped gift that you can’t figure out how to open.</p><p name="0933" id="0933" class="graf graf--p graf-after--p">The Zeno’s paradox aspect isn’t really about never reaching the destination — it’s about how each step forward reveals that the destination was farther away than you thought, but also that you were making real progress the entire time.</p><p name="4761" id="4761" class="graf graf--p graf-after--p">Sometimes the last mile really is the longest. But it’s also where you learn the most about your system’s actual behavior versus its intended behavior.</p><p name="78e0" id="78e0" class="graf graf--p graf-after--p graf--trailing">Now, I sleep.</p></div></div></section><section name="2252" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="b3b9" id="b3b9" class="graf graf--p graf--leading"><em class="markup--em markup--p-em">Next on Building Piper Morgan: Hopefully, “The Day Document Summarization Finally Worked” — though knowing software development, that might reveal three new problems with the same symptom.</em></p><p name="3b72" id="3b72" class="graf graf--p graf-after--p graf--trailing"><em class="markup--em markup--p-em">Have you experienced your own Zeno’s paradox moments in debugging? When has “almost working” stretched into multiple layers of hidden issues? I’d love to hear your stories of archaeological debugging expeditions.</em></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mediajunkie" class="p-author h-card">christian crumlish</a> on <a href="https://medium.com/p/03c685be122a"><time class="dt-published" datetime="2025-07-31T13:36:15.923Z">July 31, 2025</time></a>.</p><p><a href="https://medium.com/@mediajunkie/the-zenos-paradox-of-debugging-a-weekend-with-piper-morgan-03c685be122a" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 9, 2025.</p></footer></article></body></html>

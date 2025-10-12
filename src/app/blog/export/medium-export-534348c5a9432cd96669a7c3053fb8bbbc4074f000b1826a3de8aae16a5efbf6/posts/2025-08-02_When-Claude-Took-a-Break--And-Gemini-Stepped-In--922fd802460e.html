@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>When Claude Took a Break (And Gemini Stepped In)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">When Claude Took a Break (And Gemini Stepped In)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Time for one more flashback to the “lost weekend” two days into this project, reconstructed after the fact from a Gemini log so long I…
+</section>
+<section data-field="body" class="e-content">
+<section name="36cf" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="52f3" id="52f3" class="graf graf--h3 graf--leading graf--title">When Claude Took a Break (And Gemini Stepped In)</h3><p name="0cb0" id="0cb0" class="graf graf--p graf-after--h3"><em class="markup--em markup--p-em">Time for one more flashback to the “lost weekend” two days into this project, reconstructed after the fact from a Gemini log so long I couldn’t get back to the head of it without crashing my browser. Part 1 of 4.</em></p><figure name="7c23" id="7c23" class="graf graf--figure graf--startsWithDoubleQuote graf-after--p"><img class="graf-image" data-image-id="1*VJo5Kh538RqgoEjb53PUyg.png" data-width="1536" data-height="1024" data-is-featured="true" alt="A robot understudy steps in for a frozen robot actor" src="https://cdn-images-1.medium.com/max/800/1*VJo5Kh538RqgoEjb53PUyg.png"><figcaption class="imageCaption">“I’m ready to take over”</figcaption></figure><p name="19f6" id="19f6" class="graf graf--p graf-after--figure"><em class="markup--em markup--p-em">May 30, early</em></p><p name="0bc3" id="0bc3" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--p"><span class="graf-dropCap">S</span>aturday morning. I’ve got a prototype with bugs, and Claude’s exhausted from a documentation marathon (that is, I am now locked out for hours from my free Claude account). Time to test whether all that “vendor independence” architecture talk was just talk, or if it could survive real-world constraints.</p><p name="9477" id="9477" class="graf graf--p graf--startsWithDoubleQuote graf-after--p">“Can you help me patch a few bugs in a Python prototype?”</p><p name="3438" id="3438" class="graf graf--p graf-after--p">That simple question to Gemini started one of the most educational debugging sessions I’ve had. Not because the bugs were complex, but because it proved something crucial: good development methodology transfers across AI providers seamlessly.</p><h3 name="418f" id="418f" class="graf graf--h3 graf-after--p">The handoff</h3><p name="6462" id="6462" class="graf graf--p graf-after--h3">I handed over the same files, the same context, the same systematic approach I had been using with Claude. Gemini picked up the debugging thread without missing a beat. No special adaptation needed. No workflow changes required.</p><p name="8a1e" id="8a1e" class="graf graf--p graf-after--p">This wasn’t theoretical anymore. My initial approach to coding an idea with LLM support was being stress-tested under real constraints.</p><h3 name="c2d1" id="c2d1" class="graf graf--h3 graf-after--p">Seven bugs, one mystery</h3><p name="561f" id="561f" class="graf graf--p graf-after--h3">What followed was methodical, collaborative debugging:</p><ul class="postList"><li name="71ad" id="71ad" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">Critical Bug #1</strong>: Milestone assertion error in PyGithub (thanks to [ADD DETAIL: external contributor who spotted this])</li><li name="5fbb" id="5fbb" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Critical Bug #2</strong>: Repository configuration pointing to wrong repo</li><li name="3ae0" id="3ae0" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Critical Bug #3</strong>: Knowledge base context retrieval returning empty results</li><li name="088a" id="088a" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Plus four more</strong>: Dependency conflicts, JSON parsing brittleness, error message improvements, label handling</li></ul><p name="e395" id="e395" class="graf graf--p graf-after--li">Seven bugs fixed systematically while chasing one complete mystery — a PyGithub AssertionError that made zero technical sense.</p><h3 name="b55d" id="b55d" class="graf graf--h3 graf-after--p">The real lesson</h3><p name="33a1" id="33a1" class="graf graf--p graf-after--h3">This wasn’t just about debugging Python. It was about discovering that vendor independence isn’t just good architecture — it’s operational resilience.</p><p name="c5e4" id="c5e4" class="graf graf--p graf-after--p">When your primary tool fails (and they all fail eventually), you need systems that survive the transition. Clean interfaces. Well-documented state. Methodical processes that work regardless of which AI is helping you think through the problem.</p><p name="521f" id="521f" class="graf graf--p graf-after--p">I had… some of that in place?</p><h3 name="89ad" id="89ad" class="graf graf--h3 graf-after--p">Build for when things break</h3><p name="385a" id="385a" class="graf graf--p graf-after--h3">We love to talk about the AI revolution, but Saturday morning taught me something simpler: build your systems to survive your tools failing. Because they will.</p><p name="9c6c" id="9c6c" class="graf graf--p graf-after--p">Whether it’s API limits, service outages, or just needing a fresh perspective, the projects that survive are the ones designed for tool independence from day one.</p><p name="4a2e" id="4a2e" class="graf graf--p graf-after--p">Bugs got fixed. The mystery got strategically abandoned. And the principle got proven under fire.</p><p name="6796" id="6796" class="graf graf--p graf-after--p graf--trailing">Sometimes the best validation comes when everything else is breaking.</p></div></div></section><section name="f877" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="e93e" id="e93e" class="graf graf--p graf--leading"><em class="markup--em markup--p-em">Next on Building Piper Morgan: Part 2 of the Lost Weekend, “The Demo That Needed Documentation.”</em></p><p name="8775" id="8775" class="graf graf--p graf-after--p graf--trailing"><em class="markup--em markup--p-em">Technical debt is like Saturday morning debugging — it accumulates quietly until you’re forced to deal with it systematically.</em></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mediajunkie" class="p-author h-card">christian crumlish</a> on <a href="https://medium.com/p/922fd802460e"><time class="dt-published" datetime="2025-08-02T12:10:23.846Z">August 2, 2025</time></a>.</p><p><a href="https://medium.com/@mediajunkie/when-claude-took-a-break-and-gemini-stepped-in-922fd802460e" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 9, 2025.</p></footer></article></body></html>

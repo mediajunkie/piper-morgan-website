@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>When Your Methodology Holds Under Pressure</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">When Your Methodology Holds Under Pressure</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+September 15
+</section>
+<section data-field="body" class="e-content">
+<section name="ee39" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="b991" id="b991" class="graf graf--h3 graf--leading graf--title">When Your Methodology Holds Under Pressure</h3><figure name="ba10" id="ba10" class="graf graf--figure graf--startsWithDoubleQuote graf-after--h3"><img class="graf-image" data-image-id="1*6_i153TNh8x-TgXp0nJAVA.png" data-width="1536" data-height="1024" data-is-featured="true" alt="A person and robot stay safe in the eye of a hurricane." src="https://cdn-images-1.medium.com/max/800/1*6_i153TNh8x-TgXp0nJAVA.png"><figcaption class="imageCaption">“There’s calm in your eye.”</figcaption></figure><p name="fde8" id="fde8" class="graf graf--p graf-after--figure"><em class="markup--em markup--p-em">September 15</em></p><p name="e8b3" id="e8b3" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--p"><span class="graf-dropCap">M</span>onday morning brought the kind of convergence that usually sends me into crisis mode: a UI regression blocking all testing, documentation work piling up, strategic planning deadlines looming. The old me would have dropped everything to fight the fire, probably staying up too late trying to debug the “infinite thinking” problem while everything else fell behind.</p><p name="3f16" id="3f16" class="graf graf--p graf-after--p">Instead, I deployed the methodology.</p><p name="4f54" id="4f54" class="graf graf--p graf-after--p">Not because I’m disciplined or particularly organized, but because over the past few months I’ve learned that systematic approaches handle complexity better than individual heroics. Even when — especially when — there’s pressure to just “fix it quick.”</p><h3 name="91a9" id="91a9" class="graf graf--h3 graf-after--p">Multi-agent coordination under fire</h3><p name="f6b3" id="f6b3" class="graf graf--p graf-after--h3">The UI bug looked straightforward: something about config nesting causing the standup interface to hang on “Thinking…” The gameplan was clear — backend config fix, architectural cleanup, done in 90 minutes.</p><p name="938f" id="938f" class="graf graf--p graf-after--p">I deployed both Code and Cursor agents with distinct roles: Code for backend investigation and fixes, Cursor for UI validation and cross-checking. Not because I’m fancy, but because I’ve learned that different agents have different strengths, and complex problems benefit from multiple perspectives working in parallel.</p><p name="4960" id="4960" class="graf graf--p graf-after--p">Ten minutes in, Code reports back: “The config nesting issue doesn’t exist. The <code class="markup--code markup--p-code">/api/github/activity</code> endpoint you&#39;re looking for isn&#39;t in the current web application.&quot;</p><p name="4283" id="4283" class="graf graf--p graf-after--p">In the old days, this would have been frustrating. Wrong diagnosis, time wasted, back to square one. But the methodology has taught me that investigation revealing different problems than expected isn’t failure — it’s the system working.</p><h3 name="e067" id="e067" class="graf graf--h3 graf-after--p">Following the evidence where it leads</h3><p name="0685" id="0685" class="graf graf--p graf-after--h3">Code’s static analysis was thorough but limited. Cursor’s runtime testing told a different story: the web server was running fine, but the backend API was throwing a TypeError during initialization. Not a config issue — an architecture gap.</p><p name="69c5" id="69c5" class="graf graf--p graf-after--p">The real problem was a parameter mismatch in the standup orchestration service. A constructor expecting <code class="markup--code markup--p-code">github_domain_service</code> but receiving <code class="markup--code markup--p-code">github_agent</code>. Three layers deep from the original diagnosis, but discovered systematically rather than through frantic debugging.</p><p name="b3d8" id="b3d8" class="graf graf--p graf-after--p">What struck me wasn’t that the original diagnosis was wrong — that’s normal. It’s part of the process. It was how the methodology kept both agents coordinated and productive even as the problem shifted. Code fixing backend initialization while Cursor validated the UI response. Cross-validation at logical checkpoints rather than the end.</p><p name="ba90" id="ba90" class="graf graf--p graf-after--p">No heroics. No all-nighters. Just systematic execution that adapted to what we actually found rather than what we expected to find.</p><h3 name="65be" id="65be" class="graf graf--h3 graf-after--p">The recursive loop</h3><p name="417f" id="417f" class="graf graf--p graf-after--h3">The meta-story made me smile. While the agents were debugging systematically in parallel, I was simultaneously restoring methodology templates that had been accidentally compressed from 750 lines with 15 STOP conditions down to basic 84-line outlines. (Sometimes LLMs get a bit <em class="markup--em markup--p-em">too</em> excited about Marie Kondo-fying stuff.</p><p name="54a5" id="54a5" class="graf graf--p graf-after--p">So I was fixing the methodology documentation while the methodology was proving its worth in real time. Using the system to repair the system while the system demonstrated why it matters.</p><p name="ede4" id="ede4" class="graf graf--p graf-after--p">Insert ourobouros image here.</p><p name="9149" id="9149" class="graf graf--p graf-after--p">The template restoration revealed how much enforcement detail had been lost — evidence requirements, cross-validation protocols, progressive tracking mechanisms. All the scaffolding that makes complex work sustainable rather than exhausting.</p><p name="f2a4" id="f2a4" class="graf graf--p graf-after--p">By the end of the day: UI bug resolved through three-layer investigation, documentation architecture completely overhauled, strategic roadmap updated with clear sequencing rationale. Not because we worked harder, but because we worked systematically.</p><h3 name="c0fe" id="c0fe" class="graf graf--h3 graf-after--p">Sustainable momentum under pressure</h3><p name="2ea9" id="2ea9" class="graf graf--p graf-after--h3">The satisfaction can notfrom solving hard problems — though we did that. It was the way this methodology handled complexity without burning me out or sending my assistants down rabbitholes. The agents coordinated smoothly. The investigation revealed system architecture nobody fully understood before. The strategic planning built naturally on tactical discoveries.</p><p name="4a9e" id="4a9e" class="graf graf--p graf-after--p">This is what working with AI can look like when you have systematic approaches rather than ad-hoc prompting. When you trust the process enough to deploy it under pressure rather than reverting to crisis mode.</p><p name="f078" id="f078" class="graf graf--p graf-after--p">I think it’s the same with all-human teams too?</p><p name="0393" id="0393" class="graf graf--p graf-after--p">The old me would have spent Monday in crisis mode, fixing the immediate problem while everything else accumulated. The current me spent Monday making systematic progress across multiple fronts simultaneously. Same hours, fundamentally different experience.</p><p name="3c01" id="3c01" class="graf graf--p graf-after--p">Methodology working under pressure isn’t dramatic. It’s the opposite of dramatic — it’s reliable progress when things get complex, sustainable execution when there’s multiple priorities, cognitive load distribution when your attention wants to fragment.</p><p name="684a" id="684a" class="graf graf--p graf-after--p graf--trailing">Sometimes the most impressive thing about a system is that it works quietly when you need it most.</p></div></div></section><section name="6ee5" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="0cdb" id="0cdb" class="graf graf--p graf--leading"><em class="markup--em markup--p-em">Next on Building Piper Morgan: Back in the Optimist Bird Seat. It’s been a week of mood swings and we’re not all the way there yet but this one’s about starting to feel like maybe things are going to be okay. (NO SPOILERS!)</em></p><p name="c5ee" id="c5ee" class="graf graf--p graf-after--p graf--trailing"><em class="markup--em markup--p-em">Have you found that systematic approaches handle pressure better than individual heroics?</em></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mediajunkie" class="p-author h-card">christian crumlish</a> on <a href="https://medium.com/p/d7bf51a718a3"><time class="dt-published" datetime="2025-09-23T05:05:08.805Z">September 23, 2025</time></a>.</p><p><a href="https://medium.com/@mediajunkie/when-your-methodology-holds-under-pressure-d7bf51a718a3" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 9, 2025.</p></footer></article></body></html>

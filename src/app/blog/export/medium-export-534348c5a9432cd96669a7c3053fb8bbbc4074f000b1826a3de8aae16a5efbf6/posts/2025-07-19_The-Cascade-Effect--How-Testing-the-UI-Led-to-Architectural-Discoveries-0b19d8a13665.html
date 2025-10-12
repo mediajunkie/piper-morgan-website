@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>The Cascade Effect: How Testing the UI Led to Architectural Discoveries</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">The Cascade Effect: How Testing the UI Led to Architectural Discoveries</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+June 23, 2025
+</section>
+<section data-field="body" class="e-content">
+<section name="73d1" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="67cb" id="67cb" class="graf graf--h3 graf--leading graf--title">The Cascade Effect: How Testing the UI Led to Architectural Discoveries</h3><p name="faec" id="faec" class="graf graf--p graf-after--h3"><em class="markup--em markup--p-em">June 23, 2025</em></p><figure name="55df" id="55df" class="graf graf--figure graf--startsWithDoubleQuote graf-after--p"><img class="graf-image" data-image-id="1*C-5Psxk7Tph1LFuWqsKD3w.png" data-width="1536" data-height="1024" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*C-5Psxk7Tph1LFuWqsKD3w.png"><figcaption class="imageCaption">“Are we ready to open?”</figcaption></figure><p name="f58e" id="f58e" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--figure"><span class="graf-dropCap">I</span> just wanted to test a web interface. You know, basic stuff — upload a file, send a chat message, see if the buttons worked. A quick validation session before moving on to bigger features.</p><p name="f7c8" id="f7c8" class="graf graf--p graf-after--p">Three hours later I’d built a complete file resolution system with multi-factor scoring, confidence thresholds, and database persistence.</p><p name="a41d" id="a41d" class="graf graf--p graf-after--p">This is how “vertical slice development” works in practice: you can’t predict where testing will lead, but following the threads reveals what really matters.</p><h3 name="3714" id="3714" class="graf graf--h3 graf-after--p">The innocent test that started it all</h3><p name="50cd" id="50cd" class="graf graf--p graf-after--h3">PM-011 was supposed to be straightforward. The file upload worked, the chat interface responded to greetings, and I figured I’d just verify everything connected properly. But when I tried “analyze the file I just uploaded,” nothing happened.</p><p name="ef1d" id="ef1d" class="graf graf--p graf-after--p">Well, something happened. The system politely informed me it couldn’t resolve which file I meant. Which was… odd, considering I’d uploaded exactly one file thirty seconds earlier.</p><h3 name="0328" id="0328" class="graf graf--h3 graf-after--p">Down the file resolution rabbit hole</h3><p name="b8b1" id="b8b1" class="graf graf--p graf-after--h3">Here’s where vertical slice development gets interesting. I could have faked it — hardcoded the file reference, added a quick lookup, shipped the demo. Ostensibly we were just testing the UI and yet, it was a graphical user interface on the web. But it was also supposed to work and if users can’t easily reference files they just uploaded, then really the whole feature was broken.</p><p name="885a" id="885a" class="graf graf--p graf-after--p">So we went deeper. (Generally when I say “we” did something, it usually means Claude Code proposed something and I tried to evaluate whether it made architectural sense.)</p><p name="86b5" id="86b5" class="graf graf--p graf-after--p">What started as “fix file references” became:</p><ul class="postList"><li name="0849" id="0849" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">Database-first approach</strong> with proper UploadedFile models</li><li name="a89c" id="a89c" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Smart scoring algorithm</strong> with four factors: recency, file type, name matching, usage patterns</li><li name="78ea" id="78ea" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Confidence thresholds</strong> for auto-proceed vs. confirmation vs. clarification</li><li name="8a1a" id="8a1a" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Edge case handling</strong> for ambiguous references</li></ul><h3 name="9744" id="9744" class="graf graf--h3 graf-after--li">The performance surprise</h3><p name="daab" id="daab" class="graf graf--p graf-after--h3">One of those happy accidents: we built something that actually performed. File resolution clocked in at under 3ms for 50 files, when our requirement was 100ms. The scoring algorithm correctly differentiated between files, ambiguity detection worked as designed, and edge cases (old files, unicode names, empty directories) all handled properly.</p><p name="e391" id="e391" class="graf graf--p graf-after--p">Sometimes when you build the right abstraction, performance comes free.</p><h3 name="4127" id="4127" class="graf graf--h3 graf-after--p">Retroing my manic AI-driven rush to build</h3><p name="c836" id="c836" class="graf graf--p graf-after--h3">But the biggest insight wasn’t technical — it was about process. Halfway through implementing the file resolver, I realized something uncomfortable: I would never run a team this way!</p><p name="f26d" id="f26d" class="graf graf--p graf-after--p">Here I was, working at a manic pace without retrospectives, skipping sustainable development practices, accumulating context without proper tracking. If an engineer on my team worked like this, I’d be concerned about burnout and technical debt.</p><p name="a2ec" id="a2ec" class="graf graf--p graf-after--p">Mind you, this was right after PM-010 (error handling) had gone so smoothly I’d completely forgotten to write about it. At this point I didn’t realize that after finishing 010 in one day I would be stuck on 011 for <em class="markup--em markup--p-em">weeks!</em> When things work perfectly, we move on without celebration or reflection. When they’re messy, we get compelling stories and hard-won lessons.</p><p name="2a06" id="2a06" class="graf graf--p graf-after--p">Here I was treating myself like a rented mule. Chasing that next exciting checklist item without enough sleep or reflection.</p><p name="b8d2" id="b8d2" class="graf graf--p graf-after--p">The irony was perfect: building a PM assistant while ignoring basic PM practices. Maybe Piper Morgan’s first task should be helping me manage the Piper Morgan project?</p><h3 name="d745" id="d745" class="graf graf--h3 graf-after--p">What I learned about vertical slice development</h3><p name="fd85" id="fd85" class="graf graf--p graf-after--h3"><strong class="markup--strong markup--p-strong">Testing isn’t separate from development — it drives architectural discovery.</strong> That innocent UI test revealed a fundamental gap in our user experience. Users expect to reference files naturally, and our system couldn’t handle that.</p><p name="c0ab" id="c0ab" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Follow the threads.</strong> Each missing piece revealed another missing piece. File references needed resolution, resolution needed scoring, scoring needed persistence, persistence needed proper domain models. The cascade led to a complete feature.</p><p name="269b" id="269b" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Performance often emerges from good design.</strong> We didn’t optimize for speed — we optimized for correctness and clean abstractions. The performance was a side effect of thinking clearly about the problem.</p><p name="2e0d" id="2e0d" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Process discipline matters even with superpowers.</strong> AI tools amplify capability but don’t replace the need for sustainable practices. Working at unsustainable pace catches up eventually.</p><p name="ee23" id="ee23" class="graf graf--p graf-after--p">To be honest, these are all things I have learned in the past, first as a UX practitioner where we’d often develop new feature ideas while usability testing what we had designer, and then again as a product leader trying to discipline and manage complex projects. Now, I am learning these lessons again viscerally as a pseudo-engineer.</p><h3 name="83a3" id="83a3" class="graf graf--h3 graf-after--p">The conversational bonus</h3><p name="1b8f" id="1b8f" class="graf graf--p graf-after--h3">Oh, and we fixed the conversational handling too that had proven wonky in the interface. Turns out the system already supported greetings, thanks, and farewells perfectly — it just needed proper testing. Sometimes the feature you think you need to build already exists.</p><p name="b44d" id="b44d" class="graf graf--p graf-after--p">It’s still a little confused by edge cases like “Hello, world!” (traditional programmer’s first test message for new software) and “Goodbye, cruel world!” (stereotypical “ending it all” message), but I haven’t asked it to understand puns or layers of meaning yet, so that seems fine?</p><h3 name="ac76" id="ac76" class="graf graf--h3 graf-after--p">What’s next</h3><p name="1c37" id="1c37" class="graf graf--p graf-after--h3">With file resolution complete and conversation handling working, we were now ready to implement document ingestion workflows. Everything was smooth and on track. The foundation is solid, the performance is proven, and we’d just learned some valuable lessons about following user needs wherever they lead.</p><p name="feae" id="feae" class="graf graf--p graf-after--p graf--trailing">Plus I’ve got a new appreciation for why we do retrospectives. When things go smoothly, it’s easy to forget to celebrate and learn from success.</p></div></div></section><section name="54a4" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="df45" id="df45" class="graf graf--p graf--leading"><em class="markup--em markup--p-em">Next on Building Piper Morgan: “The Integration Reality Check” — When unit tests pass but nothing works together.</em></p><p name="3a91" id="3a91" class="graf graf--p graf-after--p graf--trailing"><em class="markup--em markup--p-em">Ever had a “simple test” turn into building an entire subsystem? I’m curious how others handle the balance between shipping quick fixes and following architectural threads to their logical conclusion.</em></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mediajunkie" class="p-author h-card">christian crumlish</a> on <a href="https://medium.com/p/0b19d8a13665"><time class="dt-published" datetime="2025-07-19T12:58:06.569Z">July 19, 2025</time></a>.</p><p><a href="https://medium.com/@mediajunkie/the-cascade-effect-how-testing-the-ui-led-to-architectural-discoveries-0b19d8a13665" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 9, 2025.</p></footer></article></body></html>

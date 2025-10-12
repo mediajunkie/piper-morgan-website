@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>When Your Agents Disagree (And That’s OK)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">When Your Agents Disagree (And That’s OK)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+September 17
+</section>
+<section data-field="body" class="e-content">
+<section name="869f" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="27d5" id="27d5" class="graf graf--h3 graf--leading graf--title">When Your Agents Disagree (And That’s OK)</h3><figure name="be49" id="be49" class="graf graf--figure graf--startsWithDoubleQuote graf-after--h3"><img class="graf-image" data-image-id="1*7r8bJQ_y9MTL7ODiqWaUtQ.png" data-width="1536" data-height="1024" data-is-featured="true" alt="Two robots offer conflicting advice to a human inventor about his complex, broken machine" src="https://cdn-images-1.medium.com/max/800/1*7r8bJQ_y9MTL7ODiqWaUtQ.png"><figcaption class="imageCaption">“What about that thing?”</figcaption></figure><p name="5e2b" id="5e2b" class="graf graf--p graf-after--figure"><em class="markup--em markup--p-em">September 17</em></p><p name="6db6" id="6db6" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--p"><span class="graf-dropCap">H</span>ere’s the thing about working with multiple AI agents: they’re going to disagree with each other. And if you’re like most people, your first instinct is probably to figure out which one is “right” and which one is “wrong.”</p><p name="1a07" id="1a07" class="graf graf--p graf-after--p">Turns out that’s exactly the wrong approach.</p><p name="62d1" id="62d1" class="graf graf--p graf-after--p">Yesterday morning, I was deep in debugging mode with Piper Morgan. Layer 3 intent processing was completely broken — some prompts worked fine, others hung indefinitely. Critical blocker stuff. The kind of issue that stops everything until you fix it.</p><p name="cd8d" id="cd8d" class="graf graf--p graf-after--p">I deployed two agents to investigate: Claude Code for backend analysis and Cursor for UI validation. Same problem, different perspectives. Within an hour, they’d reached completely opposite conclusions.</p><p name="e563" id="e563" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Claude Code</strong>: “It’s a port conflict! The UI is calling the wrong service. Web proxy is missing the intent endpoint.”</p><p name="fc2e" id="fc2e" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Cursor Agent</strong>: “UI is fine! No hanging at all. Error handling works perfectly. Backend is returning proper 500 errors.”</p><p name="551c" id="551c" class="graf graf--p graf-after--p">My first thought? <em class="markup--em markup--p-em">One of them is clearly confused.</em></p><h3 name="a2c3" id="a2c3" class="graf graf--h3 graf-after--p">The beauty of productive disagreement</h3><p name="b045" id="b045" class="graf graf--p graf-after--h3">But here’s what I’ve learned about multi-agent coordination: when two competent agents disagree, they’re usually both right about different pieces of the puzzle.</p><p name="15b9" id="15b9" class="graf graf--p graf-after--p">Claude Code was absolutely correct — there was a port conflict. The web proxy layer was missing the <code class="markup--code markup--p-code">/api/v1/intent</code> endpoint, so UI requests were hitting the wrong service entirely.</p><p name="f1cf" id="f1cf" class="graf graf--p graf-after--p">Cursor Agent was equally correct — the UI wasn’t hanging. It was displaying proper error messages. The “hanging” I thought I was seeing was actually clean error handling of backend failures.</p><p name="72bb" id="72bb" class="graf graf--p graf-after--p">OK, tell me it’s not hanging because {technoreason} when it’s not responding. OK.</p><p name="c832" id="c832" class="graf graf--p graf-after--p">The disagreement wasn’t a bug in my process. It was a “feature.”</p><h3 name="fb86" id="fb86" class="graf graf--h3 graf-after--p">Evidence-based correlation</h3><p name="bf12" id="bf12" class="graf graf--p graf-after--h3">Once again I am reminded that I’ve had this experience with human colleagues. Two developers with wildly different estimates or risk estimates, an optimistic UX researcher and a pessimistic interaction designer, and so on. Those zones of creative tension are often where the best work gets polished into excellence.</p><p name="350d" id="350d" class="graf graf--p graf-after--p">What made this work today was the requirement for systematic evidence collection. Both agents had to provide terminal output, browser screenshots, network traces. No assertions without proof. No “trust me, I know what I’m doing.”</p><p name="20c4" id="20c4" class="graf graf--p graf-after--p">When we correlated their findings:</p><ul class="postList"><li name="c91f" id="c91f" class="graf graf--li graf-after--p">Code’s timing analysis: Complex prompts took 2.7–3.6 seconds before failing</li><li name="3ee5" id="3ee5" class="graf graf--li graf-after--li">Cursor’s browser evidence: Same prompts returned 500 errors in exactly that timeframe</li><li name="ddf1" id="ddf1" class="graf graf--li graf-after--li">Code’s architecture discovery: Missing proxy route for intent processing</li><li name="7cd9" id="7cd9" class="graf graf--li graf-after--li">Cursor’s network analysis: Requests hitting backend directly instead of proxy</li></ul><p name="6634" id="6634" class="graf graf--p graf-after--li">Perfect correlation. Two different diagnostic approaches revealing two layers of the same problem.</p><h3 name="1da7" id="1da7" class="graf graf--h3 graf-after--p">When you get confused, listen to the methodology</h3><p name="65f4" id="65f4" class="graf graf--p graf-after--h3">This is where having a systematic approach pays off. I didn’t have to choose between conflicting reports or waste time figuring out who was “wrong.” The methodology forced both agents to:</p><ol class="postList"><li name="95ff" id="95ff" class="graf graf--li graf-after--p">Document their investigation approach</li><li name="1e48" id="1e48" class="graf graf--li graf-after--li">Provide evidence for every claim</li><li name="e77c" id="e77c" class="graf graf--li graf-after--li">Update GitHub issues with findings</li><li name="5e11" id="5e11" class="graf graf--li graf-after--li">Cross-validate each other’s work</li></ol><p name="dca1" id="dca1" class="graf graf--p graf-after--li">By the time we reached the correlation phase, the complete picture was clear. The fix required both perspectives: add the missing proxy endpoint (Code’s discovery) <em class="markup--em markup--p-em">and</em> fix the frontend configuration to use it (insight from Cursor’s network analysis).</p><h3 name="909a" id="909a" class="graf graf--h3 graf-after--p">What this means for product management</h3><p name="6a2d" id="6a2d" class="graf graf--p graf-after--h3">Well, it’s that Rashomon thing again, right?</p><p name="441d" id="441d" class="graf graf--p graf-after--p">I keep thinking about this pattern beyond just debugging. How often do we get conflicting reports from different teams and immediately try to figure out who’s “right”?</p><p name="6e66" id="6e66" class="graf graf--p graf-after--p">Sales says the feature is critical for closing deals. Engineering says it’s technically complex and risky. Support says customers are confused by the current implementation. Product marketing says it doesn’t align with positioning.</p><p name="4ea8" id="4ea8" class="graf graf--p graf-after--p">Maybe they’re all right about different aspects of the same challenge.</p><p name="62fa" id="62fa" class="graf graf--p graf-after--p">The key is having systems that force evidence-based discussion rather than opinion-based arguing. GitHub issues with clear acceptance criteria. User research with actual data. Technical spikes that prove feasibility. Cross-functional validation of assumptions.</p><h3 name="14fd" id="14fd" class="graf graf--h3 graf-after--p">The resolution</h3><p name="55fd" id="55fd" class="graf graf--p graf-after--h3">By 3:53 PM, we had a complete fix. Layer 3 intent processing restored. UI → Proxy → Backend architecture working perfectly. Both agents confirmed the solution with independent validation.</p><p name="6eb6" id="6eb6" class="graf graf--p graf-after--p">Issue #172 closed. Issue #179 created for the Layer 4 quality issues that were now clearly visible.</p><p name="52e0" id="52e0" class="graf graf--p graf-after--p">The disagreement that initially seemed like a problem turned out to be exactly what we needed. Two agents, two perspectives, one complete solution.</p><p name="68b9" id="68b9" class="graf graf--p graf-after--p graf--trailing">Mind you, this only works if you have methodology that can handle disagreement productively. Otherwise you just get arguments.</p></div></div></section><section name="7c54" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="a8d0" id="a8d0" class="graf graf--p graf--leading"><em class="markup--em markup--p-em">Next on Building Piper Morgan: When Good Process Meets Bad Architecture: The Layer 4 Investigation as I started to realize just how big some of the holes still are.</em></p><p name="a26e" id="a26e" class="graf graf--p graf-after--p graf--trailing"><em class="markup--em markup--p-em">Have you ever had productive disagreements that led to better solutions than either perspective alone?</em></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mediajunkie" class="p-author h-card">christian crumlish</a> on <a href="https://medium.com/p/81b764fa5de2"><time class="dt-published" datetime="2025-09-24T12:46:55.991Z">September 24, 2025</time></a>.</p><p><a href="https://medium.com/@mediajunkie/when-your-agents-disagree-and-thats-ok-81b764fa5de2" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 9, 2025.</p></footer></article></body></html>

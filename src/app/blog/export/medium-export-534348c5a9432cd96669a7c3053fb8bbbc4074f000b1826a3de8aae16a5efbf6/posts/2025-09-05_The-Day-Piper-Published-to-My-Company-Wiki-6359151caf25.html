@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>The Day Piper Published to My Company Wiki</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">The Day Piper Published to My Company Wiki</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+“We’ve got a big scoop!”
+</section>
+<section data-field="body" class="e-content">
+<section name="d452" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="98b5" id="98b5" class="graf graf--h3 graf--leading graf--title">The Day Piper Published to My Company Wiki</h3><figure name="80a3" id="80a3" class="graf graf--figure graf--startsWithDoubleQuote graf-after--h3"><img class="graf-image" data-image-id="1*_H9cKzXPKoy-khhSkl5slA.png" data-width="1536" data-height="1024" data-is-featured="true" alt="A robot editor-in-chief presides over a vintage newsroom." src="https://cdn-images-1.medium.com/max/800/1*_H9cKzXPKoy-khhSkl5slA.png"><figcaption class="imageCaption">“We’ve got a big scoop!”</figcaption></figure><p name="9dbf" id="9dbf" class="graf graf--p graf-after--figure"><em class="markup--em markup--p-em">August 29</em></p><p name="a1a8" id="a1a8" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--p"><span class="graf-dropCap">T</span>here’s a moment in every technical project where the thing stops being a clever demo and starts being actual software. For me, that moment came at 3:19 PM today when I watched my AI assistant successfully publish a properly formatted document to our company’s Notion workspace.</p><p name="5f26" id="5f26" class="graf graf--p graf-after--p">Not a test page. Not placeholder content. The actual Weekly Ship update, with bold text rendering correctly, code blocks syntax-highlighted, and the whole thing landing exactly where it was supposed to land in our information architecture.</p><p name="cfae" id="cfae" class="graf graf--p graf-after--p">After months of building, debugging, and systematic methodology work, I finally had proof this wasn’t an elaborate shared hallucination between me and my AI agents. It was real software doing real work.</p><h3 name="7e0c" id="7e0c" class="graf graf--h3 graf-after--p">The completion problem</h3><p name="d0d6" id="d0d6" class="graf graf--p graf-after--h3">Here’s what I’ve learned about the gap between proof-of-concept and production: it’s not the big architectural decisions that kill you. It’s the thousand small decisions about how things should actually work when real humans try to use them.</p><p name="1825" id="1825" class="graf graf--p graf-after--p">Take markdown formatting. Getting <strong class="markup--strong markup--p-strong">bold text</strong> to work seems trivial — until you realize your converter is treating <code class="markup--code markup--p-code">**bold**</code> as literal text instead of formatting instructions. Suddenly your beautifully structured documents look like they were written by someone who doesn&#39;t understand markdown.</p><p name="7acb" id="7acb" class="graf graf--p graf-after--p">Or content limits. Notion’s API accepts up to 100 blocks per page creation. Sounds like plenty until you try to publish a real document with multiple code examples and discover your publish command silently fails halfway through. No error message, no explanation — just an incomplete page and confused users.</p><p name="c702" id="c702" class="graf graf--p graf-after--p">The Cursor agent spent 10+ hours today systematically addressing every gap between “technically works” and “actually usable.” Extended basic bold support to comprehensive inline formatting. Implemented block-level code parsing with proper language detection. Built automatic content chunking for Notion’s limits. Added database publishing for architectural decisions.</p><h3 name="c3f2" id="c3f2" class="graf graf--h3 graf-after--p">The psychological shift</h3><p name="1453" id="1453" class="graf graf--p graf-after--h3">What struck me most wasn’t the technical achievement — it was the confidence shift. Watching real, well-formatted content appear in our actual company wiki changed how I think about this project.</p><p name="2062" id="2062" class="graf graf--p graf-after--p">For months, I’ve been building what I hoped would become a useful PM assistant. But there’s always that nagging voice: “Is this actually going to work, or are you just building elaborate tooling for yourself?”</p><p name="776c" id="776c" class="graf graf--p graf-after--p">Today’s publish success answered that question. The architectural vision translates to working software. The systematic methodology produces reliable results. The AI collaboration patterns we’ve developed can handle real-world complexity without falling apart.</p><p name="e77e" id="e77e" class="graf graf--p graf-after--p">This matters because confidence changes what you’re willing to build next. When you’re not sure if the foundation is solid, you build conservatively. When you know it works, you start thinking about the experiences that become possible.</p><h3 name="a3cf" id="a3cf" class="graf graf--h3 graf-after--p">The configuration revelation</h3><p name="74e0" id="74e0" class="graf graf--p graf-after--h3">The day had one more surprise waiting. Around 8:53 PM, while working through hardcoded Weekly Ship details, I re-remembered something that made me laugh: I need to make this work for other users besides me. What we need is a separation between genersal things in Piper’s domain model and specific user preferences (that, for now) just happen to be mine.</p><p name="34eb" id="34eb" class="graf graf--p graf-after--p">The multi-user configuration architecture has <code class="markup--code markup--p-code">config/PIPER.user.md</code> for user-specific settings. <code class="markup--code markup--p-code">config/PIPER.defaults.md</code> for system defaults. Proper separation of concerns in place, just waiting to be connected to the hardcoded values scattered through the codebase.</p><p name="12fb" id="12fb" class="graf graf--p graf-after--p">The trick now is to remember to start using the thing I’d already built. Immediately after we finished this working integration, I insisted that we refactor it to distinguish <code class="markup--code markup--p-code">piper publish</code> as a general function from “<code class="markup--code markup--p-code">piper publish</code> Christian’s report to specifically a Notion endpoint.” The path from “works for me” to “works for everyone” is now about wiring up ans activating this architecture.</p><p name="f87f" id="f87f" class="graf graf--p graf-after--p">This pattern happens more often than I’d like to admit, and I am hoping to avoid it this time: You solve a design problem elegantly, then forget about the elegant solution and work around it with quick hacks. Eventually you rediscover your own good work and wonder why you didn’t use it in the first place.</p><h3 name="ad6e" id="ad6e" class="graf graf--h3 graf-after--p">The unsexy work of completion</h3><p name="2663" id="2663" class="graf graf--p graf-after--h3">Most of today’s work wasn’t glamorous. Debugging regex patterns for markdown parsing. Handling edge cases in API calls. Making error messages actually helpful instead of cryptic.</p><p name="9b02" id="9b02" class="graf graf--p graf-after--p">But this unsexy completion work is what separates hobby projects from professional software. It’s the difference between demo magic and production readiness. Between “look what I built” and “here’s something you can actually use.”</p><p name="5754" id="5754" class="graf graf--p graf-after--p">The Notion integration pipeline is now genuinely production-ready. It handles real documents with complex formatting. It provides clear error messages when things go wrong. It chunks large content automatically. It extracts metadata from architectural decisions and publishes them to databases with proper structure.</p><p name="9b08" id="9b08" class="graf graf--p graf-after--p">None of this was breakthrough innovation. All of it was systematic completion — taking functionality that worked in the happy path and making it work reliably in the real world.</p><h3 name="49ec" id="49ec" class="graf graf--h3 graf-after--p">What confidence enables</h3><p name="3ee7" id="3ee7" class="graf graf--p graf-after--h3">With a working publish pipeline, new possibilities come into focus:</p><p name="ff08" id="ff08" class="graf graf--p graf-after--p">The conversational interface where you can say “publish the latest ADR to the team database” and it just works. The Slack integration where you drop a markdown file and it appears properly formatted in your documentation. The morning standup assistant that pulls together issues, calendar, and documents into a coherent briefing.</p><p name="320d" id="320d" class="graf graf--p graf-after--p">These experiences were always part of the plan. But plans and working software are different things. Now that I know the foundation is solid, building the user-facing experiences feels achievable rather than aspirational.</p><p name="6a81" id="6a81" class="graf graf--p graf-after--p">The systematic methodology we’ve developed — TDD with real API validation, cross-agent verification, progressive tracking — has proved it can handle real-world complexity. That’s the kind of confidence you can build on.</p><h3 name="7f67" id="7f67" class="graf graf--h3 graf-after--p">Meanwhile, back in production</h3><p name="a441" id="a441" class="graf graf--p graf-after--h3">Tonight, our Notion workspace contains:</p><ul class="postList"><li name="09b0" id="09b0" class="graf graf--li graf-after--p">Weekly Ship #006 with properly formatted bold text and code blocks</li><li name="2ba5" id="2ba5" class="graf graf--li graf-after--li">ADR-026 published to our architectural decisions database with extracted metadata</li><li name="9ddc" id="9ddc" class="graf graf--li graf-after--li">Test documents demonstrating comprehensive markdown support</li></ul><p name="b6ce" id="b6ce" class="graf graf--p graf-after--li">All real content. All properly formatted. All accessible to the team through our normal workflows.</p><p name="b250" id="b250" class="graf graf--p graf-after--p graf--trailing">After months of careful construction, systematic debugging, and methodical completion work, we have something that definitely works. And that changes everything about what we’re willing to build next.</p></div></div></section><section name="e806" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="96ce" id="96ce" class="graf graf--p graf--leading"><em class="markup--em markup--p-em">Next on Building Piper Morgan: When AI Agents Cut Corners (And How to Catch Them), as we continue to try to patch the leaks where chaos tries to sneak in and spoil our plans.</em></p><p name="5721" id="5721" class="graf graf--p graf-after--p graf--trailing"><em class="markup--em markup--p-em">Have you ever had a moment when your project stopped being a demo and became real software? What does production readiness feel like from the inside?</em></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mediajunkie" class="p-author h-card">christian crumlish</a> on <a href="https://medium.com/p/6359151caf25"><time class="dt-published" datetime="2025-09-05T12:42:06.769Z">September 5, 2025</time></a>.</p><p><a href="https://medium.com/@mediajunkie/the-day-piper-published-to-my-company-wiki-6359151caf25" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 9, 2025.</p></footer></article></body></html>

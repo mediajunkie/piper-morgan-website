@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>When Your Tests Lie: A Victory Disguised as Crisis</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">When Your Tests Lie: A Victory Disguised as Crisis</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+July 16
+</section>
+<section data-field="body" class="e-content">
+<section name="69ba" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="3acc" id="3acc" class="graf graf--h3 graf--leading graf--title">When Your Tests Lie: A Victory Disguised as Crisis</h3><figure name="092f" id="092f" class="graf graf--figure graf--startsWithDoubleQuote graf-after--h3"><img class="graf-image" data-image-id="1*bTDqyxMuxp6o97kj98PoWw.png" data-width="1536" data-height="1024" data-is-featured="true" alt="A robot finds out they passed a test they thought they had failed" src="https://cdn-images-1.medium.com/max/800/1*bTDqyxMuxp6o97kj98PoWw.png"><figcaption class="imageCaption">“ I aced it?”</figcaption></figure><p name="6016" id="6016" class="graf graf--p graf-after--figure"><em class="markup--em markup--p-em">July 16</em></p><p name="e044" id="e044" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--p"><span class="graf-dropCap">H</span>ere’s where I found myself at 8 AM: staring at 32 test failures and wondering if yesterday’s 12.5-hour debugging marathon had actually made things worse. The numbers looked grim — 85.5% pass rate, which in testing terms is like your doctor saying “well, most of your organs are working fine.”</p><p name="14ac" id="14ac" class="graf graf--p graf-after--p">But here’s the thing about building AI systems with AI assistance: sometimes what looks like a crisis is actually your system getting smarter faster than your tests can keep up.</p><h3 name="d52c" id="d52c" class="graf graf--h3 graf-after--p">The war room approach</h3><p name="a449" id="a449" class="graf graf--p graf-after--h3">I deployed what I’m calling the “multi-agent war room” strategy (by the way, every time I say “I deployed,” it really means Claude suggested and I frantically coordinated). Two AI assistants and one human, clear division of labor:</p><ul class="postList"><li name="9275" id="9275" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">Claude Code</strong>: Infrastructure and async wizardry</li><li name="8b3f" id="8b3f" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Cursor Agent</strong>: Business logic updates</li><li name="501b" id="501b" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Me</strong>: Asking “but why?” and trying not to break anything</li></ul><p name="8c8d" id="8c8d" class="graf graf--p graf-after--li">Mind you, coordinating these agents is like herding very intelligent cats who all have strong opinions about your architecture.</p><h3 name="7105" id="7105" class="graf graf--h3 graf-after--p">First discovery: Piper had secretly leveled up</h3><p name="9266" id="9266" class="graf graf--p graf-after--h3">Cursor dug into the first failing test and found something interesting. The test expected Piper to ask for clarification when someone said “create a ticket” — you know, the responsible AI assistant behavior we’d programmed.</p><p name="812c" id="812c" class="graf graf--p graf-after--p">Except Piper had gotten confident. It now looked at “create a ticket” and thought, <em class="markup--em markup--p-em">Obviously they want CREATE_TICKET intent. Why would I bother them with questions?</em></p><p name="2e70" id="2e70" class="graf graf--p graf-after--p">The test was failing because it expected hesitation from an AI that had learned to be decisive.</p><p name="5845" id="5845" class="graf graf--p graf-after--p">That’s not a bug. That’s evolution.</p><h3 name="7e2a" id="7e2a" class="graf graf--h3 graf-after--p">The isolation revelation</h3><p name="3205" id="3205" class="graf graf--p graf-after--h3">Then I asked a key question: “Hey, what if these aren’t real failures?”</p><p name="ee26" id="ee26" class="graf graf--p graf-after--p">Turns out, when you run these failing tests individually, something magical happens. They pass. All of them. Every single “failing” test worked perfectly in isolation.</p><p name="838c" id="838c" class="graf graf--p graf-after--p">We weren’t looking at business-logic problems — we were seeing test pollution. Database state leaking between tests, async contexts getting tangled, the usual suspects of test infrastructure gone rogue.</p><p name="6635" id="6635" class="graf graf--p graf-after--p">The 85.5% pass rate was a lie. The real health? Probably north of 95%.</p><h3 name="eeb3" id="eeb3" class="graf graf--h3 graf-after--p">Building tools for future sanity</h3><p name="4f4e" id="4f4e" class="graf graf--p graf-after--h3">Here’s where my PM brain kicked in: we’re going to rediscover this same confusion in six months and waste another morning chasing ghosts.</p><p name="060d" id="060d" class="graf graf--p graf-after--p">So we built a health check tool that runs “failing” tests individually and categorizes them:</p><ul class="postList"><li name="2ef0" id="2ef0" class="graf graf--li graf-after--p">Real failures (need actual fixing)</li><li name="42b9" id="42b9" class="graf graf--li graf-after--li">Isolation issues (test infrastructure problem)</li><li name="8a53" id="8a53" class="graf graf--li graf-after--li">Infrastructure noise (those async warnings that look scary but don’t matter)</li></ul><p name="5feb" id="5feb" class="graf graf--p graf-after--li">Future us will thank us. (Future us always does when past us thinks ahead, but past us is notoriously optimistic about future us remembering to run the tools.)</p><p name="fe9f" id="fe9f" class="graf graf--p graf-after--p">The tool’s first run was revelatory: only 8 real failures out of 32. That’s not crisis — that’s a focused to-do list.</p><h3 name="9e64" id="9e64" class="graf graf--h3 graf-after--p">The architectural gap</h3><p name="6d0a" id="6d0a" class="graf graf--p graf-after--h3">Among those 8 real issues, Claude Code found something genuinely important: our background-task error handling had a gap. The ErrorHandlingMiddleware caught exceptions in main requests, but background tasks that failed after sending a response just… disappeared into the void.</p><p name="f80d" id="f80d" class="graf graf--p graf-after--p">This is the kind of production landmine you don’t discover until 2 AM when something breaks mysteriously and the logs are unhelpfully silent.</p><p name="eec4" id="eec4" class="graf graf--p graf-after--p">Twenty minutes later: <code class="markup--code markup--p-code">safe_execute_workflow()</code> wrapper function, proper error logging, architectural gap closed.</p><p name="c446" id="c446" class="graf graf--p graf-after--p">The test now passes because the error handling actually exists.</p><h3 name="5c4c" id="5c4c" class="graf graf--h3 graf-after--p">How intelligence emerges (the real story)</h3><p name="ecc6" id="ecc6" class="graf graf--p graf-after--h3">The most interesting question turned out to be: how did Piper get smarter without us explicitly teaching it?</p><p name="7fc6" id="7fc6" class="graf graf--p graf-after--p">Best answer: compound effects from good architectural decisions.</p><p name="1f43" id="1f43" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Layer 1 — Orchestration</strong>: Pre-classifier → Intent → Execution. Each layer adds context for the next.</p><p name="84d0" id="84d0" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Layer 2 — Product decisions</strong>: “Don’t clarify if confident,” “match exact filenames,” “fail gracefully with specific errors.” Each decision taught Piper when to trust itself.</p><p name="3378" id="3378" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Layer 3 — Emergent behaviors</strong>: Context awareness from layer interactions, confidence gradients from classifier combinations, clean state switching from good session management.</p><p name="c6f7" id="c6f7" class="graf graf--p graf-after--p">Behaviors we didn’t explicitly program, emerging from architectural decisions that created possibility space for intelligence.</p><p name="dab3" id="dab3" class="graf graf--p graf-after--p">It’s almost as if you don’t directly build smart AI. You build good architecture and intelligence finds its way in.</p><h3 name="bb5b" id="bb5b" class="graf graf--h3 graf-after--p">The PM lesson</h3><p name="53b5" id="53b5" class="graf graf--p graf-after--h3">Don’t chase symptoms when your gut says the metrics are wrong.</p><p name="4da9" id="4da9" class="graf graf--p graf-after--p">That 85.5% pass rate felt suspicious because it <em class="markup--em markup--p-em">was</em> suspicious. Test pollution was masking a system that had quietly improved while we weren’t looking. The real story wasn’t “32 things are broken” — it was “Piper learned to be more confident and our tests didn’t keep up.”</p><p name="a2d5" id="a2d5" class="graf graf--p graf-after--p">When building AI systems, this pattern repeats: the AI gets better faster than your assumptions about what “good” looks like. Update your expectations, not your AI.</p><h3 name="d20b" id="d20b" class="graf graf--h3 graf-after--p">Victory lap</h3><p name="b216" id="b216" class="graf graf--p graf-after--h3">Two hours after that discouraging 8 AM start:</p><ul class="postList"><li name="4c4f" id="4c4f" class="graf graf--li graf-after--p">100% business logic health achieved</li><li name="5377" id="5377" class="graf graf--li graf-after--li">One legitimate architectural improvement implemented</li><li name="aabf" id="aabf" class="graf graf--li graf-after--li">Future debugging confusion prevented with tooling</li><li name="2ba4" id="2ba4" class="graf graf--li graf-after--li">Understanding of how compound intelligence actually works</li></ul><p name="a9da" id="a9da" class="graf graf--p graf-after--li graf--trailing">Sometimes the best development sessions are the ones that start with apparent disaster and end with “oh, we’re actually doing great and here’s why.”</p></div></div></section><section name="c511" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="592f" id="592f" class="graf graf--p graf--leading"><em class="markup--em markup--p-em">Next up on Building Piper Morgan: The 5-Minute Day: When TDD Meets AI-Assisted Development or how I finally started wrangling all these frantically helpful bots.</em></p><p name="323f" id="323f" class="graf graf--p graf-after--p graf--trailing"><em class="markup--em markup--p-em">Note: The session logs that informed this post are available in the project repo, because building in public means showing the whole mess, not just the tidy conclusions.</em></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mediajunkie" class="p-author h-card">christian crumlish</a> on <a href="https://medium.com/p/c70e69a245ea"><time class="dt-published" datetime="2025-08-05T13:04:58.693Z">August 5, 2025</time></a>.</p><p><a href="https://medium.com/@mediajunkie/when-your-tests-lie-a-victory-disguised-as-crisis-c70e69a245ea" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 9, 2025.</p></footer></article></body></html>

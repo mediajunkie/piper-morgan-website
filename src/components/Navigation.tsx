@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import Image from 'next/image';
+import { ThemeToggle } from './atoms/ThemeToggle';
 
 interface NavigationItem {
   label: string;
@@ -31,12 +32,20 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="bg-white sticky top-0 z-50 border-0" role="navigation" aria-label="Main navigation">
+    <nav
+      style={{
+        background: 'var(--background)',
+        transition: 'background-color 0.2s'
+      }}
+      className="sticky top-0 z-50 border-0 shadow-sm"
+      role="navigation"
+      aria-label="Main navigation"
+    >
       <div className="site-container">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <div className="relative w-10 h-10">
+            <div className="relative w-10 h-10 rounded-full overflow-hidden bg-white">
               <Image
                 src="/assets/pm-logo.png"
                 alt="Piper Morgan Logo"
@@ -45,7 +54,10 @@ export default function Navigation() {
                 priority
               />
             </div>
-            <span className="text-xl font-bold text-text-dark">
+            <span
+              style={{ color: 'var(--text-dark)' }}
+              className="text-xl font-bold"
+            >
               Piper Morgan
             </span>
           </Link>
@@ -58,45 +70,49 @@ export default function Navigation() {
                 href={item.href}
                 className={`font-medium transition-all duration-200 hover-lift ${
                   isActive(item.href)
-                    ? 'text-primary-teal-text font-semibold'
-                    : 'text-text-light hover:text-primary-teal-text hover:font-semibold'
+                    ? 'text-primary-teal-text dark:text-primary-teal font-semibold'
+                    : 'text-text-light dark:text-gray-400 hover:text-primary-teal-text dark:hover:text-primary-teal hover:font-semibold'
                 }`}
               >
                 {item.label}
               </Link>
             ))}
+            <ThemeToggle />
           </div>
 
-          {/* Mobile menu button */}
-          <button
-            className="md:hidden p-3 rounded-lg hover:bg-gray-100 transition-colors min-h-[44px] min-w-[44px]"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Toggle mobile menu"
-            aria-expanded={isMobileMenuOpen}
-          >
-            <svg
-              className="w-6 h-6 text-text-dark"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          {/* Mobile menu button and theme toggle */}
+          <div className="md:hidden flex items-center space-x-2">
+            <ThemeToggle />
+            <button
+              className="p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors min-h-[44px] min-w-[44px]"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle mobile menu"
+              aria-expanded={isMobileMenuOpen}
             >
-              {isMobileMenuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
+              <svg
+                className="w-6 h-6 text-text-dark dark:text-dark-text"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                {isMobileMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -109,8 +125,8 @@ export default function Navigation() {
                   href={item.href}
                   className={`px-2 py-3 rounded-lg font-medium transition-colors ${
                     isActive(item.href)
-                      ? 'text-primary-teal-text bg-primary-teal/10'
-                      : 'text-text-light hover:text-text-dark hover:bg-gray-50'
+                      ? 'text-primary-teal-text dark:text-primary-teal bg-primary-teal/10 dark:bg-primary-teal/20'
+                      : 'text-text-light dark:text-gray-400 hover:text-text-dark dark:hover:text-dark-text hover:bg-gray-50 dark:hover:bg-gray-800'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >

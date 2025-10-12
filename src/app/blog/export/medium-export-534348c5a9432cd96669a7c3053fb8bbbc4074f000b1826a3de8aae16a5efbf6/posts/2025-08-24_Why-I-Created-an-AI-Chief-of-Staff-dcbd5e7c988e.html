@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Why I Created an AI Chief of Staff</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Why I Created an AI Chief of Staff</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+A flashback to early July, about five weeks into this project, when I realized I needed to establish another dedicated role on my team of…
+</section>
+<section data-field="body" class="e-content">
+<section name="53c7" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="4326" id="4326" class="graf graf--h3 graf--leading graf--title">Why I Created an AI Chief of Staff</h3><figure name="6b71" id="6b71" class="graf graf--figure graf--startsWithDoubleQuote graf-after--h3"><img class="graf-image" data-image-id="1*RgZrULSiqbXB9HJCaHwBHA.png" data-width="1536" data-height="1024" data-is-featured="true" alt="A tech exec in a hoodie hires a robot assistant." src="https://cdn-images-1.medium.com/max/800/1*RgZrULSiqbXB9HJCaHwBHA.png"><figcaption class="imageCaption">“You’re hired!”</figcaption></figure><p name="744c" id="744c" class="graf graf--p graf-after--figure graf--trailing"><em class="markup--em markup--p-em">A flashback to early July, about five weeks into this project, when I realized I needed to establish another dedicated role on my team of LLMs.</em></p></div></div></section><section name="da60" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="3a33" id="3a33" class="graf graf--p graf--leading"><em class="markup--em markup--p-em">July 3</em></p><p name="04ce" id="04ce" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--p"><span class="graf-dropCap">T</span>oday I spun up a new type of AI conversation for Piper Morgan — not to write code or debug issues, but to help me manage the project itself. I call it my “Chief of Staff” and it might be one of my better architectural decisions. (My joke is that it’s my executive assistant but it prefers to be referred to as my chief of staff, so I indulge it.)</p><h3 name="d5a4" id="d5a4" class="graf graf--h3 graf-after--p">The problem: workstream proliferation</h3><p name="2214" id="2214" class="graf graf--p graf-after--h3">Building Piper Morgan started simply enough: write code, fix bugs, repeat. But seven distinct workstreams had emerged by this point:</p><ol class="postList"><li name="313d" id="313d" class="graf graf--li graf-after--p">Core development (the actual building)</li><li name="0422" id="0422" class="graf graf--li graf-after--li">Architectural integrity (constant vigilance against drift)</li><li name="0a96" id="0a96" class="graf graf--li graf-after--li">Debugging and issue resolution</li><li name="1c1d" id="1c1d" class="graf graf--li graf-after--li">Documentation maintenance</li><li name="a412" id="a412" class="graf graf--li graf-after--li">Learning curation (lessons and patterns)</li><li name="2a9a" id="2a9a" class="graf graf--li graf-after--li">Team updates at Kind Systems</li><li name="5def" id="5def" class="graf graf--li graf-after--li">Public content (Medium series and LinkedIn)</li></ol><p name="e7af" id="e7af" class="graf graf--p graf-after--li">Each workstream has its own context, priorities, and outputs. Worse, they’re interdependent — a debugging session yields architectural insights that need documentation updates and become blog content.</p><p name="4e0f" id="4e0f" class="graf graf--p graf-after--p"><em class="markup--em markup--p-em">[</em><strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">Note:</em></strong><em class="markup--em markup--p-em"> We’ve since evolved this structure — debugging eventually folded into development as it became less of a standalone concern, and we added “Running Piper Morgan” as its own workstream for user experience and operational insights.]</em></p><h3 name="53e0" id="53e0" class="graf graf--h3 graf-after--p">The cognitive-load crisis</h3><p name="d428" id="d428" class="graf graf--p graf-after--h3">My brain was becoming a messy context-switching machine. Mid-debugging, I’d remember I needed to update the team. While writing documentation, I’d spot an architectural pattern worth sharing. During blog writing, I’d realize I’d lost track of which decisions we’d made when.</p><p name="ff91" id="ff91" class="graf graf--p graf-after--p">The irony: I was building an AI assistant for Product Managers while struggling with my own PM challenges.</p><h3 name="61d0" id="61d0" class="graf graf--h3 graf-after--p">The solution: specialized context</h3><p name="053a" id="053a" class="graf graf--p graf-after--h3">Instead of trying to make every AI chat session handle everything, I created a dedicated “Chief of Staff” role with a specific focus:</p><ul class="postList"><li name="4785" id="4785" class="graf graf--li graf-after--p">Track decisions and risks across all workstreams</li><li name="8b7d" id="8b7d" class="graf graf--li graf-after--li">Maintain a living session log</li><li name="fa15" id="fa15" class="graf graf--li graf-after--li">Coordinate dependencies between streams</li><li name="3b26" id="3b26" class="graf graf--li graf-after--li">Remind me of what needs attention</li><li name="15ff" id="15ff" class="graf graf--li graf-after--li">Provide the “step back and look at the big picture” perspective</li></ul><h3 name="0b61" id="0b61" class="graf graf--h3 graf-after--li">The implementation</h3><p name="39bd" id="39bd" class="graf graf--p graf-after--h3">The Chief of Staff chat has its own:</p><ul class="postList"><li name="097c" id="097c" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">Session log artifact</strong> that persists across conversations</li><li name="e26d" id="e26d" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Clear scope</strong> — project management, not technical implementation</li><li name="44c0" id="44c0" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Memory of commitments</strong> — “remind me to do X when Y completes”</li><li name="3a28" id="3a28" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Cross-stream visibility</strong> — knows what each workstream needs</li></ul><h3 name="5b60" id="5b60" class="graf graf--h3 graf-after--li">Early results</h3><p name="1ef2" id="1ef2" class="graf graf--p graf-after--h3">In just the first session, we:</p><ul class="postList"><li name="e6cb" id="e6cb" class="graf graf--li graf-after--p">Refactored my entire documentation system for better continuity</li><li name="8f5e" id="8f5e" class="graf graf--li graf-after--li">Created standardized templates for session handoffs</li><li name="2209" id="2209" class="graf graf--li graf-after--li">Established clear workstream priorities</li><li name="c959" id="c959" class="graf graf--li graf-after--li">Made a strategic decision about MCP integration</li><li name="9ab9" id="9ab9" class="graf graf--li graf-after--li">Queued documentation updates without losing debugging focus</li></ul><h3 name="8f9a" id="8f9a" class="graf graf--h3 graf-after--li">The meta-learning</h3><p name="93db" id="93db" class="graf graf--p graf-after--h3">This approach recognizes that different types of thinking need different contexts. My debugging chat can go deep on technical details without worrying about documentation. My architecture chat can explore patterns without tracking task dependencies. And my Chief of Staff keeps everything coordinated.</p><p name="0249" id="0249" class="graf graf--p graf-after--p">It’s essentially applying separation of concerns to AI collaboration itself.</p><h3 name="d8f6" id="d8f6" class="graf graf--h3 graf-after--p">The broader implication</h3><p name="a0f9" id="a0f9" class="graf graf--p graf-after--h3">As AI becomes more integrated into complex work, we’ll need more sophisticated patterns than “one chat for everything.” Specialized AI contexts — each with their own focus, memory, and protocols — might be how we scale AI assistance beyond simple tasks.</p><p name="d997" id="d997" class="graf graf--p graf-after--p graf--trailing">Building Piper Morgan isn’t just teaching me about AI-assisted PM work. It’s teaching me how to work with AI assistants at scale.</p></div></div></section><section name="d3fd" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="b242" id="b242" class="graf graf--p graf--leading"><em class="markup--em markup--p-em">Next on Building Piper Morgan: The Convergence Day (or How to tell if you’re having breakthroughs or just drinking your own Kool-Aid), flashing forward to August 16 when the puzzle pieces start fitting together.</em></p><p name="852c" id="852c" class="graf graf--p graf-after--p graf--trailing"><em class="markup--em markup--p-em">Have you experimented much with LLMs, asking them to “act as” or play the role of one or another type of specialist or expert? Did you find they were able to “stay in character” or did they drift too freely and start chasing squirrels? I’m still learning how to keep these things on task!</em></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mediajunkie" class="p-author h-card">christian crumlish</a> on <a href="https://medium.com/p/dcbd5e7c988e"><time class="dt-published" datetime="2025-08-24T12:07:11.098Z">August 24, 2025</time></a>.</p><p><a href="https://medium.com/@mediajunkie/why-i-created-an-ai-chief-of-staff-dcbd5e7c988e" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 9, 2025.</p></footer></article></body></html>
