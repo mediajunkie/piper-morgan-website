@@ -14,6 +14,7 @@ import fs from 'fs';
 import path from 'path';
 import https from 'https';
 import { fileURLToPath } from 'url';
+import { loadBlogMetadata, getMetadataByHashId } from './csv-parser.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -22,6 +23,7 @@ const __dirname = path.dirname(__filename);
 const RSS_FEED_URL = 'https://medium.com/feed/building-piper-morgan';
 const DATA_PATH = path.join(__dirname, '..', 'src/data/medium-posts.json');
 const IMAGES_DIR = path.join(__dirname, '..', 'public/assets/blog-images');
+const CSV_PATH = path.join(__dirname, '..', 'data/blog-metadata.csv');
 
 const parser = new Parser({
   customFields: {
@@ -238,10 +240,10 @@ async function fetchRssPosts() {
 }
 
 /**
- * Merge RSS posts with existing archive
+ * Merge RSS posts with existing archive and CSV metadata
  */
-async function mergeArchive(existingPosts, rssPosts) {
-  console.log('\n🔀 Merging new posts with archive...');
+async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
+  console.log('\n🔀 Merging new posts with archive and CSV metadata...');
 
   // Create map of existing posts by GUID
   const existingMap = new Map();
@@ -279,6 +281,15 @@ async function mergeArchive(existingPosts, rssPosts) {
         rssPost.thumbnail = null;
       }
 
+      // Merge CSV metadata if available
+      const metadata = getMetadataByHashId(csvMetadata, rssPost.postId);
+      if (metadata) {
+        rssPost.slug = metadata.slug;
+        console.log(`  🏷️  Merged CSV metadata: slug="${metadata.slug}"`);
+      } else {
+        console.log(`  ⚠️  No CSV metadata found for ${rssPost.postId}`);
+      }
+
       // Clean up temporary fields (keep fullContent for blog-content.json update)
       delete rssPost.featuredImageUrl;
       delete rssPost.postId;
@@ -314,6 +325,19 @@ async function mergeArchive(existingPosts, rssPosts) {
   // Convert map back to array
   const mergedPosts = Array.from(existingMap.values());
 
+  // Merge CSV metadata for ALL posts (not just new ones)
+  let csvMergedCount = 0;
+  mergedPosts.forEach(post => {
+    const postId = extractPostId(post.guid || post.link);
+    if (postId) {
+      const metadata = getMetadataByHashId(csvMetadata, postId);
+      if (metadata && metadata.slug) {
+        post.slug = metadata.slug;
+        csvMergedCount++;
+      }
+    }
+  });
+
   // Sort by date (newest first)
   mergedPosts.sort((a, b) => {
     const dateA = new Date(a.isoDate || a.pubDate);
@@ -325,6 +349,7 @@ async function mergeArchive(existingPosts, rssPosts) {
   console.log(`   - ${newPostsCount} new posts added`);
   console.log(`   - ${updatedPostsCount} posts updated (images)`);
   console.log(`   - ${imagesDownloaded} images downloaded`);
+  console.log(`   - ${csvMergedCount} posts merged with CSV metadata`);
   console.log(`   - ${mergedPosts.length} total posts in archive`);
 
   return mergedPosts;
@@ -407,6 +432,15 @@ async function main() {
       console.log(`✅ Created images directory: ${IMAGES_DIR}\n`);
     }
 
+    // Load CSV metadata (source of truth for slugs and metadata)
+    console.log('📋 Loading CSV metadata...');
+    const csvMetadata = loadBlogMetadata(CSV_PATH);
+    if (csvMetadata.length > 0) {
+      console.log(`✅ Loaded ${csvMetadata.length} entries from CSV\n`);
+    } else {
+      console.log('⚠️  No CSV metadata found - slugs will not be available\n');
+    }
+
     // Load existing archive
     const existingPosts = loadExistingArchive();
 
@@ -418,8 +452,8 @@ async function main() {
       process.exit(0);
     }
 
-    // Merge archives
-    const mergedPosts = await mergeArchive(existingPosts, rssPosts);
+    // Merge archives with CSV metadata
+    const mergedPosts = await mergeArchive(existingPosts, rssPosts, csvMetadata);
 
     // Save to file
     const saved = saveArchive(mergedPosts);
