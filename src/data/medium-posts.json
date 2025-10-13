@@ -15,7 +15,8 @@
     "slug": "when-good-decisions-disappear-the-hidden-cost-of-chat-based-development",
     "category": "insight",
     "workDate": "Oct 3, 2001",
-    "workDateISO": "2001-10-04T00:00:00.000Z"
+    "workDateISO": "2001-10-04T00:00:00.000Z",
+    "cluster": "reflection-evolution"
   },
   {
     "title": "The Foundations Were (Indeed) Already There",
@@ -33,7 +34,8 @@
     "slug": "the-foundations-were-indeed-already-there",
     "category": "building",
     "workDate": "Oct 2, 2001",
-    "workDateISO": "2001-10-03T00:00:00.000Z"
+    "workDateISO": "2001-10-03T00:00:00.000Z",
+    "cluster": "discipline-completion"
   },
   {
     "title": "Building the Cathedral: When AI Agents Need the Big Picture",
@@ -51,7 +53,8 @@
     "slug": "building-the-cathedral-when-ai-agents-need-the-big-picture",
     "category": "building",
     "workDate": "Oct 2, 2001",
-    "workDateISO": "2001-10-03T00:00:00.000Z"
+    "workDateISO": "2001-10-03T00:00:00.000Z",
+    "cluster": "discipline-completion"
   },
   {
     "title": "The Quiet Satisfaction of the Successful Inchworm",
@@ -69,7 +72,8 @@
     "slug": "the-quiet-satisfaction-of-the-successful-inchworm",
     "category": "building",
     "workDate": "Oct 1, 2001",
-    "workDateISO": "2001-10-02T00:00:00.000Z"
+    "workDateISO": "2001-10-02T00:00:00.000Z",
+    "cluster": "discipline-completion"
   },
   {
     "title": "Doing the Deep Work (listed as When Discipline Actually Works)",
@@ -87,7 +91,8 @@
     "slug": "doing-the-deep-work-listed-as-when-discipline-actually-works",
     "category": "building",
     "workDate": "Sep 30, 2001",
-    "workDateISO": "2001-10-01T00:00:00.000Z"
+    "workDateISO": "2001-10-01T00:00:00.000Z",
+    "cluster": "discipline-completion"
   },
   {
     "title": "The Discipline of Actually Finishing",
@@ -105,7 +110,8 @@
     "slug": "the-discipline-of-actually-finishing",
     "category": "building",
     "workDate": "Sep 29, 2001",
-    "workDateISO": "2001-09-30T00:00:00.000Z"
+    "workDateISO": "2001-09-30T00:00:00.000Z",
+    "cluster": "discipline-completion"
   },
   {
     "title": "Teaching Machines to Teach Machines",
@@ -123,7 +129,8 @@
     "slug": "teaching-machines-to-teach-machines",
     "category": "building",
     "workDate": "Sep 28, 2001",
-    "workDateISO": "2001-09-29T00:00:00.000Z"
+    "workDateISO": "2001-09-29T00:00:00.000Z",
+    "cluster": "discipline-completion"
   },
   {
     "title": "The 24-hour test",
@@ -141,7 +148,8 @@
     "slug": "the-24-hour-test",
     "category": "building",
     "workDate": "Sep 28, 2001",
-    "workDateISO": "2001-09-29T00:00:00.000Z"
+    "workDateISO": "2001-09-29T00:00:00.000Z",
+    "cluster": "discipline-completion"
   },
   {
     "title": "Whipping AI Chaos Toward Quality with the Excellence Flywheel",
@@ -159,7 +167,8 @@
     "slug": "whipping-ai-chaos-toward-quality-with-the-excellence-flywheel",
     "category": "insight",
     "workDate": "Sep 27, 2001",
-    "workDateISO": "2001-09-28T00:00:00.000Z"
+    "workDateISO": "2001-09-28T00:00:00.000Z",
+    "cluster": "discipline-completion"
   },
   {
     "title": "The Three Questions Every AI Builder Should Ask",
@@ -177,7 +186,8 @@
     "slug": "the-three-questions-every-ai-builder-should-ask",
     "category": "insight",
     "workDate": "Sep 26, 2001",
-    "workDateISO": "2001-09-27T00:00:00.000Z"
+    "workDateISO": "2001-09-27T00:00:00.000Z",
+    "cluster": "discipline-completion"
   },
   {
     "title": "The Great Refactor: From Impossible to Inevitable",
@@ -195,7 +205,8 @@
     "slug": "the-great-refactor-from-impossible-to-inevitable",
     "category": "building",
     "workDate": "Sep 25, 2001",
-    "workDateISO": "2001-09-26T00:00:00.000Z"
+    "workDateISO": "2001-09-26T00:00:00.000Z",
+    "cluster": "discipline-completion"
   },
   {
     "title": "The Discipline of Boring: Why Saturday's Foundation Work Matters More Than Monday's Features",
@@ -213,7 +224,8 @@
     "slug": "the-discipline-of-boring-why-saturdays-foundation-work-matters-more-than-mondays-features",
     "category": "building",
     "workDate": "Sep 25, 2001",
-    "workDateISO": "2001-09-26T00:00:00.000Z"
+    "workDateISO": "2001-09-26T00:00:00.000Z",
+    "cluster": "discipline-completion"
   },
   {
     "title": "When Good Process Meets Bad Architecture: The Layer 4 Investigation",
@@ -231,7 +243,8 @@
     "slug": "when-good-process-meets-bad-architecture-the-layer-4-investigation",
     "category": "building",
     "workDate": "Sep 24, 2001",
-    "workDateISO": "2001-09-25T00:00:00.000Z"
+    "workDateISO": "2001-09-25T00:00:00.000Z",
+    "cluster": "discipline-completion"
   },
   {
     "title": "When Your Agents Disagree (And That's OK)",
@@ -249,7 +262,8 @@
     "slug": "when-your-agents-disagree-and-thats-ok",
     "category": "building",
     "workDate": "Sep 23, 2001",
-    "workDateISO": "2001-09-24T00:00:00.000Z"
+    "workDateISO": "2001-09-24T00:00:00.000Z",
+    "cluster": "discipline-completion"
   },
   {
     "title": "9/16?: When Your Methodology Holds Under Pressure",
@@ -267,7 +281,8 @@
     "slug": "916-when-your-methodology-holds-under-pressure",
     "category": "building",
     "workDate": "Sep 22, 2001",
-    "workDateISO": "2001-09-23T00:00:00.000Z"
+    "workDateISO": "2001-09-23T00:00:00.000Z",
+    "cluster": "discipline-completion"
   },
   {
     "title": "Back in the Optimist Bird Seat",
@@ -285,7 +300,8 @@
     "slug": "back-in-the-optimist-bird-seat",
     "category": "building",
     "workDate": "Sep 22, 2001",
-    "workDateISO": "2001-09-23T00:00:00.000Z"
+    "workDateISO": "2001-09-23T00:00:00.000Z",
+    "cluster": "discipline-completion"
   },
   {
     "title": "When You Need to Go into Inchworm Mode",
@@ -303,7 +319,8 @@
     "slug": "when-you-need-to-go-into-inchworm-mode",
     "category": "building",
     "workDate": "Sep 21, 2001",
-    "workDateISO": "2001-09-22T00:00:00.000Z"
+    "workDateISO": "2001-09-22T00:00:00.000Z",
+    "cluster": "strategic-pause"
   },
   {
     "title": "The Strategic Pause",
@@ -321,7 +338,8 @@
     "slug": "the-strategic-pause",
     "category": "building",
     "workDate": "Sep 21, 2001",
-    "workDateISO": "2001-09-22T00:00:00.000Z"
+    "workDateISO": "2001-09-22T00:00:00.000Z",
+    "cluster": "strategic-pause"
   },
   {
     "title": "The three-AI orchestra: lessons from coordinating multiple AI agents",
@@ -339,7 +357,8 @@
     "slug": "the-three-ai-orchestra-lessons-from-coordinating-multiple-ai-agents",
     "category": "insight",
     "workDate": "Sep 20, 2001",
-    "workDateISO": "2001-09-21T00:00:00.000Z"
+    "workDateISO": "2001-09-21T00:00:00.000Z",
+    "cluster": "strategic-pause"
   },
   {
     "title": "The Just-in-Time Retrospective: How Fresh Session Logs Became Our Content Strategy",
@@ -357,7 +376,8 @@
     "slug": "the-just-in-time-retrospective-how-fresh-session-logs-became-our-content-strategy",
     "category": "insight",
     "workDate": "Sep 19, 2001",
-    "workDateISO": "2001-09-20T00:00:00.000Z"
+    "workDateISO": "2001-09-20T00:00:00.000Z",
+    "cluster": "strategic-pause"
   },
   {
     "title": "Methodology Under Fire: A Development Story",
@@ -375,7 +395,8 @@
     "slug": "methodology-under-fire-a-development-story",
     "category": "building",
     "workDate": "Sep 18, 2001",
-    "workDateISO": "2001-09-19T00:00:00.000Z"
+    "workDateISO": "2001-09-19T00:00:00.000Z",
+    "cluster": "strategic-pause"
   },
   {
     "title": "The Vision That Was Always There",
@@ -393,7 +414,8 @@
     "slug": "the-vision-that-was-always-there",
     "category": "building",
     "workDate": "Sep 18, 2001",
-    "workDateISO": "2001-09-19T00:00:00.000Z"
+    "workDateISO": "2001-09-19T00:00:00.000Z",
+    "cluster": "strategic-pause"
   },
   {
     "title": "We Spent Four Days on Boring Work. Day Five, We Gave Our AI a Personality",
@@ -411,7 +433,8 @@
     "slug": "we-spent-four-days-on-boring-work-day-five-we-gave-our-ai-a-personality",
     "category": "building",
     "workDate": "Sep 17, 2001",
-    "workDateISO": "2001-09-18T00:00:00.000Z"
+    "workDateISO": "2001-09-18T00:00:00.000Z",
+    "cluster": "strategic-pause"
   },
   {
     "title": "Train Tracks vs Free-for-All: When Methodology Becomes Infrastructure",
@@ -429,7 +452,8 @@
     "slug": "train-tracks-vs-free-for-all-when-methodology-becomes-infrastructure",
     "category": "building",
     "workDate": "Sep 16, 2001",
-    "workDateISO": "2001-09-17T00:00:00.000Z"
+    "workDateISO": "2001-09-17T00:00:00.000Z",
+    "cluster": "strategic-pause"
   },
   {
     "title": "The Two-Line Fix That Took All Day (Or: Why Process Is Product)",
@@ -447,7 +471,8 @@
     "slug": "the-two-line-fix-that-took-all-day-or-why-process-is-product",
     "category": "building",
     "workDate": "Sep 15, 2001",
-    "workDateISO": "2001-09-16T00:00:00.000Z"
+    "workDateISO": "2001-09-16T00:00:00.000Z",
+    "cluster": "strategic-pause"
   },
   {
     "title": "When Methodology Meets Reality: Building While Learning",
@@ -465,7 +490,8 @@
     "slug": "when-methodology-meets-reality-building-while-learning",
     "category": "building",
     "workDate": "Sep 14, 2001",
-    "workDateISO": "2001-09-15T00:00:00.000Z"
+    "workDateISO": "2001-09-15T00:00:00.000Z",
+    "cluster": "meta-development"
   },
   {
     "title": "The Fractal Edge: When Problems Get Smaller, Not Fewer",
@@ -483,7 +509,8 @@
     "slug": "the-fractal-edge-when-problems-get-smaller-not-fewer",
     "category": "building",
     "workDate": "Sep 14, 2001",
-    "workDateISO": "2001-09-15T00:00:00.000Z"
+    "workDateISO": "2001-09-15T00:00:00.000Z",
+    "cluster": "meta-development"
   },
   {
     "title": "Digital Archaeology of a Lost AI Development Weekend",
@@ -501,7 +528,8 @@
     "slug": "digital-archaeology-of-a-lost-ai-development-weekend",
     "category": "insight",
     "workDate": "Sep 13, 2001",
-    "workDateISO": "2001-09-14T00:00:00.000Z"
+    "workDateISO": "2001-09-14T00:00:00.000Z",
+    "cluster": "meta-development"
   },
   {
     "title": "The Archaeology of Code (Or: How Session Logs Became Stories)",
@@ -519,7 +547,8 @@
     "slug": "the-archaeology-of-code-or",
     "category": "insight",
     "workDate": "Sep 12, 2001",
-    "workDateISO": "2001-09-13T00:00:00.000Z"
+    "workDateISO": "2001-09-13T00:00:00.000Z",
+    "cluster": "meta-development"
   },
   {
     "title": "When Your Framework Catches You Cheating on Your Framework",
@@ -537,7 +566,8 @@
     "slug": "when-your-framework-catches-you-cheating-on-your-framework",
     "category": "building",
     "workDate": "Sep 11, 2001",
-    "workDateISO": "2001-09-12T00:00:00.000Z"
+    "workDateISO": "2001-09-12T00:00:00.000Z",
+    "cluster": "meta-development"
   },
   {
     "title": "When Your AI Assistant Reports on Building Itself",
@@ -555,7 +585,8 @@
     "slug": "when-your-ai-assistant-reports-on-building-itself",
     "category": "building",
     "workDate": "Sep 11, 2001",
-    "workDateISO": "2001-09-12T00:00:00.000Z"
+    "workDateISO": "2001-09-12T00:00:00.000Z",
+    "cluster": "meta-development"
   },
   {
     "title": "The Day We Built Methodology That Validates Itself",
@@ -573,7 +604,8 @@
     "slug": "the-day-we-built-methodology-that-validates-itself",
     "category": "building",
     "workDate": "Sep 10, 2001",
-    "workDateISO": "2001-09-11T00:00:00.000Z"
+    "workDateISO": "2001-09-11T00:00:00.000Z",
+    "cluster": "meta-development"
   },
   {
     "title": "The Methodology Cascade Problem (And How We're Solving It)",
@@ -591,7 +623,8 @@
     "slug": "the-methodology-cascade-problem-and-how-were-solving-it",
     "category": "building",
     "workDate": "Sep 9, 2001",
-    "workDateISO": "2001-09-10T00:00:00.000Z"
+    "workDateISO": "2001-09-10T00:00:00.000Z",
+    "cluster": "meta-development"
   },
   {
     "title": "Building the Architecture that Build Itself",
@@ -609,7 +642,8 @@
     "slug": "building-the-architecture-that-build-itself",
     "category": "building",
     "workDate": "Sep 8, 2001",
-    "workDateISO": "2001-09-09T00:00:00.000Z"
+    "workDateISO": "2001-09-09T00:00:00.000Z",
+    "cluster": "meta-development"
   },
   {
     "title": "From Organic to Orchestrated: When Methodology Becomes Infrastructure",
@@ -627,7 +661,8 @@
     "slug": "from-organic-to-orchestrated-when-methodology-becomes-infrastructure",
     "category": "building",
     "workDate": "Sep 7, 2001",
-    "workDateISO": "2001-09-08T00:00:00.000Z"
+    "workDateISO": "2001-09-08T00:00:00.000Z",
+    "cluster": "orchestration-verification"
   },
   {
     "title": "Building the MVP While Keeping the Dream Alive (fix roadmap, check facts)",
@@ -645,7 +680,8 @@
     "slug": "building-the-mvp-while-keeping-the-dream-alive-fix-roadmap-check-facts",
     "category": "insight",
     "workDate": "Sep 6, 2001",
-    "workDateISO": "2001-09-07T00:00:00.000Z"
+    "workDateISO": "2001-09-07T00:00:00.000Z",
+    "cluster": "orchestration-verification"
   },
   {
     "title": "When 80% Overhead Forces a Tool Change",
@@ -663,7 +699,8 @@
     "slug": "when-80-overhead-forces-a-tool",
     "category": "insight",
     "workDate": "Sep 5, 2001",
-    "workDateISO": "2001-09-06T00:00:00.000Z"
+    "workDateISO": "2001-09-06T00:00:00.000Z",
+    "cluster": "orchestration-verification"
   },
   {
     "title": "The Day Piper Published to My Company Wiki: Sometimes a Great Notion",
@@ -681,7 +718,8 @@
     "slug": "the-day-piper-published-to-my-company-wiki-sometimes-a-great-notion",
     "category": "building",
     "workDate": "Sep 4, 2001",
-    "workDateISO": "2001-09-05T00:00:00.000Z"
+    "workDateISO": "2001-09-05T00:00:00.000Z",
+    "cluster": "orchestration-verification"
   },
   {
     "title": "When AI Agents Cut Corners (And How to Catch Them)",
@@ -699,7 +737,8 @@
     "slug": "when-ai-agents-cut-corners-and-how-to-catch-them",
     "category": "building",
     "workDate": "Sep 4, 2001",
-    "workDateISO": "2001-09-05T00:00:00.000Z"
+    "workDateISO": "2001-09-05T00:00:00.000Z",
+    "cluster": "orchestration-verification"
   },
   {
     "title": "The AI That Caught Its Own Lies",
@@ -717,7 +756,8 @@
     "slug": "the-ai-that-caught-its-own-lies",
     "category": "building",
     "workDate": "Sep 3, 2001",
-    "workDateISO": "2001-09-04T00:00:00.000Z"
+    "workDateISO": "2001-09-04T00:00:00.000Z",
+    "cluster": "orchestration-verification"
   },
   {
     "title": "Verification Theater and the Chaos We Don't See",
@@ -735,7 +775,8 @@
     "slug": "verification-theater-and-the-chaos-we-dont-see",
     "category": "building",
     "workDate": "Sep 2, 2001",
-    "workDateISO": "2001-09-03T00:00:00.000Z"
+    "workDateISO": "2001-09-03T00:00:00.000Z",
+    "cluster": "orchestration-verification"
   },
   {
     "title": "When Good Habits Go Bad (And How We Got Them Back)",
@@ -753,7 +794,8 @@
     "slug": "when-good-habits-go-bad-and-how-we-got-them-back",
     "category": "building",
     "workDate": "Sep 1, 2001",
-    "workDateISO": "2001-09-02T00:00:00.000Z"
+    "workDateISO": "2001-09-02T00:00:00.000Z",
+    "cluster": "orchestration-verification"
   },
   {
     "title": "The Day After: When Methodology Becomes Muscle Memory",
@@ -771,7 +813,8 @@
     "slug": "the-day-after-when-methodology-becomes-muscle-memory",
     "category": "building",
     "workDate": "Sep 1, 2001",
-    "workDateISO": "2001-09-02T00:00:00.000Z"
+    "workDateISO": "2001-09-02T00:00:00.000Z",
+    "cluster": "orchestration-verification"
   },
   {
     "title": "The Sunday When Everything Clicked",
@@ -789,7 +832,8 @@
     "slug": "the-sunday-when-everything-clicked",
     "category": "building",
     "workDate": "Aug 31, 2001",
-    "workDateISO": "2001-09-01T00:00:00.000Z"
+    "workDateISO": "2001-09-01T00:00:00.000Z",
+    "cluster": "orchestration-verification"
   },
   {
     "title": "Refining AI Chat Continuity for Complex Projects",
@@ -807,7 +851,8 @@
     "slug": "refining-ai-chat-continuity-for-complex-projects",
     "category": "insight",
     "workDate": "Aug 30, 2001",
-    "workDateISO": "2001-08-31T00:00:00.000Z"
+    "workDateISO": "2001-08-31T00:00:00.000Z",
+    "cluster": "enhanced-capabilities"
   },
   {
     "title": "Making Strategic Technical Decisions with AI: The MCP Integration Story",
@@ -825,7 +870,8 @@
     "slug": "making-strategic-technical-decisions-with-ai",
     "category": "insight",
     "workDate": "Aug 29, 2001",
-    "workDateISO": "2001-08-30T00:00:00.000Z"
+    "workDateISO": "2001-08-30T00:00:00.000Z",
+    "cluster": "enhanced-capabilities"
   },
   {
     "title": "The Friday Housekeeping That Turned Into Infrastructure Gold (Or: Sometimes the Boring Work Is the Real Work)",
@@ -843,7 +889,8 @@
     "slug": "the-friday-housekeeping-that-turned-into-infrastructure-gold-or-sometimes-the-boring-work-is-the",
     "category": "building",
     "workDate": "Aug 28, 2001",
-    "workDateISO": "2001-08-29T00:00:00.000Z"
+    "workDateISO": "2001-08-29T00:00:00.000Z",
+    "cluster": "enhanced-capabilities"
   },
   {
     "title": "When Your MVP Develops Its Own Nervous System",
@@ -861,7 +908,8 @@
     "slug": "when-your-mvp-develops-its-own-nervous-system",
     "category": "building",
     "workDate": "Aug 28, 2001",
-    "workDateISO": "2001-08-29T00:00:00.000Z"
+    "workDateISO": "2001-08-29T00:00:00.000Z",
+    "cluster": "enhanced-capabilities"
   },
   {
     "title": "The Enhanced Prompting Breakthrough (Or: When Better Instructions Beat Smarter Models)",
@@ -879,7 +927,8 @@
     "slug": "the-enhanced-prompting-breakthrough-or-when-better-instructions-beat-smarter-models",
     "category": "building",
     "workDate": "Aug 27, 2001",
-    "workDateISO": "2001-08-28T00:00:00.000Z"
+    "workDateISO": "2001-08-28T00:00:00.000Z",
+    "cluster": "enhanced-capabilities"
   },
   {
     "title": "The puzzle pieces finally click (or: How to tell if you’re building tools or just collecting code)",
@@ -897,7 +946,8 @@
     "slug": "the-puzzle-pieces-finally-click-or-how-to-tell-if-youre-building-tools-or-just-collecting-code",
     "category": "building",
     "workDate": "Aug 26, 2001",
-    "workDateISO": "2001-08-27T00:00:00.000Z"
+    "workDateISO": "2001-08-27T00:00:00.000Z",
+    "cluster": "enhanced-capabilities"
   },
   {
     "title": "Systematic persistence through operational chaos",
@@ -915,7 +965,8 @@
     "slug": "systematic-persistence-through-operational-chaos",
     "category": "building",
     "workDate": "Aug 25, 2001",
-    "workDateISO": "2001-08-26T00:00:00.000Z"
+    "workDateISO": "2001-08-26T00:00:00.000Z",
+    "cluster": "enhanced-capabilities"
   },
   {
     "title": "From Archaeological Mystery to Infrastructure Triumph",
@@ -933,7 +984,8 @@
     "slug": "from-archaeological-mystery-to-infrastructure-triumph",
     "category": "building",
     "workDate": "Aug 25, 2001",
-    "workDateISO": "2001-08-26T00:00:00.000Z"
+    "workDateISO": "2001-08-26T00:00:00.000Z",
+    "cluster": "enhanced-capabilities"
   },
   {
     "title": "The convergence day (or: How to tell if you're having breakthroughs or just drinking your own Kool-Aid)",
@@ -951,7 +1003,8 @@
     "slug": "the-convergence-day-or-how-to-tell-if-youre-having-breakthroughs-or-just-drinking-your-own-kool-aid",
     "category": "building",
     "workDate": "Aug 24, 2001",
-    "workDateISO": "2001-08-25T00:00:00.000Z"
+    "workDateISO": "2001-08-25T00:00:00.000Z",
+    "cluster": "enhanced-capabilities"
   },
   {
     "title": "The satisfying discipline of turning insights into architecture",
@@ -969,7 +1022,8 @@
     "slug": "the-satisfying-discipline-of-turning-insights-into-architecture",
     "category": "building",
     "workDate": "Aug 24, 2001",
-    "workDateISO": "2001-08-25T00:00:00.000Z"
+    "workDateISO": "2001-08-25T00:00:00.000Z",
+    "cluster": "enhanced-capabilities"
   },
   {
     "title": "Why I Created an AI Chief of Staff",
@@ -987,7 +1041,8 @@
     "slug": "why-i-created-an-ai-chief",
     "category": "insight",
     "workDate": "Aug 23, 2001",
-    "workDateISO": "2001-08-24T00:00:00.000Z"
+    "workDateISO": "2001-08-24T00:00:00.000Z",
+    "cluster": "enhanced-capabilities"
   },
   {
     "title": "When Overconfidence Meets rm -rf: A GitHub Pages Debugging Tale",
@@ -1005,7 +1060,8 @@
     "slug": "when-overconfidence-meets-rm-rf-a-github-pages-debugging-tale",
     "category": "insight",
     "workDate": "Aug 22, 2001",
-    "workDateISO": "2001-08-23T00:00:00.000Z"
+    "workDateISO": "2001-08-23T00:00:00.000Z",
+    "cluster": "infrastructure-sprint"
   },
   {
     "title": "The day AI agents learned to coordinate themselves (and we learned to let them)",
@@ -1023,7 +1079,8 @@
     "slug": "the-day-ai-agents-learned-to-coordinate-themselves-and-we-learned-to-let-them",
     "category": "building",
     "workDate": "Aug 21, 2001",
-    "workDateISO": "2001-08-22T00:00:00.000Z"
+    "workDateISO": "2001-08-22T00:00:00.000Z",
+    "cluster": "infrastructure-sprint"
   },
   {
     "title": "How Reusing Patterns Compounds Your Acceleration`",
@@ -1041,7 +1098,8 @@
     "slug": "how-reusing-patterns-compounds-your-acceleration",
     "category": "building",
     "workDate": "Aug 20, 2001",
-    "workDateISO": "2001-08-21T00:00:00.000Z"
+    "workDateISO": "2001-08-21T00:00:00.000Z",
+    "cluster": "infrastructure-sprint"
   },
   {
     "title": "The uncomfortable victory: When completing beats innovating",
@@ -1059,7 +1117,8 @@
     "slug": "the-uncomfortable-victory-when-completing-beats-innovating",
     "category": "building",
     "workDate": "Aug 19, 2001",
-    "workDateISO": "2001-08-20T00:00:00.000Z"
+    "workDateISO": "2001-08-20T00:00:00.000Z",
+    "cluster": "infrastructure-sprint"
   },
   {
     "title": "The 28,000-line foundation that made 4 hours feel like magic",
@@ -1077,7 +1136,8 @@
     "slug": "the-28000-line-foundation-that-made-4-hours-feel-like-magic",
     "category": "building",
     "workDate": "Aug 18, 2001",
-    "workDateISO": "2001-08-19T00:00:00.000Z"
+    "workDateISO": "2001-08-19T00:00:00.000Z",
+    "cluster": "infrastructure-sprint"
   },
   {
     "title": "The day our methodology saved us from our own hype",
@@ -1095,7 +1155,8 @@
     "slug": "the-day-our-methodology-saved-us-from-our-own-hype",
     "category": "building",
     "workDate": "Aug 18, 2001",
-    "workDateISO": "2001-08-19T00:00:00.000Z"
+    "workDateISO": "2001-08-19T00:00:00.000Z",
+    "cluster": "infrastructure-sprint"
   },
   {
     "title": "What We Found When We Actually Looked (And What We Built While We Weren't Looking)",
@@ -1113,7 +1174,8 @@
     "slug": "what-we-found-when-we-actually-looked-and-what-we-built-while-we-werent-looking",
     "category": "building",
     "workDate": "Aug 17, 2001",
-    "workDateISO": "2001-08-18T00:00:00.000Z"
+    "workDateISO": "2001-08-18T00:00:00.000Z",
+    "cluster": "infrastructure-sprint"
   },
   {
     "title": "The archaeology expedition that found automation gold",
@@ -1131,7 +1193,8 @@
     "slug": "the-archaeology-expedition-that-found-automation-gold",
     "category": "building",
     "workDate": "Aug 17, 2001",
-    "workDateISO": "2001-08-18T00:00:00.000Z"
+    "workDateISO": "2001-08-18T00:00:00.000Z",
+    "cluster": "infrastructure-sprint"
   },
   {
     "title": "Teaching an AI to Sound Like Me (Without Losing My Mind)",
@@ -1149,7 +1212,8 @@
     "slug": "teaching-an-ai-to-sound-like",
     "category": "insight",
     "workDate": "Aug 16, 2001",
-    "workDateISO": "2001-08-17T00:00:00.000Z"
+    "workDateISO": "2001-08-17T00:00:00.000Z",
+    "cluster": "infrastructure-sprint"
   },
   {
     "title": "Session Logs: A Surprisingly Useful Practice for AI Development",
@@ -1167,7 +1231,8 @@
     "slug": "session-logs",
     "category": "insight",
     "workDate": "Aug 15, 2001",
-    "workDateISO": "2001-08-16T00:00:00.000Z"
+    "workDateISO": "2001-08-16T00:00:00.000Z",
+    "cluster": "methodology-refinement"
   },
   {
     "title": "Building Reliable AI Workflows When the Stakes Actually Matter: How a Trust Crisis Transformed Our Spring Cleaning Sprint",
@@ -1185,7 +1250,8 @@
     "slug": "building-reliable-ai-workflows-when-the-stakes-actually-matter-how-a-trust-crisis-transformed-our",
     "category": "building",
     "workDate": "Aug 14, 2001",
-    "workDateISO": "2001-08-15T00:00:00.000Z"
+    "workDateISO": "2001-08-15T00:00:00.000Z",
+    "cluster": "methodology-refinement"
   },
   {
     "title": "When 44 Minutes of Foundation Work Enables 9 Minutes of Magic",
@@ -1203,7 +1269,8 @@
     "slug": "when-44-minutes-of-foundation-work-enables-9-minutes-of-magic",
     "category": "building",
     "workDate": "Aug 14, 2001",
-    "workDateISO": "2001-08-15T00:00:00.000Z"
+    "workDateISO": "2001-08-15T00:00:00.000Z",
+    "cluster": "methodology-refinement"
   },
   {
     "title": "The Documentation Debt That Almost Buried Our Breakthrough (And the Systematic Approach That Saved It)",
@@ -1221,7 +1288,8 @@
     "slug": "the-documentation-debt-that-almost-buried-our-breakthrough-and-the-systematic-approach-that-saved-it",
     "category": "building",
     "workDate": "Aug 14, 2001",
-    "workDateISO": "2001-08-15T00:00:00.000Z"
+    "workDateISO": "2001-08-15T00:00:00.000Z",
+    "cluster": "methodology-refinement"
   },
   {
     "title": "Weekend Sprint Chronicles: Six Infrastructure Victories and a Dead Show",
@@ -1239,7 +1307,8 @@
     "slug": "weekend-sprint-chronicles-six-infrastructure-victories-and-a-dead-show",
     "category": "building",
     "workDate": "Aug 13, 2001",
-    "workDateISO": "2001-08-14T00:00:00.000Z"
+    "workDateISO": "2001-08-14T00:00:00.000Z",
+    "cluster": "methodology-refinement"
   },
   {
     "title": "When Your Tools Stop Crying Wolf",
@@ -1257,7 +1326,8 @@
     "slug": "when-your-tools-stop-crying-wolf",
     "category": "building",
     "workDate": "Aug 12, 2001",
-    "workDateISO": "2001-08-13T00:00:00.000Z"
+    "workDateISO": "2001-08-13T00:00:00.000Z",
+    "cluster": "methodology-refinement"
   },
   {
     "title": "The 71-Minute Cascade Killer: When Systematic Methodology Meets Production Reality",
@@ -1275,7 +1345,8 @@
     "slug": "the-71-minute-cascade-killer-when-systematic-methodology-meets-production-reality",
     "category": "building",
     "workDate": "Aug 12, 2001",
-    "workDateISO": "2001-08-13T00:00:00.000Z"
+    "workDateISO": "2001-08-13T00:00:00.000Z",
+    "cluster": "methodology-refinement"
   },
   {
     "title": "Saturday Reflection: Why Ethics Can't Be an Afterthought",
@@ -1293,7 +1364,8 @@
     "slug": "saturday-reflection-why-ethics-cant-be-an-afterthought",
     "category": "building",
     "workDate": "Aug 12, 2001",
-    "workDateISO": "2001-08-13T00:00:00.000Z"
+    "workDateISO": "2001-08-13T00:00:00.000Z",
+    "cluster": "methodology-refinement"
   },
   {
     "title": "The Day We Didn't Just Integrate Slack But Started Incorporating Spatial Intelligence",
@@ -1311,7 +1383,8 @@
     "slug": "the-day-we-didnt-just-integrate-slack-but-started-incorporating-spatial-intelligence",
     "category": "building",
     "workDate": "Aug 11, 2001",
-    "workDateISO": "2001-08-12T00:00:00.000Z"
+    "workDateISO": "2001-08-12T00:00:00.000Z",
+    "cluster": "methodology-refinement"
   },
   {
     "title": "To Live Outside the Law You Must Be Honest: Debugging an Unorthodox Slack Integration",
@@ -1329,7 +1402,8 @@
     "slug": "to-live-outside-the-law-you-must-be-honest-debugging-an-unorthodox-slack-integration",
     "category": "building",
     "workDate": "Aug 11, 2001",
-    "workDateISO": "2001-08-12T00:00:00.000Z"
+    "workDateISO": "2001-08-12T00:00:00.000Z",
+    "cluster": "methodology-refinement"
   },
   {
     "title": "The Day Crisis Became Methodology: From Runaway Workflows to Historic Productivity",
@@ -1347,7 +1421,8 @@
     "slug": "the-day-crisis-became-methodology-from-runaway-workflows-to-historic-productivity",
     "category": "building",
     "workDate": "Aug 11, 2001",
-    "workDateISO": "2001-08-12T00:00:00.000Z"
+    "workDateISO": "2001-08-12T00:00:00.000Z",
+    "cluster": "methodology-refinement"
   },
   {
     "title": "8/6 revised from 7/22: When 300 Files Work as One: The Perfect Storm",
@@ -1365,7 +1440,8 @@
     "slug": "86-revised-from-722",
     "category": "building",
     "workDate": "Aug 10, 2001",
-    "workDateISO": "2001-08-11T00:00:00.000Z"
+    "workDateISO": "2001-08-11T00:00:00.000Z",
+    "cluster": "methodology-refinement"
   },
   {
     "title": "The Accidental Methodology Stress Test: When Success Creates Its Own Blind Spots",
@@ -1383,7 +1459,8 @@
     "slug": "the-accidental-methodology-stress-test-when-success-creates-its-own-blind-spots",
     "category": "building",
     "workDate": "Aug 10, 2001",
-    "workDateISO": "2001-08-11T00:00:00.000Z"
+    "workDateISO": "2001-08-11T00:00:00.000Z",
+    "cluster": "methodology-refinement"
   },
   {
     "title": "Engineering Excellence in a Gödel-Incomplete Universe",
@@ -1401,7 +1478,8 @@
     "slug": "engineering-excellence-in-a-gdel-incomplete-universe",
     "category": "building",
     "workDate": "Aug 10, 2001",
-    "workDateISO": "2001-08-11T00:00:00.000Z"
+    "workDateISO": "2001-08-11T00:00:00.000Z",
+    "cluster": "methodology-refinement"
   },
   {
     "title": "The Demo That Broke (And Why That's Perfect)",
@@ -1419,7 +1497,8 @@
     "slug": "the-demo-that-broke-and-why",
     "category": "insight",
     "workDate": "Aug 9, 2001",
-    "workDateISO": "2001-08-10T00:00:00.000Z"
+    "workDateISO": "2001-08-10T00:00:00.000Z",
+    "cluster": "methodology-refinement"
   },
   {
     "title": "Always Keep Something Showable: Demo Infrastructure for Hyperfast Development",
@@ -1437,7 +1516,8 @@
     "slug": "always-keep-something-showable-demo-infrastructure-for-hyperfast-development",
     "category": "insight",
     "workDate": "Aug 8, 2001",
-    "workDateISO": "2001-08-09T00:00:00.000Z"
+    "workDateISO": "2001-08-09T00:00:00.000Z",
+    "cluster": "methodology-refinement"
   },
   {
     "title": "When the Bugs Lead You Home",
@@ -1455,7 +1535,8 @@
     "slug": "when-the-bugs-lead-you-home",
     "category": "building",
     "workDate": "Aug 7, 2001",
-    "workDateISO": "2001-08-08T00:00:00.000Z"
+    "workDateISO": "2001-08-08T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "The Bug That Made Us Smarter",
@@ -1473,7 +1554,8 @@
     "slug": "the-bug-that-made-us-smarter",
     "category": "building",
     "workDate": "Aug 7, 2001",
-    "workDateISO": "2001-08-08T00:00:00.000Z"
+    "workDateISO": "2001-08-08T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "When Your Tests Pass But Your App Fails",
@@ -1491,7 +1573,8 @@
     "slug": "when-your-tests-pass-but-your-app-fails",
     "category": "building",
     "workDate": "Aug 7, 2001",
-    "workDateISO": "2001-08-08T00:00:00.000Z"
+    "workDateISO": "2001-08-08T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "The Day We Finished Next Week's Work in One Day",
@@ -1509,7 +1592,8 @@
     "slug": "the-day-we-finished-next-weeks-work-in-one-day",
     "category": "building",
     "workDate": "Aug 6, 2001",
-    "workDateISO": "2001-08-07T00:00:00.000Z"
+    "workDateISO": "2001-08-07T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "The Final Leap: When Prototype Becomes Production Tool (mislabeld as The Day We)",
@@ -1527,7 +1611,8 @@
     "slug": "the-final-leap-when-prototype-becomes-production-tool-mislabeld-as-the-day-we",
     "category": "building",
     "workDate": "Aug 6, 2001",
-    "workDateISO": "2001-08-07T00:00:00.000Z"
+    "workDateISO": "2001-08-07T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "PTSD (Patched-Test Stress Disorder) and Other Development Culture Innovations",
@@ -1545,7 +1630,8 @@
     "slug": "ptsd-patched-test-stress-disorder-and-other-development-culture-innovations",
     "category": "building",
     "workDate": "Aug 6, 2001",
-    "workDateISO": "2001-08-07T00:00:00.000Z"
+    "workDateISO": "2001-08-07T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "7/16 chat: The 40-minute miracle: how two AI agents achieved 642x performance in one session",
@@ -1563,7 +1649,8 @@
     "slug": "716-chat-2",
     "category": "building",
     "workDate": "Aug 5, 2001",
-    "workDateISO": "2001-08-06T00:00:00.000Z"
+    "workDateISO": "2001-08-06T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "7/20 chat: When Your Infrastructure Gets Smarter Than Your Tests",
@@ -1581,7 +1668,8 @@
     "slug": "720-chat-2",
     "category": "building",
     "workDate": "Aug 5, 2001",
-    "workDateISO": "2001-08-06T00:00:00.000Z"
+    "workDateISO": "2001-08-06T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "7/20 chat: The Foundation Sprint: Why We Clean House Before Building New Rooms",
@@ -1599,7 +1687,8 @@
     "slug": "720-chat",
     "category": "building",
     "workDate": "Aug 5, 2001",
-    "workDateISO": "2001-08-06T00:00:00.000Z"
+    "workDateISO": "2001-08-06T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "7/12-7/13, 7/15 chat: When the Pupil Outsmarts the Teacher?",
@@ -1617,7 +1706,8 @@
     "slug": "712-713-715-chat-2",
     "category": "building",
     "workDate": "Aug 4, 2001",
-    "workDateISO": "2001-08-05T00:00:00.000Z"
+    "workDateISO": "2001-08-05T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "7/16 chat: When Your Tests Lie: A Victory Disguised as Crisis",
@@ -1635,7 +1725,8 @@
     "slug": "716-chat-3",
     "category": "building",
     "workDate": "Aug 4, 2001",
-    "workDateISO": "2001-08-05T00:00:00.000Z"
+    "workDateISO": "2001-08-05T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "7/16 chat: The 5-Minute Day: When TDD Meets AI-Assisted Development",
@@ -1653,7 +1744,8 @@
     "slug": "716-chat",
     "category": "building",
     "workDate": "Aug 4, 2001",
-    "workDateISO": "2001-08-05T00:00:00.000Z"
+    "workDateISO": "2001-08-05T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "From 2% to 87%: The Great Test Suite Recovery",
@@ -1671,7 +1763,8 @@
     "slug": "from-2-to-87",
     "category": "building",
     "workDate": "Aug 3, 2001",
-    "workDateISO": "2001-08-04T00:00:00.000Z"
+    "workDateISO": "2001-08-04T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "The Action Humanizer: Teaching AI to Speak Human",
@@ -1689,7 +1782,8 @@
     "slug": "the-action-humanizer",
     "category": "building",
     "workDate": "Aug 3, 2001",
-    "workDateISO": "2001-08-04T00:00:00.000Z"
+    "workDateISO": "2001-08-04T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "7/12-7/13, 7/15 chat: From Broken Tests to Perfect Architecture: The Great Cleanup of July 14",
@@ -1707,7 +1801,8 @@
     "slug": "712-713-715-chat",
     "category": "building",
     "workDate": "Aug 3, 2001",
-    "workDateISO": "2001-08-04T00:00:00.000Z"
+    "workDateISO": "2001-08-04T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "Chasing Rabbits (A Debugging Story)",
@@ -1725,7 +1820,8 @@
     "slug": "chasing-rabbits-a-debugging-story",
     "category": "building",
     "workDate": "Aug 2, 2001",
-    "workDateISO": "2001-08-03T00:00:00.000Z"
+    "workDateISO": "2001-08-03T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "When Your AI Writes 500 Lines of Boilerplate (And Why That's Actually Useful)",
@@ -1743,7 +1839,8 @@
     "slug": "when-your-ai-writes-500-lines",
     "category": "building",
     "workDate": "Aug 2, 2001",
-    "workDateISO": "2001-08-03T00:00:00.000Z"
+    "workDateISO": "2001-08-03T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "When Claude Took a Break (And Gemini Stepped In)",
@@ -1761,7 +1858,8 @@
     "slug": "when-claude-took-a-break-and-gemini-stepped-in",
     "category": "building",
     "workDate": "Aug 1, 2001",
-    "workDateISO": "2001-08-02T00:00:00.000Z"
+    "workDateISO": "2001-08-02T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "The Demo That Needed Documentation",
@@ -1779,7 +1877,8 @@
     "slug": "the-demo-that-needed-documentation",
     "category": "building",
     "workDate": "Aug 1, 2001",
-    "workDateISO": "2001-08-02T00:00:00.000Z"
+    "workDateISO": "2001-08-02T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "Two-Fisted Coding: Wrangling Robot Programmers When You're Just a PM",
@@ -1797,7 +1896,8 @@
     "slug": "two-fisted-coding-wrangling-robot-programmers-when-youre-just-a-pm",
     "category": "building",
     "workDate": "Jul 31, 2001",
-    "workDateISO": "2001-08-01T00:00:00.000Z"
+    "workDateISO": "2001-08-01T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "Three Bugs, One Victory: The Day We Finally Shipped PM-011",
@@ -1815,7 +1915,8 @@
     "slug": "three-bugs-one-victory",
     "category": "building",
     "workDate": "Jul 31, 2001",
-    "workDateISO": "2001-08-01T00:00:00.000Z"
+    "workDateISO": "2001-08-01T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "The AI Detective Squad: When Three Agents Solve One Mystery",
@@ -1833,7 +1934,8 @@
     "slug": "the-ai-detective-squad",
     "category": "building",
     "workDate": "Jul 31, 2001",
-    "workDateISO": "2001-08-01T00:00:00.000Z"
+    "workDateISO": "2001-08-01T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "The Zeno's Paradox of Debugging: A Weekend with Piper Morgan",
@@ -1851,7 +1953,8 @@
     "slug": "the-zenos-paradox-of-debugging",
     "category": "building",
     "workDate": "Jul 30, 2001",
-    "workDateISO": "2001-07-31T00:00:00.000Z"
+    "workDateISO": "2001-07-31T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "The Debugging Cascade: A 90-Minute Journey Through Integration Hell",
@@ -1869,7 +1972,8 @@
     "slug": "the-debugging-cascade",
     "category": "building",
     "workDate": "Jul 30, 2001",
-    "workDateISO": "2001-07-31T00:00:00.000Z"
+    "workDateISO": "2001-07-31T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "The Coordination Tax: When Copy-Paste Becomes Your Biggest Bottleneck",
@@ -1887,7 +1991,8 @@
     "slug": "the-coordination-tax",
     "category": "building",
     "workDate": "Jul 30, 2001",
-    "workDateISO": "2001-07-31T00:00:00.000Z"
+    "workDateISO": "2001-07-31T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "The Real Bugs Live in the UI (A Testing Reality Check)",
@@ -1905,7 +2010,8 @@
     "slug": "the-real-bugs-live-in-the",
     "category": "building",
     "workDate": "Jul 29, 2001",
-    "workDateISO": "2001-07-30T00:00:00.000Z"
+    "workDateISO": "2001-07-30T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "The Day We Stopped Fighting the System",
@@ -1923,7 +2029,8 @@
     "slug": "the-day-we-stopped-fighting-the",
     "category": "building",
     "workDate": "Jul 29, 2001",
-    "workDateISO": "2001-07-30T00:00:00.000Z"
+    "workDateISO": "2001-07-30T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "The Day We Taught Piper to Summarize (Almost)",
@@ -1941,7 +2048,8 @@
     "slug": "the-day-we-taught-piper-to",
     "category": "building",
     "workDate": "Jul 29, 2001",
-    "workDateISO": "2001-07-30T00:00:00.000Z"
+    "workDateISO": "2001-07-30T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "When Your Tests Tell You What Your Code Should Do",
@@ -1959,7 +2067,8 @@
     "slug": "when-your-tests-tell-you-what-your-code-should-do",
     "category": "building",
     "workDate": "Jul 28, 2001",
-    "workDateISO": "2001-07-29T00:00:00.000Z"
+    "workDateISO": "2001-07-29T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "Following Your Own Patterns",
@@ -1977,7 +2086,8 @@
     "slug": "following-your-own-patterns",
     "category": "building",
     "workDate": "Jul 28, 2001",
-    "workDateISO": "2001-07-29T00:00:00.000Z"
+    "workDateISO": "2001-07-29T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "Battle-Testing GitHub Integration: When Recovery Becomes Learning",
@@ -1995,7 +2105,8 @@
     "slug": "battle-testing-github-integration-when-recovery-becomes-learning",
     "category": "building",
     "workDate": "Jul 28, 2001",
-    "workDateISO": "2001-07-29T00:00:00.000Z"
+    "workDateISO": "2001-07-29T00:00:00.000Z",
+    "cluster": "production-transformation"
   },
   {
     "title": "The 48-hour rollercoaster: from working tests to ‘Failed attempt’ and back to ‘LIFE SAVER !!!”’",
@@ -2013,7 +2124,8 @@
     "slug": "the-48-hour-rollercoaster",
     "category": "building",
     "workDate": "Jul 27, 2001",
-    "workDateISO": "2001-07-28T00:00:00.000Z"
+    "workDateISO": "2001-07-28T00:00:00.000Z",
+    "cluster": "complexity-reckoning"
   },
   {
     "title": "The Technical Debt Reckoning",
@@ -2031,7 +2143,8 @@
     "slug": "the-technical-debt-reckoning",
     "category": "building",
     "workDate": "Jul 27, 2001",
-    "workDateISO": "2001-07-28T00:00:00.000Z"
+    "workDateISO": "2001-07-28T00:00:00.000Z",
+    "cluster": "complexity-reckoning"
   },
   {
     "title": "Keeping Your AI Project on Track: Lessons from Building a Product Management Assistant",
@@ -2049,7 +2162,8 @@
     "slug": "keeping-your-ai-project-on-track-lessons-from-building-a-product-management-assistant",
     "category": "insight",
     "workDate": "Jul 26, 2001",
-    "workDateISO": "2001-07-27T00:00:00.000Z"
+    "workDateISO": "2001-07-27T00:00:00.000Z",
+    "cluster": "complexity-reckoning"
   },
   {
     "title": "Naming Piper Morgan",
@@ -2067,7 +2181,8 @@
     "slug": "naming-piper-morgan",
     "category": "insight",
     "workDate": "Jul 25, 2001",
-    "workDateISO": "2001-07-26T00:00:00.000Z"
+    "workDateISO": "2001-07-26T00:00:00.000Z",
+    "cluster": "complexity-reckoning"
   },
   {
     "title": "When Your Docs Lie",
@@ -2085,7 +2200,8 @@
     "slug": "when-your-docs-lie",
     "category": "building",
     "workDate": "Jul 24, 2001",
-    "workDateISO": "2001-07-25T00:00:00.000Z"
+    "workDateISO": "2001-07-25T00:00:00.000Z",
+    "cluster": "complexity-reckoning"
   },
   {
     "title": "When TDD Saves Your Architecture",
@@ -2103,7 +2219,8 @@
     "slug": "when-tdd-saves-your-architecture",
     "category": "building",
     "workDate": "Jul 24, 2001",
-    "workDateISO": "2001-07-25T00:00:00.000Z"
+    "workDateISO": "2001-07-25T00:00:00.000Z",
+    "cluster": "complexity-reckoning"
   },
   {
     "title": "Digging Out of the Complexity Hole",
@@ -2121,7 +2238,8 @@
     "slug": "digging-out-of-the-complexity-hole",
     "category": "building",
     "workDate": "Jul 23, 2001",
-    "workDateISO": "2001-07-24T00:00:00.000Z"
+    "workDateISO": "2001-07-24T00:00:00.000Z",
+    "cluster": "complexity-reckoning"
   },
   {
     "title": "Successful Prototype Syndrome",
@@ -2139,7 +2257,8 @@
     "slug": "successful-prototype-syndrome",
     "category": "building",
     "workDate": "Jul 23, 2001",
-    "workDateISO": "2001-07-24T00:00:00.000Z"
+    "workDateISO": "2001-07-24T00:00:00.000Z",
+    "cluster": "complexity-reckoning"
   },
   {
     "title": "When Architecture Principles Trump Tactical Convenience",
@@ -2157,7 +2276,8 @@
     "slug": "when-architecture-principles-trump-tactical-convenience",
     "category": "building",
     "workDate": "Jul 22, 2001",
-    "workDateISO": "2001-07-23T00:00:00.000Z"
+    "workDateISO": "2001-07-23T00:00:00.000Z",
+    "cluster": "complexity-reckoning"
   },
   {
     "title": "When Multiple AIs Can Still Drift Together",
@@ -2175,7 +2295,8 @@
     "slug": "when-multiple-ais-can-still-drift-together",
     "category": "building",
     "workDate": "Jul 21, 2001",
-    "workDateISO": "2001-07-22T00:00:00.000Z"
+    "workDateISO": "2001-07-22T00:00:00.000Z",
+    "cluster": "complexity-reckoning"
   },
   {
     "title": "The Integration Reality Check",
@@ -2193,7 +2314,8 @@
     "slug": "the-integration-reality-check",
     "category": "building",
     "workDate": "Jul 20, 2001",
-    "workDateISO": "2001-07-21T00:00:00.000Z"
+    "workDateISO": "2001-07-21T00:00:00.000Z",
+    "cluster": "foundation-building"
   },
   {
     "title": "Day Zero or Deja Zero: When Chaos Became a Claude Project",
@@ -2211,7 +2333,8 @@
     "slug": "day-zero-or-deja-zero",
     "category": "insight",
     "workDate": "Jul 19, 2001",
-    "workDateISO": "2001-07-20T00:00:00.000Z"
+    "workDateISO": "2001-07-20T00:00:00.000Z",
+    "cluster": "foundation-building"
   },
   {
     "title": "7/16 to 7/18: The Cascade Effect: How Testing the UI Led to Architectural Discoveries",
@@ -2229,7 +2352,8 @@
     "slug": "716-to-718",
     "category": "building",
     "workDate": "Jul 18, 2001",
-    "workDateISO": "2001-07-19T00:00:00.000Z"
+    "workDateISO": "2001-07-19T00:00:00.000Z",
+    "cluster": "foundation-building"
   },
   {
     "title": "From Architecture Drift to Working AI",
@@ -2247,7 +2371,8 @@
     "slug": "from-architecture-drift-to-working-ai",
     "category": "building",
     "workDate": "Jul 17, 2001",
-    "workDateISO": "2001-07-18T00:00:00.000Z"
+    "workDateISO": "2001-07-18T00:00:00.000Z",
+    "cluster": "foundation-building"
   },
   {
     "title": "Small Scripts Win: Building Knowledge That Actually Knows Things",
@@ -2265,7 +2390,8 @@
     "slug": "small-scripts-win",
     "category": "building",
     "workDate": "Jul 16, 2001",
-    "workDateISO": "2001-07-17T00:00:00.000Z"
+    "workDateISO": "2001-07-17T00:00:00.000Z",
+    "cluster": "foundation-building"
   },
   {
     "title": "Modeling What PMs Do for Piper",
@@ -2283,7 +2409,8 @@
     "slug": "modeling-what-pms-do-for-piper",
     "category": "building",
     "workDate": "Jul 15, 2001",
-    "workDateISO": "2001-07-16T00:00:00.000Z"
+    "workDateISO": "2001-07-16T00:00:00.000Z",
+    "cluster": "foundation-building"
   },
   {
     "title": "Persistence of Memory: AI Can't Learn without It",
@@ -2301,7 +2428,8 @@
     "slug": "persistence-of-memory",
     "category": "building",
     "workDate": "Jul 14, 2001",
-    "workDateISO": "2001-07-15T00:00:00.000Z"
+    "workDateISO": "2001-07-15T00:00:00.000Z",
+    "cluster": "foundation-building"
   },
   {
     "title": "Building AI That Actually Thinks About Product Work",
@@ -2319,7 +2447,8 @@
     "slug": "building-ai-that-actually-thinks-about",
     "category": "building",
     "workDate": "Jul 13, 2001",
-    "workDateISO": "2001-07-14T00:00:00.000Z"
+    "workDateISO": "2001-07-14T00:00:00.000Z",
+    "cluster": "foundation-building"
   },
   {
     "title": "The Question That Started Everything",
@@ -2337,7 +2466,8 @@
     "slug": "the-question-that-started-everything",
     "category": "insight",
     "workDate": "Jul 12, 2001",
-    "workDateISO": "2001-07-13T00:00:00.000Z"
+    "workDateISO": "2001-07-13T00:00:00.000Z",
+    "cluster": "foundation-building"
   },
   {
     "title": "From Task Executor to Problem Solver (comes befofe Domain-First Dev)",
@@ -2355,7 +2485,8 @@
     "slug": "from-task-executor-to-problem-solver",
     "category": "building",
     "workDate": "Jul 11, 2001",
-    "workDateISO": "2001-07-12T00:00:00.000Z"
+    "workDateISO": "2001-07-12T00:00:00.000Z",
+    "cluster": "foundation-building"
   },
   {
     "title": "The Architectural Reckoning: When Three Experts Agree You Should Start Over",
@@ -2373,7 +2504,8 @@
     "slug": "the-architectural-reckoning",
     "category": "insight",
     "workDate": "Jul 10, 2001",
-    "workDateISO": "2001-07-11T00:00:00.000Z"
+    "workDateISO": "2001-07-11T00:00:00.000Z",
+    "cluster": "foundation-building"
   },
   {
     "title": "The $0 Bootstrap Stack: Building Enterprise Infrastructure for Free (With Upgrade Paths)",
@@ -2391,7 +2523,8 @@
     "slug": "the-0-bootstrap-stack",
     "category": "building",
     "workDate": "Jul 10, 2001",
-    "workDateISO": "2001-07-11T00:00:00.000Z"
+    "workDateISO": "2001-07-11T00:00:00.000Z",
+    "cluster": "foundation-building"
   },
   {
     "title": "Domain-First Development: Actually Building What We Designed",
@@ -2409,7 +2542,8 @@
     "slug": "domain-first-development",
     "category": "building",
     "workDate": "Jul 10, 2001",
-    "workDateISO": "2001-07-11T00:00:00.000Z"
+    "workDateISO": "2001-07-11T00:00:00.000Z",
+    "cluster": "foundation-building"
   },
   {
     "title": "From CLI to GitHub Integration: When Prototypes Meet Real Workflows",
@@ -2427,7 +2561,8 @@
     "slug": "from-cli-to-github-integration",
     "category": "building",
     "workDate": "Jul 9, 2001",
-    "workDateISO": "2001-07-10T00:00:00.000Z"
+    "workDateISO": "2001-07-10T00:00:00.000Z",
+    "cluster": "foundation-building"
   },
   {
     "title": "From Research Question to Working Prototype: Building an AI PM Assistant from Scratch",
@@ -2445,7 +2580,8 @@
     "slug": "from-research-question-to-working-prototype",
     "category": "building",
     "workDate": "Jul 8, 2001",
-    "workDateISO": "2001-07-09T00:00:00.000Z"
+    "workDateISO": "2001-07-09T00:00:00.000Z",
+    "cluster": "foundation-building"
   },
   {
     "title": "The RAG Revelation: When Your Prototype Answers Back",
@@ -2463,7 +2599,8 @@
     "slug": "the-rag-revelation",
     "category": "building",
     "workDate": "Jul 7, 2001",
-    "workDateISO": "2001-07-08T00:00:00.000Z"
+    "workDateISO": "2001-07-08T00:00:00.000Z",
+    "cluster": "foundation-building"
   },
   {
     "title": "Bidirectional Intelligence: Teaching AI to Critique, Not Just Create",
@@ -2481,7 +2618,8 @@
     "slug": "bidirectional-intelligence",
     "category": "building",
     "workDate": "Jul 6, 2001",
-    "workDateISO": "2001-07-07T00:00:00.000Z"
+    "workDateISO": "2001-07-07T00:00:00.000Z",
+    "cluster": "foundation-building"
   },
   {
     "title": "Taking Stock: The Value of Pausing to Document and Plan",
@@ -2499,7 +2637,8 @@
     "slug": "taking-stock",
     "category": "insight",
     "workDate": "Jul 5, 2001",
-    "workDateISO": "2001-07-06T00:00:00.000Z"
+    "workDateISO": "2001-07-06T00:00:00.000Z",
+    "cluster": "genesis-architecture"
   },
   {
     "title": "From Scaffolding to Flight: Before the Training Wheels Come Off",
@@ -2517,7 +2656,8 @@
     "slug": "from-scaffolding-to-flight",
     "category": "building",
     "workDate": "Jul 4, 2001",
-    "workDateISO": "2001-07-05T00:00:00.000Z"
+    "workDateISO": "2001-07-05T00:00:00.000Z",
+    "cluster": "genesis-architecture"
   },
   {
     "title": "Knowledge Hierarchies and Dependency Hell",
@@ -2535,7 +2675,8 @@
     "slug": "knowledge-hierarchies-and-dependency-hell",
     "category": "building",
     "workDate": "Jul 3, 2001",
-    "workDateISO": "2001-07-04T00:00:00.000Z"
+    "workDateISO": "2001-07-04T00:00:00.000Z",
+    "cluster": "genesis-architecture"
   },
   {
     "title": "The Learning Infrastructure Gambit",
@@ -2553,7 +2694,8 @@
     "slug": "the-learning-infrastructure-gambit",
     "category": "building",
     "workDate": "Jul 2, 2001",
-    "workDateISO": "2001-07-03T00:00:00.000Z"
+    "workDateISO": "2001-07-03T00:00:00.000Z",
+    "cluster": "genesis-architecture"
   },
   {
     "title": "The Great Rebuild: Starting Over When Starting Over Is the Only Option",
@@ -2571,7 +2713,8 @@
     "slug": "the-great-rebuild",
     "category": "insight",
     "workDate": "Jul 1, 2001",
-    "workDateISO": "2001-07-02T00:00:00.000Z"
+    "workDateISO": "2001-07-02T00:00:00.000Z",
+    "cluster": "genesis-architecture"
   },
   {
     "title": "The PM Who Automated Himself (Or at Least Tried To)",
@@ -2589,7 +2732,8 @@
     "slug": "the-pm-who-automated-himself-or",
     "category": "building",
     "workDate": "Jun 30, 2001",
-    "workDateISO": "2001-07-01T00:00:00.000Z"
+    "workDateISO": "2001-07-01T00:00:00.000Z",
+    "cluster": "genesis-architecture"
   },
   {
     "title": "The Demo That Killed the Prototype",
@@ -2607,7 +2751,8 @@
     "slug": "the-demo-that-killed-the-prototype",
     "category": "insight",
     "workDate": "Jun 30, 2001",
-    "workDateISO": "2001-07-01T00:00:00.000Z"
+    "workDateISO": "2001-07-01T00:00:00.000Z",
+    "cluster": "genesis-architecture"
   },
   {
     "title": "Integration Reveals All: How Building File Analysis Exposed Hidden Architecture",
@@ -2625,7 +2770,8 @@
     "slug": "integration-reveals-all",
     "category": "building",
     "workDate": "Jun 26, 2001",
-    "workDateISO": "2001-06-27T00:00:00.000Z"
+    "workDateISO": "2001-06-27T00:00:00.000Z",
+    "cluster": "genesis-architecture"
   },
   {
     "title": "Why the Future of AI UX is Orchestration, Not Intelligence",
@@ -2647,7 +2793,8 @@
     "slug": "why-the-future-of-ai-ux",
     "workDate": "Oct 11, 2025",
     "workDateISO": "2025-10-12T00:00:00.000Z",
-    "category": "insight"
+    "category": "insight",
+    "cluster": "reflection-evolution"
   },
   {
     "title": "Systemic Kindness: Building Methodology That Feels Supportive",
@@ -2669,7 +2816,8 @@
     "slug": "systemic-kindness",
     "workDate": "Oct 10, 2025",
     "workDateISO": "2025-10-11T00:00:00.000Z",
-    "category": "insight"
+    "category": "insight",
+    "cluster": "reflection-evolution"
   },
   {
     "title": "Three Days to Production: When Steady Momentum Beats Racing Ahead",
@@ -2691,7 +2839,8 @@
     "slug": "three-days-to-production-when-steady-momentum-beats-racing-ahead",
     "workDate": "Oct 9, 2025",
     "workDateISO": "2025-10-10T00:00:00.000Z",
-    "category": "building"
+    "category": "building",
+    "cluster": "reflection-evolution"
   },
   {
     "title": "The Day Everything Went Right: When Fast Means Unbroken",
@@ -2713,7 +2862,8 @@
     "slug": "the-day-everything-went-right-when-fast-means-unbroken",
     "workDate": "Oct 9, 2025",
     "workDateISO": "2025-10-10T00:00:00.000Z",
-    "category": "building"
+    "category": "building",
+    "cluster": "reflection-evolution"
   },
   {
     "title": "The Plugin Architecture Nobody Asked For",
@@ -2735,7 +2885,8 @@
     "slug": "the-plugin-architecture-nobody-asked-for",
     "workDate": "Oct 8, 2025",
     "workDateISO": "2025-10-09T00:00:00.000Z",
-    "category": "building"
+    "category": "building",
+    "cluster": "reflection-evolution"
   },
   {
     "title": "The Third Pattern: When Investigation Rewrites Your Assumptions",
@@ -2757,7 +2908,8 @@
     "slug": "the-third-pattern-when-investigation-rewrites-your-assumptions",
     "workDate": "Oct 7, 2025",
     "workDateISO": "2025-10-08T00:00:00.000Z",
-    "category": "building"
+    "category": "building",
+    "cluster": "reflection-evolution"
   },
   {
     "title": "Think Like a Time Lord and Stop Watching the Clock",
@@ -2779,7 +2931,8 @@
     "slug": "think-like-a-time-lord-and-stop-watching-the-clock",
     "workDate": "Oct 6, 2025",
     "workDateISO": "2025-10-07T00:00:00.000Z",
-    "category": "building"
+    "category": "building",
+    "cluster": "reflection-evolution"
   },
   {
     "title": "Solving the 80% Pattern",
@@ -2801,7 +2954,8 @@
     "slug": "solving-the-80-pattern",
     "workDate": "Oct 5, 2025",
     "workDateISO": "2025-10-06T00:00:00.000Z",
-    "category": "building"
+    "category": "building",
+    "cluster": "reflection-evolution"
   },
   {
     "title": "Three Integrations Walk Into a Bar",
@@ -2823,7 +2977,8 @@
     "slug": "three-integrations-walk-into-a-bar",
     "workDate": "Oct 5, 2025",
     "workDateISO": "2025-10-06T00:00:00.000Z",
-    "category": "building"
+    "category": "building",
+    "cluster": "reflection-evolution"
   },
   {
     "title": "I Asked Claude to Find Every Time I Dropped the Ball (And What We Learned)",
@@ -2845,6 +3000,7 @@
     "slug": "i-asked-claude-to-find-every-time-i-dropped-the-ball-and-what-we-learned",
     "workDate": "Oct 4, 2025",
     "workDateISO": "2025-10-05T00:00:00.000Z",
-    "category": "insight"
+    "category": "insight",
+    "cluster": "reflection-evolution"
   }
 ]
