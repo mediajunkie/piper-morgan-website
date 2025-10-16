@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
 import { generateSEOMetadata } from '@/lib/domain-utils';
 import { Hero } from '@/components';
 import BlogContent from './BlogContent';
@@ -40,7 +41,9 @@ export default function BlogPage() {
         align="center"
       />
 
-      <BlogContent currentPage={1} />
+      <Suspense fallback={<div className="text-center py-16">Loading blog posts...</div>}>
+        <BlogContent currentPage={1} />
+      </Suspense>
     </div>
   );
 }

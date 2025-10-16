@@ -1,9 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { BlogPostCard, NewsletterSignup, NewsletterErrorBoundary, BlogErrorBoundary, CTAButton, Pagination } from '@/components';
 import mediumPosts from '@/data/medium-posts.json';
 import { sortByWorkDate } from '@/lib/blog-utils';
+import { EPISODES, getEpisodeCounts } from '@/lib/episodes';
 
 const POSTS_PER_PAGE = 24;
 
@@ -15,15 +17,41 @@ interface BlogContentProps {
 }
 
 type Category = 'all' | 'building' | 'insight';
+type ViewMode = 'list' | 'grouped';
 
 export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
+  // Get URL search parameters
+  const searchParams = useSearchParams();
+
   // Phase 7: Category filtering state
   const [selectedCategory, setSelectedCategory] = useState<Category>('all');
 
-  // Filter posts by category
-  const filteredPosts = selectedCategory === 'all'
-    ? allSortedPosts
-    : allSortedPosts.filter((post: any) => post.category === selectedCategory);
+  // Phase 9: Episode filtering state
+  const [selectedEpisode, setSelectedEpisode] = useState<string>('all');
+
+  // Phase 9: View mode state (list vs. grouped by episode)
+  const [viewMode, setViewMode] = useState<ViewMode>('list');
+
+  // Handle URL parameters for episode filtering
+  useEffect(() => {
+    const episodeParam = searchParams.get('episode');
+    if (episodeParam && EPISODES.some(ep => ep.slug === episodeParam)) {
+      setSelectedEpisode(episodeParam);
+    }
+  }, [searchParams]);
+
+  // Filter posts by category and episode
+  let filteredPosts = allSortedPosts;
+
+  // Apply category filter
+  if (selectedCategory !== 'all') {
+    filteredPosts = filteredPosts.filter((post: any) => post.category === selectedCategory);
+  }
+
+  // Apply episode filter
+  if (selectedEpisode !== 'all') {
+    filteredPosts = filteredPosts.filter((post: any) => post.cluster === selectedEpisode);
+  }
 
   // Calculate pagination (using filtered posts)
   const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
@@ -35,6 +63,9 @@ export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
   // Category counts
   const buildingCount = allSortedPosts.filter((p: any) => p.category === 'building').length;
   const insightCount = allSortedPosts.filter((p: any) => p.category === 'insight').length;
+
+  // Episode counts
+  const episodeCounts = getEpisodeCounts(allSortedPosts);
 
   return (
     <>
@@ -88,30 +119,155 @@ export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
                   </button>
                 </div>
 
+                {/* Phase 9: Episode Filter & View Controls */}
+                <div className="mb-6 space-y-4">
+                  {/* Episode Filter and View Mode Toggle */}
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                    <div className="flex-1">
+                      <label htmlFor="episode-filter" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                        Filter by Episode
+                      </label>
+                      <select
+                        id="episode-filter"
+                        value={selectedEpisode}
+                        onChange={(e) => setSelectedEpisode(e.target.value)}
+                        className="w-full md:w-auto px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-teal focus:border-transparent"
+                      >
+                        <option value="all">All Episodes ({allSortedPosts.length} posts)</option>
+                        {EPISODES.map((episode) => (
+                          <option key={episode.slug} value={episode.slug}>
+                            {episode.shortName} ({episodeCounts[episode.slug] || 0} posts)
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    <div className="flex gap-2">
+                      {/* View Mode Toggle */}
+                      <div className="flex items-center gap-2 px-3 py-2 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                        <button
+                          onClick={() => setViewMode('list')}
+                          className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
+                            viewMode === 'list'
+                              ? 'bg-white dark:bg-gray-700 text-primary-teal-text shadow-sm'
+                              : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+                          }`}
+                          title="List view"
+                        >
+                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                          </svg>
+                        </button>
+                        <button
+                          onClick={() => setViewMode('grouped')}
+                          className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
+                            viewMode === 'grouped'
+                              ? 'bg-white dark:bg-gray-700 text-primary-teal-text shadow-sm'
+                              : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+                          }`}
+                          title="Grouped by episode"
+                        >
+                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                          </svg>
+                        </button>
+                      </div>
+
+                      <CTAButton
+                        href="/blog/episodes"
+                        variant="outline"
+                        size="sm"
+                      >
+                        View All Episodes
+                      </CTAButton>
+                    </div>
+                  </div>
+                </div>
+
                 {/* Post Count Indicator */}
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   Showing {startIndex + 1}-{Math.min(endIndex, totalPosts)} of {totalPosts} {selectedCategory !== 'all' ? `${selectedCategory} ` : ''}posts
                 </p>
               </div>
 
-              {/* Posts Grid - Dynamically loaded from RSS */}
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                {paginatedPosts.map((post: any, index: number) => (
-                  <BlogPostCard
-                    key={post.guid || index}
-                    title={post.title}
-                    excerpt={post.excerpt}
-                    publishedAt={post.publishedAt}
-                    workDate={post.workDate}
-                    readingTime={post.readingTime}
-                    tags={post.tags}
-                    href={post.url}
-                    author={post.author}
-                    featuredImage={post.featuredImage}
-                    category={post.category}
-                  />
-                ))}
-              </div>
+              {/* Posts Display - List or Grouped View */}
+              {viewMode === 'list' ? (
+                /* List View - Grid of posts */
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                  {paginatedPosts.map((post: any, index: number) => (
+                    <BlogPostCard
+                      key={post.guid || index}
+                      title={post.title}
+                      excerpt={post.excerpt}
+                      publishedAt={post.publishedAt}
+                      workDate={post.workDate}
+                      readingTime={post.readingTime}
+                      tags={post.tags}
+                      href={post.url}
+                      author={post.author}
+                      featuredImage={post.featuredImage}
+                      category={post.category}
+                      cluster={post.cluster}
+                    />
+                  ))}
+                </div>
+              ) : (
+                /* Grouped View - Posts grouped by episode */
+                <div className="space-y-12 mb-12">
+                  {EPISODES.map((episode) => {
+                    const episodePosts = filteredPosts.filter((post: any) => post.cluster === episode.slug);
+                    if (episodePosts.length === 0) return null;
+
+                    const episodeNum = EPISODES.indexOf(episode) + 1;
+
+                    return (
+                      <div key={episode.slug} className="space-y-6">
+                        {/* Episode Header */}
+                        <div className="border-l-4 border-primary-teal pl-6 py-2">
+                          <div className="flex items-center gap-3 mb-2">
+                            <span className="inline-block px-3 py-1 bg-primary-teal/10 dark:bg-primary-teal/20 text-primary-teal-text font-semibold rounded-full text-sm">
+                              Episode {episodeNum}
+                            </span>
+                            <h3 className="text-2xl font-bold text-text-dark">
+                              {episode.shortName}
+                            </h3>
+                          </div>
+                          <p className="text-text-light text-sm mb-2">
+                            {episode.description}
+                          </p>
+                          <p className="text-sm text-gray-600 dark:text-gray-400">
+                            {new Date(episode.startDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                            {' - '}
+                            {new Date(episode.endDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                            {' • '}
+                            {episodePosts.length} {episodePosts.length === 1 ? 'post' : 'posts'}
+                          </p>
+                        </div>
+
+                        {/* Episode Posts Grid */}
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                          {episodePosts.map((post: any, index: number) => (
+                            <BlogPostCard
+                              key={post.guid || index}
+                              title={post.title}
+                              excerpt={post.excerpt}
+                              publishedAt={post.publishedAt}
+                              workDate={post.workDate}
+                              readingTime={post.readingTime}
+                              tags={post.tags}
+                              href={post.url}
+                              author={post.author}
+                              featuredImage={post.featuredImage}
+                              category={post.category}
+                              cluster={post.cluster}
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
 
               {/* Pagination */}
               <Pagination

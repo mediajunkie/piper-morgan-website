@@ -1,4 +1,5 @@
 import { trackBlogClick } from '@/lib/analytics';
+import { getEpisode, getEpisodeNumber } from '@/lib/episodes';
 
 export interface BlogPostCardProps {
   /** Blog post title */
@@ -11,6 +12,8 @@ export interface BlogPostCardProps {
   workDate?: string;
   /** Category (building or insight) - Phase 7 */
   category?: 'building' | 'insight';
+  /** Episode/cluster slug - Phase 9 */
+  cluster?: string;
   /** Estimated reading time */
   readingTime?: string;
   /** Post tags */
@@ -35,6 +38,7 @@ export function BlogPostCard({
   publishedAt,
   workDate,
   category,
+  cluster,
   readingTime,
   tags = [],
   href,
@@ -78,16 +82,30 @@ export function BlogPostCard({
         )}
 
         <div className={`flex flex-col flex-grow ${compact ? 'p-6' : 'p-8'}`}>
-          {/* Category Badge (Phase 7) */}
-          {category && (
-            <div className="mb-3">
-              <span className={`inline-block px-3 py-1 text-xs font-medium rounded-full ${
-                category === 'building'
-                  ? 'bg-primary-teal/10 dark:bg-primary-teal/20 text-primary-teal-text dark:text-primary-teal'
-                  : 'bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange'
-              }`}>
-                {category === 'building' ? 'Building' : 'Insight'}
-              </span>
+          {/* Metadata Badges (Phase 7 & 9) */}
+          {(category || cluster) && (
+            <div className="mb-3 flex flex-wrap gap-2">
+              {/* Category Badge */}
+              {category && (
+                <span className={`inline-block px-3 py-1 text-xs font-medium rounded-full ${
+                  category === 'building'
+                    ? 'bg-primary-teal/10 dark:bg-primary-teal/20 text-primary-teal-text dark:text-primary-teal'
+                    : 'bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange'
+                }`}>
+                  {category === 'building' ? 'Building' : 'Insight'}
+                </span>
+              )}
+
+              {/* Episode Badge (Phase 9) */}
+              {cluster && (() => {
+                const episode = getEpisode(cluster);
+                const episodeNum = getEpisodeNumber(cluster);
+                return episode ? (
+                  <span className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300">
+                    Episode {episodeNum}
+                  </span>
+                ) : null;
+              })()}
             </div>
           )}
 
