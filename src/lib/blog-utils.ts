@@ -86,3 +86,29 @@ export function filterByWorkDateRange(
     return workDate >= start && workDate <= end;
   });
 }
+
+/**
+ * Get featured post for homepage (Phase 10)
+ *
+ * Hybrid selection strategy:
+ * 1. Primary: Return post with featured=true in CSV
+ * 2. Fallback: Return most recent post by work date
+ *
+ * @param posts - Array of blog posts
+ * @returns Featured post or null
+ */
+export function getFeaturedPost(posts: any[]): any | null {
+  if (!posts || posts.length === 0) {
+    return null;
+  }
+
+  // Check for manually featured post
+  const manuallyFeatured = posts.find(post => post.featured === true);
+  if (manuallyFeatured) {
+    return manuallyFeatured;
+  }
+
+  // Fallback: Return most recent by work date
+  const sorted = sortByWorkDate(posts, 'desc');
+  return sorted[0] || null;
+}

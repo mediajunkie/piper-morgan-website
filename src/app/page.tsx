@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { generateSEOMetadata } from "@/lib/domain-utils";
-import { Hero } from "@/components";
+import { Hero, FeaturedPost } from "@/components";
+import { getFeaturedPost } from "@/lib/blog-utils";
+import mediumPosts from "@/data/medium-posts.json";
 import siteStats from "@/data/site-stats.json";
 
 const seoData = generateSEOMetadata(
@@ -21,6 +23,9 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  // Get featured post (hybrid: manual selection or fallback to most recent)
+  const featuredPost = getFeaturedPost(mediumPosts as any[]);
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -55,6 +60,22 @@ export default function Home() {
         background="gradient"
         align="center"
       />
+
+      {/* Featured Article Section */}
+      {featuredPost && (
+        <FeaturedPost
+          title={featuredPost.title}
+          excerpt={featuredPost.excerpt}
+          workDate={featuredPost.workDate}
+          publishedAt={featuredPost.publishedAt || featuredPost.pubDate}
+          category={featuredPost.category}
+          cluster={featuredPost.cluster}
+          readingTime={featuredPost.readingTime}
+          href={featuredPost.url}
+          author={featuredPost.author}
+          featuredImage={featuredPost.featuredImage}
+        />
+      )}
 
       {/* What You're Following Section */}
       <section className="py-16 md:py-20">

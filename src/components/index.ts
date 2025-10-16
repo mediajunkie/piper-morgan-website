@@ -18,6 +18,8 @@ export type { MethodologyDiagramProps } from './molecules/MethodologyDiagram';
 export { NewsletterSignup } from './organisms/NewsletterSignup';
 export type { NewsletterSignupProps } from './organisms/NewsletterSignup';
 export { BlogPostContent } from './organisms/BlogPostContent';
+export { FeaturedPost } from './organisms/FeaturedPost';
+export type { FeaturedPostProps } from './organisms/FeaturedPost';
 
 // Layout Components
 export { default as Navigation } from './Navigation';

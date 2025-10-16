@@ -120,7 +120,8 @@ const updatedPosts = posts.map((post, idx) => {
     url: `/blog/${metadata.slug}`,
     chatDate: metadata.chatDate || undefined,
     category: metadata.category,
-    cluster: metadata.cluster || undefined
+    cluster: metadata.cluster || undefined,
+    featured: metadata.featured === 'true' || metadata.featured === true
   };
 });
 
