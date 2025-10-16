@@ -60,9 +60,9 @@ export function parseBlogMetadataCsv(csvContent) {
   return dataLines.map((line, index) => {
     const fields = parseCsvRow(line);
 
-    if (fields.length !== 10) {
+    if (fields.length !== 11) {
       throw new Error(
-        `Invalid CSV row ${index + 2}: expected 10 fields, got ${fields.length}`
+        `Invalid CSV row ${index + 2}: expected 11 fields, got ${fields.length}`
       );
     }
 
@@ -70,13 +70,14 @@ export function parseBlogMetadataCsv(csvContent) {
       slug: fields[0].trim(),
       hashId: fields[1].trim(),
       title: fields[2].trim(),
-      imageSlug: fields[3].trim(),
-      workDate: fields[4].trim(),
-      pubDate: fields[5].trim(),
-      category: fields[6].trim(),
-      cluster: fields[7].trim(),
-      featured: fields[8].trim(),
-      notes: fields[9].trim(),
+      chatDate: fields[3].trim(),
+      imageSlug: fields[4].trim(),
+      workDate: fields[5].trim(),
+      pubDate: fields[6].trim(),
+      category: fields[7].trim(),
+      cluster: fields[8].trim(),
+      featured: fields[9].trim(),
+      notes: fields[10].trim(),
     };
   });
 }

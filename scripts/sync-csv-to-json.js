@@ -59,10 +59,11 @@ console.log(`📊 CSV: ${csvData.length} entries\n`);
 const metadataMap = new Map();
 csvData.forEach(line => {
   const fields = parseCsvRow(line);
-  const [slug, hashId, title, imageSlug, workDate, pubDate, category, cluster, featured, notes] = fields;
+  const [slug, hashId, title, chatDate, imageSlug, workDate, pubDate, category, cluster, featured, notes] = fields;
 
   metadataMap.set(hashId, {
     slug,
+    chatDate,
     category,
     cluster,
     featured,
@@ -99,6 +100,7 @@ const updatedPosts = posts.map((post, idx) => {
   if (post.slug !== metadata.slug) changes.push('slug');
   if (post.category !== metadata.category) changes.push('category');
   if (post.cluster !== metadata.cluster) changes.push('cluster');
+  if (post.chatDate !== metadata.chatDate) changes.push('chatDate');
 
   if (changes.length > 0) {
     updates.push({
@@ -116,6 +118,7 @@ const updatedPosts = posts.map((post, idx) => {
     ...post,
     slug: metadata.slug,
     url: `/blog/${metadata.slug}`,
+    chatDate: metadata.chatDate || undefined,
     category: metadata.category,
     cluster: metadata.cluster || undefined
   };

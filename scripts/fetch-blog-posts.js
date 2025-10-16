@@ -330,7 +330,13 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
         rssPost.url = `/blog/${metadata.slug}`; // Update URL to slug-based
         console.log(`  🏷️  Merged CSV metadata: slug="${metadata.slug}"`);
       } else {
-        console.log(`  ⚠️  No CSV metadata found for ${rssPost.postId}`);
+        // WARNING: No CSV metadata - this post needs to be added to blog-metadata.csv
+        console.log(`  ⚠️  NO CSV METADATA FOUND for ${rssPost.postId}`);
+        console.log(`  ⚠️  This post will NOT have a local URL until added to CSV`);
+        console.log(`  ⚠️  Medium URL will be used as fallback: ${rssPost.url}`);
+
+        // Mark this post as needing CSV metadata
+        rssPost.needsMetadata = true;
       }
 
       // Clean up temporary fields (keep fullContent for blog-content.json update)
@@ -378,6 +384,11 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
         post.slug = metadata.slug;
         post.url = `/blog/${metadata.slug}`; // Set slug-based URL
 
+        // Add chat date from CSV (when article draft was created)
+        if (metadata.chatDate) {
+          post.chatDate = metadata.chatDate;
+        }
+
         // Add work date from CSV (Phase 6: Work Date Chronology)
         if (metadata.workDate) {
           post.workDate = formatDate(metadata.workDate);
@@ -407,6 +418,26 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
   console.log(`   - ${imagesDownloaded} images downloaded`);
   console.log(`   - ${csvMergedCount} posts merged with CSV metadata`);
   console.log(`   - ${mergedPosts.length} total posts in archive`);
+
+  // Check for posts missing CSV metadata (will have Medium URLs)
+  const postsNeedingMetadata = mergedPosts.filter(post =>
+    post.url && (post.url.includes('medium.com') || post.url.startsWith('http'))
+  );
+
+  if (postsNeedingMetadata.length > 0) {
+    console.log(`\n⚠️  WARNING: ${postsNeedingMetadata.length} post(s) missing CSV metadata`);
+    console.log(`   These posts will link to Medium instead of local pages:\n`);
+
+    postsNeedingMetadata.forEach(post => {
+      const hashId = extractPostId(post.guid || post.link || post.url);
+      console.log(`   - ${hashId}: ${post.title.substring(0, 60)}...`);
+    });
+
+    console.log(`\n   📝 Action Required:`);
+    console.log(`   1. Add these posts to data/blog-metadata.csv`);
+    console.log(`   2. Run: node scripts/sync-csv-to-json.js`);
+    console.log(`   3. Or use scripts/add-missing-posts.js for automation\n`);
+  }
 
   return mergedPosts;
 }
