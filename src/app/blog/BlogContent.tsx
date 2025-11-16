@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
 import { BlogPostCard, NewsletterSignup, NewsletterErrorBoundary, BlogErrorBoundary, CTAButton, Pagination } from '@/components';
 import mediumPosts from '@/data/medium-posts.json';
 import { sortByWorkDate } from '@/lib/blog-utils';
@@ -19,9 +19,10 @@ interface BlogContentProps {
 type Category = 'all' | 'building' | 'insight';
 type ViewMode = 'list' | 'grouped';
 
-export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
-  // Get URL search parameters
+export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogContentProps) {
+  // Get URL search parameters and router
   const searchParams = useSearchParams();
+  const router = useRouter();
 
   // Phase 7: Category filtering state
   const [selectedCategory, setSelectedCategory] = useState<Category>('all');
@@ -32,13 +33,28 @@ export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
   // Phase 9: View mode state (list vs. grouped by episode)
   const [viewMode, setViewMode] = useState<ViewMode>('list');
 
-  // Handle URL parameters for episode filtering
+  // Handle URL parameters for filtering and pagination
   useEffect(() => {
+    // Category filter
+    const categoryParam = searchParams.get('category');
+    if (categoryParam && (categoryParam === 'building' || categoryParam === 'insight')) {
+      setSelectedCategory(categoryParam as Category);
+    } else if (!categoryParam) {
+      setSelectedCategory('all');
+    }
+
+    // Episode filter
     const episodeParam = searchParams.get('episode');
     if (episodeParam && EPISODES.some(ep => ep.slug === episodeParam)) {
       setSelectedEpisode(episodeParam);
+    } else if (!episodeParam) {
+      setSelectedEpisode('all');
     }
   }, [searchParams]);
+
+  // Read current page from URL params (falls back to prop for route-based pagination)
+  const pageParam = searchParams.get('page');
+  const currentPage = pageParam ? parseInt(pageParam, 10) : currentPageProp;
 
   // Filter posts by category and episode
   let filteredPosts = allSortedPosts;
@@ -67,6 +83,25 @@ export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
   // Episode counts
   const episodeCounts = getEpisodeCounts(allSortedPosts);
 
+  // Helper function to update filters in URL
+  const updateFilter = (filterType: 'category' | 'episode', value: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+
+    // Update or remove the filter param
+    if (value === 'all') {
+      params.delete(filterType);
+    } else {
+      params.set(filterType, value);
+    }
+
+    // Reset to page 1 when changing filters
+    params.delete('page');
+
+    // Navigate to updated URL
+    const queryString = params.toString();
+    router.push(queryString ? `/blog?${queryString}` : '/blog');
+  };
+
   return (
     <>
       {/* Recent Posts Section with Error Boundary */}
@@ -85,7 +120,7 @@ export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
                 {/* Phase 7: Category Filter Tabs */}
                 <div className="flex flex-wrap gap-3 mb-6">
                   <button
-                    onClick={() => setSelectedCategory('all')}
+                    onClick={() => updateFilter('category', 'all')}
                     style={selectedCategory === 'all' ? { backgroundColor: '#2DD4BF', color: '#FFFFFF' } : undefined}
                     className={`px-8 py-3 rounded-full font-medium transition-all duration-200 ${
                       selectedCategory === 'all'
@@ -96,7 +131,7 @@ export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
                     All Posts ({allSortedPosts.length})
                   </button>
                   <button
-                    onClick={() => setSelectedCategory('building')}
+                    onClick={() => updateFilter('category', 'building')}
                     style={selectedCategory === 'building' ? { backgroundColor: '#2DD4BF', color: '#FFFFFF' } : undefined}
                     className={`px-8 py-3 rounded-full font-medium transition-all duration-200 ${
                       selectedCategory === 'building'
@@ -107,7 +142,7 @@ export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
                     Building ({buildingCount})
                   </button>
                   <button
-                    onClick={() => setSelectedCategory('insight')}
+                    onClick={() => updateFilter('category', 'insight')}
                     style={selectedCategory === 'insight' ? { backgroundColor: '#2DD4BF', color: '#FFFFFF' } : undefined}
                     className={`px-8 py-3 rounded-full font-medium transition-all duration-200 ${
                       selectedCategory === 'insight'
@@ -130,7 +165,7 @@ export default function BlogContent({ currentPage = 1 }: BlogContentProps) {
                       <select
                         id="episode-filter"
                         value={selectedEpisode}
-                        onChange={(e) => setSelectedEpisode(e.target.value)}
+                        onChange={(e) => updateFilter('episode', e.target.value)}
                         className="w-full md:w-auto px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-teal focus:border-transparent"
                       >
                         <option value="all">All Episodes ({allSortedPosts.length} posts)</option>
