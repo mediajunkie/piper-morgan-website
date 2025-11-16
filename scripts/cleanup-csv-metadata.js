@@ -100,14 +100,47 @@ function hasDatePrefix(slug) {
   return /^[0-9]{1,3}-/.test(slug) || /^[0-9]{1,3}-[0-9]{1,3}-[0-9]{1,3}-/.test(slug);
 }
 
+// Parse CSV line (handles quoted fields with commas)
+function parseCSVLine(line) {
+  const values = [];
+  let current = '';
+  let inQuotes = false;
+
+  for (let i = 0; i < line.length; i++) {
+    const char = line[i];
+    const nextChar = line[i + 1];
+
+    if (char === '"') {
+      if (inQuotes && nextChar === '"') {
+        // Escaped quote
+        current += '"';
+        i++; // Skip next quote
+      } else {
+        // Toggle quote state
+        inQuotes = !inQuotes;
+      }
+    } else if (char === ',' && !inQuotes) {
+      // End of field
+      values.push(current);
+      current = '';
+    } else {
+      current += char;
+    }
+  }
+
+  // Add last field
+  values.push(current);
+  return values;
+}
+
 // Parse CSV
 function parseCSV(content) {
   const lines = content.split('\n').filter(line => line.trim());
-  const headers = lines[0].split(',');
+  const headers = parseCSVLine(lines[0]);
   const entries = [];
 
   for (let i = 1; i < lines.length; i++) {
-    const values = lines[i].split(',');
+    const values = parseCSVLine(lines[i]);
     const entry = {};
     headers.forEach((header, index) => {
       entry[header] = values[index] || '';
@@ -118,12 +151,27 @@ function parseCSV(content) {
   return { headers, entries };
 }
 
+// Format CSV field (quote if contains comma, quote, or newline)
+function formatCSVField(value) {
+  if (!value) return '';
+
+  const needsQuoting = value.includes(',') || value.includes('"') || value.includes('\n');
+
+  if (needsQuoting) {
+    // Escape quotes by doubling them
+    const escaped = value.replace(/"/g, '""');
+    return `"${escaped}"`;
+  }
+
+  return value;
+}
+
 // Format CSV
 function formatCSV(headers, entries) {
   const rows = [headers.join(',')];
 
   entries.forEach(entry => {
-    const values = headers.map(header => entry[header] || '');
+    const values = headers.map(header => formatCSVField(entry[header] || ''));
     rows.push(values.join(','));
   });
 
