@@ -72,4 +72,28 @@
 
 ---
 
+### 8:15 AM - CSV Validation Results
+
+**User Actions Completed**:
+- ✅ Checked out branch `claude/read-content-01NG5ZjR1PRDs14bxPSyL3U3`
+- ✅ Ran `node scripts/validate-csv.js`
+
+**Validation Results**:
+- **64 errors**: Mostly missing imageSlug (60), plus 4 posts missing category/cluster
+- **118 warnings**: Date format issues (91 chatDate in M/D/YYYY) + missing image files
+
+**Issue Found**: Cleanup script used CommonJS in ESM project
+- **Fix Applied**: Converted `cleanup-csv-metadata.js` to ESM (import statements)
+- **Status**: Ready for user to run
+
+**User Clarifications on Episodes**:
+- Episodes = coherent work periods with related work/habits (subjective)
+- Should balance natural story breaks with reasonable distribution
+- Current status: After "Great Refactor" → "Core Functionality" → **Alpha milestone** (testers onboarding)
+- production-transformation definitely needs splitting (30 posts is 2.7× average)
+- Wants local agent to suggest episode chunking based on blog content
+- **Priority order**: Fix CSV data → Episode refactoring → Navigation debugging
+
+---
+
 *Log continues below...*

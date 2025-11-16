@@ -15,9 +15,12 @@
  *   node scripts/cleanup-csv-metadata.js --auto     # Auto-fix without prompts
  */
 
-const fs = require('fs');
-const path = require('path');
-const readline = require('readline');
+import fs from 'fs';
+import path from 'path';
+import readline from 'readline';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Configuration
 const CSV_PATH = path.join(process.cwd(), 'data', 'blog-metadata.csv');
