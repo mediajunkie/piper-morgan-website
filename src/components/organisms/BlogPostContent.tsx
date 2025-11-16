@@ -60,6 +60,17 @@ export function BlogPostContent({ post, content }: BlogPostContentProps) {
   const cleanContent = (html: string): string => {
     let cleaned = html;
 
+    // Remove the title heading (Medium includes it at the start of content)
+    // Try to match h1, h2, or h3 tags containing the post title
+    // Escape special regex characters in the title
+    const escapedTitle = post.title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    // Match heading tags with the title (allows for some HTML inside)
+    cleaned = cleaned.replace(new RegExp(`<h[123][^>]*>\\s*${escapedTitle}\\s*<\\/h[123]>`, 'i'), '');
+    // Also try matching with any HTML tags stripped from title
+    const titleText = post.title.replace(/<[^>]+>/g, '');
+    const escapedTitleText = titleText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    cleaned = cleaned.replace(new RegExp(`<h[123][^>]*>\\s*${escapedTitleText}\\s*<\\/h[123]>`, 'i'), '');
+
     // Remove the featured image from content (we show it in header)
     // Medium export: <figure data-is-featured="true">...</figure>
     cleaned = cleaned.replace(/<figure[^>]*data-is-featured="true"[^>]*>[\s\S]*?<\/figure>/i, '');

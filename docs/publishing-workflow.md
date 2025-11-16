@@ -228,18 +228,33 @@ ls public/assets/blog-images/robot-*.webp
 ### Dates
 
 **Formats**:
-- `YYYY-MM-DD` (preferred for workDate/chatDate)
+- `YYYY-MM-DD` (required for workDate/chatDate)
 - `YYYY-MM-DDTHH:MM:SS` (ISO 8601, used for pubDate)
 
 **Examples**:
 - `workDate`: `2025-11-15`
 - `pubDate`: `2025-11-16T10:30:00`
-- `chatDate`: `2025-11-14`
+- `chatDate`: `2025-10-04`
 
 **Date Types**:
-- `workDate`: When content was actually created (canonical for ordering)
-- `pubDate`: When published on Medium
-- `chatDate`: When article draft was created (optional, often extracted from title prefix)
+- **workDate** (REQUIRED): The date when the actual work discussed in the article happened
+  - **NOT** when the post was written
+  - Used for chronological ordering and episode assignment
+  - Example: If post discusses work from Nov 10, use `2025-11-10` even if published Nov 16
+
+- **pubDate** (REQUIRED): When the post was published on Medium
+  - Auto-populated from RSS feed
+  - ISO 8601 format with time
+
+- **chatDate** (OPTIONAL): The starting date of the Comms Director chat containing the draft
+  - Used for tracking which chat session holds the draft
+  - May be same across multiple posts if using a long-running chat
+  - Example: If using same chat since Oct 4, use `2025-10-04` for all posts drafted there
+
+**Common Patterns**:
+- Multiple posts may share the same `chatDate` if using one ongoing chat
+- `workDate` should vary based on when the work actually occurred
+- Posts can have `workDate` much earlier than `pubDate` (normal for batched publishing)
 
 ### Featured
 

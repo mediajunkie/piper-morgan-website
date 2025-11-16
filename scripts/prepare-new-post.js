@@ -242,15 +242,17 @@ async function collectMetadata(post, availableImages, episodes, existingSlugs) {
   metadata.cluster = episodeAnswer.trim();
 
   // 5. Work date
-  console.log('\n5️⃣  Work date (when content was created):');
+  console.log('\n5️⃣  Work date (when the work discussed in the article happened):');
   const pubDate = post.publishedAt || post.pubDate;
   console.log(`   Published: ${pubDate}`);
+  console.log(`   NOTE: This is NOT when you wrote the post - it's when the work occurred`);
 
   const workDateAnswer = await question(`   Work date (YYYY-MM-DD, or Enter to use pub date): `);
   metadata.workDate = workDateAnswer.trim() || pubDate.split('T')[0];
 
   // 6. Chat date (optional)
-  console.log('\n6️⃣  Chat date (optional - when draft created):');
+  console.log('\n6️⃣  Chat date (optional - start date of Comms Director chat with draft):');
+  console.log(`   NOTE: Multiple posts can share same chatDate if using one long-running chat`);
   const chatDateAnswer = await question('   Chat date (YYYY-MM-DD, or Enter to skip): ');
   metadata.chatDate = chatDateAnswer.trim();
 
