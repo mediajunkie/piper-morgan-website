@@ -96,4 +96,50 @@
 
 ---
 
+### 9:05 AM - Navigation Bug Fix (Quick Win!)
+
+**Bug Confirmed**:
+- User test case: Filter by "Insights" → page 2 → filter lost
+- Same issue with episode filters
+- Root cause: Pagination didn't preserve URL params
+
+**Fix Applied** (2 files changed):
+
+**1. Pagination.tsx**
+- Added `'use client'` and `useSearchParams()`
+- `getPageUrl()` now preserves all search params
+- Example: `/blog?category=insight&page=2`
+
+**2. BlogContent.tsx**
+- Created `updateFilter()` helper for URL-based filtering
+- Category buttons now push to `/blog?category=X`
+- Episode dropdown pushes to `/blog?episode=Y`
+- Reads `page`, `category`, `episode` from URL on mount
+- Auto-resets to page 1 when filters change
+
+**Result**: ✅ Filters + pagination now work together correctly
+
+**Technical Approach**:
+- Migrated from route-based (`/blog/page/2`) to query-based (`?page=2`) for filter compatibility
+- Route-based URLs still work via fallback prop (backward compatible)
+- Uses URLSearchParams API for clean param management
+
+---
+
+### 9:15 AM - CSV Parser Fix
+
+**Critical Issue Found**: CSV parser broke on titles with commas
+- Example: "When Problems Get Smaller, Not Fewer"
+- Cleanup script was using naive `split(',')`
+- Resulted in column misalignment
+
+**Fix Applied**:
+- Added proper CSV parsing with quoted field support
+- `parseCSVLine()` handles quotes and escaping correctly
+- `formatCSVField()` quotes fields containing commas
+
+**Status**: ✅ Cleanup script ready to run
+
+---
+
 *Log continues below...*
