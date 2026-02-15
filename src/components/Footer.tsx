@@ -8,10 +8,11 @@ interface FooterLink {
 
 const footerLinks: FooterLink[] = [
   { label: 'Home', href: '/' },
-  { label: 'How It Works', href: '/how-it-works' },
-  { label: 'What We\'ve Learned', href: '/what-weve-learned' },
-  { label: 'Journey', href: '/blog' },
+  { label: 'Try Piper', href: '/try' },
   { label: 'Get Involved', href: '/get-involved' },
+  { label: 'Journey', href: '/blog' },
+  { label: 'Methodology', href: '/methodology' },
+  { label: 'About', href: '/about' },
 ];
 
 const developerLinks: FooterLink[] = [
@@ -105,10 +106,10 @@ export default function Footer() {
 
             <div className="mt-6">
               <Link
-                href="/get-involved"
+                href="/try"
                 className="inline-block bg-primary-teal text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-teal-600 transition-colors"
               >
-                Get Involved
+                Try Piper
               </Link>
             </div>
           </div>
