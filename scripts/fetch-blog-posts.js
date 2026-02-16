@@ -425,18 +425,33 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
   );
 
   if (postsNeedingMetadata.length > 0) {
-    console.log(`\n⚠️  WARNING: ${postsNeedingMetadata.length} post(s) missing CSV metadata`);
-    console.log(`   These posts will link to Medium instead of local pages:\n`);
+    console.log('\n' + '='.repeat(60));
+    console.log(`⚠️  WARNING: ${postsNeedingMetadata.length} POST(S) MISSING CSV METADATA`);
+    console.log('='.repeat(60));
+    console.log('\nThese posts will link to Medium instead of local pages:\n');
 
     postsNeedingMetadata.forEach(post => {
       const hashId = extractPostId(post.guid || post.link || post.url);
-      console.log(`   - ${hashId}: ${post.title.substring(0, 60)}...`);
+      console.log(`   - ${hashId}: "${post.title.substring(0, 60)}..."`);
     });
 
-    console.log(`\n   📝 Action Required:`);
-    console.log(`   1. Add these posts to data/blog-metadata.csv`);
-    console.log(`   2. Run: node scripts/sync-csv-to-json.js`);
-    console.log(`   3. Or use scripts/add-missing-posts.js for automation\n`);
+    console.log('\n' + '='.repeat(60));
+    console.log('📝 ACTION REQUIRED:');
+    console.log('='.repeat(60));
+    console.log('\nOption A: Interactive Helper (Recommended)');
+    console.log('   node scripts/prepare-new-post.js');
+    console.log('   → Guides you through adding metadata for each post');
+    console.log('   → Auto-generates slugs');
+    console.log('   → Prevents errors and duplicates');
+    console.log('\nOption B: Manual CSV Editing');
+    console.log('   1. Edit data/blog-metadata.csv');
+    console.log('   2. Add entries for missing posts (see docs/publishing-workflow.md)');
+    console.log('\nAfter Adding Metadata:');
+    console.log('   1. Validate: node scripts/validate-csv.js');
+    console.log('   2. Sync: node scripts/sync-csv-to-json.js');
+    console.log('   3. Test: npm run dev');
+    console.log('\nSee docs/publishing-workflow.md for complete guide.\n');
+    console.log('='.repeat(60) + '\n');
   }
 
   return mergedPosts;

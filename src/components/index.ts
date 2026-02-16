@@ -3,6 +3,7 @@ export { CTAButton } from './atoms/CTAButton';
 export type { CTAButtonProps } from './atoms/CTAButton';
 export { ThemeToggle } from './atoms/ThemeToggle';
 export type { ThemeToggleProps } from './atoms/ThemeToggle';
+export { ClientRedirect } from './atoms/ClientRedirect';
 
 // Molecules
 export { Hero } from './molecules/Hero';

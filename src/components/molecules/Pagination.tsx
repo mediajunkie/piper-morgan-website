@@ -1,4 +1,7 @@
+'use client';
+
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 
 export interface PaginationProps {
   /** Current page number (1-indexed) */
@@ -17,16 +20,28 @@ export function Pagination({
   baseUrl = '/blog',
   className = '',
 }: PaginationProps) {
+  const searchParams = useSearchParams();
+
   // Don't show pagination if there's only one page
   if (totalPages <= 1) {
     return null;
   }
 
   const getPageUrl = (page: number) => {
+    // Preserve existing search params (category, episode filters)
+    const params = new URLSearchParams(searchParams.toString());
+
+    // Remove page param for page 1 (clean URLs)
     if (page === 1) {
-      return baseUrl;
+      params.delete('page');
+    } else {
+      params.set('page', page.toString());
     }
-    return `${baseUrl}/page/${page}`;
+
+    const queryString = params.toString();
+    const base = baseUrl || '/blog';
+
+    return queryString ? `${base}?${queryString}` : base;
   };
 
   // Generate page numbers to display
