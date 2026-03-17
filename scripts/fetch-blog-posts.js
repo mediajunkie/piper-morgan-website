@@ -371,6 +371,58 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
     }
   }
 
+  // Add blog-first posts: CSV entries with a slug that aren't in RSS
+  // These are posts published directly to the blog, not sourced from Medium
+  const BLOG_CONTENT_PATH = path.join(__dirname, '..', 'src/data/blog-content.json');
+  let blogContent = {};
+  try {
+    if (fs.existsSync(BLOG_CONTENT_PATH)) {
+      blogContent = JSON.parse(fs.readFileSync(BLOG_CONTENT_PATH, 'utf-8'));
+    }
+  } catch (err) {
+    console.log('  ⚠️  Could not load blog-content.json for blog-first posts');
+  }
+
+  let blogFirstCount = 0;
+  csvMetadata.forEach(meta => {
+    if (!meta.slug || !meta.hashId) return;
+    if (existingMap.has(meta.hashId)) return; // Already have this post from RSS
+
+    // Build a post entry from CSV metadata + blog-content.json
+    const content = blogContent[meta.hashId];
+    if (!content) return; // No content available, skip
+
+    // Extract excerpt from HTML content
+    const excerpt = extractExcerpt(content.content || '', meta.title || '');
+
+    const post = {
+      title: meta.title || content.title || 'Untitled',
+      excerpt: excerpt,
+      url: `/blog/${meta.slug}`,
+      slug: meta.slug,
+      publishedAt: formatDate(meta.pubDate || meta.workDate),
+      publishedAtISO: dateToISO(meta.pubDate || meta.workDate),
+      author: 'christian crumlish',
+      readingTime: '5 min read',
+      tags: ['Building in Public'],
+      guid: `blog-first-${meta.hashId}`,
+      featuredImage: meta.imageSlug ? `/assets/blog-images/${meta.imageSlug}` : null,
+      thumbnail: meta.imageSlug ? `/assets/blog-images/${meta.imageSlug}` : null,
+      category: meta.category || '',
+      cluster: meta.cluster || '',
+      workDate: meta.workDate ? formatDate(meta.workDate) : '',
+      workDateISO: meta.workDate ? dateToISO(meta.workDate) : '',
+    };
+
+    existingMap.set(meta.hashId, post);
+    blogFirstCount++;
+    console.log(`  📝 Blog-first post added: "${meta.title}"`);
+  });
+
+  if (blogFirstCount > 0) {
+    console.log(`\n🌐 Added ${blogFirstCount} blog-first post(s) from CSV`);
+  }
+
   // Convert map back to array
   const mergedPosts = Array.from(existingMap.values());
 
