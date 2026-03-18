@@ -14,14 +14,14 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const EXPORT_DIR = path.join(__dirname, '..', 'src/app/blog/export/medium-export-534348c5a9432cd96669a7c3053fb8bbbc4074f000b1826a3de8aae16a5efbf6/posts');
+const EXPORT_DIR = path.join(__dirname, '..', 'data/medium-export/posts');
 const POSTS_JSON = path.join(__dirname, '..', 'src/data/medium-posts.json');
 const OUTPUT_JSON = path.join(__dirname, '..', 'src/data/blog-content.json');
 
 // Extract post ID from filename
 function extractPostIdFromFilename(filename) {
   // Format: YYYY-MM-DD_title-slug-POSTID.html
-  const match = filename.match(/([a-f0-9]{12})\.html$/);
+  const match = filename.match(/([a-f0-9]{11,12})\.html$/);
   return match ? match[1] : null;
 }
 
