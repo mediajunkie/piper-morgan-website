@@ -3041,7 +3041,7 @@
   {
     "title": "Accepting Architectural Limits: When 67% Is Complete",
     "excerpt": "“I hope Paul Ford approves of this visual metaphor”November 3Early morning. P1 sprint. Issue #283: Error message humanization. Make technical errors conversational.Goal: Humanize 6 error types for better UX.By 11:15 AM: 4 error types working perfectly. 2 blocked by FastAPI architecture.The situat...",
-    "url": "https://medium.com/building-piper-morgan/accepting-architectural-limits-when-67-is-complete-4fca723f4f49?source=rss----982e21163f8b---4",
+    "url": "/blog/accepting-architectural-limits",
     "publishedAt": "Mar 15, 2026",
     "publishedAtISO": "Sun, 15 Mar 2026 16:42:16 GMT",
     "author": "christian crumlish",
@@ -3055,12 +3055,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/accepting-architectural-limits-when-67-is-complete-4fca723f4f49?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "accepting-architectural-limits",
+    "workDate": "Mar 14, 2026",
+    "workDateISO": "2026-03-15T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Architectural Astronauting",
     "excerpt": "“Isn’t that kind of overkill?”November 22The security epic needed role-based access control. The traditional approach was well-documented: role tables, permission tables, role-permission junction tables, user-role assignments. Clean relational design. Proper normalization. Industry standard.It wo...",
-    "url": "https://medium.com/building-piper-morgan/architectural-astronauting-829225e64e3f?source=rss----982e21163f8b---4",
+    "url": "/blog/architectural-astronauting",
     "publishedAt": "Mar 14, 2026",
     "publishedAtISO": "Sat, 14 Mar 2026 18:38:41 GMT",
     "author": "christian crumlish",
@@ -3074,12 +3078,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/architectural-astronauting-829225e64e3f?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "architectural-astronauting",
+    "workDate": "Mar 13, 2026",
+    "workDateISO": "2026-03-14T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "When the Tokens Vanished",
     "excerpt": "“I sure hope Paul Ford approves of this visual metaphor!”February 25The Slack integration had been “working” for months.Users could connect their Slack accounts. The OAuth flow completed successfully. Tokens were stored. The system reported success at every step.But nobody could actually use Slac...",
-    "url": "https://medium.com/building-piper-morgan/when-the-tokens-vanished-3a6aad13371c?source=rss----982e21163f8b---4",
+    "url": "/blog/when-the-tokens-vanished",
     "publishedAt": "Mar 11, 2026",
     "publishedAtISO": "Wed, 11 Mar 2026 22:11:02 GMT",
     "author": "christian crumlish",
@@ -3093,12 +3101,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/when-the-tokens-vanished-3a6aad13371c?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "when-the-tokens-vanished",
+    "workDate": "Mar 10, 2026",
+    "workDateISO": "2026-03-11T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "We Built a Multi-Agent Chat Interface This Weekend",
     "excerpt": "All your Claude chats in one place.March 8I’ve been increasingly frustrated with the fragmentation of the Claude experience. The web app is polished but cloud-only. Claude Code is powerful but lives in the terminal. The API gives you full control but no interface. If you want to work with Claude ...",
-    "url": "https://medium.com/building-piper-morgan/we-built-a-multi-agent-chat-interface-this-weekend-ef956428e072?source=rss----982e21163f8b---4",
+    "url": "/blog/we-built-a-multi-agent-chat",
     "publishedAt": "Mar 10, 2026",
     "publishedAtISO": "Tue, 10 Mar 2026 01:31:04 GMT",
     "author": "christian crumlish",
@@ -3112,12 +3124,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/we-built-a-multi-agent-chat-interface-this-weekend-ef956428e072?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "we-built-a-multi-agent-chat",
+    "workDate": "Mar 9, 2026",
+    "workDateISO": "2026-03-10T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "Grammar as Decision Tool",
     "excerpt": "“Wrong tool for the job!”January 27“What would ‘BLOCKED insight’ mean?” The Principal PM asked this question during a design discussion, and it ended a debate that had been going in circles. The answer was obvious once you heard the question: it wouldn’t mean anything. The concept doesn’t fit.The...",
-    "url": "https://medium.com/building-piper-morgan/grammar-as-decision-tool-845966d4f412?source=rss----982e21163f8b---4",
+    "url": "/blog/grammar-as-decision-tool",
     "publishedAt": "Mar 8, 2026",
     "publishedAtISO": "Sun, 08 Mar 2026 17:08:56 GMT",
     "author": "christian crumlish",
@@ -3131,12 +3147,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/grammar-as-decision-tool-845966d4f412?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "grammar-as-decision-tool",
+    "workDate": "Mar 7, 2026",
+    "workDateISO": "2026-03-08T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "8 Hours vs 3 Weeks: When Preparation Becomes Speed",
     "excerpt": "“Ready!”November 22The SEC-RBAC security epic was estimated at 2–3 weeks. It took approximately 8 hours.Not 8 hours of heroic coding. Not 8 hours of cutting corners. Not 8 hours that would create 8 weeks of technical debt. Eight hours of systematic execution, finishing 45% ahead of even the optim...",
-    "url": "https://medium.com/building-piper-morgan/8-hours-vs-3-weeks-when-preparation-becomes-speed-a7a50c14ae0f?source=rss----982e21163f8b---4",
+    "url": "/blog/8-hours-vs-3-weeks",
     "publishedAt": "Mar 8, 2026",
     "publishedAtISO": "Sun, 08 Mar 2026 16:57:06 GMT",
     "author": "christian crumlish",
@@ -3150,12 +3170,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/8-hours-vs-3-weeks-when-preparation-becomes-speed-a7a50c14ae0f?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "8-hours-vs-3-weeks",
+    "workDate": "Mar 7, 2026",
+    "workDateISO": "2026-03-08T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Stranger Test",
     "excerpt": "“Uh, fellas”February 21–24One thousand twenty-five tests. All passing. Zero failures. The M0 sprint was complete. The wiring pass was done. Nine integration gaps found and fixed. We had feature coverage, integration coverage, unit coverage. The test suite was comprehensive, rigorous, green.And th...",
-    "url": "https://medium.com/building-piper-morgan/the-stranger-test-e39247492342?source=rss----982e21163f8b---4",
+    "url": "/blog/the-stranger-test",
     "publishedAt": "Mar 5, 2026",
     "publishedAtISO": "Thu, 05 Mar 2026 15:43:44 GMT",
     "author": "christian crumlish",
@@ -3169,12 +3193,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-stranger-test-e39247492342?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-stranger-test",
+    "workDate": "Mar 4, 2026",
+    "workDateISO": "2026-03-05T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Assembly Assumption",
     "excerpt": "“Something’s not connected right”February 14–20The M0 sprint was supposed to take two to three weeks. We finished it in three days. We bragged about that in Weekly Ship #031, with a tiny bit of prescient hedging.Five features. Over five hundred tests. A Lead Developer marathon that started before...",
-    "url": "https://medium.com/building-piper-morgan/the-assembly-assumption-70db03f45991?source=rss----982e21163f8b---4",
+    "url": "/blog/the-assembly-assumption",
     "publishedAt": "Mar 3, 2026",
     "publishedAtISO": "Tue, 03 Mar 2026 20:31:53 GMT",
     "author": "christian crumlish",
@@ -3188,12 +3216,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-assembly-assumption-70db03f45991?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-assembly-assumption",
+    "workDate": "Mar 2, 2026",
+    "workDateISO": "2026-03-03T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Priority Is Not Pace",
     "excerpt": "“Take your time”December 4My Lead Developer was debugging an alpha testing failure. The PM — me — was blocked, waiting for the fix. The Lead felt under pressure to rush: Get it working so the PM can continue testing. Ship something, anything, fast.Then we stopped and reframed. Priority just indic...",
-    "url": "https://medium.com/building-piper-morgan/priority-is-not-pace-405c1678c9af?source=rss----982e21163f8b---4",
+    "url": "/blog/priority-is-not-pace",
     "publishedAt": "Mar 1, 2026",
     "publishedAtISO": "Sun, 01 Mar 2026 15:19:20 GMT",
     "author": "christian crumlish",
@@ -3207,7 +3239,11 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/priority-is-not-pace-405c1678c9af?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "priority-is-not-pace",
+    "workDate": "Feb 28, 2026",
+    "workDateISO": "2026-03-01T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Paradox of Detail",
@@ -5055,7 +5091,7 @@
   {
     "title": "The Day We Got 10⨉ Faster",
     "excerpt": "“Now with Serena hyperboost!”October 9, 2025Thursday morning at 8:12 AM, my Special Agent (a one-off Claude Code instance) began configuring Serena MCP — a semantic code analysis tool that promised to make agents more efficient at understanding large codebases.The installation had happened the ni...",
-    "url": "https://medium.com/building-piper-morgan/the-day-we-got-10-faster-a54bf66dff50?source=rss----982e21163f8b---4",
+    "url": "/blog/the-day-we-got-10-faster",
     "publishedAt": "Oct 16, 2025",
     "publishedAtISO": "Thu, 16 Oct 2025 14:47:12 GMT",
     "author": "christian crumlish",
@@ -5069,7 +5105,11 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-day-we-got-10-faster-a54bf66dff50?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-day-we-got-10-faster",
+    "workDate": "Oct 15, 2025",
+    "workDateISO": "2025-10-16T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "The Calm After the Storm: When Victory Means Stopping to Plan",
