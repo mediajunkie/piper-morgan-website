@@ -3248,7 +3248,7 @@
   {
     "title": "The Paradox of Detail",
     "excerpt": "“Don’t forget!”January 26We had a 30-line protocol for session logging. Agents kept forgetting to log. We replaced it with a 6-line reminder. Agents started logging consistently.More detail didn’t produce better compliance. Less detail did.The failureAfter a context compaction incident on January...",
-    "url": "https://medium.com/building-piper-morgan/the-paradox-of-detail-6a7959e826f7?source=rss----982e21163f8b---4",
+    "url": "/blog/the-paradox-of-detail",
     "publishedAt": "Feb 28, 2026",
     "publishedAtISO": "Sat, 28 Feb 2026 14:31:07 GMT",
     "author": "christian crumlish",
@@ -3262,12 +3262,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-paradox-of-detail-6a7959e826f7?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-paradox-of-detail",
+    "workDate": "Feb 27, 2026",
+    "workDateISO": "2026-02-28T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Cathedral in Winter",
     "excerpt": "“What would I do without you?”February 10 to 13By Monday, the flu had won. I’d been fighting it since feeling a pang in my sinus on Friday and it was established by Saturday, at which point I had started doing shorter sessions and lighter work on Piper Morham.But Monday was different. I couldn’t ...",
-    "url": "https://medium.com/building-piper-morgan/the-cathedral-in-winter-430f3607795d?source=rss----982e21163f8b---4",
+    "url": "/blog/the-cathedral-in-winter",
     "publishedAt": "Feb 24, 2026",
     "publishedAtISO": "Tue, 24 Feb 2026 13:51:07 GMT",
     "author": "christian crumlish",
@@ -3281,12 +3285,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-cathedral-in-winter-430f3607795d?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-cathedral-in-winter",
+    "workDate": "Feb 23, 2026",
+    "workDateISO": "2026-02-24T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "Upstream Coordination, Not Conflict Resolution",
     "excerpt": "“I’ll take this one!”November 29Two agents claimed different prompts from the coordination queue and worked in parallel. No conflicts. No merge issues. No stepping on each other’s work. When they finished, both deliverables integrated cleanly.This seemed like a success story about the coordinatio...",
-    "url": "https://medium.com/building-piper-morgan/upstream-coordination-not-conflict-resolution-5b7215d535cf?source=rss----982e21163f8b---4",
+    "url": "/blog/upstream-coordination-not-conflict-resolution",
     "publishedAt": "Feb 22, 2026",
     "publishedAtISO": "Sun, 22 Feb 2026 14:55:25 GMT",
     "author": "christian crumlish",
@@ -3300,12 +3308,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/upstream-coordination-not-conflict-resolution-5b7215d535cf?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "upstream-coordination-not-conflict-resolution",
+    "workDate": "Feb 21, 2026",
+    "workDateISO": "2026-02-22T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Forcing Function",
     "excerpt": "“This one fits”January 30We were planning a multi-tenancy fix. Nine phases of work across dozens of files. The question was sequencing: where to start?The original plan made owner_id optional first—update the function signatures to accept user context, then gradually require it everywhere. Increm...",
-    "url": "https://medium.com/building-piper-morgan/the-forcing-function-c2396c74cb6d?source=rss----982e21163f8b---4",
+    "url": "/blog/the-forcing-function",
     "publishedAt": "Feb 21, 2026",
     "publishedAtISO": "Sat, 21 Feb 2026 14:42:40 GMT",
     "author": "christian crumlish",
@@ -3319,12 +3331,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-forcing-function-c2396c74cb6d?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-forcing-function",
+    "workDate": "Feb 20, 2026",
+    "workDateISO": "2026-02-21T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Thread and the Weave",
     "excerpt": "“What’s going on here?”February 5–9The day after finishing the Pattern Sweep, I asked a question. “Can you check on this one failing test?” It was a Notion configuration test, #782. One test. Should have been straightforward.“All 19 tests fail,” the Lead Developer reported back. “Not just one.”Th...",
-    "url": "https://medium.com/building-piper-morgan/the-thread-and-the-weave-cd427792496f?source=rss----982e21163f8b---4",
+    "url": "/blog/the-thread-and-the-weave",
     "publishedAt": "Feb 19, 2026",
     "publishedAtISO": "Thu, 19 Feb 2026 15:50:41 GMT",
     "author": "christian crumlish",
@@ -3338,12 +3354,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-thread-and-the-weave-cd427792496f?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-thread-and-the-weave",
+    "workDate": "Feb 18, 2026",
+    "workDateISO": "2026-02-19T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Sweeping for Signal",
     "excerpt": "“They really do sweep clean”February 3Sixty patterns. Seven categories. Four parallel agents. One question: which of these actually matter?The Pattern Sweep 2.0 ran on a Tuesday, the first comprehensive audit since we’d crossed 50 patterns in the catalog. What we found wasn’t just new patterns — ...",
-    "url": "https://medium.com/building-piper-morgan/sweeping-for-signal-8678a6046470?source=rss----982e21163f8b---4",
+    "url": "/blog/sweeping-for-signal",
     "publishedAt": "Feb 17, 2026",
     "publishedAtISO": "Tue, 17 Feb 2026 16:02:41 GMT",
     "author": "christian crumlish",
@@ -3357,12 +3377,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/sweeping-for-signal-8678a6046470?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "sweeping-for-signal",
+    "workDate": "Feb 16, 2026",
+    "workDateISO": "2026-02-17T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Analysis as Acceleration, Not Delay",
     "excerpt": "“Stick to the plan”December 8, 2025The setup wizard needed refactoring. The main function ran 267 lines. Four separate API key sections each duplicated roughly 100 lines of nearly identical code. Not elegant, but functional, and we’d been focused on more pressing problems.The real problem was tha...",
-    "url": "https://medium.com/building-piper-morgan/analysis-as-acceleration-not-delay-f86a6e7fc648?source=rss----982e21163f8b---4",
+    "url": "/blog/analysis-as-acceleration-not-delay",
     "publishedAt": "Feb 15, 2026",
     "publishedAtISO": "Sun, 15 Feb 2026 14:28:39 GMT",
     "author": "christian crumlish",
@@ -3376,12 +3400,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/analysis-as-acceleration-not-delay-f86a6e7fc648?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "analysis-as-acceleration-not-delay",
+    "workDate": "Feb 14, 2026",
+    "workDateISO": "2026-02-15T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Investigation as Investment: Saving Time in Advance",
     "excerpt": "“Measure twice…”November 23Three high-priority bugs. Actual fix time: 5 minutes. That’s not a typo. Five minutes. Three bugs. All fixed.It wasn’t a matter of coding faster. It came from thirty minutes of systematic investigation before touching any code. Root cause analysis that revealed the bugs...",
-    "url": "https://medium.com/building-piper-morgan/investigation-as-investment-saving-time-in-advance-d416bebffbf6?source=rss----982e21163f8b---4",
+    "url": "/blog/investigation-as-investment",
     "publishedAt": "Feb 14, 2026",
     "publishedAtISO": "Sat, 14 Feb 2026 14:17:04 GMT",
     "author": "christian crumlish",
@@ -3395,12 +3423,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/investigation-as-investment-saving-time-in-advance-d416bebffbf6?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "investigation-as-investment",
+    "workDate": "Feb 13, 2026",
+    "workDateISO": "2026-02-14T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Drift We Didn’t See",
     "excerpt": "“Something’s off with this clock”February 1I was in the middle of a debugging session, trying to figure out why todos weren’t working as expected, when I noticed something in the terminal output I didn’t understand (“timestamp-without-timezone warnings”), so I asked what it was about.What we foun...",
-    "url": "https://medium.com/building-piper-morgan/the-drift-we-didnt-see-6cc6f11623cf?source=rss----982e21163f8b---4",
+    "url": "/blog/the-drift-we-didnt-see",
     "publishedAt": "Feb 12, 2026",
     "publishedAtISO": "Thu, 12 Feb 2026 16:07:47 GMT",
     "author": "christian crumlish",
@@ -3414,12 +3446,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-drift-we-didnt-see-6cc6f11623cf?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-drift-we-didnt-see",
+    "workDate": "Feb 11, 2026",
+    "workDateISO": "2026-02-12T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Calendar That Wasn’t Mine",
     "excerpt": "“Mail for all the tenants delivered!”January 28, 2026Tuesday afternoon. I’m testing the alpha release with a fresh account. I am in hurry to test certain things so I give my API key for an LLM and skip connecting my Notion, Slack, and Google Calendar to this account.Then I greet Piper and they ru...",
-    "url": "https://medium.com/building-piper-morgan/the-calendar-that-wasnt-mine-4a680a0aec38?source=rss----982e21163f8b---4",
+    "url": "/blog/the-calendar-that-wasnt-mine",
     "publishedAt": "Feb 10, 2026",
     "publishedAtISO": "Tue, 10 Feb 2026 16:21:39 GMT",
     "author": "christian crumlish",
@@ -3433,12 +3469,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-calendar-that-wasnt-mine-4a680a0aec38?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-calendar-that-wasnt-mine",
+    "workDate": "Feb 9, 2026",
+    "workDateISO": "2026-02-10T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Entities Experience Moments in Places",
     "excerpt": "January 19, 2026“Hello, world!”After eight months of building an AI assistant, we finally wrote down what it actually thinks about. Not the data model. Not the schema. The grammar — the fundamental sentence structure that describes how Piper Morgan understands the world.It’s five words: Entities ...",
-    "url": "https://medium.com/building-piper-morgan/entities-experience-moments-in-places-24c2291bfbb6?source=rss----982e21163f8b---4",
+    "url": "/blog/entities-experience-moments-in-places",
     "publishedAt": "Feb 8, 2026",
     "publishedAtISO": "Sun, 08 Feb 2026 16:15:43 GMT",
     "author": "christian crumlish",
@@ -3452,12 +3492,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/entities-experience-moments-in-places-24c2291bfbb6?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "entities-experience-moments-in-places",
+    "workDate": "Feb 7, 2026",
+    "workDateISO": "2026-02-08T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "When Vision Gets Flattened",
     "excerpt": "“Wasn’t it supposed to be 3-D?”November 25The words survived. The meaning didn’t.I found this in my own documentation — a design framework from months earlier that had been faithfully implemented, technically correct, and completely empty of its original intent.The framework described five catego...",
-    "url": "https://medium.com/building-piper-morgan/when-vision-gets-flattened-0534a41dc6ce?source=rss----982e21163f8b---4",
+    "url": "/blog/when-vision-gets-flattened",
     "publishedAt": "Feb 7, 2026",
     "publishedAtISO": "Sat, 07 Feb 2026 13:57:20 GMT",
     "author": "christian crumlish",
@@ -3471,12 +3515,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/when-vision-gets-flattened-0534a41dc6ce?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "when-vision-gets-flattened",
+    "workDate": "Feb 6, 2026",
+    "workDateISO": "2026-02-07T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Cathedral Release",
     "excerpt": "January 25–27“Measure the whole. Build one room.”“Go deep and thorough on modeling FIRST, to prevent future flattening. Only THEN discuss MVP scope. Document the cathedral, then decide which rooms to build first.”That was the guidance I gave on January 25th. Three days later, we released v0.8.5 a...",
-    "url": "https://medium.com/building-piper-morgan/the-cathedral-release-3178cc624b2c?source=rss----982e21163f8b---4",
+    "url": "/blog/the-cathedral-release",
     "publishedAt": "Feb 5, 2026",
     "publishedAtISO": "Thu, 05 Feb 2026 21:09:38 GMT",
     "author": "christian crumlish",
@@ -3490,12 +3538,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-cathedral-release-3178cc624b2c?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-cathedral-release",
+    "workDate": "Feb 4, 2026",
+    "workDateISO": "2026-02-05T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "The MVP Rubric",
     "excerpt": "“I don’t think it’s done”January 26The Principal PM said close the issue. The Chief Architect said you can’t. The Lead Developer escalated. And we ended up with a better answer than either advisor started with.The issue“Unified conversation model” (Issue #427) had four acceptance criteria. Two we...",
-    "url": "https://medium.com/building-piper-morgan/the-mvp-rubric-3432bdf60783?source=rss----982e21163f8b---4",
+    "url": "/blog/the-mvp-rubric",
     "publishedAt": "Feb 2, 2026",
     "publishedAtISO": "Mon, 02 Feb 2026 22:21:43 GMT",
     "author": "christian crumlish",
@@ -3509,12 +3561,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-mvp-rubric-3432bdf60783?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-mvp-rubric",
+    "workDate": "Feb 1, 2026",
+    "workDateISO": "2026-02-02T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "75% Complete",
     "excerpt": "“Almost!”December 4Thursday evening, debugging why list creation failed. Three separate bugs, all presenting as the same symptom. Each one followed the same pattern: the infrastructure existed, the integration didn’t.Three weeks earlier, we’d formalized the completion matrix — explicit criteria f...",
-    "url": "https://medium.com/building-piper-morgan/75-complete-bfced5dfa18b?source=rss----982e21163f8b---4",
+    "url": "/blog/75-complete",
     "publishedAt": "Feb 1, 2026",
     "publishedAtISO": "Sun, 01 Feb 2026 15:30:42 GMT",
     "author": "christian crumlish",
@@ -3528,12 +3584,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/75-complete-bfced5dfa18b?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "75-complete",
+    "workDate": "Jan 31, 2026",
+    "workDateISO": "2026-02-01T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Completion Discipline",
     "excerpt": "“No dessert until you finish!”November 13The difference between “mostly done” and “actually complete” is where projects die. Not dramatically, not with failure — just with an accumulation of 80% finished work that never quite gets to 100%. You know the pattern: implementation looks good, tests mo...",
-    "url": "https://medium.com/building-piper-morgan/the-completion-discipline-102d9414d33a?source=rss----982e21163f8b---4",
+    "url": "/blog/the-completion-discipline",
     "publishedAt": "Jan 31, 2026",
     "publishedAtISO": "Sat, 31 Jan 2026 15:28:09 GMT",
     "author": "christian crumlish",
@@ -3547,12 +3607,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-completion-discipline-102d9414d33a?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-completion-discipline",
+    "workDate": "Jan 30, 2026",
+    "workDateISO": "2026-01-31T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The CLAUDE.md Paradox",
     "excerpt": "“By the book…”January 22–23, 2026We made CLAUDE.md 87% smaller. Then we lost 12 hours of work logs. Then we fixed it the next morning.That’s the shape of January 22nd and 23rd — the days we learned that instructions meant to help AI agents can backfire spectacularly when they get too detailed.The...",
-    "url": "https://medium.com/building-piper-morgan/the-claude-md-paradox-27072f2228e8?source=rss----982e21163f8b---4",
+    "url": "/blog/the-claudemd-paradox",
     "publishedAt": "Jan 30, 2026",
     "publishedAtISO": "Fri, 30 Jan 2026 14:28:48 GMT",
     "author": "christian crumlish",
@@ -3566,12 +3630,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-claude-md-paradox-27072f2228e8?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-claudemd-paradox",
+    "workDate": "Jan 29, 2026",
+    "workDateISO": "2026-01-30T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Planning Caucus",
     "excerpt": "January 19“OK, here’s the plan!”One issue. Four meetings. A single subagent. 101 tests by end of day. That’s the shape of January 19th — the day we launched the MUX (modeled UX) track with what I’m now calling a “planning caucus”: a deliberate sequence of specialized consultations before any code...",
-    "url": "https://medium.com/building-piper-morgan/the-planning-caucus-3a30fdc2ab51?source=rss----982e21163f8b---4",
+    "url": "/blog/the-planning-caucus",
     "publishedAt": "Jan 28, 2026",
     "publishedAtISO": "Wed, 28 Jan 2026 15:36:39 GMT",
     "author": "christian crumlish",
@@ -3585,12 +3653,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-planning-caucus-3a30fdc2ab51?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-planning-caucus",
+    "workDate": "Jan 27, 2026",
+    "workDateISO": "2026-01-28T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The October Ghost",
     "excerpt": "“You little…”January 17At way too early on a Friday, I woke up to an email from Google Cloud Platform: “Your project has been suspended for hijacked resources.” My first thought: someone hacked us. My second thought: OK what did I do now, and how bad is it? My third thought: coffee first, then cr...",
-    "url": "https://medium.com/building-piper-morgan/the-october-ghost-8b2cacb686f7?source=rss----982e21163f8b---4",
+    "url": "/blog/the-october-ghost",
     "publishedAt": "Jan 26, 2026",
     "publishedAtISO": "Mon, 26 Jan 2026 18:45:24 GMT",
     "author": "christian crumlish",
@@ -3604,12 +3676,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-october-ghost-8b2cacb686f7?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-october-ghost",
+    "workDate": "Jan 25, 2026",
+    "workDateISO": "2026-01-26T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "8 Decisions in 44 Minutes",
     "excerpt": "“Next question?”November 27Two days of exploration. Open questions accumulating. Rich discussion but no closure.Then: “Ask me one at a time, make a recommendation, we’ll decide for now and move to the next.”Forty-four minutes later, eight architectural decisions were made. Questions that had resi...",
-    "url": "https://medium.com/building-piper-morgan/8-decisions-in-44-minutes-2f9dc68af576?source=rss----982e21163f8b---4",
+    "url": "/blog/8-decisions-in-44-minutes",
     "publishedAt": "Jan 25, 2026",
     "publishedAtISO": "Sun, 25 Jan 2026 15:09:02 GMT",
     "author": "christian crumlish",
@@ -3623,12 +3699,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/8-decisions-in-44-minutes-2f9dc68af576?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "8-decisions-in-44-minutes",
+    "workDate": "Jan 24, 2026",
+    "workDateISO": "2026-01-25T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Settings = Abdication",
     "excerpt": "“It’s my first day”November 26Every setting in your product is an admission that you couldn’t decide. Every preference panel is accumulated indecision. Every “let the user choose” is a question the product team didn’t answer.Obviously, it’s not wrong to offer settings and to allow people to choos...",
-    "url": "https://medium.com/building-piper-morgan/settings-abdication-2536c923a72c?source=rss----982e21163f8b---4",
+    "url": "/blog/settings-abdication",
     "publishedAt": "Jan 24, 2026",
     "publishedAtISO": "Sat, 24 Jan 2026 14:07:08 GMT",
     "author": "christian crumlish",
@@ -3642,12 +3722,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/settings-abdication-2536c923a72c?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "settings-abdication",
+    "workDate": "Jan 23, 2026",
+    "workDateISO": "2026-01-24T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Audit Cascade",
     "excerpt": "“Nothing moves forward without an audit”January 13Here’s something we discovered by accident: AI is better at checking work than doing work.Not “better” as in faster or cheaper. Better as in more reliable. When you ask an AI to create something while following a checklist, it will miss items on t...",
-    "url": "https://medium.com/building-piper-morgan/the-audit-cascade-1f2fae18d396?source=rss----982e21163f8b---4",
+    "url": "/blog/the-audit-cascade",
     "publishedAt": "Jan 23, 2026",
     "publishedAtISO": "Fri, 23 Jan 2026 16:39:21 GMT",
     "author": "christian crumlish",
@@ -3661,12 +3745,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-audit-cascade-1f2fae18d396?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-audit-cascade",
+    "workDate": "Jan 22, 2026",
+    "workDateISO": "2026-01-23T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Domain Model Disconnect",
     "excerpt": "“I thought we were done?”January 12, 2026It was release day. January 12th, v0.8.4 of Piper Morgan was live. We’d just completed Sprint B1 — six days of work, 23 issues closed, a new calendar integration, improved intent classification, and a cleaner codebase.Then one of our alpha testers (me) rep...",
-    "url": "https://medium.com/building-piper-morgan/the-domain-model-disconnect-cb49b58467a5?source=rss----982e21163f8b---4",
+    "url": "/blog/the-domain-model-disconnect",
     "publishedAt": "Jan 21, 2026",
     "publishedAtISO": "Wed, 21 Jan 2026 14:38:29 GMT",
     "author": "christian crumlish",
@@ -3680,12 +3768,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-domain-model-disconnect-cb49b58467a5?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-domain-model-disconnect",
+    "workDate": "Jan 20, 2026",
+    "workDateISO": "2026-01-21T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The August Stubs",
     "excerpt": "“Not a drop yet!”January 9–11, 2026Twenty-three issues closed in three days. Two epics completed. A sprint finished. And buried in the middle of all that velocity: the discovery that infrastructure we’d built seven months ago had never actually worked.The methods that weren’tJanuary 10, midway th...",
-    "url": "https://medium.com/building-piper-morgan/the-august-stubs-ff4f404639e8?source=rss----982e21163f8b---4",
+    "url": "/blog/the-august-stubs",
     "publishedAt": "Jan 19, 2026",
     "publishedAtISO": "Mon, 19 Jan 2026 14:43:29 GMT",
     "author": "christian crumlish",
@@ -3699,12 +3791,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-august-stubs-ff4f404639e8?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-august-stubs",
+    "workDate": "Jan 18, 2026",
+    "workDateISO": "2026-01-19T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Wizard’s Journal",
     "excerpt": "“Here’s a thought…”November 27 (Thanksgiving)Christina Wodtke sent a prompt for Thanksgiving on LinkedIn: “Knowing what you know about me, what should I be grateful for today?”So I asked Claude, the version informed by my Piper Morgan project. The answers were thoughtful — methodology working, co...",
-    "url": "https://medium.com/building-piper-morgan/the-wizards-journal-f6ebfd55d0ea?source=rss----982e21163f8b---4",
+    "url": "/blog/the-wizards-journal",
     "publishedAt": "Jan 18, 2026",
     "publishedAtISO": "Sun, 18 Jan 2026 14:41:08 GMT",
     "author": "christian crumlish",
@@ -3718,12 +3814,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-wizards-journal-f6ebfd55d0ea?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-wizards-journal",
+    "workDate": "Jan 17, 2026",
+    "workDateISO": "2026-01-18T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "Fat Markers and Object Models",
     "excerpt": "“So, I kind of see it this way…”November 27, 2025I needed to understand an object model — substrates, lenses, lifecycles, metadata. The concepts had been discussed for two days. Decisions had been made. But I couldn’t see how they fit together.So I grabbed fat markers and paper.In parallel, I pro...",
-    "url": "https://medium.com/building-piper-morgan/fat-markers-and-object-models-9750471f82df?source=rss----982e21163f8b---4",
+    "url": "/blog/fat-markers-and-object-models",
     "publishedAt": "Jan 17, 2026",
     "publishedAtISO": "Sat, 17 Jan 2026 15:44:20 GMT",
     "author": "christian crumlish",
@@ -3737,12 +3837,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/fat-markers-and-object-models-9750471f82df?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "fat-markers-and-object-models",
+    "workDate": "Jan 16, 2026",
+    "workDateISO": "2026-01-17T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "B1 Begins",
     "excerpt": "“Dress rehearsals are over”January 6–7, 2026The day after a milestone is strange. The celebration is over. The roadmap says “Item 4: Complete build of MVP.” Now what?Now comes execution.The quick winsB1 sprint had three P0 issues — FTUX improvements identified by the gap analysis. Quick wins, the...",
-    "url": "https://medium.com/building-piper-morgan/b1-begins-18feb0a48171?source=rss----982e21163f8b---4",
+    "url": "/blog/b1-begins",
     "publishedAt": "Jan 14, 2026",
     "publishedAtISO": "Wed, 14 Jan 2026 16:55:27 GMT",
     "author": "christian crumlish",
@@ -3756,12 +3860,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/b1-begins-18feb0a48171?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "b1-begins",
+    "workDate": "Jan 13, 2026",
+    "workDateISO": "2026-01-14T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "Stage 3 Complete",
     "excerpt": "“Onward!”January 2–5, 2026The first week of the year began with a release and ended with a milestone. In between: organizational expansion I hadn’t planned but clearly needed.January 2 was straightforward. Version 0.8.3 deployed to production. Adam Laskowitz joined as our third alpha tester. The ...",
-    "url": "https://medium.com/building-piper-morgan/stage-3-complete-85e2417278d6?source=rss----982e21163f8b---4",
+    "url": "/blog/stage-3-complete",
     "publishedAt": "Jan 13, 2026",
     "publishedAtISO": "Tue, 13 Jan 2026 16:09:34 GMT",
     "author": "christian crumlish",
@@ -3775,12 +3883,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/stage-3-complete-85e2417278d6?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "stage-3-complete",
+    "workDate": "Jan 12, 2026",
+    "workDateISO": "2026-01-13T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Shadow Package Problem",
     "excerpt": "“Something’s missing”November 19One file. Four lines of code. Six hundred seventeen tests hidden for months. Zero warning signs until you knew where to look.A single __init__.py in the wrong directory created a shadow package that blocked pytest from importing the real code, making 617 tests invi...",
-    "url": "https://medium.com/building-piper-morgan/the-shadow-package-problem-30a55697431b?source=rss----982e21163f8b---4",
+    "url": "/blog/the-shadow-package-problem",
     "publishedAt": "Jan 11, 2026",
     "publishedAtISO": "Sun, 11 Jan 2026 17:02:49 GMT",
     "author": "christian crumlish",
@@ -3794,12 +3906,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-shadow-package-problem-30a55697431b?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-shadow-package-problem",
+    "workDate": "Jan 10, 2026",
+    "workDateISO": "2026-01-11T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Completion Matrix: Why “Tests Pass” Isn’t Done",
     "excerpt": "“Wait, are we actually ready?”November 1 to November 5, 2025Another Saturday. Another daylong sprint. 9,292 lines of code in 12.75 hours. Four P0 blockers resolved. 100% test pass rate throughout. By any traditional measure: Complete success. More importantly, though, we prevented the 80% pattern...",
-    "url": "https://medium.com/building-piper-morgan/the-completion-matrix-why-tests-pass-isnt-done-9cdc7a60326f?source=rss----982e21163f8b---4",
+    "url": "/blog/the-completion-matrix",
     "publishedAt": "Jan 10, 2026",
     "publishedAtISO": "Sat, 10 Jan 2026 17:39:37 GMT",
     "author": "christian crumlish",
@@ -3813,12 +3929,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-completion-matrix-why-tests-pass-isnt-done-9cdc7a60326f?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-completion-matrix",
+    "workDate": "Jan 9, 2026",
+    "workDateISO": "2026-01-10T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The New Year Build",
     "excerpt": "“Some of these already work!”December 31, 2025 to January 1, 2026New Year’s Eve started with issue creation. Eight new GitHub issues for Alpha Setup and MUX phase gates. The kind of planning work that feels productive but isn’t building anything yet. Yes, this is how I ring in the new year (lolso...",
-    "url": "https://medium.com/building-piper-morgan/the-new-year-build-d6ede16a45e6?source=rss----982e21163f8b---4",
+    "url": "/blog/the-new-year-build",
     "publishedAt": "Jan 8, 2026",
     "publishedAtISO": "Thu, 08 Jan 2026 17:37:02 GMT",
     "author": "christian crumlish",
@@ -3832,12 +3952,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-new-year-build-d6ede16a45e6?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-new-year-build",
+    "workDate": "Jan 7, 2026",
+    "workDateISO": "2026-01-08T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Capability Sprint",
     "excerpt": "“You have to open the little doors”December 24–28, 2025Christmas Eve began with a question I’d been avoiding: what can Piper actually do?Not theoretically. Not according to documentation written months ago. What can a user actually ask, right now, and get a useful response?The answer was uncomfor...",
-    "url": "https://medium.com/building-piper-morgan/the-capability-sprint-8933b6228780?source=rss----982e21163f8b---4",
+    "url": "/blog/the-capability-sprint",
     "publishedAt": "Jan 5, 2026",
     "publishedAtISO": "Mon, 05 Jan 2026 17:00:43 GMT",
     "author": "christian crumlish",
@@ -3851,12 +3975,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-capability-sprint-8933b6228780?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-capability-sprint",
+    "workDate": "Jan 4, 2026",
+    "workDateISO": "2026-01-05T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "External Validation as Decision Catalyst",
     "excerpt": "“You’ll want to take a look at this”November 19–20When brilliant people ask hard questions about your work, something interesting happens. Not just “you find answers” — you clarify what you thought you knew, reveal what you haven’t built yet, and accelerate decisions that internal teams might deb...",
-    "url": "https://medium.com/building-piper-morgan/external-validation-as-decision-catalyst-d584d26511f5?source=rss----982e21163f8b---4",
+    "url": "/blog/external-validation-as-decision-catalyst",
     "publishedAt": "Jan 4, 2026",
     "publishedAtISO": "Sun, 04 Jan 2026 16:04:15 GMT",
     "author": "christian crumlish",
@@ -3870,12 +3998,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/external-validation-as-decision-catalyst-d584d26511f5?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "external-validation-as-decision-catalyst",
+    "workDate": "Jan 3, 2026",
+    "workDateISO": "2026-01-04T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Reactive vs Systematic: A Tale of Two Approaches",
     "excerpt": "“We got ’em now!”November 18You’re in alpha testing. Users are coming. Bugs are surfacing. Every bug feels urgent because external people will see it. The reactive instinct is powerful: see bug, fix bug, push fix, move on. It feels productive. It feels responsive. It feels like you’re solving pro...",
-    "url": "https://medium.com/building-piper-morgan/reactive-vs-systematic-a-tale-of-two-approaches-322deab549ff?source=rss----982e21163f8b---4",
+    "url": "/blog/reactive-vs-systematic",
     "publishedAt": "Jan 3, 2026",
     "publishedAtISO": "Sat, 03 Jan 2026 16:07:46 GMT",
     "author": "christian crumlish",
@@ -3889,12 +4021,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/reactive-vs-systematic-a-tale-of-two-approaches-322deab549ff?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "reactive-vs-systematic",
+    "workDate": "Jan 2, 2026",
+    "workDateISO": "2026-01-03T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "When Users Can’t Discover",
     "excerpt": "“Why did we hide all the party favors?”December 20–23, 2025Saturday evening, testing on the alpha laptop. Fresh install complete, setup wizard working (FK bugs from last week now fixed). Time to try actual PM workflows.First test: “What services do you offer?”The response came back generic. Helpf...",
-    "url": "https://medium.com/building-piper-morgan/when-users-cant-discover-267268cae81a?source=rss----982e21163f8b---4",
+    "url": "/blog/when-users-cant-discover",
     "publishedAt": "Jan 3, 2026",
     "publishedAtISO": "Sat, 03 Jan 2026 02:52:46 GMT",
     "author": "christian crumlish",
@@ -3908,12 +4044,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/when-users-cant-discover-267268cae81a?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "when-users-cant-discover",
+    "workDate": "Jan 2, 2026",
+    "workDateISO": "2026-01-03T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "When the UX Audit Says ‘Stop’",
     "excerpt": "“Wait, you’re not ready!”November 13–14, 2025The hardest thing to do when you’re about to ship is stop. You’re so close. First external alpha tester invited, setup wizard working, core features functional. The momentum says: ship now, fix later. But what if “later” means fixing things in front of...",
-    "url": "https://medium.com/building-piper-morgan/when-the-ux-audit-says-stop-ec9f4e683d15?source=rss----982e21163f8b---4",
+    "url": "/blog/when-the-ux-audit-says-stop",
     "publishedAt": "Dec 29, 2025",
     "publishedAtISO": "Mon, 29 Dec 2025 01:04:33 GMT",
     "author": "christian crumlish",
@@ -3927,12 +4067,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/when-the-ux-audit-says-stop-ec9f4e683d15?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "when-the-ux-audit-says-stop",
+    "workDate": "Dec 28, 2025",
+    "workDateISO": "2025-12-29T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Prevention Over Cure: The Infinite ROI of Process Investment",
     "excerpt": "“An ounce of prevention”November 4, 2025Let’s talk about the False Economy Principle: Cheap fixes now create expensive problems later. Expensive prevention now creates cheap operations forever. It was Tuesday. My regular workday was done, and I had time to turn to Piper Morgan before dinner.The s...",
-    "url": "https://medium.com/building-piper-morgan/prevention-over-cure-the-infinite-roi-of-process-investment-0b7eeab48abd?source=rss----982e21163f8b---4",
+    "url": "/blog/prevention-over-cure",
     "publishedAt": "Dec 27, 2025",
     "publishedAtISO": "Sat, 27 Dec 2025 15:24:03 GMT",
     "author": "christian crumlish",
@@ -3946,12 +4090,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/prevention-over-cure-the-infinite-roi-of-process-investment-0b7eeab48abd?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "prevention-over-cure",
+    "workDate": "Dec 26, 2025",
+    "workDateISO": "2025-12-27T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Strategic Reset",
     "excerpt": "“Back to the drawing board!”December 16–18, 2025Monday morning, December 16th. Two weeks since the last full development session. In between: album release party on the 12th, weekend recovery, catching up on life outside the project.I opened my laptop expecting to spend the morning getting reorie...",
-    "url": "https://medium.com/building-piper-morgan/strategic-reset-ef12f52f900d?source=rss----982e21163f8b---4",
+    "url": "/blog/strategic-reset",
     "publishedAt": "Dec 26, 2025",
     "publishedAtISO": "Fri, 26 Dec 2025 13:32:07 GMT",
     "author": "christian crumlish",
@@ -3965,12 +4113,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/strategic-reset-ef12f52f900d?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "strategic-reset",
+    "workDate": "Dec 25, 2025",
+    "workDateISO": "2025-12-26T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Milestone Pause",
     "excerpt": "“We needed this break!”December 11–15, 2025Thursday morning, December 11th, 6:32 AM. Time to release v0.8.2 to production.The version bump itself was straightforward. We’d been running 0.8.1.3, accumulating changes through the integration marathon and the systematic work that followed. Twenty-one...",
-    "url": "https://medium.com/building-piper-morgan/the-milestone-pause-c8d763c1a002?source=rss----982e21163f8b---4",
+    "url": "/blog/the-milestone-pause",
     "publishedAt": "Dec 24, 2025",
     "publishedAtISO": "Wed, 24 Dec 2025 19:00:14 GMT",
     "author": "christian crumlish",
@@ -3984,12 +4136,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-milestone-pause-c8d763c1a002?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-milestone-pause",
+    "workDate": "Dec 23, 2025",
+    "workDateISO": "2025-12-24T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Multi-Agent Coordination at Scale: The 70% Reduction Pattern",
     "excerpt": "“Once again, with feeling!”November 1–6This is about multi-agent coordination at scale. Not just “use AI agents” but systematically orchestrate multiple agents on complementary work to achieve time compression that would be impossible with single-agent or human-only approaches.The demonstration: ...",
-    "url": "https://medium.com/building-piper-morgan/multi-agent-coordination-at-scale-the-70-reduction-pattern-1f343e1ff581?source=rss----982e21163f8b---4",
+    "url": "/blog/multi-agent-coordination-at-scale",
     "publishedAt": "Dec 23, 2025",
     "publishedAtISO": "Tue, 23 Dec 2025 15:26:51 GMT",
     "author": "christian crumlish",
@@ -4003,12 +4159,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/multi-agent-coordination-at-scale-the-70-reduction-pattern-1f343e1ff581?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "multi-agent-coordination-at-scale",
+    "workDate": "Dec 22, 2025",
+    "workDateISO": "2025-12-23T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "The Week After",
     "excerpt": "“This will be so much better!”December 5–9, 2025The crisis resolved Thursday night at 10:19 PM. By the time I closed our laptops, all four entity pages worked for actual users. Friday morning brought something different. Not the crisis or urgency of the past few days. Just seven agents working in...",
-    "url": "https://medium.com/building-piper-morgan/the-week-after-500d1e637647?source=rss----982e21163f8b---4",
+    "url": "/blog/the-week-after",
     "publishedAt": "Dec 23, 2025",
     "publishedAtISO": "Tue, 23 Dec 2025 15:00:39 GMT",
     "author": "christian crumlish",
@@ -4022,12 +4182,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-week-after-500d1e637647?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-week-after",
+    "workDate": "Dec 22, 2025",
+    "workDateISO": "2025-12-23T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Three Layers",
     "excerpt": "“Each piece is OK — it’s the connections!”December 1–4The tests were passing. The features worked. Version 0.8.2 shipped on Tuesday with authentication, error recovery, the whole setup wizard. Clean deploys, no rollbacks. Everything looked good.Then I tried to create a list.This is the story of w...",
-    "url": "https://medium.com/building-piper-morgan/the-three-layers-c6ada97a4971?source=rss----982e21163f8b---4",
+    "url": "/blog/the-three-layers",
     "publishedAt": "Dec 17, 2025",
     "publishedAtISO": "Wed, 17 Dec 2025 01:30:20 GMT",
     "author": "christian crumlish",
@@ -4041,12 +4205,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-three-layers-c6ada97a4971?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-three-layers",
+    "workDate": "Dec 16, 2025",
+    "workDateISO": "2025-12-17T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Validation-Driven Development: When Tests Enable Bold Moves",
     "excerpt": "“Safe as houses”Methodology Series, November 1–4, 2025Tuesday morning, 10:11 AM. Programmer agent reports: Phase 2 complete. Database migration ready. 66 tests passing.I ask: “What would review consist of before authorizing migration?”Lead Developer analyzes. Conclusion: Manual SQL review redunda...",
-    "url": "https://medium.com/building-piper-morgan/validation-driven-development-when-tests-enable-bold-moves-f8ebb5564cd9?source=rss----982e21163f8b---4",
+    "url": "/blog/validation-driven-development",
     "publishedAt": "Dec 17, 2025",
     "publishedAtISO": "Wed, 17 Dec 2025 00:41:41 GMT",
     "author": "christian crumlish",
@@ -4060,12 +4228,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/validation-driven-development-when-tests-enable-bold-moves-f8ebb5564cd9?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "validation-driven-development",
+    "workDate": "Dec 16, 2025",
+    "workDateISO": "2025-12-17T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "When Friends Sharpen Your Chisels: On Advice That Removes Friction",
     "excerpt": "“This should help!”November 28–30The week after Thanksgiving is supposed to be quiet. You digest the turkey, you digest the year, you ease back into work. This year, the digestion was more interesting than expected.I spent Black Friday not shopping but synthesizing. The previous week had been ext...",
-    "url": "https://medium.com/building-piper-morgan/when-friends-sharpen-your-chisels-on-advice-that-removes-friction-e2cc9347f58e?source=rss----982e21163f8b---4",
+    "url": "/blog/when-friends-sharpen-your-chisels",
     "publishedAt": "Dec 9, 2025",
     "publishedAtISO": "Tue, 09 Dec 2025 17:59:27 GMT",
     "author": "christian crumlish",
@@ -4079,12 +4251,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/when-friends-sharpen-your-chisels-on-advice-that-removes-friction-e2cc9347f58e?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "when-friends-sharpen-your-chisels",
+    "workDate": "Dec 8, 2025",
+    "workDateISO": "2025-12-09T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Archaeological Approach: Why Phase −1 Investigation Pays for Itself",
     "excerpt": "“We already have one”I’ve spoken in this series before about a pattern we’ve adopted in building Piper Morgan, something I call “Phase −1 infrastructure verification,” and I’d like to unpack it a bit more.It may seem like optional overhead, but it’s not. My LLM friends want to express it in terms...",
-    "url": "https://medium.com/building-piper-morgan/the-archaeological-approach-why-phase-1-investigation-pays-for-itself-52d0bbb9b00a?source=rss----982e21163f8b---4",
+    "url": "/blog/the-archaeological-approach",
     "publishedAt": "Dec 8, 2025",
     "publishedAtISO": "Mon, 08 Dec 2025 15:01:29 GMT",
     "author": "christian crumlish",
@@ -4098,12 +4274,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-archaeological-approach-why-phase-1-investigation-pays-for-itself-52d0bbb9b00a?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-archaeological-approach",
+    "workDate": "Dec 7, 2025",
+    "workDateISO": "2025-12-08T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Living in the Questions",
     "excerpt": "“We’ll get there!”November 25–27After two weeks of intense development — fifteen-agent days, security epics completed in eight hours, frantic alpha preparation, Michelle’s arrival — I stopped building and started thinking.Definitely not because the building was done! But I had noticed something t...",
-    "url": "https://medium.com/building-piper-morgan/living-in-the-questions-b8466e5a2ad0?source=rss----982e21163f8b---4",
+    "url": "/blog/living-in-the-questions",
     "publishedAt": "Dec 4, 2025",
     "publishedAtISO": "Thu, 04 Dec 2025 14:29:57 GMT",
     "author": "christian crumlish",
@@ -4117,12 +4297,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/living-in-the-questions-b8466e5a2ad0?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "living-in-the-questions",
+    "workDate": "Dec 3, 2025",
+    "workDateISO": "2025-12-04T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "From 15 Agents to One User",
     "excerpt": "“I think we’re ready”!November 21–24Four days. Fifteen simultaneous AI sessions. Eight agents. A complete security epic. Frantic alpha preparation. One infrastructure crisis. And finally, one real user logging in for the first time.This is the story of building toward a moment that matters — when...",
-    "url": "https://medium.com/building-piper-morgan/from-15-agents-to-one-user-64a1afbb1ed8?source=rss----982e21163f8b---4",
+    "url": "/blog/from-15-agents-to-one-user",
     "publishedAt": "Dec 2, 2025",
     "publishedAtISO": "Tue, 02 Dec 2025 15:27:42 GMT",
     "author": "christian crumlish",
@@ -4136,12 +4320,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/from-15-agents-to-one-user-64a1afbb1ed8?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "from-15-agents-to-one-user",
+    "workDate": "Dec 1, 2025",
+    "workDateISO": "2025-12-02T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "Language is Culture: How Methodological Documentation Creates Shared Understanding",
     "excerpt": "“Don’t forget the Excellence Flywheel!”October 24 to November 6“August broke the semantic analyzer.” This sentence appears in November 4’s session log. It’s simultaneously technical problem description, humor about meta-analysis, and cultural artifact. Will anyone reading Piper Morgan documentati...",
-    "url": "https://medium.com/building-piper-morgan/language-is-culture-how-methodological-documentation-creates-shared-understanding-41107523d04c?source=rss----982e21163f8b---4",
+    "url": "/blog/language-is-culture",
     "publishedAt": "Dec 1, 2025",
     "publishedAtISO": "Mon, 01 Dec 2025 14:37:42 GMT",
     "author": "christian crumlish",
@@ -4155,12 +4343,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/language-is-culture-how-methodological-documentation-creates-shared-understanding-41107523d04c?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "language-is-culture",
+    "workDate": "Nov 30, 2025",
+    "workDateISO": "2025-12-01T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Knowledge Graph Transformation: From Retrieval to Reasoning",
     "excerpt": "“That looks like a cat”October 24My Chief Architect is analyzing Sprint A8 scope. Knowledge graph enhancement issue (#278) planned for Phase 1. Standard implementation: Add relationship types. Wire to intent classification. Test integration.Then a parenthetical comment in the planning document: “...",
-    "url": "https://medium.com/building-piper-morgan/the-knowledge-graph-transformation-from-retrieval-to-reasoning-bd3b9048c537?source=rss----982e21163f8b---4",
+    "url": "/blog/the-knowledge-graph-transformation",
     "publishedAt": "Nov 29, 2025",
     "publishedAtISO": "Sat, 29 Nov 2025 14:17:27 GMT",
     "author": "christian crumlish",
@@ -4174,12 +4366,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-knowledge-graph-transformation-from-retrieval-to-reasoning-bd3b9048c537?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-knowledge-graph-transformation",
+    "workDate": "Nov 28, 2025",
+    "workDateISO": "2025-11-29T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The 15-Agent Day",
     "excerpt": "“Smooth!”November 21Fifteen simultaneous sessions. Eight agents. Five concurrent workstreams. One collision, with a smooth recovery. A security sprint that went from 12% complete to 68% complete in one day, with P0 vulnerabilities fixed immediately and comprehensive database migrations deployed. ...",
-    "url": "https://medium.com/building-piper-morgan/the-15-agent-day-76531cadc207?source=rss----982e21163f8b---4",
+    "url": "/blog/the-15-agent-day",
     "publishedAt": "Nov 28, 2025",
     "publishedAtISO": "Fri, 28 Nov 2025 14:58:53 GMT",
     "author": "christian crumlish",
@@ -4193,12 +4389,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-15-agent-day-76531cadc207?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-15-agent-day",
+    "workDate": "Nov 27, 2025",
+    "workDateISO": "2025-11-28T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "When Investigation Becomes Certainty",
     "excerpt": "“All the tests agree!”November 19 to 20Sometimes you don’t know what’s blocking you until multiple investigations from completely different angles all point to the same answer. You think you’re doing unrelated work — recovering test infrastructure here, answering architecture questions there, imp...",
-    "url": "https://medium.com/building-piper-morgan/when-investigation-becomes-certainty-d4f984155c40?source=rss----982e21163f8b---4",
+    "url": "/blog/when-investigation-becomes-certainty",
     "publishedAt": "Nov 26, 2025",
     "publishedAtISO": "Wed, 26 Nov 2025 12:41:12 GMT",
     "author": "christian crumlish",
@@ -4212,12 +4412,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/when-investigation-becomes-certainty-d4f984155c40?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "when-investigation-becomes-certainty",
+    "workDate": "Nov 25, 2025",
+    "workDateISO": "2025-11-26T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "From Chaos to Cathedral",
     "excerpt": "“Now that’s more like it.”November 17 to 18Alpha readiness isn’t about heroics. It’s about systematic thinking. That’s what Monday taught us — twice, in two very different contexts. First, repository archaeology revealed three months of forgotten work that needed careful integration. Then, alpha ...",
-    "url": "https://medium.com/building-piper-morgan/from-chaos-to-cathedral-54b651d6047e?source=rss----982e21163f8b---4",
+    "url": "/blog/from-chaos-to-cathedral",
     "publishedAt": "Nov 25, 2025",
     "publishedAtISO": "Tue, 25 Nov 2025 05:35:50 GMT",
     "author": "christian crumlish",
@@ -4231,12 +4435,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/from-chaos-to-cathedral-54b651d6047e?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "from-chaos-to-cathedral",
+    "workDate": "Nov 24, 2025",
+    "workDateISO": "2025-11-25T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "Drift, Resilience, and Expansion Joints: Why Systems Wobble Instead of Break",
     "excerpt": "“Resilience!”October 19 to 22Claude Code makes three unauthorized scope reductions in one day. It completes 6 of 10 tasks and defers rest. It implements a placeholder instead of proper JWT authentication. Post-compaction, it races ahead without checkpoint.The system is drifting, at least a little...",
-    "url": "https://medium.com/building-piper-morgan/drift-resilience-and-expansion-joints-why-systems-wobble-instead-of-break-0eeccb984fed?source=rss----982e21163f8b---4",
+    "url": "/blog/drift-resilience-and-expansion-joints",
     "publishedAt": "Nov 23, 2025",
     "publishedAtISO": "Sun, 23 Nov 2025 15:32:15 GMT",
     "author": "christian crumlish",
@@ -4250,12 +4458,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/drift-resilience-and-expansion-joints-why-systems-wobble-instead-of-break-0eeccb984fed?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "drift-resilience-and-expansion-joints",
+    "workDate": "Nov 22, 2025",
+    "workDateISO": "2025-11-23T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Pattern Detective’s Evolution: From Curator to Noticer",
     "excerpt": "“Elementary!”October 16 to 22There’s a moment in the middle of a work session when I asked a casual question: “Why would middleware apply to the web layer specifically?”No detailed technical inquiry or systematic review. Just noticing something is off and sdking a question: Something felt archite...",
-    "url": "https://medium.com/building-piper-morgan/the-pattern-detectives-evolution-from-curator-to-noticer-a6aef80dce76?source=rss----982e21163f8b---4",
+    "url": "/blog/the-pattern-detectives-evolution",
     "publishedAt": "Nov 22, 2025",
     "publishedAtISO": "Sat, 22 Nov 2025 13:56:16 GMT",
     "author": "christian crumlish",
@@ -4269,12 +4481,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-pattern-detectives-evolution-from-curator-to-noticer-a6aef80dce76?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-pattern-detectives-evolution",
+    "workDate": "Nov 21, 2025",
+    "workDateISO": "2025-11-22T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Skills Convergence: Three Problems, One Solution",
     "excerpt": "“These all fit together!”November 15Sometimes you discover you’ve been working the hard way. Not because you made bad decisions, but because you didn’t have all the information yet. That’s what happened on Saturday morning when I brought a new idea to my Chief of Staff. We had the Chief Architect...",
-    "url": "https://medium.com/building-piper-morgan/the-skills-convergence-three-problems-one-solution-63f5c3c9b97f?source=rss----982e21163f8b---4",
+    "url": "/blog/the-skills-convergence",
     "publishedAt": "Nov 21, 2025",
     "publishedAtISO": "Fri, 21 Nov 2025 15:46:37 GMT",
     "author": "christian crumlish",
@@ -4288,12 +4504,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-skills-convergence-three-problems-one-solution-63f5c3c9b97f?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-skills-convergence",
+    "workDate": "Nov 20, 2025",
+    "workDateISO": "2025-11-21T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Foundation Stones & Strategic Breakthroughs",
     "excerpt": "“Solid foundation”November 13–15Sometimes the best discoveries come not from looking for them, but from building systematically enough that they reveal themselves. That’s what happened across three intense November days when foundation work, comprehensive auditing, and strategic thinking converge...",
-    "url": "https://medium.com/building-piper-morgan/foundation-stones-strategic-breakthroughs-171a16b30166?source=rss----982e21163f8b---4",
+    "url": "/blog/foundation-stones-strategic-breakthroughs",
     "publishedAt": "Nov 20, 2025",
     "publishedAtISO": "Thu, 20 Nov 2025 13:09:39 GMT",
     "author": "christian crumlish",
@@ -4307,12 +4527,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/foundation-stones-strategic-breakthroughs-171a16b30166?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "foundation-stones-strategic-breakthroughs",
+    "workDate": "Nov 19, 2025",
+    "workDateISO": "2025-11-20T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "Why Wait for Beta?: The Strategic Pivot",
     "excerpt": "Why Wait for Beta? The Strategic Pivot“Let’s go for the summit!”November 12Bright and early Wednesday morning, I ask a question:“What’s the effort to wire up automatic learning now? Did we postpone it for beta because of size, or some other reason?”By 1:40 PM: Decision made. Create Issue #300. Do...",
-    "url": "https://medium.com/building-piper-morgan/why-wait-for-beta-the-strategic-pivot-b47cc0a82c1a?source=rss----982e21163f8b---4",
+    "url": "/blog/why-wait-for-beta",
     "publishedAt": "Nov 19, 2025",
     "publishedAtISO": "Wed, 19 Nov 2025 15:55:38 GMT",
     "author": "christian crumlish",
@@ -4326,12 +4550,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/why-wait-for-beta-the-strategic-pivot-b47cc0a82c1a?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "why-wait-for-beta",
+    "workDate": "Nov 18, 2025",
+    "workDateISO": "2025-11-19T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Alpha Milestone: When Documentation Prevents Disaster",
     "excerpt": "“You are invited…”November 11Tuesday morning, 5:20 PM. I send the first external alpha invitations. To real users. Not just me me testing my own software. The moment when “it works for me” is no longer going to be enough.But we almost didn’t make it. Almost sent invitations to an alpha that could...",
-    "url": "https://medium.com/building-piper-morgan/the-alpha-milestone-when-documentation-prevents-disaster-59942417c037?source=rss----982e21163f8b---4",
+    "url": "/blog/the-alpha-milestone",
     "publishedAt": "Nov 17, 2025",
     "publishedAtISO": "Mon, 17 Nov 2025 14:28:58 GMT",
     "author": "christian crumlish",
@@ -4345,12 +4573,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-alpha-milestone-when-documentation-prevents-disaster-59942417c037?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-alpha-milestone",
+    "workDate": "Nov 16, 2025",
+    "workDateISO": "2025-11-17T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "The AI Partnership Model: Operating at Your Highest Thinking Level",
     "excerpt": "“Teamworkm makes the dream work!”October 14One day last work in the middle of the morning I noted something the Lead Developer captured in its logs: “cognitive load on me today has been extraordinarily light so far.”By afternoon, we’d completed the entire VALID epic, and I didn’t feel frantic or ...",
-    "url": "https://medium.com/building-piper-morgan/the-ai-partnership-model-operating-at-your-highest-thinking-level-f442a4472c68?source=rss----982e21163f8b---4",
+    "url": "/blog/the-ai-partnership-model",
     "publishedAt": "Nov 16, 2025",
     "publishedAtISO": "Sun, 16 Nov 2025 15:24:55 GMT",
     "author": "christian crumlish",
@@ -4364,12 +4596,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-ai-partnership-model-operating-at-your-highest-thinking-level-f442a4472c68?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-ai-partnership-model",
+    "workDate": "Nov 15, 2025",
+    "workDateISO": "2025-11-16T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Discovery Pattern: Why Verification Before Implementation Saves Time",
     "excerpt": "“We’re ahead of schedule!”October 12–15Between Sunday and Wednesday of mid-October, I discovered four separate times that work I expected to build from scratch was already 75% complete.CI/CD infrastructure that had existed — sophisticated and operational — for two months, invisible because we nev...",
-    "url": "https://medium.com/building-piper-morgan/the-discovery-pattern-why-verification-before-implementation-saves-time-b7e099d26063?source=rss----982e21163f8b---4",
+    "url": "/blog/the-discovery-pattern",
     "publishedAt": "Nov 15, 2025",
     "publishedAtISO": "Sat, 15 Nov 2025 13:19:55 GMT",
     "author": "christian crumlish",
@@ -4383,12 +4619,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-discovery-pattern-why-verification-before-implementation-saves-time-b7e099d26063?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-discovery-pattern",
+    "workDate": "Nov 14, 2025",
+    "workDateISO": "2025-11-15T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Agent Tag-Team: When Frustration Becomes Protocol",
     "excerpt": "November 9–10“It’s the weekend!” I explained to one of my AI assistantsa, “I am not in a coding mania anymore!” Sunday afternoon around 1:05 PM I deployed two agents to execute the UUID migration gameplan (upgrading how I store unique user IDs). Then I step back.By Monday morning: Both issues com...",
-    "url": "https://medium.com/building-piper-morgan/the-agent-tag-team-when-frustration-becomes-protocol-b2677f7c1e59?source=rss----982e21163f8b---4",
+    "url": "/blog/the-agent-tag-team",
     "publishedAt": "Nov 14, 2025",
     "publishedAtISO": "Fri, 14 Nov 2025 14:11:54 GMT",
     "author": "christian crumlish",
@@ -4402,12 +4642,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-agent-tag-team-when-frustration-becomes-protocol-b2677f7c1e59?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-agent-tag-team",
+    "workDate": "Nov 13, 2025",
+    "workDateISO": "2025-11-14T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Working While Living: Three Days of Travel and Planning",
     "excerpt": "“As soon as we’re done we can go see my nephew!”November 6–8On Thursday afternoon, with two P2 issues ready to close, I deployed two agents in parallel. 18 minutes later they were both done. Later that evening, flying to Burbank for my nephew’s play at Occidental College.Friday, the plan was to w...",
-    "url": "https://medium.com/building-piper-morgan/working-while-living-three-days-of-travel-and-planning-2c985244975a?source=rss----982e21163f8b---4",
+    "url": "/blog/working-while-living",
     "publishedAt": "Nov 13, 2025",
     "publishedAtISO": "Thu, 13 Nov 2025 14:59:17 GMT",
     "author": "christian crumlish",
@@ -4421,12 +4665,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/working-while-living-three-days-of-travel-and-planning-2c985244975a?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "working-while-living",
+    "workDate": "Nov 12, 2025",
+    "workDateISO": "2025-11-13T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Long Winding Road to Done",
     "excerpt": "“Almost there!”November 5Late-ish on Wednesday afternoon, I have time to turn to this project, so I confirm status with Lead Developer: Issue #295 needs closing, then create gameplan for #294.Issue #295 (Todo Persistence) represents Monday-Tuesday work. Started Monday as “simple wiring task.” Bec...",
-    "url": "https://medium.com/building-piper-morgan/the-long-winding-road-to-done-366181485b03?source=rss----982e21163f8b---4",
+    "url": "/blog/the-long-winding-road-to-done",
     "publishedAt": "Nov 12, 2025",
     "publishedAtISO": "Wed, 12 Nov 2025 14:19:59 GMT",
     "author": "christian crumlish",
@@ -4440,12 +4688,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-long-winding-road-to-done-366181485b03?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-long-winding-road-to-done",
+    "workDate": "Nov 11, 2025",
+    "workDateISO": "2025-11-12T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The 16.5 Hour Foundation: When Simple Wiring Becomes Architecture",
     "excerpt": "“Some assembly required!”November 4I started early on Tuesday morning, just before 6 AM. Yesterday completed Issue #285 (Todo System) by wiring chat handlers and web routes. Clean surface-layer integration. Tests passing. Issue should be done.But something is bothering me about the domain model a...",
-    "url": "https://medium.com/building-piper-morgan/the-16-5-hour-foundation-when-simple-wiring-becomes-architecture-b2c33e4aaa2c?source=rss----982e21163f8b---4",
+    "url": "/blog/the-165-hour-foundation",
     "publishedAt": "Nov 11, 2025",
     "publishedAtISO": "Tue, 11 Nov 2025 15:00:15 GMT",
     "author": "christian crumlish",
@@ -4459,12 +4711,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-16-5-hour-foundation-when-simple-wiring-becomes-architecture-b2c33e4aaa2c?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-165-hour-foundation",
+    "workDate": "Nov 10, 2025",
+    "workDateISO": "2025-11-11T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "When Four Out of Six is Enough: Architecture Sets the Limits",
     "excerpt": "“Well, I’ll be!”November 3Fresh off the weekend, I wake up early Monday like I tend to do. Twenty year old me would cringe so hard. 5:53 AM, time to start that P1 sprint. Sunday’s planning identified three issues ready for execution:Error messagesAction mappingTodo system completionCursor will ha...",
-    "url": "https://medium.com/building-piper-morgan/when-four-out-of-six-is-enough-architecture-sets-the-limits-dda267872398?source=rss----982e21163f8b---4",
+    "url": "/blog/when-four-out-of-six-is",
     "publishedAt": "Nov 10, 2025",
     "publishedAtISO": "Mon, 10 Nov 2025 17:03:44 GMT",
     "author": "christian crumlish",
@@ -4478,12 +4734,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/when-four-out-of-six-is-enough-architecture-sets-the-limits-dda267872398?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "when-four-out-of-six-is",
+    "workDate": "Nov 9, 2025",
+    "workDateISO": "2025-11-10T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Building on the Foundation: When Archaeological Discovery Becomes Pattern",
     "excerpt": "“They really knew how to build!”November 2Yesterday we fixed “everything” in a Saturday marathon: 9,292 lines in 12.75 hours, four P0 blockers resolved, 100% test pass rate, ready for external alpha testing. The momentum is real. The system works. Tests pass.But I’m not sprinting this Sunday. I’m...",
-    "url": "https://medium.com/building-piper-morgan/building-on-the-foundation-when-archaeological-discovery-becomes-pattern-826650dbcb52?source=rss----982e21163f8b---4",
+    "url": "/blog/building-on-the-foundation",
     "publishedAt": "Nov 10, 2025",
     "publishedAtISO": "Mon, 10 Nov 2025 16:06:14 GMT",
     "author": "christian crumlish",
@@ -4497,12 +4757,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/building-on-the-foundation-when-archaeological-discovery-becomes-pattern-826650dbcb52?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "building-on-the-foundation",
+    "workDate": "Nov 9, 2025",
+    "workDateISO": "2025-11-10T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Small Fixes, Massive Leverage: The Compound Effect of Process Improvements",
     "excerpt": "“This should do it!”October 12–15In the middle of a morning work session, PROOF-5 running in the background — performance verification, systematic testing, standard work, and I noticed something small. The pre-commit hooks kept failing, getting auto-fixed, then requiring re-staging and re-committ...",
-    "url": "https://medium.com/building-piper-morgan/small-fixes-massive-leverage-the-compound-effect-of-process-improvements-05924bc37e8a?source=rss----982e21163f8b---4",
+    "url": "/blog/small-fixes-massive-leverage",
     "publishedAt": "Nov 9, 2025",
     "publishedAtISO": "Sun, 09 Nov 2025 14:13:07 GMT",
     "author": "christian crumlish",
@@ -4516,12 +4780,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/small-fixes-massive-leverage-the-compound-effect-of-process-improvements-05924bc37e8a?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "small-fixes-massive-leverage",
+    "workDate": "Nov 8, 2025",
+    "workDateISO": "2025-11-09T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Missing the Conceptual Forest for the Syntax Trees: What We Learned When Pattern Detection Found…",
     "excerpt": "Missing the Conceptual Forest for the Syntax Trees: What We Learned When Pattern Detection Found Everything Except the Breakthroughs“OK, I see them but where’s the forest?”October 4 to November 7I’m reviewing with my Chief Architect the results from our binocular pattern analysis — two different ...",
-    "url": "https://medium.com/building-piper-morgan/missing-the-conceptual-forest-for-the-syntax-trees-what-we-learned-when-pattern-detection-found-501729b7fa7a?source=rss----982e21163f8b---4",
+    "url": "/blog/missing-the-conceptual-forest-for-the",
     "publishedAt": "Nov 8, 2025",
     "publishedAtISO": "Sat, 08 Nov 2025 15:23:11 GMT",
     "author": "christian crumlish",
@@ -4535,12 +4803,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/missing-the-conceptual-forest-for-the-syntax-trees-what-we-learned-when-pattern-detection-found-501729b7fa7a?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "missing-the-conceptual-forest-for-the",
+    "workDate": "Nov 7, 2025",
+    "workDateISO": "2025-11-08T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Day We Fixed Everything: 9,292 Lines in 12 Hours",
     "excerpt": "“No job too small!”November 1Saturday morning, bright and early. Four P0 blockers preventing external alpha testing. Estimated effort: 35–45 hours of work across multiple issues.Friday’s architectural analysis revealed the problem clearly: “We have two parallel realities.” The database layer is s...",
-    "url": "https://medium.com/building-piper-morgan/the-day-we-fixed-everything-9-292-lines-in-12-hours-feb7ebba813f?source=rss----982e21163f8b---4",
+    "url": "/blog/the-day-we-fixed-everything",
     "publishedAt": "Nov 7, 2025",
     "publishedAtISO": "Fri, 07 Nov 2025 17:59:38 GMT",
     "author": "christian crumlish",
@@ -4554,12 +4826,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-day-we-fixed-everything-9-292-lines-in-12-hours-feb7ebba813f?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-day-we-fixed-everything",
+    "workDate": "Nov 6, 2025",
+    "workDateISO": "2025-11-07T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Two Realities Problem: When Your Database is Sophisticated and Your Web Tier Has Zero Auth",
     "excerpt": "“Not sure about this security regime”October 31Friday morning. The day after first alpha user onboarding. Thursday was the birthday breakthrough — three hours of reactive bug-chasing followed by systematic E2E testing first, leading to successful onboarding at 11:26 AM.But success revealed a prob...",
-    "url": "https://medium.com/building-piper-morgan/the-two-realities-problem-when-your-database-is-sophisticated-and-your-web-tier-has-zero-auth-392ba601a8e2?source=rss----982e21163f8b---4",
+    "url": "/blog/the-two-realities-problem",
     "publishedAt": "Nov 7, 2025",
     "publishedAtISO": "Fri, 07 Nov 2025 14:30:00 GMT",
     "author": "christian crumlish",
@@ -4573,12 +4849,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-two-realities-problem-when-your-database-is-sophisticated-and-your-web-tier-has-zero-auth-392ba601a8e2?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-two-realities-problem",
+    "workDate": "Nov 6, 2025",
+    "workDateISO": "2025-11-07T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Birthday Breakthrough: When Discipline Beats Volume",
     "excerpt": "“You shouldn’t have!”October 30I am up at 5:40 AM on my birthday. I’ve spent thee days testing installation, fixing documentation, and systematically hardening the Wizard (are we still doing phrasing?) Seven system checks implemented. Four Docker services automated.Time for the real test: Can I o...",
-    "url": "https://medium.com/building-piper-morgan/the-birthday-breakthrough-when-discipline-beats-volume-97d9b483cbaf?source=rss----982e21163f8b---4",
+    "url": "/blog/the-birthday-breakthrough",
     "publishedAt": "Nov 6, 2025",
     "publishedAtISO": "Thu, 06 Nov 2025 14:21:36 GMT",
     "author": "christian crumlish",
@@ -4592,12 +4872,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-birthday-breakthrough-when-discipline-beats-volume-97d9b483cbaf?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-birthday-breakthrough",
+    "workDate": "Nov 5, 2025",
+    "workDateISO": "2025-11-06T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Wizard that Learned to Restart Itself",
     "excerpt": "“I’m back!”October 29Wednesday morning, 5:58 AM. One day before we plan to onboard our first non-me alpha user. Time for the real test: Can someone actually run python main.py setup and get Piper Morgan working?Not “can they follow documentation?” Tuesday proved the docs had seven blockers. Fixed...",
-    "url": "https://medium.com/building-piper-morgan/the-wizard-that-learned-to-restart-itself-202fd198aa59?source=rss----982e21163f8b---4",
+    "url": "/blog/the-wizard-that-learned-to-restart",
     "publishedAt": "Nov 5, 2025",
     "publishedAtISO": "Wed, 05 Nov 2025 14:52:59 GMT",
     "author": "christian crumlish",
@@ -4611,12 +4895,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-wizard-that-learned-to-restart-itself-202fd198aa59?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-wizard-that-learned-to-restart",
+    "workDate": "Nov 4, 2025",
+    "workDateISO": "2025-11-05T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "When the Documentation Lied: Seven Blockers Hiding in 1,630 Lines",
     "excerpt": "“Perfect condition!”October 28Tuesday mornings are always busy and it’s almost noon by the time turn my thoughts to Piper Morgan. The mission: validate that yesterday’s 1,630 lines of installation documentation actually work.They “work for me in my development environment where everything is alre...",
-    "url": "https://medium.com/building-piper-morgan/when-the-documentation-lied-seven-blockers-hiding-in-1-630-lines-59ec35fb0d31?source=rss----982e21163f8b---4",
+    "url": "/blog/when-the-documentation-lied",
     "publishedAt": "Nov 4, 2025",
     "publishedAtISO": "Tue, 04 Nov 2025 14:10:23 GMT",
     "author": "christian crumlish",
@@ -4630,12 +4918,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/when-the-documentation-lied-seven-blockers-hiding-in-1-630-lines-59ec35fb0d31?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "when-the-documentation-lied",
+    "workDate": "Nov 3, 2025",
+    "workDateISO": "2025-11-04T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "When Documentation Becomes Critical: The 1,630 Lines That Stand Between Alpha and Chaos",
     "excerpt": "“We need more paperwork!”October 27I’m doing what I call “invisible methodology work” on a Monday morning at 7:59 AM, archiving four days of session logs, organizing records, maintaining the infrastructure that enables systematic development.It’s housekeeping. Necessary but unglamorous. The kind ...",
-    "url": "https://medium.com/building-piper-morgan/when-documentation-becomes-critical-the-1-630-lines-that-stand-between-alpha-and-chaos-7c5d4ba1e1a4?source=rss----982e21163f8b---4",
+    "url": "/blog/when-documentation-becomes-critical",
     "publishedAt": "Nov 3, 2025",
     "publishedAtISO": "Mon, 03 Nov 2025 14:31:59 GMT",
     "author": "christian crumlish",
@@ -4649,12 +4941,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/when-documentation-becomes-critical-the-1-630-lines-that-stand-between-alpha-and-chaos-7c5d4ba1e1a4?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "when-documentation-becomes-critical",
+    "workDate": "Nov 2, 2025",
+    "workDateISO": "2025-11-03T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Discovery Testing Philosophy: Testing What Matters for Alpha",
     "excerpt": "“Too stodgy”October 26It’s another Sunday morning and I’m full of energy at 7:20 AM. The Lead Developer begins Phase 2 preparation. Sprint A8 Phase 1 is complete (five issues delivered Saturday). Production branch ready. Infrastructure verified. Alpha launch in three days.Time for end-to-end test...",
-    "url": "https://medium.com/building-piper-morgan/the-discovery-testing-philosophy-testing-what-matters-for-alpha-638b66762064?source=rss----982e21163f8b---4",
+    "url": "/blog/the-discovery-testing-philosophy",
     "publishedAt": "Nov 3, 2025",
     "publishedAtISO": "Mon, 03 Nov 2025 13:46:21 GMT",
     "author": "christian crumlish",
@@ -4668,12 +4964,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-discovery-testing-philosophy-testing-what-matters-for-alpha-638b66762064?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-discovery-testing-philosophy",
+    "workDate": "Nov 2, 2025",
+    "workDateISO": "2025-11-03T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Review That Answered Itself: Why LLMs Need to Shut Up Sometimes",
     "excerpt": "“Now, as I was saying…”October 3My Lead Developer — Claude Sonnet 4.5, who coordinates all the programming work on Piper Morgan — finished a session Thursday afternoon and confidently announced the satisfaction review was complete.I looked at the log. There it was:Value: Feature shipped ✓Process:...",
-    "url": "https://medium.com/building-piper-morgan/the-review-that-answered-itself-why-llms-need-to-shut-up-sometimes-3bdba32e12ce?source=rss----982e21163f8b---4",
+    "url": "/blog/the-review-that-answered-itself",
     "publishedAt": "Nov 2, 2025",
     "publishedAtISO": "Sun, 02 Nov 2025 15:06:08 GMT",
     "author": "christian crumlish",
@@ -4687,12 +4987,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-review-that-answered-itself-why-llms-need-to-shut-up-sometimes-3bdba32e12ce?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-review-that-answered-itself",
+    "workDate": "Nov 1, 2025",
+    "workDateISO": "2025-11-02T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Archaeology of Accumulated Files: How Documentation Debt Nearly Buried the Project",
     "excerpt": "“All organized”September 19–21The system was working, but the documentation was drowning.787 files scattered across 104 directories. Session logs in three different locations. 186 binary blog files mixed with development documents. The Jekyll infrastructure tangled with project documentation in t...",
-    "url": "https://medium.com/building-piper-morgan/the-archaeology-of-accumulated-files-how-documentation-debt-nearly-buried-the-project-715d6228660b?source=rss----982e21163f8b---4",
+    "url": "/blog/the-archaeology-of-accumulated-files",
     "publishedAt": "Nov 1, 2025",
     "publishedAtISO": "Sat, 01 Nov 2025 12:42:40 GMT",
     "author": "christian crumlish",
@@ -4706,12 +5010,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-archaeology-of-accumulated-files-how-documentation-debt-nearly-buried-the-project-715d6228660b?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-archaeology-of-accumulated-files",
+    "workDate": "Oct 31, 2025",
+    "workDateISO": "2025-11-01T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Haiku Does the Impossible: Architectural Work at Fraction of Cost",
     "excerpt": "“Dragonfly catcher, / How far have you gone today / In your wandering?”October 25, 2025Saturday morning, 9:42 AM. Chief of Staff establishes production branch strategy. Four days to alpha launch. Final infrastructure work ahead.Time to try some new tooling, right? Perfect time to do Haiku 4.5 cos...",
-    "url": "https://medium.com/building-piper-morgan/haiku-does-the-impossible-architectural-work-at-fraction-of-cost-488b596f3048?source=rss----982e21163f8b---4",
+    "url": "/blog/haiku-does-the-impossible",
     "publishedAt": "Oct 31, 2025",
     "publishedAtISO": "Fri, 31 Oct 2025 13:33:19 GMT",
     "author": "christian crumlish",
@@ -4725,12 +5033,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/haiku-does-the-impossible-architectural-work-at-fraction-of-cost-488b596f3048?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "haiku-does-the-impossible",
+    "workDate": "Oct 30, 2025",
+    "workDateISO": "2025-10-31T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Preparing the House for Visitors: When Your Code Is Ready But Your Alpha Isn’t",
     "excerpt": "“Welcome in!”October 24, 2025Early Friday morning, 7:31 AM. I started an alpha onboarding strategy session with my Chief of Staff. On paper, we’re solid. Sprint A7: Complete. Fourteen issues delivered in one day. Technical infrastructure: 100% ready. Multi-user foundations: Established. Security:...",
-    "url": "https://medium.com/building-piper-morgan/preparing-the-house-for-visitors-when-your-code-is-ready-but-your-alpha-isnt-c3aa73273705?source=rss----982e21163f8b---4",
+    "url": "/blog/preparing-the-house-for-visitors",
     "publishedAt": "Oct 31, 2025",
     "publishedAtISO": "Fri, 31 Oct 2025 13:04:12 GMT",
     "author": "christian crumlish",
@@ -4744,12 +5056,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/preparing-the-house-for-visitors-when-your-code-is-ready-but-your-alpha-isnt-c3aa73273705?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "preparing-the-house-for-visitors",
+    "workDate": "Oct 30, 2025",
+    "workDateISO": "2025-10-31T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "The Time Pressure Intervention: When 3 Minutes of Course Correction Saves Hours",
     "excerpt": "“Fly safe!”October 23, 2025Thursday morning, 7:54 AM. My Lead Developer creates a prompt for Claude Code to begin Sprint A7 execution. Twelve issues planned. Estimated 20–29 hours traditional, likely 5–6 hours actual based on 88% velocity pattern. Alpha launch in 6 days.The prompt includes implem...",
-    "url": "https://medium.com/building-piper-morgan/the-time-pressure-intervention-when-3-minutes-of-course-correction-saves-hours-5b7b326d855d?source=rss----982e21163f8b---4",
+    "url": "/blog/the-time-pressure-intervention",
     "publishedAt": "Oct 30, 2025",
     "publishedAtISO": "Thu, 30 Oct 2025 12:38:06 GMT",
     "author": "christian crumlish",
@@ -4763,12 +5079,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-time-pressure-intervention-when-3-minutes-of-course-correction-saves-hours-5b7b326d855d?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-time-pressure-intervention",
+    "workDate": "Oct 29, 2025",
+    "workDateISO": "2025-10-30T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The March to Alpha: When Methodology Discipline Enables Aggressive Scope",
     "excerpt": "“Just like I pictured it!”October 22It’s 6:05 AM on Tuesday morning. My Lead Developer orchestrates Sprint A6 execution across three parallel tracks. We deploy Cursor agent on an architectural investigation for API key management. Claude Code stands by to do the implementation.By 6:35 AM, discove...",
-    "url": "https://medium.com/building-piper-morgan/the-march-to-alpha-when-methodology-discipline-enables-aggressive-scope-27e1d330581a?source=rss----982e21163f8b---4",
+    "url": "/blog/the-march-to-alpha",
     "publishedAt": "Oct 29, 2025",
     "publishedAtISO": "Wed, 29 Oct 2025 12:41:57 GMT",
     "author": "christian crumlish",
@@ -4782,12 +5102,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-march-to-alpha-when-methodology-discipline-enables-aggressive-scope-27e1d330581a?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-march-to-alpha",
+    "workDate": "Oct 28, 2025",
+    "workDateISO": "2025-10-29T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Complete Means Complete: Three Standards in One Day",
     "excerpt": "“We know you can do better”October 21, 2025It was around 11:30 AM Tuesday morning that I checked in with the Chief Architect for Sprint A6 planning. Five issues for Alpha readiness. Estimated 21–29 hours, realistically 2–3 days given velocity patterns.By 12:11 PM, first discovery complete. CORE-L...",
-    "url": "https://medium.com/building-piper-morgan/complete-means-complete-three-standards-in-one-day-ed03fc6696ec?source=rss----982e21163f8b---4",
+    "url": "/blog/complete-means-complete",
     "publishedAt": "Oct 28, 2025",
     "publishedAtISO": "Tue, 28 Oct 2025 12:47:13 GMT",
     "author": "christian crumlish",
@@ -4801,12 +5125,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/complete-means-complete-three-standards-in-one-day-ed03fc6696ec?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "complete-means-complete",
+    "workDate": "Oct 27, 2025",
+    "workDateISO": "2025-10-28T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Infrastructure Dividend: When Months of Building Pay Off in Hours",
     "excerpt": "“Let’s give it a go!”October 20, 2025Monday morning’s work felt almost anticlimactic: Expected multi-day sprint finished before lunch. Ho hum!Then at 11:00 AM, Chief Architect begins Sprint A5 discovery. Six issues across learning system infrastructure. Original estimate: 14–19 days.Four minutes ...",
-    "url": "https://medium.com/building-piper-morgan/the-infrastructure-dividend-when-months-of-building-pay-off-in-hours-84e1a34cefd7?source=rss----982e21163f8b---4",
+    "url": "/blog/the-infrastructure-dividend",
     "publishedAt": "Oct 27, 2025",
     "publishedAtISO": "Mon, 27 Oct 2025 13:05:07 GMT",
     "author": "christian crumlish",
@@ -4820,12 +5148,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-infrastructure-dividend-when-months-of-building-pay-off-in-hours-84e1a34cefd7?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-infrastructure-dividend",
+    "workDate": "Oct 26, 2025",
+    "workDateISO": "2025-10-27T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "When the System Shows You What’s Missing",
     "excerpt": "“See!”October 19, 2025Sunday morning, 7:57 AM. Sprint A4 launch. Chief Architect completes gameplan: 5 phases, 30 hours estimated. Lead Developer reviews scope. Code Agent begins Phase 0 discovery.By 8:40 AM, Phase 0 complete with critical bug discovered. The 70% pattern confirmed again — Morning...",
-    "url": "https://medium.com/building-piper-morgan/when-the-system-shows-you-whats-missing-c877abacff94?source=rss----982e21163f8b---4",
+    "url": "/blog/when-the-system-shows-you-whats",
     "publishedAt": "Oct 27, 2025",
     "publishedAtISO": "Mon, 27 Oct 2025 12:54:14 GMT",
     "author": "christian crumlish",
@@ -4839,12 +5171,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/when-the-system-shows-you-whats-missing-c877abacff94?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "when-the-system-shows-you-whats",
+    "workDate": "Oct 26, 2025",
+    "workDateISO": "2025-10-27T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Methodology That Discovered Itself",
     "excerpt": "“Wait, that’s me!”September 13I set out to build an AI-powered product management assistant. Along the way I seem to have discovered was something else — a systematic methodology for human-AI collaborative development.This wasn’t the plan. I didn’t start with a framework and apply it. I started b...",
-    "url": "https://medium.com/building-piper-morgan/the-methodology-that-discovered-itself-6ebe523a6856?source=rss----982e21163f8b---4",
+    "url": "/blog/the-methodology-that-discovered-itself",
     "publishedAt": "Oct 26, 2025",
     "publishedAtISO": "Sun, 26 Oct 2025 12:46:17 GMT",
     "author": "christian crumlish",
@@ -4858,12 +5194,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-methodology-that-discovered-itself-6ebe523a6856?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-methodology-that-discovered-itself",
+    "workDate": "Oct 25, 2025",
+    "workDateISO": "2025-10-26T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "When the Best Way Forward is Backwards",
     "excerpt": "“I always start at the end”September 13By Friday evening, I was cognitively exhausted. After an 8-hour architectural refactoring marathon on Thursday, a 14-hour personality enhancement session on Wednesday, and weeks of intensive development work, I could feel my attention fragmenting across too ...",
-    "url": "https://medium.com/building-piper-morgan/when-the-best-way-forward-is-backwards-d0c3c9e141cc?source=rss----982e21163f8b---4",
+    "url": "/blog/when-the-best-way-forward-is",
     "publishedAt": "Oct 25, 2025",
     "publishedAtISO": "Sat, 25 Oct 2025 05:07:48 GMT",
     "author": "christian crumlish",
@@ -4877,12 +5217,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/when-the-best-way-forward-is-backwards-d0c3c9e141cc?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "when-the-best-way-forward-is",
+    "workDate": "Oct 24, 2025",
+    "workDateISO": "2025-10-25T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Noticer’s Question: When Strategic Oversight Catches What Tests Miss",
     "excerpt": "“There’s a tiny slub”October 18, 2025Saturday morning at 11:23 AM, during ethics-layer activation preparation, I asked a question.Not a detailed technical inquiry. Not a systematic review. Just noticing something that felt off:“Why would middleware apply to the web layer specifically?”I had a rea...",
-    "url": "https://medium.com/building-piper-morgan/the-noticers-question-when-strategic-oversight-catches-what-tests-miss-3bd6a06ffac1?source=rss----982e21163f8b---4",
+    "url": "/blog/the-noticers-question",
     "publishedAt": "Oct 24, 2025",
     "publishedAtISO": "Fri, 24 Oct 2025 13:29:43 GMT",
     "author": "christian crumlish",
@@ -4896,12 +5240,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-noticers-question-when-strategic-oversight-catches-what-tests-miss-3bd6a06ffac1?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-noticers-question",
+    "workDate": "Oct 23, 2025",
+    "workDateISO": "2025-10-24T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "As An Inchworm I Am Not Dismayed",
     "excerpt": "“Let’s keep going!”October 17, 2025Friday morning at 12:25 PM, my Lead Developer and I received Phase −1 discovery report: 1,115 lines documenting MCP migration complexity.Original estimate: 16 hours across multiple phases.Actual discovery: 29–38 hours. Nearly double.Seven MCP adapters found acro...",
-    "url": "https://medium.com/building-piper-morgan/as-an-inchworm-i-am-not-dismayed-54972742a9ae?source=rss----982e21163f8b---4",
+    "url": "/blog/as-an-inchworm-i-am-not",
     "publishedAt": "Oct 24, 2025",
     "publishedAtISO": "Fri, 24 Oct 2025 13:11:47 GMT",
     "author": "christian crumlish",
@@ -4915,12 +5263,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/as-an-inchworm-i-am-not-dismayed-54972742a9ae?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "as-an-inchworm-i-am-not",
+    "workDate": "Oct 23, 2025",
+    "workDateISO": "2025-10-24T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Investigating Our Own Past to Plan the Way Forward",
     "excerpt": "“The map is not the territory!”October 16, 2025Thursday morning at 8:26 AM, Code Agent deployed to investigate a test failure. Test 3 was returning HTTP 422 instead of success. Valid intent, proper authentication, should work — didn’t.The natural conclusion: Phase 1 broke something.The natural re...",
-    "url": "https://medium.com/building-piper-morgan/investigating-our-own-past-to-plan-the-way-forward-5566df36f2ae?source=rss----982e21163f8b---4",
+    "url": "/blog/investigating-our-own-past-to-plan",
     "publishedAt": "Oct 23, 2025",
     "publishedAtISO": "Thu, 23 Oct 2025 13:34:25 GMT",
     "author": "christian crumlish",
@@ -4934,12 +5286,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/investigating-our-own-past-to-plan-the-way-forward-5566df36f2ae?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "investigating-our-own-past-to-plan",
+    "workDate": "Oct 22, 2025",
+    "workDateISO": "2025-10-23T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Discovery Over Assumptions: When Investigating First Saves Days",
     "excerpt": "“This way!”October 15Wednesday morning at 7:42 AM, my Chief Architect and I began Sprint A2 planning. Five issues scheduled over two days.By 10:51 AM, we’d discovered three of those issues were already complete. By 5:00 PM, we’d completed what should have been 12–17 hours of work in 15 minutes by...",
-    "url": "https://medium.com/building-piper-morgan/discovery-over-assumptions-when-investigating-first-saves-days-9ed41851290e?source=rss----982e21163f8b---4",
+    "url": "/blog/discovery-over-assumptions",
     "publishedAt": "Oct 22, 2025",
     "publishedAtISO": "Wed, 22 Oct 2025 12:56:39 GMT",
     "author": "christian crumlish",
@@ -4953,12 +5309,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/discovery-over-assumptions-when-investigating-first-saves-days-9ed41851290e?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "discovery-over-assumptions",
+    "workDate": "Oct 21, 2025",
+    "workDateISO": "2025-10-22T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Dignity Through Leverage: When Cognitive Load Becomes Extraordinarily Light",
     "excerpt": "“I’ll do the heavy lifting”October 14, 2025Tuesday morning at 7:25 AM, my Lead Developer (a Claude Sonnet chat) began reviewing PROOF Stage 3 tasks. Five items remaining. Standard systematic work — verify documentation precision, complete the PROOF epic, move to validation.At 10:40 AM, after clos...",
-    "url": "https://medium.com/building-piper-morgan/dignity-through-leverage-when-cognitive-load-becomes-extraordinarily-light-f16f53b24bb2?source=rss----982e21163f8b---4",
+    "url": "/blog/dignity-through-leverage",
     "publishedAt": "Oct 21, 2025",
     "publishedAtISO": "Tue, 21 Oct 2025 14:01:32 GMT",
     "author": "christian crumlish",
@@ -4972,12 +5332,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/dignity-through-leverage-when-cognitive-load-becomes-extraordinarily-light-f16f53b24bb2?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "dignity-through-leverage",
+    "workDate": "Oct 20, 2025",
+    "workDateISO": "2025-10-21T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "Already Exceeding Target: When Excellence Becomes Exceptional",
     "excerpt": "“The goal was just swimming!”October 13, 2025Monday morning at 7:15 AM, Lead Developer began reviewing GAP-3: accuracy polish. The goal was clear — improve classification accuracy from 89.3% to at least 92%.Documentation from October 7 showed the baseline. Six days of work since then (the Great R...",
-    "url": "https://medium.com/building-piper-morgan/already-exceeding-target-when-excellence-becomes-exceptional-90b80dcb93d5?source=rss----982e21163f8b---4",
+    "url": "/blog/already-exceeding-target",
     "publishedAt": "Oct 20, 2025",
     "publishedAtISO": "Mon, 20 Oct 2025 12:48:25 GMT",
     "author": "christian crumlish",
@@ -4991,12 +5355,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/already-exceeding-target-when-excellence-becomes-exceptional-90b80dcb93d5?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "already-exceeding-target",
+    "workDate": "Oct 19, 2025",
+    "workDateISO": "2025-10-20T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Invisible Infrastructure: When Quality Gates Hide in Plain Sight",
     "excerpt": "“Somehow, I believe we can do it!”October 12, 2025Sunday morning at 7:36 AM, I began what should have been routine work: GAP-2 interface validation. Verify that all our enforcement patterns work correctly. Check that handlers follow the router architecture. Standard quality assurance.By 10:10 AM,...",
-    "url": "https://medium.com/building-piper-morgan/the-invisible-infrastructure-when-quality-gates-hide-in-plain-sight-fc4b6ffa54c0?source=rss----982e21163f8b---4",
+    "url": "/blog/the-invisible-infrastructure",
     "publishedAt": "Oct 20, 2025",
     "publishedAtISO": "Mon, 20 Oct 2025 12:39:31 GMT",
     "author": "christian crumlish",
@@ -5010,12 +5378,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-invisible-infrastructure-when-quality-gates-hide-in-plain-sight-fc4b6ffa54c0?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-invisible-infrastructure",
+    "workDate": "Oct 19, 2025",
+    "workDateISO": "2025-10-20T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Emergence of the Dance: How Chaos Becomes Choreography",
     "excerpt": "“Now hold your core and turn out!”September 9Back when I started this I was writing prompts in chat windows and immediately losing them. Today, we executed a multi-agent debugging session with Phase −1 reconnaissance, gameplan handoffs, parallel deployment, and cross-validation protocols. The dif...",
-    "url": "https://medium.com/building-piper-morgan/the-emergence-of-the-dance-how-chaos-becomes-choreography-b2656411091a?source=rss----982e21163f8b---4",
+    "url": "/blog/the-emergence-of-the-dance",
     "publishedAt": "Oct 19, 2025",
     "publishedAtISO": "Sun, 19 Oct 2025 13:21:47 GMT",
     "author": "christian crumlish",
@@ -5029,12 +5401,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-emergence-of-the-dance-how-chaos-becomes-choreography-b2656411091a?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-emergence-of-the-dance",
+    "workDate": "Oct 18, 2025",
+    "workDateISO": "2025-10-19T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Punchbowl Principle: When Good Enough Really Is Good Enough",
     "excerpt": "“Party’s over!”September 4 to 6There’s a moment in every product development cycle when you have to take the punchbowl away before the party gets sloppy. The features are working, the core value is delivered, and the team starts eyeing all the cool things they could add. That’s exactly when a goo...",
-    "url": "https://medium.com/building-piper-morgan/the-punchbowl-principle-when-good-enough-really-is-good-enough-df4050f0dced?source=rss----982e21163f8b---4",
+    "url": "/blog/the-punchbowl-principle",
     "publishedAt": "Oct 18, 2025",
     "publishedAtISO": "Sat, 18 Oct 2025 13:35:17 GMT",
     "author": "christian crumlish",
@@ -5048,12 +5424,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-punchbowl-principle-when-good-enough-really-is-good-enough-df4050f0dced?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-punchbowl-principle",
+    "workDate": "Oct 17, 2025",
+    "workDateISO": "2025-10-18T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Redemption",
     "excerpt": "“Wait, what?”October 11Saturday morning at 7:21 AM, I started the day knowing exactly what needed fixing.Friday’s Serena audit had revealed the truth: 8 sophisticated placeholders masquerading as complete implementations. Handlers that returned success=True, extracted parameters correctly, includ...",
-    "url": "https://medium.com/building-piper-morgan/the-redemption-9fd3ed79fc6f?source=rss----982e21163f8b---4",
+    "url": "/blog/the-redemption",
     "publishedAt": "Oct 17, 2025",
     "publishedAtISO": "Fri, 17 Oct 2025 16:40:10 GMT",
     "author": "christian crumlish",
@@ -5067,12 +5447,16 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-redemption-9fd3ed79fc6f?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-redemption",
+    "workDate": "Oct 16, 2025",
+    "workDateISO": "2025-10-17T00:00:00.000Z",
+    "category": "insight"
   },
   {
     "title": "The Day Our Foundation Cracked (And the Methodology Held)",
     "excerpt": "“How bad is it?”October 10, 2025Friday morning at 10:48 AM, my Lead Developer sent a message that changed everything:“Critical discovery — Cursor with Serena finds gaps in GREAT Refactor”We’d spent Wednesday planning the Alpha push. Eight weeks to first external users. Foundation at 98–99% comple...",
-    "url": "https://medium.com/building-piper-morgan/the-day-our-foundation-cracked-and-the-methodology-held-28544c06ff2c?source=rss----982e21163f8b---4",
+    "url": "/blog/the-day-our-foundation-cracked-and",
     "publishedAt": "Oct 17, 2025",
     "publishedAtISO": "Fri, 17 Oct 2025 14:57:01 GMT",
     "author": "christian crumlish",
@@ -5086,7 +5470,11 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-day-our-foundation-cracked-and-the-methodology-held-28544c06ff2c?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-day-our-foundation-cracked-and",
+    "workDate": "Oct 16, 2025",
+    "workDateISO": "2025-10-17T00:00:00.000Z",
+    "category": "building"
   },
   {
     "title": "The Day We Got 10⨉ Faster",
