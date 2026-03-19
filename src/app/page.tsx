@@ -40,14 +40,28 @@ export default function Home() {
         align="center"
       />
 
-      {/* Positioning Section */}
+      {/* Trust Signal */}
+      <section className="py-12 md:py-16">
+        <div className="site-container">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-dark dark:text-white">
+              Your work. Your patterns. Yours.
+            </h2>
+            <p className="text-lg md:text-xl text-text-light dark:text-gray-400 leading-relaxed mt-4">
+              What Piper learns about you isn&apos;t stored in public databanks or used to train someone else&apos;s model. It belongs to you.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Differentiation */}
       <section className="py-16 md:py-24">
         <div className="site-container">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-lg md:text-xl text-text-light dark:text-gray-400 leading-relaxed">
-              Task managers assume work is items in lists. But your work is connections —
+              PM tools assume work is items in lists. But your work is connections —
               between people, projects, and priorities at every scale. Decisions ripple.
-              Timelines interlock.
+              Timelines interlock. Context matters.
             </p>
             <p className="text-xl md:text-2xl font-semibold text-text-dark dark:text-white mt-6">
               Piper is built for that reality.
@@ -94,11 +108,12 @@ export default function Home() {
 
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-text-dark dark:text-white">
-                  Learning your world
+                  Growing with you
                 </h3>
                 <p className="text-text-light dark:text-gray-400">
                   Over time, Piper learns your projects, your patterns, your priorities.
                   Not by reading your documents — by understanding how things connect.
+                  And what it learns? That stays yours.
                 </p>
               </div>
 
@@ -111,25 +126,15 @@ export default function Home() {
       <section className="py-16 md:py-24">
         <div className="site-container">
           <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12">
 
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-text-dark dark:text-white">
                   Built in public, from day one
                 </h3>
                 <p className="text-text-light dark:text-gray-400">
-                  Every breakthrough and setback documented. 160+ blog posts. Weekly progress reports.
+                  Every breakthrough and setback documented. 260+ blog posts. Weekly progress reports.
                   No marketing polish — just the real story of building AI that works.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="text-xl font-bold text-text-dark dark:text-white">
-                  Ethics as architecture
-                </h3>
-                <p className="text-text-light dark:text-gray-400">
-                  We don&apos;t just have policies about responsible AI. We built ethical constraints
-                  directly into Piper&apos;s foundation. Some behaviors aren&apos;t discouraged — they&apos;re impossible.
                 </p>
               </div>
 
@@ -146,6 +151,12 @@ export default function Home() {
                   className="inline-block text-primary-teal-text hover:underline font-medium"
                 >
                   Learn how we work →
+                </Link>
+                <Link
+                  href="/blog"
+                  className="inline-block text-primary-teal-text hover:underline font-medium ml-6"
+                >
+                  Read the Journey →
                 </Link>
               </div>
 
