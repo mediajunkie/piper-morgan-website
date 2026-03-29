@@ -5,21 +5,19 @@ import { trackBlogClick } from '@/lib/analytics';
 
 interface BlogPost {
   title: string;
-  link: string;
-  pubDate: string;
+  guid: string;
+  url: string;
+  publishedAt: string;
+  workDate?: string;
   author: string;
-  thumbnail?: string;
-  categories?: string[];
+  featuredImage?: string;
+  tags?: string[];
 }
 
 interface BlogContent {
   title: string;
-  subtitle: string;
   content: string;
-  author: string;
-  canonicalLink: string;
-  publishedDate: string;
-  filename: string;
+  subtitle?: string;
 }
 
 interface BlogPostContentProps {
@@ -28,8 +26,10 @@ interface BlogPostContentProps {
 }
 
 export function BlogPostContent({ post, content }: BlogPostContentProps) {
-  const formatDate = (dateString: string) => {
+  const formatDate = (dateString: string | null | undefined) => {
+    if (!dateString) return null;
     const date = new Date(dateString);
+    if (isNaN(date.getTime())) return null;
     return date.toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
@@ -38,17 +38,17 @@ export function BlogPostContent({ post, content }: BlogPostContentProps) {
   };
 
   const handleMediumClick = () => {
-    trackBlogClick(post.title, post.link, 'view_on_medium');
+    trackBlogClick(post.title, post.guid, 'view_on_medium');
   };
 
   // Extract caption from featured image
   const extractCaption = (html: string): string | null => {
-    // Try Medium export format first
-    const exportMatch = html.match(/<figure[^>]*data-is-featured="true"[^>]*>[\s\S]*?<figcaption[^>]*>(.*?)<\/figcaption>[\s\S]*?<\/figure>/i);
+    // Try Medium export format first (data-is-featured may be on img inside figure)
+    const exportMatch = html.match(/<figure[^>]*>[\s\S]*?data-is-featured="true"[\s\S]*?<figcaption[^>]*>(.*?)<\/figcaption>[\s\S]*?<\/figure>/i);
     if (exportMatch) return exportMatch[1].replace(/<[^>]+>/g, '').trim();
 
     // Try RSS format (first figure)
-    const rssMatch = html.match(/^<figure[^>]*>[\s\S]*?<figcaption[^>]*>(.*?)<\/figcaption>[\s\S]*?<\/figure>/);
+    const rssMatch = html.match(/^\s*<figure[^>]*>[\s\S]*?<figcaption[^>]*>(.*?)<\/figcaption>[\s\S]*?<\/figure>/);
     if (rssMatch) return rssMatch[1].replace(/<[^>]+>/g, '').trim();
 
     return null;
@@ -72,11 +72,11 @@ export function BlogPostContent({ post, content }: BlogPostContentProps) {
     cleaned = cleaned.replace(new RegExp(`<h[123][^>]*>\\s*${escapedTitleText}\\s*<\\/h[123]>`, 'i'), '');
 
     // Remove the featured image from content (we show it in header)
-    // Medium export: <figure data-is-featured="true">...</figure>
-    cleaned = cleaned.replace(/<figure[^>]*data-is-featured="true"[^>]*>[\s\S]*?<\/figure>/i, '');
+    // Medium export: figure containing an img with data-is-featured="true"
+    cleaned = cleaned.replace(/<figure[^>]*>[\s\S]*?data-is-featured="true"[\s\S]*?<\/figure>/i, '');
 
     // RSS content: First <figure> is always the featured image
-    cleaned = cleaned.replace(/^<figure[^>]*>[\s\S]*?<\/figure>/, '');
+    cleaned = cleaned.replace(/^\s*<figure[^>]*>[\s\S]*?<\/figure>/, '');
 
     // Remove section wrappers that Medium adds (export only)
     cleaned = cleaned.replace(/<section[^>]*class="section[^"]*"[^>]*>/gi, '<div>');
@@ -110,15 +110,15 @@ export function BlogPostContent({ post, content }: BlogPostContentProps) {
             ← Back to Blog
           </Link>
 
-          {/* Categories */}
-          {post.categories && post.categories.length > 0 && (
+          {/* Tags */}
+          {post.tags && post.tags.length > 0 && (
             <div className="mb-4">
-              {post.categories.map((category) => (
+              {post.tags.map((tag) => (
                 <span
-                  key={category}
+                  key={tag}
                   className="inline-block px-3 py-1 bg-primary-teal/10 dark:bg-primary-teal/20 text-primary-teal-text dark:text-primary-teal text-sm font-medium rounded-full mr-2"
                 >
-                  {category}
+                  {tag}
                 </span>
               ))}
             </div>
@@ -139,29 +139,35 @@ export function BlogPostContent({ post, content }: BlogPostContentProps) {
           {/* Metadata */}
           <div className="flex items-center text-sm text-gray-600 dark:text-gray-400 mb-6">
             <span className="font-medium">{post.author}</span>
-            <span className="mx-2">•</span>
-            <time dateTime={post.pubDate}>{formatDate(post.pubDate)}</time>
+            {(formatDate(post.publishedAt) || post.workDate) && (
+              <>
+                <span className="mx-2">•</span>
+                <time dateTime={post.publishedAt || post.workDate}>{formatDate(post.publishedAt) || post.workDate}</time>
+              </>
+            )}
           </div>
 
-          {/* Medium Link */}
-          <a
-            href={post.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={handleMediumClick}
-            className="inline-flex items-center text-sm text-gray-600 dark:text-gray-400 hover:text-primary-teal-text dark:hover:text-primary-teal transition-colors"
-          >
-            View original on Medium →
-          </a>
+          {/* Medium Link - only show for posts that came from Medium */}
+          {post.guid && (
+            <a
+              href={post.guid}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleMediumClick}
+              className="inline-flex items-center text-sm text-gray-600 dark:text-gray-400 hover:text-primary-teal-text dark:hover:text-primary-teal transition-colors"
+            >
+              View original on Medium →
+            </a>
+          )}
         </div>
       </div>
 
       {/* Featured Image */}
-      {post.thumbnail && (
+      {post.featuredImage && (
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-8">
           <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
             <img
-              src={post.thumbnail}
+              src={post.featuredImage}
               alt={post.title}
               className="w-full h-full object-cover"
             />
@@ -207,7 +213,7 @@ export function BlogPostContent({ post, content }: BlogPostContentProps) {
           </Link>
 
           <a
-            href={post.link}
+            href={post.guid}
             target="_blank"
             rel="noopener noreferrer"
             onClick={handleMediumClick}

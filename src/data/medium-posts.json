@@ -3026,17 +3026,21 @@
       "Building in Public"
     ],
     "guid": "https://medium.com/p/978f3ec50a57",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*4wqfh11GjcxYfI0fVBWjSQ.png",
+    "featuredImage": "/assets/blog-images/discovery-bottleneck.webp",
     "fullContent": "<figure><img alt=\"Person stands in a cozy, well-stocked library holding unhelpful index cards labeled \u201cWhat can you do?\u201d while friendly abstract AI shapes hover nearby; useful books surround them, but nothing guides them to the right one.\" src=\"https://cdn-images-1.medium.com/max/1024/1*4wqfh11GjcxYfI0fVBWjSQ.png\" /><figcaption>\u201cWhere to\u00a0begin?\u201d</figcaption></figure><p><em>December 28,\u00a02025</em></p><p>We\u2019d spent a week implementing canonical queries. Eight queries in Phase A. Eight more in Phase B. Coverage climbed from 5% to 31% to 47%. Tests passed. Handlers worked. The infrastructure was\u00a0solid.</p><p>Then the Lead Developer reviewed the roadmap and wrote a single line that reframed everything:</p><blockquote>\u201c19 canonical queries work but users can\u2019t discover\u00a0them.\u201d</blockquote><p>Nineteen queries. Working. Tested. Deployed. And users couldn\u2019t find\u00a0them.</p><p>The missing link? Something I think of as \u201cconversational glue\u201d: the ability to converse and extracting meaning. Greet, make small talk, and pick up on requests all in the same\u00a0flow.</p><h3>The implementation trap</h3><p>It\u2019s easy to measure implementation. Issues closed, tests written, coverage percentages. These numbers go up. Progress feels\u00a0real.</p><p>But implementation isn\u2019t the same as usefulness. A feature that works but can\u2019t be found might as well not\u00a0exist.</p><p>We\u2019d fallen into the implementation trap. Every day brought more capability without improving the user experience, just increasing the confusion about what Piper could actually\u00a0do.</p><h3>What discovery means</h3><p>Discovery isn\u2019t documentation. Users don\u2019t read docs before asking questions. They ask questions and expect the system to understand.</p><p>Discovery isn\u2019t a help command. \u201cWhat can you do?\u201d returns a list. Lists don\u2019t teach. They overwhelm.</p><p>Discovery is conversational glue\u200a\u2014\u200athe ability for natural dialogue to reveal capabilities at the moment they\u2019re relevant. A user says \u201cI\u2019m overwhelmed with tasks\u201d and the system responds in a way that naturally surfaces \u201cI can show you what needs attention\u201d or \u201cWant me to prioritize your\u00a0todos?\u201d</p><p>The 19 working queries were islands. Each one accessible if you knew exactly what to ask. No bridges between them. No paths from confusion to\u00a0clarity.</p><h3>The pivot</h3><p>This realization changed the roadmap. More query handlers wouldn\u2019t help. We\u00a0needed:</p><ol><li><strong>Conversational bridges</strong>: Responses that naturally introduce related capabilities</li><li><strong>Context-aware suggestions</strong>: Recognizing user states that indicate unmet\u00a0needs</li><li><strong>Graceful discovery</strong>: Revealing functionality through dialogue, not\u00a0menus</li></ol><p>The technical work wasn\u2019t wasted. Those 19 queries were still foundation. But the next phase wasn\u2019t Phase C of canonical queries\u200a\u2014\u200ait was Epic #488, the discovery-oriented architecture.</p><p>This wasn\u2019t the first time we had discovered a missing layer in our foundation. When this happens I always stop building until I trust the architecture again.</p><h3>The universal lesson</h3><p>Every product team faces this eventually. You build features. You ship features. Usage doesn\u2019t match expectations.</p><p>The instinct is to build more features. Add capability. Expand\u00a0scope.</p><p>Sometimes the answer is: stop building and start revealing. The capabilities exist. The paths to them\u00a0don\u2019t.</p><p>This is harder than implementation. Implementation has clear completion criteria. Discovery is fuzzier. How do you know when users can find what they\u00a0need?</p><p>You know when they stop asking \u201cwhat can you do?\u201d and start asking specific questions.</p><p><em>Next on Building Piper Morgan: \u201cWiring vs Wizardry\u201d when the gap isn\u2019t cutting-edge tech, but just connecting the existing\u00a0dots.</em></p><p><em>Have you ever discovered that your users couldn\u2019t find the features you\u2019d already\u00a0built?</em></p><img src=\"https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=978f3ec50a57\" width=\"1\" height=\"1\" alt=\"\"><hr><p><a href=\"https://medium.com/building-piper-morgan/discovery-is-the-bottleneck-978f3ec50a57\">Discovery Is the Bottleneck</a> was originally published in <a href=\"https://medium.com/building-piper-morgan\">Building Piper Morgan</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>",
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/discovery-is-the-bottleneck-978f3ec50a57?source=rss----982e21163f8b---4",
-    "thumbnail": null,
-    "needsMetadata": true,
+    "thumbnail": "/assets/blog-images/discovery-bottleneck.webp",
     "slug": "discovery-is-the-bottleneck",
     "chatDate": "1/2/2026",
-    "category": "2025-12-28",
-    "cluster": "2026-03-29",
-    "featured": false
+    "category": "insight",
+    "cluster": "",
+    "featured": false,
+    "id": "978f3ec50a57",
+    "imageSlug": "discovery-bottleneck.webp",
+    "workDate": "2025-12-28",
+    "pubDate": "2026-03-29",
+    "source": "blog-first"
   },
   {
     "title": "Ten Roles, One Day",
@@ -6180,11 +6184,14 @@
     "title": "Wiring vs. Wizardry",
     "slug": "wiring-vs-wizardry",
     "url": "/blog/wiring-vs-wizardry",
+    "thumbnail": "/assets/blog-images/wiring-vs-wizardry.webp",
     "imageSlug": "wiring-vs-wizardry.webp",
+    "featuredImage": "/assets/blog-images/wiring-vs-wizardry.webp",
     "pubDate": "2026-03-30",
     "workDate": "2026-03-13",
     "chatDate": "3/13/2026",
     "category": "insight",
-    "hasLocalContent": true
+    "hasLocalContent": true,
+    "source": "blog-first"
   }
 ]

@@ -37,6 +37,7 @@ function parseCsvRow(row) {
 }
 
 function extractHashId(guid) {
+  if (!guid) return null;
   const match = guid.match(/([a-f0-9]{12})$/);
   return match ? match[1] : null;
 }
