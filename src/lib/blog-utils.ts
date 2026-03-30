@@ -15,10 +15,17 @@ export function sortByWorkDate(posts: any[], order: 'asc' | 'desc' = 'desc'): an
   return [...posts].sort((a, b) => {
     const dateA = new Date(a.workDateISO || a.publishedAtISO || a.isoDate || a.pubDate);
     const dateB = new Date(b.workDateISO || b.publishedAtISO || b.isoDate || b.pubDate);
+    const timeA = dateA.getTime();
+    const timeB = dateB.getTime();
+
+    // Posts with invalid/missing dates sort to the end regardless of order
+    if (isNaN(timeA) && isNaN(timeB)) return 0;
+    if (isNaN(timeA)) return 1;
+    if (isNaN(timeB)) return -1;
 
     return order === 'desc'
-      ? dateB.getTime() - dateA.getTime()  // Newest first
-      : dateA.getTime() - dateB.getTime(); // Oldest first
+      ? timeB - timeA  // Newest first
+      : timeA - timeB; // Oldest first
   });
 }
 
@@ -33,10 +40,17 @@ export function sortByPubDate(posts: any[], order: 'asc' | 'desc' = 'desc'): any
   return [...posts].sort((a, b) => {
     const dateA = new Date(a.publishedAtISO || a.isoDate || a.pubDate);
     const dateB = new Date(b.publishedAtISO || b.isoDate || b.pubDate);
+    const timeA = dateA.getTime();
+    const timeB = dateB.getTime();
+
+    // Posts with invalid/missing dates sort to the end regardless of order
+    if (isNaN(timeA) && isNaN(timeB)) return 0;
+    if (isNaN(timeA)) return 1;
+    if (isNaN(timeB)) return -1;
 
     return order === 'desc'
-      ? dateB.getTime() - dateA.getTime()  // Newest first
-      : dateA.getTime() - dateB.getTime(); // Oldest first
+      ? timeB - timeA  // Newest first
+      : timeA - timeB; // Oldest first
   });
 }
 
