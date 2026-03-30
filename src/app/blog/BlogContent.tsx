@@ -4,13 +4,13 @@ import { useState, useEffect } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { BlogPostCard, NewsletterSignup, NewsletterErrorBoundary, BlogErrorBoundary, CTAButton, Pagination } from '@/components';
 import mediumPosts from '@/data/medium-posts.json';
-import { sortByWorkDate } from '@/lib/blog-utils';
+import { sortByPubDate } from '@/lib/blog-utils';
 import { EPISODES, getEpisodeCounts } from '@/lib/episodes';
 
 const POSTS_PER_PAGE = 24;
 
-// Sort posts by work date (chronological order of when work happened)
-const allSortedPosts = sortByWorkDate(mediumPosts, 'desc');
+// Sort posts by publication date (newest first)
+const allSortedPosts = sortByPubDate(mediumPosts, 'desc');
 
 interface BlogContentProps {
   currentPage?: number;
