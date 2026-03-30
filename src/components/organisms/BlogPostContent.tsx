@@ -148,7 +148,7 @@ export function BlogPostContent({ post, content }: BlogPostContentProps) {
           </div>
 
           {/* Medium Link - only show for posts that came from Medium */}
-          {post.guid && (
+          {post.guid && post.guid.startsWith('http') && (
             <a
               href={post.guid}
               target="_blank"
