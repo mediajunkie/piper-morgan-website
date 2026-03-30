@@ -1,20 +1,20 @@
 import type { Metadata } from 'next';
-import { EPISODES, getEpisodeCounts } from '@/lib/episodes';
+import { ERAS, getEraCounts } from '@/lib/episodes';
 import mediumPosts from '@/data/medium-posts.json';
 import { CTAButton } from '@/components';
 
 export const metadata: Metadata = {
-  title: 'Development Episodes - Building Piper Morgan',
-  description: '12 narrative episodes chronicling the journey of building Piper Morgan, from initial prototype to production-ready AI-augmented product management tool.',
+  title: 'Development Eras - Building Piper Morgan',
+  description: '5 development eras chronicling the journey of building Piper Morgan, from initial prototype to production-ready AI-augmented product management tool.',
   openGraph: {
-    title: 'Development Episodes - Building Piper Morgan',
-    description: '12 narrative episodes chronicling the journey of building Piper Morgan',
+    title: 'Development Eras - Building Piper Morgan',
+    description: '5 development eras chronicling the journey of building Piper Morgan',
     type: 'website'
   }
 };
 
 export default function EpisodesPage() {
-  const episodeCounts = getEpisodeCounts(mediumPosts);
+  const eraCounts = getEraCounts(mediumPosts);
 
   return (
     <main className="min-h-screen bg-background-light">
@@ -23,10 +23,10 @@ export default function EpisodesPage() {
         <div className="site-container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold text-text-dark mb-6">
-              Development Episodes
+              Development Eras
             </h1>
             <p className="text-xl text-text-light mb-8">
-              The complete journey of building Piper Morgan, organized into 12 narrative episodes spanning June - October 2025. Each episode captures key themes, breakthroughs, and lessons learned in our transparent building-in-public approach.
+              The complete journey of building Piper Morgan, organized into 5 chronological eras spanning May 2025 - March 2026. Each era captures key themes, breakthroughs, and lessons learned in our transparent building-in-public approach.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <CTAButton href="/blog" variant="primary" size="lg">
@@ -40,29 +40,29 @@ export default function EpisodesPage() {
         </div>
       </section>
 
-      {/* Episodes Grid */}
+      {/* Eras Grid */}
       <section className="py-16">
         <div className="site-container">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
-              {EPISODES.map((episode, index) => {
-                const postCount = episodeCounts[episode.slug] || 0;
-                const episodeNumber = index + 1;
+              {ERAS.map((era, index) => {
+                const postCount = eraCounts[era.slug] || 0;
+                const eraNumber = index + 1;
 
                 return (
                   <article
-                    key={episode.slug}
+                    key={era.slug}
                     className="bg-white dark:bg-gray-800 rounded-card shadow-card hover:shadow-lg transition-all duration-200 overflow-hidden"
                   >
-                    {/* Episode Header */}
+                    {/* Era Header */}
                     <div className="bg-gradient-to-r from-primary-teal to-primary-orange p-6">
                       <div className="flex items-start justify-between">
                         <div>
                           <span className="inline-block px-3 py-1 bg-white/90 dark:bg-gray-900/90 text-primary-teal-text font-semibold rounded-full text-sm mb-2">
-                            Episode {episodeNumber}
+                            Era {eraNumber}
                           </span>
                           <h2 className="text-2xl font-bold text-white mb-2">
-                            {episode.shortName}
+                            {era.shortName}
                           </h2>
                         </div>
                         <span className="px-3 py-1 bg-white/90 dark:bg-gray-900/90 text-text-dark font-medium rounded-full text-sm">
@@ -71,16 +71,16 @@ export default function EpisodesPage() {
                       </div>
                     </div>
 
-                    {/* Episode Content */}
+                    {/* Era Content */}
                     <div className="p-6">
                       <p className="text-text-light mb-4">
-                        {episode.description}
+                        {era.description}
                       </p>
 
                       <div className="mb-4">
                         <h3 className="text-sm font-semibold text-text-dark mb-2">Key Themes:</h3>
                         <p className="text-sm text-text-light">
-                          {episode.theme}
+                          {era.theme}
                         </p>
                       </div>
 
@@ -89,15 +89,15 @@ export default function EpisodesPage() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
                         <span>
-                          {new Date(episode.startDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                          {new Date(era.startDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
                           {' - '}
-                          {new Date(episode.endDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                          {new Date(era.endDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                         </span>
                       </div>
 
                       {postCount > 0 ? (
                         <CTAButton
-                          href={`/blog?episode=${episode.slug}`}
+                          href={`/blog?episode=${era.slug}`}
                           variant="outline"
                           size="sm"
                         >
@@ -120,21 +120,21 @@ export default function EpisodesPage() {
               <div className="grid md:grid-cols-3 gap-6 text-center">
                 <div>
                   <div className="text-3xl font-bold text-primary-teal-text mb-2">
-                    {EPISODES.length}
+                    {ERAS.length}
                   </div>
-                  <div className="text-text-light">Episodes</div>
+                  <div className="text-text-light">Eras</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-primary-orange-text mb-2">
-                    {mediumPosts.filter(p => p.cluster).length}
+                    {mediumPosts.length}
                   </div>
-                  <div className="text-text-light">Posts with Episodes</div>
+                  <div className="text-text-light">Total Posts</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-primary-teal-text mb-2">
                     {(() => {
-                      const start = new Date(EPISODES[0].startDate);
-                      const end = new Date(EPISODES[EPISODES.length - 1].endDate);
+                      const start = new Date(ERAS[0].startDate);
+                      const end = new Date(ERAS[ERAS.length - 1].endDate);
                       const days = Math.ceil((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
                       return days;
                     })()}

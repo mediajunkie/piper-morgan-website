@@ -1,6 +1,6 @@
 import { CTAButton } from '@/components';
 import { trackBlogClick } from '@/lib/analytics';
-import { getEpisode, getEpisodeNumber } from '@/lib/episodes';
+import { getEra, getEraNumber } from '@/lib/episodes';
 
 export interface FeaturedPostProps {
   /** Blog post title */
@@ -41,8 +41,8 @@ export function FeaturedPost({
     trackBlogClick(title, href, 'featured_homepage');
   };
 
-  const episode = cluster ? getEpisode(cluster) : null;
-  const episodeNumber = cluster ? getEpisodeNumber(cluster) : null;
+  const episode = cluster ? getEra(cluster) : null;
+  const episodeNumber = cluster ? getEraNumber(cluster) : null;
 
   return (
     <section className="bg-gradient-to-br from-primary-teal/10 via-primary-orange/10 to-primary-teal/10 py-16 md:py-24">
@@ -75,7 +75,7 @@ export function FeaturedPost({
                   )}
                   {episode && episodeNumber && (
                     <span className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300">
-                      Episode {episodeNumber}
+                      Era {episodeNumber}: {episode.shortName}
                     </span>
                   )}
                 </div>

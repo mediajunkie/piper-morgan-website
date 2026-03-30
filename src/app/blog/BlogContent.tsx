@@ -5,7 +5,7 @@ import { useSearchParams, useRouter } from 'next/navigation';
 import { BlogPostCard, NewsletterSignup, NewsletterErrorBoundary, BlogErrorBoundary, CTAButton, Pagination } from '@/components';
 import mediumPosts from '@/data/medium-posts.json';
 import { sortByPubDate } from '@/lib/blog-utils';
-import { EPISODES, getEpisodeCounts } from '@/lib/episodes';
+import { ERAS, getEraCounts, EPISODES, getEpisodeCounts } from '@/lib/episodes';
 
 const POSTS_PER_PAGE = 24;
 
@@ -27,7 +27,7 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
   // Phase 7: Category filtering state
   const [selectedCategory, setSelectedCategory] = useState<Category>('all');
 
-  // Phase 9: Episode filtering state
+  // Era filtering state
   const [selectedEpisode, setSelectedEpisode] = useState<string>('all');
 
   // Phase 9: View mode state (list vs. grouped by episode)
@@ -43,11 +43,11 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
       setSelectedCategory('all');
     }
 
-    // Episode filter
-    const episodeParam = searchParams.get('episode');
-    if (episodeParam && EPISODES.some(ep => ep.slug === episodeParam)) {
-      setSelectedEpisode(episodeParam);
-    } else if (!episodeParam) {
+    // Era filter (also supports legacy ?episode= param)
+    const eraParam = searchParams.get('era') || searchParams.get('episode');
+    if (eraParam && ERAS.some(era => era.slug === eraParam)) {
+      setSelectedEpisode(eraParam);
+    } else if (!eraParam) {
       setSelectedEpisode('all');
     }
   }, [searchParams]);
@@ -80,8 +80,8 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
   const buildingCount = allSortedPosts.filter((p: any) => p.category === 'building').length;
   const insightCount = allSortedPosts.filter((p: any) => p.category === 'insight').length;
 
-  // Episode counts
-  const episodeCounts = getEpisodeCounts(allSortedPosts);
+  // Era counts
+  const episodeCounts = getEraCounts(allSortedPosts);
 
   // Helper function to update filters in URL
   const updateFilter = (filterType: 'category' | 'episode', value: string) => {
@@ -154,24 +154,24 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
                   </button>
                 </div>
 
-                {/* Phase 9: Episode Filter & View Controls */}
+                {/* Era Filter & View Controls */}
                 <div className="mb-6 space-y-4">
-                  {/* Episode Filter and View Mode Toggle */}
+                  {/* Era Filter and View Mode Toggle */}
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                     <div className="flex-1">
-                      <label htmlFor="episode-filter" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                        Filter by Episode
+                      <label htmlFor="era-filter" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                        Filter by Era
                       </label>
                       <select
-                        id="episode-filter"
+                        id="era-filter"
                         value={selectedEpisode}
                         onChange={(e) => updateFilter('episode', e.target.value)}
                         className="w-full md:w-auto px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-teal focus:border-transparent"
                       >
-                        <option value="all">All Episodes ({allSortedPosts.length} posts)</option>
-                        {EPISODES.map((episode) => (
-                          <option key={episode.slug} value={episode.slug}>
-                            {episode.shortName} ({episodeCounts[episode.slug] || 0} posts)
+                        <option value="all">All Eras ({allSortedPosts.length} posts)</option>
+                        {ERAS.map((era) => (
+                          <option key={era.slug} value={era.slug}>
+                            {era.shortName} ({episodeCounts[era.slug] || 0} posts)
                           </option>
                         ))}
                       </select>
@@ -200,7 +200,7 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
                               ? 'bg-white dark:bg-gray-700 text-primary-teal-text shadow-sm'
                               : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
                           }`}
-                          title="Grouped by episode"
+                          title="Grouped by era"
                         >
                           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -213,7 +213,7 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
                         variant="outline"
                         size="sm"
                       >
-                        View All Episodes
+                        View All Eras
                       </CTAButton>
                     </div>
                   </div>
@@ -247,41 +247,41 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
                   ))}
                 </div>
               ) : (
-                /* Grouped View - Posts grouped by episode */
+                /* Grouped View - Posts grouped by era */
                 <div className="space-y-12 mb-12">
-                  {EPISODES.map((episode) => {
-                    const episodePosts = filteredPosts.filter((post: any) => post.cluster === episode.slug);
-                    if (episodePosts.length === 0) return null;
+                  {ERAS.map((era, index) => {
+                    const eraPosts = filteredPosts.filter((post: any) => post.cluster === era.slug);
+                    if (eraPosts.length === 0) return null;
 
-                    const episodeNum = EPISODES.indexOf(episode) + 1;
+                    const eraNum = index + 1;
 
                     return (
-                      <div key={episode.slug} className="space-y-6">
-                        {/* Episode Header */}
+                      <div key={era.slug} className="space-y-6">
+                        {/* Era Header */}
                         <div className="border-l-4 border-primary-teal pl-6 py-2">
                           <div className="flex items-center gap-3 mb-2">
                             <span className="inline-block px-3 py-1 bg-primary-teal/10 dark:bg-primary-teal/20 text-primary-teal-text font-semibold rounded-full text-sm">
-                              Episode {episodeNum}
+                              Era {eraNum}
                             </span>
                             <h3 className="text-2xl font-bold text-text-dark">
-                              {episode.shortName}
+                              {era.shortName}
                             </h3>
                           </div>
                           <p className="text-text-light text-sm mb-2">
-                            {episode.description}
+                            {era.description}
                           </p>
                           <p className="text-sm text-gray-600 dark:text-gray-400">
-                            {new Date(episode.startDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                            {new Date(era.startDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
                             {' - '}
-                            {new Date(episode.endDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                            {new Date(era.endDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                             {' • '}
-                            {episodePosts.length} {episodePosts.length === 1 ? 'post' : 'posts'}
+                            {eraPosts.length} {eraPosts.length === 1 ? 'post' : 'posts'}
                           </p>
                         </div>
 
-                        {/* Episode Posts Grid */}
+                        {/* Era Posts Grid */}
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                          {episodePosts.map((post: any, index: number) => (
+                          {eraPosts.map((post: any, index: number) => (
                             <BlogPostCard
                               key={post.guid || index}
                               title={post.title}

@@ -1,5 +1,5 @@
 import { trackBlogClick } from '@/lib/analytics';
-import { getEpisode, getEpisodeNumber } from '@/lib/episodes';
+import { getEra, getEraNumber } from '@/lib/episodes';
 
 export interface BlogPostCardProps {
   /** Blog post title */
@@ -96,13 +96,13 @@ export function BlogPostCard({
                 </span>
               )}
 
-              {/* Episode Badge (Phase 9) */}
+              {/* Era Badge */}
               {cluster && (() => {
-                const episode = getEpisode(cluster);
-                const episodeNum = getEpisodeNumber(cluster);
-                return episode ? (
+                const era = getEra(cluster);
+                const eraNum = getEraNumber(cluster);
+                return era ? (
                   <span className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300">
-                    Episode {episodeNum}
+                    Era {eraNum}: {era.shortName}
                   </span>
                 ) : null;
               })()}
