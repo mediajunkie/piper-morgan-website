@@ -14,7 +14,7 @@ import fs from 'fs';
 import path from 'path';
 import https from 'https';
 import { fileURLToPath } from 'url';
-import { loadBlogMetadata, getMetadataByHashId } from './csv-parser.js';
+import { loadBlogMetadata, getMetadataByHashId, getMetadataBySlug } from './csv-parser.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -42,6 +42,23 @@ function extractPostId(url) {
   if (!url) return null;
   const match = url.match(/([a-f0-9]{12})(?:\?|$)/);
   return match ? match[1] : null;
+}
+
+/**
+ * Extract slug from Medium URL (the path segment before the hashId)
+ * e.g. "https://medium.com/building-piper-morgan/wiring-vs-wizardry-f29671b088b7?..." → "wiring-vs-wizardry"
+ */
+function extractSlugFromMediumUrl(url) {
+  if (!url) return null;
+  try {
+    const pathname = new URL(url).pathname;
+    const lastSegment = pathname.split('/').filter(Boolean).pop();
+    if (!lastSegment) return null;
+    // Remove the trailing hashId (12 hex chars preceded by a hyphen)
+    return lastSegment.replace(/-[a-f0-9]{12}$/, '');
+  } catch {
+    return null;
+  }
 }
 
 /**
@@ -292,18 +309,42 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
     }
   });
 
+  // Build slug set from existing blog-first posts so we can detect
+  // syndicated versions of blog-first content arriving via RSS
+  const blogFirstSlugs = new Set();
+  existingPosts.forEach(post => {
+    if (post.guid && post.guid.startsWith('blog-first-') && post.slug) {
+      blogFirstSlugs.add(post.slug);
+    }
+  });
+
   let newPostsCount = 0;
   let updatedPostsCount = 0;
   let imagesDownloaded = 0;
+  let skippedBlogFirst = 0;
 
   // Process RSS posts
   for (const rssPost of rssPosts) {
     const hashId = extractPostId(rssPost.guid || rssPost.link);
     if (!hashId) continue; // Skip if we can't extract hashId
-    
+
     const existing = existingMap.get(hashId);
 
     if (!existing) {
+      // Before treating as new: check if this is a syndicated version of a blog-first post.
+      // Blog-first posts have a different hashId than Medium assigns, so hashId matching
+      // won't catch the duplicate. Match by slug instead.
+      const rssSlug = extractSlugFromMediumUrl(rssPost.url || rssPost.link || rssPost.guid);
+      const csvBySlug = rssSlug ? getMetadataBySlug(csvMetadata, rssSlug) : null;
+
+      if (rssSlug && (blogFirstSlugs.has(rssSlug) || (csvBySlug && csvBySlug.hashId !== hashId))) {
+        // This RSS post matches a blog-first post by slug — skip it
+        console.log(`\n⏭️  Skipping syndicated duplicate: "${rssPost.title.substring(0, 60)}..."`);
+        console.log(`   Blog-first slug "${rssSlug}" already exists (blog hashId: ${csvBySlug ? csvBySlug.hashId : 'in archive'})`);
+        skippedBlogFirst++;
+        continue;
+      }
+
       // New post! Download image if available
       console.log(`\n📝 New post: ${rssPost.title.substring(0, 60)}...`);
 
@@ -423,6 +464,26 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
     console.log(`\n🌐 Added ${blogFirstCount} blog-first post(s) from CSV`);
   }
 
+  // Remove RSS duplicates of blog-first posts that were already in the archive.
+  // A blog-first post has guid "blog-first-{hashId}". If an RSS entry exists with
+  // a different hashId but the same slug, the RSS entry is a syndicated duplicate.
+  let removedDuplicates = 0;
+  const blogFirstSlugToHashId = new Map();
+  for (const [hashId, post] of existingMap) {
+    if (post.guid && post.guid.startsWith('blog-first-') && post.slug) {
+      blogFirstSlugToHashId.set(post.slug, hashId);
+    }
+  }
+  for (const [hashId, post] of existingMap) {
+    if (post.guid && post.guid.startsWith('blog-first-')) continue; // Skip blog-first entries
+    const slug = post.slug || extractSlugFromMediumUrl(post.url || post.link || post.guid);
+    if (slug && blogFirstSlugToHashId.has(slug) && blogFirstSlugToHashId.get(slug) !== hashId) {
+      console.log(`  🗑️  Removing RSS duplicate: "${post.title}" (${hashId} → blog-first ${blogFirstSlugToHashId.get(slug)})`);
+      existingMap.delete(hashId);
+      removedDuplicates++;
+    }
+  }
+
   // Convert map back to array
   const mergedPosts = Array.from(existingMap.values());
 
@@ -469,6 +530,12 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
   console.log(`   - ${updatedPostsCount} posts updated (images)`);
   console.log(`   - ${imagesDownloaded} images downloaded`);
   console.log(`   - ${csvMergedCount} posts merged with CSV metadata`);
+  if (skippedBlogFirst > 0) {
+    console.log(`   - ${skippedBlogFirst} syndicated duplicates skipped (blog-first posts)`);
+  }
+  if (removedDuplicates > 0) {
+    console.log(`   - ${removedDuplicates} existing RSS duplicates removed (blog-first posts take priority)`);
+  }
   console.log(`   - ${mergedPosts.length} total posts in archive`);
 
   // Check for posts missing CSV metadata (will have Medium URLs)

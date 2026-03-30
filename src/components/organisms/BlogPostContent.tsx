@@ -147,18 +147,7 @@ export function BlogPostContent({ post, content }: BlogPostContentProps) {
             )}
           </div>
 
-          {/* Medium Link - only show for posts that came from Medium */}
-          {post.guid && post.guid.startsWith('http') && (
-            <a
-              href={post.guid}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={handleMediumClick}
-              className="inline-flex items-center text-sm text-gray-600 dark:text-gray-400 hover:text-primary-teal-text dark:hover:text-primary-teal transition-colors"
-            >
-              View original on Medium →
-            </a>
-          )}
+          {/* Removed: prominent "View original on Medium" link — blog is now canonical */}
         </div>
       </div>
 
@@ -212,15 +201,21 @@ export function BlogPostContent({ post, content }: BlogPostContentProps) {
             ← Back to Blog
           </Link>
 
-          <a
-            href={post.guid}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={handleMediumClick}
-            className="inline-flex items-center px-4 py-2 bg-primary-teal/10 dark:bg-primary-teal/20 text-primary-teal-text dark:text-primary-teal rounded-lg hover:bg-primary-teal/20 dark:hover:bg-primary-teal/30 transition-colors"
-          >
-            View on Medium →
-          </a>
+          {/* Quiet Medium credit for posts that originated there */}
+          {post.guid && post.guid.startsWith('http') && (
+            <span className="text-sm text-gray-500 dark:text-gray-500">
+              Also available on{' '}
+              <a
+                href={post.guid}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleMediumClick}
+                className="hover:text-gray-700 dark:hover:text-gray-300 underline transition-colors"
+              >
+                Medium
+              </a>
+            </span>
+          )}
         </div>
       </div>
     </div>

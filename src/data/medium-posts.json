@@ -3016,25 +3016,6 @@
   },
   {
     "title": "Wiring vs. Wizardry",
-    "excerpt": "“None of that razzmatazz”March 12 to 13, 2026When an AI system underperforms, the instinct is to blame the AI.The model isn’t smart enough. The training data wasn’t representative. The prompts need more engineering. The context window is too small. And sometimes — often, even — those explanations...",
-    "url": "https://medium.com/building-piper-morgan/wiring-vs-wizardry-f29671b088b7?source=rss----982e21163f8b---4",
-    "publishedAt": "Mar 29, 2026",
-    "publishedAtISO": "Mon, 30 Mar 2026 00:31:55 GMT",
-    "author": "christian crumlish",
-    "readingTime": "5 min read",
-    "tags": [
-      "Building in Public"
-    ],
-    "guid": "https://medium.com/p/f29671b088b7",
-    "featuredImage": "https://cdn-images-1.medium.com/max/1024/1*wh9vcrLNgE1-IlXO3RYKlg.png",
-    "fullContent": "<figure><img alt=\"Wizard, ninja, and sage struggle to fix a malfunctioning control panel, while a crouching mechanic simply plugs in a loose cable, restoring everything to normal.\" src=\"https://cdn-images-1.medium.com/max/1024/1*wh9vcrLNgE1-IlXO3RYKlg.png\" /><figcaption>“None of that razzmatazz”</figcaption></figure><p><em>March 12 to 13, 2026</em></p><p>When an AI system underperforms, the instinct is to blame the AI.</p><p>The model isn’t smart enough. The training data wasn’t representative. The prompts need more engineering. The context window is too small. And sometimes — often, even — those explanations are correct. AI capability limits are real.</p><p>But sometimes the problem is plumbing.</p><p>We ran a test harness against sixty-one standard queries. First pass: 26% success rate. Three-quarters of our queries failing. After months of development, after thousands of passing tests, the system apparently couldn’t handle basic requests.</p><p>The instinct was to examine the classifier. Was our intent detection model undertrained? Were the prompt templates malformed? Had we hit some fundamental limitation in the AI’s ability to understand user requests?</p><p>None of the above.</p><p>The classifier was routing correctly. The handlers existed. But between classification and execution, cables were missing. An analysis handler that existed in the intent service but was never wired to the orchestration engine. Authentication threading that worked at one layer but never propagated to the next. Configuration checks that passed in isolation but failed when called from the actual request path.</p><p>Four hours of wiring fixes later: 81% success rate. Same classifier. Same model. Same prompts. The difference? We connected stuff.</p><p>“The 75% Pattern” is what we my agents call this (they love naming things after percentages!) Infrastructure built. Interface defined. Connection never completed. Tests don’t catch it because mocks hide the gap. The capability exists in pieces; it just doesn’t flow end-to-end.</p><p>It’s an easy trap because each layer looks correct in isolation. The classifier routes to the right intent. The handler implements the right logic. The adapter calls the right service. Unit tests pass at every level. But nobody ran a request through the full stack until a human tried to use it.</p><p>This isn’t unique to AI systems, but AI systems make it worse.</p><p>Traditional software fails loudly when connections are missing. Call a function that doesn’t exist, get a compiler error. Reference an undefined method, get a runtime exception. The failure is immediate and obvious.</p><p>AI systems fail quietly. The classifier routes to a handler that exists but isn’t wired, and the system… does something. Maybe it falls back to a generic response. Maybe it hallucinates an answer. Maybe it apologizes and asks for clarification. The user experiences degraded quality, not a crash. The logs show successful intent classification. Everything looks fine from the inside.</p><p>This is why AI debugging is hard. The system keeps working — just badly. You can spend weeks tuning prompts for a problem that has nothing to do with prompts.</p><p>The fix isn’t complicated, but it requires discipline:</p><p><strong>Test the seams, not just the pieces.</strong> Unit tests verify components. Integration tests verify connections. If you only have the former, you’re testing that the Lego bricks are the right shape, not that they’re actually snapped together.</p><p><strong>Run the full path early.</strong> Don’t wait for QA or alpha testing to discover that layer A doesn’t actually talk to layer B. A single end-to-end test that touches the real stack is worth dozens of mocked unit tests for catching wiring bugs.</p><p><strong>When AI underperforms, check the plumbing first.</strong> Before you retrain the model, before you redesign the prompts, before you expand the context window — trace a failing request through the full system. Is the intelligence actually being invoked? Or is it sitting there, ready and capable, waiting for someone to connect the cables?</p><p>The 81% was always possible. It just wasn’t wired yet.</p><p><em>Next on Building Piper Morgan, we resume the building narrative in our curent MVP sprint with “Are We Doing It Backwards?” when I asked a question and was scared what the answer might be.</em></p><p><em>Have you ever built something and forgot to wire it up? Is something you toiled over What looks like a capability problem in your system might actually be a connection problem. Before you upgrade the engine, check the fuel line.</em></p><img src=\"https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=f29671b088b7\" width=\"1\" height=\"1\" alt=\"\"><hr><p><a href=\"https://medium.com/building-piper-morgan/wiring-vs-wizardry-f29671b088b7\">Wiring vs. Wizardry</a> was originally published in <a href=\"https://medium.com/building-piper-morgan\">Building Piper Morgan</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>",
-    "subtitle": "",
-    "canonicalLink": "https://medium.com/building-piper-morgan/wiring-vs-wizardry-f29671b088b7?source=rss----982e21163f8b---4",
-    "thumbnail": null,
-    "needsMetadata": true
-  },
-  {
-    "title": "Wiring vs. Wizardry",
     "excerpt": "When an AI system underperforms, the instinct is to blame the AI. The model isn't smart enough. The training data wasn't representative. The prompts need more engineering. The context window is too small. And sometimes — often, even — those explanations are correct. AI capability limits are real....",
     "url": "/blog/wiring-vs-wizardry",
     "slug": "wiring-vs-wizardry",
@@ -3049,10 +3030,11 @@
     "featuredImage": "/assets/blog-images/wiring-vs-wizardry.webp",
     "thumbnail": "/assets/blog-images/wiring-vs-wizardry.webp",
     "category": "insight",
-    "cluster": "",
+    "cluster": "2026-03-30",
     "workDate": "Mar 12, 2026",
     "workDateISO": "2026-03-13T00:00:00.000Z",
-    "chatDate": "3/13/2026"
+    "chatDate": "3/13/2026",
+    "featured": false
   },
   {
     "title": "Discovery Is the Bottleneck",
@@ -3086,7 +3068,7 @@
   {
     "title": "Ten Roles, One Day",
     "excerpt": "“I need to work on my juggling!”March 13Friday morning. Seven-thirty. I opened twelve chat sessions before my coffee was cold.Three of my longest-running AI collaborators — the CXO, the PPM, and the Chief Architect — had all hit their upload limits within days of each other. Three months of accum...",
-    "url": "https://medium.com/building-piper-morgan/ten-roles-one-day-aeeaf8f75d98?source=rss----982e21163f8b---4",
+    "url": "/blog/ten-roles-one-day",
     "publishedAt": "Mar 26, 2026",
     "publishedAtISO": "Thu, 26 Mar 2026 15:02:49 GMT",
     "author": "christian crumlish",
@@ -3100,12 +3082,18 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/ten-roles-one-day-aeeaf8f75d98?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "ten-roles-one-day",
+    "category": "building",
+    "cluster": "2026-03-26",
+    "featured": false,
+    "workDate": "Mar 18, 2026",
+    "workDateISO": "2026-03-19T00:00:00.000Z"
   },
   {
     "title": "The 81% Session",
     "excerpt": "“This one goes here”March 12The M1 sprint kicked off on a Thursday evening. The Lead Developer loaded the PPM’s sprint plan memo, opened issue #884 — canonical query retest — and ran the test harness against sixty-one standard queries.First run: sixteen passed. Twenty-six percent.That’s a gut-che...",
-    "url": "https://medium.com/building-piper-morgan/the-81-session-b851acd09a2e?source=rss----982e21163f8b---4",
+    "url": "/blog/the-81-session",
     "publishedAt": "Mar 24, 2026",
     "publishedAtISO": "Tue, 24 Mar 2026 14:03:32 GMT",
     "author": "christian crumlish",
@@ -3119,12 +3107,18 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-81-session-b851acd09a2e?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-81-session",
+    "category": "building",
+    "cluster": "2026-03-24",
+    "featured": false,
+    "workDate": "Mar 11, 2026",
+    "workDateISO": "2026-03-12T00:00:00.000Z"
   },
   {
     "title": "The Deliberate Pause",
     "excerpt": "“Be back soon…!”March 5–10Friday, March 6th, nothing happened. I don’t mean nothing interesting happened. I mean nothing. No agent sessions. No commits. No issues filed or closed. The PM was at his day job, and the project sat quietly, doing nothing at all.This was deliberate.We’d just closed a s...",
-    "url": "https://medium.com/building-piper-morgan/the-deliberate-pause-49ed7c1cd909?source=rss----982e21163f8b---4",
+    "url": "/blog/the-deliberate-pause",
     "publishedAt": "Mar 22, 2026",
     "publishedAtISO": "Sun, 22 Mar 2026 16:44:27 GMT",
     "author": "christian crumlish",
@@ -3138,12 +3132,18 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/the-deliberate-pause-49ed7c1cd909?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "the-deliberate-pause",
+    "category": "insight",
+    "cluster": "2026-03-22",
+    "featured": false,
+    "workDate": "Mar 9, 2026",
+    "workDateISO": "2026-03-10T00:00:00.000Z"
   },
   {
     "title": "Breaking Without Breaking Momentum",
     "excerpt": "“Ahhhhh”December 11–15, 2025Monday evening, December 15th, 5:40 PM. I opened my laptop after three full days away from the project.The Executive session from Thursday had paused mid-stream. Two of six workstreams reviewed for the Weekly Ship, four remaining. I’d stopped after Engineering &amp; Ar...",
-    "url": "https://medium.com/building-piper-morgan/breaking-without-breaking-momentum-d0321e5ac33a?source=rss----982e21163f8b---4",
+    "url": "/blog/breaking-without-breaking-momentum",
     "publishedAt": "Mar 22, 2026",
     "publishedAtISO": "Sun, 22 Mar 2026 04:08:09 GMT",
     "author": "christian crumlish",
@@ -3157,7 +3157,13 @@
     "subtitle": "",
     "canonicalLink": "https://medium.com/building-piper-morgan/breaking-without-breaking-momentum-d0321e5ac33a?source=rss----982e21163f8b---4",
     "thumbnail": null,
-    "needsMetadata": true
+    "needsMetadata": true,
+    "slug": "breaking-without-breaking-momentum",
+    "category": "building",
+    "cluster": "2026-03-22",
+    "featured": false,
+    "workDate": "Mar 7, 2026",
+    "workDateISO": "2026-03-08T00:00:00.000Z"
   },
   {
     "title": "The Gate Closes",

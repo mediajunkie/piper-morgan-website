@@ -311,49 +311,18 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
                 className="mb-12"
               />
 
-              {/* Medium Integration Notice */}
-              <div className="bg-gradient-to-r from-primary-teal/5 to-primary-orange/5 p-8 rounded-card mb-12">
-                <h3 className="text-2xl font-semibold text-text-dark mb-4">
-                  Full Building-in-Public Collection on Medium
-                </h3>
-                <p className="text-text-light mb-6">
-                  All our building-in-public content is published on Medium for wider reach and community engagement. Our publication focuses on systematic methodology, AI-augmented product management, and transparent development processes.
-                </p>
-                <div className="text-left max-w-3xl mx-auto mb-6">
-                  <h4 className="font-semibold text-text-dark mb-3">Latest Posts (Live from RSS!):</h4>
-                  <p className="text-sm text-text-light mb-3">
-                    This page now automatically updates with our latest Medium articles. New posts appear here as soon as they're published!
-                  </p>
-                  <h4 className="font-semibold text-text-dark mb-3 mt-6">Key Series:</h4>
-                  <ul className="space-y-2 text-text-light">
-                    <li>• <strong>Building Piper Morgan:</strong> Core development series with methodology insights</li>
-                    <li>• <strong>Systematic Excellence:</strong> Practical frameworks and implementation patterns</li>
-                    <li>• <strong>AI-Augmented PM:</strong> Real experiences integrating AI into product management work</li>
-                    <li>• <strong>Weekend Sprint Chronicles:</strong> Intensive development sessions with measured results</li>
-                  </ul>
-                  <p className="text-sm text-primary-teal-text mt-4 font-semibold">
-                    ✅ RSS integration complete - posts update automatically!
-                  </p>
-                </div>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <CTAButton
-                    href="https://medium.com/building-piper-morgan"
-                    variant="primary"
-                    size="lg"
-                    external
-                  >
-                    Visit Our Medium Publication
-                  </CTAButton>
-                  <CTAButton
-                    href="https://medium.com/@mediajunkie"
-                    variant="outline"
-                    size="lg"
-                    external
-                  >
-                    Follow Christian on Medium
-                  </CTAButton>
-                </div>
-              </div>
+              {/* Medium syndication note */}
+              <p className="text-sm text-gray-500 dark:text-gray-500 text-center mb-12">
+                This series is also syndicated on{' '}
+                <a
+                  href="https://medium.com/building-piper-morgan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+                >
+                  Medium
+                </a>.
+              </p>
             </div>
           </div>
         </section>
