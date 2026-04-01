@@ -1,5 +1,26 @@
 [
   {
+    "title": "Are We Doing It Backwards?",
+    "excerpt": "March 14 Saturday morning. The day after ten roles had hummed in concert. I was feeling good about the project. M1 was moving. Issues were closing. The Lead Developer had knocked out twenty issues in twenty-four hours. So I did what I always do when things are going well. I did a little testing. ...",
+    "url": "/blog/are-we-doing-it-backwards",
+    "slug": "are-we-doing-it-backwards",
+    "publishedAt": "Mar 30, 2026",
+    "publishedAtISO": "2026-03-31T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-7bf92ff5bff6",
+    "featuredImage": "/assets/blog-images/ai-backwards.webp",
+    "thumbnail": "/assets/blog-images/ai-backwards.webp",
+    "category": "building",
+    "cluster": "the-sprint",
+    "workDate": "Mar 13, 2026",
+    "workDateISO": "2026-03-14T00:00:00.000Z",
+    "chatDate": "3/14/2026"
+  },
+  {
     "title": "Wiring vs. Wizardry",
     "excerpt": "When an AI system underperforms, the instinct is to blame the AI. The model isn't smart enough. The training data wasn't representative. The prompts need more engineering. The context window is too small. And sometimes — often, even — those explanations are correct. AI capability limits are real....",
     "url": "/blog/wiring-vs-wizardry",
