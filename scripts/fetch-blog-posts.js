@@ -129,7 +129,8 @@ function formatDate(dateString) {
   return date.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'short',
-    day: 'numeric'
+    day: 'numeric',
+    timeZone: 'UTC'
   });
 }
 
