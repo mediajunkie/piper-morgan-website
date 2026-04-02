@@ -1,8 +1,8 @@
 [
   {
     "title": "Weekly Ship #036: Approaching Gate",
-    "excerpt": "",
-    "url": "/shipping-news/weekly-ship-036-approaching-gate",
+    "excerpt": "March 20–26, 2026 Last week's \"Pour the Floor\" established the principle that Piper should always be at least as good as a well-prompted LLM with context. This week, that principle and everything else we've been building converged toward M1's finish line. Three engineering tiers cleared. The Prod...",
+    "url": "/blog/weekly-ship-036-approaching-gate",
     "slug": "weekly-ship-036-approaching-gate",
     "publishedAt": "Apr 1, 2026",
     "publishedAtISO": "2026-04-01T00:00:00.000Z",
@@ -11,13 +11,14 @@
     "tags": [
       "Building in Public"
     ],
-    "guid": "blog-first-ship036a1b2c3",
+    "guid": "blog-first-d424d889a350",
     "featuredImage": "/assets/blog-images/piper-ship.webp",
     "thumbnail": "/assets/blog-images/piper-ship.webp",
     "category": "ship",
     "cluster": "the-sprint",
     "workDate": "Mar 20, 2026",
-    "workDateISO": "2026-03-20T00:00:00.000Z"
+    "workDateISO": "2026-03-20T00:00:00.000Z",
+    "chatDate": "3/20/2026"
   },
   {
     "title": "Are We Doing It Backwards?",
