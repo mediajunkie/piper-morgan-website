@@ -22,6 +22,7 @@ const navigationItems: NavigationItem[] = [
     href: '/blog',
     children: [
       { label: 'Blog', href: '/blog' },
+      { label: 'Shipping News', href: '/shipping-news' },
       { label: 'Methodology', href: '/methodology' },
     ]
   },

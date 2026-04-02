@@ -20,7 +20,7 @@ function extractReadingTime(content: string): string {
 }
 
 // Transform posts to expected format
-const mediumPosts = mediumPostsRaw.map((post: any) => {
+const mediumPosts = mediumPostsRaw.filter((p: any) => p.category !== 'ship').map((post: any) => {
   return {
     ...post,
     excerpt: post.contentSnippet || post.content?.substring(0, 200) || '',

@@ -9,8 +9,11 @@ import { ERAS, getEraCounts, EPISODES, getEpisodeCounts } from '@/lib/episodes';
 
 const POSTS_PER_PAGE = 24;
 
-// Sort posts by publication date (newest first)
-const allSortedPosts = sortByPubDate(mediumPosts, 'desc');
+// Sort posts by publication date (newest first), excluding ships (they have their own section)
+const allSortedPosts = sortByPubDate(
+  mediumPosts.filter((p: any) => p.category !== 'ship'),
+  'desc'
+);
 
 interface BlogContentProps {
   currentPage?: number;

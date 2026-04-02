@@ -1,5 +1,25 @@
 [
   {
+    "title": "Weekly Ship #036: Approaching Gate",
+    "excerpt": "",
+    "url": "/shipping-news/weekly-ship-036-approaching-gate",
+    "slug": "weekly-ship-036-approaching-gate",
+    "publishedAt": "Apr 1, 2026",
+    "publishedAtISO": "2026-04-01T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-ship036a1b2c3",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "category": "ship",
+    "cluster": "the-sprint",
+    "workDate": "Mar 20, 2026",
+    "workDateISO": "2026-03-20T00:00:00.000Z"
+  },
+  {
     "title": "Are We Doing It Backwards?",
     "excerpt": "March 14 Saturday morning. The day after ten roles had hummed in concert. I was feeling good about the project. M1 was moving. Issues were closing. The Lead Developer had knocked out twenty issues in twenty-four hours. So I did what I always do when things are going well. I did a little testing. ...",
     "url": "/blog/are-we-doing-it-backwards",
@@ -15,10 +35,11 @@
     "featuredImage": "/assets/blog-images/ai-backwards.webp",
     "thumbnail": "/assets/blog-images/ai-backwards.webp",
     "category": "building",
-    "cluster": "the-sprint",
+    "cluster": "2026-03-31",
     "workDate": "Mar 14, 2026",
     "workDateISO": "2026-03-14T00:00:00.000Z",
-    "chatDate": "3/14/2026"
+    "chatDate": "3/14/2026",
+    "featured": false
   },
   {
     "title": "Wiring vs. Wizardry",

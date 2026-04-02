@@ -8,7 +8,7 @@ import { BlogPostContent } from '@/components/organisms/BlogPostContent';
 // Only generates slug-based URLs
 export async function generateStaticParams() {
   return mediumPosts
-    .filter((post: any) => post.slug)
+    .filter((post: any) => post.slug && post.category !== 'ship')
     .map((post: any) => ({
       slug: post.slug
     }));

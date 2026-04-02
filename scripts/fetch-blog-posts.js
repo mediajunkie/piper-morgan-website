@@ -432,15 +432,17 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
 
     // Build a post entry from CSV metadata + blog-content.json
     const content = blogContent[meta.hashId];
-    if (!content) return; // No content available, skip
+    // Ships and other section posts may not have blog content yet — allow them through
+    if (!content && meta.category !== 'ship') return; // No content available, skip
 
     // Extract excerpt from HTML content
-    const excerpt = extractExcerpt(content.content || '', meta.title || '');
+    const excerpt = content ? extractExcerpt(content.content || '', meta.title || '') : '';
 
+    const urlPrefix = meta.category === 'ship' ? '/shipping-news' : '/blog';
     const post = {
-      title: meta.title || content.title || 'Untitled',
+      title: meta.title || (content && content.title) || 'Untitled',
       excerpt: excerpt,
-      url: `/blog/${meta.slug}`,
+      url: `${urlPrefix}/${meta.slug}`,
       slug: meta.slug,
       publishedAt: formatDate(meta.pubDate || meta.workDate),
       publishedAtISO: dateToISO(meta.pubDate || meta.workDate),
