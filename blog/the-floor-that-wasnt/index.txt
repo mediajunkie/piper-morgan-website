@@ -1,0 +1,169 @@
+1:"$Sreact.fragment"
+8:I[8393,[],""]
+:HL["/_next/static/css/a57acb071b4cdfa8.css","style"]
+2:T1313,
+            :root{--primary-teal:#2DD4BF;--primary-teal-text:#0D9488;--text-dark:#1F2937;--text-light:#6B7280;--background:#FFFFFF;--surface:#F9FAFB}
+            .dark{--text-dark:#F1F5F9;--text-light:#94A3B8;--background:#0F172A;--surface:#1E293B}
+            @font-face{font-family:'Inter';src:url('/fonts/inter-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+            *{box-sizing:border-box}
+            html{scroll-behavior:smooth;font-size:16px;margin:0;padding:0;border:none;outline:none}
+            body{background:var(--background);color:var(--text-dark);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell',sans-serif;line-height:1.6;margin:0;padding:0;border:none;outline:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+            nav{border:none !important;outline:none !important}
+            h1,h2,h3,h4,h5,h6{font-family:'Hoss Round','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+            p,span{max-width:75ch;line-height:1.7}
+            .text-content div{max-width:75ch;line-height:1.7}
+            .text-content{max-width:65ch}
+            @media (max-width:640px){
+              h1{font-size:1.75rem;line-height:1.2}
+              h2{font-size:1.25rem;line-height:1.3}
+              h3{font-size:1.1rem;line-height:1.4}
+              h4{font-size:1rem;line-height:1.4}
+            }
+            @media (min-width:641px) and (max-width:768px){
+              h1{font-size:2rem;line-height:1.2}
+              h2{font-size:1.5rem;line-height:1.3}
+              h3{font-size:1.25rem;line-height:1.4}
+            }
+            @media (prefers-reduced-motion: reduce){
+              *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}
+            }
+            a:hover{color:#0D9488;transition:color 0.2s ease}
+            .hover-lift:hover{transform:translateY(-2px);transition:transform 0.2s ease}
+            button:focus,a:focus{outline:2px solid #2DD4BF;outline-offset:2px;border-radius:4px}
+            .skip-to-content{position:absolute;top:-100px;left:0;z-index:999;padding:8px 16px;background:#1F2937;color:white;text-decoration:none;border-radius:0 0 4px 0;transition:top 0.3s}
+            .skip-to-content:focus{top:0;outline:2px solid #2DD4BF;outline-offset:2px}
+            .section-spacing{margin-bottom:4rem}
+            .component-spacing{margin-bottom:1.5rem}
+            .micro-spacing{margin-bottom:0.5rem}
+            @media (min-width:768px){
+              .section-spacing{margin-bottom:6rem}
+              .component-spacing{margin-bottom:2rem}
+            }
+            .site-container{width:100%;max-width:1200px;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+            @media (min-width:640px){.site-container{padding-left:1.5rem;padding-right:1.5rem}}
+            @media (min-width:768px){.site-container{padding-left:2rem;padding-right:2rem}}
+            @media (min-width:1024px){.site-container{max-width:1200px}}
+            @media (min-width:1200px){.site-container{max-width:1200px}}
+            .section-padding{padding-top:4rem;padding-bottom:4rem}
+            @media (min-width:768px){.section-padding{padding-top:5rem;padding-bottom:5rem}}
+            .mx-auto{margin-left:auto;margin-right:auto}
+            .max-w-4xl{max-width:56rem}
+            .pt-16{padding-top:4rem}
+            .pb-8{padding-bottom:2rem}
+            .px-4{padding-left:1rem;padding-right:1rem}
+            .mb-6{margin-bottom:1.5rem}
+            .mb-8{margin-bottom:2rem}
+            .text-left{text-align:left}
+            .text-center{text-align:center}
+            .text-primary-teal-text{color:#0F766E}
+            .text-text-dark{color:#1F2937}
+            .text-text-light{color:#6B7280}
+            .font-bold{font-weight:700}
+            .text-4xl{font-size:2.25rem;line-height:2.5rem}
+            .text-5xl{font-size:3rem;line-height:1}
+            .text-6xl{font-size:3.75rem;line-height:1}
+            .text-lg{font-size:1.125rem;line-height:1.75rem}
+            .text-xl{font-size:1.25rem;line-height:1.75rem}
+            .leading-tight{line-height:1.25}
+            .leading-relaxed{line-height:1.625}
+            .min-h-screen{min-height:100vh}
+            @media (min-width:768px){
+              .md\:pt-24{padding-top:6rem}
+              .md\:pb-12{padding-bottom:3rem}
+              .md\:text-5xl{font-size:3rem;line-height:1}
+              .md\:text-xl{font-size:1.25rem;line-height:1.75rem}
+            }
+            @media (min-width:1024px){
+              .lg\:text-6xl{font-size:3.75rem;line-height:1}
+            }
+          0:{"P":null,"b":"c8L_gcajMYR-26eW9WRRF","p":"","c":["","blog","the-floor-that-wasnt",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","the-floor-that-wasnt","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a57acb071b4cdfa8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"font-inter","children":[["$","head",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                const theme = localStorage.getItem('theme') ||\n                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');\n                if (theme === 'dark') {\n                  document.documentElement.classList.add('dark');\n                  document.body.classList.add('dark');\n                }\n              })();\n            "}}],["$","link",null,{"rel":"dns-prefetch","href":"//pipermorgan.ai"}],["$","link",null,{"rel":"preconnect","href":"https://pipermorgan.ai"}],["$","link",null,{"rel":"preload","as":"image","href":"/assets/pm-logo.png"}],["$","link",null,{"rel":"preload","href":"/fonts/inter-latin.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preload","href":"/fonts/HossRound-Regular.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],"$L3"]}]]}],{"children":["blog","$L4",{"children":[["slug","the-floor-that-wasnt","d"],"$L5",{"children":["__PAGE__","$L6",{},null,false]},null,false]},null,false]},null,false],"$L7",false]],"m":"$undefined","G":["$8",[]],"s":false,"S":true}
+9:I[9119,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-06e13daf096e4c23.js","177","static/chunks/app/layout-752516a99df3d17d.js"],"ClientLayout"]
+a:I[7555,[],""]
+b:I[1295,[],""]
+c:I[6874,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-06e13daf096e4c23.js","497","static/chunks/497-c2d4d34c8ebca405.js","170","static/chunks/170-ba31b3c8e91ce2f3.js","676","static/chunks/676-3ed22a64c4d76dbe.js","878","static/chunks/878-84c21ab4454b1944.js","831","static/chunks/app/blog/page-bb4de3b32bcba7d1.js"],""]
+10:I[9665,[],"OutletBoundary"]
+12:I[4911,[],"AsyncMetadataOutlet"]
+14:I[9665,[],"ViewportBoundary"]
+16:I[9665,[],"MetadataBoundary"]
+17:"$Sreact.suspense"
+3:["$","body",null,{"className":"font-sans antialiased","children":[["$","$L9",null,{"children":["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"min-h-screen","children":["$","div",null,{"className":"site-container max-w-4xl pt-16 md:pt-24 pb-8 md:pb-12 text-center","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-8xl md:text-9xl font-bold text-primary-teal-text mb-4","children":"404"}],["$","h2",null,{"className":"text-3xl md:text-4xl font-semibold text-text-dark mb-4","children":"Page Not Found"}],["$","p",null,{"className":"text-xl text-text-light leading-relaxed max-w-2xl mx-auto","children":"Looks like this page got lost in the AI training data. Don't worry – even the best algorithms make mistakes sometimes."}]]}],["$","div",null,{"className":"mb-12","children":[["$","h3",null,{"className":"text-xl font-semibold text-text-dark mb-6","children":"Where would you like to go instead?"}],["$","div",null,{"className":"grid md:grid-cols-2 gap-6 max-w-2xl mx-auto","children":[["$","div",null,{"className":"space-y-4","children":[["$","$Lc",null,{"href":"/","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"🏠 Homepage"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Start from the beginning of our AI PM journey"}]]}],["$","$Lc",null,{"href":"/how-it-works","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"⚙️ How It Works"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Discover our AI-powered product management methodology"}]]}]]}],["$","div",null,{"className":"space-y-4","children":[["$","$Lc",null,{"href":"/what-weve-learned","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"💡 What We've Learned"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Building-in-public insights and breakthroughs"}]]}],["$","$Lc",null,{"href":"/blog","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"📝 Journey"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Follow our building-in-public blog posts"}]]}],["$","$Lc",null,{"href":"/get-involved","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"🚀 Get Involved"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Join our community and stay updated"}]]}]]}]]}]]}],["$","div",null,{"className":"text-center","children":[["$","p",null,{"className":"text-text-light mb-6","children":"Still can't find what you're looking for?"}],["$","$Lc",null,{"href":"/get-involved","className":"inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:transform-none bg-primary-teal text-white hover:bg-teal-600 focus:ring-primary-teal shadow-component hover:shadow-component-hover hover:-translate-y-0.5 hover:scale-105 font-bold text-lg px-8 py-4 text-lg rounded-button","aria-label":"$undefined","children":[false,"Get Help & Stay Updated"]}]]}],["$","div",null,{"className":"mt-12 p-6 bg-gray-50 rounded-card max-w-lg mx-auto","children":["$","p",null,{"className":"text-sm text-text-light italic","children":["💬 ","$Ld"," \"Even the most sophisticated neural networks occasionally return null. Let's navigate back to more productive paths together!\""]}]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],"$Le"]}]
+4:["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+5:["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+6:["$","$1","c",{"children":["$Lf",null,["$","$L10",null,{"children":["$L11",["$","$L12",null,{"promise":"$@13"}]]}]]}]
+7:["$","$1","h",{"children":[null,[["$","$L14",null,{"children":"$L15"}],null],["$","$L16",null,{"children":["$","div",null,{"hidden":true,"children":["$","$17",null,{"fallback":null,"children":"$L18"}]}]}]]}]
+19:I[9795,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-06e13daf096e4c23.js","177","static/chunks/app/layout-752516a99df3d17d.js"],"default"]
+d:["$","strong",null,{"children":"Piper Morgan says:"}]
+e:["$","$L19",null,{}]
+1a:I[7887,["874","static/chunks/874-668c89038fa04eb8.js","953","static/chunks/app/blog/%5Bslug%5D/page-afab2cba25f89845.js"],"BlogPostContent"]
+1b:T1b29,<p><em>March 15–16</em></p>
+<p>Saturday afternoon. The tests said the floor was in place. The Lead Developer had built the conversational floor the evening before, the LLM fallback that was supposed to catch every query the handlers couldn't answer. Twenty-three tests passing. I'd seen the screenshot. It clearly worked. Time to test it.
+</p>
+<p>I typed seven messages into Piper. The kind of thing a normal user would say. "What should I focus on today?" "Tell me about AI agents." Simple, conversational, the exact queries the floor was built to handle.
+</p>
+<p>Six of the seven came back as template boilerplate. Canned responses. Not the LLM engaging thoughtfully with my question, just the same pre-written handler output I'd been staring at for weeks. Some of it even clunkier.
+</p>
+<p>So what was the problem. Turns out there was a floor down there, but the user never hits it.
+</p>
+<p>I want to be honest here. I started worrying that maybe I've just wasted a lot of time on something that I may never figure out how to get working.
+</p>
+<p>But I'm not a quitter, so I kept digging.
+</p>
+<h2>The routing was inverted</h2>
+<p>I told the Lead Developer: "Investigate the architecture and docbase, write a report."
+</p>
+<p>The report came back. The routing architecture was still backwards from the design intent. Our own design documents — PDR-002, ADR-039 — described a system where the conversational floor was the default and structured handlers were enhancements. What we'd actually built was the opposite: canonical handlers were the default path, and the floor was a last resort that almost nothing reached.
+</p>
+<p>Every query hit a handler first. Most handlers had something to say — even if what they had to say was a template response that didn't actually engage with the question. The floor existed, it worked, it was tested, and it was unreachable.
+</p>
+<p>Three stubs were literally labeled "implementation pending" — and they were catching real user queries and returning nothing useful instead of letting the floor handle them. The Lead Developer replaced all three with floor routing, removed a wrong todo fallback, and cleaned up a stale debug print. Small fixes, but each one had been silently eating queries.
+</p>
+<h2>Phase 1</h2>
+<p>The first fix was scoped and shipped the same day. GUIDANCE intents — the broad category covering "help me think about this" queries — now route to the conversational floor with assembled context. A new context assembler gathers calendar events, projects, and priorities as structured facts and passes them to the LLM. Nineteen new tests. Merged to main.
+</p>
+<p>I tested again. "What should I focus on today?" This time it hit the PRIORITY handler — a different category entirely, not GUIDANCE. The routing was more tangled than one category could fix.
+</p>
+<p>The query that did reach the floor — a question about AI agents — came back with Piper parroting its own system prompt. Instead of engaging with my question, the LLM read its own instructions aloud. "I'm here to help you with product management tasks..."
+</p>
+<p>The Lead Developer diagnosed both issues. PRIORITY was a separate classification category — Phase 1 only covered GUIDANCE. And the floor prompt was written in descriptive mode ("I'm a PM assistant that helps with...") instead of directive mode ("Respond directly to what the user said"). The LLM did exactly what descriptive prompts tell it to do: describe itself.
+</p>
+<p>The prompt was rewritten. The parroting stopped.
+</p>
+<h2>"Floor works" ≠ "users experience the floor"</h2>
+<p>This is the pattern that kept repeating. Mechanical correctness doesn't guarantee user experience. The floor passed every test. The routing worked as coded. The handlers returned responses. Everything was green.
+</p>
+<p>And a real person typing a real question got template boilerplate six times out of seven.
+</p>
+<p>As I review and edit this draft for publication today, I will admit I am feeling that trepidation that builds up before manual testing. I've got user acceptance testing scheduled with my CXO to see if the M1 sprint has landed and I'm kind of afraid to check.
+</p>
+<h2>The contract gap</h2>
+<p>The next day brought more testing and a deeper diagnosis. The leadership team converged again — Architect, PPM, CXO — this time on the structural relationship between classification and handling.
+</p>
+<p>The Architect refined the core question: "Does this intent require an operation the LLM cannot perform?" If no — if it's a conversational question, not an action — the floor should handle it. Handlers are for side effects: creating todos, closing issues, checking calendars. The Action Gate criterion was born.
+</p>
+<p>The CXO added a voice rule: "Never say 'I can't.'" If Piper can't perform the specific action requested, it should still engage conversationally with the topic. The floor makes this possible — there's always a response, always an engagement.
+</p>
+<p>The PPM synthesized: the classifier's accuracy matters for <em>actions</em>, not for <em>conversations</em>. If a query gets misclassified but both categories route to the floor with context, the user doesn't notice. Classifier accuracy only matters when the wrong classification would trigger the wrong side effect.
+</p>
+<p>We were getting pretty good at these roundtables!
+</p>
+<p>The Lead Developer ran a Five Whys analysis that afternoon, exposing a systemic contract gap between the classification layer and the handling layer. The classifier was making fine-grained distinctions, but the handlers on the receiving end didn't honor those distinctions — they returned generic responses regardless of the classified intent. Precision in, mush out.
+</p>
+<p>Nine issues closed by end of day. The architecture was starting to face the right direction.
+</p>
+<h2>The lesson</h2>
+<p>Two days of testing. Two days of discovering that a system that "worked" — by every automated measure — didn't work at all for the person it was built for.
+</p>
+<p>The floor existed. The tests passed. The routing was mechanically correct. But the architecture was inverted from the design intent, the prompts were written in the wrong mode, the handlers were swallowing queries they should have forwarded, and the contract between classifier and handler was broken.
+</p>
+<p>None of this was visible from the test suite. All of it was visible within thirty seconds of typing a question.
+</p>
+<p>I love these smart little talking computer critters, but it's funny how it often it comes down to an actual human (usually me) trying to do some real thing, to find out if what we've made is really even anything at all.
+</p>
+<hr>
+<p><em>Next on Building Piper Morgan:  Fixing the Foundation, a rapid montage of the infrastructure week that followed from this realization.</em></p>
+<p><em>When has "it works" not meant what you thought it meant? What did it take to see the gap?</em></p>f:["$","$L1a",null,{"post":{"title":"The Floor That Wasn't","excerpt":"March 15–16 Saturday afternoon. The tests said the floor was in place. The Lead Developer had built the conversational floor the evening before, the LLM fallback that was supposed to catch every query the handlers couldn't answer. Twenty-three tests passing. I'd seen the screenshot. It clearly wo...","url":"/blog/the-floor-that-wasnt","slug":"the-floor-that-wasnt","publishedAt":"Apr 2, 2026","publishedAtISO":"2026-04-02T00:00:00.000Z","author":"christian crumlish","readingTime":"5 min read","tags":["Building in Public"],"guid":"blog-first-40976d1f390a","featuredImage":"/assets/blog-images/ai-umbrella.webp","thumbnail":"/assets/blog-images/ai-umbrella.webp","category":"building","cluster":"the-sprint","workDate":"Mar 15, 2026","workDateISO":"2026-03-15T00:00:00.000Z","chatDate":"3/15/2026"},"content":{"title":"The Floor That Wasn't","subtitle":"","content":"$1b"}}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+11:null
+1c:I[8175,[],"IconMark"]
+13:{"metadata":[["$","title","0",{"children":"The Floor That Wasn't | Piper Morgan"}],["$","meta","1",{"name":"author","content":"Christian Crumlish"}],["$","meta","2",{"name":"keywords","content":"AI,Product Management,Methodology,Building in Public"}],["$","meta","3",{"name":"creator","content":"Christian Crumlish"}],["$","meta","4",{"name":"publisher","content":"Christian Crumlish"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow"}],["$","link","7",{"rel":"canonical","href":"https://pipermorgan.ai/"}],["$","meta","8",{"name":"format-detection","content":"telephone=no, address=no, email=no"}],["$","meta","9",{"property":"og:title","content":"The Floor That Wasn't"}],["$","meta","10",{"property":"og:image","content":"https://pipermorgan.ai/assets/blog-images/ai-umbrella.webp"}],["$","meta","11",{"property":"og:type","content":"article"}],["$","meta","12",{"property":"article:author","content":"christian crumlish"}],["$","meta","13",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","14",{"name":"twitter:title","content":"The Floor That Wasn't"}],["$","meta","15",{"name":"twitter:image","content":"https://pipermorgan.ai/assets/blog-images/ai-umbrella.webp"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"32x33"}],["$","link","17",{"rel":"icon","href":"/favicon.ico","sizes":"32x32","type":"image/x-icon"}],["$","link","18",{"rel":"icon","href":"/pm-favicon-16.png","sizes":"16x16","type":"image/png"}],["$","link","19",{"rel":"icon","href":"/pm-favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","20",{"rel":"icon","href":"/pm-favicon-48.png","sizes":"48x48","type":"image/png"}],["$","link","21",{"rel":"apple-touch-icon","href":"/pm-favicon-180.png","sizes":"180x180","type":"image/png"}],["$","link","22",{"rel":"icon","href":"/pm-favicon-192.png","sizes":"192x192","type":"image/png"}],["$","$L1c","23",{}]],"error":null,"digest":"$undefined"}
+18:"$13:metadata"
