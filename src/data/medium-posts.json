@@ -1,5 +1,26 @@
 [
   {
+    "title": "The Mismatch Category",
+    "excerpt": "March 3–8 The storage line was correct. The retrieval line was correct. (You don't need to see the python call, trust me.) Each line did exactly what it said. Each would pass code review. Each was valid Python that executed without error. Together, they created a bug that hid for months. Two righ...",
+    "url": "/blog/the-mismatch-category",
+    "slug": "the-mismatch-category",
+    "publishedAt": "Apr 5, 2026",
+    "publishedAtISO": "2026-04-05T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-241a48cbd0a6",
+    "featuredImage": "/assets/blog-images/ai-handshake.webp",
+    "thumbnail": "/assets/blog-images/ai-handshake.webp",
+    "category": "insight",
+    "cluster": "the-sprint",
+    "workDate": "Mar 3, 2026",
+    "workDateISO": "2026-03-03T00:00:00.000Z",
+    "chatDate": "3/3/2026"
+  },
+  {
     "title": "Silent Failures",
     "excerpt": "March 3–8, 2026 The Slack integration failed for months. Nobody noticed. Not because nobody used it. I got it working when I first set it up. I connected alpha test accounts. I connected my account, saw \"Success,\" and assumed everything was working. When it failed to work, it failed, silently, ov...",
     "url": "/blog/silent-failures",
@@ -15,10 +36,11 @@
     "featuredImage": "/assets/blog-images/ai-departures.webp",
     "thumbnail": "/assets/blog-images/ai-departures.webp",
     "category": "insight",
-    "cluster": "the-sprint",
+    "cluster": "2026-04-04",
     "workDate": "Mar 3, 2026",
     "workDateISO": "2026-03-03T00:00:00.000Z",
-    "chatDate": "3/3/2026"
+    "chatDate": "3/3/2026",
+    "featured": false
   },
   {
     "title": "The Floor That Wasn't",
