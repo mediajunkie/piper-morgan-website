@@ -1,5 +1,26 @@
 [
   {
+    "title": "Silent Failures",
+    "excerpt": "March 3–8, 2026 The Slack integration failed for months. Nobody noticed. Not because nobody used it. I got it working when I first set it up. I connected alpha test accounts. I connected my account, saw \"Success,\" and assumed everything was working. When it failed to work, it failed, silently, ov...",
+    "url": "/blog/silent-failures",
+    "slug": "silent-failures",
+    "publishedAt": "Apr 4, 2026",
+    "publishedAtISO": "2026-04-04T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-7b31de76dc52",
+    "featuredImage": "/assets/blog-images/ai-departures.webp",
+    "thumbnail": "/assets/blog-images/ai-departures.webp",
+    "category": "insight",
+    "cluster": "the-sprint",
+    "workDate": "Mar 3, 2026",
+    "workDateISO": "2026-03-03T00:00:00.000Z",
+    "chatDate": "3/3/2026"
+  },
+  {
     "title": "The Floor That Wasn't",
     "excerpt": "March 15–16 Saturday afternoon. The tests said the floor was in place. The Lead Developer had built the conversational floor the evening before, the LLM fallback that was supposed to catch every query the handlers couldn't answer. Twenty-three tests passing. I'd seen the screenshot. It clearly wo...",
     "url": "/blog/the-floor-that-wasnt",
@@ -15,10 +36,11 @@
     "featuredImage": "/assets/blog-images/ai-umbrella.webp",
     "thumbnail": "/assets/blog-images/ai-umbrella.webp",
     "category": "building",
-    "cluster": "the-sprint",
+    "cluster": "2026-04-02",
     "workDate": "Mar 15, 2026",
     "workDateISO": "2026-03-15T00:00:00.000Z",
-    "chatDate": "3/15/2026"
+    "chatDate": "3/15/2026",
+    "featured": false
   },
   {
     "title": "Weekly Ship #036: Approaching the Gate",
