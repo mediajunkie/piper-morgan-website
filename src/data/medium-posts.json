@@ -1,5 +1,26 @@
 [
   {
+    "title": "Nine Voices",
+    "excerpt": "March 19 Thursday. I opened sessions with all nine active agent roles in this growing menagerie of a project: Lead Developer, Chief Architect, Chief of Staff, Communications Director, CXO, PPM, CIO, HOST (formerly HoSR), Documentation Management specialist. Every core role I'd conjured up over ni...",
+    "url": "/blog/nine-voices",
+    "slug": "nine-voices",
+    "publishedAt": "Apr 9, 2026",
+    "publishedAtISO": "2026-04-09T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-a4c14fb23db5",
+    "featuredImage": "/assets/blog-images/ai-kitchen.webp",
+    "thumbnail": "/assets/blog-images/ai-kitchen.webp",
+    "category": "building",
+    "cluster": "the-sprint",
+    "workDate": "Mar 19, 2026",
+    "workDateISO": "2026-03-19T00:00:00.000Z",
+    "chatDate": "3/19/2026"
+  },
+  {
     "title": "Weekly Ship #037: New Ground",
     "excerpt": "March 27 – April 2, 2026 Last week's \"Approaching the Gate\" ended with 14 test scenarios waiting for the PM to sit down with Piper and have a conversation. That conversation didn't happen this week — instead, the entire project picked up and moved. All 12 agent roles migrated from one account to ...",
     "url": "/blog/weekly-ship-037-new-ground",
@@ -15,10 +36,11 @@
     "featuredImage": "/assets/blog-images/piper-ship.webp",
     "thumbnail": "/assets/blog-images/piper-ship.webp",
     "category": "ship",
-    "cluster": "the-sprint",
+    "cluster": "2026-04-08",
     "workDate": "Mar 27, 2026",
     "workDateISO": "2026-03-27T00:00:00.000Z",
-    "chatDate": "3/27/2026"
+    "chatDate": "3/27/2026",
+    "featured": false
   },
   {
     "title": "Fixing the Foundation",
