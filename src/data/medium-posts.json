@@ -1,5 +1,26 @@
 [
   {
+    "title": "The No-Anchoring Roundtable",
+    "excerpt": "March 14 I has this sudden instinct we'd been building the system backwards. I wanted to ask my agent team and get honest answers. This is not a small question. It's the kind of question where the first one to speak shapes how everyone else thinks about it. I made sure nobody spoke first. I sent ...",
+    "url": "/blog/the-no-anchoring-roundtable",
+    "slug": "the-no-anchoring-roundtable",
+    "publishedAt": "Apr 11, 2026",
+    "publishedAtISO": "2026-04-11T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-ef26c0915e4c",
+    "featuredImage": "/assets/blog-images/ai-roundtable.webp",
+    "thumbnail": "/assets/blog-images/ai-roundtable.webp",
+    "category": "insight",
+    "cluster": "the-sprint",
+    "workDate": "Mar 14, 2026",
+    "workDateISO": "2026-03-14T00:00:00.000Z",
+    "chatDate": "3/14/2026"
+  },
+  {
     "title": "Nine Voices",
     "excerpt": "March 19 Thursday. I opened sessions with all nine active agent roles in this growing menagerie of a project: Lead Developer, Chief Architect, Chief of Staff, Communications Director, CXO, PPM, CIO, HOST (formerly HoSR), Documentation Management specialist. Every core role I'd conjured up over ni...",
     "url": "/blog/nine-voices",
@@ -15,10 +36,11 @@
     "featuredImage": "/assets/blog-images/ai-kitchen.webp",
     "thumbnail": "/assets/blog-images/ai-kitchen.webp",
     "category": "building",
-    "cluster": "the-sprint",
+    "cluster": "2026-04-09",
     "workDate": "Mar 19, 2026",
     "workDateISO": "2026-03-19T00:00:00.000Z",
-    "chatDate": "3/19/2026"
+    "chatDate": "3/19/2026",
+    "featured": false
   },
   {
     "title": "Weekly Ship #037: New Ground",
