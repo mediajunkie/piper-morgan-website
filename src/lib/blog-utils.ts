@@ -2,6 +2,7 @@
  * Blog Utilities
  *
  * Utility functions for blog post management, sorting, and filtering.
+ * Data source: committed JSON (Medium RSS fetch suspended Apr 14, 2026)
  */
 
 /**
