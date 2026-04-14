@@ -1,5 +1,25 @@
 [
   {
+    "title": "The Closing Sprint",
+    "excerpt": "Almost there! March 20–22 Pouring coffee on a Friday morning. The architecture was facing the right direction. The floor was routing as expected. The dispatcher was consolidating offers. The briefings were accurate. The mail was flowing. Now we had to finish the sprint. M1 had been organized into...",
+    "url": "/blog/the-closing-sprint",
+    "slug": "the-closing-sprint",
+    "publishedAt": "Apr 14, 2026",
+    "publishedAtISO": "2026-04-14T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-cb4daa0e769e",
+    "featuredImage": "/assets/blog-images/ai-finish.webp",
+    "thumbnail": "/assets/blog-images/ai-finish.webp",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Mar 22, 2026",
+    "workDateISO": "2026-03-22T00:00:00.000Z"
+  },
+  {
     "title": "Archaeological Debugging: Finding What You've Already Built",
     "excerpt": "December 22, 2025 It was 8:06 AM on a Monday in December. I asked the Lead Developer to implement Query #2 in our list of canonical queries (dynamic capabilities, the ability for users to ask \"what can you do?\"). The response came back in nine minutes: \"Implementation already exists.\" Not \"I'll b...",
     "url": "/blog/archaeological-debugging",
@@ -15,10 +35,11 @@
     "featuredImage": "/assets/blog-images/ai-scarab.webp",
     "thumbnail": "/assets/blog-images/ai-scarab.webp",
     "category": "insight",
-    "cluster": "the-foundation",
+    "cluster": "2026-04-12",
     "workDate": "Dec 22, 2025",
     "workDateISO": "2025-12-22T00:00:00.000Z",
-    "chatDate": "12/22/2025"
+    "chatDate": "12/22/2025",
+    "featured": false
   },
   {
     "title": "The No-Anchoring Roundtable",
