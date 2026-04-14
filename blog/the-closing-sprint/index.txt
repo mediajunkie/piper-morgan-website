@@ -1,0 +1,141 @@
+1:"$Sreact.fragment"
+8:I[8393,[],""]
+:HL["/_next/static/css/41b8dc52ae6c1dc1.css","style"]
+2:T1313,
+            :root{--primary-teal:#2DD4BF;--primary-teal-text:#0D9488;--text-dark:#1F2937;--text-light:#6B7280;--background:#FFFFFF;--surface:#F9FAFB}
+            .dark{--text-dark:#F1F5F9;--text-light:#94A3B8;--background:#0F172A;--surface:#1E293B}
+            @font-face{font-family:'Inter';src:url('/fonts/inter-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+            *{box-sizing:border-box}
+            html{scroll-behavior:smooth;font-size:16px;margin:0;padding:0;border:none;outline:none}
+            body{background:var(--background);color:var(--text-dark);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell',sans-serif;line-height:1.6;margin:0;padding:0;border:none;outline:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+            nav{border:none !important;outline:none !important}
+            h1,h2,h3,h4,h5,h6{font-family:'Hoss Round','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+            p,span{max-width:75ch;line-height:1.7}
+            .text-content div{max-width:75ch;line-height:1.7}
+            .text-content{max-width:65ch}
+            @media (max-width:640px){
+              h1{font-size:1.75rem;line-height:1.2}
+              h2{font-size:1.25rem;line-height:1.3}
+              h3{font-size:1.1rem;line-height:1.4}
+              h4{font-size:1rem;line-height:1.4}
+            }
+            @media (min-width:641px) and (max-width:768px){
+              h1{font-size:2rem;line-height:1.2}
+              h2{font-size:1.5rem;line-height:1.3}
+              h3{font-size:1.25rem;line-height:1.4}
+            }
+            @media (prefers-reduced-motion: reduce){
+              *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}
+            }
+            a:hover{color:#0D9488;transition:color 0.2s ease}
+            .hover-lift:hover{transform:translateY(-2px);transition:transform 0.2s ease}
+            button:focus,a:focus{outline:2px solid #2DD4BF;outline-offset:2px;border-radius:4px}
+            .skip-to-content{position:absolute;top:-100px;left:0;z-index:999;padding:8px 16px;background:#1F2937;color:white;text-decoration:none;border-radius:0 0 4px 0;transition:top 0.3s}
+            .skip-to-content:focus{top:0;outline:2px solid #2DD4BF;outline-offset:2px}
+            .section-spacing{margin-bottom:4rem}
+            .component-spacing{margin-bottom:1.5rem}
+            .micro-spacing{margin-bottom:0.5rem}
+            @media (min-width:768px){
+              .section-spacing{margin-bottom:6rem}
+              .component-spacing{margin-bottom:2rem}
+            }
+            .site-container{width:100%;max-width:1200px;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+            @media (min-width:640px){.site-container{padding-left:1.5rem;padding-right:1.5rem}}
+            @media (min-width:768px){.site-container{padding-left:2rem;padding-right:2rem}}
+            @media (min-width:1024px){.site-container{max-width:1200px}}
+            @media (min-width:1200px){.site-container{max-width:1200px}}
+            .section-padding{padding-top:4rem;padding-bottom:4rem}
+            @media (min-width:768px){.section-padding{padding-top:5rem;padding-bottom:5rem}}
+            .mx-auto{margin-left:auto;margin-right:auto}
+            .max-w-4xl{max-width:56rem}
+            .pt-16{padding-top:4rem}
+            .pb-8{padding-bottom:2rem}
+            .px-4{padding-left:1rem;padding-right:1rem}
+            .mb-6{margin-bottom:1.5rem}
+            .mb-8{margin-bottom:2rem}
+            .text-left{text-align:left}
+            .text-center{text-align:center}
+            .text-primary-teal-text{color:#0F766E}
+            .text-text-dark{color:#1F2937}
+            .text-text-light{color:#6B7280}
+            .font-bold{font-weight:700}
+            .text-4xl{font-size:2.25rem;line-height:2.5rem}
+            .text-5xl{font-size:3rem;line-height:1}
+            .text-6xl{font-size:3.75rem;line-height:1}
+            .text-lg{font-size:1.125rem;line-height:1.75rem}
+            .text-xl{font-size:1.25rem;line-height:1.75rem}
+            .leading-tight{line-height:1.25}
+            .leading-relaxed{line-height:1.625}
+            .min-h-screen{min-height:100vh}
+            @media (min-width:768px){
+              .md\:pt-24{padding-top:6rem}
+              .md\:pb-12{padding-bottom:3rem}
+              .md\:text-5xl{font-size:3rem;line-height:1}
+              .md\:text-xl{font-size:1.25rem;line-height:1.75rem}
+            }
+            @media (min-width:1024px){
+              .lg\:text-6xl{font-size:3.75rem;line-height:1}
+            }
+          0:{"P":null,"b":"N2LoCI5Gq-pgihmY3np6W","p":"","c":["","blog","the-closing-sprint",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","the-closing-sprint","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/41b8dc52ae6c1dc1.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"font-inter","children":[["$","head",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                const theme = localStorage.getItem('theme') ||\n                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');\n                if (theme === 'dark') {\n                  document.documentElement.classList.add('dark');\n                  document.body.classList.add('dark');\n                }\n              })();\n            "}}],["$","link",null,{"rel":"dns-prefetch","href":"//pipermorgan.ai"}],["$","link",null,{"rel":"preconnect","href":"https://pipermorgan.ai"}],["$","link",null,{"rel":"preload","as":"image","href":"/assets/pm-logo.png"}],["$","link",null,{"rel":"preload","href":"/fonts/inter-latin.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preload","href":"/fonts/HossRound-Regular.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],"$L3"]}]]}],{"children":["blog","$L4",{"children":[["slug","the-closing-sprint","d"],"$L5",{"children":["__PAGE__","$L6",{},null,false]},null,false]},null,false]},null,false],"$L7",false]],"m":"$undefined","G":["$8",[]],"s":false,"S":true}
+9:I[9119,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-06e13daf096e4c23.js","177","static/chunks/app/layout-752516a99df3d17d.js"],"ClientLayout"]
+a:I[7555,[],""]
+b:I[1295,[],""]
+c:I[6874,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-06e13daf096e4c23.js","497","static/chunks/497-c2d4d34c8ebca405.js","170","static/chunks/170-da9ae99c41e1342f.js","676","static/chunks/676-3ed22a64c4d76dbe.js","878","static/chunks/878-84c21ab4454b1944.js","831","static/chunks/app/blog/page-bb4de3b32bcba7d1.js"],""]
+10:I[9665,[],"OutletBoundary"]
+12:I[4911,[],"AsyncMetadataOutlet"]
+14:I[9665,[],"ViewportBoundary"]
+16:I[9665,[],"MetadataBoundary"]
+17:"$Sreact.suspense"
+3:["$","body",null,{"className":"font-sans antialiased","children":[["$","$L9",null,{"children":["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"min-h-screen","children":["$","div",null,{"className":"site-container max-w-4xl pt-16 md:pt-24 pb-8 md:pb-12 text-center","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-8xl md:text-9xl font-bold text-primary-teal-text mb-4","children":"404"}],["$","h2",null,{"className":"text-3xl md:text-4xl font-semibold text-text-dark mb-4","children":"Page Not Found"}],["$","p",null,{"className":"text-xl text-text-light leading-relaxed max-w-2xl mx-auto","children":"Looks like this page got lost in the AI training data. Don't worry – even the best algorithms make mistakes sometimes."}]]}],["$","div",null,{"className":"mb-12","children":[["$","h3",null,{"className":"text-xl font-semibold text-text-dark mb-6","children":"Where would you like to go instead?"}],["$","div",null,{"className":"grid md:grid-cols-2 gap-6 max-w-2xl mx-auto","children":[["$","div",null,{"className":"space-y-4","children":[["$","$Lc",null,{"href":"/","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"🏠 Homepage"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Start from the beginning of our AI PM journey"}]]}],["$","$Lc",null,{"href":"/how-it-works","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"⚙️ How It Works"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Discover our AI-powered product management methodology"}]]}]]}],["$","div",null,{"className":"space-y-4","children":[["$","$Lc",null,{"href":"/what-weve-learned","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"💡 What We've Learned"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Building-in-public insights and breakthroughs"}]]}],["$","$Lc",null,{"href":"/blog","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"📝 Journey"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Follow our building-in-public blog posts"}]]}],["$","$Lc",null,{"href":"/get-involved","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"🚀 Get Involved"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Join our community and stay updated"}]]}]]}]]}]]}],["$","div",null,{"className":"text-center","children":[["$","p",null,{"className":"text-text-light mb-6","children":"Still can't find what you're looking for?"}],["$","$Lc",null,{"href":"/get-involved","className":"inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:transform-none bg-primary-teal text-white hover:bg-teal-600 focus:ring-primary-teal shadow-component hover:shadow-component-hover hover:-translate-y-0.5 hover:scale-105 font-bold text-lg px-8 py-4 text-lg rounded-button","aria-label":"$undefined","children":[false,"Get Help & Stay Updated"]}]]}],["$","div",null,{"className":"mt-12 p-6 bg-gray-50 rounded-card max-w-lg mx-auto","children":["$","p",null,{"className":"text-sm text-text-light italic","children":["💬 ","$Ld"," \"Even the most sophisticated neural networks occasionally return null. Let's navigate back to more productive paths together!\""]}]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],"$Le"]}]
+4:["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+5:["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+6:["$","$1","c",{"children":["$Lf",null,["$","$L10",null,{"children":["$L11",["$","$L12",null,{"promise":"$@13"}]]}]]}]
+7:["$","$1","h",{"children":[null,[["$","$L14",null,{"children":"$L15"}],null],["$","$L16",null,{"children":["$","div",null,{"hidden":true,"children":["$","$17",null,{"fallback":null,"children":"$L18"}]}]}]]}]
+19:I[9795,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-06e13daf096e4c23.js","177","static/chunks/app/layout-752516a99df3d17d.js"],"default"]
+d:["$","strong",null,{"children":"Piper Morgan says:"}]
+e:["$","$L19",null,{}]
+1a:I[7887,["874","static/chunks/874-668c89038fa04eb8.js","953","static/chunks/app/blog/%5Bslug%5D/page-afab2cba25f89845.js"],"BlogPostContent"]
+1b:T1e11,<figure><img alt="A runner crosses a finish line on a newly solid track while ghostly alternate paths converge behind them, guided by glowing, translucent AI companions assembling the final pieces in midair." src="/assets/blog-images/ai-finish.webp" /><figcaption>Almost there!</figcaption></figure>
+<p><em>March 20–22</em></p>
+<p>Pouring coffee on a Friday morning. The architecture was facing the right direction. The floor was routing as expected. The dispatcher was consolidating offers. The briefings were accurate. The mail was flowing.</p>
+<p>Now we had to finish the sprint.</p>
+<p>M1 had been organized into four tiers: architecture, quality, capabilities, and PM-led decisions. The first two tiers were done. Tier 3 — the capability gaps that actual users would notice — was next.</p>
+<p>The sprint had quadrupled in length during build and testing. It had led to a literal revolution in the architecture. Now it felt like we had finally rounded the corner.</p>
+<h2>Five sources of truth</h2>
+<p>The Lead Developer's first audit Friday morning surfaced a problem we hadn't seen coming. Piper was telling users it could do things it couldn't actually do.</p>
+<p>The root cause: five disconnected systems were each describing Piper's capabilities. PIPER.md listed 28 capabilities. The soft invocation detector knew 7 workflow types. The dispatcher registry had exactly 1 — meetings. The context assembler had its own capability list. And the canonical handler set implied yet another.</p>
+<p>None of them coordinated. So when a user asked about project setup, the LLM — drawing from PIPER.md — would offer to help. The user would accept. And then nothing would happen, because the dispatcher had no handler registered for project setup.</p>
+<p>The fix was registry-driven reconciliation: if it's not in the dispatcher registry, don't offer it. One source of truth, enforced at the earliest detection point. PIPER.md was updated to reflect runtime reality. The soft invocation detector was gated on the registry. The context assembler was made registry-aware.</p>
+<p>Five sources of truth became one. The Lead Developer filed and closed #923 the same session.</p>
+<p>It's hard enough to keep these critters honest without confusing them with mismatched and incorrect info!</p>
+<h2>The 75% pattern, four times in a row</h2>
+<p>Saturday was Tier 3 capability day. Four issues. Each one followed the same pattern.</p>
+<p>GitHub issue close/reopen (#902): handlers existed, pre-classifier existed, fuzzy matching existed, 34 tests existed. What was missing? The MCP adapter didn't have an `update_issue()` method — an AttributeError at runtime — and there was no confirmation UX. Two gaps in a 95% complete feature. Forty-four tests after the fix.</p>
+<p>Todo completion (#904): fully implemented with 23 tests passing. Never formally closed. No code changes needed. Verified and closed.</p>
+<p>Reminders (#903): the database already had a `reminder_date` field, indexed. The todo CRUD was complete. The time parsing library was in requirements. What was missing was the wiring — five integration points connecting the pre-classifier to the time parser to the handler to the action mapper to the greeting surfacing. Thirty-two new tests.</p>
+<p>Lazy workflow deferral (#883): six dispatch methods were pre-creating workflow objects that no handler ever used. One hundred percent wasted work. The fix was `workflow = None` — let handlers create workflows when they actually need them. Zero new tests needed because the behavior was invisible to existing tests.</p>
+<p>Four issues. Each one 75-95% complete before anyone touched them. The audit-first approach — checking what exists before assuming what's missing — identified the 5-10% gap instead of reimplementing the whole feature.</p>
+<p>I know some of the 75%-complete problem is endemic to LLM coding agents these days and some of it is a natural consequence of modularity in which you can't really finish till all the parts are wired up, and this always requires an additional pass. In some ways the unique part of doing this with AI is the frequent astonishment the agents appear to experience when they rediscover partially completed work.</p>
+<h2>The gate</h2>
+<p>M1 needed a formal gate — a defined set of criteria that must pass before the sprint can close. Like M0's gate #779, but informed by everything we'd learned since.</p>
+<p>The Lead Developer filed #926 with four verification areas: conversation quality, task lifecycle completeness, architectural integrity, and bug debt. Then asked the CXO and PPM to independently review and refine the criteria.</p>
+<p>They converged without coordinating. Both recommended fresh-account testing — spin up a new user and verify the full experience, not just individual features. Both recommended integrating the Colleague Test rubric — the CXO's "would a knowledgeable colleague respond this way?" heuristic, now formalized with a three-dimension scoring system and worked examples.</p>
+<p>The gate grew from 5 smoke queries to 9. A Colleague Test score threshold of 7+. Canonical retest target of 85% or above. Capability registry verification. Offer system precedence check. Multi-turn integration test.</p>
+<h2>The experience philosophy</h2>
+<p>While the Lead Developer closed capability gaps and the gate took shape, the PPM resolved a thread that had been carried for ten days. Product concept decisions for #717 — what IS a Product in Piper's domain model, how does it relate to Projects, what lifecycle states does it have.</p>
+<p>But the bigger deliverable was PDR-004: Experience Philosophy. Four principles distilled from ten days of product decision-making:</p>
+<p>Presence over performance. Specificity as care. Honest boundaries. Growth through use.</p>
+<p>These weren't aspirational statements. They were extracted from actual decisions — the floor-first routing (presence), the contextual fallback messages (specificity), the "never say I can't" voice rule (honest boundaries), the learning system design (growth). The philosophy was already in the code. The PDR just named it.</p>
+<h2>Where the sprint stands</h2>
+<p>By Sunday evening, M1 Tiers 1 through 3 were complete. The architecture was floor-first. The dispatcher was consolidating offers. The capability registry was gating promises. GitHub close/reopen, todo completion, reminders, and lazy workflow deferral were all shipped and tested. The gate was defined and independently reviewed.</p>
+<p>Tier 4 — the PM-led decisions, the product concept work, the collaborative discovery sessions — remained. But the engineering was done. The foundation sprint was living up to its name.</p>
+<p>And the first E2E smoke test was already running through `/api/v1/intent`, testing a full task lifecycle from the outside. Not unit tests checking internal behavior. An actual simulated user, typing actual queries, getting actual responses.</p>
+<p>Seems like we must be close, right?</p>
+<hr>
+<p><em>This is Part 6 of a series about the M1 sprint. The series began with <a href="https://pipermorgan.ai/blog/ten-roles-one-day/">Ten Roles, One Day</a> and tracked through an architectural inversion, a floor that wasn't, a foundation rebuilt, and nine voices finding their first chord. The sprint isn't over. But the floor is under our feet. Next on Building Piper Morgan, "The Migration," in which a series of seismic tooling shifts require us to sort out all of my projects and agents and migrate the entire team to new digs.</em></p>
+<p><em>When has your team reached the point where the engineering was done but the product questions remained? What did you do with that moment?</em></p>f:["$","$L1a",null,{"post":{"title":"The Closing Sprint","excerpt":"Almost there! March 20–22 Pouring coffee on a Friday morning. The architecture was facing the right direction. The floor was routing as expected. The dispatcher was consolidating offers. The briefings were accurate. The mail was flowing. Now we had to finish the sprint. M1 had been organized into...","url":"/blog/the-closing-sprint","slug":"the-closing-sprint","publishedAt":"Apr 14, 2026","publishedAtISO":"2026-04-14T00:00:00.000Z","author":"christian crumlish","readingTime":"5 min read","tags":["Building in Public"],"guid":"blog-first-cb4daa0e769e","featuredImage":"/assets/blog-images/ai-finish.webp","thumbnail":"/assets/blog-images/ai-finish.webp","category":"building","cluster":"","workDate":"Mar 22, 2026","workDateISO":"2026-03-22T00:00:00.000Z"},"content":{"title":"The Closing Sprint","content":"$1b"}}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+11:null
+1c:I[8175,[],"IconMark"]
+13:{"metadata":[["$","title","0",{"children":"The Closing Sprint | Piper Morgan"}],["$","meta","1",{"name":"author","content":"Christian Crumlish"}],["$","meta","2",{"name":"keywords","content":"AI,Product Management,Methodology,Building in Public"}],["$","meta","3",{"name":"creator","content":"Christian Crumlish"}],["$","meta","4",{"name":"publisher","content":"Christian Crumlish"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow"}],["$","link","7",{"rel":"canonical","href":"https://pipermorgan.ai/"}],["$","meta","8",{"name":"format-detection","content":"telephone=no, address=no, email=no"}],["$","meta","9",{"property":"og:title","content":"The Closing Sprint"}],["$","meta","10",{"property":"og:image","content":"https://pipermorgan.ai/assets/blog-images/ai-finish.webp"}],["$","meta","11",{"property":"og:type","content":"article"}],["$","meta","12",{"property":"article:author","content":"christian crumlish"}],["$","meta","13",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","14",{"name":"twitter:title","content":"The Closing Sprint"}],["$","meta","15",{"name":"twitter:image","content":"https://pipermorgan.ai/assets/blog-images/ai-finish.webp"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"32x33"}],["$","link","17",{"rel":"icon","href":"/favicon.ico","sizes":"32x32","type":"image/x-icon"}],["$","link","18",{"rel":"icon","href":"/pm-favicon-16.png","sizes":"16x16","type":"image/png"}],["$","link","19",{"rel":"icon","href":"/pm-favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","20",{"rel":"icon","href":"/pm-favicon-48.png","sizes":"48x48","type":"image/png"}],["$","link","21",{"rel":"apple-touch-icon","href":"/pm-favicon-180.png","sizes":"180x180","type":"image/png"}],["$","link","22",{"rel":"icon","href":"/pm-favicon-192.png","sizes":"192x192","type":"image/png"}],["$","$L1c","23",{}]],"error":null,"digest":"$undefined"}
+18:"$13:metadata"
