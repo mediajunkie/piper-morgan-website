@@ -1,5 +1,25 @@
 [
   {
+    "title": "Weekly Ship #038: The Floor Comes Alive",
+    "excerpt": "April 3–9, 2026 Last week's \"New Ground\" ended with the M1 gate ready and waiting. This week, we sat down with Piper and had that conversation — three times. Round 1 (April 3): 0 of 9 queries passed the Colleague Test. Every floor-routed question returned the same canned template. Round 2 (April ...",
+    "url": "/shipping-news/weekly-ship-038-the-floor-comes-alive",
+    "slug": "weekly-ship-038-the-floor-comes-alive",
+    "publishedAt": "Apr 15, 2026",
+    "publishedAtISO": "2026-04-15T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-2e3dad52ecc1",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "category": "ship",
+    "cluster": "",
+    "workDate": "Apr 3, 2026",
+    "workDateISO": "2026-04-03T00:00:00.000Z"
+  },
+  {
     "title": "The Closing Sprint",
     "excerpt": "Almost there! March 20–22 Pouring coffee on a Friday morning. The architecture was facing the right direction. The floor was routing as expected. The dispatcher was consolidating offers. The briefings were accurate. The mail was flowing. Now we had to finish the sprint. M1 had been organized into...",
     "url": "/blog/the-closing-sprint",
@@ -15,9 +35,10 @@
     "featuredImage": "/assets/blog-images/ai-finish.webp",
     "thumbnail": "/assets/blog-images/ai-finish.webp",
     "category": "building",
-    "cluster": "",
+    "cluster": "2026-04-14",
     "workDate": "Mar 22, 2026",
-    "workDateISO": "2026-03-22T00:00:00.000Z"
+    "workDateISO": "2026-03-22T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Archaeological Debugging: Finding What You've Already Built",
