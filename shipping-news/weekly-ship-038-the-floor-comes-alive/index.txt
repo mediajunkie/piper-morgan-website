@@ -1,0 +1,177 @@
+1:"$Sreact.fragment"
+8:I[8393,[],""]
+:HL["/_next/static/css/41b8dc52ae6c1dc1.css","style"]
+2:T1313,
+            :root{--primary-teal:#2DD4BF;--primary-teal-text:#0D9488;--text-dark:#1F2937;--text-light:#6B7280;--background:#FFFFFF;--surface:#F9FAFB}
+            .dark{--text-dark:#F1F5F9;--text-light:#94A3B8;--background:#0F172A;--surface:#1E293B}
+            @font-face{font-family:'Inter';src:url('/fonts/inter-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+            *{box-sizing:border-box}
+            html{scroll-behavior:smooth;font-size:16px;margin:0;padding:0;border:none;outline:none}
+            body{background:var(--background);color:var(--text-dark);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell',sans-serif;line-height:1.6;margin:0;padding:0;border:none;outline:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+            nav{border:none !important;outline:none !important}
+            h1,h2,h3,h4,h5,h6{font-family:'Hoss Round','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+            p,span{max-width:75ch;line-height:1.7}
+            .text-content div{max-width:75ch;line-height:1.7}
+            .text-content{max-width:65ch}
+            @media (max-width:640px){
+              h1{font-size:1.75rem;line-height:1.2}
+              h2{font-size:1.25rem;line-height:1.3}
+              h3{font-size:1.1rem;line-height:1.4}
+              h4{font-size:1rem;line-height:1.4}
+            }
+            @media (min-width:641px) and (max-width:768px){
+              h1{font-size:2rem;line-height:1.2}
+              h2{font-size:1.5rem;line-height:1.3}
+              h3{font-size:1.25rem;line-height:1.4}
+            }
+            @media (prefers-reduced-motion: reduce){
+              *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}
+            }
+            a:hover{color:#0D9488;transition:color 0.2s ease}
+            .hover-lift:hover{transform:translateY(-2px);transition:transform 0.2s ease}
+            button:focus,a:focus{outline:2px solid #2DD4BF;outline-offset:2px;border-radius:4px}
+            .skip-to-content{position:absolute;top:-100px;left:0;z-index:999;padding:8px 16px;background:#1F2937;color:white;text-decoration:none;border-radius:0 0 4px 0;transition:top 0.3s}
+            .skip-to-content:focus{top:0;outline:2px solid #2DD4BF;outline-offset:2px}
+            .section-spacing{margin-bottom:4rem}
+            .component-spacing{margin-bottom:1.5rem}
+            .micro-spacing{margin-bottom:0.5rem}
+            @media (min-width:768px){
+              .section-spacing{margin-bottom:6rem}
+              .component-spacing{margin-bottom:2rem}
+            }
+            .site-container{width:100%;max-width:1200px;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+            @media (min-width:640px){.site-container{padding-left:1.5rem;padding-right:1.5rem}}
+            @media (min-width:768px){.site-container{padding-left:2rem;padding-right:2rem}}
+            @media (min-width:1024px){.site-container{max-width:1200px}}
+            @media (min-width:1200px){.site-container{max-width:1200px}}
+            .section-padding{padding-top:4rem;padding-bottom:4rem}
+            @media (min-width:768px){.section-padding{padding-top:5rem;padding-bottom:5rem}}
+            .mx-auto{margin-left:auto;margin-right:auto}
+            .max-w-4xl{max-width:56rem}
+            .pt-16{padding-top:4rem}
+            .pb-8{padding-bottom:2rem}
+            .px-4{padding-left:1rem;padding-right:1rem}
+            .mb-6{margin-bottom:1.5rem}
+            .mb-8{margin-bottom:2rem}
+            .text-left{text-align:left}
+            .text-center{text-align:center}
+            .text-primary-teal-text{color:#0F766E}
+            .text-text-dark{color:#1F2937}
+            .text-text-light{color:#6B7280}
+            .font-bold{font-weight:700}
+            .text-4xl{font-size:2.25rem;line-height:2.5rem}
+            .text-5xl{font-size:3rem;line-height:1}
+            .text-6xl{font-size:3.75rem;line-height:1}
+            .text-lg{font-size:1.125rem;line-height:1.75rem}
+            .text-xl{font-size:1.25rem;line-height:1.75rem}
+            .leading-tight{line-height:1.25}
+            .leading-relaxed{line-height:1.625}
+            .min-h-screen{min-height:100vh}
+            @media (min-width:768px){
+              .md\:pt-24{padding-top:6rem}
+              .md\:pb-12{padding-bottom:3rem}
+              .md\:text-5xl{font-size:3rem;line-height:1}
+              .md\:text-xl{font-size:1.25rem;line-height:1.75rem}
+            }
+            @media (min-width:1024px){
+              .lg\:text-6xl{font-size:3.75rem;line-height:1}
+            }
+          0:{"P":null,"b":"D2DDmNjw9nRzILl6NdJpu","p":"","c":["","shipping-news","weekly-ship-038-the-floor-comes-alive",""],"i":false,"f":[[["",{"children":["shipping-news",{"children":[["slug","weekly-ship-038-the-floor-comes-alive","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/41b8dc52ae6c1dc1.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"font-inter","children":[["$","head",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                const theme = localStorage.getItem('theme') ||\n                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');\n                if (theme === 'dark') {\n                  document.documentElement.classList.add('dark');\n                  document.body.classList.add('dark');\n                }\n              })();\n            "}}],["$","link",null,{"rel":"dns-prefetch","href":"//pipermorgan.ai"}],["$","link",null,{"rel":"preconnect","href":"https://pipermorgan.ai"}],["$","link",null,{"rel":"preload","as":"image","href":"/assets/pm-logo.png"}],["$","link",null,{"rel":"preload","href":"/fonts/inter-latin.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preload","href":"/fonts/HossRound-Regular.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],"$L3"]}]]}],{"children":["shipping-news","$L4",{"children":[["slug","weekly-ship-038-the-floor-comes-alive","d"],"$L5",{"children":["__PAGE__","$L6",{},null,false]},null,false]},null,false]},null,false],"$L7",false]],"m":"$undefined","G":["$8",[]],"s":false,"S":true}
+9:I[9119,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-06e13daf096e4c23.js","177","static/chunks/app/layout-752516a99df3d17d.js"],"ClientLayout"]
+a:I[7555,[],""]
+b:I[1295,[],""]
+c:I[6874,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-06e13daf096e4c23.js","497","static/chunks/497-c2d4d34c8ebca405.js","974","static/chunks/app/page-6cffefbdc7a08cc6.js"],""]
+10:I[9665,[],"OutletBoundary"]
+12:I[4911,[],"AsyncMetadataOutlet"]
+14:I[9665,[],"ViewportBoundary"]
+16:I[9665,[],"MetadataBoundary"]
+17:"$Sreact.suspense"
+3:["$","body",null,{"className":"font-sans antialiased","children":[["$","$L9",null,{"children":["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"min-h-screen","children":["$","div",null,{"className":"site-container max-w-4xl pt-16 md:pt-24 pb-8 md:pb-12 text-center","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-8xl md:text-9xl font-bold text-primary-teal-text mb-4","children":"404"}],["$","h2",null,{"className":"text-3xl md:text-4xl font-semibold text-text-dark mb-4","children":"Page Not Found"}],["$","p",null,{"className":"text-xl text-text-light leading-relaxed max-w-2xl mx-auto","children":"Looks like this page got lost in the AI training data. Don't worry – even the best algorithms make mistakes sometimes."}]]}],["$","div",null,{"className":"mb-12","children":[["$","h3",null,{"className":"text-xl font-semibold text-text-dark mb-6","children":"Where would you like to go instead?"}],["$","div",null,{"className":"grid md:grid-cols-2 gap-6 max-w-2xl mx-auto","children":[["$","div",null,{"className":"space-y-4","children":[["$","$Lc",null,{"href":"/","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"🏠 Homepage"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Start from the beginning of our AI PM journey"}]]}],["$","$Lc",null,{"href":"/how-it-works","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"⚙️ How It Works"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Discover our AI-powered product management methodology"}]]}]]}],["$","div",null,{"className":"space-y-4","children":[["$","$Lc",null,{"href":"/what-weve-learned","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"💡 What We've Learned"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Building-in-public insights and breakthroughs"}]]}],["$","$Lc",null,{"href":"/blog","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"📝 Journey"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Follow our building-in-public blog posts"}]]}],["$","$Lc",null,{"href":"/get-involved","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"🚀 Get Involved"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Join our community and stay updated"}]]}]]}]]}]]}],["$","div",null,{"className":"text-center","children":[["$","p",null,{"className":"text-text-light mb-6","children":"Still can't find what you're looking for?"}],["$","$Lc",null,{"href":"/get-involved","className":"inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:transform-none bg-primary-teal text-white hover:bg-teal-600 focus:ring-primary-teal shadow-component hover:shadow-component-hover hover:-translate-y-0.5 hover:scale-105 font-bold text-lg px-8 py-4 text-lg rounded-button","aria-label":"$undefined","children":[false,"Get Help & Stay Updated"]}]]}],["$","div",null,{"className":"mt-12 p-6 bg-gray-50 rounded-card max-w-lg mx-auto","children":["$","p",null,{"className":"text-sm text-text-light italic","children":["💬 ","$Ld"," \"Even the most sophisticated neural networks occasionally return null. Let's navigate back to more productive paths together!\""]}]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],"$Le"]}]
+4:["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+5:["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+6:["$","$1","c",{"children":["$Lf",null,["$","$L10",null,{"children":["$L11",["$","$L12",null,{"promise":"$@13"}]]}]]}]
+7:["$","$1","h",{"children":[null,[["$","$L14",null,{"children":"$L15"}],null],["$","$L16",null,{"children":["$","div",null,{"hidden":true,"children":["$","$17",null,{"fallback":null,"children":"$L18"}]}]}]]}]
+19:I[9795,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-06e13daf096e4c23.js","177","static/chunks/app/layout-752516a99df3d17d.js"],"default"]
+d:["$","strong",null,{"children":"Piper Morgan says:"}]
+e:["$","$L19",null,{}]
+1a:I[2469,["874","static/chunks/874-668c89038fa04eb8.js","269","static/chunks/app/shipping-news/%5Bslug%5D/page-2ec32728d8f97e65.js"],"ShipPostContent"]
+1b:T4401,<p><em>April 3–9, 2026</em></p>
+<p>Last week's "New Ground" ended with the M1 gate ready and waiting. This week, we sat down with Piper and had that conversation — three times. Round 1 (April 3): 0 of 9 queries passed the Colleague Test. Every floor-routed question returned the same canned template. Round 2 (April 7): 0 of 9 again, even after the fixes. Proved the first diagnosis wrong. Round 3 (April 8): 5 of 9 passed, and the stakeholder presentation query — the one that started the entire floor inversion back in March — scored 8 out of 9. The floor spoke for the first time. Between those test rounds, a parallel track of strategic thinking reframed what this project is actually building. By Thursday, the remaining blockers were fixed, the vision had been rewritten, and the team knew something it hadn't known on Monday: the product's differentiator isn't its tool integrations. It's the methodology.</p>
+<hr>
+<h2>🚀 Shipped this week</h2>
+<h2>🎯 Product & experience</h2>
+<p><strong>M1 gate UAT: three rounds to a breakthrough.</strong> The CXO-designed gate process proved its worth through three rounds of structured testing against a fresh alpha account, scored on the Colleague Test rubric (Relevance, Competence, Tone — 0-3 each, 7+ to pass, any 0 auto-fails).</p>
+<p>Round 1 (Apr 3): 0/9. Every floor-routed query returned the identical canned `FLOOR_GRACEFUL_FALLBACK` template. Todo completion failed on all attempts despite 23 passing unit tests. Pattern-045 ("Green Tests, Red User") confirmed in two separate subsystems. Testing stopped after 8 of 14 scenarios. Five findings documented, three blocking.</p>
+<p>Round 2 (Apr 7): 0/9 again. After the Lead Dev fixed the hardcoded provider (#940), todo parsing, avatar positioning, and pre-flight checks over the weekend, the CXO re-ran Gate 1 and got identical results. The CXO's memo was direct: if the same fix produces the same failure, the problem is more fundamental. This was the right call — it forced deeper investigation.</p>
+<p>Round 3 (Apr 8): 5/9 passed, 1 marginal, 2 failed. The Lead Dev ran a Five Whys investigation and traced the real root cause: the model ID `gpt-4-turbo-preview` had been deprecated by OpenAI and was silently returning 404. The error was caught by the handler and swallowed — with no working LLM provider, every floor query fell through to the graceful fallback. Updated model IDs, improved the error classifier, and the floor came alive.</p>
+<p>The scores tell the story: the "How trustworthy are your recommendations?" query went from a 1/9 canned self-introduction to an 8/9 thoughtful answer about reasoning transparency and the limits of AI judgment. That's the floor doing what ADR-060 promised.</p>
+<p><strong>Remaining blockers addressed (Apr 9).</strong> Lead Dev fixed the two remaining Gate 1 failures: #922 (conversation continuity — `ConversationTurn` had no `response` field, so the floor saw user messages but never Piper's replies, meaning "OK" lost all context) and #943 (GitHub pre-flight — three fix attempts across Apr 5-9, final approach uses catch-block error detection). Memory tone also calibrated — explicit prohibition against chatbot warmth phrases in the floor system prompt. Round 4 re-test pending.</p>
+<p><strong>Strategic reframe: "What makes Piper Piper?"</strong> The week's most consequential work wasn't debugging — it was the April 7 conversation between PA and xian, triggered by PA's backlog deep review of 16 potentially superseded issues. The analysis surfaced a fundamental insight: the project had evolved from "build code frameworks that enforce methodology" to "build methodology that the code serves." The methodology approach won every comparison. Tool integrations (Slack, GitHub, calendar) are commodity plumbing, reproducible by any MCP server. Piper's differentiator is the stack above the plumbing: context assembly methodology, conscious conversational floor, artifact persistence, and trust-graduated experience.</p>
+<p><strong>"Bring Your Own Chat" distribution philosophy.</strong> PA's MCPB feasibility research (Apr 8) confirmed a viable distribution path: build Piper as an MCP server (cross-platform), package per-platform using MCP Bridge for Claude. The user picks their client; Piper shows up as tools, context, and persistence. This reframes discovery from navigation ("find features in Piper's UI") to contextual offering ("Piper's capabilities appear where you already work").</p>
+<p><strong>Vision V2.2 drafted.</strong> Three iterations in three days (V2 → V2.1 → V2.2), each incorporating PM feedback. Now includes consciousness-as-architecture, the indoor-plumbing principle ("don't reinvent commodity integrations"), the differentiator stack, and Bring Your Own Chat distribution. Review memos sent to CXO and PPM.</p>
+<h2>⚙️ Engineering & architecture</h2>
+<p><strong>Lead Dev remediation: 7 issues, 1,272 lines removed.</strong> #940 (LLM config blocker — provider-agnostic model tier system), #939 (avatar orphaning — 3 call sites in chat.js), #943 (GitHub pre-flight — catch-block approach), #942 (missing orchestration tables — migration for 4 tables, 6 previously failing tests now green → 6,309 total), #934 (orphaned task_management.py — 675 lines + 597-line test, never mounted), #922 (conversation continuity — response field + backfill), plus 1,272 lines of dead code removed. Test coverage audit produced: 46.6% of service modules at zero coverage.</p>
+<p><strong>Five Whys investigation (Apr 8).</strong> The root cause chain for the floor failure: generic responses → floor never invoked (zero `conversational_floor_hit` in logs) → queries pre-classified to canonical handlers → LLM classifier failing (deprecated model ID returns 404) → single-provider setup means fallback is None → RuntimeError caught → canned template. Six links in the chain, each masking the one below it. CIO named this pattern "Stacked Silent Failures."</p>
+<p><strong>#949 filed: server restart reliability.</strong> The recurring "fix deployed but not running" problem — `.pyc` cache, orphaned processes, multiple project directories — cost real debugging time. The Round 2 UAT failure may have been a stale server, not a code issue. This class of problem erodes confidence in test results.</p>
+<h2>🔬 Methodology & process innovation</h2>
+<p><strong>"Stacked Silent Failures" — a new diagnostic pattern.</strong> Three independent failures at three architectural layers produced a composite behavior that appeared to be a single problem: Layer 1 (deprecated model ID returning 404), Layer 2 (canned fallback masking every failure mode identically), Layer 3 (conversation history missing Piper's own replies). Each layer's fix was necessary but insufficient — all three had to be resolved for the floor to work. CIO formalized this as a named pattern.</p>
+<p><strong>PA's trajectory: analyst to strategist in 10 days.</strong> Day 5 (Apr 3): UAT support. Day 7 (Apr 5): all UAT findings triaged. Day 8 (Apr 7): backlog review triggered the strategic reframe. Day 9 (Apr 8): Vision V2.2, MCPB feasibility, sprint reassignment plan (5 renames, 12 closures, ~40 reassignments, 10 new issues). Day 10 (Apr 9): cross-project Dispatch communication, session log discipline survey for Piper Open. HOST's assessment: "the first agent role to generate strategic reframing at this level."</p>
+<p><strong>Sprint reassignment plan ready.</strong> PA built a comprehensive execution plan for operationalizing the strategic reframe: 12 issue closures (superseded by methodology approach), ~40 milestone reassignments, 5 renames, 3 revisions, 10 new issues. Ready for execution but not yet reviewed by PPM, CXO, or Architect. PA has review memos queued.</p>
+<h2>🌍 External relations & community</h2>
+<p>The six-act building narrative is now at Act 5 of 6; after Act 6 (scheduled Apr 14), the building narrative queue runs out. The UAT story (Apr 3-9) is the obvious next arc.</p>
+<ul>
+<li>April 4: "<a href="https://pipermorgan.ai/blog/silent-failures/">Silent Failures</a>" — insight piece from March 3 through 8, cross-posted here</li>
+<li>April 5: "<a href="https://pipermorgan.ai/blog/the-mismatch-category/">The Mismatch Category</a>" — insights, also from March 3 to 8, also cross-posted</li>
+<li>April 7: "<a href="https://pipermorgan.ai/blog/fixing-the-foundation/">Fixing the Foundation</a>" — build narrative from March 17 through 18</li>
+<li>April 9: "<a href="https://pipermorgan.ai/blog/nine-voices/">Nine Voices</a>" — build narrative from March 19.</li>
+</ul>
+<p><strong>Publication cadence formalized.</strong> Docs corrected the editorial calendar: Tue/Thu for building narratives, Sat/Sun for insight pairs, Wed for Ship. This cadence is now explicit rather than undocumented practice.</p>
+<p><strong>IAC talk: 6 days out.</strong> "Ethics as Information Architecture" (April 17, Philadelphia). Deck and speaker notes exist, PA flagged one claim (80.3% figure) needing verification. Approaching urgency.</p>
+<h2>📊 Governance & operations</h2>
+<p><strong>Metrics (Apr 3-9)</strong>: ~20 sessions across 7 days. 3 UAT rounds (0/9 → 0/9 → 5/9). 7 issues closed. 1,272 LOC removed. 6,309 tests passing. 8 publications. Vision V2 → V2.2 (3 iterations). Sprint reassignment plan drafted. 5 omnibus logs produced (closing 3-day backlog). BRIEFING-CURRENT-STATE refreshed. New `/update-current-state` skill created. TRACK-EPIC convention retired.</p>
+<p><strong>Docs infrastructure.</strong> Five omnibus logs produced this week, closing a backlog from the Easter weekend. `/update-current-state` skill created so any agent can refresh the briefing. Audit #944 completed. Editorial calendar corrected.</p>
+<p><strong>PA cross-project communication gap.</strong> PA discovered that Dispatch messages in `~/cool/dispatch/mail/` were invisible from within the PM repo working directory — 4 messages went unread for 3 days. A ceiling moment: structural limitation of the current mailbox pattern for multi-project agents.</p>
+<hr>
+<h2>🎯 Coming up next week</h2>
+<h2>Development priorities</h2>
+<p>M1 gate Round 4 — re-test with Apr 9 fixes deployed. If Gate 1 passes (the two remaining failures are now fixed), run the remaining Gate 2 scenarios. If both gates pass, M1 closes. Sprint reassignment execution after leadership review.</p>
+<h2>Alpha testing & onboarding</h2>
+<p>Alpha tester silence: 27+ days since Mar 14 email, zero responses from 13 testers. HOST has flagged this three sessions running. I've advised the team not to worry. It's not an easy alpha to work with and we are rapidly approaching beta.</p>
+<h2>Communications</h2>
+<p>IAC presentation (April 17) — 6 days out. Speaker notes and deck exist; one claim needs verification. Building narrative Act 6 ("The Closing Sprint") scheduled Apr 14 — final act in the six-part series. Next content arc needed; the UAT story is the natural candidate.</p>
+<hr>
+<h2>🚧 Blockers & asks</h2>
+<p><strong>Current blockers</strong>: M1 gate Round 4 re-test depends on PM + CXO availability. All known blocking issues are fixed.</p>
+<p><strong>Decisions needed</strong>: Sprint reassignment plan review (12 closures, ~40 moves — significant scope change). Vision V2.2 leadership review (CXO and PPM have review memos queued).</p>
+<p><strong>Team input</strong>: HOST briefing rename still pending (operational rename done Apr 2, briefing document content still old). CIO innovation backlog location needs confirming. Server restart reliability (#949) affects UAT confidence.</p>
+<hr>
+<h2>📊 Resource allocation</h2>
+<p><strong>For week ending April 9</strong>: M1 gate UAT and remediation 40% (3 rounds, 7 fixes, Five Whys investigation, findings memos), strategic planning 25% (backlog review, differentiator stack, Vision V2.2, MCPB feasibility, sprint reassignment), communications 20% (8 publications, calendar formalization), infrastructure 10% (5 omnibus logs, audit, CURRENT-STATE refresh, skill creation), governance 5% (open items tracking, cross-project comms).</p>
+<p><strong>Velocity</strong>: Two tracks running in parallel — debugging and strategy — that converged into something larger than either. The gate process forced honest confrontation with the product's state. The strategic conversation reframed what the product is. Both were necessary; the timing was fortunate.</p>
+<hr>
+<h2>🔎 This week's learning pattern</h2>
+<h2>When the fix doesn't fix it, the diagnosis was wrong</h2>
+<p><strong>Discovery</strong>: A correct fix for a real problem can produce zero improvement when multiple independent failures stack at different architectural layers. Each failure masks the one below it, and fixing one layer exposes the next without any visible progress.</p>
+<p><strong>Example from this week</strong>: Round 1 (Apr 3) found that the floor wasn't reaching users. The diagnosis: the Anthropic API key had expired. Real problem, real fix. Round 2 (Apr 7) deployed with a fresh key and fresh fixes — and the results were identical. Zero improvement. The CXO's response was the methodological key: "if the same fix produces the same failure, the problem is more fundamental."</p>
+<p>The Lead Dev's Five Whys investigation on April 8 traced the actual chain: generic responses → floor never invoked → queries pre-classified to canonical handlers → LLM classifier failing → model ID `gpt-4-turbo-preview` deprecated by OpenAI (returning 404) → single-provider fallback is None → RuntimeError caught → canned template. Six links, each necessary to understand.</p>
+<p>But even after fixing the model ID, Round 3 still had two failures. One turned out to be a data model gap: `ConversationTurn` had no `response` field. The floor was assembling conversation history from only the user's messages — Piper's own replies were never stored in memory. The code "looked right" because the field wasn't missing; it had never existed.</p>
+<p><strong>Why it matters</strong>: The instinct when a fix doesn't work is to doubt the fix. But sometimes the fix was correct — it just revealed the next layer. The CIO named this "Stacked Silent Failures": multiple independent problems that each mask their own symptoms, producing composite behavior that appears to be a single issue. The diagnostic discipline is to resist the urge to revert the fix and instead ask: "what was that fix hiding?"</p>
+<p><strong>Application beyond this week</strong>: Any system with layered error handling is vulnerable to stacked silent failures. Each catch block that returns a graceful fallback adds a potential masking layer. The mitigation isn't removing the fallbacks — those serve users — it's ensuring each fallback is distinguishable. The Lead Dev's fix to the error classifier (differentiating auth failure, transient error, model-not-found, and no-provider) is the template: make each failure mode visible, even when the user sees a graceful response.</p>
+<p><strong>Related patterns</strong>: Pattern-045 (Green Tests, Red User), the Five Whys investigation technique, the gate methodology (structured rounds with scored rubrics that force precise diagnosis)</p>
+<hr>
+<h2>📚 Weekend reading</h2>
+<p><strong>The differentiator stack.</strong> PA's backlog review and the ensuing PM conversation crystallized what makes Piper Morgan distinct from any other PM tool: context assembly methodology (how project intelligence reaches the conversation), the conscious conversational floor (LLM with assembled context as baseline, not fallback), artifact persistence (work products that survive and accumulate), and trust-graduated experience (proactivity calibrated to relationship depth). Everything below this stack — Slack integration, GitHub sync, calendar access — is commodity plumbing. If you're building AI-powered tools and wondering where to invest, the answer is probably above the plumbing line.</p>
+<p><strong>The CXO's gate rubric in practice.</strong> Three rounds of testing, three structured findings memos, each with scored dimensions and specific diagnostic guidance. The rubric made pass/fail unambiguous — no room for "feels okay" rationalization. The Round 2 memo's observation ("if the same fix produces the same failure, the problem is more fundamental") was the diagnostic turning point of the week. If you're designing quality gates for AI products, the Colleague Test rubric is worth studying.</p>
+<hr>
+<p><strong>Thanks,</strong></p>
+<p>xian + Piper Morgan Development Team</p>
+<p>This is Weekly Ship #038. Previous: <a href="https://www.linkedin.com/pulse/weekly-ship-037-new-ground/">#037 "New Ground"</a>.</p>
+<p><em>P.S. The stakeholder presentation query scored 1 out of 9 on April 3. It scored 8 out of 9 on April 8. Same query, same rubric, same tester. The difference was a deprecated model ID that nobody knew was deprecated because the error was caught and swallowed. Five days, one Five Whys chain, and the floor finally spoke.</em></p>
+<p><em>P.P.S. Full session logs and technical details available in the <a href="https://github.com/mediajunkie/piper-morgan-product">GitHub repository</a> and <a href="https://pmorgan.tech">documentation site</a>. Yes, you can copy it. That just makes our protocol stronger.</em></p>
+<hr>
+<p><strong>Week of April 3–9, 2026 | Phase: MVP Build (M1 Sprint — Gate Verification)</strong></p>f:["$","$L1a",null,{"post":{"title":"Weekly Ship #038: The Floor Comes Alive","excerpt":"April 3–9, 2026 Last week's \"New Ground\" ended with the M1 gate ready and waiting. This week, we sat down with Piper and had that conversation — three times. Round 1 (April 3): 0 of 9 queries passed the Colleague Test. Every floor-routed question returned the same canned template. Round 2 (April ...","url":"/shipping-news/weekly-ship-038-the-floor-comes-alive","slug":"weekly-ship-038-the-floor-comes-alive","publishedAt":"Apr 15, 2026","publishedAtISO":"2026-04-15T00:00:00.000Z","author":"christian crumlish","readingTime":"5 min read","tags":["Building in Public"],"guid":"blog-first-2e3dad52ecc1","featuredImage":"/assets/blog-images/piper-ship.webp","thumbnail":"/assets/blog-images/piper-ship.webp","category":"ship","cluster":"","workDate":"Apr 3, 2026","workDateISO":"2026-04-03T00:00:00.000Z"},"content":{"title":"Weekly Ship #038: The Floor Comes Alive","content":"$1b"}}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+11:null
+1c:I[8175,[],"IconMark"]
+13:{"metadata":[["$","title","0",{"children":"Weekly Ship #038: The Floor Comes Alive | The Shipping News | Piper Morgan"}],["$","meta","1",{"name":"description","content":"Weekly development update from the Piper Morgan team."}],["$","meta","2",{"name":"author","content":"Christian Crumlish"}],["$","meta","3",{"name":"keywords","content":"AI,Product Management,Methodology,Building in Public"}],["$","meta","4",{"name":"creator","content":"Christian Crumlish"}],["$","meta","5",{"name":"publisher","content":"Christian Crumlish"}],["$","meta","6",{"name":"robots","content":"index, follow"}],["$","meta","7",{"name":"googlebot","content":"index, follow"}],["$","link","8",{"rel":"canonical","href":"https://pipermorgan.ai/"}],["$","meta","9",{"name":"format-detection","content":"telephone=no, address=no, email=no"}],["$","meta","10",{"property":"og:title","content":"Weekly Ship #038: The Floor Comes Alive"}],["$","meta","11",{"property":"og:description","content":"Weekly development update from the Piper Morgan team."}],["$","meta","12",{"property":"og:image","content":"https://pipermorgan.ai/assets/blog-images/piper-ship.webp"}],["$","meta","13",{"property":"og:type","content":"article"}],["$","meta","14",{"property":"article:published_time","content":"2026-04-15T00:00:00.000Z"}],["$","meta","15",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","16",{"name":"twitter:creator","content":"@mediajunkie"}],["$","meta","17",{"name":"twitter:title","content":"Piper Morgan - AI Product Management Assistant"}],["$","meta","18",{"name":"twitter:description","content":"AI-powered Product Management Assistant demonstrating systematic excellence through transparent, building-in-public development."}],["$","meta","19",{"name":"twitter:image","content":"https://pipermorgan.ai/assets/pm-logo.png"}],["$","link","20",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"32x33"}],["$","link","21",{"rel":"icon","href":"/favicon.ico","sizes":"32x32","type":"image/x-icon"}],["$","link","22",{"rel":"icon","href":"/pm-favicon-16.png","sizes":"16x16","type":"image/png"}],["$","link","23",{"rel":"icon","href":"/pm-favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","24",{"rel":"icon","href":"/pm-favicon-48.png","sizes":"48x48","type":"image/png"}],["$","link","25",{"rel":"apple-touch-icon","href":"/pm-favicon-180.png","sizes":"180x180","type":"image/png"}],["$","link","26",{"rel":"icon","href":"/pm-favicon-192.png","sizes":"192x192","type":"image/png"}],["$","$L1c","27",{}]],"error":null,"digest":"$undefined"}
+18:"$13:metadata"
