@@ -1,8 +1,28 @@
 [
   {
+    "title": "The Migration",
+    "excerpt": "Time to unpack! March 28–30 Friday. Day off. The project had been idle for three days — partly intentional rest after the closing sprint, partly involuntary. Anthropic's service disruptions mid-week had killed a Documentation session on Thursday, stranding commits on a local branch nobody could s...",
+    "url": "/blog/the-migration",
+    "slug": "the-migration",
+    "publishedAt": "Apr 16, 2026",
+    "publishedAtISO": "2026-04-16T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-25016e4aa496",
+    "featuredImage": "/assets/blog-images/ai-migration.webp",
+    "thumbnail": "/assets/blog-images/ai-migration.webp",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Mar 28, 2026",
+    "workDateISO": "2026-03-28T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #038: The Floor Comes Alive",
     "excerpt": "April 3–9, 2026 Last week's \"New Ground\" ended with the M1 gate ready and waiting. This week, we sat down with Piper and had that conversation — three times. Round 1 (April 3): 0 of 9 queries passed the Colleague Test. Every floor-routed question returned the same canned template. Round 2 (April ...",
-    "url": "/shipping-news/weekly-ship-038-the-floor-comes-alive",
+    "url": "/blog/weekly-ship-038-the-floor-comes-alive",
     "slug": "weekly-ship-038-the-floor-comes-alive",
     "publishedAt": "Apr 15, 2026",
     "publishedAtISO": "2026-04-15T00:00:00.000Z",
