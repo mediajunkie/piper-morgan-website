@@ -1,0 +1,210 @@
+1:"$Sreact.fragment"
+8:I[8393,[],""]
+:HL["/_next/static/css/41b8dc52ae6c1dc1.css","style"]
+2:T1313,
+            :root{--primary-teal:#2DD4BF;--primary-teal-text:#0D9488;--text-dark:#1F2937;--text-light:#6B7280;--background:#FFFFFF;--surface:#F9FAFB}
+            .dark{--text-dark:#F1F5F9;--text-light:#94A3B8;--background:#0F172A;--surface:#1E293B}
+            @font-face{font-family:'Inter';src:url('/fonts/inter-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+            *{box-sizing:border-box}
+            html{scroll-behavior:smooth;font-size:16px;margin:0;padding:0;border:none;outline:none}
+            body{background:var(--background);color:var(--text-dark);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell',sans-serif;line-height:1.6;margin:0;padding:0;border:none;outline:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+            nav{border:none !important;outline:none !important}
+            h1,h2,h3,h4,h5,h6{font-family:'Hoss Round','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+            p,span{max-width:75ch;line-height:1.7}
+            .text-content div{max-width:75ch;line-height:1.7}
+            .text-content{max-width:65ch}
+            @media (max-width:640px){
+              h1{font-size:1.75rem;line-height:1.2}
+              h2{font-size:1.25rem;line-height:1.3}
+              h3{font-size:1.1rem;line-height:1.4}
+              h4{font-size:1rem;line-height:1.4}
+            }
+            @media (min-width:641px) and (max-width:768px){
+              h1{font-size:2rem;line-height:1.2}
+              h2{font-size:1.5rem;line-height:1.3}
+              h3{font-size:1.25rem;line-height:1.4}
+            }
+            @media (prefers-reduced-motion: reduce){
+              *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}
+            }
+            a:hover{color:#0D9488;transition:color 0.2s ease}
+            .hover-lift:hover{transform:translateY(-2px);transition:transform 0.2s ease}
+            button:focus,a:focus{outline:2px solid #2DD4BF;outline-offset:2px;border-radius:4px}
+            .skip-to-content{position:absolute;top:-100px;left:0;z-index:999;padding:8px 16px;background:#1F2937;color:white;text-decoration:none;border-radius:0 0 4px 0;transition:top 0.3s}
+            .skip-to-content:focus{top:0;outline:2px solid #2DD4BF;outline-offset:2px}
+            .section-spacing{margin-bottom:4rem}
+            .component-spacing{margin-bottom:1.5rem}
+            .micro-spacing{margin-bottom:0.5rem}
+            @media (min-width:768px){
+              .section-spacing{margin-bottom:6rem}
+              .component-spacing{margin-bottom:2rem}
+            }
+            .site-container{width:100%;max-width:1200px;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+            @media (min-width:640px){.site-container{padding-left:1.5rem;padding-right:1.5rem}}
+            @media (min-width:768px){.site-container{padding-left:2rem;padding-right:2rem}}
+            @media (min-width:1024px){.site-container{max-width:1200px}}
+            @media (min-width:1200px){.site-container{max-width:1200px}}
+            .section-padding{padding-top:4rem;padding-bottom:4rem}
+            @media (min-width:768px){.section-padding{padding-top:5rem;padding-bottom:5rem}}
+            .mx-auto{margin-left:auto;margin-right:auto}
+            .max-w-4xl{max-width:56rem}
+            .pt-16{padding-top:4rem}
+            .pb-8{padding-bottom:2rem}
+            .px-4{padding-left:1rem;padding-right:1rem}
+            .mb-6{margin-bottom:1.5rem}
+            .mb-8{margin-bottom:2rem}
+            .text-left{text-align:left}
+            .text-center{text-align:center}
+            .text-primary-teal-text{color:#0F766E}
+            .text-text-dark{color:#1F2937}
+            .text-text-light{color:#6B7280}
+            .font-bold{font-weight:700}
+            .text-4xl{font-size:2.25rem;line-height:2.5rem}
+            .text-5xl{font-size:3rem;line-height:1}
+            .text-6xl{font-size:3.75rem;line-height:1}
+            .text-lg{font-size:1.125rem;line-height:1.75rem}
+            .text-xl{font-size:1.25rem;line-height:1.75rem}
+            .leading-tight{line-height:1.25}
+            .leading-relaxed{line-height:1.625}
+            .min-h-screen{min-height:100vh}
+            @media (min-width:768px){
+              .md\:pt-24{padding-top:6rem}
+              .md\:pb-12{padding-bottom:3rem}
+              .md\:text-5xl{font-size:3rem;line-height:1}
+              .md\:text-xl{font-size:1.25rem;line-height:1.75rem}
+            }
+            @media (min-width:1024px){
+              .lg\:text-6xl{font-size:3.75rem;line-height:1}
+            }
+          0:{"P":null,"b":"q4-20xLfxK4acM7G6uidv","p":"","c":["","blog","thirteen-mailboxes",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","thirteen-mailboxes","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/41b8dc52ae6c1dc1.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"font-inter","children":[["$","head",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                const theme = localStorage.getItem('theme') ||\n                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');\n                if (theme === 'dark') {\n                  document.documentElement.classList.add('dark');\n                  document.body.classList.add('dark');\n                }\n              })();\n            "}}],["$","link",null,{"rel":"dns-prefetch","href":"//pipermorgan.ai"}],["$","link",null,{"rel":"preconnect","href":"https://pipermorgan.ai"}],["$","link",null,{"rel":"preload","as":"image","href":"/assets/pm-logo.png"}],["$","link",null,{"rel":"preload","href":"/fonts/inter-latin.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preload","href":"/fonts/HossRound-Regular.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],"$L3"]}]]}],{"children":["blog","$L4",{"children":[["slug","thirteen-mailboxes","d"],"$L5",{"children":["__PAGE__","$L6",{},null,false]},null,false]},null,false]},null,false],"$L7",false]],"m":"$undefined","G":["$8",[]],"s":false,"S":true}
+9:I[9119,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-06e13daf096e4c23.js","177","static/chunks/app/layout-752516a99df3d17d.js"],"ClientLayout"]
+a:I[7555,[],""]
+b:I[1295,[],""]
+c:I[6874,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-06e13daf096e4c23.js","497","static/chunks/497-c2d4d34c8ebca405.js","170","static/chunks/170-c8bc75bccd17c640.js","676","static/chunks/676-3ed22a64c4d76dbe.js","878","static/chunks/878-84c21ab4454b1944.js","831","static/chunks/app/blog/page-bb4de3b32bcba7d1.js"],""]
+10:I[9665,[],"OutletBoundary"]
+12:I[4911,[],"AsyncMetadataOutlet"]
+14:I[9665,[],"ViewportBoundary"]
+16:I[9665,[],"MetadataBoundary"]
+17:"$Sreact.suspense"
+3:["$","body",null,{"className":"font-sans antialiased","children":[["$","$L9",null,{"children":["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"min-h-screen","children":["$","div",null,{"className":"site-container max-w-4xl pt-16 md:pt-24 pb-8 md:pb-12 text-center","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-8xl md:text-9xl font-bold text-primary-teal-text mb-4","children":"404"}],["$","h2",null,{"className":"text-3xl md:text-4xl font-semibold text-text-dark mb-4","children":"Page Not Found"}],["$","p",null,{"className":"text-xl text-text-light leading-relaxed max-w-2xl mx-auto","children":"Looks like this page got lost in the AI training data. Don't worry – even the best algorithms make mistakes sometimes."}]]}],["$","div",null,{"className":"mb-12","children":[["$","h3",null,{"className":"text-xl font-semibold text-text-dark mb-6","children":"Where would you like to go instead?"}],["$","div",null,{"className":"grid md:grid-cols-2 gap-6 max-w-2xl mx-auto","children":[["$","div",null,{"className":"space-y-4","children":[["$","$Lc",null,{"href":"/","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"🏠 Homepage"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Start from the beginning of our AI PM journey"}]]}],["$","$Lc",null,{"href":"/how-it-works","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"⚙️ How It Works"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Discover our AI-powered product management methodology"}]]}]]}],["$","div",null,{"className":"space-y-4","children":[["$","$Lc",null,{"href":"/what-weve-learned","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"💡 What We've Learned"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Building-in-public insights and breakthroughs"}]]}],["$","$Lc",null,{"href":"/blog","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"📝 Journey"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Follow our building-in-public blog posts"}]]}],["$","$Lc",null,{"href":"/get-involved","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"🚀 Get Involved"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Join our community and stay updated"}]]}]]}]]}]]}],["$","div",null,{"className":"text-center","children":[["$","p",null,{"className":"text-text-light mb-6","children":"Still can't find what you're looking for?"}],["$","$Lc",null,{"href":"/get-involved","className":"inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:transform-none bg-primary-teal text-white hover:bg-teal-600 focus:ring-primary-teal shadow-component hover:shadow-component-hover hover:-translate-y-0.5 hover:scale-105 font-bold text-lg px-8 py-4 text-lg rounded-button","aria-label":"$undefined","children":[false,"Get Help & Stay Updated"]}]]}],["$","div",null,{"className":"mt-12 p-6 bg-gray-50 rounded-card max-w-lg mx-auto","children":["$","p",null,{"className":"text-sm text-text-light italic","children":["💬 ","$Ld"," \"Even the most sophisticated neural networks occasionally return null. Let's navigate back to more productive paths together!\""]}]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],"$Le"]}]
+4:["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+5:["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+6:["$","$1","c",{"children":["$Lf",null,["$","$L10",null,{"children":["$L11",["$","$L12",null,{"promise":"$@13"}]]}]]}]
+7:["$","$1","h",{"children":[null,[["$","$L14",null,{"children":"$L15"}],null],["$","$L16",null,{"children":["$","div",null,{"hidden":true,"children":["$","$17",null,{"fallback":null,"children":"$L18"}]}]}]]}]
+19:I[9795,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-06e13daf096e4c23.js","177","static/chunks/app/layout-752516a99df3d17d.js"],"default"]
+d:["$","strong",null,{"children":"Piper Morgan says:"}]
+e:["$","$L19",null,{}]
+1a:I[7887,["874","static/chunks/874-668c89038fa04eb8.js","953","static/chunks/app/blog/%5Bslug%5D/page-afab2cba25f89845.js"],"BlogPostContent"]
+1b:T2943,<figure><img alt="A human postal worker moves a letter from one mailbox to another in a wall of many adjacent mailboxes, most marked with abstract AI-like symbols, suggesting manual message routing between neighboring agents." src="/assets/blog-images/ai-mailboxes.webp" /><figcaption>"You've got mail!"</figcaption></figure>
+<p>Take a look at this screenshot of a folder on my laptop. It contains thirteen subfolders, each named for an AI agent or a human adviser by their slugs: <code>arch</code>, <code>cio</code>, <code>comms</code>, <code>cxo</code>, <code>docs</code>, <code>exec</code>, <code>host</code>, <code>lead</code>, <code>pa</code>, <code>ppm</code>, <code>spec</code>, <code>ted-nadeau</code>:</p>
+<figure><img alt="finder window showing mailbox folder structure." src="/assets/blog-images/mailboxes.webp" /><figcaption>"Messages to deliver"</figcaption></figure>
+<p>That's my Chief Architect, Chief Innovation Officer, Communications Chief, Chief Experience Officer, Documentation Manager, Chief of Staff / Executive Assistant, Head of Sapient Trust, Lead Developer, Piper Alpha, Principal Product Manager, Special Assignments agent, and my pal Ted.</p>
+<p>Each of their folders has the same structure: context, inbox, read.</p>
+<p>This is our current solution to a problem that everyone using multiple AI agents will eventually face: <strong>How do they talk to each other?</strong></p>
+<p>I want to tell you about this not because we've solved it—we haven't—but because we're right in the middle of figuring it out. And I think the problem itself is interesting.</p>
+<h1>The Problem</h1>
+<p>AI agents don't share memory.</p>
+<p>When I have a conversation with the Lead Developer agent about a bug fix, that conversation exists in one context window. When I later talk to the Chief Architect about the system design implications, that's a completely separate context window. The Architect doesn't know what the Lead Developer said. The Lead Developer doesn't know what the Architect decided.</p>
+<p>This is a natural consequence of how I keep them all focused on their own roles and instructions, but it introduces fiction.</p>
+<p>In a human organization, this coordination happens naturally. People talk in hallways. They CC each other on emails. They attend the same meetings. Information flows through social fabric.</p>
+<p>AI agents don't have hallways. They have context windows that begin and end with each conversation.</p>
+<hr>
+<h2>The Primitive Solution</h2>
+<p>For the first six months, I was the coordination layer. When the Architect made a decision that affected the Lead Developer, I would copy-paste the relevant parts into the next Lead Developer conversation. When the Communications Director needed context from the CXO, I would summarize it.</p>
+<p>This worked, sort of. It was also exhausting and error-prone. I became a human message bus, translating between agents, losing fidelity at every hop.</p>
+<p>The failure modes were predictable:</p>
+<ul>
+<li>I'd forget to relay something important</li>
+<li>I'd summarize incorrectly and introduce confusion</li>
+<li>Context would drift as I paraphrased across multiple hops</li>
+<li>Time-sensitive information would arrive late</li>
+<li>I couldn't remember what I'd told which agent</li>
+</ul>
+<h1>The Mailbox System</h1>
+<p>In early January, we formalized what had been informal. Instead of me remembering to tell agents things, agents would write memos to each other. Those memos would live in a shared file system. At the start of each session, agents would check their inbox.</p>
+<p>The structure is simple:</p>
+<pre><code>mailboxes/
+├── arch/           # Chief Architect
+│   ├── context/    # Standing context this agent should know
+│   ├── inbox/      # New messages for this agent
+│   └── read/       # Messages already processed
+├── lead/           # Lead Developer
+│   ├── context/
+│   ├── inbox/
+│   └── read/
+├── comms/          # Communications Director
+│   └── ...
+└── [11 more agents]</code></pre>
+<p>When the Architect makes a decision that affects the Lead Developer, they write a memo and drop it in <code>mailboxes/lead/inbox/</code>. When the Lead Developer starts their next session, the first instruction is: "Check your inbox for any messages from other agents."</p>
+<p>It's email. We reinvented email. Dumb email, but still email.</p>
+<h1>What This Actually Looks Like</h1>
+<p>Here's a real memo from January:</p>
+<pre><code># Memo: RequestContext Pattern Guidance
+
+**From**: Chief Architect
+**To**: Lead Developer
+**Date**: January 13, 2026
+**Re**: ADR-051 Approval with Refinements
+
+ADR-051 is approved. Key implementation notes:
+
+1. Single RequestContext per request (not per service call)
+2. UUID internally, string at API boundary
+3. Create in middleware, pass explicitly, never recreate
+
+See ADR-051 for full rationale.</code></pre>
+<p>This memo landed in <code>mailboxes/lead/inbox/</code>. The Lead Developer then saw it at session start (part of the standing instructions for a new session), understood the architectural decision, and implemented accordingly.</p>
+<p>No human translation. No copy-paste. No "let me summarize what the Architect said." The Architect's words, in the Architect's voice, delivered asynchronously. Even if I took a few days off and forgot about it entirely.</p>
+<h1>It's Working (Sort Of)</h1>
+<p>Since implementing, coordination errors have decreased noticeably. The Lead Developer no longer asks "what did the Architect decide about X?"—they check their inbox. The Communications Director no longer needs me to explain CXO feedback—there's a memo.</p>
+<p>But.</p>
+<p>It's still manual. Agents don't automatically write memos; they have to be prompted to. The mailbox check isn't automatic; it has to be in the session-start instructions. There's no notification when a memo arrives. There's no threading or replies.</p>
+<p>And thirteen mailboxes is a lot of mailboxes. The coordination overhead scales roughly with the square of the agent count. Two agents need one communication channel. Five agents need ten channels. Thirteen agents need... well, 78 potential pairwise channels, though most are unused.</p>
+<hr>
+<h2>What Others Are Doing</h2>
+<p>While we've been building our file-based mailbox system, others have been approaching the orchestration problem differently.</p>
+<p>The frequently manic descriptions of Gas Town emanating from Steve Yegge (incorporating <a href="https://github.com/Dicklesworthstone/mcp_agent_mail">Agent Mail</a> as well as "Convoys" and "Wisps" and managed chaos.</p>
+<p>Claude has just released an Agent Teams feature that may even make this all moot for me. We'll see.</p>
+<p>The approaches differ because the goals differ. High-throughput systems can tolerate information loss. Quality-focused systems (like ours) need higher fidelity coordination.</p>
+<p>This approach fits our constraints for now: a small number of specialized agents, human orchestration, quality over speed, no work lost.</p>
+<h1>A Bigger Question</h1>
+<p>The mailbox system is a point solution to an immediate problem. But there's a bigger question underneath it:</p>
+<p><strong>What's the right coordination model for AI agents?</strong></p>
+<p>Options include:</p>
+<p><strong>Central orchestrator (current):</strong> A human routes all work, manages all handoffs, maintains all context. This is what we do. It doesn't scale beyond maybe 5-10 agents, but it gives the human full visibility and control.</p>
+<p><strong>Shared memory:</strong> Agents read from and write to a common knowledge base. This is where we're heading—our session logs serve this function partially. But shared memory creates new problems: conflicts, staleness, and the question of what to include.</p>
+<p><strong>Direct agent-to-agent:</strong> Agents invoke each other, passing context directly. This is what the big multi-agent frameworks do. It scales better but reduces human oversight.</p>
+<p><strong>Event-driven:</strong> Agents subscribe to events and react. More loosely coupled, but harder to trace causality.</p>
+<p>We're probably going to end up with a hybrid. Central orchestration for strategic decisions, shared memory for context, maybe direct invocation for routine handoffs.</p>
+<p>But I don't know yet. That's the honest answer.</p>
+<h1>Why I'm Telling You This</h1>
+<p>I'm writing about the mailbox system not because it's a finished solution, but because it's a snapshot of a work in progress.</p>
+<p>If you're starting to use multiple AI agents for real work, you will hit this problem. You'll notice that Agent A doesn't know what Agent B decided. You'll find yourself playing telephone. You'll wonder if there's a better way.</p>
+<p>There is. We just don't know exactly what it is yet.</p>
+<p>What we do know:</p>
+<ul>
+<li>The coordination problem is real and gets worse with agent count</li>
+<li>Simple solutions (file-based mailboxes) can help immediately</li>
+<li>The "right" solution probably depends on your specific constraints</li>
+<li>This is an area of active experimentation across the industry</li>
+</ul>
+<p>What we don't know:</p>
+<ul>
+<li>How much coordination overhead is acceptable</li>
+<li>Whether human orchestration can scale beyond ~10 agents</li>
+<li>How to balance fidelity (no information loss) with throughput</li>
+<li>What primitives should be built into AI platforms vs. rolled ourselves</li>
+</ul>
+<h1>An Invitation</h1>
+<p>If you're working on this problem too, I'd like to hear what you're trying. Drop me a line (I'm easy to find!).</p>
+<p>We're sharing our approach not because we have answers but because we're pretty sure this problem matters. The AI agents are getting more capable every quarter. The orchestration challenge isn't going away.</p>
+<p>These mailboxes are our current answer. Ask me again in three months and I'll tell you what we learned.</p>
+<p>Note: Since initially drafting this post (three months ago!), we have also launched the <a href="https://klatch.ing">Klatch</a> side project to remove me from the manual man-in-the-middle drudgery I am doing now to keep this all spinning.</p>
+<hr>
+<p><em>Next on Building Piper Morgan, "Sibling Intelligence," from March 26, about how and why we are building Klatch to get me out of the postal-delivery business.</em></p>
+<p><em>I seriously do want to hear from what other folks are figuring out, so I'll ask again: If you're working on this problem too, I'd like to hear what you're trying. Drop me a line, please!</em></p>f:["$","$L1a",null,{"post":{"title":"Thirteen Mailboxes","excerpt":"\"You've got mail!\" Take a look at this screenshot of a folder on my laptop. It contains thirteen subfolders, each named for an AI agent or a human adviser by their slugs: arch, cio, comms, cxo, docs, exec, host, lead, pa, ppm, spec, ted-nadeau: \"Messages to deliver\" That's my Chief Architect, Chi...","url":"/blog/thirteen-mailboxes","slug":"thirteen-mailboxes","publishedAt":"Apr 18, 2026","publishedAtISO":"2026-04-18T00:00:00.000Z","author":"christian crumlish","readingTime":"5 min read","tags":["Building in Public"],"guid":"blog-first-c8d49a76fefb","featuredImage":"/assets/blog-images/ai-mailboxes.webp","thumbnail":"/assets/blog-images/ai-mailboxes.webp","category":"insight","cluster":"","workDate":"Jan 13, 2026","workDateISO":"2026-01-13T00:00:00.000Z"},"content":{"title":"Thirteen Mailboxes","content":"$1b"}}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+11:null
+1c:I[8175,[],"IconMark"]
+13:{"metadata":[["$","title","0",{"children":"Thirteen Mailboxes | Piper Morgan"}],["$","meta","1",{"name":"author","content":"Christian Crumlish"}],["$","meta","2",{"name":"keywords","content":"AI,Product Management,Methodology,Building in Public"}],["$","meta","3",{"name":"creator","content":"Christian Crumlish"}],["$","meta","4",{"name":"publisher","content":"Christian Crumlish"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow"}],["$","link","7",{"rel":"canonical","href":"https://pipermorgan.ai/"}],["$","meta","8",{"name":"format-detection","content":"telephone=no, address=no, email=no"}],["$","meta","9",{"property":"og:title","content":"Thirteen Mailboxes"}],["$","meta","10",{"property":"og:image","content":"https://pipermorgan.ai/assets/blog-images/ai-mailboxes.webp"}],["$","meta","11",{"property":"og:type","content":"article"}],["$","meta","12",{"property":"article:author","content":"christian crumlish"}],["$","meta","13",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","14",{"name":"twitter:title","content":"Thirteen Mailboxes"}],["$","meta","15",{"name":"twitter:image","content":"https://pipermorgan.ai/assets/blog-images/ai-mailboxes.webp"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"32x33"}],["$","link","17",{"rel":"icon","href":"/favicon.ico","sizes":"32x32","type":"image/x-icon"}],["$","link","18",{"rel":"icon","href":"/pm-favicon-16.png","sizes":"16x16","type":"image/png"}],["$","link","19",{"rel":"icon","href":"/pm-favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","20",{"rel":"icon","href":"/pm-favicon-48.png","sizes":"48x48","type":"image/png"}],["$","link","21",{"rel":"apple-touch-icon","href":"/pm-favicon-180.png","sizes":"180x180","type":"image/png"}],["$","link","22",{"rel":"icon","href":"/pm-favicon-192.png","sizes":"192x192","type":"image/png"}],["$","$L1c","23",{}]],"error":null,"digest":"$undefined"}
+18:"$13:metadata"
