@@ -1,5 +1,25 @@
 [
   {
+    "title": "Weekly Ship #039: The Voice Takes Shape",
+    "excerpt": "April 10–16, 2026 Last week's \"The Floor Comes Alive\" ended with the floor finally generating real responses after three rounds of UAT failures. This week, the question changed. Not \"does the floor work?\" but \"how does the floor sound?\" M1 closed on Friday after 33 days and four UAT rounds. By th...",
+    "url": "/blog/weekly-ship-039-the-voice-takes-shape",
+    "slug": "weekly-ship-039-the-voice-takes-shape",
+    "publishedAt": "Apr 22, 2026",
+    "publishedAtISO": "2026-04-22T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-f59c900b6333",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "category": "ship",
+    "cluster": "",
+    "workDate": "Apr 16, 2026",
+    "workDateISO": "2026-04-16T00:00:00.000Z"
+  },
+  {
     "title": "Four Roles, Ninety Minutes",
     "excerpt": "",
     "url": "/blog/four-roles-ninety-minutes",
@@ -15,9 +35,10 @@
     "featuredImage": "/assets/blog-images/four-roles-ninety-minutes.webp",
     "thumbnail": "/assets/blog-images/four-roles-ninety-minutes.webp",
     "category": "building",
-    "cluster": "",
+    "cluster": "2026-04-21",
     "workDate": "Mar 23, 2026",
-    "workDateISO": "2026-03-23T00:00:00.000Z"
+    "workDateISO": "2026-03-23T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Sibling Intelligence",
