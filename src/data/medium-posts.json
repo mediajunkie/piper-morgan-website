@@ -1,5 +1,25 @@
 [
   {
+    "title": "Four Roles, Ninety Minutes",
+    "excerpt": "",
+    "url": "/blog/four-roles-ninety-minutes",
+    "slug": "four-roles-ninety-minutes",
+    "publishedAt": "Apr 21, 2026",
+    "publishedAtISO": "2026-04-21T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-ab6136d78b6c",
+    "featuredImage": "/assets/blog-images/four-roles-ninety-minutes.webp",
+    "thumbnail": "/assets/blog-images/four-roles-ninety-minutes.webp",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Mar 23, 2026",
+    "workDateISO": "2026-03-23T00:00:00.000Z"
+  },
+  {
     "title": "Sibling Intelligence",
     "excerpt": "March 19–21, 2026 I'm now running two AI side projects: Piper Morgan — a PM assistant with nine distinct active agent roles, ten months of development, and nearly 290 blog posts documenting the journey. And Klatch — a conversation manager started in two days by two Claude Code agents that has sin...",
     "url": "/blog/sibling-intelligence",
@@ -15,9 +35,10 @@
     "featuredImage": "/assets/blog-images/sibling-intelligence.webp",
     "thumbnail": "/assets/blog-images/sibling-intelligence.webp",
     "category": "insight",
-    "cluster": "",
+    "cluster": "2026-04-19",
     "workDate": "Mar 19, 2026",
-    "workDateISO": "2026-03-19T00:00:00.000Z"
+    "workDateISO": "2026-03-19T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Thirteen Mailboxes",
