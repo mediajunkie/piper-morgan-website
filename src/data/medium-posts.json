@@ -1,5 +1,25 @@
 [
   {
+    "title": "The Gate",
+    "excerpt": "April 3–7 Thursday night. Ten-thirty. Testing a fresh alpha account on a clean machine. The CXO had a scoring rubric ready based on the Colleague Test: three dimensions, zero through three on each, seven to pass, any zero auto-fails. Nine queries lined up. Five task lifecycle scenarios. We'd been...",
+    "url": "/blog/the-gate",
+    "slug": "the-gate",
+    "publishedAt": "Apr 24, 2026",
+    "publishedAtISO": "2026-04-24T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-7ba5a4717abe",
+    "featuredImage": "/assets/blog-images/the-gate.webp",
+    "thumbnail": "/assets/blog-images/the-gate.webp",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Apr 3, 2026",
+    "workDateISO": "2026-04-03T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #039: The Voice Takes Shape",
     "excerpt": "April 10–16, 2026 Last week's \"The Floor Comes Alive\" ended with the floor finally generating real responses after three rounds of UAT failures. This week, the question changed. Not \"does the floor work?\" but \"how does the floor sound?\" M1 closed on Friday after 33 days and four UAT rounds. By th...",
     "url": "/blog/weekly-ship-039-the-voice-takes-shape",
@@ -15,9 +35,10 @@
     "featuredImage": "/assets/blog-images/piper-ship.webp",
     "thumbnail": "/assets/blog-images/piper-ship.webp",
     "category": "ship",
-    "cluster": "",
+    "cluster": "2026-04-22",
     "workDate": "Apr 16, 2026",
-    "workDateISO": "2026-04-16T00:00:00.000Z"
+    "workDateISO": "2026-04-16T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Four Roles, Ninety Minutes",
