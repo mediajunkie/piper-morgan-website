@@ -1,0 +1,169 @@
+1:"$Sreact.fragment"
+8:I[8393,[],""]
+:HL["/_next/static/css/41b8dc52ae6c1dc1.css","style"]
+2:T1313,
+            :root{--primary-teal:#2DD4BF;--primary-teal-text:#0D9488;--text-dark:#1F2937;--text-light:#6B7280;--background:#FFFFFF;--surface:#F9FAFB}
+            .dark{--text-dark:#F1F5F9;--text-light:#94A3B8;--background:#0F172A;--surface:#1E293B}
+            @font-face{font-family:'Inter';src:url('/fonts/inter-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+            *{box-sizing:border-box}
+            html{scroll-behavior:smooth;font-size:16px;margin:0;padding:0;border:none;outline:none}
+            body{background:var(--background);color:var(--text-dark);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell',sans-serif;line-height:1.6;margin:0;padding:0;border:none;outline:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+            nav{border:none !important;outline:none !important}
+            h1,h2,h3,h4,h5,h6{font-family:'Hoss Round','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+            p,span{max-width:75ch;line-height:1.7}
+            .text-content div{max-width:75ch;line-height:1.7}
+            .text-content{max-width:65ch}
+            @media (max-width:640px){
+              h1{font-size:1.75rem;line-height:1.2}
+              h2{font-size:1.25rem;line-height:1.3}
+              h3{font-size:1.1rem;line-height:1.4}
+              h4{font-size:1rem;line-height:1.4}
+            }
+            @media (min-width:641px) and (max-width:768px){
+              h1{font-size:2rem;line-height:1.2}
+              h2{font-size:1.5rem;line-height:1.3}
+              h3{font-size:1.25rem;line-height:1.4}
+            }
+            @media (prefers-reduced-motion: reduce){
+              *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}
+            }
+            a:hover{color:#0D9488;transition:color 0.2s ease}
+            .hover-lift:hover{transform:translateY(-2px);transition:transform 0.2s ease}
+            button:focus,a:focus{outline:2px solid #2DD4BF;outline-offset:2px;border-radius:4px}
+            .skip-to-content{position:absolute;top:-100px;left:0;z-index:999;padding:8px 16px;background:#1F2937;color:white;text-decoration:none;border-radius:0 0 4px 0;transition:top 0.3s}
+            .skip-to-content:focus{top:0;outline:2px solid #2DD4BF;outline-offset:2px}
+            .section-spacing{margin-bottom:4rem}
+            .component-spacing{margin-bottom:1.5rem}
+            .micro-spacing{margin-bottom:0.5rem}
+            @media (min-width:768px){
+              .section-spacing{margin-bottom:6rem}
+              .component-spacing{margin-bottom:2rem}
+            }
+            .site-container{width:100%;max-width:1200px;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+            @media (min-width:640px){.site-container{padding-left:1.5rem;padding-right:1.5rem}}
+            @media (min-width:768px){.site-container{padding-left:2rem;padding-right:2rem}}
+            @media (min-width:1024px){.site-container{max-width:1200px}}
+            @media (min-width:1200px){.site-container{max-width:1200px}}
+            .section-padding{padding-top:4rem;padding-bottom:4rem}
+            @media (min-width:768px){.section-padding{padding-top:5rem;padding-bottom:5rem}}
+            .mx-auto{margin-left:auto;margin-right:auto}
+            .max-w-4xl{max-width:56rem}
+            .pt-16{padding-top:4rem}
+            .pb-8{padding-bottom:2rem}
+            .px-4{padding-left:1rem;padding-right:1rem}
+            .mb-6{margin-bottom:1.5rem}
+            .mb-8{margin-bottom:2rem}
+            .text-left{text-align:left}
+            .text-center{text-align:center}
+            .text-primary-teal-text{color:#0F766E}
+            .text-text-dark{color:#1F2937}
+            .text-text-light{color:#6B7280}
+            .font-bold{font-weight:700}
+            .text-4xl{font-size:2.25rem;line-height:2.5rem}
+            .text-5xl{font-size:3rem;line-height:1}
+            .text-6xl{font-size:3.75rem;line-height:1}
+            .text-lg{font-size:1.125rem;line-height:1.75rem}
+            .text-xl{font-size:1.25rem;line-height:1.75rem}
+            .leading-tight{line-height:1.25}
+            .leading-relaxed{line-height:1.625}
+            .min-h-screen{min-height:100vh}
+            @media (min-width:768px){
+              .md\:pt-24{padding-top:6rem}
+              .md\:pb-12{padding-bottom:3rem}
+              .md\:text-5xl{font-size:3rem;line-height:1}
+              .md\:text-xl{font-size:1.25rem;line-height:1.75rem}
+            }
+            @media (min-width:1024px){
+              .lg\:text-6xl{font-size:3.75rem;line-height:1}
+            }
+          0:{"P":null,"b":"HRyrc5OtPMNqD_pfqQNsc","p":"","c":["","blog","the-multi-wave-investigation",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","the-multi-wave-investigation","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/41b8dc52ae6c1dc1.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"font-inter","children":[["$","head",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                const theme = localStorage.getItem('theme') ||\n                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');\n                if (theme === 'dark') {\n                  document.documentElement.classList.add('dark');\n                  document.body.classList.add('dark');\n                }\n              })();\n            "}}],["$","link",null,{"rel":"dns-prefetch","href":"//pipermorgan.ai"}],["$","link",null,{"rel":"preconnect","href":"https://pipermorgan.ai"}],["$","link",null,{"rel":"preload","as":"image","href":"/assets/pm-logo.png"}],["$","link",null,{"rel":"preload","href":"/fonts/inter-latin.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preload","href":"/fonts/HossRound-Regular.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],"$L3"]}]]}],{"children":["blog","$L4",{"children":[["slug","the-multi-wave-investigation","d"],"$L5",{"children":["__PAGE__","$L6",{},null,false]},null,false]},null,false]},null,false],"$L7",false]],"m":"$undefined","G":["$8",[]],"s":false,"S":true}
+9:I[9119,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-06e13daf096e4c23.js","177","static/chunks/app/layout-752516a99df3d17d.js"],"ClientLayout"]
+a:I[7555,[],""]
+b:I[1295,[],""]
+c:I[6874,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-06e13daf096e4c23.js","497","static/chunks/497-c2d4d34c8ebca405.js","170","static/chunks/170-c499cae4ae1f1fe1.js","676","static/chunks/676-3ed22a64c4d76dbe.js","878","static/chunks/878-84c21ab4454b1944.js","831","static/chunks/app/blog/page-bb4de3b32bcba7d1.js"],""]
+10:I[9665,[],"OutletBoundary"]
+12:I[4911,[],"AsyncMetadataOutlet"]
+14:I[9665,[],"ViewportBoundary"]
+16:I[9665,[],"MetadataBoundary"]
+17:"$Sreact.suspense"
+3:["$","body",null,{"className":"font-sans antialiased","children":[["$","$L9",null,{"children":["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"min-h-screen","children":["$","div",null,{"className":"site-container max-w-4xl pt-16 md:pt-24 pb-8 md:pb-12 text-center","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-8xl md:text-9xl font-bold text-primary-teal-text mb-4","children":"404"}],["$","h2",null,{"className":"text-3xl md:text-4xl font-semibold text-text-dark mb-4","children":"Page Not Found"}],["$","p",null,{"className":"text-xl text-text-light leading-relaxed max-w-2xl mx-auto","children":"Looks like this page got lost in the AI training data. Don't worry – even the best algorithms make mistakes sometimes."}]]}],["$","div",null,{"className":"mb-12","children":[["$","h3",null,{"className":"text-xl font-semibold text-text-dark mb-6","children":"Where would you like to go instead?"}],["$","div",null,{"className":"grid md:grid-cols-2 gap-6 max-w-2xl mx-auto","children":[["$","div",null,{"className":"space-y-4","children":[["$","$Lc",null,{"href":"/","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"🏠 Homepage"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Start from the beginning of our AI PM journey"}]]}],["$","$Lc",null,{"href":"/how-it-works","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"⚙️ How It Works"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Discover our AI-powered product management methodology"}]]}]]}],["$","div",null,{"className":"space-y-4","children":[["$","$Lc",null,{"href":"/what-weve-learned","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"💡 What We've Learned"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Building-in-public insights and breakthroughs"}]]}],["$","$Lc",null,{"href":"/blog","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"📝 Journey"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Follow our building-in-public blog posts"}]]}],["$","$Lc",null,{"href":"/get-involved","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"🚀 Get Involved"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Join our community and stay updated"}]]}]]}]]}]]}],["$","div",null,{"className":"text-center","children":[["$","p",null,{"className":"text-text-light mb-6","children":"Still can't find what you're looking for?"}],["$","$Lc",null,{"href":"/get-involved","className":"inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:transform-none bg-primary-teal text-white hover:bg-teal-600 focus:ring-primary-teal shadow-component hover:shadow-component-hover hover:-translate-y-0.5 hover:scale-105 font-bold text-lg px-8 py-4 text-lg rounded-button","aria-label":"$undefined","children":[false,"Get Help & Stay Updated"]}]]}],["$","div",null,{"className":"mt-12 p-6 bg-gray-50 rounded-card max-w-lg mx-auto","children":["$","p",null,{"className":"text-sm text-text-light italic","children":["💬 ","$Ld"," \"Even the most sophisticated neural networks occasionally return null. Let's navigate back to more productive paths together!\""]}]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],"$Le"]}]
+4:["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+5:["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+6:["$","$1","c",{"children":["$Lf",null,["$","$L10",null,{"children":["$L11",["$","$L12",null,{"promise":"$@13"}]]}]]}]
+7:["$","$1","h",{"children":[null,[["$","$L14",null,{"children":"$L15"}],null],["$","$L16",null,{"children":["$","div",null,{"hidden":true,"children":["$","$17",null,{"fallback":null,"children":"$L18"}]}]}]]}]
+19:I[9795,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-06e13daf096e4c23.js","177","static/chunks/app/layout-752516a99df3d17d.js"],"default"]
+d:["$","strong",null,{"children":"Piper Morgan says:"}]
+e:["$","$L19",null,{}]
+1a:I[7887,["874","static/chunks/874-668c89038fa04eb8.js","953","static/chunks/app/blog/%5Bslug%5D/page-afab2cba25f89845.js"],"BlogPostContent"]
+1b:T1538,<p><em>December 25, 2025</em></p>
+<p>We had a problem: 44 new canonical queries to investigate. Each one needed infrastructure assessment, blocker identification, implementation complexity rating. Traditional approach: investigate them one by one, maybe three or four per session.</p>
+<p>At that pace, the reconnaissance alone would take two weeks.</p>
+<p>Instead, we deployed 13 subagents across 4 waves in a single 90-minute session. All 44 queries investigated. Complete infrastructure map. Priority matrix created.</p>
+<h1>The wave structure</h1>
+<p><strong>Wave 1: Core Infrastructure Audit</strong> (3 agents)</p>
+<ul>
+<li>Intent Router Auditor: 8 intent categories mapped, coverage percentages calculated</li>
+<li>Integration Inventory: 6 integration routers catalogued, 200+ methods found</li>
+<li>Repository Method Scan: 97 methods across 6 repositories analyzed</li>
+</ul>
+<p>These three agents established the baseline. What existed? What was complete? Where were the foundations solid?</p>
+<p><strong>Wave 2: Category Deep Dives</strong> (4 agents)</p>
+<ul>
+<li>GitHub Operations: 8 queries mapped, complexity breakdown (2 LOW, 4 MEDIUM, 2 HIGH)</li>
+<li>Slack Operations: 5 queries mapped, infrastructure complete except LLM summarization</li>
+<li>Calendar Operations: 7 queries mapped, critical OAuth scope constraint identified</li>
+<li>Todo Operations: 4 queries mapped, critical blocker found (hardcoded user_id)</li>
+</ul>
+<p>These four agents worked in parallel, each focused on a specific integration category. They didn't need to coordinate—they were examining independent infrastructure.</p>
+<p><strong>Wave 3: Gap Analysis</strong> (synthesis)</p>
+<ul>
+<li>Priority matrix created: Phase A (5 LOW), Phase B (11 MEDIUM), Phase C (8 HIGH), Phase D (12 blocked)</li>
+<li>Critical blockers documented with priority levels (P0, P1, P2)</li>
+</ul>
+<p>Wave 3 synthesized the category deep dives into actionable prioritization.</p>
+<p><strong>Wave 4: Remaining Categories</strong> (6 agents)</p>
+<ul>
+<li>Help/Capability System, Activity/Audit Logging, Notion Write Operations</li>
+<li>Notification Infrastructure, Conversation Serialization, File Upload</li>
+<li>Each assessed independently, blockers identified, readiness scored</li>
+</ul>
+<h1>Why it worked just fine</h1>
+<p>The key insight: investigation parallelizes well. Analysis doesn't require shared state. Each agent can examine a portion of the codebase without coordinating with others.</p>
+<p>Implementation is different. Two agents trying to modify the same file create merge conflicts. Two agents implementing related features need to coordinate on interfaces.</p>
+<p>But two agents reading different parts of the codebase? They can run simultaneously without collision.</p>
+<h1>A taxonomy for blockers</h1>
+<p>Wave 3 produced something useful beyond the priority matrix: a blocker taxonomy.</p>
+<ul>
+<li><strong>P0</strong> (blocks all): Problems that prevent any query from working. User_id hardcoded as "default" was P0—it broke multi-user isolation across everything.</li>
+<li><strong>P1</strong> (blocks category): Problems that prevent a category from working. Calendar OAuth readonly scope was P1—it blocked all scheduling features.</li>
+<li><strong>P2</strong> (nice to have): Problems that degrade experience but don't block core functionality. Missing LLM summarization in Slack was P2.</li>
+</ul>
+<p>This taxonomy separated complexity from criticality. A query could be easy to implement (LOW complexity) but blocked by a P0 issue. Another could be hard to implement (HIGH complexity) but have no blockers.</p>
+<p>The priority matrix combined both dimensions.</p>
+<h1>When to use this model</h1>
+<p>Multi-wave investigation works when:</p>
+<ul>
+<li>The problem space can be partitioned cleanly (categories, modules, time periods)</li>
+<li>Each partition can be analyzed independently</li>
+<li>Synthesis can happen after parallel analysis completes</li>
+<li>You need breadth more than depth initially</li>
+</ul>
+<p>It doesn't work when:</p>
+<ul>
+<li>Agents need to coordinate during investigation</li>
+<li>Analysis requires iterative refinement based on early findings</li>
+<li>The partitions have hidden dependencies</li>
+</ul>
+<p>Deploying multiple agents to fan out and research a problem has since become a routine part of my work habits, something Claude agents do very comfortably using their subagent capabilities, and clearly part of where this sort of tooling stack is headed in the future, as a matter of course.</p>
+<h1>Seeing from all angles at once</h1>
+<p>90 minutes of parallel investigation saved an estimated 10 days of sequential work (at least in trad-human terms) and, more importantly, helped develop a more complete picture.</p>
+<p>Sequential investigation would have answered questions as they arose. Parallel investigation answered questions we hadn't thought to ask yet. The OAuth scope constraint. The hardcoded user_id. The missing router methods.</p>
+<p>Sometimes you work from a checklist when you know what you're looking for, but all of these discoveries emerged from the comprehensive coverage achievable with this multi-directional approach.</p>
+<hr>
+<p><em>Next on Building Piper Morgan: Verify the Paraphrase, covering a work stream review from April 19 based on incomplete source material.</em></p>
+<p><em>Have you found ways to parallelize investigation work? What made it succeed or fail?</em></p>f:["$","$L1a",null,{"post":{"title":"The Multi-Wave Investigation","excerpt":"December 25, 2025 We had a problem: 44 new canonical queries to investigate. Each one needed infrastructure assessment, blocker identification, implementation complexity rating. Traditional approach: investigate them one by one, maybe three or four per session. At that pace, the reconnaissance al...","url":"/blog/the-multi-wave-investigation","slug":"the-multi-wave-investigation","publishedAt":"Apr 25, 2026","publishedAtISO":"2026-04-25T00:00:00.000Z","author":"christian crumlish","readingTime":"5 min read","tags":["Building in Public"],"guid":"blog-first-d5599bc8d691","featuredImage":"/assets/blog-images/the-multi-wave-investigation.webp","thumbnail":"/assets/blog-images/the-multi-wave-investigation.webp","category":"insight","cluster":"","workDate":"Dec 25, 2025","workDateISO":"2025-12-25T00:00:00.000Z"},"content":{"title":"The Multi-Wave Investigation","content":"$1b"}}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+11:null
+1c:I[8175,[],"IconMark"]
+13:{"metadata":[["$","title","0",{"children":"The Multi-Wave Investigation | Piper Morgan"}],["$","meta","1",{"name":"author","content":"Christian Crumlish"}],["$","meta","2",{"name":"keywords","content":"AI,Product Management,Methodology,Building in Public"}],["$","meta","3",{"name":"creator","content":"Christian Crumlish"}],["$","meta","4",{"name":"publisher","content":"Christian Crumlish"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow"}],["$","link","7",{"rel":"canonical","href":"https://pipermorgan.ai/"}],["$","meta","8",{"name":"format-detection","content":"telephone=no, address=no, email=no"}],["$","meta","9",{"property":"og:title","content":"The Multi-Wave Investigation"}],["$","meta","10",{"property":"og:image","content":"https://pipermorgan.ai/assets/blog-images/the-multi-wave-investigation.webp"}],["$","meta","11",{"property":"og:type","content":"article"}],["$","meta","12",{"property":"article:author","content":"christian crumlish"}],["$","meta","13",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","14",{"name":"twitter:title","content":"The Multi-Wave Investigation"}],["$","meta","15",{"name":"twitter:image","content":"https://pipermorgan.ai/assets/blog-images/the-multi-wave-investigation.webp"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"32x33"}],["$","link","17",{"rel":"icon","href":"/favicon.ico","sizes":"32x32","type":"image/x-icon"}],["$","link","18",{"rel":"icon","href":"/pm-favicon-16.png","sizes":"16x16","type":"image/png"}],["$","link","19",{"rel":"icon","href":"/pm-favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","20",{"rel":"icon","href":"/pm-favicon-48.png","sizes":"48x48","type":"image/png"}],["$","link","21",{"rel":"apple-touch-icon","href":"/pm-favicon-180.png","sizes":"180x180","type":"image/png"}],["$","link","22",{"rel":"icon","href":"/pm-favicon-192.png","sizes":"192x192","type":"image/png"}],["$","$L1c","23",{}]],"error":null,"digest":"$undefined"}
+18:"$13:metadata"
