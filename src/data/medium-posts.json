@@ -1,5 +1,25 @@
 [
   {
+    "title": "The Multi-Wave Investigation",
+    "excerpt": "December 25, 2025 We had a problem: 44 new canonical queries to investigate. Each one needed infrastructure assessment, blocker identification, implementation complexity rating. Traditional approach: investigate them one by one, maybe three or four per session. At that pace, the reconnaissance al...",
+    "url": "/blog/the-multi-wave-investigation",
+    "slug": "the-multi-wave-investigation",
+    "publishedAt": "Apr 25, 2026",
+    "publishedAtISO": "2026-04-25T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-d5599bc8d691",
+    "featuredImage": "/assets/blog-images/the-multi-wave-investigation.webp",
+    "thumbnail": "/assets/blog-images/the-multi-wave-investigation.webp",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Dec 25, 2025",
+    "workDateISO": "2025-12-25T00:00:00.000Z"
+  },
+  {
     "title": "The Gate",
     "excerpt": "April 3–7 Thursday night. Ten-thirty. Testing a fresh alpha account on a clean machine. The CXO had a scoring rubric ready based on the Colleague Test: three dimensions, zero through three on each, seven to pass, any zero auto-fails. Nine queries lined up. Five task lifecycle scenarios. We'd been...",
     "url": "/blog/the-gate",
@@ -15,9 +35,10 @@
     "featuredImage": "/assets/blog-images/the-gate.webp",
     "thumbnail": "/assets/blog-images/the-gate.webp",
     "category": "building",
-    "cluster": "",
+    "cluster": "2026-04-24",
     "workDate": "Apr 3, 2026",
-    "workDateISO": "2026-04-03T00:00:00.000Z"
+    "workDateISO": "2026-04-03T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #039: The Voice Takes Shape",
