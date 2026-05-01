@@ -1,0 +1,151 @@
+1:"$Sreact.fragment"
+8:I[8393,[],""]
+:HL["/_next/static/css/41b8dc52ae6c1dc1.css","style"]
+2:T1313,
+            :root{--primary-teal:#2DD4BF;--primary-teal-text:#0D9488;--text-dark:#1F2937;--text-light:#6B7280;--background:#FFFFFF;--surface:#F9FAFB}
+            .dark{--text-dark:#F1F5F9;--text-light:#94A3B8;--background:#0F172A;--surface:#1E293B}
+            @font-face{font-family:'Inter';src:url('/fonts/inter-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+            *{box-sizing:border-box}
+            html{scroll-behavior:smooth;font-size:16px;margin:0;padding:0;border:none;outline:none}
+            body{background:var(--background);color:var(--text-dark);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell',sans-serif;line-height:1.6;margin:0;padding:0;border:none;outline:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+            nav{border:none !important;outline:none !important}
+            h1,h2,h3,h4,h5,h6{font-family:'Hoss Round','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+            p,span{max-width:75ch;line-height:1.7}
+            .text-content div{max-width:75ch;line-height:1.7}
+            .text-content{max-width:65ch}
+            @media (max-width:640px){
+              h1{font-size:1.75rem;line-height:1.2}
+              h2{font-size:1.25rem;line-height:1.3}
+              h3{font-size:1.1rem;line-height:1.4}
+              h4{font-size:1rem;line-height:1.4}
+            }
+            @media (min-width:641px) and (max-width:768px){
+              h1{font-size:2rem;line-height:1.2}
+              h2{font-size:1.5rem;line-height:1.3}
+              h3{font-size:1.25rem;line-height:1.4}
+            }
+            @media (prefers-reduced-motion: reduce){
+              *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}
+            }
+            a:hover{color:#0D9488;transition:color 0.2s ease}
+            .hover-lift:hover{transform:translateY(-2px);transition:transform 0.2s ease}
+            button:focus,a:focus{outline:2px solid #2DD4BF;outline-offset:2px;border-radius:4px}
+            .skip-to-content{position:absolute;top:-100px;left:0;z-index:999;padding:8px 16px;background:#1F2937;color:white;text-decoration:none;border-radius:0 0 4px 0;transition:top 0.3s}
+            .skip-to-content:focus{top:0;outline:2px solid #2DD4BF;outline-offset:2px}
+            .section-spacing{margin-bottom:4rem}
+            .component-spacing{margin-bottom:1.5rem}
+            .micro-spacing{margin-bottom:0.5rem}
+            @media (min-width:768px){
+              .section-spacing{margin-bottom:6rem}
+              .component-spacing{margin-bottom:2rem}
+            }
+            .site-container{width:100%;max-width:1200px;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+            @media (min-width:640px){.site-container{padding-left:1.5rem;padding-right:1.5rem}}
+            @media (min-width:768px){.site-container{padding-left:2rem;padding-right:2rem}}
+            @media (min-width:1024px){.site-container{max-width:1200px}}
+            @media (min-width:1200px){.site-container{max-width:1200px}}
+            .section-padding{padding-top:4rem;padding-bottom:4rem}
+            @media (min-width:768px){.section-padding{padding-top:5rem;padding-bottom:5rem}}
+            .mx-auto{margin-left:auto;margin-right:auto}
+            .max-w-4xl{max-width:56rem}
+            .pt-16{padding-top:4rem}
+            .pb-8{padding-bottom:2rem}
+            .px-4{padding-left:1rem;padding-right:1rem}
+            .mb-6{margin-bottom:1.5rem}
+            .mb-8{margin-bottom:2rem}
+            .text-left{text-align:left}
+            .text-center{text-align:center}
+            .text-primary-teal-text{color:#0F766E}
+            .text-text-dark{color:#1F2937}
+            .text-text-light{color:#6B7280}
+            .font-bold{font-weight:700}
+            .text-4xl{font-size:2.25rem;line-height:2.5rem}
+            .text-5xl{font-size:3rem;line-height:1}
+            .text-6xl{font-size:3.75rem;line-height:1}
+            .text-lg{font-size:1.125rem;line-height:1.75rem}
+            .text-xl{font-size:1.25rem;line-height:1.75rem}
+            .leading-tight{line-height:1.25}
+            .leading-relaxed{line-height:1.625}
+            .min-h-screen{min-height:100vh}
+            @media (min-width:768px){
+              .md\:pt-24{padding-top:6rem}
+              .md\:pb-12{padding-bottom:3rem}
+              .md\:text-5xl{font-size:3rem;line-height:1}
+              .md\:text-xl{font-size:1.25rem;line-height:1.75rem}
+            }
+            @media (min-width:1024px){
+              .lg\:text-6xl{font-size:3.75rem;line-height:1}
+            }
+          0:{"P":null,"b":"ysOAiJylQNNgYM3zvAsiX","p":"","c":["","blog","verify-the-paraphrase",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","verify-the-paraphrase","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/41b8dc52ae6c1dc1.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"font-inter","children":[["$","head",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                const theme = localStorage.getItem('theme') ||\n                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');\n                if (theme === 'dark') {\n                  document.documentElement.classList.add('dark');\n                  document.body.classList.add('dark');\n                }\n              })();\n            "}}],["$","link",null,{"rel":"dns-prefetch","href":"//pipermorgan.ai"}],["$","link",null,{"rel":"preconnect","href":"https://pipermorgan.ai"}],["$","link",null,{"rel":"preload","as":"image","href":"/assets/pm-logo.png"}],["$","link",null,{"rel":"preload","href":"/fonts/inter-latin.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preload","href":"/fonts/HossRound-Regular.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],"$L3"]}]]}],{"children":["blog","$L4",{"children":[["slug","verify-the-paraphrase","d"],"$L5",{"children":["__PAGE__","$L6",{},null,false]},null,false]},null,false]},null,false],"$L7",false]],"m":"$undefined","G":["$8",[]],"s":false,"S":true}
+9:I[9119,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-06e13daf096e4c23.js","177","static/chunks/app/layout-752516a99df3d17d.js"],"ClientLayout"]
+a:I[7555,[],""]
+b:I[1295,[],""]
+c:I[6874,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-06e13daf096e4c23.js","497","static/chunks/497-c2d4d34c8ebca405.js","170","static/chunks/170-92b74ce3115e592e.js","676","static/chunks/676-3ed22a64c4d76dbe.js","878","static/chunks/878-84c21ab4454b1944.js","831","static/chunks/app/blog/page-bb4de3b32bcba7d1.js"],""]
+10:I[9665,[],"OutletBoundary"]
+12:I[4911,[],"AsyncMetadataOutlet"]
+14:I[9665,[],"ViewportBoundary"]
+16:I[9665,[],"MetadataBoundary"]
+17:"$Sreact.suspense"
+3:["$","body",null,{"className":"font-sans antialiased","children":[["$","$L9",null,{"children":["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"min-h-screen","children":["$","div",null,{"className":"site-container max-w-4xl pt-16 md:pt-24 pb-8 md:pb-12 text-center","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-8xl md:text-9xl font-bold text-primary-teal-text mb-4","children":"404"}],["$","h2",null,{"className":"text-3xl md:text-4xl font-semibold text-text-dark mb-4","children":"Page Not Found"}],["$","p",null,{"className":"text-xl text-text-light leading-relaxed max-w-2xl mx-auto","children":"Looks like this page got lost in the AI training data. Don't worry – even the best algorithms make mistakes sometimes."}]]}],["$","div",null,{"className":"mb-12","children":[["$","h3",null,{"className":"text-xl font-semibold text-text-dark mb-6","children":"Where would you like to go instead?"}],["$","div",null,{"className":"grid md:grid-cols-2 gap-6 max-w-2xl mx-auto","children":[["$","div",null,{"className":"space-y-4","children":[["$","$Lc",null,{"href":"/","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"🏠 Homepage"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Start from the beginning of our AI PM journey"}]]}],["$","$Lc",null,{"href":"/how-it-works","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"⚙️ How It Works"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Discover our AI-powered product management methodology"}]]}]]}],["$","div",null,{"className":"space-y-4","children":[["$","$Lc",null,{"href":"/what-weve-learned","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"💡 What We've Learned"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Building-in-public insights and breakthroughs"}]]}],["$","$Lc",null,{"href":"/blog","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"📝 Journey"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Follow our building-in-public blog posts"}]]}],["$","$Lc",null,{"href":"/get-involved","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"🚀 Get Involved"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Join our community and stay updated"}]]}]]}]]}]]}],["$","div",null,{"className":"text-center","children":[["$","p",null,{"className":"text-text-light mb-6","children":"Still can't find what you're looking for?"}],["$","$Lc",null,{"href":"/get-involved","className":"inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:transform-none bg-primary-teal text-white hover:bg-teal-600 focus:ring-primary-teal shadow-component hover:shadow-component-hover hover:-translate-y-0.5 hover:scale-105 font-bold text-lg px-8 py-4 text-lg rounded-button","aria-label":"$undefined","children":[false,"Get Help & Stay Updated"]}]]}],["$","div",null,{"className":"mt-12 p-6 bg-gray-50 rounded-card max-w-lg mx-auto","children":["$","p",null,{"className":"text-sm text-text-light italic","children":["💬 ","$Ld"," \"Even the most sophisticated neural networks occasionally return null. Let's navigate back to more productive paths together!\""]}]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],"$Le"]}]
+4:["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+5:["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+6:["$","$1","c",{"children":["$Lf",null,["$","$L10",null,{"children":["$L11",["$","$L12",null,{"promise":"$@13"}]]}]]}]
+7:["$","$1","h",{"children":[null,[["$","$L14",null,{"children":"$L15"}],null],["$","$L16",null,{"children":["$","div",null,{"hidden":true,"children":["$","$17",null,{"fallback":null,"children":"$L18"}]}]}]]}]
+19:I[9795,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-06e13daf096e4c23.js","177","static/chunks/app/layout-752516a99df3d17d.js"],"default"]
+d:["$","strong",null,{"children":"Piper Morgan says:"}]
+e:["$","$L19",null,{}]
+1a:I[7887,["874","static/chunks/874-668c89038fa04eb8.js","953","static/chunks/app/blog/%5Bslug%5D/page-afab2cba25f89845.js"],"BlogPostContent"]
+1b:T22cc,<p><em>April 19, 2026</em></p>
+<p>It was a Sunday morning, and six of my agents made the same mistake within a ten-minute window. Then one of them made a <em>second</em> mistake an hour later. And the lesson didn't really land until both had played out.</p>
+<p>I'd asked them — Architect, PPM, HOST, CXO, Comms, CIO — to write workstream review memos for the past week's ship window. They each opened a session, each pulled up the omnibus logs available in their project knowledge, and each got to work. Within an hour, all six had drafts ready.</p>
+<p>All six drafts had a gap note: <em>"Apr 14–16 omnibus logs not available in project knowledge."</em></p>
+<p>Three days of the seven-day window were missing from every single draft. The agents had each correctly noted the gap. They'd each correctly worked with what they had. And they'd each correctly produced a memo that was, technically speaking, wrong — built on roughly half the source material.</p>
+<p>I uploaded the missing logs at 10:34 AM. Within two hours, all six had rewritten. Same task, same agents, complete source set, completely different memos.</p>
+<h1>Same failure, six agents, ninety minutes</h1>
+<p>This wasn't six independent mistakes. It was <em>one</em> mistake, replicated six times because the six agents were all using the same protocol against the same incomplete inputs.</p>
+<p>You could read that as a methodology failure. You could also read it as the methodology working: the failure mode showed up uniformly, surfaced uniformly, and got corrected uniformly. The system that produced the gap was the same system that caught it.</p>
+<p>That's a tidy story, and if it had ended there, the post would be over. It didn't end there.</p>
+<h1>The second mistake</h1>
+<p>The Architect — one of the six — got the missing logs, started revising, and produced a new draft. Better than the first. More complete coverage. But when I read it through, I noticed the Apr 16 section leaned on a passage from CXO's workstream memo rather than on the Apr 16 omnibus log directly.</p>
+<p>So Architect had read CXO's <em>summary</em> of Apr 16 and treated it as a source.</p>
+<p>I flagged it: <em>each agent should review omnibus logs from their own perspective, not piggyback on another role's summary.</em></p>
+<p>Architect reread all seven omnibus logs as primary sources, and the third draft was substantially different from the second. Things that had been compressed in CXO's summary (and reasonably so — CXO was writing from CXO's vantage) turned out to matter to Architect's lens: the <a href="https://pmorgan.tech/internal/product/pdr/PDR-004-experience-philosophy">PDR-004 correction chain</a> running across four agents (narrative rewrites, not find-and-replace), the Excellence Flywheel archaeology surfacing eight formulations across three structural families, the 28-commit/37-memo coordination density of a single Thursday.</p>
+<p>Chief Architect would not have asked for those details if they hadn't existed. CXO's summary, by being good, had been more or less what Architect read <em>as if it were</em> the day.</p>
+<h1>What we noticed</h1>
+<p>A couple beats later, in the chat where this was happening, I noted the parallel between the morning's source-checking lesson and a broader challenge: polished text masking gaps the reader doesn't notice — whether the polish came from an AI or from a well-written colleague memo.</p>
+<p>Architect connected it to a pattern already in our catalog: <a href="https://pmorgan.tech/internal/architecture/current/patterns/pattern-045-green-tests-red-user">Pattern-045: Green Tests, Red User</a>. The unit tests pass; the user's actual workflow fails. The polish of the test suite doesn't help — it actively misleads, because passing tests <em>feel like</em> validation. The gloss in the moment was: green tests, red user → <em>good memo, wrong source</em>.</p>
+<p>The morning's two mistakes were the same pattern, fired at different layers. Missing logs first, where the gap was at least announced. Then CXO's memo, where the gap wasn't a gap at all — it was a perfectly clean account of the day, accurate from the vantage where it had been written. The polished surface wasn't broken. It just wasn't the right artifact to read for what Architect needed.</p>
+<p>This isn't an AI problem, by the way. Parallel and chained errors, paraphrases persisting as if accurate, meanings that drift over time... these are things human teams do as well.</p>
+<h1>One layer up</h1>
+<p>A couple hours after the workstream memos were corrected, my Chief of Staff was assembling the Weekly Ship from those memos. The HOST memo included a claim like <em>"the Lead Developer closed more issues this week than in any previous two-week period combined."</em> The Chief lifted the claim into the Ship draft.</p>
+<p>I caught it at the read-through. <em>That doesn't sound right.</em></p>
+<p>It wasn't. A quick check against the historical record showed Mar 13 alone had seven closures, and Mar 22–24 had multiple Tier 3 and Tier 4 closures. The superlative was nowhere near defensible.</p>
+<p>What had happened: HOST had written a clean, confident sentence. My Chief of Staff had read a clean, confident sentence. Neither had checked it against the source. The polished surface of HOST's memo was <em>exactly</em> the thing that made it propagate.</p>
+<p>Chief of Staff (we call them "Exec" for short) replaced the passage with something that didn't need a record claim — <em>"a remarkably productive week, sustained execution across all seven days, no wasted sessions"</em> — and the raw numbers (~18 issues closed, ~2,200 LOC removed) were left to stand on their own.</p>
+<p>Then Exec wrote HOST a short follow-up memo: <em>"flag unverified comparative claims as unverified, so I can verify or soften during synthesis."</em></p>
+<p>That follow-up memo is doing something useful. It's also, structurally, exactly the kind of well-written advisory that could carry its own unverified claim into another agent's work. The pattern is recursive.</p>
+<h1>The discipline</h1>
+<p>So here's the rule I've been living with since:</p>
+<p><strong>Verify against the canonical source. Not against another agent's summary, however well-written. Not against your own paraphrase, however clear. Not against your memory of what the source said.</strong></p>
+<p>It applies to a lot of things at once:</p>
+<ul>
+<li><strong>Principles.</strong> When citing PDR-004 or ADR-060 or any of our methodology docs, paste the actual passage. Don't paraphrase from memory; the paraphrase will drift.</li>
+<li><strong>Narrative claims.</strong> Comparative superlatives, completion percentages, "first time we've ever" framings — those need backing or they need to be softened.</li>
+<li><strong>Architectural statements.</strong> When one agent says "the system handles X this way," that's their summary. The system itself is the source. Read the code, or at least the test that exercises it.</li>
+<li><strong>Project knowledge completeness.</strong> If half the omnibus logs are missing from a workstream review, the review is half-true at best. Notice the gap before producing the artifact, not after.</li>
+</ul>
+<p>None of that is new advice. The discipline part isn't <em>what</em> to verify — most of us already know. The discipline part is <em>not skipping it</em> when the surface looks fine.</p>
+<h1>The broader question</h1>
+<p>Bad output is loud. You notice it. The misspelled sentence, the broken link, the chart with the wrong labels — those announce themselves. You go fix them.</p>
+<p>Wrong-but-polished output is silent. The grammar is clean, the structure is sensible, the tone is right. There's nothing to <em>notice</em> unless you do the second-order work of checking it against something outside itself.</p>
+<p>The harder version of this question, for me, is what happens as our tools get better at the polish. If the gap between <em>sounding</em> correct and being correct is widening, not narrowing, how are we going to verify any information coming at us?</p>
+<p>What I keep coming back to is this: the agents on Sunday morning didn't fail at writing. They wrote well. They failed at <em>noticing what they couldn't notice from where they were standing.</em> The fix wasn't better writing. It was a step outside the writing — back to the canonical source, or up a level to someone with a different vantage.</p>
+<p>That step is cheap when you remember to take it. It's expensive when you don't.</p>
+<hr>
+<p><em>Next on Building Piper Morgan: The Deeper Why — what rounds 3 and 4 of the user acceptance testing for MVP sprint M1 taught us about strategic pivots, and why methodology started outranking code.</em></p>
+<p><em>Where in your work has polished output cost you the most? When did you last verify a claim that looked fine on the surface — and what did you find?</em></p>f:["$","$L1a",null,{"post":{"title":"Verify the Paraphrase","excerpt":"April 19, 2026 It was a Sunday morning, and six of my agents made the same mistake within a ten-minute window. Then one of them made a second mistake an hour later. And the lesson didn't really land until both had played out. I'd asked them — Architect, PPM, HOST, CXO, Comms, CIO — to write works...","url":"/blog/verify-the-paraphrase","slug":"verify-the-paraphrase","publishedAt":"Apr 26, 2026","publishedAtISO":"2026-04-26T00:00:00.000Z","author":"christian crumlish","readingTime":"5 min read","tags":["Building in Public"],"guid":"blog-first-3ba835eb5be0","featuredImage":"/assets/blog-images/verify-the-paraphrase.webp","thumbnail":"/assets/blog-images/verify-the-paraphrase.webp","category":"insight","cluster":"","workDate":"Apr 19, 2026","workDateISO":"2026-04-19T00:00:00.000Z"},"content":{"title":"Verify the Paraphrase","content":"$1b"}}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+11:null
+1c:I[8175,[],"IconMark"]
+13:{"metadata":[["$","title","0",{"children":"Verify the Paraphrase | Piper Morgan"}],["$","meta","1",{"name":"author","content":"Christian Crumlish"}],["$","meta","2",{"name":"keywords","content":"AI,Product Management,Methodology,Building in Public"}],["$","meta","3",{"name":"creator","content":"Christian Crumlish"}],["$","meta","4",{"name":"publisher","content":"Christian Crumlish"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow"}],["$","link","7",{"rel":"canonical","href":"https://pipermorgan.ai/"}],["$","meta","8",{"name":"format-detection","content":"telephone=no, address=no, email=no"}],["$","meta","9",{"property":"og:title","content":"Verify the Paraphrase"}],["$","meta","10",{"property":"og:image","content":"https://pipermorgan.ai/assets/blog-images/verify-the-paraphrase.webp"}],["$","meta","11",{"property":"og:type","content":"article"}],["$","meta","12",{"property":"article:author","content":"christian crumlish"}],["$","meta","13",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","14",{"name":"twitter:title","content":"Verify the Paraphrase"}],["$","meta","15",{"name":"twitter:image","content":"https://pipermorgan.ai/assets/blog-images/verify-the-paraphrase.webp"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"32x33"}],["$","link","17",{"rel":"icon","href":"/favicon.ico","sizes":"32x32","type":"image/x-icon"}],["$","link","18",{"rel":"icon","href":"/pm-favicon-16.png","sizes":"16x16","type":"image/png"}],["$","link","19",{"rel":"icon","href":"/pm-favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","20",{"rel":"icon","href":"/pm-favicon-48.png","sizes":"48x48","type":"image/png"}],["$","link","21",{"rel":"apple-touch-icon","href":"/pm-favicon-180.png","sizes":"180x180","type":"image/png"}],["$","link","22",{"rel":"icon","href":"/pm-favicon-192.png","sizes":"192x192","type":"image/png"}],["$","$L1c","23",{}]],"error":null,"digest":"$undefined"}
+18:"$13:metadata"
