@@ -1,5 +1,26 @@
 [
   {
+    "title": "Friction-Focused Feedback",
+    "excerpt": "March 19 Nine roles. Nine questionnaires. Nine responses. One hundred percent response rate. Well, they were agents. They had to respond. The question is, how do we elicit from cheerful dutiful agents what is and isn't working well from their point of view? This was the challenge I put to my Head...",
+    "url": "/blog/friction-focused-feedback",
+    "slug": "friction-focused-feedback",
+    "publishedAt": "May 3, 2026",
+    "publishedAtISO": "2026-05-03T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-e05231fb7e8e",
+    "featuredImage": "/assets/blog-images/friction-focused-feedback.webp",
+    "thumbnail": "/assets/blog-images/friction-focused-feedback.webp",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Mar 13, 2026",
+    "workDateISO": "2026-03-13T00:00:00.000Z",
+    "chatDate": "2026-03-13"
+  },
+  {
     "title": "The Drift You Don't Notice",
     "excerpt": "February 23 Our omnibus logs had stopped following the methodology. This was not an intentional decision. I didn't even notice it at first until I spot-checked a few logs and realized they had diverged from the spec. The documented methodology (number 20!) had evolved into a detailed rule set, wi...",
     "url": "/blog/the-drift-you-dont-notice",
@@ -15,10 +36,11 @@
     "featuredImage": "/assets/blog-images/the-drift-you-dont-notice.webp",
     "thumbnail": "/assets/blog-images/the-drift-you-dont-notice.webp",
     "category": "insight",
-    "cluster": "",
+    "cluster": "2026-05-02",
     "workDate": "Feb 1, 2026",
     "workDateISO": "2026-02-01T00:00:00.000Z",
-    "chatDate": "2026-02-01"
+    "chatDate": "2026-02-01",
+    "featured": false
   },
   {
     "title": "The Floor Comes Alive",
