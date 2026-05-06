@@ -1,5 +1,26 @@
 [
   {
+    "title": "Six Issues Before Dinner",
+    "excerpt": "April 14–15, 2026 It was afternoon and the Lead Developer started a session expecting to clean up two things that had been hanging around since the weekend. By dinnertime, six issues had closed. By the next morning, an entire sub-epic of our M2 testing infrastructure was done. By Wednesday night,...",
+    "url": "/blog/six-issues-before-dinner",
+    "slug": "six-issues-before-dinner",
+    "publishedAt": "May 5, 2026",
+    "publishedAtISO": "2026-05-05T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-bc12f6f87bcb",
+    "featuredImage": "/assets/blog-images/six-issues-before-dinner.webp",
+    "thumbnail": "/assets/blog-images/six-issues-before-dinner.webp",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Apr 14, 2026",
+    "workDateISO": "2026-04-14T00:00:00.000Z",
+    "chatDate": "2026-04-14"
+  },
+  {
     "title": "Friction-Focused Feedback",
     "excerpt": "March 19 Nine roles. Nine questionnaires. Nine responses. One hundred percent response rate. Well, they were agents. They had to respond. The question is, how do we elicit from cheerful dutiful agents what is and isn't working well from their point of view? This was the challenge I put to my Head...",
     "url": "/blog/friction-focused-feedback",
@@ -15,10 +36,11 @@
     "featuredImage": "/assets/blog-images/friction-focused-feedback.webp",
     "thumbnail": "/assets/blog-images/friction-focused-feedback.webp",
     "category": "insight",
-    "cluster": "",
+    "cluster": "2026-05-03",
     "workDate": "Mar 13, 2026",
     "workDateISO": "2026-03-13T00:00:00.000Z",
-    "chatDate": "2026-03-13"
+    "chatDate": "2026-03-13",
+    "featured": false
   },
   {
     "title": "The Drift You Don't Notice",
