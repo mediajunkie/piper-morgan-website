@@ -1,5 +1,26 @@
 [
   {
+    "title": "Weekly Ship #041: The Methodology Closes Its Own Loops",
+    "excerpt": "April 24–30, 2026 Last week we wrote that \"The Methodology Audits Itself\": the project's instruments turning inward and finding what wasn't yet captured. This week, the loops the audit identified started closing. The #992 ETHICS-ACTIVATE arc — five months, six phases, multiple architectural refra...",
+    "url": "/blog/weekly-ship-041-the-methodology-closes-its-own-loops",
+    "slug": "weekly-ship-041-the-methodology-closes-its-own-loops",
+    "publishedAt": "May 6, 2026",
+    "publishedAtISO": "2026-05-06T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-11034c2bc7ad",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "category": "ship",
+    "cluster": "",
+    "workDate": "Apr 24, 2026",
+    "workDateISO": "2026-04-24T00:00:00.000Z",
+    "chatDate": "2026-04-24"
+  },
+  {
     "title": "Six Issues Before Dinner",
     "excerpt": "April 14–15, 2026 It was afternoon and the Lead Developer started a session expecting to clean up two things that had been hanging around since the weekend. By dinnertime, six issues had closed. By the next morning, an entire sub-epic of our M2 testing infrastructure was done. By Wednesday night,...",
     "url": "/blog/six-issues-before-dinner",
@@ -15,10 +36,11 @@
     "featuredImage": "/assets/blog-images/six-issues-before-dinner.webp",
     "thumbnail": "/assets/blog-images/six-issues-before-dinner.webp",
     "category": "building",
-    "cluster": "",
+    "cluster": "2026-05-05",
     "workDate": "Apr 14, 2026",
     "workDateISO": "2026-04-14T00:00:00.000Z",
-    "chatDate": "2026-04-14"
+    "chatDate": "2026-04-14",
+    "featured": false
   },
   {
     "title": "Friction-Focused Feedback",
