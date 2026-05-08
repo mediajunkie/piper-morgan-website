@@ -1,5 +1,26 @@
 [
   {
+    "title": "A Hail of Memos",
+    "excerpt": "April 16, 2026 By the end of the day on Thursday, the project had moved twenty-eight commits and at least thirty-seven inter-agent memos across nine sessions spanning ten roles. But those are just numbers. Plus, why? What kind of day it was The morning opened at 6:38am with the Lead Developer del...",
+    "url": "/blog/a-hail-of-memos",
+    "slug": "a-hail-of-memos",
+    "publishedAt": "May 7, 2026",
+    "publishedAtISO": "2026-05-07T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-646d02695514",
+    "featuredImage": "/assets/blog-images/a-hail-of-memos.webp",
+    "thumbnail": "/assets/blog-images/a-hail-of-memos.webp",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Apr 16, 2026",
+    "workDateISO": "2026-04-16T00:00:00.000Z",
+    "chatDate": "2026-04-16"
+  },
+  {
     "title": "Weekly Ship #041: The Methodology Closes Its Own Loops",
     "excerpt": "April 24–30, 2026 Last week we wrote that \"The Methodology Audits Itself\": the project's instruments turning inward and finding what wasn't yet captured. This week, the loops the audit identified started closing. The #992 ETHICS-ACTIVATE arc — five months, six phases, multiple architectural refra...",
     "url": "/blog/weekly-ship-041-the-methodology-closes-its-own-loops",
@@ -15,10 +36,11 @@
     "featuredImage": "/assets/blog-images/piper-ship.webp",
     "thumbnail": "/assets/blog-images/piper-ship.webp",
     "category": "ship",
-    "cluster": "",
+    "cluster": "2026-05-06",
     "workDate": "Apr 24, 2026",
     "workDateISO": "2026-04-24T00:00:00.000Z",
-    "chatDate": "2026-04-24"
+    "chatDate": "2026-04-24",
+    "featured": false
   },
   {
     "title": "Six Issues Before Dinner",
