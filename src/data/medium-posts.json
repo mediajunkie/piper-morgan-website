@@ -1,5 +1,26 @@
 [
   {
+    "title": "The Inchworm Position",
+    "excerpt": "November 23 Sunday morning, preparing for our first alpha tester arriving Monday. Sprints reorganizing. Issues moving between epics. Priorities shifting. In my session log: \"Inchworm Position: 3.1.4.1\" That notation told me exactly where we were. Not vaguely \"working on alpha prep.\" Precisely: th...",
+    "url": "/blog/the-inchworm-position",
+    "slug": "the-inchworm-position",
+    "publishedAt": "May 11, 2026",
+    "publishedAtISO": "2026-05-11T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-f650f9fe9967",
+    "featuredImage": "/assets/blog-images/ai-inchworm.webp",
+    "thumbnail": "/assets/blog-images/ai-inchworm.webp",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Nov 23, 2025",
+    "workDateISO": "2025-11-23T00:00:00.000Z",
+    "chatDate": "2025-11-19"
+  },
+  {
     "title": "A Hail of Memos",
     "excerpt": "April 16, 2026 By the end of the day on Thursday, the project had moved twenty-eight commits and at least thirty-seven inter-agent memos across nine sessions spanning ten roles. But those are just numbers. Plus, why? What kind of day it was The morning opened at 6:38am with the Lead Developer del...",
     "url": "/blog/a-hail-of-memos",
@@ -15,10 +36,11 @@
     "featuredImage": "/assets/blog-images/a-hail-of-memos.webp",
     "thumbnail": "/assets/blog-images/a-hail-of-memos.webp",
     "category": "building",
-    "cluster": "",
+    "cluster": "2026-05-07",
     "workDate": "Apr 16, 2026",
     "workDateISO": "2026-04-16T00:00:00.000Z",
-    "chatDate": "2026-04-16"
+    "chatDate": "2026-04-16",
+    "featured": false
   },
   {
     "title": "Weekly Ship #041: The Methodology Closes Its Own Loops",
