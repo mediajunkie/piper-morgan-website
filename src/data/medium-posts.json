@@ -15,10 +15,11 @@
     "featuredImage": "/assets/blog-images/ai-inchworm.webp",
     "thumbnail": "/assets/blog-images/ai-inchworm.webp",
     "category": "insight",
-    "cluster": "",
+    "cluster": "2026-05-11",
     "workDate": "Nov 23, 2025",
     "workDateISO": "2025-11-23T00:00:00.000Z",
-    "chatDate": "2025-11-19"
+    "chatDate": "2025-11-19",
+    "featured": false
   },
   {
     "title": "A Hail of Memos",
