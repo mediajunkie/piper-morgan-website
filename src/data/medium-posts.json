@@ -1,5 +1,25 @@
 [
   {
+    "title": "Audit and Talk",
+    "excerpt": "April 17, 2026 I gave a Friday morning talk at the Information Architecture Conference in Philadelphia called Ethics as Information Architecture. The premise is that ethics-as-afterthought (content moderation, terms of service, warnings bolted onto a finished system) is the guardrail at the cliff...",
+    "url": "/blog/audit-and-talk",
+    "slug": "audit-and-talk",
+    "publishedAt": "May 12, 2026",
+    "publishedAtISO": "2026-05-12T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-606453f1c577",
+    "featuredImage": "/assets/blog-images/audit-and-talk.webp",
+    "thumbnail": "/assets/blog-images/audit-and-talk.webp",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Apr 17, 2026",
+    "workDateISO": "2026-04-17T00:00:00.000Z"
+  },
+  {
     "title": "The Inchworm Position",
     "excerpt": "November 23 Sunday morning, preparing for our first alpha tester arriving Monday. Sprints reorganizing. Issues moving between epics. Priorities shifting. In my session log: \"Inchworm Position: 3.1.4.1\" That notation told me exactly where we were. Not vaguely \"working on alpha prep.\" Precisely: th...",
     "url": "/blog/the-inchworm-position",
