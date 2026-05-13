@@ -15,9 +15,10 @@
     "featuredImage": "/assets/blog-images/piper-ship.webp",
     "thumbnail": "/assets/blog-images/piper-ship.webp",
     "category": "ship",
-    "cluster": "",
+    "cluster": "2026-05-13",
     "workDate": "May 1, 2026",
-    "workDateISO": "2026-05-01T00:00:00.000Z"
+    "workDateISO": "2026-05-01T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Audit and Talk",
