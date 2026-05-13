@@ -1,5 +1,25 @@
 [
   {
+    "title": "Weekly Ship #042: What Was Working Got Written Down",
+    "excerpt": "May 1–7, 2026 This week the practices behind the team's recent shipping pace got written down. Three process documents landed in a single day: a review-gate policy from the product-management role, a completion checklist for the current build milestone, and the opening of a discovery conversation...",
+    "url": "/blog/weekly-ship-042-what-was-working-got-written-down",
+    "slug": "weekly-ship-042-what-was-working-got-written-down",
+    "publishedAt": "May 13, 2026",
+    "publishedAtISO": "2026-05-13T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-4904bbda14aa",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "category": "ship",
+    "cluster": "",
+    "workDate": "May 1, 2026",
+    "workDateISO": "2026-05-01T00:00:00.000Z"
+  },
+  {
     "title": "Audit and Talk",
     "excerpt": "April 17, 2026 I gave a Friday morning talk at the Information Architecture Conference in Philadelphia called Ethics as Information Architecture. The premise is that ethics-as-afterthought (content moderation, terms of service, warnings bolted onto a finished system) is the guardrail at the cliff...",
     "url": "/blog/audit-and-talk",
@@ -15,9 +35,10 @@
     "featuredImage": "/assets/blog-images/audit-and-talk.webp",
     "thumbnail": "/assets/blog-images/audit-and-talk.webp",
     "category": "building",
-    "cluster": "",
+    "cluster": "2026-05-12",
     "workDate": "Apr 17, 2026",
-    "workDateISO": "2026-04-17T00:00:00.000Z"
+    "workDateISO": "2026-04-17T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Inchworm Position",
