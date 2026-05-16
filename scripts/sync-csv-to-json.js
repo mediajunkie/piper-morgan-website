@@ -60,7 +60,7 @@ console.log(`📊 CSV: ${csvData.length} entries\n`);
 const metadataMap = new Map();
 csvData.forEach(line => {
   const fields = parseCsvRow(line);
-  const [slug, hashId, title, chatDate, imageSlug, workDate, pubDate, category, cluster, featured, notes] = fields;
+  const [slug, hashId, title, chatDate, imageSlug, imageAlt, imageCaption, workDate, pubDate, category, cluster, featured, notes] = fields;
 
   metadataMap.set(hashId, {
     slug,
@@ -68,7 +68,9 @@ csvData.forEach(line => {
     category,
     cluster,
     featured,
-    notes
+    notes,
+    imageAlt,
+    imageCaption
   });
 });
 

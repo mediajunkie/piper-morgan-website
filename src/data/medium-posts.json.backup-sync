@@ -1,5 +1,330 @@
 [
   {
+    "title": "Same Failure, Six Agents, Ninety Minutes",
+    "excerpt": "April 19, 2026 The morning I want to tell you about lasted ninety minutes from kickoff to correction. Six agents, six independent sessions, the same task, the same resource gap (my fault), the same need to fix. Six sessions, ten minutes It was Sunday. I was on a train from Philadelphia to DC, hun...",
+    "url": "/blog/same-failure-six-agents-ninety-minutes",
+    "slug": "same-failure-six-agents-ninety-minutes",
+    "publishedAt": "May 14, 2026",
+    "publishedAtISO": "2026-05-14T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-489a1d49895b",
+    "featuredImage": "/assets/blog-images/same-failure-six-agents-ninety-minutes.webp",
+    "thumbnail": "/assets/blog-images/same-failure-six-agents-ninety-minutes.webp",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Apr 19, 2026",
+    "workDateISO": "2026-04-19T00:00:00.000Z",
+    "imageAlt": "A high-speed train entering a rail junction where six parallel tracks branch into different analytical landscapes before merging again, with one exaggerated claim diverted onto a repair siding",
+    "imageCaption": "People get ready!"
+  },
+  {
+    "title": "Weekly Ship #042: What Was Working Got Written Down",
+    "excerpt": "May 1–7, 2026 This week the practices behind the team's recent shipping pace got written down. Three process documents landed in a single day: a review-gate policy from the product-management role, a completion checklist for the current build milestone, and the opening of a discovery conversation...",
+    "url": "/blog/weekly-ship-042-what-was-working-got-written-down",
+    "slug": "weekly-ship-042-what-was-working-got-written-down",
+    "publishedAt": "May 13, 2026",
+    "publishedAtISO": "2026-05-13T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-4904bbda14aa",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "category": "ship",
+    "cluster": "2026-05-13",
+    "workDate": "May 1, 2026",
+    "workDateISO": "2026-05-01T00:00:00.000Z",
+    "featured": false,
+    "imageAlt": "A boy leads a boat crewed by robots."
+  },
+  {
+    "title": "Audit and Talk",
+    "excerpt": "April 17, 2026 I gave a Friday morning talk at the Information Architecture Conference in Philadelphia called Ethics as Information Architecture. The premise is that ethics-as-afterthought (content moderation, terms of service, warnings bolted onto a finished system) is the guardrail at the cliff...",
+    "url": "/blog/audit-and-talk",
+    "slug": "audit-and-talk",
+    "publishedAt": "May 12, 2026",
+    "publishedAtISO": "2026-05-12T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-606453f1c577",
+    "featuredImage": "/assets/blog-images/audit-and-talk.webp",
+    "thumbnail": "/assets/blog-images/audit-and-talk.webp",
+    "category": "building",
+    "cluster": "2026-05-12",
+    "workDate": "Apr 17, 2026",
+    "workDateISO": "2026-04-17T00:00:00.000Z",
+    "featured": false,
+    "imageAlt": "Cross-section cartoon of glowing AI beings maintaining a hidden routing machine beneath a fragile cliffside roadway full of warning barriers and drifting mismatched diagrams, showing structure quietly preventing unsafe paths before they can be reached.",
+    "imageCaption": "Safety first!"
+  },
+  {
+    "title": "The Inchworm Position",
+    "excerpt": "November 23 Sunday morning, preparing for our first alpha tester arriving Monday. Sprints reorganizing. Issues moving between epics. Priorities shifting. In my session log: \"Inchworm Position: 3.1.4.1\" That notation told me exactly where we were. Not vaguely \"working on alpha prep.\" Precisely: th...",
+    "url": "/blog/the-inchworm-position",
+    "slug": "the-inchworm-position",
+    "publishedAt": "May 11, 2026",
+    "publishedAtISO": "2026-05-11T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-f650f9fe9967",
+    "featuredImage": "/assets/blog-images/ai-inchworm.webp",
+    "thumbnail": "/assets/blog-images/ai-inchworm.webp",
+    "category": "insight",
+    "cluster": "2026-05-11",
+    "workDate": "Nov 23, 2025",
+    "workDateISO": "2025-11-23T00:00:00.000Z",
+    "chatDate": "2025-11-19",
+    "featured": false,
+    "imageAlt": "An inchworm traverses a branching numbered tree while a human and glowing AI-being observe its precise progress through the hierarchy.",
+    "imageCaption": "How does that song go?"
+  },
+  {
+    "title": "A Hail of Memos",
+    "excerpt": "April 16, 2026 By the end of the day on Thursday, the project had moved twenty-eight commits and at least thirty-seven inter-agent memos across nine sessions spanning ten roles. But those are just numbers. Plus, why? What kind of day it was The morning opened at 6:38am with the Lead Developer del...",
+    "url": "/blog/a-hail-of-memos",
+    "slug": "a-hail-of-memos",
+    "publishedAt": "May 7, 2026",
+    "publishedAtISO": "2026-05-07T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-646d02695514",
+    "featuredImage": "/assets/blog-images/a-hail-of-memos.webp",
+    "thumbnail": "/assets/blog-images/a-hail-of-memos.webp",
+    "category": "building",
+    "cluster": "2026-05-07",
+    "workDate": "Apr 16, 2026",
+    "workDateISO": "2026-04-16T00:00:00.000Z",
+    "chatDate": "2026-04-16",
+    "featured": false,
+    "imageAlt": "Figure at center of a radial storm of incoming message-slips, struggling to catch them while working.",
+    "imageCaption": "Let me get back to you on that!"
+  },
+  {
+    "title": "Weekly Ship #041: The Methodology Closes Its Own Loops",
+    "excerpt": "April 24–30, 2026 Last week we wrote that \"The Methodology Audits Itself\": the project's instruments turning inward and finding what wasn't yet captured. This week, the loops the audit identified started closing. The #992 ETHICS-ACTIVATE arc — five months, six phases, multiple architectural refra...",
+    "url": "/blog/weekly-ship-041-the-methodology-closes-its-own-loops",
+    "slug": "weekly-ship-041-the-methodology-closes-its-own-loops",
+    "publishedAt": "May 6, 2026",
+    "publishedAtISO": "2026-05-06T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-11034c2bc7ad",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "category": "ship",
+    "cluster": "2026-05-06",
+    "workDate": "Apr 24, 2026",
+    "workDateISO": "2026-04-24T00:00:00.000Z",
+    "chatDate": "2026-04-24",
+    "featured": false,
+    "imageAlt": "A child leads a ship operated by robots."
+  },
+  {
+    "title": "Six Issues Before Dinner",
+    "excerpt": "April 14–15, 2026 It was afternoon and the Lead Developer started a session expecting to clean up two things that had been hanging around since the weekend. By dinnertime, six issues had closed. By the next morning, an entire sub-epic of our M2 testing infrastructure was done. By Wednesday night,...",
+    "url": "/blog/six-issues-before-dinner",
+    "slug": "six-issues-before-dinner",
+    "publishedAt": "May 5, 2026",
+    "publishedAtISO": "2026-05-05T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-bc12f6f87bcb",
+    "featuredImage": "/assets/blog-images/six-issues-before-dinner.webp",
+    "thumbnail": "/assets/blog-images/six-issues-before-dinner.webp",
+    "category": "building",
+    "cluster": "2026-05-05",
+    "workDate": "Apr 14, 2026",
+    "workDateISO": "2026-04-14T00:00:00.000Z",
+    "chatDate": "2026-04-14",
+    "featured": false,
+    "imageAlt": "A calm engineer stands beside a large, smoothly turning flywheel machine, where completed tasks gently drop off as the system runs.",
+    "imageCaption": "Like a Swiss watch..."
+  },
+  {
+    "title": "Friction-Focused Feedback",
+    "excerpt": "March 19 Nine roles. Nine questionnaires. Nine responses. One hundred percent response rate. Well, they were agents. They had to respond. The question is, how do we elicit from cheerful dutiful agents what is and isn't working well from their point of view? This was the challenge I put to my Head...",
+    "url": "/blog/friction-focused-feedback",
+    "slug": "friction-focused-feedback",
+    "publishedAt": "May 3, 2026",
+    "publishedAtISO": "2026-05-03T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-e05231fb7e8e",
+    "featuredImage": "/assets/blog-images/friction-focused-feedback.webp",
+    "thumbnail": "/assets/blog-images/friction-focused-feedback.webp",
+    "category": "insight",
+    "cluster": "2026-05-03",
+    "workDate": "Mar 13, 2026",
+    "workDateISO": "2026-03-13T00:00:00.000Z",
+    "chatDate": "2026-03-13",
+    "featured": false,
+    "imageAlt": "Hand-drawn cartoon of small agents sending gear ideas through a narrowing filter into a strained central machine; complex add-ons jam it, while simple parts pass through and make the gears run smoothly.",
+    "imageCaption": "Now, don't all shout at once!"
+  },
+  {
+    "title": "The Drift You Don't Notice",
+    "excerpt": "February 23 Our omnibus logs had stopped following the methodology. This was not an intentional decision. I didn't even notice it at first until I spot-checked a few logs and realized they had diverged from the spec. The documented methodology (number 20!) had evolved into a detailed rule set, wi...",
+    "url": "/blog/the-drift-you-dont-notice",
+    "slug": "the-drift-you-dont-notice",
+    "publishedAt": "May 2, 2026",
+    "publishedAtISO": "2026-05-02T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-9e28582a41f9",
+    "featuredImage": "/assets/blog-images/the-drift-you-dont-notice.webp",
+    "thumbnail": "/assets/blog-images/the-drift-you-dont-notice.webp",
+    "category": "insight",
+    "cluster": "2026-05-02",
+    "workDate": "Feb 1, 2026",
+    "workDateISO": "2026-02-01T00:00:00.000Z",
+    "chatDate": "2026-02-01",
+    "featured": false,
+    "imageAlt": "A ghostlike clerk feeds ‘yesterday’s’ page into a copier while a nearby ‘Original Spec’ sits unused, as the output copies become progressively faded and warped; a supervisor watches, realizing the issue.",
+    "imageCaption": "Just as good as the original!"
+  },
+  {
+    "title": "The Floor Comes Alive",
+    "excerpt": "April 8–10 Wednesday evening. Third time at the same gate. We've been throwing ourselves at the \"conversational floor\" repeatedly and somehow missing. Three lines of code had changed since the last attempt — model identifiers updated, error classifier improved. The CXO had the same scoring rubric...",
+    "url": "/blog/the-floor-comes-alive",
+    "slug": "the-floor-comes-alive",
+    "publishedAt": "Apr 30, 2026",
+    "publishedAtISO": "2026-04-30T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-17df4367fc2c",
+    "featuredImage": "/assets/blog-images/the-floor-comes-alive.webp",
+    "thumbnail": "/assets/blog-images/the-floor-comes-alive.webp",
+    "category": "building",
+    "cluster": "2026-04-30",
+    "workDate": "Apr 8, 2026",
+    "workDateISO": "2026-04-08T00:00:00.000Z",
+    "chatDate": "2026-04-08",
+    "featured": false,
+    "imageAlt": "Person kneels on a smooth tiled floor as a small crack reveals a softly glowing, living layer beneath.",
+    "imageCaption": "Who said that?"
+  },
+  {
+    "title": "Weekly Ship #040: The Methodology Audits Itself",
+    "excerpt": "April 17–23, 2026 Last week's \"The Voice Takes Shape\" closed M1 and shipped three M2 sub-epics in five working days. This week, the project turned its instruments inward. The CIO delivered an M1 methodology audit on April 17 with one disquieting headline: the methodology is operationally the stro...",
+    "url": "/blog/weekly-ship-040-the-methodology-audits-itself",
+    "slug": "weekly-ship-040-the-methodology-audits-itself",
+    "publishedAt": "Apr 29, 2026",
+    "publishedAtISO": "2026-04-29T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-af11a99e8f6f",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "category": "ship",
+    "cluster": "2026-04-29",
+    "workDate": "Apr 23, 2026",
+    "workDateISO": "2026-04-23T00:00:00.000Z",
+    "featured": false,
+    "imageAlt": "A person leads a small boat crewed by robots."
+  },
+  {
+    "title": "The Deeper Why",
+    "excerpt": "April 7–8 The same evening the conversational gate failed for the second time, something else happened. My PM assistant was reviewing the backlog — sixteen issues I suspected were outdated — and surfaced an insight I wasn't consciously expecting. The project had changed. Not in the obvious ways —...",
+    "url": "/blog/the-deeper-why",
+    "slug": "the-deeper-why",
+    "publishedAt": "Apr 28, 2026",
+    "publishedAtISO": "2026-04-28T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-be372d6ded94",
+    "featuredImage": "/assets/blog-images/the-deeper-why.webp",
+    "thumbnail": "/assets/blog-images/the-deeper-why.webp",
+    "category": "building",
+    "cluster": "2026-04-28",
+    "workDate": "Apr 8, 2026",
+    "workDateISO": "2026-04-08T00:00:00.000Z",
+    "featured": false,
+    "imageAlt": "Hand-drawn cutaway of a backyard pool: people enjoy calm, clear water above while below an overly complex maze of pipes and labeled systems shows unnecessary engineering beneath a simple, working experience.",
+    "imageCaption": "The water's fine!"
+  },
+  {
+    "title": "Verify the Paraphrase",
+    "excerpt": "April 19, 2026 It was a Sunday morning, and six of my agents made the same mistake within a ten-minute window. Then one of them made a second mistake an hour later. And the lesson didn't really land until both had played out. I'd asked them — Architect, PPM, HOST, CXO, Comms, CIO — to write works...",
+    "url": "/blog/verify-the-paraphrase",
+    "slug": "verify-the-paraphrase",
+    "publishedAt": "Apr 26, 2026",
+    "publishedAtISO": "2026-04-26T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-3ba835eb5be0",
+    "featuredImage": "/assets/blog-images/verify-the-paraphrase.webp",
+    "thumbnail": "/assets/blog-images/verify-the-paraphrase.webp",
+    "category": "insight",
+    "cluster": "2026-04-26",
+    "workDate": "Apr 19, 2026",
+    "workDateISO": "2026-04-19T00:00:00.000Z",
+    "featured": false,
+    "imageAlt": "A whisper chain simplifies a message into a confident claim while one person checks a detailed source book showing different information.",
+    "imageCaption": "Behold! The confidence of the mediocre..."
+  },
+  {
+    "title": "The Multi-Wave Investigation",
+    "excerpt": "December 25, 2025 We had a problem: 44 new canonical queries to investigate. Each one needed infrastructure assessment, blocker identification, implementation complexity rating. Traditional approach: investigate them one by one, maybe three or four per session. At that pace, the reconnaissance al...",
+    "url": "/blog/the-multi-wave-investigation",
+    "slug": "the-multi-wave-investigation",
+    "publishedAt": "Apr 25, 2026",
+    "publishedAtISO": "2026-04-25T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-d5599bc8d691",
+    "featuredImage": "/assets/blog-images/the-multi-wave-investigation.webp",
+    "thumbnail": "/assets/blog-images/the-multi-wave-investigation.webp",
+    "category": "insight",
+    "cluster": "2026-04-25",
+    "workDate": "Dec 25, 2025",
+    "workDateISO": "2025-12-25T00:00:00.000Z",
+    "featured": false,
+    "imageAlt": "Hand-drawn scene of a person directing waves of searchlights across a landscape, revealing systems, categories, and obstacles, with a central map summarizing findings.",
+    "imageCaption": "\"Fan out!\""
+  },
+  {
     "title": "The Gate",
     "excerpt": "April 3–7 Thursday night. Ten-thirty. Testing a fresh alpha account on a clean machine. The CXO had a scoring rubric ready based on the Colleague Test: three dimensions, zero through three on each, seven to pass, any zero auto-fails. Nine queries lined up. Five task lifecycle scenarios. We'd been...",
     "url": "/blog/the-gate",
@@ -15,9 +340,12 @@
     "featuredImage": "/assets/blog-images/the-gate.webp",
     "thumbnail": "/assets/blog-images/the-gate.webp",
     "category": "building",
-    "cluster": "",
+    "cluster": "2026-04-24",
     "workDate": "Apr 3, 2026",
-    "workDateISO": "2026-04-03T00:00:00.000Z"
+    "workDateISO": "2026-04-03T00:00:00.000Z",
+    "featured": false,
+    "imageAlt": "A path of varied inputs is diverted before reaching a large gate, emerging instead as identical gray boxes while a person looks on in confusion.",
+    "imageCaption": "\"Wait, what?\""
   },
   {
     "title": "Weekly Ship #039: The Voice Takes Shape",
@@ -38,7 +366,8 @@
     "cluster": "2026-04-22",
     "workDate": "Apr 16, 2026",
     "workDateISO": "2026-04-16T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A person leads a small boat crewed by robots."
   },
   {
     "title": "Four Roles, Ninety Minutes",
@@ -59,7 +388,9 @@
     "cluster": "2026-04-21",
     "workDate": "Mar 23, 2026",
     "workDateISO": "2026-03-23T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Four roles working separately in a small office diagram, sending memos back and forth while a lead developer assembles a design document.",
+    "imageCaption": "\"No meeting? How will we interrupt each other?\""
   },
   {
     "title": "Sibling Intelligence",
@@ -80,7 +411,9 @@
     "cluster": "2026-04-19",
     "workDate": "Mar 19, 2026",
     "workDateISO": "2026-03-19T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A hand-drawn cartoon of a person sweeping a metal detector across a beach scattered with small objects like papers, gears, and abstract shapes. Most items remain dull and half-buried, but a few glow softly as the detector passes over them. The person kneels to collect only the glowing items into a small pouch, leaving the rest behind.",
+    "imageCaption": "\"Solid gold!\""
   },
   {
     "title": "Thirteen Mailboxes",
@@ -101,7 +434,9 @@
     "cluster": "2026-04-18",
     "workDate": "Jan 13, 2026",
     "workDateISO": "2026-01-13T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A human postal worker moves a letter from one mailbox to another in a wall of many adjacent mailboxes, most marked with abstract AI-like symbols, suggesting manual message routing between neighboring agents.",
+    "imageCaption": "\"You've got mail!\""
   },
   {
     "title": "The Migration",
@@ -122,7 +457,9 @@
     "cluster": "2026-04-16",
     "workDate": "Mar 28, 2026",
     "workDateISO": "2026-03-28T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A human guides a line of small AI helpers carrying boxes from a cluttered room into a clean one through a central doorway.",
+    "imageCaption": "Time to unpack!"
   },
   {
     "title": "Weekly Ship #038: The Floor Comes Alive",
@@ -143,7 +480,8 @@
     "cluster": "2026-04-15",
     "workDate": "Apr 3, 2026",
     "workDateISO": "2026-04-03T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A person leads a small boat crewed by robots."
   },
   {
     "title": "The Closing Sprint",
@@ -164,7 +502,9 @@
     "cluster": "2026-04-14",
     "workDate": "Mar 22, 2026",
     "workDateISO": "2026-03-22T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A runner crosses a finish line on a newly solid track while ghostly alternate paths converge behind them guided by glowing translucent AI companions assembling the final pieces in midair.",
+    "imageCaption": "Almost there!"
   },
   {
     "title": "Archaeological Debugging: Finding What You’ve Already Built",
@@ -205,7 +545,9 @@
     "workDate": "Dec 22, 2025",
     "workDateISO": "2025-12-22T00:00:00.000Z",
     "chatDate": "12/22/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Developer and AI agents excavate a giant scarab labeled with existing features uncovering fully built code buried under layers of old issues and TODOs.",
+    "imageCaption": "The legends were true!"
   },
   {
     "title": "The No-Anchoring Roundtable",
@@ -227,7 +569,9 @@
     "workDate": "Mar 14, 2026",
     "workDateISO": "2026-03-14T00:00:00.000Z",
     "chatDate": "3/14/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Human and four glowing AI agents sit at a round table each writing independently behind small dividers unable to see each other's answers.",
+    "imageCaption": "No peeking!"
   },
   {
     "title": "Nine Voices",
@@ -249,7 +593,9 @@
     "workDate": "Mar 19, 2026",
     "workDateISO": "2026-03-19T00:00:00.000Z",
     "chatDate": "3/19/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A restaurant kitchen where multiple cooks seamlessly pass a single dish along in perfect coordination while a surprised chef watches.",
+    "imageCaption": "Bon appetit!"
   },
   {
     "title": "Weekly Ship #037: New Ground",
@@ -271,7 +617,8 @@
     "workDate": "Mar 27, 2026",
     "workDateISO": "2026-03-27T00:00:00.000Z",
     "chatDate": "3/27/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Piper Morgan ship illustration"
   },
   {
     "title": "Fixing the Foundation",
@@ -293,7 +640,9 @@
     "workDate": "Mar 17, 2026",
     "workDateISO": "2026-03-17T00:00:00.000Z",
     "chatDate": "3/17/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A presenter stands ready under a spotlight while small AI helpers hurriedly clean up messy mislabeled props and backdrops behind the scenes.",
+    "imageCaption": "The show must go on!"
   },
   {
     "title": "The Mismatch Category",
@@ -315,7 +664,9 @@
     "workDate": "Mar 3, 2026",
     "workDateISO": "2026-03-03T00:00:00.000Z",
     "chatDate": "3/3/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Two AI figures attempt greetings—one offers a handshake the other a fist bump—while a human observes their near miss.",
+    "imageCaption": "I see the problem!"
   },
   {
     "title": "Silent Failures",
@@ -337,7 +688,9 @@
     "workDate": "Mar 3, 2026",
     "workDateISO": "2026-03-03T00:00:00.000Z",
     "chatDate": "3/3/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Airport departures board shows all flights on time while outside planes are visibly broken and patched up.",
+    "imageCaption": "What could possibly go wrong?"
   },
   {
     "title": "The Floor That Wasn't",
@@ -359,7 +712,9 @@
     "workDate": "Mar 15, 2026",
     "workDateISO": "2026-03-15T00:00:00.000Z",
     "chatDate": "3/15/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A person stands in the rain getting soaked while a nearby umbrella is open but not covering them, as abstract figures proudly present it.",
+    "imageCaption": "Dry as a bone"
   },
   {
     "title": "Weekly Ship #036: Approaching the Gate",
@@ -381,7 +736,8 @@
     "workDate": "Mar 20, 2026",
     "workDateISO": "2026-03-20T00:00:00.000Z",
     "chatDate": "3/20/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Piper Morgan ship illustration"
   },
   {
     "title": "Are We Doing It Backwards?",
@@ -403,7 +759,9 @@
     "workDate": "Mar 14, 2026",
     "workDateISO": "2026-03-14T00:00:00.000Z",
     "chatDate": "3/14/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "People struggle to reach an AI on the ceiling amid tangled machinery, while others stand easily on a glowing AI floor in a calm, open space nearby.",
+    "imageCaption": "Does something seem off to you?"
   },
   {
     "title": "Wiring vs. Wizardry",
@@ -602,7 +960,8 @@
     "workDateISO": "2026-02-28T00:00:00.000Z",
     "category": "building",
     "cluster": "2026-03-17",
-    "featured": false
+    "featured": false,
+    "imageCaption": "ai-four-voices.webp"
   },
   {
     "title": "Accepting Architectural Limits: When 67% Is Complete",
@@ -902,7 +1261,8 @@
     "workDateISO": "2026-02-22T00:00:00.000Z",
     "category": "insight",
     "cluster": "2026-02-22",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-upstream.webp"
   },
   {
     "title": "The Forcing Function",
@@ -1002,7 +1362,8 @@
     "workDateISO": "2026-02-15T00:00:00.000Z",
     "category": "insight",
     "cluster": "2026-02-15",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-maze.webp"
   },
   {
     "title": "Investigation as Investment: Saving Time in Advance",
@@ -2152,7 +2513,8 @@
     "workDateISO": "2025-11-23T00:00:00.000Z",
     "category": "insight",
     "cluster": "2025-11-23",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-expand.webp"
   },
   {
     "title": "The Pattern Detective’s Evolution: From Curator to Noticer",
@@ -2202,7 +2564,8 @@
     "workDateISO": "2025-11-21T00:00:00.000Z",
     "category": "insight",
     "cluster": "2025-11-21",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-converge.webp"
   },
   {
     "title": "Foundation Stones & Strategic Breakthroughs",
@@ -2502,7 +2865,8 @@
     "workDateISO": "2025-11-09T00:00:00.000Z",
     "category": "insight",
     "cluster": "2025-11-09",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-fixes.webp"
   },
   {
     "title": "Missing the Conceptual Forest for the Syntax Trees: What We Learned When Pattern Detection Found…",
@@ -2552,7 +2916,8 @@
     "workDateISO": "2025-11-07T00:00:00.000Z",
     "category": "insight",
     "cluster": "2025-11-07",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-fixit.webp"
   },
   {
     "title": "The Two Realities Problem: When Your Database is Sophisticated and Your Web Tier Has Zero Auth",
@@ -2652,7 +3017,8 @@
     "workDateISO": "2025-11-04T00:00:00.000Z",
     "category": "insight",
     "cluster": "2025-11-04",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-brochure.webp"
   },
   {
     "title": "When Documentation Becomes Critical: The 1,630 Lines That Stand Between Alpha and Chaos",
@@ -2677,7 +3043,8 @@
     "workDateISO": "2025-11-03T00:00:00.000Z",
     "category": "insight",
     "cluster": "2025-11-03",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-flood.webp"
   },
   {
     "title": "The Discovery Testing Philosophy: Testing What Matters for Alpha",
@@ -3399,7 +3766,8 @@
     "workDateISO": "2025-08-19T00:00:00.000Z",
     "category": "insight",
     "cluster": "2025-10-12",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-discovery.webp"
   },
   {
     "title": "Systemic Kindness: Building Methodology That Feels Supportive",
@@ -3992,7 +4360,8 @@
     "workDateISO": "2025-09-11T00:00:00.000Z",
     "cluster": "2025-09-18",
     "chatDate": "9/9/2025",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-locomotive.webp"
   },
   {
     "title": "Train Tracks vs Free-for-All: When Methodology Becomes Infrastructure",
@@ -4055,7 +4424,8 @@
     "workDateISO": "2025-09-08T00:00:00.000Z",
     "cluster": "2025-09-15",
     "chatDate": "9/6/2025",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-pottery.webp"
   },
   {
     "title": "When Methodology Meets Reality: Building While Learning",
@@ -4621,7 +4991,8 @@
     "workDateISO": "2025-08-11T00:00:00.000Z",
     "cluster": "2025-08-19",
     "chatDate": "8/10/2025",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-archaeologists.webp"
   },
   {
     "title": "The archaeology expedition that found automation gold",
@@ -5310,7 +5681,8 @@
     "workDate": "Jul 12, 2025",
     "workDateISO": "2025-07-12T00:00:00.000Z",
     "cluster": "2025-08-01",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-weekend.webp"
   },
   {
     "title": "The AI Detective Squad: When Three Agents Solve One Mystery",
@@ -5372,7 +5744,8 @@
     "workDateISO": "2025-07-10T00:00:00.000Z",
     "cluster": "2025-09-07",
     "chatDate": "7/9/2025",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-drivered.webp"
   },
   {
     "title": "When the Bugs Lead You Home",
@@ -6149,7 +6522,8 @@
     "workDate": "Jun 9, 2025",
     "workDateISO": "2025-06-09T00:00:00.000Z",
     "cluster": "2025-07-07",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-critique.webp"
   },
   {
     "title": "Small Scripts Win: Building Knowledge That Actually Knows Things",
