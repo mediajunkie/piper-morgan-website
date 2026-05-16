@@ -370,6 +370,8 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
       if (metadata && metadata.slug) {
         rssPost.slug = metadata.slug;
         rssPost.url = `/blog/${metadata.slug}`; // Update URL to slug-based
+        if (metadata.imageAlt) rssPost.imageAlt = metadata.imageAlt;
+        if (metadata.imageCaption) rssPost.imageCaption = metadata.imageCaption;
         console.log(`  🏷️  Merged CSV metadata: slug="${metadata.slug}"`);
       } else {
         // WARNING: No CSV metadata - this post needs to be added to blog-metadata.csv
@@ -452,6 +454,8 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
       guid: `blog-first-${meta.hashId}`,
       featuredImage: meta.imageSlug ? `/assets/blog-images/${meta.imageSlug}` : null,
       thumbnail: meta.imageSlug ? `/assets/blog-images/${meta.imageSlug}` : null,
+      imageAlt: meta.imageAlt || '',
+      imageCaption: meta.imageCaption || '',
       category: meta.category || '',
       cluster: meta.cluster || '',
       workDate: meta.workDate ? formatDate(meta.workDate) : '',
@@ -514,6 +518,14 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
         // Add category from CSV (Phase 7: Category System)
         if (metadata.category) {
           post.category = metadata.category;
+        }
+
+        // Add alt text and caption from CSV (accessibility + blog-first caption rendering)
+        if (metadata.imageAlt) {
+          post.imageAlt = metadata.imageAlt;
+        }
+        if (metadata.imageCaption) {
+          post.imageCaption = metadata.imageCaption;
         }
 
         csvMergedCount++;

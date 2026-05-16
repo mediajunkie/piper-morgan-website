@@ -11,6 +11,8 @@ interface BlogPost {
   workDate?: string;
   author: string;
   featuredImage?: string;
+  imageAlt?: string;
+  imageCaption?: string;
   tags?: string[];
 }
 
@@ -54,7 +56,8 @@ export function BlogPostContent({ post, content }: BlogPostContentProps) {
     return null;
   };
 
-  const imageCaption = extractCaption(content.content);
+  // Prefer CSV-sourced caption (blog-first posts), fall back to HTML-extracted caption (Medium RSS posts)
+  const imageCaption = post.imageCaption || extractCaption(content.content);
 
   // Clean Medium HTML content
   const cleanContent = (html: string): string => {
@@ -157,7 +160,7 @@ export function BlogPostContent({ post, content }: BlogPostContentProps) {
           <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
             <img
               src={post.featuredImage}
-              alt={post.title}
+              alt={post.imageAlt || post.title}
               className="w-full h-full object-cover"
             />
           </div>

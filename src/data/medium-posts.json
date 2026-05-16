@@ -17,7 +17,9 @@
     "category": "building",
     "cluster": "",
     "workDate": "Apr 19, 2026",
-    "workDateISO": "2026-04-19T00:00:00.000Z"
+    "workDateISO": "2026-04-19T00:00:00.000Z",
+    "imageAlt": "A high-speed train entering a rail junction where six parallel tracks branch into different analytical landscapes before merging again, with one exaggerated claim diverted onto a repair siding",
+    "imageCaption": "People get ready!"
   },
   {
     "title": "Weekly Ship #042: What Was Working Got Written Down",
@@ -38,7 +40,8 @@
     "cluster": "2026-05-13",
     "workDate": "May 1, 2026",
     "workDateISO": "2026-05-01T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A boy leads a boat crewed by robots."
   },
   {
     "title": "Audit and Talk",
@@ -59,7 +62,9 @@
     "cluster": "2026-05-12",
     "workDate": "Apr 17, 2026",
     "workDateISO": "2026-04-17T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Cross-section cartoon of glowing AI beings maintaining a hidden routing machine beneath a fragile cliffside roadway full of warning barriers and drifting mismatched diagrams, showing structure quietly preventing unsafe paths before they can be reached.",
+    "imageCaption": "Safety first!"
   },
   {
     "title": "The Inchworm Position",
@@ -81,7 +86,9 @@
     "workDate": "Nov 23, 2025",
     "workDateISO": "2025-11-23T00:00:00.000Z",
     "chatDate": "2025-11-19",
-    "featured": false
+    "featured": false,
+    "imageAlt": "An inchworm traverses a branching numbered tree while a human and glowing AI-being observe its precise progress through the hierarchy.",
+    "imageCaption": "How does that song go?"
   },
   {
     "title": "A Hail of Memos",
@@ -103,7 +110,9 @@
     "workDate": "Apr 16, 2026",
     "workDateISO": "2026-04-16T00:00:00.000Z",
     "chatDate": "2026-04-16",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Figure at center of a radial storm of incoming message-slips, struggling to catch them while working.",
+    "imageCaption": "Let me get back to you on that!"
   },
   {
     "title": "Weekly Ship #041: The Methodology Closes Its Own Loops",
@@ -125,7 +134,8 @@
     "workDate": "Apr 24, 2026",
     "workDateISO": "2026-04-24T00:00:00.000Z",
     "chatDate": "2026-04-24",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A child leads a ship operated by robots."
   },
   {
     "title": "Six Issues Before Dinner",
@@ -147,7 +157,9 @@
     "workDate": "Apr 14, 2026",
     "workDateISO": "2026-04-14T00:00:00.000Z",
     "chatDate": "2026-04-14",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A calm engineer stands beside a large, smoothly turning flywheel machine, where completed tasks gently drop off as the system runs.",
+    "imageCaption": "Like a Swiss watch..."
   },
   {
     "title": "Friction-Focused Feedback",
@@ -169,7 +181,9 @@
     "workDate": "Mar 13, 2026",
     "workDateISO": "2026-03-13T00:00:00.000Z",
     "chatDate": "2026-03-13",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Hand-drawn cartoon of small agents sending gear ideas through a narrowing filter into a strained central machine; complex add-ons jam it, while simple parts pass through and make the gears run smoothly.",
+    "imageCaption": "Now, don't all shout at once!"
   },
   {
     "title": "The Drift You Don't Notice",
@@ -191,7 +205,9 @@
     "workDate": "Feb 1, 2026",
     "workDateISO": "2026-02-01T00:00:00.000Z",
     "chatDate": "2026-02-01",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A ghostlike clerk feeds ‘yesterday’s’ page into a copier while a nearby ‘Original Spec’ sits unused, as the output copies become progressively faded and warped; a supervisor watches, realizing the issue.",
+    "imageCaption": "Just as good as the original!"
   },
   {
     "title": "The Floor Comes Alive",
@@ -213,7 +229,9 @@
     "workDate": "Apr 8, 2026",
     "workDateISO": "2026-04-08T00:00:00.000Z",
     "chatDate": "2026-04-08",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Person kneels on a smooth tiled floor as a small crack reveals a softly glowing, living layer beneath.",
+    "imageCaption": "Who said that?"
   },
   {
     "title": "Weekly Ship #040: The Methodology Audits Itself",
@@ -234,7 +252,8 @@
     "cluster": "2026-04-29",
     "workDate": "Apr 23, 2026",
     "workDateISO": "2026-04-23T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A person leads a small boat crewed by robots."
   },
   {
     "title": "The Deeper Why",
@@ -255,7 +274,9 @@
     "cluster": "2026-04-28",
     "workDate": "Apr 8, 2026",
     "workDateISO": "2026-04-08T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Hand-drawn cutaway of a backyard pool: people enjoy calm, clear water above while below an overly complex maze of pipes and labeled systems shows unnecessary engineering beneath a simple, working experience.",
+    "imageCaption": "The water's fine!"
   },
   {
     "title": "Verify the Paraphrase",
@@ -276,7 +297,9 @@
     "cluster": "2026-04-26",
     "workDate": "Apr 19, 2026",
     "workDateISO": "2026-04-19T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A whisper chain simplifies a message into a confident claim while one person checks a detailed source book showing different information.",
+    "imageCaption": "Behold! The confidence of the mediocre..."
   },
   {
     "title": "The Multi-Wave Investigation",
@@ -297,7 +320,9 @@
     "cluster": "2026-04-25",
     "workDate": "Dec 25, 2025",
     "workDateISO": "2025-12-25T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Hand-drawn scene of a person directing waves of searchlights across a landscape, revealing systems, categories, and obstacles, with a central map summarizing findings.",
+    "imageCaption": "\"Fan out!\""
   },
   {
     "title": "The Gate",
@@ -318,7 +343,9 @@
     "cluster": "2026-04-24",
     "workDate": "Apr 3, 2026",
     "workDateISO": "2026-04-03T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A path of varied inputs is diverted before reaching a large gate, emerging instead as identical gray boxes while a person looks on in confusion.",
+    "imageCaption": "\"Wait, what?\""
   },
   {
     "title": "Weekly Ship #039: The Voice Takes Shape",
@@ -339,7 +366,8 @@
     "cluster": "2026-04-22",
     "workDate": "Apr 16, 2026",
     "workDateISO": "2026-04-16T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A person leads a small boat crewed by robots."
   },
   {
     "title": "Four Roles, Ninety Minutes",
@@ -360,7 +388,9 @@
     "cluster": "2026-04-21",
     "workDate": "Mar 23, 2026",
     "workDateISO": "2026-03-23T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Four roles working separately in a small office diagram, sending memos back and forth while a lead developer assembles a design document.",
+    "imageCaption": "\"No meeting? How will we interrupt each other?\""
   },
   {
     "title": "Sibling Intelligence",
@@ -381,7 +411,9 @@
     "cluster": "2026-04-19",
     "workDate": "Mar 19, 2026",
     "workDateISO": "2026-03-19T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A hand-drawn cartoon of a person sweeping a metal detector across a beach scattered with small objects like papers, gears, and abstract shapes. Most items remain dull and half-buried, but a few glow softly as the detector passes over them. The person kneels to collect only the glowing items into a small pouch, leaving the rest behind.",
+    "imageCaption": "\"Solid gold!\""
   },
   {
     "title": "Thirteen Mailboxes",
@@ -402,7 +434,9 @@
     "cluster": "2026-04-18",
     "workDate": "Jan 13, 2026",
     "workDateISO": "2026-01-13T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A human postal worker moves a letter from one mailbox to another in a wall of many adjacent mailboxes, most marked with abstract AI-like symbols, suggesting manual message routing between neighboring agents.",
+    "imageCaption": "\"You've got mail!\""
   },
   {
     "title": "The Migration",
@@ -423,7 +457,9 @@
     "cluster": "2026-04-16",
     "workDate": "Mar 28, 2026",
     "workDateISO": "2026-03-28T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A human guides a line of small AI helpers carrying boxes from a cluttered room into a clean one through a central doorway.",
+    "imageCaption": "Time to unpack!"
   },
   {
     "title": "Weekly Ship #038: The Floor Comes Alive",
@@ -444,7 +480,8 @@
     "cluster": "2026-04-15",
     "workDate": "Apr 3, 2026",
     "workDateISO": "2026-04-03T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A person leads a small boat crewed by robots."
   },
   {
     "title": "The Closing Sprint",
@@ -465,7 +502,9 @@
     "cluster": "2026-04-14",
     "workDate": "Mar 22, 2026",
     "workDateISO": "2026-03-22T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A runner crosses a finish line on a newly solid track while ghostly alternate paths converge behind them guided by glowing translucent AI companions assembling the final pieces in midair.",
+    "imageCaption": "Almost there!"
   },
   {
     "title": "Archaeological Debugging: Finding What You’ve Already Built",
@@ -506,7 +545,9 @@
     "workDate": "Dec 22, 2025",
     "workDateISO": "2025-12-22T00:00:00.000Z",
     "chatDate": "12/22/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Developer and AI agents excavate a giant scarab labeled with existing features uncovering fully built code buried under layers of old issues and TODOs.",
+    "imageCaption": "The legends were true!"
   },
   {
     "title": "The No-Anchoring Roundtable",
@@ -528,7 +569,9 @@
     "workDate": "Mar 14, 2026",
     "workDateISO": "2026-03-14T00:00:00.000Z",
     "chatDate": "3/14/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Human and four glowing AI agents sit at a round table each writing independently behind small dividers unable to see each other's answers.",
+    "imageCaption": "No peeking!"
   },
   {
     "title": "Nine Voices",
@@ -550,7 +593,9 @@
     "workDate": "Mar 19, 2026",
     "workDateISO": "2026-03-19T00:00:00.000Z",
     "chatDate": "3/19/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A restaurant kitchen where multiple cooks seamlessly pass a single dish along in perfect coordination while a surprised chef watches.",
+    "imageCaption": "Bon appetit!"
   },
   {
     "title": "Weekly Ship #037: New Ground",
@@ -572,7 +617,8 @@
     "workDate": "Mar 27, 2026",
     "workDateISO": "2026-03-27T00:00:00.000Z",
     "chatDate": "3/27/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Piper Morgan ship illustration"
   },
   {
     "title": "Fixing the Foundation",
@@ -594,7 +640,9 @@
     "workDate": "Mar 17, 2026",
     "workDateISO": "2026-03-17T00:00:00.000Z",
     "chatDate": "3/17/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A presenter stands ready under a spotlight while small AI helpers hurriedly clean up messy mislabeled props and backdrops behind the scenes.",
+    "imageCaption": "The show must go on!"
   },
   {
     "title": "The Mismatch Category",
@@ -616,7 +664,9 @@
     "workDate": "Mar 3, 2026",
     "workDateISO": "2026-03-03T00:00:00.000Z",
     "chatDate": "3/3/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Two AI figures attempt greetings—one offers a handshake the other a fist bump—while a human observes their near miss.",
+    "imageCaption": "I see the problem!"
   },
   {
     "title": "Silent Failures",
@@ -638,7 +688,9 @@
     "workDate": "Mar 3, 2026",
     "workDateISO": "2026-03-03T00:00:00.000Z",
     "chatDate": "3/3/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Airport departures board shows all flights on time while outside planes are visibly broken and patched up.",
+    "imageCaption": "What could possibly go wrong?"
   },
   {
     "title": "The Floor That Wasn't",
@@ -660,7 +712,9 @@
     "workDate": "Mar 15, 2026",
     "workDateISO": "2026-03-15T00:00:00.000Z",
     "chatDate": "3/15/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A person stands in the rain getting soaked while a nearby umbrella is open but not covering them, as abstract figures proudly present it.",
+    "imageCaption": "Dry as a bone"
   },
   {
     "title": "Weekly Ship #036: Approaching the Gate",
@@ -682,7 +736,8 @@
     "workDate": "Mar 20, 2026",
     "workDateISO": "2026-03-20T00:00:00.000Z",
     "chatDate": "3/20/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Piper Morgan ship illustration"
   },
   {
     "title": "Are We Doing It Backwards?",
@@ -704,7 +759,9 @@
     "workDate": "Mar 14, 2026",
     "workDateISO": "2026-03-14T00:00:00.000Z",
     "chatDate": "3/14/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "People struggle to reach an AI on the ceiling amid tangled machinery, while others stand easily on a glowing AI floor in a calm, open space nearby.",
+    "imageCaption": "Does something seem off to you?"
   },
   {
     "title": "Wiring vs. Wizardry",
@@ -903,7 +960,8 @@
     "workDateISO": "2026-02-28T00:00:00.000Z",
     "category": "building",
     "cluster": "2026-03-17",
-    "featured": false
+    "featured": false,
+    "imageCaption": "ai-four-voices.webp"
   },
   {
     "title": "Accepting Architectural Limits: When 67% Is Complete",
@@ -1203,7 +1261,8 @@
     "workDateISO": "2026-02-22T00:00:00.000Z",
     "category": "insight",
     "cluster": "2026-02-22",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-upstream.webp"
   },
   {
     "title": "The Forcing Function",
@@ -1303,7 +1362,8 @@
     "workDateISO": "2026-02-15T00:00:00.000Z",
     "category": "insight",
     "cluster": "2026-02-15",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-maze.webp"
   },
   {
     "title": "Investigation as Investment: Saving Time in Advance",
@@ -2453,7 +2513,8 @@
     "workDateISO": "2025-11-23T00:00:00.000Z",
     "category": "insight",
     "cluster": "2025-11-23",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-expand.webp"
   },
   {
     "title": "The Pattern Detective’s Evolution: From Curator to Noticer",
@@ -2503,7 +2564,8 @@
     "workDateISO": "2025-11-21T00:00:00.000Z",
     "category": "insight",
     "cluster": "2025-11-21",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-converge.webp"
   },
   {
     "title": "Foundation Stones & Strategic Breakthroughs",
@@ -2803,7 +2865,8 @@
     "workDateISO": "2025-11-09T00:00:00.000Z",
     "category": "insight",
     "cluster": "2025-11-09",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-fixes.webp"
   },
   {
     "title": "Missing the Conceptual Forest for the Syntax Trees: What We Learned When Pattern Detection Found…",
@@ -2853,7 +2916,8 @@
     "workDateISO": "2025-11-07T00:00:00.000Z",
     "category": "insight",
     "cluster": "2025-11-07",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-fixit.webp"
   },
   {
     "title": "The Two Realities Problem: When Your Database is Sophisticated and Your Web Tier Has Zero Auth",
@@ -2953,7 +3017,8 @@
     "workDateISO": "2025-11-04T00:00:00.000Z",
     "category": "insight",
     "cluster": "2025-11-04",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-brochure.webp"
   },
   {
     "title": "When Documentation Becomes Critical: The 1,630 Lines That Stand Between Alpha and Chaos",
@@ -2978,7 +3043,8 @@
     "workDateISO": "2025-11-03T00:00:00.000Z",
     "category": "insight",
     "cluster": "2025-11-03",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-flood.webp"
   },
   {
     "title": "The Discovery Testing Philosophy: Testing What Matters for Alpha",
@@ -3700,7 +3766,8 @@
     "workDateISO": "2025-08-19T00:00:00.000Z",
     "category": "insight",
     "cluster": "2025-10-12",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-discovery.webp"
   },
   {
     "title": "Systemic Kindness: Building Methodology That Feels Supportive",
@@ -4293,7 +4360,8 @@
     "workDateISO": "2025-09-11T00:00:00.000Z",
     "cluster": "2025-09-18",
     "chatDate": "9/9/2025",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-locomotive.webp"
   },
   {
     "title": "Train Tracks vs Free-for-All: When Methodology Becomes Infrastructure",
@@ -4356,7 +4424,8 @@
     "workDateISO": "2025-09-08T00:00:00.000Z",
     "cluster": "2025-09-15",
     "chatDate": "9/6/2025",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-pottery.webp"
   },
   {
     "title": "When Methodology Meets Reality: Building While Learning",
@@ -4922,7 +4991,8 @@
     "workDateISO": "2025-08-11T00:00:00.000Z",
     "cluster": "2025-08-19",
     "chatDate": "8/10/2025",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-archaeologists.webp"
   },
   {
     "title": "The archaeology expedition that found automation gold",
@@ -5611,7 +5681,8 @@
     "workDate": "Jul 12, 2025",
     "workDateISO": "2025-07-12T00:00:00.000Z",
     "cluster": "2025-08-01",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-weekend.webp"
   },
   {
     "title": "The AI Detective Squad: When Three Agents Solve One Mystery",
@@ -5673,7 +5744,8 @@
     "workDateISO": "2025-07-10T00:00:00.000Z",
     "cluster": "2025-09-07",
     "chatDate": "7/9/2025",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-drivered.webp"
   },
   {
     "title": "When the Bugs Lead You Home",
@@ -6450,7 +6522,8 @@
     "workDate": "Jun 9, 2025",
     "workDateISO": "2025-06-09T00:00:00.000Z",
     "cluster": "2025-07-07",
-    "featured": false
+    "featured": false,
+    "imageCaption": "robot-critique.webp"
   },
   {
     "title": "Small Scripts Win: Building Knowledge That Actually Knows Things",

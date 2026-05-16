@@ -244,6 +244,7 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
                       href={post.url}
                       author={post.author}
                       featuredImage={post.featuredImage}
+                      imageAlt={post.imageAlt}
                       category={post.category}
                       cluster={post.cluster}
                     />

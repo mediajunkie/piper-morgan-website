@@ -26,6 +26,8 @@ export interface BlogPostCardProps {
   author?: string;
   /** Featured image URL */
   featuredImage?: string;
+  /** Featured image alt text (falls back to title) */
+  imageAlt?: string;
   /** Compact layout variant */
   compact?: boolean;
   /** Additional CSS classes */
@@ -45,6 +47,7 @@ export function BlogPostCard({
   external = false,
   author = 'Christian Crumlish',
   featuredImage,
+  imageAlt,
   compact = false,
   className = '',
 }: BlogPostCardProps) {
@@ -74,7 +77,7 @@ export function BlogPostCard({
           <div className="relative w-full h-48 md:h-56 bg-gray-100 dark:bg-gray-800 overflow-hidden flex-shrink-0">
             <img
               src={featuredImage}
-              alt={title}
+              alt={imageAlt || title}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               loading="lazy"
             />

@@ -36,7 +36,7 @@ export async function generateMetadata({
                  (post as any).link?.match(/([a-f0-9]{12})/)?.[1];
 
   const content = hashId ? blogContent[hashId as keyof typeof blogContent] : null;
-  const description = content?.subtitle || (post as any).contentSnippet || '';
+  const description = (content as any)?.subtitle || (post as any).contentSnippet || '';
 
   return {
     title: `${(post as any).title} | Piper Morgan`,
