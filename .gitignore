@@ -24,6 +24,10 @@
 .DS_Store
 *.pem
 
+# Build-time generated agent-readable snapshot of /admin/publish-queue
+# (regenerated on every build; includes a buildTime field → would churn)
+/public/admin/publish-queue-data.json
+
 # debug
 npm-debug.log*
 yarn-debug.log*
