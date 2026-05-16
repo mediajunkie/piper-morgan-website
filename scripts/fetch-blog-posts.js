@@ -606,9 +606,12 @@ function saveArchive(posts) {
 }
 
 /**
- * Update blog content file with new posts
+ * Update blog content file with new posts.
+ * Skips RSS posts whose slug matches an existing blog-first post — those are
+ * Medium syndications of canonical-blog content; their full HTML belongs under
+ * the blog-first hashId, not as a parallel entry under the Medium hashId.
  */
-function updateBlogContent(posts) {
+function updateBlogContent(posts, mergedPosts) {
   const BLOG_CONTENT_PATH = path.join(__dirname, '..', 'src/data/blog-content.json');
 
   try {
@@ -619,12 +622,32 @@ function updateBlogContent(posts) {
       blogContent = JSON.parse(data);
     }
 
+    // Build set of slugs claimed by blog-first posts (canonical-blog content)
+    const blogFirstSlugs = new Set();
+    if (Array.isArray(mergedPosts)) {
+      mergedPosts.forEach(p => {
+        if (p.guid && p.guid.startsWith('blog-first-') && p.slug) {
+          blogFirstSlugs.add(p.slug);
+        }
+      });
+    }
+
     let newContentCount = 0;
+    let skippedSyndication = 0;
 
     // Add full content for new posts
     posts.forEach(post => {
       const postId = extractPostId(post.guid || post.link);
       if (!postId) return;
+
+      // Skip syndication duplicates: if this RSS post's slug already belongs to
+      // a blog-first canonical entry, don't write a parallel fat entry under
+      // the Medium hashId.
+      const rssSlug = extractSlugFromMediumUrl(post.url || post.link || post.guid);
+      if (rssSlug && blogFirstSlugs.has(rssSlug)) {
+        skippedSyndication++;
+        return;
+      }
 
       // If post has fullContent and isn't already in blog-content.json, add it
       if (post.fullContent && !blogContent[postId]) {
@@ -644,6 +667,9 @@ function updateBlogContent(posts) {
     if (newContentCount > 0) {
       fs.writeFileSync(BLOG_CONTENT_PATH, JSON.stringify(blogContent, null, 2), 'utf-8');
       console.log(`📄 Added full content for ${newContentCount} new posts to blog-content.json`);
+    }
+    if (skippedSyndication > 0) {
+      console.log(`⏭️  Skipped ${skippedSyndication} syndication duplicate(s) of blog-first posts`);
     }
 
     return newContentCount;
@@ -694,8 +720,9 @@ async function main() {
     // Save to file
     const saved = saveArchive(mergedPosts);
 
-    // Update blog content with full HTML
-    const newContentAdded = updateBlogContent(rssPosts);
+    // Update blog content with full HTML (passes mergedPosts so syndication
+    // duplicates of blog-first canonicals can be skipped)
+    const newContentAdded = updateBlogContent(rssPosts, mergedPosts);
 
     if (saved) {
       console.log('\n✨ Complete! Archive updated successfully.');
