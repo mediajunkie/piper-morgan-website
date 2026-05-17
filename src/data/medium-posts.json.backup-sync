@@ -15,11 +15,11 @@
     "featuredImage": "/assets/blog-images/same-failure-six-agents-ninety-minutes.webp",
     "thumbnail": "/assets/blog-images/same-failure-six-agents-ninety-minutes.webp",
     "category": "building",
-    "cluster": "",
     "workDate": "Apr 19, 2026",
     "workDateISO": "2026-04-19T00:00:00.000Z",
     "imageAlt": "A high-speed train entering a rail junction where six parallel tracks branch into different analytical landscapes before merging again, with one exaggerated claim diverted onto a repair siding",
-    "imageCaption": "People get ready!"
+    "imageCaption": "People get ready!",
+    "featured": false
   },
   {
     "title": "Weekly Ship #042: What Was Working Got Written Down",
@@ -37,7 +37,6 @@
     "featuredImage": "/assets/blog-images/piper-ship.webp",
     "thumbnail": "/assets/blog-images/piper-ship.webp",
     "category": "ship",
-    "cluster": "2026-05-13",
     "workDate": "May 1, 2026",
     "workDateISO": "2026-05-01T00:00:00.000Z",
     "featured": false,
@@ -59,7 +58,6 @@
     "featuredImage": "/assets/blog-images/audit-and-talk.webp",
     "thumbnail": "/assets/blog-images/audit-and-talk.webp",
     "category": "building",
-    "cluster": "2026-05-12",
     "workDate": "Apr 17, 2026",
     "workDateISO": "2026-04-17T00:00:00.000Z",
     "featured": false,
@@ -82,7 +80,6 @@
     "featuredImage": "/assets/blog-images/ai-inchworm.webp",
     "thumbnail": "/assets/blog-images/ai-inchworm.webp",
     "category": "insight",
-    "cluster": "2026-05-11",
     "workDate": "Nov 23, 2025",
     "workDateISO": "2025-11-23T00:00:00.000Z",
     "chatDate": "2025-11-19",
@@ -106,7 +103,6 @@
     "featuredImage": "/assets/blog-images/a-hail-of-memos.webp",
     "thumbnail": "/assets/blog-images/a-hail-of-memos.webp",
     "category": "building",
-    "cluster": "2026-05-07",
     "workDate": "Apr 16, 2026",
     "workDateISO": "2026-04-16T00:00:00.000Z",
     "chatDate": "2026-04-16",
@@ -130,7 +126,6 @@
     "featuredImage": "/assets/blog-images/piper-ship.webp",
     "thumbnail": "/assets/blog-images/piper-ship.webp",
     "category": "ship",
-    "cluster": "2026-05-06",
     "workDate": "Apr 24, 2026",
     "workDateISO": "2026-04-24T00:00:00.000Z",
     "chatDate": "2026-04-24",
@@ -153,7 +148,6 @@
     "featuredImage": "/assets/blog-images/six-issues-before-dinner.webp",
     "thumbnail": "/assets/blog-images/six-issues-before-dinner.webp",
     "category": "building",
-    "cluster": "2026-05-05",
     "workDate": "Apr 14, 2026",
     "workDateISO": "2026-04-14T00:00:00.000Z",
     "chatDate": "2026-04-14",
@@ -177,7 +171,6 @@
     "featuredImage": "/assets/blog-images/friction-focused-feedback.webp",
     "thumbnail": "/assets/blog-images/friction-focused-feedback.webp",
     "category": "insight",
-    "cluster": "2026-05-03",
     "workDate": "Mar 13, 2026",
     "workDateISO": "2026-03-13T00:00:00.000Z",
     "chatDate": "2026-03-13",
@@ -201,7 +194,6 @@
     "featuredImage": "/assets/blog-images/the-drift-you-dont-notice.webp",
     "thumbnail": "/assets/blog-images/the-drift-you-dont-notice.webp",
     "category": "insight",
-    "cluster": "2026-05-02",
     "workDate": "Feb 1, 2026",
     "workDateISO": "2026-02-01T00:00:00.000Z",
     "chatDate": "2026-02-01",
@@ -225,7 +217,6 @@
     "featuredImage": "/assets/blog-images/the-floor-comes-alive.webp",
     "thumbnail": "/assets/blog-images/the-floor-comes-alive.webp",
     "category": "building",
-    "cluster": "2026-04-30",
     "workDate": "Apr 8, 2026",
     "workDateISO": "2026-04-08T00:00:00.000Z",
     "chatDate": "2026-04-08",
@@ -249,7 +240,6 @@
     "featuredImage": "/assets/blog-images/piper-ship.webp",
     "thumbnail": "/assets/blog-images/piper-ship.webp",
     "category": "ship",
-    "cluster": "2026-04-29",
     "workDate": "Apr 23, 2026",
     "workDateISO": "2026-04-23T00:00:00.000Z",
     "featured": false,
@@ -271,7 +261,6 @@
     "featuredImage": "/assets/blog-images/the-deeper-why.webp",
     "thumbnail": "/assets/blog-images/the-deeper-why.webp",
     "category": "building",
-    "cluster": "2026-04-28",
     "workDate": "Apr 8, 2026",
     "workDateISO": "2026-04-08T00:00:00.000Z",
     "featured": false,
@@ -294,7 +283,6 @@
     "featuredImage": "/assets/blog-images/verify-the-paraphrase.webp",
     "thumbnail": "/assets/blog-images/verify-the-paraphrase.webp",
     "category": "insight",
-    "cluster": "2026-04-26",
     "workDate": "Apr 19, 2026",
     "workDateISO": "2026-04-19T00:00:00.000Z",
     "featured": false,
@@ -317,7 +305,6 @@
     "featuredImage": "/assets/blog-images/the-multi-wave-investigation.webp",
     "thumbnail": "/assets/blog-images/the-multi-wave-investigation.webp",
     "category": "insight",
-    "cluster": "2026-04-25",
     "workDate": "Dec 25, 2025",
     "workDateISO": "2025-12-25T00:00:00.000Z",
     "featured": false,
@@ -340,7 +327,6 @@
     "featuredImage": "/assets/blog-images/the-gate.webp",
     "thumbnail": "/assets/blog-images/the-gate.webp",
     "category": "building",
-    "cluster": "2026-04-24",
     "workDate": "Apr 3, 2026",
     "workDateISO": "2026-04-03T00:00:00.000Z",
     "featured": false,
@@ -363,7 +349,6 @@
     "featuredImage": "/assets/blog-images/piper-ship.webp",
     "thumbnail": "/assets/blog-images/piper-ship.webp",
     "category": "ship",
-    "cluster": "2026-04-22",
     "workDate": "Apr 16, 2026",
     "workDateISO": "2026-04-16T00:00:00.000Z",
     "featured": false,
@@ -385,7 +370,6 @@
     "featuredImage": "/assets/blog-images/four-roles-ninety-minutes.webp",
     "thumbnail": "/assets/blog-images/four-roles-ninety-minutes.webp",
     "category": "building",
-    "cluster": "2026-04-21",
     "workDate": "Mar 23, 2026",
     "workDateISO": "2026-03-23T00:00:00.000Z",
     "featured": false,
@@ -408,7 +392,6 @@
     "featuredImage": "/assets/blog-images/sibling-intelligence.webp",
     "thumbnail": "/assets/blog-images/sibling-intelligence.webp",
     "category": "insight",
-    "cluster": "2026-04-19",
     "workDate": "Mar 19, 2026",
     "workDateISO": "2026-03-19T00:00:00.000Z",
     "featured": false,
@@ -431,7 +414,6 @@
     "featuredImage": "/assets/blog-images/ai-mailboxes.webp",
     "thumbnail": "/assets/blog-images/ai-mailboxes.webp",
     "category": "insight",
-    "cluster": "2026-04-18",
     "workDate": "Jan 13, 2026",
     "workDateISO": "2026-01-13T00:00:00.000Z",
     "featured": false,
@@ -454,7 +436,6 @@
     "featuredImage": "/assets/blog-images/ai-migration.webp",
     "thumbnail": "/assets/blog-images/ai-migration.webp",
     "category": "building",
-    "cluster": "2026-04-16",
     "workDate": "Mar 28, 2026",
     "workDateISO": "2026-03-28T00:00:00.000Z",
     "featured": false,
@@ -477,7 +458,6 @@
     "featuredImage": "/assets/blog-images/piper-ship.webp",
     "thumbnail": "/assets/blog-images/piper-ship.webp",
     "category": "ship",
-    "cluster": "2026-04-15",
     "workDate": "Apr 3, 2026",
     "workDateISO": "2026-04-03T00:00:00.000Z",
     "featured": false,
@@ -499,7 +479,6 @@
     "featuredImage": "/assets/blog-images/ai-finish.webp",
     "thumbnail": "/assets/blog-images/ai-finish.webp",
     "category": "building",
-    "cluster": "2026-04-14",
     "workDate": "Mar 22, 2026",
     "workDateISO": "2026-03-22T00:00:00.000Z",
     "featured": false,
@@ -541,7 +520,7 @@
     "featuredImage": "/assets/blog-images/ai-scarab.webp",
     "thumbnail": "/assets/blog-images/ai-scarab.webp",
     "category": "insight",
-    "cluster": "2026-04-12",
+    "cluster": "the-foundation",
     "workDate": "Dec 22, 2025",
     "workDateISO": "2025-12-22T00:00:00.000Z",
     "chatDate": "12/22/2025",
@@ -565,7 +544,7 @@
     "featuredImage": "/assets/blog-images/ai-roundtable.webp",
     "thumbnail": "/assets/blog-images/ai-roundtable.webp",
     "category": "insight",
-    "cluster": "2026-04-11",
+    "cluster": "the-sprint",
     "workDate": "Mar 14, 2026",
     "workDateISO": "2026-03-14T00:00:00.000Z",
     "chatDate": "3/14/2026",
@@ -589,7 +568,7 @@
     "featuredImage": "/assets/blog-images/ai-kitchen.webp",
     "thumbnail": "/assets/blog-images/ai-kitchen.webp",
     "category": "building",
-    "cluster": "2026-04-09",
+    "cluster": "the-sprint",
     "workDate": "Mar 19, 2026",
     "workDateISO": "2026-03-19T00:00:00.000Z",
     "chatDate": "3/19/2026",
@@ -613,7 +592,7 @@
     "featuredImage": "/assets/blog-images/piper-ship.webp",
     "thumbnail": "/assets/blog-images/piper-ship.webp",
     "category": "ship",
-    "cluster": "2026-04-08",
+    "cluster": "the-sprint",
     "workDate": "Mar 27, 2026",
     "workDateISO": "2026-03-27T00:00:00.000Z",
     "chatDate": "3/27/2026",
@@ -636,7 +615,7 @@
     "featuredImage": "/assets/blog-images/ai-set.webp",
     "thumbnail": "/assets/blog-images/ai-set.webp",
     "category": "building",
-    "cluster": "2026-04-07",
+    "cluster": "the-sprint",
     "workDate": "Mar 17, 2026",
     "workDateISO": "2026-03-17T00:00:00.000Z",
     "chatDate": "3/17/2026",
@@ -660,7 +639,7 @@
     "featuredImage": "/assets/blog-images/ai-handshake.webp",
     "thumbnail": "/assets/blog-images/ai-handshake.webp",
     "category": "insight",
-    "cluster": "2026-04-05",
+    "cluster": "the-sprint",
     "workDate": "Mar 3, 2026",
     "workDateISO": "2026-03-03T00:00:00.000Z",
     "chatDate": "3/3/2026",
@@ -684,7 +663,7 @@
     "featuredImage": "/assets/blog-images/ai-departures.webp",
     "thumbnail": "/assets/blog-images/ai-departures.webp",
     "category": "insight",
-    "cluster": "2026-04-04",
+    "cluster": "the-sprint",
     "workDate": "Mar 3, 2026",
     "workDateISO": "2026-03-03T00:00:00.000Z",
     "chatDate": "3/3/2026",
@@ -708,7 +687,7 @@
     "featuredImage": "/assets/blog-images/ai-umbrella.webp",
     "thumbnail": "/assets/blog-images/ai-umbrella.webp",
     "category": "building",
-    "cluster": "2026-04-02",
+    "cluster": "the-sprint",
     "workDate": "Mar 15, 2026",
     "workDateISO": "2026-03-15T00:00:00.000Z",
     "chatDate": "3/15/2026",
@@ -732,7 +711,7 @@
     "featuredImage": "/assets/blog-images/piper-ship.webp",
     "thumbnail": "/assets/blog-images/piper-ship.webp",
     "category": "ship",
-    "cluster": "2026-04-01",
+    "cluster": "the-sprint",
     "workDate": "Mar 20, 2026",
     "workDateISO": "2026-03-20T00:00:00.000Z",
     "chatDate": "3/20/2026",
@@ -755,7 +734,6 @@
     "featuredImage": "/assets/blog-images/ai-backwards.webp",
     "thumbnail": "/assets/blog-images/ai-backwards.webp",
     "category": "building",
-    "cluster": "2026-03-31",
     "workDate": "Mar 14, 2026",
     "workDateISO": "2026-03-14T00:00:00.000Z",
     "chatDate": "3/14/2026",
@@ -779,7 +757,6 @@
     "featuredImage": "/assets/blog-images/wiring-vs-wizardry.webp",
     "thumbnail": "/assets/blog-images/wiring-vs-wizardry.webp",
     "category": "insight",
-    "cluster": "2026-03-29",
     "workDate": "Mar 13, 2026",
     "workDateISO": "2026-03-13T00:00:00.000Z",
     "chatDate": "3/13/2026",
@@ -805,7 +782,6 @@
     "slug": "discovery-is-the-bottleneck",
     "chatDate": "1/2/2026",
     "category": "insight",
-    "cluster": "2026-03-28",
     "featured": false,
     "id": "978f3ec50a57",
     "imageSlug": "discovery-bottleneck.webp",
@@ -834,7 +810,6 @@
     "needsMetadata": true,
     "slug": "ten-roles-one-day",
     "category": "building",
-    "cluster": "2026-03-26",
     "featured": false,
     "workDate": "Mar 19, 2026",
     "workDateISO": "2026-03-19T00:00:00.000Z"
@@ -859,7 +834,6 @@
     "needsMetadata": true,
     "slug": "the-81-session",
     "category": "building",
-    "cluster": "2026-03-24",
     "featured": false,
     "workDate": "Mar 12, 2026",
     "workDateISO": "2026-03-12T00:00:00.000Z"
@@ -884,7 +858,6 @@
     "needsMetadata": true,
     "slug": "the-deliberate-pause",
     "category": "building",
-    "cluster": "2026-03-22",
     "featured": false,
     "workDate": "Mar 10, 2026",
     "workDateISO": "2026-03-10T00:00:00.000Z"
@@ -909,7 +882,6 @@
     "needsMetadata": true,
     "slug": "breaking-without-breaking-momentum",
     "category": "insight",
-    "cluster": "2026-03-21",
     "featured": false,
     "workDate": "Mar 8, 2026",
     "workDateISO": "2026-03-08T00:00:00.000Z"
@@ -933,7 +905,6 @@
     "thumbnail": null,
     "slug": "the-gate-closes",
     "category": "building",
-    "cluster": "2026-03-19",
     "featured": false
   },
   {
@@ -959,7 +930,6 @@
     "workDate": "Feb 28, 2026",
     "workDateISO": "2026-02-28T00:00:00.000Z",
     "category": "building",
-    "cluster": "2026-03-17",
     "featured": false,
     "imageCaption": "ai-four-voices.webp"
   },
@@ -985,7 +955,6 @@
     "workDate": "Mar 15, 2026",
     "workDateISO": "2026-03-15T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-03-15",
     "featured": false
   },
   {
@@ -1010,7 +979,6 @@
     "workDate": "Mar 14, 2026",
     "workDateISO": "2026-03-14T00:00:00.000Z",
     "category": "building",
-    "cluster": "2026-03-14",
     "featured": false
   },
   {
@@ -1035,7 +1003,6 @@
     "workDate": "Mar 11, 2026",
     "workDateISO": "2026-03-11T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-03-11",
     "featured": false
   },
   {
@@ -1060,7 +1027,6 @@
     "workDate": "Mar 10, 2026",
     "workDateISO": "2026-03-10T00:00:00.000Z",
     "category": "building",
-    "cluster": "2026-03-10",
     "featured": false
   },
   {
@@ -1085,7 +1051,6 @@
     "workDate": "Mar 8, 2026",
     "workDateISO": "2026-03-08T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-03-08",
     "featured": false
   },
   {
@@ -1110,7 +1075,6 @@
     "workDate": "Mar 8, 2026",
     "workDateISO": "2026-03-08T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-03-08",
     "featured": false
   },
   {
@@ -1135,7 +1099,6 @@
     "workDate": "Mar 5, 2026",
     "workDateISO": "2026-03-05T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-03-05",
     "featured": false
   },
   {
@@ -1160,7 +1123,6 @@
     "workDate": "Mar 3, 2026",
     "workDateISO": "2026-03-03T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-03-03",
     "featured": false
   },
   {
@@ -1185,7 +1147,6 @@
     "workDate": "Mar 1, 2026",
     "workDateISO": "2026-03-01T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-03-01",
     "featured": false
   },
   {
@@ -1210,7 +1171,6 @@
     "workDate": "Feb 28, 2026",
     "workDateISO": "2026-02-28T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-02-28",
     "featured": false
   },
   {
@@ -1235,7 +1195,6 @@
     "workDate": "Feb 24, 2026",
     "workDateISO": "2026-02-24T00:00:00.000Z",
     "category": "building",
-    "cluster": "2026-02-24",
     "featured": false
   },
   {
@@ -1260,7 +1219,6 @@
     "workDate": "Feb 22, 2026",
     "workDateISO": "2026-02-22T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-02-22",
     "featured": false,
     "imageCaption": "robot-upstream.webp"
   },
@@ -1286,7 +1244,6 @@
     "workDate": "Feb 21, 2026",
     "workDateISO": "2026-02-21T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-02-21",
     "featured": false
   },
   {
@@ -1311,7 +1268,6 @@
     "workDate": "Feb 19, 2026",
     "workDateISO": "2026-02-19T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-02-19",
     "featured": false
   },
   {
@@ -1336,7 +1292,6 @@
     "workDate": "Feb 17, 2026",
     "workDateISO": "2026-02-17T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-02-17",
     "featured": false
   },
   {
@@ -1361,7 +1316,6 @@
     "workDate": "Feb 15, 2026",
     "workDateISO": "2026-02-15T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-02-15",
     "featured": false,
     "imageCaption": "robot-maze.webp"
   },
@@ -1387,7 +1341,6 @@
     "workDate": "Feb 14, 2026",
     "workDateISO": "2026-02-14T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-02-14",
     "featured": false
   },
   {
@@ -1412,7 +1365,6 @@
     "workDate": "Feb 12, 2026",
     "workDateISO": "2026-02-12T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-02-12",
     "featured": false
   },
   {
@@ -1437,7 +1389,6 @@
     "workDate": "Feb 10, 2026",
     "workDateISO": "2026-02-10T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-02-10",
     "featured": false
   },
   {
@@ -1462,7 +1413,6 @@
     "workDate": "Feb 8, 2026",
     "workDateISO": "2026-02-08T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-02-08",
     "featured": false
   },
   {
@@ -1487,7 +1437,6 @@
     "workDate": "Feb 7, 2026",
     "workDateISO": "2026-02-07T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-02-07",
     "featured": false
   },
   {
@@ -1512,7 +1461,6 @@
     "workDate": "Feb 5, 2026",
     "workDateISO": "2026-02-05T00:00:00.000Z",
     "category": "building",
-    "cluster": "2026-02-05",
     "featured": false
   },
   {
@@ -1537,7 +1485,6 @@
     "workDate": "Feb 2, 2026",
     "workDateISO": "2026-02-02T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-02-02",
     "featured": false
   },
   {
@@ -1562,7 +1509,6 @@
     "workDate": "Feb 1, 2026",
     "workDateISO": "2026-02-01T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-02-01",
     "featured": false
   },
   {
@@ -1587,7 +1533,6 @@
     "workDate": "Jan 31, 2026",
     "workDateISO": "2026-01-31T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-01-31",
     "featured": false
   },
   {
@@ -1612,7 +1557,6 @@
     "workDate": "Jan 30, 2026",
     "workDateISO": "2026-01-30T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-01-30",
     "featured": false
   },
   {
@@ -1637,7 +1581,6 @@
     "workDate": "Jan 28, 2026",
     "workDateISO": "2026-01-28T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-01-28",
     "featured": false
   },
   {
@@ -1662,7 +1605,6 @@
     "workDate": "Jan 26, 2026",
     "workDateISO": "2026-01-26T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-01-26",
     "featured": false
   },
   {
@@ -1687,7 +1629,6 @@
     "workDate": "Jan 25, 2026",
     "workDateISO": "2026-01-25T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-01-25",
     "featured": false
   },
   {
@@ -1712,7 +1653,6 @@
     "workDate": "Jan 24, 2026",
     "workDateISO": "2026-01-24T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-01-24",
     "featured": false
   },
   {
@@ -1737,7 +1677,6 @@
     "workDate": "Jan 23, 2026",
     "workDateISO": "2026-01-23T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-01-23",
     "featured": false
   },
   {
@@ -1762,7 +1701,6 @@
     "workDate": "Jan 21, 2026",
     "workDateISO": "2026-01-21T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-01-21",
     "featured": false
   },
   {
@@ -1787,7 +1725,6 @@
     "workDate": "Jan 19, 2026",
     "workDateISO": "2026-01-19T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-01-19",
     "featured": false
   },
   {
@@ -1812,7 +1749,6 @@
     "workDate": "Jan 18, 2026",
     "workDateISO": "2026-01-18T00:00:00.000Z",
     "category": "building",
-    "cluster": "2026-01-18",
     "featured": false
   },
   {
@@ -1837,7 +1773,6 @@
     "workDate": "Jan 17, 2026",
     "workDateISO": "2026-01-17T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-01-17",
     "featured": false
   },
   {
@@ -1862,7 +1797,6 @@
     "workDate": "Jan 14, 2026",
     "workDateISO": "2026-01-14T00:00:00.000Z",
     "category": "building",
-    "cluster": "2026-01-14",
     "featured": false
   },
   {
@@ -1887,7 +1821,6 @@
     "workDate": "Jan 13, 2026",
     "workDateISO": "2026-01-13T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-01-13",
     "featured": false
   },
   {
@@ -1912,7 +1845,6 @@
     "workDate": "Jan 11, 2026",
     "workDateISO": "2026-01-11T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-01-11",
     "featured": false
   },
   {
@@ -1937,7 +1869,6 @@
     "workDate": "Jan 10, 2026",
     "workDateISO": "2026-01-10T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-01-10",
     "featured": false
   },
   {
@@ -1962,7 +1893,6 @@
     "workDate": "Jan 8, 2026",
     "workDateISO": "2026-01-08T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-01-08",
     "featured": false
   },
   {
@@ -1987,7 +1917,6 @@
     "workDate": "Jan 5, 2026",
     "workDateISO": "2026-01-05T00:00:00.000Z",
     "category": "building",
-    "cluster": "2026-01-05",
     "featured": false
   },
   {
@@ -2012,7 +1941,6 @@
     "workDate": "Jan 4, 2026",
     "workDateISO": "2026-01-04T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-01-04",
     "featured": false
   },
   {
@@ -2037,7 +1965,6 @@
     "workDate": "Jan 3, 2026",
     "workDateISO": "2026-01-03T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-01-03",
     "featured": false
   },
   {
@@ -2062,7 +1989,6 @@
     "workDate": "Jan 3, 2026",
     "workDateISO": "2026-01-03T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2026-01-03",
     "featured": false
   },
   {
@@ -2087,7 +2013,6 @@
     "workDate": "Dec 29, 2025",
     "workDateISO": "2025-12-29T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-12-29",
     "featured": false
   },
   {
@@ -2112,7 +2037,6 @@
     "workDate": "Dec 27, 2025",
     "workDateISO": "2025-12-27T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-12-27",
     "featured": false
   },
   {
@@ -2137,7 +2061,6 @@
     "workDate": "Dec 26, 2025",
     "workDateISO": "2025-12-26T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-12-26",
     "featured": false
   },
   {
@@ -2162,7 +2085,6 @@
     "workDate": "Dec 24, 2025",
     "workDateISO": "2025-12-24T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-12-24",
     "featured": false
   },
   {
@@ -2187,7 +2109,6 @@
     "workDate": "Dec 23, 2025",
     "workDateISO": "2025-12-23T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-12-23",
     "featured": false
   },
   {
@@ -2212,7 +2133,6 @@
     "workDate": "Dec 23, 2025",
     "workDateISO": "2025-12-23T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-12-23",
     "featured": false
   },
   {
@@ -2237,7 +2157,6 @@
     "workDate": "Dec 17, 2025",
     "workDateISO": "2025-12-17T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-12-17",
     "featured": false
   },
   {
@@ -2262,7 +2181,6 @@
     "workDate": "Dec 17, 2025",
     "workDateISO": "2025-12-17T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-12-17",
     "featured": false
   },
   {
@@ -2287,7 +2205,6 @@
     "workDate": "Dec 9, 2025",
     "workDateISO": "2025-12-09T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-12-09",
     "featured": false
   },
   {
@@ -2312,7 +2229,6 @@
     "workDate": "Dec 8, 2025",
     "workDateISO": "2025-12-08T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-12-08",
     "featured": false
   },
   {
@@ -2337,7 +2253,6 @@
     "workDate": "Dec 4, 2025",
     "workDateISO": "2025-12-04T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-12-04",
     "featured": false
   },
   {
@@ -2362,7 +2277,6 @@
     "workDate": "Dec 2, 2025",
     "workDateISO": "2025-12-02T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-12-02",
     "featured": false
   },
   {
@@ -2387,7 +2301,6 @@
     "workDate": "Dec 1, 2025",
     "workDateISO": "2025-12-01T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-12-01",
     "featured": false
   },
   {
@@ -2412,7 +2325,6 @@
     "workDate": "Nov 29, 2025",
     "workDateISO": "2025-11-29T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-29",
     "featured": false
   },
   {
@@ -2437,7 +2349,6 @@
     "workDate": "Nov 28, 2025",
     "workDateISO": "2025-11-28T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-11-28",
     "featured": false
   },
   {
@@ -2462,7 +2373,6 @@
     "workDate": "Nov 26, 2025",
     "workDateISO": "2025-11-26T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-26",
     "featured": false
   },
   {
@@ -2487,7 +2397,6 @@
     "workDate": "Nov 25, 2025",
     "workDateISO": "2025-11-25T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-11-25",
     "featured": false
   },
   {
@@ -2512,7 +2421,6 @@
     "workDate": "Nov 23, 2025",
     "workDateISO": "2025-11-23T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-23",
     "featured": false,
     "imageCaption": "robot-expand.webp"
   },
@@ -2538,7 +2446,6 @@
     "workDate": "Nov 22, 2025",
     "workDateISO": "2025-11-22T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-22",
     "featured": false
   },
   {
@@ -2563,7 +2470,6 @@
     "workDate": "Nov 21, 2025",
     "workDateISO": "2025-11-21T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-21",
     "featured": false,
     "imageCaption": "robot-converge.webp"
   },
@@ -2589,7 +2495,6 @@
     "workDate": "Nov 20, 2025",
     "workDateISO": "2025-11-20T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-11-20",
     "featured": false
   },
   {
@@ -2614,7 +2519,6 @@
     "workDate": "Nov 19, 2025",
     "workDateISO": "2025-11-19T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-19",
     "featured": false
   },
   {
@@ -2639,7 +2543,6 @@
     "workDate": "Nov 17, 2025",
     "workDateISO": "2025-11-17T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-11-17",
     "featured": false
   },
   {
@@ -2664,7 +2567,6 @@
     "workDate": "Nov 16, 2025",
     "workDateISO": "2025-11-16T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-16",
     "featured": false
   },
   {
@@ -2689,7 +2591,6 @@
     "workDate": "Nov 15, 2025",
     "workDateISO": "2025-11-15T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-15",
     "featured": false
   },
   {
@@ -2714,7 +2615,6 @@
     "workDate": "Nov 14, 2025",
     "workDateISO": "2025-11-14T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-14",
     "featured": false
   },
   {
@@ -2739,7 +2639,6 @@
     "workDate": "Nov 13, 2025",
     "workDateISO": "2025-11-13T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-13",
     "featured": false
   },
   {
@@ -2764,7 +2663,6 @@
     "workDate": "Nov 12, 2025",
     "workDateISO": "2025-11-12T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-12",
     "featured": false
   },
   {
@@ -2789,7 +2687,6 @@
     "workDate": "Nov 11, 2025",
     "workDateISO": "2025-11-11T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-11-11",
     "featured": false
   },
   {
@@ -2814,7 +2711,6 @@
     "workDate": "Nov 10, 2025",
     "workDateISO": "2025-11-10T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-10",
     "featured": false
   },
   {
@@ -2839,7 +2735,6 @@
     "workDate": "Nov 10, 2025",
     "workDateISO": "2025-11-10T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-10",
     "featured": false
   },
   {
@@ -2864,7 +2759,6 @@
     "workDate": "Nov 9, 2025",
     "workDateISO": "2025-11-09T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-09",
     "featured": false,
     "imageCaption": "robot-fixes.webp"
   },
@@ -2890,7 +2784,6 @@
     "workDate": "Nov 8, 2025",
     "workDateISO": "2025-11-08T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-08",
     "featured": false
   },
   {
@@ -2915,7 +2808,6 @@
     "workDate": "Nov 7, 2025",
     "workDateISO": "2025-11-07T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-07",
     "featured": false,
     "imageCaption": "robot-fixit.webp"
   },
@@ -2941,7 +2833,6 @@
     "workDate": "Nov 7, 2025",
     "workDateISO": "2025-11-07T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-07",
     "featured": false
   },
   {
@@ -2966,7 +2857,6 @@
     "workDate": "Nov 6, 2025",
     "workDateISO": "2025-11-06T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-06",
     "featured": false
   },
   {
@@ -2991,7 +2881,6 @@
     "workDate": "Nov 5, 2025",
     "workDateISO": "2025-11-05T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-11-05",
     "featured": false
   },
   {
@@ -3016,7 +2905,6 @@
     "workDate": "Nov 4, 2025",
     "workDateISO": "2025-11-04T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-04",
     "featured": false,
     "imageCaption": "robot-brochure.webp"
   },
@@ -3042,7 +2930,6 @@
     "workDate": "Nov 3, 2025",
     "workDateISO": "2025-11-03T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-03",
     "featured": false,
     "imageCaption": "robot-flood.webp"
   },
@@ -3068,7 +2955,6 @@
     "workDate": "Nov 3, 2025",
     "workDateISO": "2025-11-03T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-03",
     "featured": false
   },
   {
@@ -3093,7 +2979,6 @@
     "workDate": "Nov 2, 2025",
     "workDateISO": "2025-11-02T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-02",
     "featured": false
   },
   {
@@ -3118,7 +3003,6 @@
     "workDate": "Nov 1, 2025",
     "workDateISO": "2025-11-01T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-11-01",
     "featured": false
   },
   {
@@ -3143,7 +3027,6 @@
     "workDate": "Oct 31, 2025",
     "workDateISO": "2025-10-31T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-31",
     "featured": false
   },
   {
@@ -3168,7 +3051,6 @@
     "workDate": "Oct 31, 2025",
     "workDateISO": "2025-10-31T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-10-31",
     "featured": false
   },
   {
@@ -3193,7 +3075,6 @@
     "workDate": "Oct 30, 2025",
     "workDateISO": "2025-10-30T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-30",
     "featured": false
   },
   {
@@ -3218,7 +3099,6 @@
     "workDate": "Oct 29, 2025",
     "workDateISO": "2025-10-29T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-29",
     "featured": false
   },
   {
@@ -3243,7 +3123,6 @@
     "workDate": "Oct 28, 2025",
     "workDateISO": "2025-10-28T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-28",
     "featured": false
   },
   {
@@ -3268,7 +3147,6 @@
     "workDate": "Oct 27, 2025",
     "workDateISO": "2025-10-27T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-10-27",
     "featured": false
   },
   {
@@ -3293,7 +3171,6 @@
     "workDate": "Oct 27, 2025",
     "workDateISO": "2025-10-27T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-27",
     "featured": false
   },
   {
@@ -3318,7 +3195,6 @@
     "workDate": "Oct 26, 2025",
     "workDateISO": "2025-10-26T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-26",
     "featured": false
   },
   {
@@ -3343,7 +3219,6 @@
     "workDate": "Oct 25, 2025",
     "workDateISO": "2025-10-25T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-25",
     "featured": false
   },
   {
@@ -3368,7 +3243,6 @@
     "workDate": "Oct 24, 2025",
     "workDateISO": "2025-10-24T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-24",
     "featured": false
   },
   {
@@ -3393,7 +3267,6 @@
     "workDate": "Oct 24, 2025",
     "workDateISO": "2025-10-24T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-24",
     "featured": false
   },
   {
@@ -3418,7 +3291,6 @@
     "workDate": "Oct 23, 2025",
     "workDateISO": "2025-10-23T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-23",
     "featured": false
   },
   {
@@ -3443,7 +3315,6 @@
     "workDate": "Oct 22, 2025",
     "workDateISO": "2025-10-22T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-22",
     "featured": false
   },
   {
@@ -3468,7 +3339,6 @@
     "workDate": "Oct 21, 2025",
     "workDateISO": "2025-10-21T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-21",
     "featured": false
   },
   {
@@ -3493,7 +3363,6 @@
     "workDate": "Oct 20, 2025",
     "workDateISO": "2025-10-20T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-20",
     "featured": false
   },
   {
@@ -3518,7 +3387,6 @@
     "workDate": "Oct 20, 2025",
     "workDateISO": "2025-10-20T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-20",
     "featured": false
   },
   {
@@ -3543,7 +3411,6 @@
     "workDate": "Oct 19, 2025",
     "workDateISO": "2025-10-19T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-19",
     "featured": false
   },
   {
@@ -3568,7 +3435,6 @@
     "workDate": "Oct 18, 2025",
     "workDateISO": "2025-10-18T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-18",
     "featured": false
   },
   {
@@ -3593,7 +3459,6 @@
     "workDate": "Oct 17, 2025",
     "workDateISO": "2025-10-17T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-17",
     "featured": false
   },
   {
@@ -3618,7 +3483,6 @@
     "workDate": "Oct 17, 2025",
     "workDateISO": "2025-10-17T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-10-17",
     "featured": false
   },
   {
@@ -3643,7 +3507,6 @@
     "workDate": "Oct 16, 2025",
     "workDateISO": "2025-10-16T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-10-16",
     "featured": false
   },
   {
@@ -3666,8 +3529,7 @@
     "slug": "the-calm-after-the-storm-when-victory-means-stopping-to-plan",
     "chatDate": "10/4/2025",
     "category": "",
-    "featured": false,
-    "cluster": "2025-10-15"
+    "featured": false
   },
   {
     "title": "The Great Refactor: Six Weeks in Eighteen Days",
@@ -3688,11 +3550,11 @@
     "thumbnail": null,
     "slug": "the-great-refactor-six-weeks-in-eighteen-days",
     "chatDate": "10/4/2025",
-    "category": "2025-10-07",
+    "category": "",
     "workDate": "Oct 7, 2025",
     "workDateISO": "2025-10-07T00:00:00.000Z",
     "featured": false,
-    "cluster": "2025-10-14"
+    "cluster": "alpha-milestone"
   },
   {
     "title": "The Agent That Saved Me From Shipping 69%",
@@ -3713,11 +3575,11 @@
     "thumbnail": null,
     "slug": "the-agent-that-saved-me-from-shipping-69",
     "chatDate": "10/4/2025",
-    "category": "2025-10-06",
+    "category": "",
     "workDate": "Oct 6, 2025",
     "workDateISO": "2025-10-06T00:00:00.000Z",
     "featured": false,
-    "cluster": "2025-10-13"
+    "cluster": "alpha-milestone"
   },
   {
     "title": "When 75% Turns Out to Mean 100%",
@@ -3738,11 +3600,11 @@
     "thumbnail": null,
     "slug": "when-75-turns-out-to-mean-100",
     "chatDate": "10/4/2025",
-    "category": "2025-10-05",
+    "category": "",
     "workDate": "Oct 5, 2025",
     "workDateISO": "2025-10-05T00:00:00.000Z",
     "featured": false,
-    "cluster": "2025-10-13"
+    "cluster": "alpha-milestone"
   },
   {
     "title": "Why the Future of AI UX is Orchestration, Not Intelligence",
@@ -3765,7 +3627,7 @@
     "workDate": "Aug 19, 2025",
     "workDateISO": "2025-08-19T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-12",
+    "cluster": "reflection-evolution",
     "featured": false,
     "imageCaption": "robot-discovery.webp"
   },
@@ -3790,7 +3652,7 @@
     "workDate": "Aug 14, 2025",
     "workDateISO": "2025-08-14T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-11",
+    "cluster": "reflection-evolution",
     "featured": false
   },
   {
@@ -3814,7 +3676,7 @@
     "workDate": "Oct 4, 2025",
     "workDateISO": "2025-10-04T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-10-10",
+    "cluster": "reflection-evolution",
     "featured": false
   },
   {
@@ -3838,7 +3700,7 @@
     "workDate": "Oct 3, 2025",
     "workDateISO": "2025-10-03T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-10-10",
+    "cluster": "reflection-evolution",
     "featured": false
   },
   {
@@ -3862,7 +3724,7 @@
     "workDate": "Oct 2, 2025",
     "workDateISO": "2025-10-02T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-10-09",
+    "cluster": "reflection-evolution",
     "featured": false
   },
   {
@@ -3886,7 +3748,7 @@
     "workDate": "Oct 1, 2025",
     "workDateISO": "2025-10-01T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-10-08",
+    "cluster": "reflection-evolution",
     "featured": false
   },
   {
@@ -3910,7 +3772,7 @@
     "workDate": "Sep 30, 2025",
     "workDateISO": "2025-09-30T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-10-07",
+    "cluster": "reflection-evolution",
     "featured": false
   },
   {
@@ -3934,7 +3796,7 @@
     "workDate": "Sep 29, 2025",
     "workDateISO": "2025-09-29T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-10-06",
+    "cluster": "reflection-evolution",
     "featured": false
   },
   {
@@ -3958,7 +3820,7 @@
     "workDate": "Sep 28, 2025",
     "workDateISO": "2025-09-28T00:00:00.000Z",
     "category": "building",
-    "cluster": "2025-10-06",
+    "cluster": "reflection-evolution",
     "featured": false
   },
   {
@@ -3982,7 +3844,7 @@
     "workDate": "Aug 9, 2025",
     "workDateISO": "2025-08-09T00:00:00.000Z",
     "category": "insight",
-    "cluster": "2025-10-05",
+    "cluster": "reflection-evolution",
     "featured": false
   },
   {
@@ -4002,7 +3864,7 @@
     "category": "building",
     "workDate": "Sep 27, 2025",
     "workDateISO": "2025-09-27T00:00:00.000Z",
-    "cluster": "2025-10-03",
+    "cluster": "discipline-completion",
     "chatDate": "9/21/2025",
     "featured": false
   },
@@ -4023,7 +3885,7 @@
     "category": "building",
     "workDate": "Sep 26, 2025",
     "workDateISO": "2025-09-26T00:00:00.000Z",
-    "cluster": "2025-10-03",
+    "cluster": "discipline-completion",
     "chatDate": "9/21/2025",
     "featured": false
   },
@@ -4044,7 +3906,7 @@
     "category": "building",
     "workDate": "Sep 25, 2025",
     "workDateISO": "2025-09-25T00:00:00.000Z",
-    "cluster": "2025-10-02",
+    "cluster": "discipline-completion",
     "chatDate": "9/21/2025",
     "featured": false
   },
@@ -4065,7 +3927,7 @@
     "category": "building",
     "workDate": "Sep 24, 2025",
     "workDateISO": "2025-09-24T00:00:00.000Z",
-    "cluster": "2025-10-01",
+    "cluster": "discipline-completion",
     "chatDate": "9/21/2025",
     "featured": false
   },
@@ -4086,7 +3948,7 @@
     "category": "building",
     "workDate": "Sep 23, 2025",
     "workDateISO": "2025-09-23T00:00:00.000Z",
-    "cluster": "2025-09-30",
+    "cluster": "discipline-completion",
     "chatDate": "9/21/2025",
     "featured": false
   },
@@ -4107,7 +3969,7 @@
     "category": "building",
     "workDate": "Sep 22, 2025",
     "workDateISO": "2025-09-22T00:00:00.000Z",
-    "cluster": "2025-09-29",
+    "cluster": "discipline-completion",
     "chatDate": "9/21/2025",
     "featured": false
   },
@@ -4128,7 +3990,7 @@
     "category": "building",
     "workDate": "Sep 21, 2025",
     "workDateISO": "2025-09-21T00:00:00.000Z",
-    "cluster": "2025-09-29",
+    "cluster": "discipline-completion",
     "chatDate": "9/21/2025",
     "featured": false
   },
@@ -4149,7 +4011,7 @@
     "category": "building",
     "workDate": "Sep 20, 2025",
     "workDateISO": "2025-09-20T00:00:00.000Z",
-    "cluster": "2025-09-26",
+    "cluster": "discipline-completion",
     "chatDate": "9/20/2025",
     "featured": false
   },
@@ -4170,7 +4032,7 @@
     "category": "building",
     "workDate": "Sep 19, 2025",
     "workDateISO": "2025-09-19T00:00:00.000Z",
-    "cluster": "2025-09-26",
+    "cluster": "discipline-completion",
     "chatDate": "9/20/2025",
     "featured": false
   },
@@ -4191,7 +4053,7 @@
     "category": "building",
     "workDate": "Sep 18, 2025",
     "workDateISO": "2025-09-18T00:00:00.000Z",
-    "cluster": "2025-09-25",
+    "cluster": "discipline-completion",
     "chatDate": "9/20/2025",
     "featured": false
   },
@@ -4212,7 +4074,7 @@
     "category": "building",
     "workDate": "Sep 17, 2025",
     "workDateISO": "2025-09-17T00:00:00.000Z",
-    "cluster": "2025-09-24",
+    "cluster": "discipline-completion",
     "chatDate": "9/19/2025",
     "featured": false
   },
@@ -4233,7 +4095,7 @@
     "category": "building",
     "workDate": "Sep 16, 2025",
     "workDateISO": "2025-09-16T00:00:00.000Z",
-    "cluster": "2025-09-23",
+    "cluster": "discipline-completion",
     "chatDate": "9/16/2025",
     "featured": false
   },
@@ -4254,7 +4116,7 @@
     "category": "building",
     "workDate": "Sep 15, 2025",
     "workDateISO": "2025-09-15T00:00:00.000Z",
-    "cluster": "2025-09-23",
+    "cluster": "discipline-completion",
     "featured": false
   },
   {
@@ -4274,7 +4136,7 @@
     "category": "building",
     "workDate": "Sep 14, 2025",
     "workDateISO": "2025-09-14T00:00:00.000Z",
-    "cluster": "2025-09-22",
+    "cluster": "strategic-pause",
     "chatDate": "9/12/2025",
     "featured": false
   },
@@ -4295,7 +4157,7 @@
     "category": "building",
     "workDate": "Sep 13, 2025",
     "workDateISO": "2025-09-13T00:00:00.000Z",
-    "cluster": "2025-09-22",
+    "cluster": "strategic-pause",
     "chatDate": "9/12/2025",
     "featured": false
   },
@@ -4316,7 +4178,7 @@
     "category": "building",
     "workDate": "Sep 13, 2025",
     "workDateISO": "2025-09-13T00:00:00.000Z",
-    "cluster": "2025-09-19",
+    "cluster": "strategic-pause",
     "chatDate": "9/12/2025",
     "featured": false
   },
@@ -4337,7 +4199,7 @@
     "category": "building",
     "workDate": "Sep 12, 2025",
     "workDateISO": "2025-09-12T00:00:00.000Z",
-    "cluster": "2025-09-19",
+    "cluster": "strategic-pause",
     "chatDate": "9/12/2025",
     "featured": false
   },
@@ -4358,7 +4220,7 @@
     "category": "building",
     "workDate": "Sep 11, 2025",
     "workDateISO": "2025-09-11T00:00:00.000Z",
-    "cluster": "2025-09-18",
+    "cluster": "strategic-pause",
     "chatDate": "9/9/2025",
     "featured": false,
     "imageCaption": "robot-locomotive.webp"
@@ -4380,7 +4242,7 @@
     "category": "building",
     "workDate": "Sep 10, 2025",
     "workDateISO": "2025-09-10T00:00:00.000Z",
-    "cluster": "2025-09-17",
+    "cluster": "strategic-pause",
     "chatDate": "9/9/2025",
     "featured": false
   },
@@ -4401,7 +4263,7 @@
     "category": "building",
     "workDate": "Sep 9, 2025",
     "workDateISO": "2025-09-09T00:00:00.000Z",
-    "cluster": "2025-09-16",
+    "cluster": "strategic-pause",
     "chatDate": "9/9/2025",
     "featured": false
   },
@@ -4422,7 +4284,7 @@
     "category": "building",
     "workDate": "Sep 8, 2025",
     "workDateISO": "2025-09-08T00:00:00.000Z",
-    "cluster": "2025-09-15",
+    "cluster": "meta-development",
     "chatDate": "9/6/2025",
     "featured": false,
     "imageCaption": "robot-pottery.webp"
@@ -4444,7 +4306,7 @@
     "category": "building",
     "workDate": "Sep 7, 2025",
     "workDateISO": "2025-09-07T00:00:00.000Z",
-    "cluster": "2025-09-15",
+    "cluster": "meta-development",
     "chatDate": "9/6/2025",
     "featured": false
   },
@@ -4465,7 +4327,7 @@
     "category": "building",
     "workDate": "Sep 6, 2025",
     "workDateISO": "2025-09-06T00:00:00.000Z",
-    "cluster": "2025-09-12",
+    "cluster": "meta-development",
     "chatDate": "9/6/2025",
     "featured": false
   },
@@ -4486,7 +4348,7 @@
     "category": "building",
     "workDate": "Sep 5, 2025",
     "workDateISO": "2025-09-05T00:00:00.000Z",
-    "cluster": "2025-09-12",
+    "cluster": "meta-development",
     "chatDate": "9/3/2025",
     "featured": false
   },
@@ -4507,7 +4369,7 @@
     "category": "building",
     "workDate": "Sep 4, 2025",
     "workDateISO": "2025-09-04T00:00:00.000Z",
-    "cluster": "2025-09-11",
+    "cluster": "meta-development",
     "chatDate": "9/3/2025",
     "featured": false
   },
@@ -4528,7 +4390,7 @@
     "category": "building",
     "workDate": "Sep 3, 2025",
     "workDateISO": "2025-09-03T00:00:00.000Z",
-    "cluster": "2025-09-10",
+    "cluster": "meta-development",
     "chatDate": "9/3/2025",
     "featured": false
   },
@@ -4549,7 +4411,7 @@
     "category": "building",
     "workDate": "Sep 2, 2025",
     "workDateISO": "2025-09-02T00:00:00.000Z",
-    "cluster": "2025-09-09",
+    "cluster": "meta-development",
     "chatDate": "9/3/2025",
     "featured": false
   },
@@ -4570,7 +4432,7 @@
     "category": "building",
     "workDate": "Aug 31, 2025",
     "workDateISO": "2025-08-31T00:00:00.000Z",
-    "cluster": "2025-09-08",
+    "cluster": "orchestration-verification",
     "chatDate": "8/28/2025",
     "featured": false
   },
@@ -4591,7 +4453,7 @@
     "category": "building",
     "workDate": "Aug 30, 2025",
     "workDateISO": "2025-08-30T00:00:00.000Z",
-    "cluster": "2025-09-05",
+    "cluster": "orchestration-verification",
     "chatDate": "8/28/2025",
     "featured": false
   },
@@ -4612,7 +4474,7 @@
     "category": "building",
     "workDate": "Aug 29, 2025",
     "workDateISO": "2025-08-29T00:00:00.000Z",
-    "cluster": "2025-09-05",
+    "cluster": "orchestration-verification",
     "chatDate": "8/28/2025",
     "featured": false
   },
@@ -4633,7 +4495,7 @@
     "category": "building",
     "workDate": "Aug 28, 2025",
     "workDateISO": "2025-08-28T00:00:00.000Z",
-    "cluster": "2025-09-04",
+    "cluster": "orchestration-verification",
     "chatDate": "8/28/2025",
     "featured": false
   },
@@ -4654,7 +4516,7 @@
     "category": "building",
     "workDate": "Aug 27, 2025",
     "workDateISO": "2025-08-27T00:00:00.000Z",
-    "cluster": "2025-09-03",
+    "cluster": "orchestration-verification",
     "chatDate": "8/28/2025",
     "featured": false
   },
@@ -4675,7 +4537,7 @@
     "category": "building",
     "workDate": "Aug 26, 2025",
     "workDateISO": "2025-08-26T00:00:00.000Z",
-    "cluster": "2025-09-02",
+    "cluster": "orchestration-verification",
     "chatDate": "8/23/2025",
     "featured": false
   },
@@ -4696,7 +4558,7 @@
     "category": "building",
     "workDate": "Aug 25, 2025",
     "workDateISO": "2025-08-25T00:00:00.000Z",
-    "cluster": "2025-09-02",
+    "cluster": "orchestration-verification",
     "chatDate": "8/23/2025",
     "featured": false
   },
@@ -4717,7 +4579,7 @@
     "category": "building",
     "workDate": "Aug 24, 2025",
     "workDateISO": "2025-08-24T00:00:00.000Z",
-    "cluster": "2025-09-01",
+    "cluster": "orchestration-verification",
     "chatDate": "8/23/2025",
     "featured": false
   },
@@ -4738,7 +4600,7 @@
     "category": "building",
     "workDate": "Aug 23, 2025",
     "workDateISO": "2025-08-23T00:00:00.000Z",
-    "cluster": "2025-08-29",
+    "cluster": "enhanced-capabilities",
     "chatDate": "8/23/2025",
     "featured": false
   },
@@ -4759,7 +4621,7 @@
     "category": "building",
     "workDate": "Aug 22, 2025",
     "workDateISO": "2025-08-22T00:00:00.000Z",
-    "cluster": "2025-08-29",
+    "cluster": "enhanced-capabilities",
     "chatDate": "8/20/2025",
     "featured": false
   },
@@ -4780,7 +4642,7 @@
     "category": "building",
     "workDate": "Aug 21, 2025",
     "workDateISO": "2025-08-21T00:00:00.000Z",
-    "cluster": "2025-08-28",
+    "cluster": "enhanced-capabilities",
     "chatDate": "8/20/2025",
     "featured": false
   },
@@ -4801,7 +4663,7 @@
     "category": "building",
     "workDate": "Aug 20, 2025",
     "workDateISO": "2025-08-20T00:00:00.000Z",
-    "cluster": "2025-08-27",
+    "cluster": "enhanced-capabilities",
     "chatDate": "8/20/2025",
     "featured": false
   },
@@ -4822,7 +4684,7 @@
     "category": "building",
     "workDate": "Aug 19, 2025",
     "workDateISO": "2025-08-19T00:00:00.000Z",
-    "cluster": "2025-08-26",
+    "cluster": "enhanced-capabilities",
     "chatDate": "8/17/2025",
     "featured": false
   },
@@ -4843,7 +4705,7 @@
     "category": "building",
     "workDate": "Aug 18, 2025",
     "workDateISO": "2025-08-18T00:00:00.000Z",
-    "cluster": "2025-08-26",
+    "cluster": "enhanced-capabilities",
     "chatDate": "8/17/2025",
     "featured": false
   },
@@ -4864,7 +4726,7 @@
     "category": "building",
     "workDate": "Aug 17, 2025",
     "workDateISO": "2025-08-17T00:00:00.000Z",
-    "cluster": "2025-08-25",
+    "cluster": "enhanced-capabilities",
     "chatDate": "8/17/2025",
     "featured": false
   },
@@ -4885,7 +4747,7 @@
     "category": "building",
     "workDate": "Aug 16, 2025",
     "workDateISO": "2025-08-16T00:00:00.000Z",
-    "cluster": "2025-08-25",
+    "cluster": "enhanced-capabilities",
     "chatDate": "8/17/2025",
     "featured": false
   },
@@ -4906,7 +4768,7 @@
     "category": "building",
     "workDate": "Aug 15, 2025",
     "workDateISO": "2025-08-15T00:00:00.000Z",
-    "cluster": "2025-08-22",
+    "cluster": "infrastructure-sprint",
     "chatDate": "8/12/2025",
     "featured": false
   },
@@ -4927,7 +4789,7 @@
     "category": "building",
     "workDate": "Aug 14, 2025",
     "workDateISO": "2025-08-14T00:00:00.000Z",
-    "cluster": "2025-08-21",
+    "cluster": "infrastructure-sprint",
     "featured": false
   },
   {
@@ -4947,7 +4809,7 @@
     "category": "building",
     "workDate": "Aug 13, 2025",
     "workDateISO": "2025-08-13T00:00:00.000Z",
-    "cluster": "2025-08-20",
+    "cluster": "infrastructure-sprint",
     "chatDate": "8/12/2025",
     "featured": false
   },
@@ -4968,7 +4830,7 @@
     "category": "building",
     "workDate": "Aug 12, 2025",
     "workDateISO": "2025-08-12T00:00:00.000Z",
-    "cluster": "2025-08-19",
+    "cluster": "infrastructure-sprint",
     "chatDate": "8/12/2025",
     "featured": false
   },
@@ -4989,7 +4851,7 @@
     "category": "building",
     "workDate": "Aug 11, 2025",
     "workDateISO": "2025-08-11T00:00:00.000Z",
-    "cluster": "2025-08-19",
+    "cluster": "infrastructure-sprint",
     "chatDate": "8/10/2025",
     "featured": false,
     "imageCaption": "robot-archaeologists.webp"
@@ -5011,7 +4873,7 @@
     "category": "building",
     "workDate": "Aug 10, 2025",
     "workDateISO": "2025-08-10T00:00:00.000Z",
-    "cluster": "2025-08-18",
+    "cluster": "infrastructure-sprint",
     "chatDate": "8/10/2025",
     "featured": false
   },
@@ -5032,7 +4894,7 @@
     "category": "building",
     "workDate": "Aug 9, 2025",
     "workDateISO": "2025-08-09T00:00:00.000Z",
-    "cluster": "2025-08-18",
+    "cluster": "infrastructure-sprint",
     "chatDate": "8/12/2025",
     "featured": false
   },
@@ -5053,7 +4915,7 @@
     "category": "building",
     "workDate": "Aug 8, 2025",
     "workDateISO": "2025-08-08T00:00:00.000Z",
-    "cluster": "2025-08-15",
+    "cluster": "methodology-refinement",
     "chatDate": "8/6/2025",
     "featured": false
   },
@@ -5074,7 +4936,7 @@
     "category": "building",
     "workDate": "Aug 7, 2025",
     "workDateISO": "2025-08-07T00:00:00.000Z",
-    "cluster": "2025-08-15",
+    "cluster": "methodology-refinement",
     "chatDate": "8/6/2025",
     "featured": false
   },
@@ -5095,7 +4957,7 @@
     "category": "building",
     "workDate": "Aug 6, 2025",
     "workDateISO": "2025-08-06T00:00:00.000Z",
-    "cluster": "2025-08-15",
+    "cluster": "methodology-refinement",
     "chatDate": "8/6/2025",
     "featured": false
   },
@@ -5116,7 +4978,7 @@
     "category": "insight",
     "workDate": "Aug 5, 2025",
     "workDateISO": "2025-08-05T00:00:00.000Z",
-    "cluster": "2025-10-04",
+    "cluster": "reflection-evolution",
     "chatDate": "8/3/2025",
     "featured": false
   },
@@ -5137,7 +4999,7 @@
     "category": "building",
     "workDate": "Aug 3, 2025",
     "workDateISO": "2025-08-03T00:00:00.000Z",
-    "cluster": "2025-08-14",
+    "cluster": "methodology-refinement",
     "chatDate": "8/3/2025",
     "featured": false
   },
@@ -5158,7 +5020,7 @@
     "category": "building",
     "workDate": "Aug 2, 2025",
     "workDateISO": "2025-08-02T00:00:00.000Z",
-    "cluster": "2025-08-13",
+    "cluster": "methodology-refinement",
     "chatDate": "7/31/2025",
     "featured": false
   },
@@ -5179,7 +5041,7 @@
     "category": "building",
     "workDate": "Aug 1, 2025",
     "workDateISO": "2025-08-01T00:00:00.000Z",
-    "cluster": "2025-08-13",
+    "cluster": "methodology-refinement",
     "chatDate": "7/31/2025",
     "featured": false
   },
@@ -5200,7 +5062,7 @@
     "category": "building",
     "workDate": "Jul 31, 2025",
     "workDateISO": "2025-07-31T00:00:00.000Z",
-    "cluster": "2025-08-13",
+    "cluster": "methodology-refinement",
     "chatDate": "7/31/2025",
     "featured": false
   },
@@ -5221,7 +5083,7 @@
     "category": "building",
     "workDate": "Jul 30, 2025",
     "workDateISO": "2025-07-30T00:00:00.000Z",
-    "cluster": "2025-08-12",
+    "cluster": "methodology-refinement",
     "chatDate": "7/29/2025",
     "featured": false
   },
@@ -5242,7 +5104,7 @@
     "category": "building",
     "workDate": "Jul 29, 2025",
     "workDateISO": "2025-07-29T00:00:00.000Z",
-    "cluster": "2025-08-12",
+    "cluster": "methodology-refinement",
     "chatDate": "7/29/2025",
     "featured": false
   },
@@ -5263,7 +5125,7 @@
     "category": "building",
     "workDate": "Jul 28, 2025",
     "workDateISO": "2025-07-28T00:00:00.000Z",
-    "cluster": "2025-08-12",
+    "cluster": "methodology-refinement",
     "chatDate": "7/27/2025",
     "featured": false
   },
@@ -5284,7 +5146,7 @@
     "category": "building",
     "workDate": "Jul 27, 2025",
     "workDateISO": "2025-07-27T00:00:00.000Z",
-    "cluster": "2025-08-11",
+    "cluster": "methodology-refinement",
     "chatDate": "7/27/2025",
     "featured": false
   },
@@ -5305,7 +5167,7 @@
     "category": "building",
     "workDate": "Jul 26, 2025",
     "workDateISO": "2025-07-26T00:00:00.000Z",
-    "cluster": "2025-08-11",
+    "cluster": "methodology-refinement",
     "chatDate": "7/26/2025",
     "featured": false
   },
@@ -5326,7 +5188,7 @@
     "category": "building",
     "workDate": "Jul 25, 2025",
     "workDateISO": "2025-07-25T00:00:00.000Z",
-    "cluster": "2025-08-11",
+    "cluster": "methodology-refinement",
     "featured": false
   },
   {
@@ -5346,7 +5208,7 @@
     "category": "building",
     "workDate": "Jul 24, 2025",
     "workDateISO": "2025-07-24T00:00:00.000Z",
-    "cluster": "2025-08-07",
+    "cluster": "test-suite-recovery",
     "chatDate": "7/22/2025",
     "featured": false
   },
@@ -5367,7 +5229,7 @@
     "category": "insight",
     "workDate": "Jul 23, 2025",
     "workDateISO": "2025-07-23T00:00:00.000Z",
-    "cluster": "2025-09-28",
+    "cluster": "discipline-completion",
     "chatDate": "7/22/2025",
     "featured": false
   },
@@ -5388,7 +5250,7 @@
     "category": "building",
     "workDate": "Jul 23, 2025",
     "workDateISO": "2025-07-23T00:00:00.000Z",
-    "cluster": "2025-08-07",
+    "cluster": "test-suite-recovery",
     "chatDate": "7/22/2025",
     "featured": false
   },
@@ -5409,7 +5271,7 @@
     "category": "insight",
     "workDate": "Jul 22, 2025",
     "workDateISO": "2025-07-22T00:00:00.000Z",
-    "cluster": "2025-09-27",
+    "cluster": "discipline-completion",
     "chatDate": "7/22/2025",
     "featured": false
   },
@@ -5430,7 +5292,7 @@
     "category": "building",
     "workDate": "Jul 22, 2025",
     "workDateISO": "2025-07-22T00:00:00.000Z",
-    "cluster": "2025-08-07",
+    "cluster": "test-suite-recovery",
     "chatDate": "7/22/2025",
     "featured": false
   },
@@ -5451,7 +5313,7 @@
     "category": "building",
     "workDate": "Jul 21, 2025",
     "workDateISO": "2025-07-21T00:00:00.000Z",
-    "cluster": "2025-08-06",
+    "cluster": "test-suite-recovery",
     "chatDate": "7/20/2025",
     "featured": false
   },
@@ -5472,7 +5334,7 @@
     "category": "building",
     "workDate": "Jul 20, 2025",
     "workDateISO": "2025-07-20T00:00:00.000Z",
-    "cluster": "2025-08-06",
+    "cluster": "test-suite-recovery",
     "chatDate": "7/20/2025",
     "featured": false
   },
@@ -5493,7 +5355,7 @@
     "category": "insight",
     "workDate": "Jul 19, 2025",
     "workDateISO": "2025-07-19T00:00:00.000Z",
-    "cluster": "2025-09-21",
+    "cluster": "strategic-pause",
     "chatDate": "7/16/2025",
     "featured": false
   },
@@ -5514,7 +5376,7 @@
     "category": "building",
     "workDate": "Jul 18, 2025",
     "workDateISO": "2025-07-18T00:00:00.000Z",
-    "cluster": "2025-08-06",
+    "cluster": "test-suite-recovery",
     "chatDate": "7/16/2025",
     "featured": false
   },
@@ -5535,7 +5397,7 @@
     "category": "building",
     "workDate": "Jul 17, 2025",
     "workDateISO": "2025-07-17T00:00:00.000Z",
-    "cluster": "2025-08-05",
+    "cluster": "test-suite-recovery",
     "chatDate": "7/16/2025",
     "featured": false
   },
@@ -5556,7 +5418,7 @@
     "category": "building",
     "workDate": "Jul 16, 2025",
     "workDateISO": "2025-07-16T00:00:00.000Z",
-    "cluster": "2025-08-05",
+    "cluster": "test-suite-recovery",
     "chatDate": "7/16/2025",
     "featured": false
   },
@@ -5577,7 +5439,7 @@
     "category": "insight",
     "workDate": "Jul 15, 2025",
     "workDateISO": "2025-07-15T00:00:00.000Z",
-    "cluster": "2025-09-20",
+    "cluster": "strategic-pause",
     "chatDate": "7/12/2025",
     "featured": false
   },
@@ -5598,7 +5460,7 @@
     "category": "building",
     "workDate": "Jul 15, 2025",
     "workDateISO": "2025-07-15T00:00:00.000Z",
-    "cluster": "2025-08-05",
+    "cluster": "test-suite-recovery",
     "chatDate": "7/12/2025",
     "featured": false
   },
@@ -5619,7 +5481,7 @@
     "category": "building",
     "workDate": "Jul 14, 2025",
     "workDateISO": "2025-07-14T00:00:00.000Z",
-    "cluster": "2025-08-04",
+    "cluster": "test-suite-recovery",
     "chatDate": "7/12/2025",
     "featured": false
   },
@@ -5640,7 +5502,7 @@
     "category": "building",
     "workDate": "Jul 13, 2025",
     "workDateISO": "2025-07-13T00:00:00.000Z",
-    "cluster": "2025-08-04",
+    "cluster": "test-suite-recovery",
     "featured": false
   },
   {
@@ -5660,7 +5522,7 @@
     "category": "building",
     "workDate": "Jul 13, 2025",
     "workDateISO": "2025-07-13T00:00:00.000Z",
-    "cluster": "2025-08-04",
+    "cluster": "test-suite-recovery",
     "featured": false
   },
   {
@@ -5680,7 +5542,7 @@
     "category": "building",
     "workDate": "Jul 12, 2025",
     "workDateISO": "2025-07-12T00:00:00.000Z",
-    "cluster": "2025-08-01",
+    "cluster": "test-suite-recovery",
     "featured": false,
     "imageCaption": "robot-weekend.webp"
   },
@@ -5701,7 +5563,7 @@
     "category": "building",
     "workDate": "Jul 12, 2025",
     "workDateISO": "2025-07-12T00:00:00.000Z",
-    "cluster": "2025-08-01",
+    "cluster": "test-suite-recovery",
     "featured": false
   },
   {
@@ -5721,7 +5583,7 @@
     "category": "insight",
     "workDate": "Jul 11, 2025",
     "workDateISO": "2025-07-11T00:00:00.000Z",
-    "cluster": "2025-09-14",
+    "cluster": "meta-development",
     "chatDate": "7/11/2025",
     "featured": false
   },
@@ -5742,7 +5604,7 @@
     "category": "insight",
     "workDate": "Jul 10, 2025",
     "workDateISO": "2025-07-10T00:00:00.000Z",
-    "cluster": "2025-09-07",
+    "cluster": "orchestration-verification",
     "chatDate": "7/9/2025",
     "featured": false,
     "imageCaption": "robot-drivered.webp"
@@ -5764,7 +5626,7 @@
     "category": "building",
     "workDate": "Jul 9, 2025",
     "workDateISO": "2025-07-09T00:00:00.000Z",
-    "cluster": "2025-08-08",
+    "cluster": "the-debugging-marathon",
     "chatDate": "7/9/2025",
     "featured": false
   },
@@ -5785,7 +5647,7 @@
     "category": "building",
     "workDate": "Jul 9, 2025",
     "workDateISO": "2025-07-09T00:00:00.000Z",
-    "cluster": "2025-08-08",
+    "cluster": "the-debugging-marathon",
     "chatDate": "7/9/2025",
     "featured": false
   },
@@ -5806,7 +5668,7 @@
     "category": "building",
     "workDate": "Jul 9, 2025",
     "workDateISO": "2025-07-09T00:00:00.000Z",
-    "cluster": "2025-08-08",
+    "cluster": "the-debugging-marathon",
     "chatDate": "7/9/2025",
     "featured": false
   },
@@ -5827,7 +5689,7 @@
     "category": "building",
     "workDate": "Jul 8, 2025",
     "workDateISO": "2025-07-08T00:00:00.000Z",
-    "cluster": "2025-08-01",
+    "cluster": "the-debugging-marathon",
     "chatDate": "7/8/2025",
     "featured": false
   },
@@ -5848,7 +5710,7 @@
     "category": "building",
     "workDate": "Jul 8, 2025",
     "workDateISO": "2025-07-08T00:00:00.000Z",
-    "cluster": "2025-07-31",
+    "cluster": "the-debugging-marathon",
     "featured": false
   },
   {
@@ -5868,7 +5730,7 @@
     "category": "insight",
     "workDate": "Jul 7, 2025",
     "workDateISO": "2025-07-07T00:00:00.000Z",
-    "cluster": "2025-09-13",
+    "cluster": "meta-development",
     "featured": false
   },
   {
@@ -5888,7 +5750,7 @@
     "category": "building",
     "workDate": "Jul 7, 2025",
     "workDateISO": "2025-07-07T00:00:00.000Z",
-    "cluster": "2025-07-31",
+    "cluster": "the-debugging-marathon",
     "featured": false
   },
   {
@@ -5908,7 +5770,7 @@
     "category": "insight",
     "workDate": "Jul 6, 2025",
     "workDateISO": "2025-07-06T00:00:00.000Z",
-    "cluster": "2025-09-06",
+    "cluster": "orchestration-verification",
     "featured": false
   },
   {
@@ -5928,7 +5790,7 @@
     "category": "building",
     "workDate": "Jul 6, 2025",
     "workDateISO": "2025-07-06T00:00:00.000Z",
-    "cluster": "2025-07-31",
+    "cluster": "the-debugging-marathon",
     "featured": false
   },
   {
@@ -5948,7 +5810,7 @@
     "category": "building",
     "workDate": "Jul 4, 2025",
     "workDateISO": "2025-07-04T00:00:00.000Z",
-    "cluster": "2025-07-30",
+    "cluster": "the-debugging-marathon",
     "featured": false
   },
   {
@@ -5968,7 +5830,7 @@
     "category": "insight",
     "workDate": "Jul 3, 2025",
     "workDateISO": "2025-07-03T00:00:00.000Z",
-    "cluster": "2025-08-31",
+    "cluster": "enhanced-capabilities",
     "chatDate": "8/28/2025",
     "featured": false
   },
@@ -5989,7 +5851,7 @@
     "category": "insight",
     "workDate": "Jul 3, 2025",
     "workDateISO": "2025-07-03T00:00:00.000Z",
-    "cluster": "2025-08-30",
+    "cluster": "enhanced-capabilities",
     "featured": false
   },
   {
@@ -6009,7 +5871,7 @@
     "category": "insight",
     "workDate": "Jul 3, 2025",
     "workDateISO": "2025-07-03T00:00:00.000Z",
-    "cluster": "2025-08-24",
+    "cluster": "enhanced-capabilities",
     "featured": false
   },
   {
@@ -6029,7 +5891,7 @@
     "category": "building",
     "workDate": "Jul 3, 2025",
     "workDateISO": "2025-07-03T00:00:00.000Z",
-    "cluster": "2025-07-30",
+    "cluster": "the-debugging-marathon",
     "featured": false
   },
   {
@@ -6049,7 +5911,7 @@
     "category": "building",
     "workDate": "Jul 1, 2025",
     "workDateISO": "2025-07-01T00:00:00.000Z",
-    "cluster": "2025-07-30",
+    "cluster": "the-debugging-marathon",
     "featured": false
   },
   {
@@ -6069,7 +5931,7 @@
     "category": "insight",
     "workDate": "Jun 30, 2025",
     "workDateISO": "2025-06-30T00:00:00.000Z",
-    "cluster": "2025-08-17",
+    "cluster": "infrastructure-sprint",
     "featured": false
   },
   {
@@ -6089,7 +5951,7 @@
     "category": "building",
     "workDate": "Jun 29, 2025",
     "workDateISO": "2025-06-29T00:00:00.000Z",
-    "cluster": "2025-07-29",
+    "cluster": "first-production-tests",
     "chatDate": "7/22/2025",
     "featured": false
   },
@@ -6110,7 +5972,7 @@
     "category": "insight",
     "workDate": "Jun 27, 2025",
     "workDateISO": "2025-06-27T00:00:00.000Z",
-    "cluster": "2025-08-23",
+    "cluster": "infrastructure-sprint",
     "chatDate": "7/22/2025",
     "featured": false
   },
@@ -6131,7 +5993,7 @@
     "category": "building",
     "workDate": "Jun 27, 2025",
     "workDateISO": "2025-06-27T00:00:00.000Z",
-    "cluster": "2025-07-29",
+    "cluster": "first-production-tests",
     "chatDate": "7/20/2025",
     "featured": false
   },
@@ -6152,7 +6014,7 @@
     "category": "building",
     "workDate": "Jun 27, 2025",
     "workDateISO": "2025-06-27T00:00:00.000Z",
-    "cluster": "2025-07-29",
+    "cluster": "first-production-tests",
     "chatDate": "7/20/2025",
     "featured": false
   },
@@ -6173,7 +6035,7 @@
     "category": "building",
     "workDate": "Jun 27, 2025",
     "workDateISO": "2025-06-27T00:00:00.000Z",
-    "cluster": "2025-06-27",
+    "cluster": "genesis-architecture",
     "featured": false
   },
   {
@@ -6193,7 +6055,7 @@
     "category": "insight",
     "workDate": "Jun 26, 2025",
     "workDateISO": "2025-06-26T00:00:00.000Z",
-    "cluster": "2025-08-16",
+    "cluster": "methodology-refinement",
     "featured": false
   },
   {
@@ -6213,7 +6075,7 @@
     "category": "building",
     "workDate": "Jun 26, 2025",
     "workDateISO": "2025-06-26T00:00:00.000Z",
-    "cluster": "2025-07-28",
+    "cluster": "complexity-reckoning",
     "featured": false
   },
   {
@@ -6233,7 +6095,7 @@
     "category": "building",
     "workDate": "Jun 26, 2025",
     "workDateISO": "2025-06-26T00:00:00.000Z",
-    "cluster": "2025-07-28",
+    "cluster": "complexity-reckoning",
     "chatDate": "7/20/2025",
     "featured": false
   },
@@ -6254,7 +6116,7 @@
     "category": "building",
     "workDate": "Jun 25, 2025",
     "workDateISO": "2025-06-25T00:00:00.000Z",
-    "cluster": "2025-07-25",
+    "cluster": "complexity-reckoning",
     "featured": false
   },
   {
@@ -6274,7 +6136,7 @@
     "category": "building",
     "workDate": "Jun 24, 2025",
     "workDateISO": "2025-06-24T00:00:00.000Z",
-    "cluster": "2025-07-21",
+    "cluster": "foundation-building",
     "featured": false
   },
   {
@@ -6294,7 +6156,7 @@
     "category": "insight",
     "workDate": "Jun 23, 2025",
     "workDateISO": "2025-06-23T00:00:00.000Z",
-    "cluster": "2025-07-20",
+    "cluster": "foundation-building",
     "featured": false
   },
   {
@@ -6314,7 +6176,7 @@
     "category": "building",
     "workDate": "Jun 23, 2025",
     "workDateISO": "2025-06-23T00:00:00.000Z",
-    "cluster": "2025-07-19",
+    "cluster": "foundation-building",
     "chatDate": "7/16/2025",
     "featured": false
   },
@@ -6335,7 +6197,7 @@
     "category": "insight",
     "workDate": "Jun 22, 2025",
     "workDateISO": "2025-06-22T00:00:00.000Z",
-    "cluster": "2025-08-10",
+    "cluster": "methodology-refinement",
     "featured": false
   },
   {
@@ -6355,7 +6217,7 @@
     "category": "building",
     "workDate": "Jun 21, 2025",
     "workDateISO": "2025-06-21T00:00:00.000Z",
-    "cluster": "2025-07-25",
+    "cluster": "complexity-reckoning",
     "featured": false
   },
   {
@@ -6375,7 +6237,7 @@
     "category": "building",
     "workDate": "Jun 19, 2025",
     "workDateISO": "2025-06-19T00:00:00.000Z",
-    "cluster": "2025-07-24",
+    "cluster": "complexity-reckoning",
     "chatDate": "7/20/2025",
     "featured": false
   },
@@ -6396,7 +6258,7 @@
     "category": "building",
     "workDate": "Jun 17, 2025",
     "workDateISO": "2025-06-17T00:00:00.000Z",
-    "cluster": "2025-07-24",
+    "cluster": "complexity-reckoning",
     "chatDate": "7/20/2025",
     "featured": false
   },
@@ -6417,7 +6279,7 @@
     "category": "building",
     "workDate": "Jun 16, 2025",
     "workDateISO": "2025-06-16T00:00:00.000Z",
-    "cluster": "2025-07-23",
+    "cluster": "complexity-reckoning",
     "chatDate": "7/22/2025",
     "featured": false
   },
@@ -6438,7 +6300,7 @@
     "category": "building",
     "workDate": "Jun 15, 2025",
     "workDateISO": "2025-06-15T00:00:00.000Z",
-    "cluster": "2025-07-22",
+    "cluster": "complexity-reckoning",
     "chatDate": "7/20/2025",
     "featured": false
   },
@@ -6459,7 +6321,7 @@
     "category": "building",
     "workDate": "Jun 15, 2025",
     "workDateISO": "2025-06-15T00:00:00.000Z",
-    "cluster": "2025-07-18",
+    "cluster": "foundation-building",
     "featured": false
   },
   {
@@ -6479,7 +6341,7 @@
     "category": "insight",
     "workDate": "Jun 14, 2025",
     "workDateISO": "2025-06-14T00:00:00.000Z",
-    "cluster": "2025-08-09",
+    "cluster": "methodology-refinement",
     "chatDate": "8/6/2025",
     "featured": false
   },
@@ -6500,7 +6362,7 @@
     "category": "insight",
     "workDate": "Jun 14, 2025",
     "workDateISO": "2025-06-14T00:00:00.000Z",
-    "cluster": "2025-07-27",
+    "cluster": "complexity-reckoning",
     "chatDate": "7/22/2025",
     "featured": false
   },
@@ -6521,7 +6383,7 @@
     "category": "building",
     "workDate": "Jun 9, 2025",
     "workDateISO": "2025-06-09T00:00:00.000Z",
-    "cluster": "2025-07-07",
+    "cluster": "foundation-building",
     "featured": false,
     "imageCaption": "robot-critique.webp"
   },
@@ -6542,7 +6404,7 @@
     "category": "building",
     "workDate": "Jun 8, 2025",
     "workDateISO": "2025-06-08T00:00:00.000Z",
-    "cluster": "2025-07-17",
+    "cluster": "foundation-building",
     "featured": false
   },
   {
@@ -6562,7 +6424,7 @@
     "category": "building",
     "workDate": "Jun 7, 2025",
     "workDateISO": "2025-06-07T00:00:00.000Z",
-    "cluster": "2025-07-16",
+    "cluster": "foundation-building",
     "featured": false
   },
   {
@@ -6582,7 +6444,7 @@
     "category": "insight",
     "workDate": "Jun 6, 2025",
     "workDateISO": "2025-06-06T00:00:00.000Z",
-    "cluster": "2025-07-06",
+    "cluster": "genesis-architecture",
     "featured": false
   },
   {
@@ -6602,7 +6464,7 @@
     "category": "building",
     "workDate": "Jun 5, 2025",
     "workDateISO": "2025-06-05T00:00:00.000Z",
-    "cluster": "2025-07-05",
+    "cluster": "genesis-architecture",
     "featured": false
   },
   {
@@ -6622,7 +6484,7 @@
     "category": "building",
     "workDate": "Jun 4, 2025",
     "workDateISO": "2025-06-04T00:00:00.000Z",
-    "cluster": "2025-07-04",
+    "cluster": "genesis-architecture",
     "featured": false
   },
   {
@@ -6642,7 +6504,7 @@
     "category": "building",
     "workDate": "Jun 3, 2025",
     "workDateISO": "2025-06-03T00:00:00.000Z",
-    "cluster": "2025-07-03",
+    "cluster": "genesis-architecture",
     "featured": false
   },
   {
@@ -6662,7 +6524,7 @@
     "category": "building",
     "workDate": "Jun 2, 2025",
     "workDateISO": "2025-06-02T00:00:00.000Z",
-    "cluster": "2025-07-15",
+    "cluster": "foundation-building",
     "featured": false
   },
   {
@@ -6682,7 +6544,7 @@
     "category": "building",
     "workDate": "Jun 2, 2025",
     "workDateISO": "2025-06-02T00:00:00.000Z",
-    "cluster": "2025-07-14",
+    "cluster": "foundation-building",
     "featured": false
   },
   {
@@ -6702,7 +6564,7 @@
     "category": "building",
     "workDate": "Jun 2, 2025",
     "workDateISO": "2025-06-02T00:00:00.000Z",
-    "cluster": "2025-07-12",
+    "cluster": "foundation-building",
     "featured": false
   },
   {
@@ -6722,7 +6584,7 @@
     "category": "building",
     "workDate": "Jun 2, 2025",
     "workDateISO": "2025-06-02T00:00:00.000Z",
-    "cluster": "2025-07-11",
+    "cluster": "foundation-building",
     "featured": false
   },
   {
@@ -6742,7 +6604,7 @@
     "category": "building",
     "workDate": "Jun 1, 2025",
     "workDateISO": "2025-06-01T00:00:00.000Z",
-    "cluster": "2025-07-11",
+    "cluster": "foundation-building",
     "featured": false
   },
   {
@@ -6762,7 +6624,7 @@
     "category": "building",
     "workDate": "May 31, 2025",
     "workDateISO": "2025-05-31T00:00:00.000Z",
-    "cluster": "2025-08-03",
+    "cluster": "first-production-tests",
     "featured": false
   },
   {
@@ -6782,7 +6644,7 @@
     "category": "building",
     "workDate": "May 31, 2025",
     "workDateISO": "2025-05-31T00:00:00.000Z",
-    "cluster": "2025-08-03",
+    "cluster": "first-production-tests",
     "featured": false
   },
   {
@@ -6802,7 +6664,7 @@
     "category": "building",
     "workDate": "May 30, 2025",
     "workDateISO": "2025-05-30T00:00:00.000Z",
-    "cluster": "2025-08-02",
+    "cluster": "first-production-tests",
     "chatDate": "7/11/2025",
     "featured": false
   },
@@ -6823,7 +6685,7 @@
     "category": "building",
     "workDate": "May 30, 2025",
     "workDateISO": "2025-05-30T00:00:00.000Z",
-    "cluster": "2025-08-02",
+    "cluster": "first-production-tests",
     "featured": false
   },
   {
@@ -6843,7 +6705,7 @@
     "category": "insight",
     "workDate": "May 29, 2025",
     "workDateISO": "2025-05-29T00:00:00.000Z",
-    "cluster": "2025-07-26",
+    "cluster": "complexity-reckoning",
     "featured": false
   },
   {
@@ -6863,7 +6725,7 @@
     "category": "insight",
     "workDate": "May 29, 2025",
     "workDateISO": "2025-05-29T00:00:00.000Z",
-    "cluster": "2025-07-11",
+    "cluster": "foundation-building",
     "featured": false
   },
   {
@@ -6883,7 +6745,7 @@
     "category": "building",
     "workDate": "May 29, 2025",
     "workDateISO": "2025-05-29T00:00:00.000Z",
-    "cluster": "2025-07-10",
+    "cluster": "foundation-building",
     "featured": false
   },
   {
@@ -6903,7 +6765,7 @@
     "category": "building",
     "workDate": "May 29, 2025",
     "workDateISO": "2025-05-29T00:00:00.000Z",
-    "cluster": "2025-07-09",
+    "cluster": "foundation-building",
     "featured": false
   },
   {
@@ -6923,7 +6785,7 @@
     "category": "building",
     "workDate": "May 29, 2025",
     "workDateISO": "2025-05-29T00:00:00.000Z",
-    "cluster": "2025-07-08",
+    "cluster": "foundation-building",
     "featured": false
   },
   {
@@ -6943,7 +6805,7 @@
     "category": "insight",
     "workDate": "May 29, 2025",
     "workDateISO": "2025-05-29T00:00:00.000Z",
-    "cluster": "2025-07-02",
+    "cluster": "genesis-architecture",
     "featured": false
   },
   {
@@ -6963,7 +6825,7 @@
     "category": "insight",
     "workDate": "May 29, 2025",
     "workDateISO": "2025-05-29T00:00:00.000Z",
-    "cluster": "2025-07-01",
+    "cluster": "genesis-architecture",
     "featured": false
   },
   {
@@ -6983,7 +6845,7 @@
     "category": "building",
     "workDate": "May 28, 2025",
     "workDateISO": "2025-05-28T00:00:00.000Z",
-    "cluster": "2025-07-01",
+    "cluster": "genesis-architecture",
     "featured": false
   },
   {
@@ -7003,7 +6865,7 @@
     "category": "insight",
     "workDate": "May 27, 2025",
     "workDateISO": "2025-05-27T00:00:00.000Z",
-    "cluster": "2025-07-13",
+    "cluster": "foundation-building",
     "featured": false
   }
 ]
