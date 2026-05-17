@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-05-17T02:55:03.906Z",
+  "buildTime": "2026-05-17T19:03:28.444Z",
   "totalEntries": 356,
   "sections": {
     "readyToPublish": [
@@ -204,26 +204,6 @@
         "caption": ""
       },
       {
-        "title": "The Family Resemblance",
-        "theme": "insight",
-        "status": "queued",
-        "workDate": "2026-04-18",
-        "endWorkDate": "2026-04-22",
-        "pubDate": "2026-05-16",
-        "mediumURL": "",
-        "liPubDate": "",
-        "linkedinURL": "",
-        "canonicalSite": "",
-        "blogURL": "",
-        "blogPath": "",
-        "cartoon": "",
-        "chatDate": "",
-        "draftPath": "",
-        "notes": "insight — DinP ecosystem cross-pollination: Klatch DECISIONS.md propagation + MCP scheme parallels (piper-morgan:// ↔ klatch://) + SSH-over-443 via Calliope + RFC-001; sibling projects align on envelope while keeping sovereign interiors",
-        "altText": "",
-        "caption": ""
-      },
-      {
         "title": "From Protocol to Infrastructure",
         "theme": "insight",
         "status": "queued",
@@ -285,6 +265,26 @@
       }
     ],
     "recentlyPublished": [
+      {
+        "title": "The Family Resemblance",
+        "theme": "insight",
+        "status": "published",
+        "workDate": "2026-04-18",
+        "endWorkDate": "2026-04-22",
+        "pubDate": "2026-05-16",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "distributed",
+        "blogURL": "https://pipermorgan.ai/blog/the-family-resemblance/",
+        "blogPath": "/blog/the-family-resemblance",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "",
+        "notes": "insight — DinP ecosystem cross-pollination: Klatch DECISIONS.md propagation + MCP scheme parallels (piper-morgan:// ↔ klatch://) + SSH-over-443 via Calliope + RFC-001; sibling projects align on envelope while keeping sovereign interiors",
+        "altText": "Ethereal AI beings collaboratively sew a shared quilt whose patterns grow more intricate and interconnected from left to right.",
+        "caption": "\"It's becoming a tradition!\""
+      },
       {
         "title": "Same Failure, Six Agents, Ninety Minutes",
         "theme": "building",
@@ -447,6 +447,32 @@
       }
     ],
     "syndicationGaps": [
+      {
+        "entry": {
+          "title": "The Family Resemblance",
+          "theme": "insight",
+          "status": "published",
+          "workDate": "2026-04-18",
+          "endWorkDate": "2026-04-22",
+          "pubDate": "2026-05-16",
+          "mediumURL": "",
+          "liPubDate": "",
+          "linkedinURL": "",
+          "canonicalSite": "distributed",
+          "blogURL": "https://pipermorgan.ai/blog/the-family-resemblance/",
+          "blogPath": "/blog/the-family-resemblance",
+          "cartoon": "",
+          "chatDate": "",
+          "draftPath": "",
+          "notes": "insight — DinP ecosystem cross-pollination: Klatch DECISIONS.md propagation + MCP scheme parallels (piper-morgan:// ↔ klatch://) + SSH-over-443 via Calliope + RFC-001; sibling projects align on envelope while keeping sovereign interiors",
+          "altText": "Ethereal AI beings collaboratively sew a shared quilt whose patterns grow more intricate and interconnected from left to right.",
+          "caption": "\"It's becoming a tradition!\""
+        },
+        "missing": [
+          "medium",
+          "linkedin"
+        ]
+      },
       {
         "entry": {
           "title": "Same Failure, Six Agents, Ninety Minutes",
