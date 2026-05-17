@@ -1,4 +1,5 @@
 User-Agent: *
 Allow: /
+Disallow: /admin/
 
 Sitemap: https://pipermorgan.ai/sitemap.xml
