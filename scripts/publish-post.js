@@ -221,10 +221,14 @@ function escapeHtml(s) {
 }
 
 function renderInline(text) {
-  // Order matters: links first (they can contain * and _), then bold (**), then italic (*).
+  // Order matters: backticks first (raw — protect from other rules), then links,
+  // then bold (**), then italic (*).
   let out = text;
   // Em-dash
   out = out.replace(/ -- /g, ' — ');
+  // Inline code `text` → <code>text</code> (skill spec gap; observed convention
+  // in 122/126 existing blog-first posts uses <code> tags, not literal backticks)
+  out = out.replace(/`([^`\n]+)`/g, '<code>$1</code>');
   // Links [text](url)
   out = out.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, t, u) => `<a href="${u}">${t}</a>`);
   // Bold **text**
