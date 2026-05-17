@@ -27,7 +27,9 @@
  *   --hash-id <hex12>    Required for --mode=edit-pass; auto-generated otherwise
  *   --work-date <date>   YYYY-MM-DD; defaults to today
  *   --pub-date <date>    YYYY-MM-DD; defaults to today
- *   --cluster <slug>     Era cluster slug; defaults to empty
+ *   --cluster <slug>     Era cluster slug; defaults to empty. Clusters are
+ *                        assigned during a periodic manual review, not at
+ *                        publish time — leaving this empty is normal.
  *   --featured           Mark as featured (default false)
  *   --report <fmt>       text (default) | json (single-line JSON on stdout)
  *   --dry-run            Log intended mutations without writing
