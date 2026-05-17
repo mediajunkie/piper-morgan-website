@@ -1,5 +1,27 @@
 [
   {
+    "title": "From Protocol to Infrastructure",
+    "excerpt": "February 25 – May 12, 2026 Ever since I gave my agents mailboxes, I've had to remind them manually to check their inboxes for new memos from other agents. I try to remember to nudge them at session start and whenever I notice that they have new mail, including after compaction. Context compaction...",
+    "url": "/blog/from-protocol-to-infrastructure",
+    "slug": "from-protocol-to-infrastructure",
+    "publishedAt": "May 17, 2026",
+    "publishedAtISO": "2026-05-17T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-6611e3b8c185",
+    "featuredImage": "/assets/blog-images/from-protocol-to-infrastructure.webp",
+    "thumbnail": "/assets/blog-images/from-protocol-to-infrastructure.webp",
+    "imageAlt": "",
+    "imageCaption": "\"\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "May 17, 2026",
+    "workDateISO": "2026-05-17T00:00:00.000Z"
+  },
+  {
     "title": "The Family Resemblance",
     "excerpt": "March–April 2026 A few weeks ago I added a file called DECISIONS.md to one of my projects. It's a lightweight log — date, decision, rationale — meant to keep the morning-brief routine from re-litigating the same questions every Monday. The file has grown to a few dozen entries and it's saved me a...",
     "url": "/blog/the-family-resemblance",
@@ -17,9 +39,9 @@
     "imageAlt": "Ethereal AI beings collaboratively sew a shared quilt whose patterns grow more intricate and interconnected from left to right.",
     "imageCaption": "\"It's becoming a tradition!\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "Apr 18, 2026",
-    "workDateISO": "2026-04-18T00:00:00.000Z"
+    "workDateISO": "2026-04-18T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Same Failure, Six Agents, Ninety Minutes",

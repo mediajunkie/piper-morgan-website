@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Family Resemblance",
+    "excerpt": "March–April 2026 A few weeks ago I added a file called DECISIONS.md to one of my projects. It's a lightweight log — date, decision, rationale — meant to keep the morning-brief routine from re-litigating the same questions every Monday. The file has grown to a few dozen entries and it's saved me a...",
+    "url": "/blog/the-family-resemblance",
+    "slug": "the-family-resemblance",
+    "publishedAt": "May 16, 2026",
+    "publishedAtISO": "2026-05-16T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-568b8b65d360",
+    "featuredImage": "/assets/blog-images/the-family-resemblance.webp",
+    "thumbnail": "/assets/blog-images/the-family-resemblance.webp",
+    "imageAlt": "Ethereal AI beings collaboratively sew a shared quilt whose patterns grow more intricate and interconnected from left to right.",
+    "imageCaption": "\"It's becoming a tradition!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Apr 18, 2026",
+    "workDateISO": "2026-04-18T00:00:00.000Z"
+  },
+  {
     "title": "Same Failure, Six Agents, Ninety Minutes",
     "excerpt": "April 19, 2026 The morning I want to tell you about lasted ninety minutes from kickoff to correction. Six agents, six independent sessions, the same task, the same resource gap (my fault), the same need to fix. Six sessions, ten minutes It was Sunday. I was on a train from Philadelphia to DC, hun...",
     "url": "/blog/same-failure-six-agents-ninety-minutes",
