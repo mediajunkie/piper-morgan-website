@@ -5,6 +5,8 @@
  * Data source: committed JSON (Medium RSS fetch suspended Apr 14, 2026)
  */
 
+import type { MediumPost } from '@/types/domain';
+
 /**
  * Sort posts by work date (chronological order of when work happened)
  *
@@ -12,10 +14,10 @@
  * @param order - 'desc' for newest first (default), 'asc' for oldest first
  * @returns Sorted array of posts
  */
-export function sortByWorkDate(posts: any[], order: 'asc' | 'desc' = 'desc'): any[] {
+export function sortByWorkDate(posts: MediumPost[], order: 'asc' | 'desc' = 'desc'): MediumPost[] {
   return [...posts].sort((a, b) => {
-    const dateA = new Date(a.workDateISO || a.publishedAtISO || a.isoDate || a.pubDate);
-    const dateB = new Date(b.workDateISO || b.publishedAtISO || b.isoDate || b.pubDate);
+    const dateA = new Date(a.workDateISO || a.publishedAtISO || a.isoDate || a.pubDate || '');
+    const dateB = new Date(b.workDateISO || b.publishedAtISO || b.isoDate || b.pubDate || '');
     const timeA = dateA.getTime();
     const timeB = dateB.getTime();
 
@@ -37,10 +39,10 @@ export function sortByWorkDate(posts: any[], order: 'asc' | 'desc' = 'desc'): an
  * @param order - 'desc' for newest first (default), 'asc' for oldest first
  * @returns Sorted array of posts
  */
-export function sortByPubDate(posts: any[], order: 'asc' | 'desc' = 'desc'): any[] {
+export function sortByPubDate(posts: MediumPost[], order: 'asc' | 'desc' = 'desc'): MediumPost[] {
   return [...posts].sort((a, b) => {
-    const dateA = new Date(a.publishedAtISO || a.isoDate || a.pubDate);
-    const dateB = new Date(b.publishedAtISO || b.isoDate || b.pubDate);
+    const dateA = new Date(a.publishedAtISO || a.isoDate || a.pubDate || '');
+    const dateB = new Date(b.publishedAtISO || b.isoDate || b.pubDate || '');
     const timeA = dateA.getTime();
     const timeB = dateB.getTime();
 
@@ -61,13 +63,13 @@ export function sortByPubDate(posts: any[], order: 'asc' | 'desc' = 'desc'): any
  * @param posts - Array of blog posts
  * @returns Object with earliest and latest work dates
  */
-export function getWorkDateRange(posts: any[]): { earliest: Date | null, latest: Date | null } {
+export function getWorkDateRange(posts: MediumPost[]): { earliest: Date | null, latest: Date | null } {
   if (posts.length === 0) {
     return { earliest: null, latest: null };
   }
 
   const dates = posts
-    .map(p => new Date(p.workDateISO || p.publishedAtISO || p.isoDate || p.pubDate))
+    .map(p => new Date(p.workDateISO || p.publishedAtISO || p.isoDate || p.pubDate || ''))
     .filter(d => !isNaN(d.getTime()));
 
   if (dates.length === 0) {
@@ -89,15 +91,15 @@ export function getWorkDateRange(posts: any[]): { earliest: Date | null, latest:
  * @returns Filtered array of posts
  */
 export function filterByWorkDateRange(
-  posts: any[],
+  posts: MediumPost[],
   startDate: Date | string,
   endDate: Date | string
-): any[] {
+): MediumPost[] {
   const start = new Date(startDate).getTime();
   const end = new Date(endDate).getTime();
 
   return posts.filter(post => {
-    const workDate = new Date(post.workDateISO || post.publishedAtISO || post.isoDate || post.pubDate).getTime();
+    const workDate = new Date(post.workDateISO || post.publishedAtISO || post.isoDate || post.pubDate || '').getTime();
     return workDate >= start && workDate <= end;
   });
 }
@@ -112,7 +114,7 @@ export function filterByWorkDateRange(
  * @param posts - Array of blog posts
  * @returns Featured post or null
  */
-export function getFeaturedPost(posts: any[]): any | null {
+export function getFeaturedPost(posts: MediumPost[]): MediumPost | null {
   if (!posts || posts.length === 0) {
     return null;
   }

@@ -102,7 +102,7 @@ export interface WebsiteContent {
   };
 }
 
-// Blog post from Medium RSS
+// Blog post from Medium RSS (legacy shape — not currently used)
 export interface BlogPost {
   id: string;
   title: string;
@@ -115,6 +115,79 @@ export interface BlogPost {
   url: string;
   mediumUrl: string;
   featuredImage?: string;
+}
+
+/**
+ * MediumPost — the actual shape of entries in src/data/medium-posts.json.
+ *
+ * This file is heterogeneous: entries come from blog-first publishes
+ * (guid prefix "blog-first-"), Medium RSS imports (guid like
+ * "https://medium.com/p/..."), and the back-catalog archive. Most fields
+ * are optional because not every code path populates them — only `guid`,
+ * `title`, and `url` are reliably present across all entries.
+ */
+export interface MediumPost {
+  // Reliably present
+  title: string;
+  guid: string;
+  url: string;
+
+  // Common metadata
+  slug?: string;
+  link?: string;
+  author?: string;
+  excerpt?: string;
+  contentSnippet?: string;
+  readingTime?: string;
+  tags?: string[];
+  categories?: string[];
+
+  // Dates (multiple shapes — display strings + ISO strings)
+  publishedAt?: string;
+  publishedAtISO?: string;
+  pubDate?: string;
+  isoDate?: string;
+  workDate?: string;
+  workDateISO?: string;
+  chatDate?: string;
+
+  // Image fields
+  featuredImage?: string;
+  thumbnail?: string | null;
+  imageAlt?: string;
+  imageCaption?: string;
+  imageSlug?: string;
+
+  // Taxonomy
+  category?: string;
+  cluster?: string;
+  featured?: boolean;
+
+  // Source/origin
+  source?: string;
+  subtitle?: string;
+  canonicalLink?: string;
+  fullContent?: string;
+  needsMetadata?: boolean;
+  id?: string;
+}
+
+/**
+ * BlogContentEntry — value shape in src/data/blog-content.json.
+ *
+ * Per skill v0.8: every entry must be a dict with title + content.
+ * Optional fields appear on entries originating from Medium RSS imports
+ * (canonicalLink, author, filename, etc.) and a few have a subtitle.
+ */
+export interface BlogContentEntry {
+  title: string;
+  content: string;
+  subtitle?: string;
+  // Fields present on RSS-import "fat" entries
+  author?: string;
+  canonicalLink?: string;
+  publishedDate?: string;
+  filename?: string;
 }
 
 // Newsletter signup data

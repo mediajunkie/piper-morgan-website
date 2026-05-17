@@ -3,15 +3,18 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { BlogPostCard, NewsletterSignup, NewsletterErrorBoundary, BlogErrorBoundary, CTAButton, Pagination } from '@/components';
-import mediumPosts from '@/data/medium-posts.json';
+import mediumPostsRaw from '@/data/medium-posts.json';
 import { sortByPubDate } from '@/lib/blog-utils';
-import { ERAS, getEraCounts, EPISODES, getEpisodeCounts } from '@/lib/episodes';
+import { ERAS, getEraCounts } from '@/lib/episodes';
+import type { MediumPost } from '@/types/domain';
+
+const mediumPosts = mediumPostsRaw as MediumPost[];
 
 const POSTS_PER_PAGE = 24;
 
 // Sort posts by publication date (newest first), excluding ships (they have their own section)
 const allSortedPosts = sortByPubDate(
-  mediumPosts.filter((p: any) => p.category !== 'ship'),
+  mediumPosts.filter((p) => p.category !== 'ship'),
   'desc'
 );
 
@@ -64,12 +67,12 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
 
   // Apply category filter
   if (selectedCategory !== 'all') {
-    filteredPosts = filteredPosts.filter((post: any) => post.category === selectedCategory);
+    filteredPosts = filteredPosts.filter((post) => post.category === selectedCategory);
   }
 
   // Apply episode filter
   if (selectedEpisode !== 'all') {
-    filteredPosts = filteredPosts.filter((post: any) => post.cluster === selectedEpisode);
+    filteredPosts = filteredPosts.filter((post) => post.cluster === selectedEpisode);
   }
 
   // Calculate pagination (using filtered posts)
@@ -80,8 +83,8 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
   const totalPosts = filteredPosts.length;
 
   // Category counts
-  const buildingCount = allSortedPosts.filter((p: any) => p.category === 'building').length;
-  const insightCount = allSortedPosts.filter((p: any) => p.category === 'insight').length;
+  const buildingCount = allSortedPosts.filter((p) => p.category === 'building').length;
+  const insightCount = allSortedPosts.filter((p) => p.category === 'insight').length;
 
   // Era counts
   const episodeCounts = getEraCounts(allSortedPosts);
@@ -232,12 +235,12 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
               {viewMode === 'list' ? (
                 /* List View - Grid of posts */
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                  {paginatedPosts.map((post: any, index: number) => (
+                  {paginatedPosts.map((post, index) => (
                     <BlogPostCard
                       key={post.guid || index}
                       title={post.title}
-                      excerpt={post.excerpt}
-                      publishedAt={post.publishedAt}
+                      excerpt={post.excerpt ?? ''}
+                      publishedAt={post.publishedAt ?? ''}
                       workDate={post.workDate}
                       readingTime={post.readingTime}
                       tags={post.tags}
@@ -245,7 +248,7 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
                       author={post.author}
                       featuredImage={post.featuredImage}
                       imageAlt={post.imageAlt}
-                      category={post.category}
+                      category={post.category as 'building' | 'insight' | undefined}
                       cluster={post.cluster}
                     />
                   ))}
@@ -254,7 +257,7 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
                 /* Grouped View - Posts grouped by era */
                 <div className="space-y-12 mb-12">
                   {ERAS.map((era, index) => {
-                    const eraPosts = filteredPosts.filter((post: any) => post.cluster === era.slug);
+                    const eraPosts = filteredPosts.filter((post) => post.cluster === era.slug);
                     if (eraPosts.length === 0) return null;
 
                     const eraNum = index + 1;
@@ -285,19 +288,19 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
 
                         {/* Era Posts Grid */}
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                          {eraPosts.map((post: any, index: number) => (
+                          {eraPosts.map((post, index) => (
                             <BlogPostCard
                               key={post.guid || index}
                               title={post.title}
-                              excerpt={post.excerpt}
-                              publishedAt={post.publishedAt}
+                              excerpt={post.excerpt ?? ''}
+                              publishedAt={post.publishedAt ?? ''}
                               workDate={post.workDate}
                               readingTime={post.readingTime}
                               tags={post.tags}
                               href={post.url}
                               author={post.author}
                               featuredImage={post.featuredImage}
-                              category={post.category}
+                              category={post.category as 'building' | 'insight' | undefined}
                               cluster={post.cluster}
                             />
                           ))}

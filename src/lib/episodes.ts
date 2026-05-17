@@ -89,7 +89,7 @@ export function getEraNumber(slug: string): number {
 /**
  * Get post count for each era
  */
-export function getEraCounts(posts: any[]): Record<string, number> {
+export function getEraCounts(posts: Array<{ cluster?: string }>): Record<string, number> {
   const counts: Record<string, number> = {};
 
   ERAS.forEach(era => {

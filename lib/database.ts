@@ -50,7 +50,7 @@ export async function addSubscriber(
   email: string,
   source: string,
   verificationToken: string,
-  metadata?: Record<string, any>
+  metadata?: Record<string, unknown>
 ): Promise<Subscriber> {
   try {
     const result = await sql`

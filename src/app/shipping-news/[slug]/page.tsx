@@ -1,15 +1,18 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import mediumPosts from '@/data/medium-posts.json';
+import mediumPostsRaw from '@/data/medium-posts.json';
 import blogContent from '@/data/blog-content.json';
 import { ShipPostContent } from '@/components/organisms/ShipPostContent';
+import type { MediumPost, BlogContentEntry } from '@/types/domain';
+
+const mediumPosts = mediumPostsRaw as MediumPost[];
 
 // Generate static params for all ship posts
 // Only generates slug-based URLs
 export async function generateStaticParams() {
   return mediumPosts
-    .filter((post: any) => post.slug && post.category === 'ship')
-    .map((post: any) => ({
+    .filter((post) => post.slug && post.category === 'ship')
+    .map((post) => ({
       slug: post.slug
     }));
 }
@@ -23,7 +26,7 @@ export async function generateMetadata({
   const { slug } = await params;
 
   // Find post by slug
-  const post = mediumPosts.find((p: any) => p.slug === slug && p.category === 'ship');
+  const post = mediumPosts.find((p) => p.slug === slug && p.category === 'ship');
 
   if (!post) {
     return {
@@ -32,12 +35,12 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${(post as any).title} | The Shipping News | Piper Morgan`,
+    title: `${post.title} | The Shipping News | Piper Morgan`,
     description: 'Weekly development update from the Piper Morgan team.',
     openGraph: {
-      title: (post as any).title,
+      title: post.title,
       type: 'article',
-      publishedTime: (post as any).publishedAtISO || (post as any).publishedAt,
+      publishedTime: post.publishedAtISO || post.publishedAt,
       images: ['/assets/blog-images/piper-ship.webp'],
     },
   };
@@ -51,17 +54,38 @@ export default async function ShipPostPage({
   const { slug } = await params;
 
   // Find post by slug
-  const post = mediumPosts.find((p: any) => p.slug === slug && p.category === 'ship');
+  const post = mediumPosts.find((p) => p.slug === slug && p.category === 'ship');
 
   if (!post) {
     notFound();
   }
 
   // Extract hashId to look up content (blog-content.json uses hashIds as keys)
-  const hashId = (post as any).guid?.match(/([a-f0-9]{12})$/)?.[1] ||
-                 (post as any).link?.match(/([a-f0-9]{12})/)?.[1];
+  const hashId = post.guid?.match(/([a-f0-9]{12})$/)?.[1] ||
+                 post.link?.match(/([a-f0-9]{12})/)?.[1];
 
-  const content = hashId ? blogContent[hashId as keyof typeof blogContent] : null;
+  const bc = blogContent as Record<string, BlogContentEntry | string>;
+  const rawEntry = hashId ? bc[hashId] : null;
+  // Handle both dict-shaped entries (canonical) and the legacy bare-string shape
+  const content: BlogContentEntry | null =
+    rawEntry == null ? null
+    : typeof rawEntry === 'string' ? { title: post.title, content: rawEntry }
+    : rawEntry;
 
-  return <ShipPostContent post={post as any} content={content as any} />;
+  // ShipPost interface in ShipPostContent has narrower required fields than MediumPost;
+  // map the relevant ones explicitly.
+  const shipPost = {
+    title: post.title,
+    slug: post.slug ?? slug,
+    guid: post.guid,
+    url: post.url,
+    publishedAt: post.publishedAt ?? '',
+    publishedAtISO: post.publishedAtISO,
+    workDate: post.workDate,
+    author: post.author,
+    // linkedinURL isn't in MediumPost (lives in editorial-calendar.csv); preserve if present
+    linkedinURL: (post as { linkedinURL?: string }).linkedinURL,
+  };
+
+  return <ShipPostContent post={shipPost} content={content} />;
 }

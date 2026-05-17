@@ -1,17 +1,31 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import mediumPosts from '@/data/medium-posts.json';
+import mediumPostsRaw from '@/data/medium-posts.json';
 import blogContent from '@/data/blog-content.json';
 import { BlogPostContent } from '@/components/organisms/BlogPostContent';
+import type { MediumPost, BlogContentEntry } from '@/types/domain';
+
+const mediumPosts = mediumPostsRaw as MediumPost[];
 
 // Generate static params for all blog posts
 // Only generates slug-based URLs
 export async function generateStaticParams() {
   return mediumPosts
-    .filter((post: any) => post.slug && post.category !== 'ship')
-    .map((post: any) => ({
+    .filter((post) => post.slug && post.category !== 'ship')
+    .map((post) => ({
       slug: post.slug
     }));
+}
+
+function lookupContent(post: MediumPost): BlogContentEntry | null {
+  const hashId = post.guid?.match(/([a-f0-9]{12})$/)?.[1] ||
+                 post.link?.match(/([a-f0-9]{12})/)?.[1];
+  if (!hashId) return null;
+  const bc = blogContent as Record<string, BlogContentEntry | string>;
+  const raw = bc[hashId];
+  if (raw == null) return null;
+  // Tolerate the legacy bare-string shape from pre-v0.8 entries
+  return typeof raw === 'string' ? { title: post.title, content: raw } : raw;
 }
 
 // Generate metadata for each post
@@ -23,7 +37,7 @@ export async function generateMetadata({
   const { slug } = await params;
 
   // Find post by slug
-  const post = mediumPosts.find((p: any) => p.slug === slug);
+  const post = mediumPosts.find((p) => p.slug === slug);
 
   if (!post) {
     return {
@@ -31,29 +45,25 @@ export async function generateMetadata({
     };
   }
 
-  // Extract hashId to look up content (blog-content.json uses hashIds as keys)
-  const hashId = (post as any).guid?.match(/([a-f0-9]{12})$/)?.[1] ||
-                 (post as any).link?.match(/([a-f0-9]{12})/)?.[1];
-
-  const content = hashId ? blogContent[hashId as keyof typeof blogContent] : null;
-  const description = (content as any)?.subtitle || (post as any).contentSnippet || '';
+  const content = lookupContent(post);
+  const description = content?.subtitle || post.excerpt || '';
 
   return {
-    title: `${(post as any).title} | Piper Morgan`,
+    title: `${post.title} | Piper Morgan`,
     description,
     openGraph: {
-      title: (post as any).title,
+      title: post.title,
       description,
       type: 'article',
-      publishedTime: (post as any).pubDate,
-      authors: [(post as any).author],
-      images: (post as any).thumbnail ? [(post as any).thumbnail] : [],
+      publishedTime: post.pubDate,
+      authors: post.author ? [post.author] : undefined,
+      images: post.thumbnail ? [post.thumbnail] : [],
     },
     twitter: {
       card: 'summary_large_image',
-      title: (post as any).title,
+      title: post.title,
       description,
-      images: (post as any).thumbnail ? [(post as any).thumbnail] : [],
+      images: post.thumbnail ? [post.thumbnail] : [],
     },
   };
 }
@@ -66,26 +76,37 @@ export default async function BlogPostPage({
   const { slug } = await params;
 
   // Find post by slug
-  const post = mediumPosts.find((p: any) => p.slug === slug);
+  const post = mediumPosts.find((p) => p.slug === slug);
 
   if (!post) {
     notFound();
   }
 
-  // Extract hashId to look up content (blog-content.json uses hashIds as keys)
-  const hashId = (post as any).guid?.match(/([a-f0-9]{12})$/)?.[1] ||
-                 (post as any).link?.match(/([a-f0-9]{12})/)?.[1];
-
-  const content = hashId ? blogContent[hashId as keyof typeof blogContent] : null;
+  const content = lookupContent(post);
 
   if (!content) {
     notFound();
   }
 
+  // BlogPostContent's BlogPost interface narrows required fields more than MediumPost;
+  // map the relevant ones explicitly.
+  const blogPost = {
+    title: post.title,
+    guid: post.guid,
+    url: post.url,
+    publishedAt: post.publishedAt ?? '',
+    workDate: post.workDate,
+    author: post.author ?? 'christian crumlish',
+    featuredImage: post.featuredImage,
+    imageAlt: post.imageAlt,
+    imageCaption: post.imageCaption,
+    tags: post.tags,
+  };
+
   return (
     <BlogPostContent
-      post={post as any}
-      content={content as any}
+      post={blogPost}
+      content={content}
     />
   );
 }

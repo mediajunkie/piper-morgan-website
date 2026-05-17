@@ -2,6 +2,7 @@
 
 import { BlogPostCard, CTAButton } from '@/components';
 import mediumPostsRaw from '@/data/medium-posts.json';
+import type { MediumPost } from '@/types/domain';
 
 // Format date helper
 function formatDate(dateString: string): string {
@@ -20,16 +21,16 @@ function extractReadingTime(content: string): string {
 }
 
 // Transform posts to expected format
-const mediumPosts = mediumPostsRaw.filter((p: any) => p.category !== 'ship').map((post: any) => {
+const mediumPosts = (mediumPostsRaw as MediumPost[]).filter((p) => p.category !== 'ship').map((post) => {
   return {
     ...post,
-    excerpt: post.contentSnippet || post.content?.substring(0, 200) || '',
+    excerpt: post.contentSnippet || post.excerpt?.substring(0, 200) || '',
     url: `/blog/${post.slug}`,
     mediumUrl: post.link,
-    publishedAt: formatDate(post.pubDate || post.isoDate),
-    readingTime: extractReadingTime(post.content || ''),
+    publishedAt: formatDate(post.pubDate || post.isoDate || ''),
+    readingTime: extractReadingTime(post.excerpt || ''),
     tags: post.categories || ['Building in Public'],
-    featuredImage: post.thumbnail
+    featuredImage: post.thumbnail ?? undefined
   };
 });
 

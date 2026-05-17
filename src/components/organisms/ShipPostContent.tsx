@@ -149,11 +149,11 @@ export function ShipPostContent({ post, content }: ShipPostContentProps) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <p className="text-gray-500 dark:text-gray-400 text-center">
             Content for this ship is not yet available on the blog.
-            {(post as any).linkedinURL && (
+            {post.linkedinURL && (
               <>
                 {' '}Read it on{' '}
                 <a
-                  href={(post as any).linkedinURL}
+                  href={post.linkedinURL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-orange-600 dark:text-orange-400 hover:underline"
@@ -178,11 +178,11 @@ export function ShipPostContent({ post, content }: ShipPostContentProps) {
           </Link>
 
           {/* LinkedIn credit for ships */}
-          {(post as any).linkedinURL && (
+          {post.linkedinURL && (
             <span className="text-sm text-gray-500 dark:text-gray-500">
               Also on{' '}
               <a
-                href={(post as any).linkedinURL}
+                href={post.linkedinURL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-700 dark:hover:text-gray-300 underline transition-colors"
