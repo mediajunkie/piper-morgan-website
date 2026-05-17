@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-05-16T19:22:38.445Z",
+  "buildTime": "2026-05-17T00:26:21.509Z",
   "totalEntries": 356,
   "sections": {
     "readyToPublish": [
@@ -444,26 +444,6 @@
         "notes": "March insight backlog",
         "altText": "Hand-drawn cartoon of small agents sending gear ideas through a narrowing filter into a strained central machine; complex add-ons jam it while simple parts pass through and make the gears run smoothly.",
         "caption": "Now, don't all shout at once!"
-      },
-      {
-        "title": "The Drift You Don't Notice",
-        "theme": "insight",
-        "status": "published",
-        "workDate": "2026-02-01",
-        "endWorkDate": "2026-02-28",
-        "pubDate": "2026-05-02",
-        "mediumURL": "https://medium.com/building-piper-morgan/the-drift-you-dont-notice-d59c6bbafd2a",
-        "liPubDate": "2026-05-02",
-        "linkedinURL": "https://www.linkedin.com/pulse/drift-you-dont-notice-christian-crumlish-9pafc/",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/blog/the-drift-you-dont-notice",
-        "blogPath": "/blog/the-drift-you-dont-notice",
-        "cartoon": "",
-        "chatDate": "",
-        "draftPath": "",
-        "notes": "February insight backlog — methodology erosion through imitation",
-        "altText": "A ghostlike clerk feeds ‘yesterday’s’ page into a copier while a nearby ‘Original Spec’ sits unused as the output copies become progressively faded and warped; a supervisor watches realizing the issue.",
-        "caption": "Just as good as the original!"
       }
     ],
     "syndicationGaps": [
