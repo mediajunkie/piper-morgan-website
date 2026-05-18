@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-05-17T20:01:07.396Z",
+  "buildTime": "2026-05-18T01:10:48.816Z",
   "totalEntries": 356,
   "sections": {
     "readyToPublish": [
@@ -424,26 +424,6 @@
         "notes": "narrative — Lead Dev's most productive afternoon (6 issues M2a/M2b in one Tuesday) + M2b gate close + Haiku 3 retired 4 days early + Ship #038 publish",
         "altText": "A calm engineer stands beside a large, smoothly turning flywheel machine, where completed tasks gently drop off as the system runs.",
         "caption": "Like a Swiss watch..."
-      },
-      {
-        "title": "Friction-Focused Feedback",
-        "theme": "insight",
-        "status": "published",
-        "workDate": "2026-03-13",
-        "endWorkDate": "2026-03-20",
-        "pubDate": "2026-05-03",
-        "mediumURL": "https://medium.com/building-piper-morgan/friction-focused-feedback-1d0f9d2c9668",
-        "liPubDate": "2026-05-03",
-        "linkedinURL": "https://www.linkedin.com/pulse/friction-focused-feedback-christian-crumlish-790cc/",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/blog/friction-focused-feedback",
-        "blogPath": "/blog/friction-focused-feedback",
-        "cartoon": "",
-        "chatDate": "",
-        "draftPath": "",
-        "notes": "March insight backlog",
-        "altText": "Hand-drawn cartoon of small agents sending gear ideas through a narrowing filter into a strained central machine; complex add-ons jam it while simple parts pass through and make the gears run smoothly.",
-        "caption": "Now, don't all shout at once!"
       }
     ],
     "syndicationGaps": [
