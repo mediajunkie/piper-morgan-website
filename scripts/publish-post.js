@@ -33,6 +33,7 @@
  *   --featured           Mark as featured (default false)
  *   --report <fmt>       text (default) | json (single-line JSON on stdout)
  *   --dry-run            Log intended mutations without writing
+ *   --force              Suppress empty-frontmatter alt/caption warnings
  *   --help               Show this help
  *
  * Exit codes:
@@ -89,6 +90,7 @@ try {
       featured:  { type: 'boolean', default: false },
       report:    { type: 'string', default: 'text' },
       'dry-run': { type: 'boolean', default: false },
+      force:     { type: 'boolean', default: false },
       help:      { type: 'boolean', default: false },
     },
     strict: true,
@@ -141,7 +143,20 @@ const cfg = {
   featured: args.featured,
   reportFmt: args.report,
   dryRun: args['dry-run'],
+  force: args.force,
 };
+
+// ─── Empty-meta check (Gap 3 fix; surfaced 2026-05-17) ──────────────────────
+// Empty alt/caption silently propagated to medium-posts.json on the Protocol
+// publish, causing PM hand-edit recovery. Warn loudly and exit unless --force.
+// Skipped in edit-pass mode (no CSV write happens there) and for ship category
+// (no per-post image).
+function isEmptyMetaValue(v) {
+  if (v == null) return true;
+  // After YAML strip, placeholder values like '""' become '""' (literal two
+  // quote chars). Treat values that are only quote chars + whitespace as empty.
+  return v.replace(/['"]/g, '').trim().length === 0;
+}
 
 // ─── Logging helpers ────────────────────────────────────────────────────────
 
@@ -255,6 +270,22 @@ function convertToHtml(body) {
     if (/^<!--[\s\S]*?-->$/.test(trimmed)) {
       out.push(trimmed);
       i++;
+      continue;
+    }
+
+    // Block-level inline HTML: lines starting with a block-level opening or
+    // closing tag pass through as raw HTML — NOT wrapped in <p> (which would
+    // be invalid since block elements can't be inside <p>) and NOT joined
+    // with <br />. Collect consecutive non-blank lines as one HTML run; blank
+    // line terminates per markdown convention for HTML blocks. Surfaced
+    // 2026-05-17 in the Protocol publish (Gap 2 in Docs's feature-corpus memo).
+    if (/^<\/?(?:ol|ul|table|blockquote|pre|details|figure|aside|div|section|article|header|footer|nav|hr|p)\b/i.test(trimmed)) {
+      const raw = [];
+      while (i < lines.length && lines[i].trim() !== '') {
+        raw.push(lines[i]);
+        i++;
+      }
+      out.push(raw.join('\n'));
       continue;
     }
 
@@ -504,6 +535,26 @@ try {
   log(`📄 parsing draft: ${cfg.draftPath}`);
   const { title, meta, body } = parseDraft(cfg.draftPath);
   log(`   title: "${title}"`);
+
+  // Empty-meta check (Gap 3) — only for full publish on non-ship posts
+  if (cfg.mode === 'publish' && cfg.category !== 'ship') {
+    const emptyFields = [];
+    if (isEmptyMetaValue(meta.alt)) emptyFields.push('alt');
+    if (isEmptyMetaValue(meta.caption)) emptyFields.push('caption');
+    if (emptyFields.length > 0) {
+      if (cfg.force) {
+        log(`⚠️  proceeding with empty frontmatter ${emptyFields.join(' + ')} (--force in effect)`);
+      } else {
+        const err = new Error(
+          `frontmatter ${emptyFields.join(' + ')} ${emptyFields.length === 1 ? 'is' : 'are'} empty in ${cfg.draftPath}\n` +
+          `   This is almost certainly user error — empty values would land in production.\n` +
+          `   Fix the frontmatter and re-run, OR pass --force to publish with empty value(s) anyway.`
+        );
+        err.exitCode = 2;
+        throw err;
+      }
+    }
+  }
 
   // Convert body to HTML
   const html = convertToHtml(body);
