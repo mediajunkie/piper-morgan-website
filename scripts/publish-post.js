@@ -315,6 +315,19 @@ function convertToHtml(body) {
       continue;
     }
 
+    // Ordered list: consecutive `1.` / `2.` / `N.` lines → <ol><li>…</li></ol>
+    // (Surfaced 2026-05-17 from the From Protocol to Infrastructure publish —
+    // previously these conflated into a multi-line paragraph block with <br />)
+    if (/^\d+\.\s+/.test(trimmed)) {
+      const items = [];
+      while (i < lines.length && /^\d+\.\s+/.test(lines[i].trim())) {
+        items.push(lines[i].trim().replace(/^\d+\.\s+/, ''));
+        i++;
+      }
+      out.push(`<ol>${items.map(it => `<li>${renderInline(it)}</li>`).join('')}</ol>`);
+      continue;
+    }
+
     // Standalone italic line: `_…_` or `*…*` on its own line → <p><em>…</em></p>
     const it1 = trimmed.match(/^_(.+)_$/);
     const it2 = trimmed.match(/^\*(.+)\*$/);
@@ -331,6 +344,7 @@ function convertToHtml(body) {
       if (/^#{1,3}\s+/.test(t)) break;
       if (/^>\s?/.test(t)) break;
       if (/^-\s+/.test(t)) break;
+      if (/^\d+\.\s+/.test(t)) break;
       if (/^\|.*\|\s*$/.test(t)) break;
       if (t === '---') break;
       paraLines.push(t);

@@ -295,6 +295,56 @@ async function fetchRssPosts() {
 }
 
 /**
+ * Build the set of Medium hashIds that are known to be syndicated copies of
+ * blog-first canonical posts, by parsing data/editorial-calendar.csv for rows
+ * where both blogPath and mediumURL are populated (i.e., the calendar records
+ * the blog-first → Medium correspondence after Docs's /update-calendar run).
+ *
+ * This is the precise signal that the slug-match heuristic (below) misses,
+ * because blog-first uses short hand-chosen slugs while Medium auto-derives
+ * long title-slugs. Returns an empty set if the calendar isn't available
+ * (deploys without a sibling product-repo checkout).
+ */
+function loadSyndicatedHashIds() {
+  const CALENDAR_PATH = path.join(__dirname, '..', 'data', 'editorial-calendar.csv');
+  const ids = new Set();
+  if (!fs.existsSync(CALENDAR_PATH)) {
+    console.log('  ℹ️  editorial-calendar.csv not found — slug-only syndication detection in effect');
+    return ids;
+  }
+  const text = fs.readFileSync(CALENDAR_PATH, 'utf-8');
+  const lines = text.split('\n');
+  if (lines.length < 2) return ids;
+  const headers = lines[0].split(',').map(h => h.trim());
+  const blogPathCol = headers.indexOf('blogPath');
+  const mediumUrlCol = headers.indexOf('mediumURL');
+  if (blogPathCol < 0 || mediumUrlCol < 0) return ids;
+  // Permissive CSV parse — calendar has commas in altText/caption; we only
+  // need the first ~12 fields up to mediumURL, so split with care.
+  for (let i = 1; i < lines.length; i++) {
+    const row = lines[i];
+    if (!row.trim()) continue;
+    // Field-aware split: respect quoted fields with embedded commas
+    const fields = [];
+    let cur = '', inQ = false;
+    for (let j = 0; j < row.length; j++) {
+      const c = row[j];
+      if (c === '"') inQ = !inQ;
+      else if (c === ',' && !inQ) { fields.push(cur); cur = ''; }
+      else cur += c;
+    }
+    fields.push(cur);
+    const blogPath = (fields[blogPathCol] || '').trim();
+    const mediumURL = (fields[mediumUrlCol] || '').trim();
+    if (!blogPath || !mediumURL) continue;
+    // Extract Medium hashId (12 hex chars) from the URL
+    const m = mediumURL.match(/([a-f0-9]{12})(?:[?#/]|$)/i);
+    if (m) ids.add(m[1].toLowerCase());
+  }
+  return ids;
+}
+
+/**
  * Merge RSS posts with existing archive and CSV metadata
  */
 async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
@@ -311,13 +361,23 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
   });
 
   // Build slug set from existing blog-first posts so we can detect
-  // syndicated versions of blog-first content arriving via RSS
+  // syndicated versions of blog-first content arriving via RSS (catches
+  // the case where slugs happen to match — short hand-chosen slug equality)
   const blogFirstSlugs = new Set();
   existingPosts.forEach(post => {
     if (post.guid && post.guid.startsWith('blog-first-') && post.slug) {
       blogFirstSlugs.add(post.slug);
     }
   });
+
+  // Build set of Medium hashIds known to be syndicated copies (catches the
+  // common case where Medium auto-derives a longer title-slug that doesn't
+  // match the blog-first slug — relies on editorial-calendar.csv's
+  // blog-first → Medium correspondence)
+  const syndicatedHashIds = loadSyndicatedHashIds();
+  if (syndicatedHashIds.size > 0) {
+    console.log(`  📅 Calendar reports ${syndicatedHashIds.size} blog-first→Medium syndication pairs`);
+  }
 
   let newPostsCount = 0;
   let updatedPostsCount = 0;
@@ -329,18 +389,34 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
     const hashId = extractPostId(rssPost.guid || rssPost.link);
     if (!hashId) continue; // Skip if we can't extract hashId
 
+    // Authoritative skip: this RSS post's hashId is known to be a syndication
+    // duplicate per the editorial calendar
+    if (syndicatedHashIds.has(hashId.toLowerCase())) {
+      console.log(`\n⏭️  Skipping syndicated duplicate (calendar hashId match): "${rssPost.title.substring(0, 60)}..."`);
+      console.log(`   Medium hashId ${hashId} corresponds to a blog-first canonical per editorial-calendar.csv`);
+      // Also remove any cached version from existingMap so a previously-imported
+      // duplicate gets cleaned up on this fetch
+      if (existingMap.has(hashId)) {
+        existingMap.delete(hashId);
+        console.log(`   (also removed previously-cached duplicate from archive)`);
+      }
+      skippedBlogFirst++;
+      continue;
+    }
+
     const existing = existingMap.get(hashId);
 
     if (!existing) {
       // Before treating as new: check if this is a syndicated version of a blog-first post.
       // Blog-first posts have a different hashId than Medium assigns, so hashId matching
-      // won't catch the duplicate. Match by slug instead.
+      // won't catch the duplicate. Match by slug instead (fallback when calendar correspondence
+      // doesn't fire — e.g., a syndicated post that hasn't had its URL backfilled in calendar yet).
       const rssSlug = extractSlugFromMediumUrl(rssPost.url || rssPost.link || rssPost.guid);
       const csvBySlug = rssSlug ? getMetadataBySlug(csvMetadata, rssSlug) : null;
 
       if (rssSlug && (blogFirstSlugs.has(rssSlug) || (csvBySlug && csvBySlug.hashId !== hashId))) {
         // This RSS post matches a blog-first post by slug — skip it
-        console.log(`\n⏭️  Skipping syndicated duplicate: "${rssPost.title.substring(0, 60)}..."`);
+        console.log(`\n⏭️  Skipping syndicated duplicate (slug match): "${rssPost.title.substring(0, 60)}..."`);
         console.log(`   Blog-first slug "${rssSlug}" already exists (blog hashId: ${csvBySlug ? csvBySlug.hashId : 'in archive'})`);
         skippedBlogFirst++;
         continue;
