@@ -14,9 +14,11 @@
     "export": "next build && next export",
     "type-check": "tsc --noEmit",
     "lint:fix": "next lint --fix",
-    "fetch-posts": "node scripts/fetch-blog-posts.js"
+    "fetch-posts": "node scripts/fetch-blog-posts.js",
+    "publish": "node scripts/publish-cli.js"
   },
   "dependencies": {
+    "@inquirer/prompts": "^8.4.3",
     "@sentry/nextjs": "^10.9.0",
     "@tailwindcss/typography": "^0.5.16",
     "@types/jsonwebtoken": "^9.0.10",
