@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-05-18T14:21:41.695Z",
+  "buildTime": "2026-05-20T03:52:16.830Z",
   "totalEntries": 356,
   "sections": {
     "readyToPublish": [
@@ -404,26 +404,6 @@
         "notes": "covers Apr 24-30 (Apr 25 dual migration CXO+PPM + #992 Phase E run + #1002 P0 floor-bypass-by-routing + #997 close + Colleague Test v2.0/v2.1 + Multi-Wave Investigation publish; Apr 26-30 TBD)",
         "altText": "A child leads a ship operated by robots.",
         "caption": ""
-      },
-      {
-        "title": "Six Issues Before Dinner",
-        "theme": "building",
-        "status": "published",
-        "workDate": "2026-04-14",
-        "endWorkDate": "2026-04-15",
-        "pubDate": "2026-05-05",
-        "mediumURL": "https://medium.com/building-piper-morgan/six-issues-before-dinner-aa5158df10d5",
-        "liPubDate": "",
-        "linkedinURL": "",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/blog/six-issues-before-dinner",
-        "blogPath": "/blog/six-issues-before-dinner",
-        "cartoon": "",
-        "chatDate": "",
-        "draftPath": "",
-        "notes": "narrative — Lead Dev's most productive afternoon (6 issues M2a/M2b in one Tuesday) + M2b gate close + Haiku 3 retired 4 days early + Ship #038 publish",
-        "altText": "A calm engineer stands beside a large, smoothly turning flywheel machine, where completed tasks gently drop off as the system runs.",
-        "caption": "Like a Swiss watch..."
       }
     ],
     "syndicationGaps": [
