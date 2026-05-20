@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #043: The Skill That Doesn't Fire",
+    "excerpt": "May 8–14, 2026 The team has been writing the methodology down faster than ever — six anti-patterns formally indexed in one morning, four commit-discipline entries pinned across the week, a verification rubric branched mid-stream from a methodology codified about two weeks earlier. The codificatio...",
+    "url": "/blog/weekly-ship-043-the-skill-that-doesnt-fire",
+    "slug": "weekly-ship-043-the-skill-that-doesnt-fire",
+    "publishedAt": "May 20, 2026",
+    "publishedAtISO": "2026-05-20T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-88c23173bba6",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A boy leads a boat crewed by robots.",
+    "imageCaption": "N/A",
+    "category": "ship",
+    "cluster": "",
+    "workDate": "May 8, 2026",
+    "workDateISO": "2026-05-08T00:00:00.000Z"
+  },
+  {
     "title": "The Log That Fact-Checked Itself",
     "excerpt": "April 22, 2026 The Piper Morgan methodology fixed itself last month. My Documentation Management agent (Docs) opened a session a little after eleven AM on April 22 with a mundane task on the agenda: the Apr 17–21 omnibus logs (the synthesized daily logs we make by interpolating each agent's indiv...",
     "url": "/blog/the-log-that-fact-checked-itself",
@@ -17,9 +39,9 @@
     "imageAlt": "Glowing ethereal beings amending a giant ledger book, reintegrating missing pages into the official record while the book appears to point out its own omissions",
     "imageCaption": "\"Not so fast!\"",
     "category": "building",
-    "cluster": "",
     "workDate": "Apr 22, 2026",
-    "workDateISO": "2026-04-22T00:00:00.000Z"
+    "workDateISO": "2026-04-22T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "From Protocol to Infrastructure",
