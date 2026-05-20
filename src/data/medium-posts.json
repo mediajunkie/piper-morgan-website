@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Log That Fact-Checked Itself",
+    "excerpt": "April 22, 2026 The Piper Morgan methodology fixed itself last month. My Documentation Management agent (Docs) opened a session a little after eleven AM on April 22 with a mundane task on the agenda: the Apr 17–21 omnibus logs (the synthesized daily logs we make by interpolating each agent's indiv...",
+    "url": "/blog/the-log-that-fact-checked-itself",
+    "slug": "the-log-that-fact-checked-itself",
+    "publishedAt": "May 19, 2026",
+    "publishedAtISO": "2026-05-19T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-7cbb6637538f",
+    "featuredImage": "/assets/blog-images/the-log-that-fact-checked-itself.webp",
+    "thumbnail": "/assets/blog-images/the-log-that-fact-checked-itself.webp",
+    "imageAlt": "Glowing ethereal beings amending a giant ledger book, reintegrating missing pages into the official record while the book appears to point out its own omissions",
+    "imageCaption": "\"Not so fast!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Apr 22, 2026",
+    "workDateISO": "2026-04-22T00:00:00.000Z"
+  },
+  {
     "title": "From Protocol to Infrastructure",
     "excerpt": "February 25 – May 12, 2026 Ever since I gave my agents mailboxes, I've had to remind them manually to check their inboxes for new memos from other agents. I try to remember to nudge them at session start and whenever I notice that they have new mail, including after compaction. Context compaction...",
     "url": "/blog/from-protocol-to-infrastructure",
@@ -17,9 +39,9 @@
     "imageAlt": "A weary nonhuman gardener manually watering struggling plants amid reminder signs labeled with protocols, contrasted with the same gardener relaxing in a peaceful automated garden thriving under drip irrigation infrastructure.",
     "imageCaption": "\"\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "May 17, 2026",
-    "workDateISO": "2026-05-17T00:00:00.000Z"
+    "workDateISO": "2026-05-17T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Family Resemblance",
