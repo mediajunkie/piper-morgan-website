@@ -246,6 +246,12 @@ function renderInline(text) {
   // Inline code `text` → <code>text</code> (skill spec gap; observed convention
   // in 122/126 existing blog-first posts uses <code> tags, not literal backticks)
   out = out.replace(/`([^`\n]+)`/g, '<code>$1</code>');
+  // Linked image (Gap 4, surfaced 2026-05-20 from Ship #043 publish):
+  // [![alt](img-url)](link-url) → <a href="link"><img src="img" alt="alt" /></a>
+  // MUST run before the regular link rule (otherwise the inner [alt](img) part
+  // matches first and the linked-image structure breaks).
+  out = out.replace(/\[!\[([^\]]*)\]\(([^)]+)\)\]\(([^)]+)\)/g,
+    (_, alt, img, link) => `<a href="${link}"><img src="${img}" alt="${alt}" /></a>`);
   // Links [text](url)
   out = out.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, t, u) => `<a href="${u}">${t}</a>`);
   // Bold **text**
