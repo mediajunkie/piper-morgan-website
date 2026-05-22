@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-05-21T06:10:49.193Z",
+  "buildTime": "2026-05-22T05:18:12.925Z",
   "totalEntries": 356,
   "sections": {
     "readyToPublish": [
@@ -364,26 +364,6 @@
         "notes": "",
         "altText": "An inchworm traverses a branching numbered tree while a human and glowing AI-being observe its precise progress through the hierarchy.",
         "caption": "How does that song go?"
-      },
-      {
-        "title": "A Hail of Memos",
-        "theme": "building",
-        "status": "published",
-        "workDate": "2026-04-16",
-        "endWorkDate": "",
-        "pubDate": "2026-05-07",
-        "mediumURL": "https://medium.com/building-piper-morgan/a-hail-of-memos-981b7b6b2254",
-        "liPubDate": "",
-        "linkedinURL": "",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/blog/a-hail-of-memos",
-        "blogPath": "/blog/a-hail-of-memos",
-        "cartoon": "",
-        "chatDate": "",
-        "draftPath": "",
-        "notes": "narrative — HIGH-COMPLEXITY Thursday: 28 commits + 37+ inter-agent memos + CXO 9 deliverables + PDR-004 correction chain (4 agents / narrative rewrites) + Architect 3 LLM consolidation decisions + mail-delivery bottleneck visible (renamed from Thirty-Seven Memos per PM May 5 voice-pass; numeric-headline → metaphor)",
-        "altText": "Figure at center of a radial storm of incoming message-slips struggling to catch them while working.",
-        "caption": "Let me get back to you on that!"
       }
     ],
     "syndicationGaps": [
