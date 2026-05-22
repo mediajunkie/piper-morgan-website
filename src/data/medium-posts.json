@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Voice of a Denial",
+    "excerpt": "April 22, 2026 Until that Wednesday evening, if you'd asked Piper Morgan to do something the ethics layer wouldn't let it do, here's what you would have read: Request blocked due to ethics policy: Content contains potential harassment patterns (matched: 3 patterns) The ethics layer worked, techni...",
+    "url": "/blog/the-voice-of-a-denial",
+    "slug": "the-voice-of-a-denial",
+    "publishedAt": "May 21, 2026",
+    "publishedAtISO": "2026-05-21T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-7c2df904ddc7",
+    "featuredImage": "/assets/blog-images/the-voice-of-a-denial.webp",
+    "thumbnail": "/assets/blog-images/the-voice-of-a-denial.webp",
+    "imageAlt": "A stern security guard filters harsh, jagged messages in a basement office while an ethereal concierge upstairs gently redirects a visitor toward a peaceful path outside.",
+    "imageCaption": "\"Tone matters!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Apr 22, 2026",
+    "workDateISO": "2026-04-22T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #043: The Skill That Doesn't Fire",
     "excerpt": "May 8–14, 2026 The team has been writing the methodology down faster than ever — six anti-patterns formally indexed in one morning, four commit-discipline entries pinned across the week, a verification rubric branched mid-stream from a methodology codified about two weeks earlier. The codificatio...",
     "url": "/blog/weekly-ship-043-the-skill-that-doesnt-fire",
@@ -17,9 +39,9 @@
     "imageAlt": "A boy leads a boat crewed by robots.",
     "imageCaption": "N/A",
     "category": "ship",
-    "cluster": "",
     "workDate": "May 8, 2026",
-    "workDateISO": "2026-05-08T00:00:00.000Z"
+    "workDateISO": "2026-05-08T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Log That Fact-Checked Itself",
