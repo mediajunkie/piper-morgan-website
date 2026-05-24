@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { generateSEOMetadata } from "@/lib/domain-utils";
 import { Hero, CTAButton } from "@/components";
+import mediumPosts from "@/data/medium-posts.json";
+
+// Derive post count from the data so the homepage stat stays current
+// without manual bumps (obs-pass #9, 2026-05-24).
+const postCount = mediumPosts.length;
 
 const seoData = generateSEOMetadata(
   "Piper Morgan - Think Bigger",
@@ -133,7 +138,7 @@ export default function Home() {
                   Built in public, from day one
                 </h3>
                 <p className="text-text-light dark:text-gray-400">
-                  Every breakthrough and setback documented. 260+ blog posts. Weekly progress reports.
+                  Every breakthrough and setback documented. {postCount}+ blog posts. Weekly progress reports.
                   No marketing polish — just the real story of building AI that works.
                 </p>
               </div>
@@ -170,7 +175,7 @@ export default function Home() {
         <div className="site-container">
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <CTAButton href="/get-involved" variant="outline">
+              <CTAButton href="/get-involved" variant="primary">
                 Help shape what Piper becomes
               </CTAButton>
               <CTAButton href="/blog" variant="outline">

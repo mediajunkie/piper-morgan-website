@@ -29,7 +29,7 @@ export default function WhatWeveLearnedPage() {
         subheadline="Insights from three months of intensive AI development by Christian Crumlish - discoveries that counter conventional AI wisdom and demonstrate systematic human-AI collaboration."
         primaryCTA={{
           text: "See How Our Methodology Works",
-          href: "/how-it-works",
+          href: "/methodology",
         }}
         secondaryCTA={{
           text: "Follow the Journey",
