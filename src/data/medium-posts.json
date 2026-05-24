@@ -1,5 +1,27 @@
 [
   {
+    "title": "Five Whys for Design Decisions",
+    "excerpt": "December 20, 2025 Five Whys is a debugging technique. You ask \"why did this break?\" and then ask \"why?\" to each answer until you reach a root cause. It's standard practice for fixing bugs. On December 20th, we discovered it works for something else entirely: figuring out why a feature doesn't exi...",
+    "url": "/blog/five-whys-for-design-decisions",
+    "slug": "five-whys-for-design-decisions",
+    "publishedAt": "May 24, 2026",
+    "publishedAtISO": "2026-05-24T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-6fbbd990294a",
+    "featuredImage": "/assets/blog-images/five-whys-for-design-decisions.webp",
+    "thumbnail": "/assets/blog-images/five-whys-for-design-decisions.webp",
+    "imageAlt": "Cross-section cartoon of investigators excavating beneath a small user-interface problem, uncovering deeper layers of assumptions until they reveal a massive buried foundation labeled “command-oriented design.”",
+    "imageCaption": "We have to get to the bottom of this!",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Dec 20, 2025",
+    "workDateISO": "2025-12-20T00:00:00.000Z"
+  },
+  {
     "title": "Project Biorhythms",
     "excerpt": "November 22, 2025 My Chief of Staff (agent role) was curious about what drove a dramatic velocity spike in late November: fifteen simultaneous sessions, security epic completed in hours, 26% throughput improvement. Was it better process? More discipline? Heroic effort? The answer we came up with:...",
     "url": "/blog/project-biorhythms",
@@ -17,9 +39,9 @@
     "imageAlt": "A giant sleeping creature forms the landscape while tiny explorers investigate one side, builders rapidly construct on the other, and bridge-makers connect the middle, as one frantic manager tries to force a straight productivity line across the creature’s natural breathing rhythm.",
     "imageCaption": "Just ignore the guy with the ruler.",
     "category": "insight",
-    "cluster": "",
     "workDate": "Nov 22, 2025",
-    "workDateISO": "2025-11-22T00:00:00.000Z"
+    "workDateISO": "2025-11-22T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Voice of a Denial",
