@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-05-22T05:18:12.925Z",
+  "buildTime": "2026-05-24T02:31:02.346Z",
   "totalEntries": 356,
   "sections": {
     "readyToPublish": [
@@ -928,26 +928,6 @@
         "chatDate": "",
         "draftPath": "",
         "notes": "covers Apr 17-23 (M1 methodology audit + Flywheel v2 reformulation + 3 role migrations HOST/CIO/Comms + #992 Phases A-D shipped + Compose UI Phase 1 + 4 Pattern-062 manifestations with same-week safeguards + methodology validates itself within 16 hours)",
-        "altText": "A person leads a small boat crewed by robots.",
-        "caption": ""
-      },
-      {
-        "title": "Weekly Ship #039: The Voice Takes Shape",
-        "theme": "ship",
-        "status": "published",
-        "workDate": "2026-04-10",
-        "endWorkDate": "2026-04-16",
-        "pubDate": "2026-04-22",
-        "mediumURL": "",
-        "liPubDate": "2026-04-22",
-        "linkedinURL": "https://www.linkedin.com/pulse/weekly-ship-039-voice-takes-shape-christian-crumlish-wlcec/",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/shipping-news/weekly-ship-039-the-voice-takes-shape",
-        "blogPath": "/shipping-news/weekly-ship-039-the-voice-takes-shape",
-        "cartoon": "piper-ship",
-        "chatDate": "",
-        "draftPath": "",
-        "notes": "covers Apr 10-16 (M1 close + M2a/b/c + floor prompt + CIO audit)",
         "altText": "A person leads a small boat crewed by robots.",
         "caption": ""
       }
