@@ -50,8 +50,8 @@ export default function NotFound() {
                 </p>
               </Link>
               
-              <Link 
-                href="/how-it-works"
+              <Link
+                href="/methodology"
                 className="block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group"
               >
                 <h4 className="font-semibold text-text-dark group-hover:text-primary-teal-text">

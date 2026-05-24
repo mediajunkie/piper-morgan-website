@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/how-it-works`,
+      url: `${baseUrl}/methodology`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
@@ -33,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/newsletter`,
+      url: `${baseUrl}/try`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.6,

@@ -93,6 +93,7 @@ export default function Navigation() {
                 src="/assets/pm-logo.png"
                 alt="Piper Morgan Logo"
                 fill
+                sizes="40px"
                 className="object-contain"
                 priority
               />
