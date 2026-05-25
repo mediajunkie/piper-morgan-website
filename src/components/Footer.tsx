@@ -144,7 +144,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center space-x-6 mt-4 md:mt-0">
               <span className="text-gray-400 text-sm">
-                made with systematic kindess
+                made with systematic kindness
               </span>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-primary-teal rounded-full animate-pulse"></div>
