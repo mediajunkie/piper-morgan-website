@@ -74,8 +74,8 @@ export default function AboutPage() {
               <div className="space-y-6 text-lg text-text-light dark:text-gray-400">
                 <p>
                   <strong className="text-text-dark dark:text-white">Christian Crumlish</strong> (xian)
-                  has been building social software and digital products since the web was young.
-                  Yahoo. Grubhub. Typepad. Co-author of <em>Designing Social Interfaces</em> (O&apos;Reilly).
+                  has been building social software and digital products for 20+ years.
+                  AOL. Yahoo. The State of California. 18F. Co-author of <em>Designing Social Interfaces</em> (O&apos;Reilly).
                   Currently exploring what it means to have AI as a genuine collaborator rather than
                   just a tool.
                 </p>
