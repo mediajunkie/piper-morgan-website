@@ -1,5 +1,27 @@
 [
   {
+    "title": "Two Migrations in One Day",
+    "excerpt": "April 23, 2026 By the third migration, the pattern was visible. A few weeks ago I started moving the agents I work with — the experience-design role (CXO), the product-management role (PPM), the documentation role (Docs), and several others — from one tool to another, from chat-based sessions to ...",
+    "url": "/blog/two-migrations-in-one-day",
+    "slug": "two-migrations-in-one-day",
+    "publishedAt": "May 26, 2026",
+    "publishedAtISO": "2026-05-26T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-91d148229561",
+    "featuredImage": "/assets/blog-images/two-migrations-in-one-day.webp",
+    "thumbnail": "/assets/blog-images/two-migrations-in-one-day.webp",
+    "imageAlt": "Two luminous AI beings descend in a transparent transfer chamber from a calm executive observatory into a dense workshop filled with terminals, cables, machinery, and active construction, while floating documents and diagrams accompany them as preserved institutional memory.",
+    "imageCaption": "\"Let's get right down to it!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "May 26, 2026",
+    "workDateISO": "2026-05-26T00:00:00.000Z"
+  },
+  {
     "title": "Five Whys for Design Decisions",
     "excerpt": "December 20, 2025 Five Whys is a debugging technique. You ask \"why did this break?\" and then ask \"why?\" to each answer until you reach a root cause. It's standard practice for fixing bugs. On December 20th, we discovered it works for something else entirely: figuring out why a feature doesn't exi...",
     "url": "/blog/five-whys-for-design-decisions",
@@ -17,9 +39,9 @@
     "imageAlt": "Cross-section cartoon of investigators excavating beneath a small user-interface problem, uncovering deeper layers of assumptions until they reveal a massive buried foundation labeled “command-oriented design.”",
     "imageCaption": "We have to get to the bottom of this!",
     "category": "insight",
-    "cluster": "",
     "workDate": "Dec 20, 2025",
-    "workDateISO": "2025-12-20T00:00:00.000Z"
+    "workDateISO": "2025-12-20T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Project Biorhythms",
