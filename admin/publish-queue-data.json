@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-05-25T14:53:46.023Z",
+  "buildTime": "2026-05-26T15:05:02.843Z",
   "totalEntries": 356,
   "sections": {
     "readyToPublish": [
@@ -344,26 +344,6 @@
         "notes": "narrative — IAC 'Ethics as Information Architecture' talk + CIO M1 methodology audit (10 sections) + Flywheel three-layer reformulation + Pattern-062 formalized as 5th practice (Audit the composition)",
         "altText": "Cross-section cartoon of glowing AI beings maintaining a hidden routing machine beneath a fragile cliffside roadway full of warning barriers and drifting mismatched diagrams, showing structure quietly preventing unsafe paths before they can be reached.",
         "caption": "Safety first!"
-      },
-      {
-        "title": "The Inchworm Position",
-        "theme": "insight",
-        "status": "published",
-        "workDate": "2025-11-23",
-        "endWorkDate": "2025-11-22",
-        "pubDate": "2026-05-11",
-        "mediumURL": "https://medium.com/building-piper-morgan/the-inchworm-position-ba83c3cf5031",
-        "liPubDate": "2026-05-11",
-        "linkedinURL": "https://www.linkedin.com/pulse/inchworm-position-christian-crumlish-n7iwc/",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/blog/the-inchworm-position",
-        "blogPath": "/blog/the-inchworm-position",
-        "cartoon": "ai-inchworm",
-        "chatDate": "2025-11-19",
-        "draftPath": "",
-        "notes": "",
-        "altText": "An inchworm traverses a branching numbered tree while a human and glowing AI-being observe its precise progress through the hierarchy.",
-        "caption": "How does that song go?"
       }
     ],
     "syndicationGaps": [
