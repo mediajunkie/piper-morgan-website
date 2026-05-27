@@ -17,9 +17,9 @@
     "imageAlt": "Two luminous AI beings descend in a transparent transfer chamber from a calm executive observatory into a dense workshop filled with terminals, cables, machinery, and active construction, while floating documents and diagrams accompany them as preserved institutional memory.",
     "imageCaption": "\"Let's get right down to it!\"",
     "category": "building",
-    "cluster": "",
     "workDate": "May 26, 2026",
-    "workDateISO": "2026-05-26T00:00:00.000Z"
+    "workDateISO": "2026-05-26T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Five Whys for Design Decisions",

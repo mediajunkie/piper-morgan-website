@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #044: What Survives an Experiment",
+    "excerpt": "May 15–21, 2026 This week the team experimented with the first version of a new operating mechanism. The CIO built it, extended it, and then we tore it down a few days later. We extended the mechanism — an autonomous duty cycle for individual agents, designed Saturday — to two more agents Sunday....",
+    "url": "/blog/weekly-ship-44",
+    "slug": "weekly-ship-44",
+    "publishedAt": "May 27, 2026",
+    "publishedAtISO": "2026-05-27T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-3c23f61ae0f5",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child leads a boat crewed by robots.",
+    "imageCaption": "N/A",
+    "category": "ship",
+    "cluster": "",
+    "workDate": "May 27, 2026",
+    "workDateISO": "2026-05-27T00:00:00.000Z"
+  },
+  {
     "title": "Two Migrations in One Day",
     "excerpt": "April 23, 2026 By the third migration, the pattern was visible. A few weeks ago I started moving the agents I work with — the experience-design role (CXO), the product-management role (PPM), the documentation role (Docs), and several others — from one tool to another, from chat-based sessions to ...",
     "url": "/blog/two-migrations-in-one-day",
