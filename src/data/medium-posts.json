@@ -17,9 +17,31 @@
     "imageAlt": "A child leads a boat crewed by robots.",
     "imageCaption": "N/A",
     "category": "ship",
-    "cluster": "",
     "workDate": "May 27, 2026",
-    "workDateISO": "2026-05-27T00:00:00.000Z"
+    "workDateISO": "2026-05-27T00:00:00.000Z",
+    "featured": false
+  },
+  {
+    "title": "Weekly Ship #044: What Survives an Experiment",
+    "excerpt": "May 15–21, 2026 This week the team experimented with the first version of a new operating mechanism. The CIO built it, extended it, and then we tore it down a few days later. We extended the mechanism — an autonomous duty cycle for individual agents, designed Saturday — to two more agents Sunday....",
+    "url": "/blog/weekly-ship-044-what-survives-an-experiment",
+    "slug": "weekly-ship-044-what-survives-an-experiment",
+    "publishedAt": "May 27, 2026",
+    "publishedAtISO": "2026-05-27T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-b96fc9196826",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child leads a boat crewed by robots.",
+    "imageCaption": "N/A",
+    "category": "ship",
+    "workDate": "May 27, 2026",
+    "workDateISO": "2026-05-27T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Two Migrations in One Day",
