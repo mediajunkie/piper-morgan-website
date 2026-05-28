@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Misfiled Voice Guide",
+    "excerpt": "April 24, 2026 The first thing the Communications Chief agent instance did in its new working environment was search for a file whose old location it knew but which it now could not find. A migration the previous day had moved my Comms agent from a chat interface to a coding interface. New tools,...",
+    "url": "/blog/the-misfiled-voice-guide",
+    "slug": "the-misfiled-voice-guide",
+    "publishedAt": "May 28, 2026",
+    "publishedAtISO": "2026-05-28T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-48f6670b89f4",
+    "featuredImage": "/assets/blog-images/the-misfiled-voice-guide.webp",
+    "thumbnail": "/assets/blog-images/the-misfiled-voice-guide.webp",
+    "imageAlt": "A communications manual discovered on the wrong shelf in a vast archive.",
+    "imageCaption": "Always the last place you look!",
+    "category": "building",
+    "cluster": "",
+    "workDate": "May 28, 2026",
+    "workDateISO": "2026-05-28T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #044: What Survives an Experiment",
     "excerpt": "May 15–21, 2026 This week the team experimented with the first version of a new operating mechanism. The CIO built it, extended it, and then we tore it down a few days later. We extended the mechanism — an autonomous duty cycle for individual agents, designed Saturday — to two more agents Sunday....",
     "url": "/blog/weekly-ship-44",
