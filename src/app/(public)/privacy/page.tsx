@@ -30,7 +30,7 @@ export default function PrivacyPolicy() {
           <div className="prose prose-lg max-w-none space-y-8 text-text-light">
             <div className="bg-primary-teal/10 p-6 rounded-lg mb-8">
               <p className="text-text-dark font-medium mb-2">
-                <strong>Last updated:</strong> September 2025
+                <strong>Last updated:</strong> May 2026
               </p>
               <p className="text-text-dark">
                 This privacy policy explains how Piper Morgan collects, uses, and protects your personal information when you visit our website and subscribe to our newsletter.
@@ -56,7 +56,7 @@ export default function PrivacyPolicy() {
               <h3 className="text-xl font-semibold text-text-dark mb-3">
                 Website Analytics
               </h3>
-              <p className="mb-4">We use web analytics to understand how visitors use our site:</p>
+              <p className="mb-4">We use Google Analytics 4 with privacy-friendly settings to understand how visitors use our site:</p>
               <ul className="list-disc pl-6 space-y-2 mb-6">
                 <li>Pages visited and time spent on site</li>
                 <li>Referring websites and search terms</li>
@@ -65,7 +65,7 @@ export default function PrivacyPolicy() {
               </ul>
 
               <p className="text-sm italic">
-                We do not use Google Analytics or other third-party tracking services that create detailed user profiles.
+                Our GA4 configuration anonymizes IP addresses, disables Google signals, and turns off ad personalization. We do not use advertising networks or build user profiles for targeting purposes.
               </p>
             </section>
 
@@ -215,7 +215,7 @@ export default function PrivacyPolicy() {
               <ul className="list-disc pl-6 space-y-2 mb-6">
                 <li><strong>Essential cookies:</strong> Required for basic website functionality</li>
                 <li><strong>No advertising cookies:</strong> We do not use cookies for advertising or detailed user tracking</li>
-                <li><strong>No third-party trackers:</strong> We do not embed social media widgets or advertising networks</li>
+                <li><strong>No advertising trackers:</strong> We use Google Analytics 4 for site usage statistics, but do not embed social media widgets or advertising networks</li>
               </ul>
             </section>
 
