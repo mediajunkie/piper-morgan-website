@@ -1,0 +1,130 @@
+1:"$Sreact.fragment"
+9:I[8393,[],""]
+:HL["/_next/static/css/ae9db224ef9c87ec.css","style"]
+2:T1313,
+            :root{--primary-teal:#2DD4BF;--primary-teal-text:#0D9488;--text-dark:#1F2937;--text-light:#6B7280;--background:#FFFFFF;--surface:#F9FAFB}
+            .dark{--text-dark:#F1F5F9;--text-light:#94A3B8;--background:#0F172A;--surface:#1E293B}
+            @font-face{font-family:'Inter';src:url('/fonts/inter-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+            *{box-sizing:border-box}
+            html{scroll-behavior:smooth;font-size:16px;margin:0;padding:0;border:none;outline:none}
+            body{background:var(--background);color:var(--text-dark);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell',sans-serif;line-height:1.6;margin:0;padding:0;border:none;outline:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+            nav{border:none !important;outline:none !important}
+            h1,h2,h3,h4,h5,h6{font-family:'Hoss Round','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+            p,span{max-width:75ch;line-height:1.7}
+            .text-content div{max-width:75ch;line-height:1.7}
+            .text-content{max-width:65ch}
+            @media (max-width:640px){
+              h1{font-size:1.75rem;line-height:1.2}
+              h2{font-size:1.25rem;line-height:1.3}
+              h3{font-size:1.1rem;line-height:1.4}
+              h4{font-size:1rem;line-height:1.4}
+            }
+            @media (min-width:641px) and (max-width:768px){
+              h1{font-size:2rem;line-height:1.2}
+              h2{font-size:1.5rem;line-height:1.3}
+              h3{font-size:1.25rem;line-height:1.4}
+            }
+            @media (prefers-reduced-motion: reduce){
+              *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}
+            }
+            a:hover{color:#0D9488;transition:color 0.2s ease}
+            .hover-lift:hover{transform:translateY(-2px);transition:transform 0.2s ease}
+            button:focus,a:focus{outline:2px solid #2DD4BF;outline-offset:2px;border-radius:4px}
+            .skip-to-content{position:absolute;top:-100px;left:0;z-index:999;padding:8px 16px;background:#1F2937;color:white;text-decoration:none;border-radius:0 0 4px 0;transition:top 0.3s}
+            .skip-to-content:focus{top:0;outline:2px solid #2DD4BF;outline-offset:2px}
+            .section-spacing{margin-bottom:4rem}
+            .component-spacing{margin-bottom:1.5rem}
+            .micro-spacing{margin-bottom:0.5rem}
+            @media (min-width:768px){
+              .section-spacing{margin-bottom:6rem}
+              .component-spacing{margin-bottom:2rem}
+            }
+            .site-container{width:100%;max-width:1200px;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+            @media (min-width:640px){.site-container{padding-left:1.5rem;padding-right:1.5rem}}
+            @media (min-width:768px){.site-container{padding-left:2rem;padding-right:2rem}}
+            @media (min-width:1024px){.site-container{max-width:1200px}}
+            @media (min-width:1200px){.site-container{max-width:1200px}}
+            .section-padding{padding-top:4rem;padding-bottom:4rem}
+            @media (min-width:768px){.section-padding{padding-top:5rem;padding-bottom:5rem}}
+            .mx-auto{margin-left:auto;margin-right:auto}
+            .max-w-4xl{max-width:56rem}
+            .pt-16{padding-top:4rem}
+            .pb-8{padding-bottom:2rem}
+            .px-4{padding-left:1rem;padding-right:1rem}
+            .mb-6{margin-bottom:1.5rem}
+            .mb-8{margin-bottom:2rem}
+            .text-left{text-align:left}
+            .text-center{text-align:center}
+            .text-primary-teal-text{color:#0F766E}
+            .text-text-dark{color:#1F2937}
+            .text-text-light{color:#6B7280}
+            .font-bold{font-weight:700}
+            .text-4xl{font-size:2.25rem;line-height:2.5rem}
+            .text-5xl{font-size:3rem;line-height:1}
+            .text-6xl{font-size:3.75rem;line-height:1}
+            .text-lg{font-size:1.125rem;line-height:1.75rem}
+            .text-xl{font-size:1.25rem;line-height:1.75rem}
+            .leading-tight{line-height:1.25}
+            .leading-relaxed{line-height:1.625}
+            .min-h-screen{min-height:100vh}
+            @media (min-width:768px){
+              .md\:pt-24{padding-top:6rem}
+              .md\:pb-12{padding-bottom:3rem}
+              .md\:text-5xl{font-size:3rem;line-height:1}
+              .md\:text-xl{font-size:1.25rem;line-height:1.75rem}
+            }
+            @media (min-width:1024px){
+              .lg\:text-6xl{font-size:3.75rem;line-height:1}
+            }
+          0:{"P":null,"b":"C2SlyTZtpgb3HFb_CoEzq","p":"","c":["","blog","the-misfiled-voice-guide",""],"i":false,"f":[[["",{"children":["(public)",{"children":["blog",{"children":[["slug","the-misfiled-voice-guide","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/ae9db224ef9c87ec.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"font-inter","children":[["$","head",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                const theme = localStorage.getItem('theme') ||\n                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');\n                if (theme === 'dark') {\n                  document.documentElement.classList.add('dark');\n                  document.body.classList.add('dark');\n                }\n              })();\n            "}}],["$","link",null,{"rel":"dns-prefetch","href":"//pipermorgan.ai"}],["$","link",null,{"rel":"preconnect","href":"https://pipermorgan.ai"}],["$","link",null,{"rel":"preload","as":"image","href":"/assets/pm-logo.png"}],["$","link",null,{"rel":"preload","href":"/fonts/inter-latin.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preload","href":"/fonts/HossRound-Regular.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],"$L3"]}]]}],{"children":["(public)","$L4",{"children":["blog","$L5",{"children":[["slug","the-misfiled-voice-guide","d"],"$L6",{"children":["__PAGE__","$L7",{},null,false]},null,false]},null,false]},null,false]},null,false],"$L8",false]],"m":"$undefined","G":["$9",[]],"s":false,"S":true}
+a:I[9119,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-fdcb626a14307887.js","177","static/chunks/app/layout-3e36f06aa806761b.js"],"ClientLayout"]
+b:I[7555,[],""]
+c:I[1295,[],""]
+d:I[9795,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-fdcb626a14307887.js","177","static/chunks/app/layout-3e36f06aa806761b.js"],"default"]
+e:I[6874,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-fdcb626a14307887.js","497","static/chunks/497-21a17708fe1078e2.js","170","static/chunks/170-a2220f3eaaaab397.js","676","static/chunks/676-4bfe7bad186bd0f6.js","680","static/chunks/680-5a07fd3f02aaedc9.js","864","static/chunks/app/(public)/blog/page-036a1cb147c34438.js"],""]
+10:I[9665,[],"OutletBoundary"]
+12:I[4911,[],"AsyncMetadataOutlet"]
+14:I[9665,[],"ViewportBoundary"]
+16:I[9665,[],"MetadataBoundary"]
+17:"$Sreact.suspense"
+3:["$","body",null,{"className":"font-sans antialiased","children":[["$","$La",null,{"children":["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$Ld",null,{}]]}]
+4:["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"min-h-screen","children":["$","div",null,{"className":"site-container max-w-4xl pt-16 md:pt-24 pb-8 md:pb-12 text-center","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-8xl md:text-9xl font-bold text-primary-teal-text mb-4","children":"404"}],["$","h2",null,{"className":"text-3xl md:text-4xl font-semibold text-text-dark mb-4","children":"Page Not Found"}],["$","p",null,{"className":"text-xl text-text-light leading-relaxed max-w-2xl mx-auto","children":"Looks like this page got lost in the AI training data. Don't worry – even the best algorithms make mistakes sometimes."}]]}],["$","div",null,{"className":"mb-12","children":[["$","h3",null,{"className":"text-xl font-semibold text-text-dark mb-6","children":"Where would you like to go instead?"}],["$","div",null,{"className":"grid md:grid-cols-2 gap-6 max-w-2xl mx-auto","children":[["$","div",null,{"className":"space-y-4","children":[["$","$Le",null,{"href":"/","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"🏠 Homepage"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Start from the beginning of our AI PM journey"}]]}],["$","$Le",null,{"href":"/methodology","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"⚙️ How It Works"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Discover our AI-powered product management methodology"}]]}]]}],["$","div",null,{"className":"space-y-4","children":[["$","$Le",null,{"href":"/what-weve-learned","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"💡 What We've Learned"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Building-in-public insights and breakthroughs"}]]}],["$","$Le",null,{"href":"/blog","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"📝 Journey"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Follow our building-in-public blog posts"}]]}],["$","$Le",null,{"href":"/get-involved","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"🚀 Get Involved"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Join our community and stay updated"}]]}]]}]]}]]}],["$","div",null,{"className":"text-center","children":[["$","p",null,{"className":"text-text-light mb-6","children":"Still can't find what you're looking for?"}],["$","$Le",null,{"href":"/get-involved","className":"inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:transform-none bg-primary-teal text-white hover:bg-teal-600 focus:ring-primary-teal shadow-component hover:shadow-component-hover hover:-translate-y-0.5 hover:scale-105 font-bold text-lg px-8 py-4 text-lg rounded-button","aria-label":"$undefined","children":[false,"Get Help & Stay Updated"]}]]}],["$","div",null,{"className":"mt-12 p-6 bg-gray-50 rounded-card max-w-lg mx-auto","children":["$","p",null,{"className":"text-sm text-text-light italic","children":["💬 ",["$","strong",null,{"children":"Piper Morgan says:"}]," \"Even the most sophisticated neural networks occasionally return null. Let's navigate back to more productive paths together!\""]}]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+5:["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+6:["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+7:["$","$1","c",{"children":["$Lf",null,["$","$L10",null,{"children":["$L11",["$","$L12",null,{"promise":"$@13"}]]}]]}]
+8:["$","$1","h",{"children":[null,[["$","$L14",null,{"children":"$L15"}],null],["$","$L16",null,{"children":["$","div",null,{"hidden":true,"children":["$","$17",null,{"fallback":null,"children":"$L18"}]}]}]]}]
+19:I[7887,["874","static/chunks/874-668c89038fa04eb8.js","972","static/chunks/app/(public)/blog/%5Bslug%5D/page-ab0210ff8c4483f5.js"],"BlogPostContent"]
+1a:T19aa,<p><em>April 24, 2026</em></p>
+<p>The first thing the Communications Chief agent instance did in its new working environment was search for a file whose old location it knew but which it now could not find.</p>
+<p>A migration the previous day had moved my Comms agent from a chat interface to a coding interface. New tools, same job. The handoff memo had named everything the incoming instance was supposed to read on arrival: the editorial calendar, the briefing for the role, the publication template, the voice and tone guide. The first three were where the handoff said they'd be. The fourth wasn't anywhere it looked.</p>
+<p>In the old chat-based working environment, Comms had access to (and helped iterate on) a copy of the voice and tone guide stored in the chat project's knowledge base. Chat-based search runs over a project knowledge surface that's much smaller than the whole filesystem. Whole directories sit outside it.</p>
+<p>Now the whole filesystem was searchable. Within thirty seconds Comms had two candidate files:</p>
+<p>```<br />docs/assets/images/blog/comms/xian-voice-tone-guide.md<br />docs/assets/images/blog/comms/xian-voice-tone-guide-2025-08-27.md<br />```</p>
+<p>Both markdown files. Both in a directory named <em>images</em>. The Communications voice and tone guide had been sitting for months at a path inside the project's image assets, where no agent doing image work would have any reason to look and no agent doing voice work could ever find them via search.</p>
+<p>Comms read both. The undated one was longer-feeling but shorter on lines (246 vs 253). It worked through the differences. The dated version still had a Format Standards section. The undated version had Format Standards removed — and richer voice characterization where Format Standards used to be. Cross-referencing the publication template Comms had already read showed Format Standards had been extracted there at the v0.7 update on April 18. The undated file was <em>newer</em>, not older. It was the one to use.</p>
+<p>Comms surfaced the find to me. My reaction was less surprise than recognition. Yes, the guides had been moved around. Yes, the dated one was a snapshot from August. Yes, the undated one was the current canonical version. Yes, neither was indexed anywhere. The misfile had gone unnoticed for the whole period it persisted — Comms had been working from memory and from my voice-passes, not from the guide itself.</p>
+<p>I authorized the rescue. Three commands moved the files where they belonged:</p>
+<ul><li>The canonical guide moved from the images directory to <code>docs/internal/planning/comms/xian-voice-tone-guide.md</code></li><li>The August snapshot moved to <code>docs/internal/planning/historical/</code> with its date in the filename</li><li>The navigation index gained a REQUIRED READING entry pointing at the canonical guide, plus the two adjacent Comms documents (publication template, first-publish checklist) that had also been missing from the index</li></ul>
+<p>Three <code>git mv</code> operations, two filesystem searches, one navigation index edit. The fix took less than ten minutes.</p>
+<h1>What had changed</h1>
+<p>Two things made this possible that hadn't been possible a day earlier.</p>
+<p>The first was the search surface. The chat-based working environment indexed a curated set of documents — useful when the set was current, opaque when it wasn't. The coding interface searches the whole filesystem. <em>Misfiled in the images directory</em> and <em>findable by content search</em> turned out to be compatible states, but only in the new environment.</p>
+<p>The second was a verifiable-claim discipline that had started taking shape over the previous week. Before the migration, Comms would have read the dated file and the undated file, formed a hypothesis about which was newer, and gone with it. After the migration there was a way to check: cross-reference the publication template that referenced the Format Standards content, compare the date on that extraction against what each version of the guide contained, and <em>verify</em> the hypothesis instead of acting on it.</p>
+<p>Comms made the right call on the first try. But the discipline that let it make that call confidently was newer than the tool change that made the search possible.</p>
+<h1>What this opened</h1>
+<p>Once a single foundational document had been found misfiled and rescued, the question changed shape. Not "is the voice and tone guide where it should be" but "what else might be?"</p>
+<p>We didn't run that audit on April 24. The day's work moved on — to other handoff items, to insight drafts for the upcoming weekend, to a footer-tease decision that was blocking the evening's narrative publication. The misfiled-voice-guide question had taken twenty minutes to find, surface, and fix. The half-day's other work needed those hours.</p>
+<p>But the question stayed open. What else was out there? What other documents the role was supposed to lean on had simply not been findable from where the role was working?</p>
+<p>The next time the question surfaced, the discipline that had already arrived would be the one to use. Search the filesystem. Compare what's there. Verify the hypothesis against an adjacent artifact. Trust the artifact, not the assumption.</p>
+<h1>What's portable</h1>
+<p>If you run a role inside an environment that restricts what the role can search, the role will work around the restriction. It will build memory practices, voice habits, relationship-based recall — all the things people do when their tools don't let them look. Those practices aren't wrong. They're compensatory.</p>
+<p>When the restriction lifts, the first thing the role should do isn't get on with new work. It's audit what the old restriction was hiding. Some of what was missing will turn out to have been quietly central the whole time. Some will turn out to have been working around its own absence well enough that no one noticed.</p>
+<p>You'll find at least one thing that was supposed to be central and was sitting in the wrong directory the whole time. You'll fix it in ten minutes. Then you'll wonder how many other things you've been working around without knowing it.</p>
+<hr>
+<p><em>Next on Building Piper Morgan: <strong>Stacked Silent Failures</strong> — Saturday's insight on what the obvious hypothesis missed when a quality-test number dropped six points.</em></p>
+<p><em>Where in your own work has a tool restriction shaped a habit you've stopped noticing? What would surface if the restriction lifted?</em></p>f:["$","$L19",null,{"post":{"title":"The Misfiled Voice Guide","guid":"blog-first-48f6670b89f4","url":"/blog/the-misfiled-voice-guide","publishedAt":"May 28, 2026","workDate":"May 28, 2026","author":"christian crumlish","featuredImage":"/assets/blog-images/the-misfiled-voice-guide.webp","imageAlt":"A communications manual discovered on the wrong shelf in a vast archive.","imageCaption":"Always the last place you look!","tags":["Building in Public"]},"content":{"title":"The Misfiled Voice Guide","content":"$1a"}}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+11:null
+1b:I[8175,[],"IconMark"]
+13:{"metadata":[["$","title","0",{"children":"The Misfiled Voice Guide | Piper Morgan"}],["$","meta","1",{"name":"description","content":"April 24, 2026 The first thing the Communications Chief agent instance did in its new working environment was search for a file whose old location it knew but which it now could not find. A migration the previous day had moved my Comms agent from a chat interface to a coding interface. New tools,..."}],["$","meta","2",{"name":"author","content":"Christian Crumlish"}],["$","meta","3",{"name":"keywords","content":"AI,Product Management,Methodology,Building in Public"}],["$","meta","4",{"name":"creator","content":"Christian Crumlish"}],["$","meta","5",{"name":"publisher","content":"Christian Crumlish"}],["$","meta","6",{"name":"robots","content":"index, follow"}],["$","meta","7",{"name":"googlebot","content":"index, follow"}],["$","link","8",{"rel":"canonical","href":"https://pipermorgan.ai/"}],["$","meta","9",{"name":"format-detection","content":"telephone=no, address=no, email=no"}],["$","meta","10",{"property":"og:title","content":"The Misfiled Voice Guide"}],["$","meta","11",{"property":"og:description","content":"April 24, 2026 The first thing the Communications Chief agent instance did in its new working environment was search for a file whose old location it knew but which it now could not find. A migration the previous day had moved my Comms agent from a chat interface to a coding interface. New tools,..."}],["$","meta","12",{"property":"og:image","content":"https://pipermorgan.ai/assets/blog-images/the-misfiled-voice-guide.webp"}],["$","meta","13",{"property":"og:type","content":"article"}],["$","meta","14",{"property":"article:author","content":"christian crumlish"}],["$","meta","15",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","16",{"name":"twitter:title","content":"The Misfiled Voice Guide"}],["$","meta","17",{"name":"twitter:description","content":"April 24, 2026 The first thing the Communications Chief agent instance did in its new working environment was search for a file whose old location it knew but which it now could not find. A migration the previous day had moved my Comms agent from a chat interface to a coding interface. New tools,..."}],["$","meta","18",{"name":"twitter:image","content":"https://pipermorgan.ai/assets/blog-images/the-misfiled-voice-guide.webp"}],["$","link","19",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"32x33"}],["$","link","20",{"rel":"icon","href":"/favicon.ico","sizes":"32x32","type":"image/x-icon"}],["$","link","21",{"rel":"icon","href":"/pm-favicon-16.png","sizes":"16x16","type":"image/png"}],["$","link","22",{"rel":"icon","href":"/pm-favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","23",{"rel":"icon","href":"/pm-favicon-48.png","sizes":"48x48","type":"image/png"}],["$","link","24",{"rel":"apple-touch-icon","href":"/pm-favicon-180.png","sizes":"180x180","type":"image/png"}],["$","link","25",{"rel":"icon","href":"/pm-favicon-192.png","sizes":"192x192","type":"image/png"}],["$","$L1b","26",{}]],"error":null,"digest":"$undefined"}
+18:"$13:metadata"
