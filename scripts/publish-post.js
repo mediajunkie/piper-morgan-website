@@ -104,6 +104,16 @@ try {
 const args = parsed.values;
 if (args.help) showHelpAndExit(0);
 
+// Auto-detect edit-pass: re-publishing an already-published slug must reuse the
+// existing hashId. Generating a fresh one orphans the new content in
+// blog-content.json while the live CSV mapping still points at the old hashId,
+// so the site keeps serving stale content. (Docs memo 2026-05-26.)
+const existingHashId =
+  args.mode === 'publish' && !args['hash-id'] && args.slug
+    ? lookupHashIdBySlug(args.slug)
+    : null;
+const autoEditPass = existingHashId != null;
+
 const errors = [];
 if (!args.draft) errors.push('--draft is required');
 if (!args.slug) errors.push('--slug is required');
@@ -111,7 +121,7 @@ if (!args.category) errors.push('--category is required');
 if (args.category && !['building', 'insight', 'ship'].includes(args.category)) {
   errors.push(`--category must be one of: building, insight, ship (got: ${args.category})`);
 }
-if (args.category !== 'ship' && !args.image && args.mode !== 'edit-pass') {
+if (args.category !== 'ship' && !args.image && args.mode !== 'edit-pass' && !autoEditPass) {
   errors.push('--image is required for non-ship posts (publish mode)');
 }
 if (args.mode === 'edit-pass' && !args['hash-id']) {
@@ -135,8 +145,9 @@ const cfg = {
   imagePath: args.image ? path.resolve(args.image) : null,
   slug: args.slug,
   category: args.category,
-  mode: args.mode,
-  hashId: args['hash-id'] || null,
+  mode: autoEditPass ? 'edit-pass' : args.mode,
+  hashId: args['hash-id'] || existingHashId || null,
+  autoEditPass,
   workDate: args['work-date'] || todayIso(),
   pubDate: args['pub-date'] || todayIso(),
   cluster: args.cluster,
@@ -252,6 +263,11 @@ function renderInline(text) {
   // matches first and the linked-image structure breaks).
   out = out.replace(/\[!\[([^\]]*)\]\(([^)]+)\)\]\(([^)]+)\)/g,
     (_, alt, img, link) => `<a href="${link}"><img src="${img}" alt="${alt}" /></a>`);
+  // Inline image ![alt](url) → <img src="url" alt="alt" /> (surfaced 2026-05-27 from
+  // Ship #044). MUST run after linked-image (more specific) and before the link rule —
+  // otherwise the link rule matches the [alt](url) part and leaves a literal leading `!`.
+  out = out.replace(/!\[([^\]]*)\]\(([^)]+)\)/g,
+    (_, alt, src) => `<img src="${src}" alt="${alt}" />`);
   // Links [text](url)
   out = out.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, t, u) => `<a href="${u}">${t}</a>`);
   // Bold **text**
@@ -465,6 +481,24 @@ function csvEscape(v) {
   return s;
 }
 
+function lookupHashIdBySlug(slug) {
+  // Returns the hashId already mapped to this slug in blog-metadata.csv, or null.
+  // slug is field 0, hashId is field 1; slugs are URL segments (no commas/quotes).
+  if (!fs.existsSync(CSV_PATH)) return null;
+  const lines = fs.readFileSync(CSV_PATH, 'utf-8').split('\n');
+  for (let i = 1; i < lines.length; i++) {
+    const line = lines[i];
+    if (!line.trim()) continue;
+    const firstComma = line.indexOf(',');
+    if (firstComma === -1) continue;
+    if (line.slice(0, firstComma) !== slug) continue;
+    const rest = line.slice(firstComma + 1);
+    const secondComma = rest.indexOf(',');
+    return (secondComma === -1 ? rest : rest.slice(0, secondComma)).trim();
+  }
+  return null;
+}
+
 function csvRowExists(csvText, hashId, slug) {
   const lines = csvText.split('\n');
   // Skip header
@@ -536,6 +570,9 @@ function runSyncAndFetch() {
 const startMs = Date.now();
 try {
   log(`📝 publish-post.js — mode=${cfg.mode} category=${cfg.category} slug=${cfg.slug}${cfg.dryRun ? ' [DRY-RUN]' : ''}`);
+  if (cfg.autoEditPass) {
+    log(`🔁 slug "${cfg.slug}" already published (hashId=${cfg.hashId}); auto-detected edit-pass — updating blog-content.json in place, CSV + image untouched`);
+  }
 
   // Parse the draft
   log(`📄 parsing draft: ${cfg.draftPath}`);
