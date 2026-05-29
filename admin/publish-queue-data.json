@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-05-28T13:33:07.292Z",
+  "buildTime": "2026-05-29T20:09:57.561Z",
   "totalEntries": 363,
   "sections": {
     "readyToPublish": [
@@ -424,26 +424,6 @@
         "notes": "insight — DinP ecosystem cross-pollination: Klatch DECISIONS.md propagation + MCP scheme parallels (piper-morgan:// ↔ klatch://) + SSH-over-443 via Calliope + RFC-001; sibling projects align on envelope while keeping sovereign interiors",
         "altText": "Ethereal AI beings collaboratively sew a shared quilt whose patterns grow more intricate and interconnected from left to right.",
         "caption": "\"It's becoming a tradition!\""
-      },
-      {
-        "title": "Same Failure, Six Agents, Ninety Minutes",
-        "theme": "building",
-        "status": "published",
-        "workDate": "2026-04-19",
-        "endWorkDate": "",
-        "pubDate": "2026-05-14",
-        "mediumURL": "https://medium.com/building-piper-morgan/same-failure-six-agents-ninety-minutes-553fa5223cc8",
-        "liPubDate": "",
-        "linkedinURL": "",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/blog/same-failure-six-agents-ninety-minutes",
-        "blogPath": "/blog/same-failure-six-agents-ninety-minutes",
-        "cartoon": "ai-acela",
-        "chatDate": "",
-        "draftPath": "",
-        "notes": "narrative — six leadership roles produce parallel workstream-review drafts on incomplete source set; all corrected within two hours; Arch reframe — polished output (AI- or colleague-written) masks gaps; Pattern-045 at memo-propagation layer",
-        "altText": "A high-speed train entering a rail junction where six parallel tracks branch into different analytical landscapes before merging again, with one exaggerated claim diverted onto a repair siding",
-        "caption": "People get ready!"
       }
     ],
     "syndicationGaps": [
