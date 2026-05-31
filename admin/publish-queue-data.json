@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-05-29T20:16:00.986Z",
+  "buildTime": "2026-05-31T05:43:37.287Z",
   "totalEntries": 363,
   "sections": {
     "readyToPublish": [
@@ -404,26 +404,6 @@
         "notes": "",
         "altText": "A weary nonhuman gardener manually watering struggling plants amid reminder signs labeled with protocols, contrasted with the same gardener relaxing in a peaceful automated garden thriving under drip irrigation infrastructure.",
         "caption": "\"This feels more natural!\""
-      },
-      {
-        "title": "The Family Resemblance",
-        "theme": "insight",
-        "status": "published",
-        "workDate": "2026-04-18",
-        "endWorkDate": "2026-04-22",
-        "pubDate": "2026-05-16",
-        "mediumURL": "https://medium.com/building-piper-morgan/the-family-resemblance-5e00d103b823",
-        "liPubDate": "2026-05-16",
-        "linkedinURL": "https://www.linkedin.com/pulse/family-resemblance-christian-crumlish-1e3dc/",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/blog/the-family-resemblance/",
-        "blogPath": "/blog/the-family-resemblance",
-        "cartoon": "",
-        "chatDate": "",
-        "draftPath": "",
-        "notes": "insight — DinP ecosystem cross-pollination: Klatch DECISIONS.md propagation + MCP scheme parallels (piper-morgan:// ↔ klatch://) + SSH-over-443 via Calliope + RFC-001; sibling projects align on envelope while keeping sovereign interiors",
-        "altText": "Ethereal AI beings collaboratively sew a shared quilt whose patterns grow more intricate and interconnected from left to right.",
-        "caption": "\"It's becoming a tradition!\""
       }
     ],
     "syndicationGaps": [
@@ -1018,26 +998,6 @@
         "draftPath": "",
         "notes": "covers Apr 24-30 (Apr 25 dual migration CXO+PPM + #992 Phase E run + #1002 P0 floor-bypass-by-routing + #997 close + Colleague Test v2.0/v2.1 + Multi-Wave Investigation publish; Apr 26-30 TBD)",
         "altText": "A child leads a ship operated by robots.",
-        "caption": ""
-      },
-      {
-        "title": "Weekly Ship #040: The Methodology Audits Itself",
-        "theme": "ship",
-        "status": "published",
-        "workDate": "2026-04-17",
-        "endWorkDate": "2026-04-23",
-        "pubDate": "2026-04-29",
-        "mediumURL": "",
-        "liPubDate": "2026-04-29",
-        "linkedinURL": "https://www.linkedin.com/pulse/weekly-ship-040-methodology-audits-itself-christian-crumlish-xy5lc/",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/shipping-news/weekly-ship-040-the-methodology-audits-itself",
-        "blogPath": "/shipping-news/weekly-ship-040-the-methodology-audits-itself",
-        "cartoon": "piper-ship",
-        "chatDate": "",
-        "draftPath": "",
-        "notes": "covers Apr 17-23 (M1 methodology audit + Flywheel v2 reformulation + 3 role migrations HOST/CIO/Comms + #992 Phases A-D shipped + Compose UI Phase 1 + 4 Pattern-062 manifestations with same-week safeguards + methodology validates itself within 16 hours)",
-        "altText": "A person leads a small boat crewed by robots.",
         "caption": ""
       }
     ]
