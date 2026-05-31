@@ -1,5 +1,27 @@
 [
   {
+    "title": "Stacked Silent Failures",
+    "excerpt": "May 8–9, 2026 A few weeks ago an automated quality test on my project's main system came back six points below its prior baseline. The system runs a hundred scripted user inputs against the production code, scores each response on a rubric (relevance, competence, tone), and produces an aggregate ...",
+    "url": "/blog/stacked-silent-failures",
+    "slug": "stacked-silent-failures",
+    "publishedAt": "May 31, 2026",
+    "publishedAtISO": "2026-05-31T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-a2ee4d11ab1b",
+    "featuredImage": "/assets/blog-images/stacked-silent-failures.webp",
+    "thumbnail": "/assets/blog-images/stacked-silent-failures.webp",
+    "imageAlt": "An investigator studies a small leak in a large water tank while two other unnoticed leaks drip nearby and the tank sits unexpectedly low.",
+    "imageCaption": "\"It’s not just one thing!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "May 31, 2026",
+    "workDateISO": "2026-05-31T00:00:00.000Z"
+  },
+  {
     "title": "The Misfiled Voice Guide",
     "excerpt": "April 24, 2026 The first thing the Communications Chief agent instance did in its new working environment was search for a file whose old location it knew but which it now could not find. A migration the previous day had moved my Comms agent from a chat interface to a coding interface. New tools,...",
     "url": "/blog/the-misfiled-voice-guide",
@@ -17,9 +39,9 @@
     "imageAlt": "A communications manual discovered on the wrong shelf in a vast archive.",
     "imageCaption": "Always the last place you look!",
     "category": "building",
-    "cluster": "",
     "workDate": "May 28, 2026",
-    "workDateISO": "2026-05-28T00:00:00.000Z"
+    "workDateISO": "2026-05-28T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #044: What Survives an Experiment",
