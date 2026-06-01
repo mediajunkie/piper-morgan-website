@@ -1,5 +1,27 @@
 [
   {
+    "title": "When Your AI Makes Things Up",
+    "excerpt": "February 12, 2026 The draft looked great. \"The Drift We Didn't See\" — a narrative about discovering timezone bugs across our database. Specific details. Concrete numbers. A compelling story arc. Then my communications chief agent (Comms) fact-checked it against the source logs. Fabricated claim t...",
+    "url": "/blog/when-your-ai-makes-things-up",
+    "slug": "when-your-ai-makes-things-up",
+    "publishedAt": "Jun 1, 2026",
+    "publishedAtISO": "2026-06-01T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-6fe0f91c84ec",
+    "featuredImage": "/assets/blog-images/when-your-ai-makes-things-up.webp",
+    "thumbnail": "/assets/blog-images/when-your-ai-makes-things-up.webp",
+    "imageAlt": "A glowing AI mixes “Verified Fact,” “Plausible Inference,” and “Complete Fabrication” into a bucket labeled “Blog Post” as a human fact-checker watches.",
+    "imageCaption": "\"I don’t think that’s right!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Jun 1, 2026",
+    "workDateISO": "2026-06-01T00:00:00.000Z"
+  },
+  {
     "title": "Stacked Silent Failures",
     "excerpt": "May 8–9, 2026 A few weeks ago an automated quality test on my project's main system came back six points below its prior baseline. The system runs a hundred scripted user inputs against the production code, scores each response on a rubric (relevance, competence, tone), and produces an aggregate ...",
     "url": "/blog/stacked-silent-failures",
@@ -17,9 +39,9 @@
     "imageAlt": "An investigator studies a small leak in a large water tank while two other unnoticed leaks drip nearby and the tank sits unexpectedly low.",
     "imageCaption": "\"It’s not just one thing!\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "May 31, 2026",
-    "workDateISO": "2026-05-31T00:00:00.000Z"
+    "workDateISO": "2026-05-31T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Misfiled Voice Guide",
