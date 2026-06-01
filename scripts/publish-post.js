@@ -317,6 +317,24 @@ function convertToHtml(body) {
     // Horizontal rule
     if (trimmed === '---') { out.push('<hr>'); i++; continue; }
 
+    // Fenced code block: opening ``` (with optional language tag); content
+    // collected verbatim through the closing ``` line; emit <pre><code>.
+    // (Docs memo 2026-06-01. CommonMark accepts three+ backticks; we accept three.)
+    const fenceOpen = trimmed.match(/^```\s*([^\s`]*)\s*$/);
+    if (fenceOpen) {
+      const lang = fenceOpen[1] || '';
+      const codeLines = [];
+      i++;
+      while (i < lines.length && lines[i].trim() !== '```') {
+        codeLines.push(lines[i]);
+        i++;
+      }
+      if (i < lines.length) i++; // consume closing fence (if any)
+      const codeAttr = lang ? ` class="language-${lang}"` : '';
+      out.push(`<pre><code${codeAttr}>${escapeHtml(codeLines.join('\n'))}</code></pre>`);
+      continue;
+    }
+
     // Headings — strip ONLY the first H1 (the title)
     const h1 = trimmed.match(/^#\s+(.+)$/);
     const h2 = trimmed.match(/^##\s+(.+)$/);
@@ -357,11 +375,12 @@ function convertToHtml(body) {
       continue;
     }
 
-    // Unordered list: consecutive `- item` lines → <ul><li>…</li></ul>
-    if (/^-\s+/.test(trimmed)) {
+    // Unordered list: consecutive `- item` / `* item` / `+ item` lines → <ul><li>…</li></ul>.
+    // CommonMark accepts -, *, and + as equivalent unordered-list markers. (Docs memo 2026-06-01.)
+    if (/^[-*+]\s+/.test(trimmed)) {
       const items = [];
-      while (i < lines.length && /^-\s+/.test(lines[i].trim())) {
-        items.push(lines[i].trim().replace(/^-\s+/, ''));
+      while (i < lines.length && /^[-*+]\s+/.test(lines[i].trim())) {
+        items.push(lines[i].trim().replace(/^[-*+]\s+/, ''));
         i++;
       }
       out.push(`<ul>${items.map(it => `<li>${renderInline(it)}</li>`).join('')}</ul>`);
@@ -396,10 +415,11 @@ function convertToHtml(body) {
       // Stop if this line starts a new block type
       if (/^#{1,3}\s+/.test(t)) break;
       if (/^>\s?/.test(t)) break;
-      if (/^-\s+/.test(t)) break;
+      if (/^[-*+]\s+/.test(t)) break;
       if (/^\d+\.\s+/.test(t)) break;
       if (/^\|.*\|\s*$/.test(t)) break;
       if (t === '---') break;
+      if (/^```/.test(t)) break;
       paraLines.push(t);
       i++;
     }
