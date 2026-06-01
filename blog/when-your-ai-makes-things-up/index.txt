@@ -1,0 +1,138 @@
+1:"$Sreact.fragment"
+9:I[8393,[],""]
+:HL["/_next/static/css/4a7b18e4f0c9b3b0.css","style"]
+2:T1313,
+            :root{--primary-teal:#2DD4BF;--primary-teal-text:#0D9488;--text-dark:#1F2937;--text-light:#6B7280;--background:#FFFFFF;--surface:#F9FAFB}
+            .dark{--text-dark:#F1F5F9;--text-light:#94A3B8;--background:#0F172A;--surface:#1E293B}
+            @font-face{font-family:'Inter';src:url('/fonts/inter-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+            *{box-sizing:border-box}
+            html{scroll-behavior:smooth;font-size:16px;margin:0;padding:0;border:none;outline:none}
+            body{background:var(--background);color:var(--text-dark);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell',sans-serif;line-height:1.6;margin:0;padding:0;border:none;outline:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+            nav{border:none !important;outline:none !important}
+            h1,h2,h3,h4,h5,h6{font-family:'Hoss Round','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+            p,span{max-width:75ch;line-height:1.7}
+            .text-content div{max-width:75ch;line-height:1.7}
+            .text-content{max-width:65ch}
+            @media (max-width:640px){
+              h1{font-size:1.75rem;line-height:1.2}
+              h2{font-size:1.25rem;line-height:1.3}
+              h3{font-size:1.1rem;line-height:1.4}
+              h4{font-size:1rem;line-height:1.4}
+            }
+            @media (min-width:641px) and (max-width:768px){
+              h1{font-size:2rem;line-height:1.2}
+              h2{font-size:1.5rem;line-height:1.3}
+              h3{font-size:1.25rem;line-height:1.4}
+            }
+            @media (prefers-reduced-motion: reduce){
+              *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}
+            }
+            a:hover{color:#0D9488;transition:color 0.2s ease}
+            .hover-lift:hover{transform:translateY(-2px);transition:transform 0.2s ease}
+            button:focus,a:focus{outline:2px solid #2DD4BF;outline-offset:2px;border-radius:4px}
+            .skip-to-content{position:absolute;top:-100px;left:0;z-index:999;padding:8px 16px;background:#1F2937;color:white;text-decoration:none;border-radius:0 0 4px 0;transition:top 0.3s}
+            .skip-to-content:focus{top:0;outline:2px solid #2DD4BF;outline-offset:2px}
+            .section-spacing{margin-bottom:4rem}
+            .component-spacing{margin-bottom:1.5rem}
+            .micro-spacing{margin-bottom:0.5rem}
+            @media (min-width:768px){
+              .section-spacing{margin-bottom:6rem}
+              .component-spacing{margin-bottom:2rem}
+            }
+            .site-container{width:100%;max-width:1200px;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+            @media (min-width:640px){.site-container{padding-left:1.5rem;padding-right:1.5rem}}
+            @media (min-width:768px){.site-container{padding-left:2rem;padding-right:2rem}}
+            @media (min-width:1024px){.site-container{max-width:1200px}}
+            @media (min-width:1200px){.site-container{max-width:1200px}}
+            .section-padding{padding-top:4rem;padding-bottom:4rem}
+            @media (min-width:768px){.section-padding{padding-top:5rem;padding-bottom:5rem}}
+            .mx-auto{margin-left:auto;margin-right:auto}
+            .max-w-4xl{max-width:56rem}
+            .pt-16{padding-top:4rem}
+            .pb-8{padding-bottom:2rem}
+            .px-4{padding-left:1rem;padding-right:1rem}
+            .mb-6{margin-bottom:1.5rem}
+            .mb-8{margin-bottom:2rem}
+            .text-left{text-align:left}
+            .text-center{text-align:center}
+            .text-primary-teal-text{color:#0F766E}
+            .text-text-dark{color:#1F2937}
+            .text-text-light{color:#6B7280}
+            .font-bold{font-weight:700}
+            .text-4xl{font-size:2.25rem;line-height:2.5rem}
+            .text-5xl{font-size:3rem;line-height:1}
+            .text-6xl{font-size:3.75rem;line-height:1}
+            .text-lg{font-size:1.125rem;line-height:1.75rem}
+            .text-xl{font-size:1.25rem;line-height:1.75rem}
+            .leading-tight{line-height:1.25}
+            .leading-relaxed{line-height:1.625}
+            .min-h-screen{min-height:100vh}
+            @media (min-width:768px){
+              .md\:pt-24{padding-top:6rem}
+              .md\:pb-12{padding-bottom:3rem}
+              .md\:text-5xl{font-size:3rem;line-height:1}
+              .md\:text-xl{font-size:1.25rem;line-height:1.75rem}
+            }
+            @media (min-width:1024px){
+              .lg\:text-6xl{font-size:3.75rem;line-height:1}
+            }
+          0:{"P":null,"b":"T2n0HcUuSUqFinbquT5zH","p":"","c":["","blog","when-your-ai-makes-things-up",""],"i":false,"f":[[["",{"children":["(public)",{"children":["blog",{"children":[["slug","when-your-ai-makes-things-up","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4a7b18e4f0c9b3b0.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"font-inter","children":[["$","head",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                const theme = localStorage.getItem('theme') ||\n                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');\n                if (theme === 'dark') {\n                  document.documentElement.classList.add('dark');\n                  document.body.classList.add('dark');\n                }\n              })();\n            "}}],["$","link",null,{"rel":"dns-prefetch","href":"//pipermorgan.ai"}],["$","link",null,{"rel":"preconnect","href":"https://pipermorgan.ai"}],["$","link",null,{"rel":"preload","as":"image","href":"/assets/pm-logo.png"}],["$","link",null,{"rel":"preload","href":"/fonts/inter-latin.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preload","href":"/fonts/HossRound-Regular.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],"$L3"]}]]}],{"children":["(public)","$L4",{"children":["blog","$L5",{"children":[["slug","when-your-ai-makes-things-up","d"],"$L6",{"children":["__PAGE__","$L7",{},null,false]},null,false]},null,false]},null,false]},null,false],"$L8",false]],"m":"$undefined","G":["$9",[]],"s":false,"S":true}
+a:I[9119,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-fdcb626a14307887.js","177","static/chunks/app/layout-3e36f06aa806761b.js"],"ClientLayout"]
+b:I[7555,[],""]
+c:I[1295,[],""]
+d:I[9795,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-fdcb626a14307887.js","177","static/chunks/app/layout-3e36f06aa806761b.js"],"default"]
+e:I[6874,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-fdcb626a14307887.js","497","static/chunks/497-21a17708fe1078e2.js","170","static/chunks/170-5ed813ca522faf93.js","676","static/chunks/676-4bfe7bad186bd0f6.js","680","static/chunks/680-5a07fd3f02aaedc9.js","864","static/chunks/app/(public)/blog/page-036a1cb147c34438.js"],""]
+10:I[9665,[],"OutletBoundary"]
+12:I[4911,[],"AsyncMetadataOutlet"]
+14:I[9665,[],"ViewportBoundary"]
+16:I[9665,[],"MetadataBoundary"]
+17:"$Sreact.suspense"
+3:["$","body",null,{"className":"font-sans antialiased","children":[["$","$La",null,{"children":["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$Ld",null,{}]]}]
+4:["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"min-h-screen","children":["$","div",null,{"className":"site-container max-w-4xl pt-16 md:pt-24 pb-8 md:pb-12 text-center","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-8xl md:text-9xl font-bold text-primary-teal-text mb-4","children":"404"}],["$","h2",null,{"className":"text-3xl md:text-4xl font-semibold text-text-dark mb-4","children":"Page Not Found"}],["$","p",null,{"className":"text-xl text-text-light leading-relaxed max-w-2xl mx-auto","children":"Looks like this page got lost in the AI training data. Don't worry – even the best algorithms make mistakes sometimes."}]]}],["$","div",null,{"className":"mb-12","children":[["$","h3",null,{"className":"text-xl font-semibold text-text-dark mb-6","children":"Where would you like to go instead?"}],["$","div",null,{"className":"grid md:grid-cols-2 gap-6 max-w-2xl mx-auto","children":[["$","div",null,{"className":"space-y-4","children":[["$","$Le",null,{"href":"/","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"🏠 Homepage"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Start from the beginning of our AI PM journey"}]]}],["$","$Le",null,{"href":"/methodology","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"⚙️ How It Works"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Discover our AI-powered product management methodology"}]]}]]}],["$","div",null,{"className":"space-y-4","children":[["$","$Le",null,{"href":"/what-weve-learned","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"💡 What We've Learned"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Building-in-public insights and breakthroughs"}]]}],["$","$Le",null,{"href":"/blog","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"📝 Journey"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Follow our building-in-public blog posts"}]]}],["$","$Le",null,{"href":"/get-involved","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"🚀 Get Involved"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Join our community and stay updated"}]]}]]}]]}]]}],["$","div",null,{"className":"text-center","children":[["$","p",null,{"className":"text-text-light mb-6","children":"Still can't find what you're looking for?"}],["$","$Le",null,{"href":"/get-involved","className":"inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:transform-none bg-primary-teal text-white hover:bg-teal-600 focus:ring-primary-teal shadow-component hover:shadow-component-hover hover:-translate-y-0.5 hover:scale-105 font-bold text-lg px-8 py-4 text-lg rounded-button","aria-label":"$undefined","children":[false,"Get Help & Stay Updated"]}]]}],["$","div",null,{"className":"mt-12 p-6 bg-gray-50 rounded-card max-w-lg mx-auto","children":["$","p",null,{"className":"text-sm text-text-light italic","children":["💬 ",["$","strong",null,{"children":"Piper Morgan says:"}]," \"Even the most sophisticated neural networks occasionally return null. Let's navigate back to more productive paths together!\""]}]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+5:["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+6:["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+7:["$","$1","c",{"children":["$Lf",null,["$","$L10",null,{"children":["$L11",["$","$L12",null,{"promise":"$@13"}]]}]]}]
+8:["$","$1","h",{"children":[null,[["$","$L14",null,{"children":"$L15"}],null],["$","$L16",null,{"children":["$","div",null,{"hidden":true,"children":["$","$17",null,{"fallback":null,"children":"$L18"}]}]}]]}]
+19:I[7887,["874","static/chunks/874-668c89038fa04eb8.js","972","static/chunks/app/(public)/blog/%5Bslug%5D/page-ab0210ff8c4483f5.js"],"BlogPostContent"]
+1a:T1c78,<p><em>February 12, 2026</em></p>
+<p>The draft looked great. "The Drift We Didn't See" — a narrative about discovering timezone bugs across our database. Specific details. Concrete numbers. A compelling story arc.</p>
+<p>Then my communications chief agent (Comms) fact-checked it against the source logs.</p>
+<ul><li>Fabricated claim that a "file scoring bug" triggered (it was a Todo bug and timezone warnings).</li><li>Made-up reference to "73 database columns" (should have been "47 DateTime columns")</li><li>Exaggerated one session to "three days of investigation"</li><li>Fabricated an alembic migration hash that's not in the logs anywhere</li><li>Wrongly cited an "utc_now_naive()" function</li></ul>
+<p>Five factual claims. Zero fully correct. Two outright fabrications — a bug that never existed and a migration hash conjured from nothing.</p>
+<p>The draft hadn't been prepared by a junior employee cutting corners. It had been generated by an AI writer that was excellent at narrative structure and terrible at distinguishing between what it remembered, what it inferred, and what it invented.</p>
+<p>I had expected the draft to be grounded in session logs used as its source material.</p>
+<h1>The confabulation gradient</h1>
+<p>This wasn't a hallucination in the usual sense — a wild, obviously wrong claim that's easy to spot. This was something subtler. A gradient from accurate to plausible to fabricated, with no seam visible between them.</p>
+<p>"47 DateTime columns" becoming "73 database columns" isn't random — it's a plausible inflation of a real number. "One day of investigation" becoming "three days" isn't nonsense — it's dramatic embellishment that makes the story better. The fabricated migration hash <em>looked</em> like a real hash. The invented function name <em>could</em> have been a real function.</p>
+<p>Call it confabulation. The agent was generating plausible narrative, filling in gaps with details that served the story's arc, not the historical record. This is worse than outright nonsense because it hides in plain sight. My blog template and guidelines even have instructions designed to prevent this (Comms is told to insert placeholders prompting <em>me</em> to provide specific detail, missing color, how I felt at the time, etc. It usually works, or it had been working, at least.)</p>
+<h1>Why it happens in narrative</h1>
+<p>Technical writing is relatively safe. If you ask an AI to document an API, the claims are verifiable against the code. Wrong parameter names get caught immediately.</p>
+<p>Narrative is different. A blog post about "what happened last Tuesday" draws on session logs, omnibus summaries, git histories — sources that are rich in detail but that the AI may or may not have fully in context. When a detail is missing, the AI has two choices: leave a gap in the story, or fill it with something plausible.</p>
+<p>AI models are trained to be helpful and complete. Leaving gaps feels like failure. Filling them feels like success. The incentive structure is exactly wrong for factual narrative.</p>
+<p>The most dangerous case is when the AI has <em>partial</em> information. It knows there was a timezone investigation. It knows database columns were involved. It knows migrations happened. From those fragments, it constructs a coherent narrative — with specific numbers, specific function names, specific timelines — that's wrong in every particular while being right in the general shape.</p>
+<h1>Placeholders as safeguards</h1>
+<p>Our fix was structural, not behavioral. You can't tell an AI "be more careful about facts" and expect reliable results. We had been working without a net a lot longer than I had realized.</p>
+<p>Instead, we changed the workflow. The verification process we created has three components:</p>
+<p><strong>Pre-draft facts extraction.</strong> Before writing any narrative, extract every factual claim from the source logs and list them explicitly. Date, numbers, names, sequences. Cite the source for each one. This is the factual scaffolding the narrative must fit within.</p>
+<p><strong>Verification checkpoint.</strong> After drafting, check every specific claim against the pre-extracted facts. Flag anything that appears in the draft but not in the extracted facts.</p>
+<p><strong>Placeholders for unknowns.</strong> When the writer doesn't have a specific detail — a number, a quote, a timeline — they write <code>[SPECIFIC DETAIL NEEDED: describe what goes here]</code> instead of inventing something plausible.</p>
+<p>The core principle: <strong>placeholders are safeguards, not clutter.</strong></p>
+<p>A draft full of brackets looks unfinished. That's the point. An unfinished draft that's honest about what it doesn't know is more valuable than a polished draft that's confidently wrong. The PM fills the placeholders during their editing pass — and they know <em>which claims to verify</em> because the gaps are visible.</p>
+<p>As I mentioned before, we had already defined this concept in the blog template and instructions and it had been working well, as long as the agent remembered to follow the instructions. We made it a mandatory part of the process when we turned it into a skill.</p>
+<p>I don't always use the placeholders. Sometimes I just delete them, but I like the way they prompt me to write, instead of the other way around.</p>
+<h1>The broader application</h1>
+<p>Anyone using AI to write about what happened — retrospectives, case studies, project histories, blog posts, annual reports — faces this problem. The AI will fill gaps with plausible details. The more you've trained it on your domain, the more plausible the details will be. The better the writing, the harder the fabrications are to spot.</p>
+<p>Three practices that help:</p>
+<p><strong>Separate fact-gathering from narrative-writing.</strong> Extract the facts first, in a boring list. Write the story second, constrained by the list. Don't let the AI do both in one step — the narrative instinct will override the factual instinct.</p>
+<p><strong>Treat specific numbers with extreme suspicion.</strong> "73 database columns" is the kind of detail that makes writing feel authoritative. It's also the kind of detail that AI fabricates most readily. If a number appears in a draft, verify it. Every time.</p>
+<p><strong>Design your workflow to make gaps visible.</strong> Placeholders, fact-check columns, verification checklists — whatever mechanism works for your process. The goal is to make "I don't know" a valid output, not a failure state.</p>
+<p>Oh, and here is a placeholder dropped into this draft, left here for your consideration:</p>
+<blockquote><p>[CONSIDER: Is this piece itself an example of the pattern? I'm writing about February events from omnibus logs. Should I flag that my own account of the confabulation discovery is mediated by the same tools that produced the confabulation? Meta, but honest.]</p></blockquote>
+<hr>
+<p><em>Next on Building Piper Morgan: Bring Your Own Chat — what changes when the agent meets you where you already work.</em></p>
+<p><em>Have you caught your AI making things up? Not hallucinating — confabulating. Filling gaps with plausible details that serve the story instead of the truth? How did you notice?</em></p>f:["$","$L19",null,{"post":{"title":"When Your AI Makes Things Up","guid":"blog-first-6fe0f91c84ec","url":"/blog/when-your-ai-makes-things-up","publishedAt":"Jun 1, 2026","workDate":"Jun 1, 2026","author":"christian crumlish","featuredImage":"/assets/blog-images/when-your-ai-makes-things-up.webp","imageAlt":"A glowing AI mixes “Verified Fact,” “Plausible Inference,” and “Complete Fabrication” into a bucket labeled “Blog Post” as a human fact-checker watches.","imageCaption":"\"I don’t think that’s right!\"","tags":["Building in Public"]},"content":{"title":"When Your AI Makes Things Up","content":"$1a"}}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+11:null
+1b:I[8175,[],"IconMark"]
+13:{"metadata":[["$","title","0",{"children":"When Your AI Makes Things Up | Piper Morgan"}],["$","meta","1",{"name":"description","content":"February 12, 2026 The draft looked great. \"The Drift We Didn't See\" — a narrative about discovering timezone bugs across our database. Specific details. Concrete numbers. A compelling story arc. Then my communications chief agent (Comms) fact-checked it against the source logs. Fabricated claim t..."}],["$","meta","2",{"name":"author","content":"Christian Crumlish"}],["$","meta","3",{"name":"keywords","content":"AI,Product Management,Methodology,Building in Public"}],["$","meta","4",{"name":"creator","content":"Christian Crumlish"}],["$","meta","5",{"name":"publisher","content":"Christian Crumlish"}],["$","meta","6",{"name":"robots","content":"index, follow"}],["$","meta","7",{"name":"googlebot","content":"index, follow"}],["$","link","8",{"rel":"canonical","href":"https://pipermorgan.ai/"}],["$","meta","9",{"name":"format-detection","content":"telephone=no, address=no, email=no"}],["$","meta","10",{"property":"og:title","content":"When Your AI Makes Things Up"}],["$","meta","11",{"property":"og:description","content":"February 12, 2026 The draft looked great. \"The Drift We Didn't See\" — a narrative about discovering timezone bugs across our database. Specific details. Concrete numbers. A compelling story arc. Then my communications chief agent (Comms) fact-checked it against the source logs. Fabricated claim t..."}],["$","meta","12",{"property":"og:image","content":"https://pipermorgan.ai/assets/blog-images/when-your-ai-makes-things-up.webp"}],["$","meta","13",{"property":"og:type","content":"article"}],["$","meta","14",{"property":"article:author","content":"christian crumlish"}],["$","meta","15",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","16",{"name":"twitter:title","content":"When Your AI Makes Things Up"}],["$","meta","17",{"name":"twitter:description","content":"February 12, 2026 The draft looked great. \"The Drift We Didn't See\" — a narrative about discovering timezone bugs across our database. Specific details. Concrete numbers. A compelling story arc. Then my communications chief agent (Comms) fact-checked it against the source logs. Fabricated claim t..."}],["$","meta","18",{"name":"twitter:image","content":"https://pipermorgan.ai/assets/blog-images/when-your-ai-makes-things-up.webp"}],["$","link","19",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"32x33"}],["$","link","20",{"rel":"icon","href":"/favicon.ico","sizes":"32x32","type":"image/x-icon"}],["$","link","21",{"rel":"icon","href":"/pm-favicon-16.png","sizes":"16x16","type":"image/png"}],["$","link","22",{"rel":"icon","href":"/pm-favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","23",{"rel":"icon","href":"/pm-favicon-48.png","sizes":"48x48","type":"image/png"}],["$","link","24",{"rel":"apple-touch-icon","href":"/pm-favicon-180.png","sizes":"180x180","type":"image/png"}],["$","link","25",{"rel":"icon","href":"/pm-favicon-192.png","sizes":"192x192","type":"image/png"}],["$","$L1b","26",{}]],"error":null,"digest":"$undefined"}
+18:"$13:metadata"
