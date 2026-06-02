@@ -1,5 +1,27 @@
 [
   {
+    "title": "Bring Your Own Chat",
+    "excerpt": "April 8, 2026 For almost a year at this point I've been building a web application. Hey look! A chat interface with a sidebar, an input field, a message history. The kind of thing every AI product builds because that's what AI products look like. Then I started thinking about it a bit differently...",
+    "url": "/blog/bring-your-own-chat",
+    "slug": "bring-your-own-chat",
+    "publishedAt": "Jun 2, 2026",
+    "publishedAtISO": "2026-06-02T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-d3c1e1c5e2b7",
+    "featuredImage": "/assets/blog-images/bring-your-own-chat.webp",
+    "thumbnail": "/assets/blog-images/bring-your-own-chat.webp",
+    "imageAlt": "A friendly robot and a curious human meet a smiling dolphin-like helper carrying notebooks and project materials, while another human and several AI companions watch approvingly from the background.",
+    "imageCaption": "\"I’m Piper and I’m here to help!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Jun 2, 2026",
+    "workDateISO": "2026-06-02T00:00:00.000Z"
+  },
+  {
     "title": "When Your AI Makes Things Up",
     "excerpt": "February 12, 2026 The draft looked great. \"The Drift We Didn't See\" — a narrative about discovering timezone bugs across our database. Specific details. Concrete numbers. A compelling story arc. Then my communications chief agent (Comms) fact-checked it against the source logs. Fabricated claim t...",
     "url": "/blog/when-your-ai-makes-things-up",
@@ -17,9 +39,9 @@
     "imageAlt": "A glowing AI mixes “Verified Fact,” “Plausible Inference,” and “Complete Fabrication” into a bucket labeled “Blog Post” as a human fact-checker watches.",
     "imageCaption": "\"I don’t think that’s right!\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "Jun 1, 2026",
-    "workDateISO": "2026-06-01T00:00:00.000Z"
+    "workDateISO": "2026-06-01T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Stacked Silent Failures",
