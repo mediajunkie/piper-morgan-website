@@ -25,7 +25,12 @@
  * Optional:
  *   --mode <mode>        publish (default) | edit-pass
  *   --hash-id <hex12>    Required for --mode=edit-pass; auto-generated otherwise
- *   --work-date <date>   YYYY-MM-DD; defaults to today
+ *   --work-date <date>   YYYY-MM-DD source-work-period. If omitted, derived
+ *                        from the draft's standalone italic dateline (e.g.,
+ *                        `*April 8, 2026*` or `*April 8–10, 2026*`). Errors
+ *                        out if neither is available (silent default-to-today
+ *                        was the source of 119 corrected mismatches per Docs
+ *                        2026-06-02 audit).
  *   --pub-date <date>    YYYY-MM-DD; defaults to today
  *   --cluster <slug>     Era cluster slug; defaults to empty. Clusters are
  *                        assigned during a periodic manual review, not at
@@ -148,7 +153,7 @@ const cfg = {
   mode: autoEditPass ? 'edit-pass' : args.mode,
   hashId: args['hash-id'] || existingHashId || null,
   autoEditPass,
-  workDate: args['work-date'] || todayIso(),
+  workDate: args['work-date'] || null,  // resolved post-parseDraft (derive from dateline; fail loud if neither)
   pubDate: args['pub-date'] || todayIso(),
   cluster: args.cluster,
   featured: args.featured,
@@ -228,6 +233,38 @@ function parseDraft(draftPath) {
   const title = titleMatch[1].trim();
 
   return { title, meta, body };
+}
+
+// ─── Step 1b: dateline → workDate (Docs memo 2026-06-02 defense-in-depth) ──
+// Per the publish-to-blog convention, a draft's standalone italic dateline near
+// the top (e.g., `*April 8, 2026*` or `*April 8–10, 2026*`) IS the source-work
+// period. Use it when --work-date is omitted; if there's no parseable dateline,
+// fail loud rather than silently defaulting to today (which writes false data
+// into blog-metadata.csv — the bug Docs surfaced).
+
+const MONTH_TO_NUM = {
+  january: 1, february: 2, march: 3, april: 4, may: 5, june: 6,
+  july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
+};
+
+function parseDatelineFromBody(body) {
+  // Inspect the first ~8 non-blank lines (after H1) for a standalone italic
+  // line containing a date or date-range. Return YYYY-MM-DD of the start date,
+  // or null if nothing parses.
+  const lines = body.split('\n').map(l => l.trim()).filter(l => l !== '').slice(0, 8);
+  const datePattern = /^([A-Z][a-z]+)\s+(\d{1,2})(?:\s*[-–—]\s*\d{1,2})?,?\s+(\d{4})$/;
+  for (const line of lines) {
+    const italic = line.match(/^[*_](.+)[*_]$/);
+    if (!italic) continue;
+    const m = italic[1].trim().match(datePattern);
+    if (!m) continue;
+    const month = MONTH_TO_NUM[m[1].toLowerCase()];
+    const day = parseInt(m[2], 10);
+    const year = parseInt(m[3], 10);
+    if (!month || day < 1 || day > 31) continue;
+    return `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+  }
+  return null;
 }
 
 // ─── Step 2: markdown → HTML ────────────────────────────────────────────────
@@ -532,7 +569,7 @@ function csvRowExists(csvText, hashId, slug) {
 }
 
 function appendCsvRow({ slug, hashId, title, imageSlug, imageAlt, imageCaption, workDate, pubDate, category, cluster, featured }) {
-  if (cfg.dryRun) { log(`[dry-run] would append CSV row for slug=${slug} hashId=${hashId}`); return; }
+  if (cfg.dryRun) { log(`[dry-run] would append CSV row for slug=${slug} hashId=${hashId} workDate=${workDate} pubDate=${pubDate}`); return; }
   if (!fs.existsSync(CSV_PATH)) {
     throw Object.assign(new Error(`CSV not found: ${CSV_PATH}`), { exitCode: 4 });
   }
@@ -598,6 +635,29 @@ try {
   log(`📄 parsing draft: ${cfg.draftPath}`);
   const { title, meta, body } = parseDraft(cfg.draftPath);
   log(`   title: "${title}"`);
+
+  // Resolve workDate (Docs memo 2026-06-02 defense-in-depth).
+  // Priority: explicit --work-date → derived from draft dateline → fail loud.
+  // Edit-pass skips this — CSV is untouched in that mode, so workDate is moot.
+  if (cfg.mode === 'edit-pass') {
+    // No-op; CSV stays as-is.
+  } else if (cfg.workDate) {
+    log(`📅 workDate: ${cfg.workDate} (from --work-date)`);
+  } else {
+    const derived = parseDatelineFromBody(body);
+    if (derived) {
+      cfg.workDate = derived;
+      log(`📅 workDate: ${derived} (derived from draft dateline)`);
+    } else {
+      const err = new Error(
+        `--work-date not passed and no parseable dateline found near top of ${cfg.draftPath}.\n` +
+        `   Pass --work-date YYYY-MM-DD, OR add a standalone italic dateline like *April 8, 2026* (single date or *Apr 8–10, 2026* range) within the first ~8 lines of the body.\n` +
+        `   (Silent default-to-today was the source of 119 corrected workDate mismatches per Docs 2026-06-02 audit.)`
+      );
+      err.exitCode = 2;
+      throw err;
+    }
+  }
 
   // Empty-meta check (Gap 3) — only for full publish on non-ship posts
   if (cfg.mode === 'publish' && cfg.category !== 'ship') {
@@ -688,6 +748,7 @@ try {
       url,
       title,
       category: cfg.category,
+      workDate: cfg.workDate,
       pubDate: cfg.pubDate,
       imageAlt: meta.alt || '',
       imageCaption: meta.caption || '',

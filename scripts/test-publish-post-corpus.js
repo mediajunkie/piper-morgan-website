@@ -58,6 +58,7 @@ function runEntry(entryDir) {
     '--slug', 'corpus-test',
     '--category', 'insight',
     '--image', FAKE_IMAGE,
+    '--work-date', '2026-01-01',  // explicit, so fixtures without datelines don't trigger the workDate-resolve fail-loud path (Docs 2026-06-02)
     '--dry-run',
     '--force',
   ], { encoding: 'utf-8' });
