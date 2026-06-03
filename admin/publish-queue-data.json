@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-02T20:54:30.675Z",
+  "buildTime": "2026-06-03T14:42:07.363Z",
   "totalEntries": 380,
   "sections": {
     "readyToPublish": [
@@ -704,26 +704,6 @@
         "notes": "covers May 8-14 (Pattern-073 cluster + M2d/M2g gates + Comment-Only-Close 13/13 audit + V1 Duty Cycle architecture + four commit-discipline memory entries)",
         "altText": "A boy leads a boat crewed by robots.",
         "caption": "N/A"
-      },
-      {
-        "title": "The Log That Fact-Checked Itself",
-        "theme": "building",
-        "status": "published",
-        "workDate": "2026-04-22",
-        "endWorkDate": "",
-        "pubDate": "2026-05-19",
-        "mediumURL": "https://medium.com/building-piper-morgan/the-log-that-fact-checked-itself-073664f3775f",
-        "liPubDate": "",
-        "linkedinURL": "",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/blog/the-log-that-fact-checked-itself/",
-        "blogPath": "/blog/the-log-that-fact-checked-itself",
-        "cartoon": "ai-log",
-        "chatDate": "",
-        "draftPath": "",
-        "notes": "narrative — Apr 16 omnibus drift discovery (3 of 6 source logs) + horizontal walkthrough + amendment (sessions 6→9) + Step 2.5 Cross-Reference Gate process fix; recursive Pattern-062; existing draft filename still uses old title (the-omnibus-that-found-its-own-drift.md)",
-        "altText": "Glowing ethereal beings amending a giant ledger book reintegrating missing pages into the official record while the book appears to point out its own omissions",
-        "caption": "\"Not so fast!\""
       }
     ],
     "syndicationGaps": [
