@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-03T19:19:44.700Z",
+  "buildTime": "2026-06-04T18:30:57.315Z",
   "totalEntries": 380,
   "sections": {
     "readyToPublish": [
@@ -684,26 +684,6 @@
         "notes": "narrative — #992 ETHICS-ACTIVATE Phases A-D + structured BoundaryEnforcer return + FloorContext denial mode + three worked examples (harassment / professional / inappropriate); voice craft meets safety architecture",
         "altText": "A stern security guard filters harsh, jagged messages in a basement office while an ethereal concierge upstairs gently redirects a visitor toward a peaceful path outside.",
         "caption": "\"Tone matters!\""
-      },
-      {
-        "title": "Weekly Ship #043: The Skill That Doesn't Fire",
-        "theme": "ship",
-        "status": "published",
-        "workDate": "2026-05-08",
-        "endWorkDate": "2026-05-14",
-        "pubDate": "2026-05-20",
-        "mediumURL": "",
-        "liPubDate": "2026-05-20",
-        "linkedinURL": "https://www.linkedin.com/pulse/weekly-ship-043-skill-doesnt-fire-christian-crumlish-0lyac/",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/shipping-news/weekly-ship-043-the-skill-that-doesnt-fire",
-        "blogPath": "/shipping-news/weekly-ship-043-the-skill-that-doesnt-fire",
-        "cartoon": "piper-ship",
-        "chatDate": "",
-        "draftPath": "",
-        "notes": "covers May 8-14 (Pattern-073 cluster + M2d/M2g gates + Comment-Only-Close 13/13 audit + V1 Duty Cycle architecture + four commit-discipline memory entries)",
-        "altText": "A boy leads a boat crewed by robots.",
-        "caption": "N/A"
       }
     ],
     "syndicationGaps": [
