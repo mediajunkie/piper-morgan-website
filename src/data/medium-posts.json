@@ -1,5 +1,27 @@
 [
   {
+    "title": "Upstream of the Floor",
+    "excerpt": "April 25–28, 2026 Late Friday afternoon, Lead Dev caught a problem that was about to ruin the next two days of work. The plan had been to run Phase E of an ethics-floor activation that had been weeks in the making. The floor itself was code that would catch a small set of disallowed interactions ...",
+    "url": "/blog/upstream-of-the-floor",
+    "slug": "upstream-of-the-floor",
+    "publishedAt": "Jun 4, 2026",
+    "publishedAtISO": "2026-06-04T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-5b933d0ed464",
+    "featuredImage": "/assets/blog-images/upstream-of-the-floor.webp",
+    "thumbnail": "/assets/blog-images/upstream-of-the-floor.webp",
+    "imageAlt": "A newly built floodgate stands across a nearly dry river channel while most of the river flows down an unnoticed branch upstream, as workers realize the water has been bypassing their structure all along.",
+    "imageCaption": "\"Good news! the floodgate works...\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Apr 25, 2026",
+    "workDateISO": "2026-04-25T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #045: The Substrate Pivoted",
     "excerpt": "May 22–28, 2026 Last week the team retired a working mechanism on the strength of substrate accumulated underneath it (Weekly Ship #044). This week the same substrate talked back. It produced enough operating data to invalidate one of its own recent architectural decisions, and the team pivoted b...",
     "url": "/blog/weekly-ship-045-the-substrate-pivoted",
@@ -17,9 +39,9 @@
     "imageAlt": "A child leads a boat crewed by robots.",
     "imageCaption": "N/A",
     "category": "ship",
-    "cluster": "",
     "workDate": "May 22, 2026",
-    "workDateISO": "2026-05-22T00:00:00.000Z"
+    "workDateISO": "2026-05-22T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Bring Your Own Chat",
