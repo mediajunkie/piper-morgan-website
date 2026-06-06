@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-04T18:30:57.315Z",
+  "buildTime": "2026-06-06T15:08:05.235Z",
   "totalEntries": 380,
   "sections": {
     "readyToPublish": [
@@ -664,26 +664,6 @@
         "notes": "",
         "altText": "A giant sleeping creature forms the landscape while tiny explorers investigate one side, builders rapidly construct on the other, and bridge-makers connect the middle, as one frantic manager tries to force a straight productivity line across the creature’s natural breathing rhythm.",
         "caption": "Just ignore the guy with the ruler."
-      },
-      {
-        "title": "The Voice of a Denial",
-        "theme": "building",
-        "status": "published",
-        "workDate": "2026-04-22",
-        "endWorkDate": "",
-        "pubDate": "2026-05-21",
-        "mediumURL": "https://medium.com/building-piper-morgan/the-voice-of-a-denial-fbd15411584d",
-        "liPubDate": "",
-        "linkedinURL": "",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/blog/the-voice-of-a-denial/",
-        "blogPath": "/blog/the-voice-of-a-denial",
-        "cartoon": "ai-concierge",
-        "chatDate": "",
-        "draftPath": "",
-        "notes": "narrative — #992 ETHICS-ACTIVATE Phases A-D + structured BoundaryEnforcer return + FloorContext denial mode + three worked examples (harassment / professional / inappropriate); voice craft meets safety architecture",
-        "altText": "A stern security guard filters harsh, jagged messages in a basement office while an ethereal concierge upstairs gently redirects a visitor toward a peaceful path outside.",
-        "caption": "\"Tone matters!\""
       }
     ],
     "syndicationGaps": [
@@ -1333,26 +1313,6 @@
         "draftPath": "",
         "notes": "covers May 1-7 (plain-language review pass with Comms; PPM Review Gates proposal + M2d gate criteria + BYOC discovery opened; Architect 3-week soundness review + cleanup punch-list closed; M2d closed via 8-issue sprint)",
         "altText": "A boy leads a boat crewed by robots.",
-        "caption": ""
-      },
-      {
-        "title": "Weekly Ship #041: The Methodology Closes Its Own Loops",
-        "theme": "ship",
-        "status": "published",
-        "workDate": "2026-04-24",
-        "endWorkDate": "2026-04-30",
-        "pubDate": "2026-05-06",
-        "mediumURL": "",
-        "liPubDate": "2026-05-06",
-        "linkedinURL": "https://www.linkedin.com/pulse/weekly-ship-041-methodology-closes-its-own-loops-christian-crumlish-dzasc/",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/shipping-news/weekly-ship-041-the-methodology-closes-its-own-loops",
-        "blogPath": "/shipping-news/weekly-ship-041-the-methodology-closes-its-own-loops",
-        "cartoon": "piper-ship",
-        "chatDate": "",
-        "draftPath": "",
-        "notes": "covers Apr 24-30 (Apr 25 dual migration CXO+PPM + #992 Phase E run + #1002 P0 floor-bypass-by-routing + #997 close + Colleague Test v2.0/v2.1 + Multi-Wave Investigation publish; Apr 26-30 TBD)",
-        "altText": "A child leads a ship operated by robots.",
         "caption": ""
       }
     ]
