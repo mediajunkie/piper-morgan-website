@@ -1,5 +1,27 @@
 [
   {
+    "title": "Be Prepared",
+    "excerpt": "December 9, 2025 Tuesday afternoon. The T2 Sprint (Test Polish) was complete — 602 smoke tests marked, test infrastructure production-ready, six GitHub issues closed. A full epic, finished by noon. The S2 Sprint (Security Polish) sat waiting. Encryption at rest. Sensitive user data protection. AE...",
+    "url": "/blog/be-prepared",
+    "slug": "be-prepared",
+    "publishedAt": "Jun 6, 2026",
+    "publishedAtISO": "2026-06-06T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-7b980d49ad01",
+    "featuredImage": "/assets/blog-images/be-prepared.webp",
+    "thumbnail": "/assets/blog-images/be-prepared.webp",
+    "imageAlt": "A mountain guide and three hikers study a trail map at a trailhead while, in the distance, another hiking party encounters a series of avoidable problems including a broken bridge, a wrong turn, and a difficult cliff climb.",
+    "imageCaption": "\"Everybody clear on the plan?\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Dec 9, 2025",
+    "workDateISO": "2025-12-09T00:00:00.000Z"
+  },
+  {
     "title": "Upstream of the Floor",
     "excerpt": "April 25–28, 2026 Late Friday afternoon, Lead Dev caught a problem that was about to ruin the next two days of work. The plan had been to run Phase E of an ethics-floor activation that had been weeks in the making. The floor itself was code that would catch a small set of disallowed interactions ...",
     "url": "/blog/upstream-of-the-floor",
@@ -17,9 +39,9 @@
     "imageAlt": "A newly built floodgate stands across a nearly dry river channel while most of the river flows down an unnoticed branch upstream, as workers realize the water has been bypassing their structure all along.",
     "imageCaption": "\"Good news! the floodgate works...\"",
     "category": "building",
-    "cluster": "",
     "workDate": "Apr 25, 2026",
-    "workDateISO": "2026-04-25T00:00:00.000Z"
+    "workDateISO": "2026-04-25T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #045: The Substrate Pivoted",
