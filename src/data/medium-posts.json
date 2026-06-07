@@ -1,5 +1,27 @@
 [
   {
+    "title": "Permission to Pause",
+    "excerpt": "March 13–April 19, 2026 There's an entry in our project's CLAUDE.md, the file every agent reads at the start of every session, that is two sentences long: \"Time Lord Alert\" = permission to pause and discuss uncertainty. I've come to think of that line as one of the most critical two-sentence rule...",
+    "url": "/blog/permission-to-pause",
+    "slug": "permission-to-pause",
+    "publishedAt": "Jun 7, 2026",
+    "publishedAtISO": "2026-06-07T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-2031918207fd",
+    "featuredImage": "/assets/blog-images/permission-to-pause.webp",
+    "thumbnail": "/assets/blog-images/permission-to-pause.webp",
+    "imageAlt": "A mountaineer kneels to probe the snow ahead while impatient teammates wait behind, unaware of a hidden crevasse opening in the ridge.",
+    "imageCaption": "\"Let's proceed with caution!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Mar 13, 2026",
+    "workDateISO": "2026-03-13T00:00:00.000Z"
+  },
+  {
     "title": "Be Prepared",
     "excerpt": "December 9, 2025 Tuesday afternoon. The T2 Sprint (Test Polish) was complete — 602 smoke tests marked, test infrastructure production-ready, six GitHub issues closed. A full epic, finished by noon. The S2 Sprint (Security Polish) sat waiting. Encryption at rest. Sensitive user data protection. AE...",
     "url": "/blog/be-prepared",
@@ -17,9 +39,9 @@
     "imageAlt": "A mountain guide and three hikers study a trail map at a trailhead while, in the distance, another hiking party encounters a series of avoidable problems including a broken bridge, a wrong turn, and a difficult cliff climb.",
     "imageCaption": "\"Everybody clear on the plan?\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "Dec 9, 2025",
-    "workDateISO": "2025-12-09T00:00:00.000Z"
+    "workDateISO": "2025-12-09T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Upstream of the Floor",
