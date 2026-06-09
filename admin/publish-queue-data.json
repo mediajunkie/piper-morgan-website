@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-07T13:10:38.431Z",
+  "buildTime": "2026-06-09T16:22:58.391Z",
   "totalEntries": 380,
   "sections": {
     "readyToPublish": [
@@ -624,26 +624,6 @@
         "notes": "Beat 1 of 9-beat narrative slate (Apr 23 → May 15 build story). Apr 23 dual migration CIO + Comms. Through-line: singleton→pair→many framing becomes testable; decreasing-review-volume signal (5+1 → 4 → 3+1); Section 4 reveals role-specific deployable principles; migration as occasion to write the role down for the first time.",
         "altText": "Two luminous AI beings descend in a transparent transfer chamber from a calm executive observatory into a dense workshop filled with terminals, cables, machinery, and active construction, while floating documents and diagrams accompany them as preserved institutional memory.",
         "caption": "\"Let's get right down to it!\""
-      },
-      {
-        "title": "Five Whys for Design Decisions",
-        "theme": "insight",
-        "status": "published",
-        "workDate": "2025-12-20",
-        "endWorkDate": "2025-12-20",
-        "pubDate": "2026-05-24",
-        "mediumURL": "https://medium.com/building-piper-morgan/five-whys-for-design-decisions-7ff830c92763",
-        "liPubDate": "2026-05-24",
-        "linkedinURL": "https://www.linkedin.com/pulse/five-whys-design-decisions-christian-crumlish-ruyhc",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/blog/five-whys-for-design-decisions/",
-        "blogPath": "/blog/five-whys-for-design-decisions",
-        "cartoon": "ai-layers",
-        "chatDate": "2025-01-15",
-        "draftPath": "docs/public/comms/drafts/draft-five-whys-for-design-v1.md",
-        "notes": "Sunday pair with Project Biorhythms (Sat May 23) — weekend theme: recognizing underlying state vs surface symptom. Both pieces broadly applicable beyond AI. Five Whys draft needs PM voice-pass + 2 PM placeholders at lines 148+150.",
-        "altText": "Cross-section cartoon of investigators excavating beneath a small user-interface problem, uncovering deeper layers of assumptions until they reveal a massive buried foundation labeled “command-oriented design.”",
-        "caption": "We have to get to the bottom of this!"
       }
     ],
     "syndicationGaps": [
