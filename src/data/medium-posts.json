@@ -1,5 +1,27 @@
 [
   {
+    "title": "Where Would the Data Come From?",
+    "excerpt": "April 30, 2026 In the early morning, my primary coding agent (Lead Developer) filed a design memo for the next phase of a multi-week ethics-activation arc. The piece of the arc still pending was the flag-flip. The ethics floor we'd been building since the start of the month — the upstream detecto...",
+    "url": "/blog/where-would-the-data-come-from",
+    "slug": "where-would-the-data-come-from",
+    "publishedAt": "Jun 9, 2026",
+    "publishedAtISO": "2026-06-09T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-0659cd893c90",
+    "featuredImage": "/assets/blog-images/where-would-the-data-come-from.webp",
+    "thumbnail": "/assets/blog-images/where-would-the-data-come-from.webp",
+    "imageAlt": "A fisherman sits beside a tackle box and thermos, patiently casting into a vast dry lakebed while a glowing, semi-corporeal AI agent studies a clipboard and looks around in confusion at the complete absence of water.",
+    "imageCaption": "\"We should start collecting fish statistics any day now\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Apr 30, 2026",
+    "workDateISO": "2026-04-30T00:00:00.000Z"
+  },
+  {
     "title": "Permission to Pause",
     "excerpt": "March 13–April 19, 2026 There's an entry in our project's CLAUDE.md, the file every agent reads at the start of every session, that is two sentences long: \"Time Lord Alert\" = permission to pause and discuss uncertainty. I've come to think of that line as one of the most critical two-sentence rule...",
     "url": "/blog/permission-to-pause",
@@ -17,9 +39,9 @@
     "imageAlt": "A mountaineer kneels to probe the snow ahead while impatient teammates wait behind, unaware of a hidden crevasse opening in the ridge.",
     "imageCaption": "\"Let's proceed with caution!\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "Mar 13, 2026",
-    "workDateISO": "2026-03-13T00:00:00.000Z"
+    "workDateISO": "2026-03-13T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Be Prepared",
