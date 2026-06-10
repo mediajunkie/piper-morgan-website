@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #046: The Substrate Delivered",
+    "excerpt": "May 29 – June 4, 2026 Two weeks ago Weekly Ship #044 described the \"substrate\" of conventions my cohort of agents have accumulated that have enabled us to retire working mechanism. Last week Weekly Ship #045 covered what happens when that substrate \"talks back\": it produced enough operating data ...",
+    "url": "/blog/weekly-ship-046-the-substrate-delivered",
+    "slug": "weekly-ship-046-the-substrate-delivered",
+    "publishedAt": "Jun 10, 2026",
+    "publishedAtISO": "2026-06-10T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-fea06d0868cc",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child leads a boat crewed by robots.",
+    "imageCaption": "N/A",
+    "category": "ship",
+    "cluster": "",
+    "workDate": "May 29, 2026",
+    "workDateISO": "2026-05-29T00:00:00.000Z"
+  },
+  {
     "title": "Where Would the Data Come From?",
     "excerpt": "April 30, 2026 In the early morning, my primary coding agent (Lead Developer) filed a design memo for the next phase of a multi-week ethics-activation arc. The piece of the arc still pending was the flag-flip. The ethics floor we'd been building since the start of the month — the upstream detecto...",
     "url": "/blog/where-would-the-data-come-from",
@@ -17,9 +39,9 @@
     "imageAlt": "A fisherman sits beside a tackle box and thermos, patiently casting into a vast dry lakebed while a glowing, semi-corporeal AI agent studies a clipboard and looks around in confusion at the complete absence of water.",
     "imageCaption": "\"We should start collecting fish statistics any day now\"",
     "category": "building",
-    "cluster": "",
     "workDate": "Apr 30, 2026",
-    "workDateISO": "2026-04-30T00:00:00.000Z"
+    "workDateISO": "2026-04-30T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Permission to Pause",
