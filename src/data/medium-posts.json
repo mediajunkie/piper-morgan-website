@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Pace Verified",
+    "excerpt": "May 2–5, 2026 The previous Sunday had ended with a milestone closed. The ethics-floor build, the upstream-detector reframe, the simulation-first calibration — all of that had shipped on the prior Wednesday. Friday had been catch-up. The weekend was supposed to be quiet. On Saturday, my Lead Devel...",
+    "url": "/blog/the-pace-verified",
+    "slug": "the-pace-verified",
+    "publishedAt": "Jun 11, 2026",
+    "publishedAtISO": "2026-06-11T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-89f6249d28ab",
+    "featuredImage": "/assets/blog-images/the-pace-verified.webp",
+    "thumbnail": "/assets/blog-images/the-pace-verified.webp",
+    "imageAlt": "Semi-corporeal AI pit crew calmly organizing tools and reviewing diagnostics as a race car blurs past at extreme speed.",
+    "imageCaption": "\"Safe at any speed!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "May 2, 2026",
+    "workDateISO": "2026-05-02T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #046: The Substrate Delivered",
     "excerpt": "May 29 – June 4, 2026 Two weeks ago Weekly Ship #044 described the \"substrate\" of conventions my cohort of agents have accumulated that have enabled us to retire working mechanism. Last week Weekly Ship #045 covered what happens when that substrate \"talks back\": it produced enough operating data ...",
     "url": "/blog/weekly-ship-046-the-substrate-delivered",
@@ -17,9 +39,9 @@
     "imageAlt": "A child leads a boat crewed by robots.",
     "imageCaption": "N/A",
     "category": "ship",
-    "cluster": "",
     "workDate": "May 29, 2026",
-    "workDateISO": "2026-05-29T00:00:00.000Z"
+    "workDateISO": "2026-05-29T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Where Would the Data Come From?",
