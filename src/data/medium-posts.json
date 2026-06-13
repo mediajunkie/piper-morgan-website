@@ -1,5 +1,27 @@
 [
   {
+    "title": "Critical vs Commodity Work in a Role",
+    "excerpt": "April 23–27, 2026 As you may know, I have a small project running. Multiple role-named agents, each one responsible for a domain, such as development, architecture, product management, experience design, methodology, communications, agent experience, operational coordination, documentation, and s...",
+    "url": "/blog/critical-vs-commodity-work-in-a-role",
+    "slug": "critical-vs-commodity-work-in-a-role",
+    "publishedAt": "Jun 13, 2026",
+    "publishedAtISO": "2026-06-13T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-14303330f1bc",
+    "featuredImage": "/assets/blog-images/critical-vs-commodity-work-in-a-role.webp",
+    "thumbnail": "/assets/blog-images/critical-vs-commodity-work-in-a-role.webp",
+    "imageAlt": "A gentle AI conductor guides a crowded orchestra, highlighting the quiet melodic thread amid the many musicians at work.",
+    "imageCaption": "\"Listen for the leading tones\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Apr 23, 2026",
+    "workDateISO": "2026-04-23T00:00:00.000Z"
+  },
+  {
     "title": "The Pace Verified",
     "excerpt": "May 2–5, 2026 The previous Sunday had ended with a milestone closed. The ethics-floor build, the upstream-detector reframe, the simulation-first calibration — all of that had shipped on the prior Wednesday. Friday had been catch-up. The weekend was supposed to be quiet. On Saturday, my Lead Devel...",
     "url": "/blog/the-pace-verified",
@@ -17,9 +39,9 @@
     "imageAlt": "Semi-corporeal AI pit crew calmly organizing tools and reviewing diagnostics as a race car blurs past at extreme speed.",
     "imageCaption": "\"Safe at any speed!\"",
     "category": "building",
-    "cluster": "",
     "workDate": "May 2, 2026",
-    "workDateISO": "2026-05-02T00:00:00.000Z"
+    "workDateISO": "2026-05-02T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #046: The Substrate Delivered",
