@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-11T14:13:54.769Z",
+  "buildTime": "2026-06-13T15:32:18.534Z",
   "totalEntries": 380,
   "sections": {
     "readyToPublish": [
@@ -564,26 +564,6 @@
         "notes": "Insight drawn from May 8-9 #1064 P0 investigation (Pattern-066 source). Apparent quality regression turned out to be 3 silent failures stacked: judge-calibration drift + auto-fail rule amplification + fixture pollution. None screamed in isolation. Diagnostic move: enumerate breadth not just depth. Five Whys (digging) vs Stacked Silent Failures (enumeration) as complementary debugging disciplines. Pattern-066 filed by CIO Pattern Sweep 2.0 May 9. Pairs cleanly with Five Whys insight pub Sun May 24 — sets up debugging-epistemology pair.",
         "altText": "An investigator studies a small leak in a large water tank while two other unnoticed leaks drip nearby and the tank sits unexpectedly low.",
         "caption": "“It’s not just one thing!”"
-      },
-      {
-        "title": "The Misfiled Voice Guide",
-        "theme": "building",
-        "status": "published",
-        "workDate": "2026-04-24",
-        "endWorkDate": "",
-        "pubDate": "2026-05-28",
-        "mediumURL": "https://medium.com/building-piper-morgan/the-misfiled-voice-guide-b988c5b5fca9",
-        "liPubDate": "",
-        "linkedinURL": "",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/blog/the-misfiled-voice-guide/",
-        "blogPath": "/blog/the-misfiled-voice-guide",
-        "cartoon": "ai-tome",
-        "chatDate": "",
-        "draftPath": "docs/public/comms/drafts/the-misfiled-voice-guide.md",
-        "notes": "Beat 2 of 9-beat narrative slate. Apr 24 Comms first Code session post-migration — filesystem search discovers canonical voice/tone guide misfiled at docs/assets/images/blog/comms/ (markdown files in images directory; undated 246 lines newer than dated 2025-08-27 253 lines). Three git mv operations + NAVIGATION.md + BRIEFING-ESSENTIAL-COMMS.md updates. Through-line: chat-era search restriction had shaped compensatory habits; what else is misfiled?",
-        "altText": "A communications manual discovered on the wrong shelf in a vast archive.",
-        "caption": "Always the last place you look!"
       }
     ],
     "syndicationGaps": [
@@ -1214,27 +1194,6 @@
         ]
       }
     ],
-    "imageMetadataGaps": [
-      {
-        "title": "Weekly Ship #042: What Was Working Got Written Down",
-        "theme": "ship",
-        "status": "published",
-        "workDate": "2026-05-01",
-        "endWorkDate": "2026-05-07",
-        "pubDate": "2026-05-13",
-        "mediumURL": "",
-        "liPubDate": "2026-05-13",
-        "linkedinURL": "https://www.linkedin.com/pulse/weekly-ship-042-what-working-got-written-down-christian-crumlish-m7irc/",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/shipping-news/weekly-ship-042-what-was-working-got-written-down",
-        "blogPath": "/shipping-news/weekly-ship-042-what-was-working-got-written-down",
-        "cartoon": "piper-ship",
-        "chatDate": "",
-        "draftPath": "",
-        "notes": "covers May 1-7 (plain-language review pass with Comms; PPM Review Gates proposal + M2d gate criteria + BYOC discovery opened; Architect 3-week soundness review + cleanup punch-list closed; M2d closed via 8-issue sprint)",
-        "altText": "A boy leads a boat crewed by robots.",
-        "caption": ""
-      }
-    ]
+    "imageMetadataGaps": []
   }
 }
