@@ -128,7 +128,7 @@ export function BlogPostContent({ post, content }: BlogPostContentProps) {
           )}
 
           {/* Title */}
-          <h1 className="text-4xl md:text-5xl font-bold text-text-dark dark:text-dark-text mb-4 leading-tight">
+          <h1 className="text-3xl md:text-4xl font-bold text-text-dark dark:text-dark-text mb-4 leading-tight">
             {post.title}
           </h1>
 
@@ -177,8 +177,8 @@ export function BlogPostContent({ post, content }: BlogPostContentProps) {
         <div
           className="prose prose-lg dark:prose-invert max-w-none
             prose-headings:font-display prose-headings:font-bold prose-headings:text-text-dark dark:prose-headings:text-dark-text prose-headings:leading-tight prose-headings:tracking-tight
-            prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-2xl prose-h3:mt-10 prose-h3:mb-4 prose-h4:text-xl prose-h4:mt-8 prose-h4:mb-3
-            prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:leading-relaxed prose-p:mb-6 prose-p:text-lg
+            prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-10 prose-h3:mb-4 prose-h4:text-lg prose-h4:mt-8 prose-h4:mb-3
+            prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:leading-relaxed prose-p:mb-6 prose-p:text-xl
             prose-a:text-primary-teal-text dark:prose-a:text-primary-teal prose-a:no-underline hover:prose-a:underline prose-a:transition-colors
             prose-strong:text-text-dark dark:prose-strong:text-dark-text prose-strong:font-semibold
             prose-em:text-gray-700 dark:prose-em:text-gray-300 prose-em:italic
@@ -188,7 +188,7 @@ export function BlogPostContent({ post, content }: BlogPostContentProps) {
             prose-blockquote:border-l-4 prose-blockquote:border-primary-teal prose-blockquote:pl-6 prose-blockquote:py-1 prose-blockquote:italic prose-blockquote:text-gray-700 dark:prose-blockquote:text-gray-400 prose-blockquote:my-8
             prose-ul:list-disc prose-ul:pl-6 prose-ul:my-6 prose-ul:space-y-2
             prose-ol:list-decimal prose-ol:pl-6 prose-ol:my-6 prose-ol:space-y-2
-            prose-li:text-gray-700 dark:prose-li:text-gray-300 prose-li:leading-relaxed prose-li:text-lg
+            prose-li:text-gray-700 dark:prose-li:text-gray-300 prose-li:leading-relaxed prose-li:text-xl
             prose-figure:my-8 prose-figcaption:text-center prose-figcaption:text-sm prose-figcaption:text-gray-600 dark:prose-figcaption:text-gray-400 prose-figcaption:mt-3"
           dangerouslySetInnerHTML={{ __html: cleanContent(content.content) }}
         />
