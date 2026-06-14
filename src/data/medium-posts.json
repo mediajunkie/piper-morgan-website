@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Solo Founder Paradox",
+    "excerpt": "February 15, 2026 I was home with the flu. Day six. The project was going fine. Agents had been running sessions, closing issues, pushing code. My Chief of Staff had synthesized the week's progress. The architecture was holding. The cathedral was being built without me shouting through a bullhorn...",
+    "url": "/blog/the-solo-founder-paradox",
+    "slug": "the-solo-founder-paradox",
+    "publishedAt": "Jun 14, 2026",
+    "publishedAtISO": "2026-06-14T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-eb5c62fef2a0",
+    "featuredImage": "/assets/blog-images/the-solo-founder-paradox.webp",
+    "thumbnail": "/assets/blog-images/the-solo-founder-paradox.webp",
+    "imageAlt": "A thoughtful ruler considers a small decision while an entire court of ingenious clockwork advisors waits patiently among completed inventions, scrolls, and architectural models.",
+    "imageCaption": "\"Next, please!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Feb 15, 2026",
+    "workDateISO": "2026-02-15T00:00:00.000Z"
+  },
+  {
     "title": "Critical vs Commodity Work in a Role",
     "excerpt": "April 23–27, 2026 As you may know, I have a small project running. Multiple role-named agents, each one responsible for a domain, such as development, architecture, product management, experience design, methodology, communications, agent experience, operational coordination, documentation, and s...",
     "url": "/blog/critical-vs-commodity-work-in-a-role",
@@ -17,9 +39,9 @@
     "imageAlt": "A gentle AI conductor guides a crowded orchestra, highlighting the quiet melodic thread amid the many musicians at work.",
     "imageCaption": "\"Listen for the leading tones\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "Apr 23, 2026",
-    "workDateISO": "2026-04-23T00:00:00.000Z"
+    "workDateISO": "2026-04-23T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Pace Verified",
