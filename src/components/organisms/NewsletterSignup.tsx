@@ -97,44 +97,34 @@ export function NewsletterSignup({
     setErrorMessage('');
 
     try {
-      // Submit to our self-hosted newsletter API
-      const response = await fetch('/api/newsletter-signup', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email,
-          source,
-          metadata: {
-            ...metadata,
-            page_context: metadata?.page_context || '',
-            gdpr_consent: true,
-            consent_timestamp: new Date().toISOString(),
-            referrer: typeof document !== 'undefined' ? document.referrer || 'direct' : 'server',
-          }
-        }),
-      });
+      // Submit to Buttondown's embed-subscribe endpoint.
+      // Static-export-compatible: direct cross-origin POST; Buttondown's endpoint
+      // sets Access-Control-Allow-Origin so CORS is permitted. Form-data body
+      // matches the shape Buttondown's <form action="..."> snippet posts.
+      // (Previously POSTed to /api/newsletter-signup which never existed on a
+      // static-export site — every signup 404'd silently. Wired up 2026-06-15.)
+      const formData = new FormData();
+      formData.append('email', email);
+      // Pass source as a tag for Buttondown segmentation (optional but useful)
+      if (source && source !== 'unknown') {
+        formData.append('tag', source);
+      }
 
-      const data = await response.json();
+      const response = await fetch(
+        'https://buttondown.com/api/emails/embed-subscribe/pipermorgan',
+        { method: 'POST', body: formData }
+      );
 
       if (!response.ok) {
-        throw new Error(data.error || 'Failed to subscribe');
+        throw new Error('Subscription failed. Please try again, or email us directly.');
       }
 
-      // Handle different response statuses
-      if (data.status === 'already_subscribed') {
-        setStatus('error');
-        setErrorMessage('You are already subscribed to our newsletter.');
-        return;
-      }
-
-      // Success - verification email sent
+      // Success — Buttondown sends a confirmation email; user must click to opt in
       setStatus('success');
       setEmail('');
 
       // Track successful conversion
-      trackNewsletterSignup(source, 'self_hosted_api');
+      trackNewsletterSignup(source, 'buttondown');
 
       if (onSignup) {
         onSignup(email);
@@ -142,8 +132,8 @@ export function NewsletterSignup({
     } catch (error) {
       setStatus('error');
       setErrorMessage(
-        error instanceof Error 
-          ? error.message 
+        error instanceof Error
+          ? error.message
           : 'Something went wrong. Please try again.'
       );
     }
@@ -273,6 +263,17 @@ export function NewsletterSignup({
 
         <p className={`text-sm ${subtextColor} mt-4`}>
           {privacyNotice}
+        </p>
+
+        <p className={`text-xs ${subtextColor} mt-2 opacity-75`}>
+          <a
+            href="https://buttondown.com/refer/pipermorgan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Powered by Buttondown.
+          </a>
         </p>
       </div>
     </div>
