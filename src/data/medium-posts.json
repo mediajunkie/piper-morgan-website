@@ -1,5 +1,27 @@
 [
   {
+    "title": "First Subagent in Production",
+    "excerpt": "May 6–7, 2026 Quite a while back the so-called Excellence Flywheel methodology we're evolving to build Piper Morgan came up with the concept of an audit cascade. This was when I would first plan my next move in a chat with my Chief Architect agent (Arch), resulting in them writing a draft gamepla...",
+    "url": "/blog/first-subagent-in-production",
+    "slug": "first-subagent-in-production",
+    "publishedAt": "Jun 16, 2026",
+    "publishedAtISO": "2026-06-16T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-ffaeb854910c",
+    "featuredImage": "/assets/blog-images/first-subagent-in-production.webp",
+    "thumbnail": "/assets/blog-images/first-subagent-in-production.webp",
+    "imageAlt": "A workshop where a human creator watches proudly from above as a glowing AI lead developer supervises a smaller AI subagent completing careful work below, while a shared mechanical cable quietly causes a tiny unnoticed disturbance in the workshop machinery",
+    "imageCaption": "\"They grow up so fast!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "May 6, 2026",
+    "workDateISO": "2026-05-06T00:00:00.000Z"
+  },
+  {
     "title": "The Solo Founder Paradox",
     "excerpt": "February 15, 2026 I was home with the flu. Day six. The project was going fine. Agents had been running sessions, closing issues, pushing code. My Chief of Staff had synthesized the week's progress. The architecture was holding. The cathedral was being built without me shouting through a bullhorn...",
     "url": "/blog/the-solo-founder-paradox",
@@ -17,9 +39,9 @@
     "imageAlt": "A thoughtful ruler considers a small decision while an entire court of ingenious clockwork advisors waits patiently among completed inventions, scrolls, and architectural models.",
     "imageCaption": "\"Next, please!\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "Feb 15, 2026",
-    "workDateISO": "2026-02-15T00:00:00.000Z"
+    "workDateISO": "2026-02-15T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Critical vs Commodity Work in a Role",
