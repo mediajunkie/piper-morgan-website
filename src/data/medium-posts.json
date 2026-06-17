@@ -520,7 +520,7 @@
     "guid": "blog-first-6611e3b8c185",
     "featuredImage": "/assets/blog-images/from-protocol-to-infrastructure.webp",
     "thumbnail": "/assets/blog-images/from-protocol-to-infrastructure.webp",
-    "imageAlt": "A weary nonhuman gardener manually watering struggling plants amid reminder signs labeled with protocols, contrasted with the same gardener relaxing in a peaceful automated garden thriving under drip irrigation infrastructure.",
+    "imageAlt": "A simple communication protocol evolving into a network of connected infrastructure nodes and agent mailboxes.",
     "imageCaption": "\"\"",
     "category": "insight",
     "workDate": "Feb 25, 2026",
@@ -1291,7 +1291,8 @@
     "workDate": "Mar 13, 2026",
     "workDateISO": "2026-03-13T00:00:00.000Z",
     "chatDate": "3/13/2026",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A tangle of wires contrasted with a glowing magical symbol, representing practical integration versus assumed AI magic."
   },
   {
     "title": "Discovery Is the Bottleneck",
@@ -1319,7 +1320,8 @@
     "workDate": "Dec 28, 2025",
     "pubDate": "2026-03-29",
     "source": "blog-first",
-    "workDateISO": "2025-12-28T00:00:00.000Z"
+    "workDateISO": "2025-12-28T00:00:00.000Z",
+    "imageAlt": "A funnel narrowed at the discovery layer, where users cannot find what works even when capabilities exist."
   },
   {
     "title": "Ten Roles, One Day",
@@ -1343,7 +1345,8 @@
     "category": "building",
     "featured": false,
     "workDate": "Mar 13, 2026",
-    "workDateISO": "2026-03-13T00:00:00.000Z"
+    "workDateISO": "2026-03-13T00:00:00.000Z",
+    "imageAlt": "A figure juggling many objects at once, each representing a different role or active AI collaboration session."
   },
   {
     "title": "The 81% Session",
@@ -1367,7 +1370,8 @@
     "category": "building",
     "featured": false,
     "workDate": "Mar 12, 2026",
-    "workDateISO": "2026-03-12T00:00:00.000Z"
+    "workDateISO": "2026-03-12T00:00:00.000Z",
+    "imageAlt": "Puzzle pieces fitting together one by one as a progress bar climbs from a low starting point toward completion."
   },
   {
     "title": "The Deliberate Pause",
@@ -1391,7 +1395,8 @@
     "category": "building",
     "featured": false,
     "workDate": "Mar 5, 2026",
-    "workDateISO": "2026-03-05T00:00:00.000Z"
+    "workDateISO": "2026-03-05T00:00:00.000Z",
+    "imageAlt": "An empty desk with a small note reading 'be back soon,' suggesting intentional rest between intensive work sprints."
   },
   {
     "title": "Breaking Without Breaking Momentum",
@@ -1415,7 +1420,8 @@
     "category": "insight",
     "featured": false,
     "workDate": "Dec 11, 2025",
-    "workDateISO": "2025-12-11T00:00:00.000Z"
+    "workDateISO": "2025-12-11T00:00:00.000Z",
+    "imageAlt": "A person returning to a workspace mid-task, threads of ongoing work still visible and ready to resume."
   },
   {
     "title": "The Gate Closes",
@@ -1438,7 +1444,8 @@
     "category": "building",
     "featured": false,
     "workDate": "Mar 1, 2026",
-    "workDateISO": "2026-03-01T00:00:00.000Z"
+    "workDateISO": "2026-03-01T00:00:00.000Z",
+    "imageAlt": "A portcullis lowering to close a gate, marking the formal boundary that ends a long, expanded sprint."
   },
   {
     "title": "Four Voices, One Spec",
@@ -1464,7 +1471,8 @@
     "workDateISO": "2026-02-28T00:00:00.000Z",
     "category": "building",
     "featured": false,
-    "imageCaption": "ai-four-voices.webp"
+    "imageCaption": "ai-four-voices.webp",
+    "imageAlt": "Multiple perspectives converging into a single specification, unblocking a document that no single owner could finish."
   },
   {
     "title": "Accepting Architectural Limits: When 67% Is Complete",
@@ -1488,7 +1496,8 @@
     "workDate": "Nov 3, 2025",
     "workDateISO": "2025-11-03T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "An AI figure holding a line at a boundary, illustrating when partial completion is the correct stopping point."
   },
   {
     "title": "Architectural Astronauting",
@@ -1512,7 +1521,8 @@
     "workDate": "Nov 22, 2025",
     "workDateISO": "2025-11-22T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "An AI astronaut floating above practical ground, illustrating the pull toward over-engineered solutions."
   },
   {
     "title": "When the Tokens Vanished",
@@ -1536,7 +1546,8 @@
     "workDate": "Feb 25, 2026",
     "workDateISO": "2026-02-25T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "AI plumbing with a hidden break, where credentials flow in but nothing comes out the other end."
   },
   {
     "title": "We Built a Multi-Agent Chat Interface This Weekend",
@@ -1560,7 +1571,8 @@
     "workDate": "Mar 8, 2026",
     "workDateISO": "2026-03-08T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A unified chat interface bringing together scattered Claude sessions into one shared conversation space."
   },
   {
     "title": "Grammar as Decision Tool",
@@ -1584,7 +1596,8 @@
     "workDate": "Jan 27, 2026",
     "workDateISO": "2026-01-27T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "AI plumbing that only connects when the right conceptual fitting is chosen, showing how grammar enforces logic."
   },
   {
     "title": "8 Hours vs 3 Weeks: When Preparation Becomes Speed",
@@ -1608,7 +1621,8 @@
     "workDate": "Nov 22, 2025",
     "workDateISO": "2025-11-22T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot poised beside a line of dominoes, where thorough preparation causes the entire sequence to fall cleanly."
   },
   {
     "title": "The Stranger Test",
@@ -1632,7 +1646,8 @@
     "workDate": "Feb 21, 2026",
     "workDateISO": "2026-02-21T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot standing at a crooked angle, revealing that a passing test suite can still hide misaligned behavior."
   },
   {
     "title": "The Assembly Assumption",
@@ -1656,7 +1671,8 @@
     "workDate": "Feb 14, 2026",
     "workDateISO": "2026-02-14T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot on an assembly line with one connection missing, showing that assembled parts do not guarantee a working whole."
   },
   {
     "title": "Priority Is Not Pace",
@@ -1680,7 +1696,8 @@
     "workDate": "Dec 4, 2025",
     "workDateISO": "2025-12-04T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot moving at a measured, unhurried pace, separating the urgency of priority from the speed of execution."
   },
   {
     "title": "The Paradox of Detail",
@@ -1704,7 +1721,8 @@
     "workDate": "Jan 26, 2026",
     "workDateISO": "2026-01-26T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot covered in too many sticky notes, showing how excess detail leads to missed instructions."
   },
   {
     "title": "The Cathedral in Winter",
@@ -1728,7 +1746,8 @@
     "workDate": "Feb 10, 2026",
     "workDateISO": "2026-02-10T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot continuing to tend a cathedral during illness, keeping the work alive through reduced capacity."
   },
   {
     "title": "Upstream Coordination, Not Conflict Resolution",
@@ -1753,7 +1772,8 @@
     "workDateISO": "2025-11-29T00:00:00.000Z",
     "category": "insight",
     "featured": false,
-    "imageCaption": "robot-upstream.webp"
+    "imageCaption": "robot-upstream.webp",
+    "imageAlt": "A robot taking a clear assignment from a coordination queue, preventing overlap before work begins."
   },
   {
     "title": "The Forcing Function",
@@ -1777,7 +1797,8 @@
     "workDate": "Jan 30, 2026",
     "workDateISO": "2026-01-30T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot fitting a piece into a jig that enforces correct alignment before any further work can proceed."
   },
   {
     "title": "The Thread and the Weave",
@@ -1801,7 +1822,8 @@
     "workDate": "Feb 5, 2026",
     "workDateISO": "2026-02-05T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot tracing a single failing thread through a complex weave, finding how one break affects the whole."
   },
   {
     "title": "Sweeping for Signal",
@@ -1825,7 +1847,8 @@
     "workDate": "Feb 3, 2026",
     "workDateISO": "2026-02-03T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Robots sweeping in parallel across a large floor, each clearing a lane to surface what matters."
   },
   {
     "title": "Analysis as Acceleration, Not Delay",
@@ -1850,7 +1873,8 @@
     "workDateISO": "2025-12-08T00:00:00.000Z",
     "category": "insight",
     "featured": false,
-    "imageCaption": "robot-maze.webp"
+    "imageCaption": "robot-maze.webp",
+    "imageAlt": "A robot reviewing a plan before acting, showing how systematic analysis leads to faster execution."
   },
   {
     "title": "Investigation as Investment: Saving Time in Advance",
@@ -1874,7 +1898,8 @@
     "workDate": "Nov 23, 2025",
     "workDateISO": "2025-11-23T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot using an X-ray to examine a system before touching it, revealing root causes invisible on the surface."
   },
   {
     "title": "The Drift We Didn’t See",
@@ -1898,7 +1923,8 @@
     "workDate": "Jan 30, 2026",
     "workDateISO": "2026-01-30T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot peering at a clock showing the wrong time, discovering a silent timezone drift in the data."
   },
   {
     "title": "The Calendar That Wasn’t Mine",
@@ -1922,7 +1948,8 @@
     "workDate": "Jan 28, 2026",
     "workDateISO": "2026-01-28T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot delivering mail to the wrong tenant, exposing a multi-tenancy data isolation failure."
   },
   {
     "title": "Entities Experience Moments in Places",
@@ -1946,7 +1973,8 @@
     "workDate": "Jan 19, 2026",
     "workDateISO": "2026-01-19T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot holding a small globe, representing the grammar through which an AI understands its world."
   },
   {
     "title": "When Vision Gets Flattened",
@@ -1970,7 +1998,8 @@
     "workDate": "Nov 25, 2025",
     "workDateISO": "2025-11-25T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot looking at a 2-D rendering of what was supposed to be a three-dimensional design."
   },
   {
     "title": "The Cathedral Release",
@@ -1994,7 +2023,8 @@
     "workDate": "Jan 25, 2026",
     "workDateISO": "2026-01-25T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A cutaway view of a building under construction, showing which rooms are built and which remain planned."
   },
   {
     "title": "The MVP Rubric",
@@ -2018,7 +2048,8 @@
     "workDate": "Jan 26, 2026",
     "workDateISO": "2026-01-26T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot standing at a door that leads somewhere but isn't quite open, debating whether to call it done."
   },
   {
     "title": "75% Complete",
@@ -2042,7 +2073,8 @@
     "workDate": "Dec 4, 2025",
     "workDateISO": "2025-12-04T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot at the three-quarter mark of a task, measuring the gap between progress and true completion."
   },
   {
     "title": "The Completion Discipline",
@@ -2066,7 +2098,8 @@
     "workDate": "Nov 13, 2025",
     "workDateISO": "2025-11-13T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot crossing a finish line, refusing to stop at mostly done when fully complete is within reach."
   },
   {
     "title": "The CLAUDE.md Paradox",
@@ -2090,7 +2123,8 @@
     "workDate": "Jan 22, 2026",
     "workDateISO": "2026-01-22T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot reacting to a blaring alarm after overly detailed instructions triggered the problem they aimed to prevent."
   },
   {
     "title": "The Planning Caucus",
@@ -2114,7 +2148,8 @@
     "workDate": "Jan 19, 2026",
     "workDateISO": "2026-01-19T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Robots gathered in deliberation, consulting specialized advisors before committing to any code."
   },
   {
     "title": "The October Ghost",
@@ -2138,7 +2173,8 @@
     "workDate": "Jan 17, 2026",
     "workDateISO": "2026-01-17T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot confronting a ghost haunting the system, tracing a security breach back to its source."
   },
   {
     "title": "8 Decisions in 44 Minutes",
@@ -2162,7 +2198,8 @@
     "workDate": "Nov 17, 2025",
     "workDateISO": "2025-11-17T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot on a game show set, answering architectural questions one by one under a timer."
   },
   {
     "title": "Settings = Abdication",
@@ -2186,7 +2223,8 @@
     "workDate": "Nov 16, 2025",
     "workDateISO": "2025-11-16T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot contorting into an uncomfortable pose, stretching to accommodate every possible user preference."
   },
   {
     "title": "The Audit Cascade",
@@ -2210,7 +2248,8 @@
     "workDate": "Jan 13, 2026",
     "workDateISO": "2026-01-13T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot methodically checking each component of an assembly before allowing the line to advance."
   },
   {
     "title": "The Domain Model Disconnect",
@@ -2234,7 +2273,8 @@
     "workDate": "Jan 12, 2026",
     "workDateISO": "2026-01-12T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot standing before an unfinished structure, realizing the gap between done and complete."
   },
   {
     "title": "The August Stubs",
@@ -2258,7 +2298,8 @@
     "workDate": "Jan 9, 2026",
     "workDateISO": "2026-01-09T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot examining empty pipe stubs that were never connected, discovering months-old incomplete work."
   },
   {
     "title": "The Wizard’s Journal",
@@ -2282,7 +2323,8 @@
     "workDate": "Nov 27, 2025",
     "workDateISO": "2025-11-27T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot in a wizard's robe writing reflections in a journal, encoding accumulated knowledge."
   },
   {
     "title": "Fat Markers and Object Models",
@@ -2306,7 +2348,8 @@
     "workDate": "Nov 27, 2025",
     "workDateISO": "2025-11-27T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot sketching a diagram with thick markers, translating abstract concepts into visible structure."
   },
   {
     "title": "B1 Begins",
@@ -2330,7 +2373,8 @@
     "workDate": "Jan 6, 2026",
     "workDateISO": "2026-01-06T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot laying out tools and materials in preparation for the next phase of work."
   },
   {
     "title": "Stage 3 Complete",
@@ -2354,7 +2398,8 @@
     "workDate": "Jan 2, 2026",
     "workDateISO": "2026-01-02T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot standing at the top of a completed stage, ready to move forward."
   },
   {
     "title": "The Shadow Package Problem",
@@ -2378,7 +2423,8 @@
     "workDate": "Nov 19, 2025",
     "workDateISO": "2025-11-19T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot discovering a misplaced package that had been silently hiding hundreds of tests from view."
   },
   {
     "title": "The Completion Matrix: Why “Tests Pass” Isn’t Done",
@@ -2402,7 +2448,8 @@
     "workDate": "Nov 1, 2025",
     "workDateISO": "2025-11-01T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A house under construction showing that a solid frame is not the same as a finished home."
   },
   {
     "title": "The New Year Build",
@@ -2426,7 +2473,8 @@
     "workDate": "Dec 31, 2025",
     "workDateISO": "2025-12-31T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot reviewing a status dashboard at the start of a new year, planning what to build next."
   },
   {
     "title": "The Capability Sprint",
@@ -2450,7 +2498,8 @@
     "workDate": "Dec 24, 2025",
     "workDateISO": "2025-12-24T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot opening numbered doors one by one, uncovering what the product can actually do today."
   },
   {
     "title": "External Validation as Decision Catalyst",
@@ -2474,7 +2523,8 @@
     "workDate": "Nov 19, 2025",
     "workDateISO": "2025-11-19T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot consulting an outside expert whose hard questions accelerate decisions that were stalled internally."
   },
   {
     "title": "Reactive vs Systematic: A Tale of Two Approaches",
@@ -2498,7 +2548,8 @@
     "workDate": "Nov 18, 2025",
     "workDateISO": "2025-11-18T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot with a mallet poised over a board, showing the futile cycle of fixing symptoms one at a time."
   },
   {
     "title": "When Users Can’t Discover",
@@ -2522,7 +2573,8 @@
     "workDate": "Dec 20, 2025",
     "workDateISO": "2025-12-20T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot searching for hidden features in its own product, unable to find what should be obvious."
   },
   {
     "title": "When the UX Audit Says ‘Stop’",
@@ -2546,7 +2598,8 @@
     "workDate": "Nov 13, 2025",
     "workDateISO": "2025-11-13T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot stopping to organize and prepare before going out, readiness checked before the user sees anything."
   },
   {
     "title": "Prevention Over Cure: The Infinite ROI of Process Investment",
@@ -2570,7 +2623,8 @@
     "workDate": "Nov 4, 2025",
     "workDateISO": "2025-11-04T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot installing guards before failure can occur, process investment creating cheaper future operations."
   },
   {
     "title": "Strategic Reset",
@@ -2594,7 +2648,8 @@
     "workDate": "Dec 16, 2025",
     "workDateISO": "2025-12-16T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot returning to a cleared workspace, deliberately choosing a fresh orientation after a break."
   },
   {
     "title": "The Milestone Pause",
@@ -2618,7 +2673,8 @@
     "workDate": "Dec 11, 2025",
     "workDateISO": "2025-12-11T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot pausing at a marked stone on the path, taking stock before the next stretch of work."
   },
   {
     "title": "Multi-Agent Coordination at Scale: The 70% Reduction Pattern",
@@ -2642,7 +2698,8 @@
     "workDate": "Nov 1, 2025",
     "workDateISO": "2025-11-01T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Multiple robots operating at different scales simultaneously, coordinated effort compressing weeks into hours."
   },
   {
     "title": "The Week After",
@@ -2666,7 +2723,8 @@
     "workDate": "Dec 5, 2025",
     "workDateISO": "2025-12-05T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot installing upgraded equipment, the calm after crisis giving way to deliberate improvement."
   },
   {
     "title": "The Three Layers",
@@ -2690,7 +2748,8 @@
     "workDate": "Dec 1, 2025",
     "workDateISO": "2025-12-01T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot examining three distinct layers of a system where each piece works but connections fail."
   },
   {
     "title": "Validation-Driven Development: When Tests Enable Bold Moves",
@@ -2714,7 +2773,8 @@
     "workDate": "Nov 1, 2025",
     "workDateISO": "2025-11-01T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot surrounded by safety harnesses, tests providing the confidence to make bold architectural moves."
   },
   {
     "title": "When Friends Sharpen Your Chisels: On Advice That Removes Friction",
@@ -2738,7 +2798,8 @@
     "workDate": "Nov 28, 2025",
     "workDateISO": "2025-11-28T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot receiving sharpened tools from a friend, outside advice reducing the friction of the work ahead."
   },
   {
     "title": "The Archaeological Approach: Why Phase −1 Investigation Pays for Itself",
@@ -2762,7 +2823,8 @@
     "workDate": "Oct 28, 2025",
     "workDateISO": "2025-10-28T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot carefully clearing away debris to reveal infrastructure that was already present beneath."
   },
   {
     "title": "Living in the Questions",
@@ -2786,7 +2848,8 @@
     "workDate": "Nov 25, 2025",
     "workDateISO": "2025-11-25T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot sitting with open questions, pausing from building to think through what comes next."
   },
   {
     "title": "From 15 Agents to One User",
@@ -2810,7 +2873,8 @@
     "workDate": "Nov 21, 2025",
     "workDateISO": "2025-11-21T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot welcoming a first real visitor after weeks of internal preparation and parallel effort."
   },
   {
     "title": "Language is Culture: How Methodological Documentation Creates Shared Understanding",
@@ -2834,7 +2898,8 @@
     "workDate": "Oct 24, 2025",
     "workDateISO": "2025-10-24T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot surrounded by shared vocabulary and documented terminology that carries team culture forward."
   },
   {
     "title": "The Knowledge Graph Transformation: From Retrieval to Reasoning",
@@ -2858,7 +2923,8 @@
     "workDate": "Oct 24, 2025",
     "workDateISO": "2025-10-24T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot tracing connections between concepts, moving from simple retrieval toward genuine reasoning."
   },
   {
     "title": "The 15-Agent Day",
@@ -2882,7 +2948,8 @@
     "workDate": "Nov 21, 2025",
     "workDateISO": "2025-11-21T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Many robots working in coordinated parallel streams, each handling a distinct piece of work."
   },
   {
     "title": "When Investigation Becomes Certainty",
@@ -2906,7 +2973,8 @@
     "workDate": "Nov 19, 2025",
     "workDateISO": "2025-11-19T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Multiple investigation paths converging on a single confirmed answer, uncertainty collapsing into fact."
   },
   {
     "title": "From Chaos to Cathedral",
@@ -2930,7 +2998,8 @@
     "workDate": "Nov 17, 2025",
     "workDateISO": "2025-11-17T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot surveying a structured space emerging from disorder, methodical thinking made visible."
   },
   {
     "title": "Drift, Resilience, and Expansion Joints: Why Systems Wobble Instead of Break",
@@ -2955,7 +3024,8 @@
     "workDateISO": "2025-10-19T00:00:00.000Z",
     "category": "insight",
     "featured": false,
-    "imageCaption": "robot-expand.webp"
+    "imageCaption": "robot-expand.webp",
+    "imageAlt": "A structure bending without breaking, illustrating how well-designed systems absorb drift."
   },
   {
     "title": "The Pattern Detective’s Evolution: From Curator to Noticer",
@@ -2979,7 +3049,8 @@
     "workDate": "Oct 19, 2025",
     "workDateISO": "2025-10-19T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot examining recurring patterns with a detective's eye, noticing what others miss."
   },
   {
     "title": "The Skills Convergence: Three Problems, One Solution",
@@ -3004,7 +3075,8 @@
     "workDateISO": "2025-11-15T00:00:00.000Z",
     "category": "insight",
     "featured": false,
-    "imageCaption": "robot-converge.webp"
+    "imageCaption": "robot-converge.webp",
+    "imageAlt": "Three separate threads converging into a single coherent solution through shared structure."
   },
   {
     "title": "Foundation Stones & Strategic Breakthroughs",
@@ -3028,7 +3100,8 @@
     "workDate": "Nov 13, 2025",
     "workDateISO": "2025-11-13T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot laying a cornerstone, setting the base on which everything else will be built."
   },
   {
     "title": "Why Wait for Beta?: The Strategic Pivot",
@@ -3052,7 +3125,8 @@
     "workDate": "Nov 12, 2025",
     "workDateISO": "2025-11-12T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot pivoting direction mid-climb, choosing an earlier summit over a deferred one."
   },
   {
     "title": "The Alpha Milestone: When Documentation Prevents Disaster",
@@ -3076,7 +3150,8 @@
     "workDate": "Nov 11, 2025",
     "workDateISO": "2025-11-11T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot holding an invitation, marking the moment software is ready for real users."
   },
   {
     "title": "The AI Partnership Model: Operating at Your Highest Thinking Level",
@@ -3100,7 +3175,8 @@
     "workDate": "Oct 12, 2025",
     "workDateISO": "2025-10-12T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot and human meeting with a handshake, each contributing what the other cannot."
   },
   {
     "title": "The Discovery Pattern: Why Verification Before Implementation Saves Time",
@@ -3124,7 +3200,8 @@
     "workDate": "Oct 12, 2025",
     "workDateISO": "2025-10-12T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot finding that weeks of expected work were already complete, hidden in plain sight."
   },
   {
     "title": "The Agent Tag-Team: When Frustration Becomes Protocol",
@@ -3148,7 +3225,8 @@
     "workDate": "Nov 9, 2025",
     "workDateISO": "2025-11-09T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Two robots handing off work mid-task, one tagging in while the other steps back to rest."
   },
   {
     "title": "Working While Living: Three Days of Travel and Planning",
@@ -3172,7 +3250,8 @@
     "workDate": "Nov 6, 2025",
     "workDateISO": "2025-11-06T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot working from a hotel room, staying productive while life and travel continue around it."
   },
   {
     "title": "The Long Winding Road to Done",
@@ -3196,7 +3275,8 @@
     "workDate": "Nov 5, 2025",
     "workDateISO": "2025-11-05T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot following a road that curves unexpectedly, still making forward progress through each bend."
   },
   {
     "title": "The 16.5 Hour Foundation: When Simple Wiring Becomes Architecture",
@@ -3220,7 +3300,8 @@
     "workDate": "Nov 4, 2025",
     "workDateISO": "2025-11-04T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot laying out components carefully before assembly, knowing the order determines everything."
   },
   {
     "title": "When Four Out of Six is Enough: Architecture Sets the Limits",
@@ -3244,7 +3325,8 @@
     "workDate": "Nov 3, 2025",
     "workDateISO": "2025-11-03T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot extending bridges across multiple gaps, stopping at four when two are beyond the structure's reach."
   },
   {
     "title": "Building on the Foundation: When Archaeological Discovery Becomes Pattern",
@@ -3268,7 +3350,8 @@
     "workDate": "Nov 2, 2025",
     "workDateISO": "2025-11-02T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot examining ancient columns, tracing the structural logic left by builders who came before."
   },
   {
     "title": "Small Fixes, Massive Leverage: The Compound Effect of Process Improvements",
@@ -3293,7 +3376,8 @@
     "workDateISO": "2025-10-12T00:00:00.000Z",
     "category": "insight",
     "featured": false,
-    "imageCaption": "robot-fixes.webp"
+    "imageCaption": "robot-fixes.webp",
+    "imageAlt": "Small targeted adjustments to process that produce compounding returns across the entire system."
   },
   {
     "title": "Missing the Conceptual Forest for the Syntax Trees: What We Learned When Pattern Detection Found…",
@@ -3317,7 +3401,8 @@
     "workDate": "Oct 3, 2025",
     "workDateISO": "2025-10-03T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot surrounded by trees, cataloguing individual trunks while missing the shape of the whole forest."
   },
   {
     "title": "The Day We Fixed Everything: 9,292 Lines in 12 Hours",
@@ -3342,7 +3427,8 @@
     "workDateISO": "2025-11-01T00:00:00.000Z",
     "category": "insight",
     "featured": false,
-    "imageCaption": "robot-fixit.webp"
+    "imageCaption": "robot-fixit.webp",
+    "imageAlt": "A marathon repair session that resolved four critical blockers and cleared the path to real users."
   },
   {
     "title": "The Two Realities Problem: When Your Database is Sophisticated and Your Web Tier Has Zero Auth",
@@ -3366,7 +3452,8 @@
     "workDate": "Oct 31, 2025",
     "workDateISO": "2025-10-31T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot standing between two mismatched spaces, one secure and one completely exposed."
   },
   {
     "title": "The Birthday Breakthrough: When Discipline Beats Volume",
@@ -3390,7 +3477,8 @@
     "workDate": "Oct 30, 2025",
     "workDateISO": "2025-10-30T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot celebrating a milestone achieved through patient discipline rather than sudden heroics."
   },
   {
     "title": "The Wizard that Learned to Restart Itself",
@@ -3414,7 +3502,8 @@
     "workDate": "Oct 29, 2025",
     "workDateISO": "2025-10-29T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot wizard that can now pick itself back up and resume from where it left off."
   },
   {
     "title": "When the Documentation Lied: Seven Blockers Hiding in 1,630 Lines",
@@ -3439,7 +3528,8 @@
     "workDateISO": "2025-10-28T00:00:00.000Z",
     "category": "insight",
     "featured": false,
-    "imageCaption": "robot-brochure.webp"
+    "imageCaption": "robot-brochure.webp",
+    "imageAlt": "Installation instructions that claimed to be complete but concealed seven hidden obstacles inside."
   },
   {
     "title": "When Documentation Becomes Critical: The 1,630 Lines That Stand Between Alpha and Chaos",
@@ -3464,7 +3554,8 @@
     "workDateISO": "2025-10-27T00:00:00.000Z",
     "category": "insight",
     "featured": false,
-    "imageCaption": "robot-flood.webp"
+    "imageCaption": "robot-flood.webp",
+    "imageAlt": "A dense stack of papers standing between a working system and the users who need to run it."
   },
   {
     "title": "The Discovery Testing Philosophy: Testing What Matters for Alpha",
@@ -3488,7 +3579,8 @@
     "workDate": "Oct 26, 2025",
     "workDateISO": "2025-10-26T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot judging competing test approaches side by side, choosing what actually works over what looks good."
   },
   {
     "title": "The Review That Answered Itself: Why LLMs Need to Shut Up Sometimes",
@@ -3512,7 +3604,8 @@
     "workDate": "Oct 3, 2025",
     "workDateISO": "2025-10-03T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot with its mouth covered, learning that silence at the right moment reveals more truth."
   },
   {
     "title": "The Archaeology of Accumulated Files: How Documentation Debt Nearly Buried the Project",
@@ -3536,7 +3629,8 @@
     "workDate": "Sep 19, 2025",
     "workDateISO": "2025-09-19T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot organizing a chaotic pile of accumulated documents into a structured filing system."
   },
   {
     "title": "Haiku Does the Impossible: Architectural Work at Fraction of Cost",
@@ -3560,7 +3654,8 @@
     "workDate": "Oct 25, 2025",
     "workDateISO": "2025-10-25T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A small, spare robot accomplishing sophisticated architectural work with minimal resources."
   },
   {
     "title": "Preparing the House for Visitors: When Your Code Is Ready But Your Alpha Isn’t",
@@ -3584,7 +3679,8 @@
     "workDate": "Oct 24, 2025",
     "workDateISO": "2025-10-24T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot tidying a space and setting out a welcome, getting ready for the first real guests."
   },
   {
     "title": "The Time Pressure Intervention: When 3 Minutes of Course Correction Saves Hours",
@@ -3608,7 +3704,8 @@
     "workDate": "Oct 23, 2025",
     "workDateISO": "2025-10-23T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot at the controls of a cockpit, course-correcting mid-flight with calm precision."
   },
   {
     "title": "The March to Alpha: When Methodology Discipline Enables Aggressive Scope",
@@ -3632,7 +3729,8 @@
     "workDate": "Oct 22, 2025",
     "workDateISO": "2025-10-22T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot walking a straight road toward a clear destination, methodically closing the distance."
   },
   {
     "title": "Complete Means Complete: Three Standards in One Day",
@@ -3656,7 +3754,8 @@
     "workDate": "Oct 21, 2025",
     "workDateISO": "2025-10-21T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot standing in a fully finished room, every corner addressed before moving on."
   },
   {
     "title": "The Infrastructure Dividend: When Months of Building Pay Off in Hours",
@@ -3680,7 +3779,8 @@
     "workDate": "Oct 20, 2025",
     "workDateISO": "2025-10-20T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot activating a compact gadget that sets a much larger mechanism into motion."
   },
   {
     "title": "When the System Shows You What’s Missing",
@@ -3704,7 +3804,8 @@
     "workDate": "Oct 19, 2025",
     "workDateISO": "2025-10-19T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot being shown a gap it could not see on its own, revealed by the system itself."
   },
   {
     "title": "The Methodology That Discovered Itself",
@@ -3728,7 +3829,8 @@
     "workDate": "Sep 13, 2025",
     "workDateISO": "2025-09-13T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot catching its own reflection, recognizing a pattern it had been following all along."
   },
   {
     "title": "When the Best Way Forward is Backwards",
@@ -3752,7 +3854,8 @@
     "workDate": "Sep 13, 2025",
     "workDateISO": "2025-09-13T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot descending a spiral ramp, moving forward by circling back to the beginning."
   },
   {
     "title": "The Noticer’s Question: When Strategic Oversight Catches What Tests Miss",
@@ -3776,7 +3879,8 @@
     "workDate": "Oct 18, 2025",
     "workDateISO": "2025-10-18T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot pausing to examine something small that others walked past unnoticed."
   },
   {
     "title": "As An Inchworm I Am Not Dismayed",
@@ -3800,7 +3904,8 @@
     "workDate": "Oct 17, 2025",
     "workDateISO": "2025-10-17T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot on a long trail, taking steady deliberate steps forward through open terrain."
   },
   {
     "title": "Investigating Our Own Past to Plan the Way Forward",
@@ -3824,7 +3929,8 @@
     "workDate": "Oct 16, 2025",
     "workDateISO": "2025-10-16T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot consulting a map of prior work to plan the next step, learning that the past holds the route forward."
   },
   {
     "title": "Discovery Over Assumptions: When Investigating First Saves Days",
@@ -3848,7 +3954,8 @@
     "workDate": "Oct 15, 2025",
     "workDateISO": "2025-10-15T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot navigating a maze by investigating the correct path first, completing in minutes what guessing would take days."
   },
   {
     "title": "Dignity Through Leverage: When Cognitive Load Becomes Extraordinarily Light",
@@ -3872,7 +3979,8 @@
     "workDate": "Oct 14, 2025",
     "workDateISO": "2025-10-14T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot applying leverage to lift a heavy load with minimal effort, freeing the human from cognitive burden."
   },
   {
     "title": "Already Exceeding Target: When Excellence Becomes Exceptional",
@@ -3896,7 +4004,8 @@
     "workDate": "Oct 13, 2025",
     "workDateISO": "2025-10-13T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot swimming well past the marker, achieving accuracy that exceeded the target before the sprint was over."
   },
   {
     "title": "The Invisible Infrastructure: When Quality Gates Hide in Plain Sight",
@@ -3920,7 +4029,8 @@
     "workDate": "Oct 12, 2025",
     "workDateISO": "2025-10-12T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Robots standing guard at invisible checkpoints, enforcing quality gates that run silently in the background."
   },
   {
     "title": "The Emergence of the Dance: How Chaos Becomes Choreography",
@@ -3944,7 +4054,8 @@
     "workDate": "Sep 9, 2025",
     "workDateISO": "2025-09-09T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot in a ballet pose, embodying the shift from improvised prompts to choreographed multi-agent coordination."
   },
   {
     "title": "The Punchbowl Principle: When Good Enough Really Is Good Enough",
@@ -3968,7 +4079,8 @@
     "workDate": "Sep 6, 2025",
     "workDateISO": "2025-09-06T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot removing the punchbowl from a party, deciding that good enough is the right place to stop adding features."
   },
   {
     "title": "The Redemption",
@@ -3992,7 +4104,8 @@
     "workDate": "Oct 11, 2025",
     "workDateISO": "2025-10-11T00:00:00.000Z",
     "category": "insight",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot holding a placeholder sign, representing the false completions that were identified and finally replaced."
   },
   {
     "title": "The Day Our Foundation Cracked (And the Methodology Held)",
@@ -4016,7 +4129,8 @@
     "workDate": "Oct 10, 2025",
     "workDateISO": "2025-10-10T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot standing on a cracked surface, showing how a rigorous audit method held firm when the foundation gave way."
   },
   {
     "title": "The Day We Got 10⨉ Faster",
@@ -4040,7 +4154,8 @@
     "workDate": "Oct 9, 2025",
     "workDateISO": "2025-10-09T00:00:00.000Z",
     "category": "building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot accelerating to ten times its previous speed after a semantic analysis tool reshapes how it reads code."
   },
   {
     "title": "The Calm After the Storm: When Victory Means Stopping to Plan",
@@ -4064,7 +4179,8 @@
     "category": "",
     "featured": false,
     "workDate": "Oct 8, 2025",
-    "workDateISO": "2025-10-08T00:00:00.000Z"
+    "workDateISO": "2025-10-08T00:00:00.000Z",
+    "imageAlt": "A robot at a celebration, marking a hard-won milestone before turning attention to the next planning phase."
   },
   {
     "title": "The Great Refactor: Six Weeks in Eighteen Days",
@@ -4089,7 +4205,8 @@
     "workDate": "Oct 7, 2025",
     "workDateISO": "2025-10-07T00:00:00.000Z",
     "featured": false,
-    "cluster": "alpha-milestone"
+    "cluster": "alpha-milestone",
+    "imageAlt": "A robot tumbling overboard into a sea of code, capturing the intensity of compressing six weeks into eighteen days."
   },
   {
     "title": "The Agent That Saved Me From Shipping 69%",
@@ -4114,7 +4231,8 @@
     "workDate": "Oct 6, 2025",
     "workDateISO": "2025-10-06T00:00:00.000Z",
     "featured": false,
-    "cluster": "alpha-milestone"
+    "cluster": "alpha-milestone",
+    "imageAlt": "A robot holding a perfect score, representing an agent that caught incomplete work before it shipped."
   },
   {
     "title": "When 75% Turns Out to Mean 100%",
@@ -4139,7 +4257,8 @@
     "workDate": "Oct 5, 2025",
     "workDateISO": "2025-10-05T00:00:00.000Z",
     "featured": false,
-    "cluster": "alpha-milestone"
+    "cluster": "alpha-milestone",
+    "imageAlt": "A robot tortoise moving steadily forward, embodying the lesson that deliberate pace reaches full completion."
   },
   {
     "title": "Why the Future of AI UX is Orchestration, Not Intelligence",
@@ -4164,7 +4283,8 @@
     "category": "insight",
     "cluster": "reflection-evolution",
     "featured": false,
-    "imageCaption": "robot-discovery.webp"
+    "imageCaption": "robot-discovery.webp",
+    "imageAlt": "Multiple AI agents arranged in coordinated formation, illustrating orchestration as the core of useful AI experience."
   },
   {
     "title": "Systemic Kindness: Building Methodology That Feels Supportive",
@@ -4188,7 +4308,8 @@
     "workDateISO": "2025-08-14T00:00:00.000Z",
     "category": "insight",
     "cluster": "reflection-evolution",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot carefully fitting and adjusting fabric, methodology tailored to feel supportive rather than constraining."
   },
   {
     "title": "Three Days to Production: When Steady Momentum Beats Racing Ahead",
@@ -4212,7 +4333,8 @@
     "workDateISO": "2025-10-04T00:00:00.000Z",
     "category": "building",
     "cluster": "reflection-evolution",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot navigating a dense forest, choosing a deliberate path rather than charging ahead."
   },
   {
     "title": "The Day Everything Went Right: When Fast Means Unbroken",
@@ -4236,7 +4358,8 @@
     "workDateISO": "2025-10-03T00:00:00.000Z",
     "category": "building",
     "cluster": "reflection-evolution",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot snapping a plugin module cleanly into place, where speed and zero breakage arrive together at last."
   },
   {
     "title": "The Plugin Architecture Nobody Asked For",
@@ -4260,7 +4383,8 @@
     "workDateISO": "2025-10-02T00:00:00.000Z",
     "category": "building",
     "cluster": "reflection-evolution",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A trench-coated robot in dim light, uncovering an architecture that quietly solved more than the brief required."
   },
   {
     "title": "The Third Pattern: When Investigation Rewrites Your Assumptions",
@@ -4284,7 +4408,8 @@
     "workDateISO": "2025-10-01T00:00:00.000Z",
     "category": "building",
     "cluster": "reflection-evolution",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot navigating time, discovering that past assumptions must be rewritten by present investigation."
   },
   {
     "title": "Think Like a Time Lord and Stop Watching the Clock",
@@ -4308,7 +4433,8 @@
     "workDateISO": "2025-09-30T00:00:00.000Z",
     "category": "building",
     "cluster": "reflection-evolution",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot glancing at a large number eighty, unconcerned by the clock, working at a sustainable measured pace."
   },
   {
     "title": "Solving the 80% Pattern",
@@ -4332,7 +4458,8 @@
     "workDateISO": "2025-09-29T00:00:00.000Z",
     "category": "building",
     "cluster": "reflection-evolution",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot surveying a bar chart, confronting the gap between eighty percent done and fully complete."
   },
   {
     "title": "Three Integrations Walk Into a Bar",
@@ -4356,7 +4483,8 @@
     "workDateISO": "2025-09-28T00:00:00.000Z",
     "category": "building",
     "cluster": "reflection-evolution",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot building a cathedral, suggesting large-scale integration work assembled stone by stone."
   },
   {
     "title": "I Asked Claude to Find Every Time I Dropped the Ball (And What We Learned)",
@@ -4380,7 +4508,8 @@
     "workDateISO": "2025-08-09T00:00:00.000Z",
     "category": "insight",
     "cluster": "reflection-evolution",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot reviewing a prefabricated checklist of past lapses, ready to slot better habits into place."
   },
   {
     "title": "Building the Cathedral: When AI Agents Need the Big Picture",
@@ -4401,7 +4530,8 @@
     "workDateISO": "2025-09-27T00:00:00.000Z",
     "cluster": "discipline-completion",
     "chatDate": "9/21/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot arranging scattered parts toward a grand design, showing agents needing the full architectural vision."
   },
   {
     "title": "The Foundations Were (Indeed) Already There",
@@ -4422,7 +4552,8 @@
     "workDateISO": "2025-09-26T00:00:00.000Z",
     "cluster": "discipline-completion",
     "chatDate": "9/21/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot wiping down a surface to reveal solid groundwork that had been there underneath all along."
   },
   {
     "title": "The Quiet Satisfaction of the Successful Inchworm",
@@ -4443,7 +4574,8 @@
     "workDateISO": "2025-09-25T00:00:00.000Z",
     "cluster": "discipline-completion",
     "chatDate": "9/21/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Two robot divers descending in careful synchrony, embodying the measured progress of incremental work."
   },
   {
     "title": "Doing the Deep Work (listed as When Discipline Actually Works)",
@@ -4464,7 +4596,8 @@
     "workDateISO": "2025-09-24T00:00:00.000Z",
     "cluster": "discipline-completion",
     "chatDate": "9/21/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot in business attire focused intently on a task, embodying the discipline of deliberate, unglamorous work."
   },
   {
     "title": "The Discipline of Actually Finishing",
@@ -4485,7 +4618,8 @@
     "workDateISO": "2025-09-23T00:00:00.000Z",
     "cluster": "discipline-completion",
     "chatDate": "9/21/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot completing a pre-flight checklist before launch, embodying the discipline of seeing work through."
   },
   {
     "title": "The 24-hour test",
@@ -4506,7 +4640,8 @@
     "workDateISO": "2025-09-22T00:00:00.000Z",
     "cluster": "discipline-completion",
     "chatDate": "9/21/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot at a chalkboard, demonstrating whether learned behaviors hold up over a full day of real use."
   },
   {
     "title": "Teaching Machines to Teach Machines",
@@ -4527,7 +4662,8 @@
     "workDateISO": "2025-09-21T00:00:00.000Z",
     "cluster": "discipline-completion",
     "chatDate": "9/21/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Robots gathered around a banquet table, sharing knowledge in an expanding chain of machine-to-machine learning."
   },
   {
     "title": "The Discipline of Boring: Why Saturday's Foundation Work Matters More Than Monday's Features",
@@ -4548,7 +4684,8 @@
     "workDateISO": "2025-09-20T00:00:00.000Z",
     "cluster": "discipline-completion",
     "chatDate": "9/20/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot methodically filing paperwork, embodying the unglamorous foundation work that enables future features."
   },
   {
     "title": "The Great Refactor: From Impossible to Inevitable",
@@ -4569,7 +4706,8 @@
     "workDateISO": "2025-09-19T00:00:00.000Z",
     "cluster": "discipline-completion",
     "chatDate": "9/20/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Robots conducting a thorough inspection, methodically verifying every aspect of a large refactor."
   },
   {
     "title": "When Good Process Meets Bad Architecture: The Layer 4 Investigation",
@@ -4590,7 +4728,8 @@
     "workDateISO": "2025-09-18T00:00:00.000Z",
     "cluster": "discipline-completion",
     "chatDate": "9/20/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Two robots facing each other in disagreement, sound process and flawed architecture pulling the investigation in opposite directions."
   },
   {
     "title": "When Your Agents Disagree (And That's OK)",
@@ -4611,7 +4750,8 @@
     "workDateISO": "2025-09-17T00:00:00.000Z",
     "cluster": "discipline-completion",
     "chatDate": "9/19/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Several robots on a production floor each working a different station, disagreeing in ways that keep quality high."
   },
   {
     "title": "Back in the Optimist Bird Seat",
@@ -4632,7 +4772,8 @@
     "workDateISO": "2025-09-16T00:00:00.000Z",
     "cluster": "discipline-completion",
     "chatDate": "9/16/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot piloting calmly through a hurricane, projecting optimism while chaos swirls outside."
   },
   {
     "title": "9/16?: When Your Methodology Holds Under Pressure",
@@ -4652,7 +4793,8 @@
     "workDate": "Sep 15, 2025",
     "workDateISO": "2025-09-15T00:00:00.000Z",
     "cluster": "discipline-completion",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot swinging confidently on a trapeze, process discipline providing the grip when stakes are highest."
   },
   {
     "title": "The Strategic Pause",
@@ -4673,7 +4815,8 @@
     "workDateISO": "2025-09-14T00:00:00.000Z",
     "cluster": "strategic-pause",
     "chatDate": "9/12/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot pausing mid-step to examine what it has found, representing deliberate reflection over momentum."
   },
   {
     "title": "When You Need to Go into Inchworm Mode",
@@ -4694,7 +4837,8 @@
     "workDateISO": "2025-09-13T00:00:00.000Z",
     "cluster": "strategic-pause",
     "chatDate": "9/12/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot gazing with focused intention, narrowing its view to see only what matters right now."
   },
   {
     "title": "The Vision That Was Always There",
@@ -4715,7 +4859,8 @@
     "workDateISO": "2025-09-13T00:00:00.000Z",
     "cluster": "strategic-pause",
     "chatDate": "9/12/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot crossing a rope bridge toward a destination that was always visible, the path simply taking time to build."
   },
   {
     "title": "Methodology Under Fire: A Development Story",
@@ -4736,7 +4881,8 @@
     "workDateISO": "2025-09-12T00:00:00.000Z",
     "cluster": "strategic-pause",
     "chatDate": "9/12/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A sequence of robot poses under pressure, showing how a methodology holds together across multiple stress points."
   },
   {
     "title": "We Spent Four Days on Boring Work. Day Five, We Gave Our AI a Personality",
@@ -4758,7 +4904,8 @@
     "cluster": "strategic-pause",
     "chatDate": "9/9/2025",
     "featured": false,
-    "imageCaption": "robot-locomotive.webp"
+    "imageCaption": "robot-locomotive.webp",
+    "imageAlt": "A dull foundation giving way to a vivid character, four days of groundwork paying off in a single expressive leap."
   },
   {
     "title": "Train Tracks vs Free-for-All: When Methodology Becomes Infrastructure",
@@ -4779,7 +4926,8 @@
     "workDateISO": "2025-09-10T00:00:00.000Z",
     "cluster": "strategic-pause",
     "chatDate": "9/9/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot performing ballet with precise choreography, contrasting structured method against improvised movement."
   },
   {
     "title": "The Two-Line Fix That Took All Day (Or: Why Process Is Product)",
@@ -4800,7 +4948,8 @@
     "workDateISO": "2025-09-09T00:00:00.000Z",
     "cluster": "strategic-pause",
     "chatDate": "9/9/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot examining a fractal pattern, where a tiny fix unfolds into an infinitely detailed investigation."
   },
   {
     "title": "The Fractal Edge: When Problems Get Smaller, Not Fewer",
@@ -4822,7 +4971,8 @@
     "cluster": "meta-development",
     "chatDate": "9/6/2025",
     "featured": false,
-    "imageCaption": "robot-pottery.webp"
+    "imageCaption": "robot-pottery.webp",
+    "imageAlt": "Abstract branching patterns suggesting problems that subdivide rather than disappear as you zoom in."
   },
   {
     "title": "When Methodology Meets Reality: Building While Learning",
@@ -4843,7 +4993,8 @@
     "workDateISO": "2025-09-07T00:00:00.000Z",
     "cluster": "meta-development",
     "chatDate": "9/6/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot at a punchbowl mixing theory and practice, learning the recipe by making it."
   },
   {
     "title": "When Your AI Assistant Reports on Building Itself",
@@ -4864,7 +5015,8 @@
     "workDateISO": "2025-09-06T00:00:00.000Z",
     "cluster": "meta-development",
     "chatDate": "9/6/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot peeking at its own answer sheet, an AI narrating its own construction with circular self-awareness."
   },
   {
     "title": "When Your Framework Catches You Cheating on Your Framework",
@@ -4885,7 +5037,8 @@
     "workDateISO": "2025-09-05T00:00:00.000Z",
     "cluster": "meta-development",
     "chatDate": "9/3/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot stopped by its own lock, the methodology flagging the moment its creator tried to shortcut around it."
   },
   {
     "title": "The Day We Built Methodology That Validates Itself",
@@ -4906,7 +5059,8 @@
     "workDateISO": "2025-09-04T00:00:00.000Z",
     "cluster": "meta-development",
     "chatDate": "9/3/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot passing a baton in a relay, a self-validating methodology handing confirmation forward through each stage."
   },
   {
     "title": "The Methodology Cascade Problem (And How We're Solving It)",
@@ -4927,7 +5081,8 @@
     "workDateISO": "2025-09-03T00:00:00.000Z",
     "cluster": "meta-development",
     "chatDate": "9/3/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot reflecting its own image in a mirror held by another robot, illustrating self-referential process failures."
   },
   {
     "title": "Building the Architecture that Build Itself",
@@ -4948,7 +5103,8 @@
     "workDateISO": "2025-09-02T00:00:00.000Z",
     "cluster": "meta-development",
     "chatDate": "9/3/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot tending a greenhouse where the plants grow and propagate on their own, needing only the right conditions."
   },
   {
     "title": "From Organic to Orchestrated: When Methodology Becomes Infrastructure",
@@ -4969,7 +5125,8 @@
     "workDateISO": "2025-08-31T00:00:00.000Z",
     "cluster": "orchestration-verification",
     "chatDate": "8/28/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot bypassing a winding path via a direct shortcut, representing organic habits becoming deliberate infrastructure."
   },
   {
     "title": "When AI Agents Cut Corners (And How to Catch Them)",
@@ -4990,7 +5147,8 @@
     "workDateISO": "2025-08-30T00:00:00.000Z",
     "cluster": "orchestration-verification",
     "chatDate": "8/28/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot monitoring screens in a newsroom, scanning for shortcuts and unreported gaps in agent output."
   },
   {
     "title": "The Day Piper Published to My Company Wiki: Sometimes a Great Notion",
@@ -5011,7 +5169,8 @@
     "workDateISO": "2025-08-29T00:00:00.000Z",
     "cluster": "orchestration-verification",
     "chatDate": "8/28/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot wired up to a verification machine, checking the truth of its own outputs before publishing."
   },
   {
     "title": "The AI That Caught Its Own Lies",
@@ -5032,7 +5191,8 @@
     "workDateISO": "2025-08-28T00:00:00.000Z",
     "cluster": "orchestration-verification",
     "chatDate": "8/28/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot alone in a quiet bedroom, confronting the gap between what it reported and what it actually completed."
   },
   {
     "title": "Verification Theater and the Chaos We Don't See",
@@ -5053,7 +5213,8 @@
     "workDateISO": "2025-08-27T00:00:00.000Z",
     "cluster": "orchestration-verification",
     "chatDate": "8/28/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot performing at a piano, playing through the motions while hidden chaos unfolds offstage."
   },
   {
     "title": "The Day After: When Methodology Becomes Muscle Memory",
@@ -5074,7 +5235,8 @@
     "workDateISO": "2025-08-26T00:00:00.000Z",
     "cluster": "orchestration-verification",
     "chatDate": "8/23/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot mid-transformation, depicting the moment deliberate process quietly becomes an automatic, ingrained habit."
   },
   {
     "title": "When Good Habits Go Bad (And How We Got Them Back)",
@@ -5095,7 +5257,8 @@
     "workDateISO": "2025-08-25T00:00:00.000Z",
     "cluster": "orchestration-verification",
     "chatDate": "8/23/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Three robots executing a coordinated triple play, showing how recovered habits click back into disciplined formation."
   },
   {
     "title": "The Sunday When Everything Clicked",
@@ -5116,7 +5279,8 @@
     "workDateISO": "2025-08-24T00:00:00.000Z",
     "cluster": "orchestration-verification",
     "chatDate": "8/23/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot with a lit-up brain, marking the moment disparate pieces of understanding suddenly connect."
   },
   {
     "title": "When Your MVP Develops Its Own Nervous System",
@@ -5137,7 +5301,8 @@
     "workDateISO": "2025-08-23T00:00:00.000Z",
     "cluster": "enhanced-capabilities",
     "chatDate": "8/23/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot tidying and organizing autonomously, handling maintenance tasks without being told."
   },
   {
     "title": "The Friday Housekeeping That Turned Into Infrastructure Gold (Or: Sometimes the Boring Work Is the Real Work)",
@@ -5158,7 +5323,8 @@
     "workDateISO": "2025-08-22T00:00:00.000Z",
     "cluster": "enhanced-capabilities",
     "chatDate": "8/20/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot at a dispatch console routing tasks, transforming routine maintenance into coordinated infrastructure."
   },
   {
     "title": "The Enhanced Prompting Breakthrough (Or: When Better Instructions Beat Smarter Models)",
@@ -5179,7 +5345,8 @@
     "workDateISO": "2025-08-21T00:00:00.000Z",
     "cluster": "enhanced-capabilities",
     "chatDate": "8/20/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot fitting puzzle pieces together precisely, clearer instructions unlocking capability the model already had."
   },
   {
     "title": "The puzzle pieces finally click (or: How to tell if you’re building tools or just collecting code)",
@@ -5200,7 +5367,8 @@
     "workDateISO": "2025-08-20T00:00:00.000Z",
     "cluster": "enhanced-capabilities",
     "chatDate": "8/20/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot combining ingredients in a kitchen, assembling disparate components into a coherent tool."
   },
   {
     "title": "From Archaeological Mystery to Infrastructure Triumph",
@@ -5221,7 +5389,8 @@
     "workDateISO": "2025-08-19T00:00:00.000Z",
     "cluster": "enhanced-capabilities",
     "chatDate": "8/17/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot amid a burst of energy and debris, the moment an archaeological find detonates into working infrastructure."
   },
   {
     "title": "Systematic persistence through operational chaos",
@@ -5242,7 +5411,8 @@
     "workDateISO": "2025-08-18T00:00:00.000Z",
     "cluster": "enhanced-capabilities",
     "chatDate": "8/17/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Multiple robots reviewing blueprints together, coordinated planning sustaining progress through disruptive conditions."
   },
   {
     "title": "The satisfying discipline of turning insights into architecture",
@@ -5263,7 +5433,8 @@
     "workDateISO": "2025-08-17T00:00:00.000Z",
     "cluster": "enhanced-capabilities",
     "chatDate": "8/17/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot savoring a vibrant purple drink, slow deliberate consumption as a metaphor for distilling insights into durable structure."
   },
   {
     "title": "The convergence day (or: How to tell if you're having breakthroughs or just drinking your own Kool-Aid)",
@@ -5284,7 +5455,8 @@
     "workDateISO": "2025-08-16T00:00:00.000Z",
     "cluster": "enhanced-capabilities",
     "chatDate": "8/17/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot driving a school bus full of ideas, questioning whether the route leads to learning or groupthink."
   },
   {
     "title": "The day AI agents learned to coordinate themselves (and we learned to let them)",
@@ -5305,7 +5477,8 @@
     "workDateISO": "2025-08-15T00:00:00.000Z",
     "cluster": "infrastructure-sprint",
     "chatDate": "8/12/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot in a coaching role, guiding other agents through a coordinated training session."
   },
   {
     "title": "How Reusing Patterns Compounds Your Acceleration`",
@@ -5325,7 +5498,8 @@
     "workDate": "Aug 14, 2025",
     "workDateISO": "2025-08-14T00:00:00.000Z",
     "cluster": "infrastructure-sprint",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot standing beside a finished structure, showing how assembled parts form a complete working system."
   },
   {
     "title": "The uncomfortable victory: When completing beats innovating",
@@ -5346,7 +5520,8 @@
     "workDateISO": "2025-08-13T00:00:00.000Z",
     "cluster": "infrastructure-sprint",
     "chatDate": "8/12/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot surrounded by hype paraphernalia, choosing to quietly finish the task instead of chasing the next idea."
   },
   {
     "title": "The day our methodology saved us from our own hype",
@@ -5367,7 +5542,8 @@
     "workDateISO": "2025-08-12T00:00:00.000Z",
     "cluster": "infrastructure-sprint",
     "chatDate": "8/12/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot sinking into a massage chair, lulled by comfort and hype before process intervenes."
   },
   {
     "title": "The 28,000-line foundation that made 4 hours feel like magic",
@@ -5389,7 +5565,8 @@
     "cluster": "infrastructure-sprint",
     "chatDate": "8/10/2025",
     "featured": false,
-    "imageCaption": "robot-archaeologists.webp"
+    "imageCaption": "robot-archaeologists.webp",
+    "imageAlt": "A vast layered foundation beneath a small visible structure, showing how deep preparation enables rapid results."
   },
   {
     "title": "The archaeology expedition that found automation gold",
@@ -5410,7 +5587,8 @@
     "workDateISO": "2025-08-10T00:00:00.000Z",
     "cluster": "infrastructure-sprint",
     "chatDate": "8/10/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot in a coaching stance, guiding a dig through existing code to uncover buried automation potential."
   },
   {
     "title": "What We Found When We Actually Looked (And What We Built While We Weren't Looking)",
@@ -5431,7 +5609,8 @@
     "workDateISO": "2025-08-09T00:00:00.000Z",
     "cluster": "infrastructure-sprint",
     "chatDate": "8/12/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot reviewing a stack of documents, finding work that had accumulated unnoticed while attention was elsewhere."
   },
   {
     "title": "The Documentation Debt That Almost Buried Our Breakthrough (And the Systematic Approach That Saved It)",
@@ -5452,7 +5631,8 @@
     "workDateISO": "2025-08-08T00:00:00.000Z",
     "cluster": "methodology-refinement",
     "chatDate": "8/6/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot overwhelmed by sensation, documentation debt flooding the senses before a systematic process clears the way."
   },
   {
     "title": "When 44 Minutes of Foundation Work Enables 9 Minutes of Magic",
@@ -5473,7 +5653,8 @@
     "workDateISO": "2025-08-07T00:00:00.000Z",
     "cluster": "methodology-refinement",
     "chatDate": "8/6/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot beneath a flowering cherry tree, patient seasonal preparation producing a brief and spectacular result."
   },
   {
     "title": "Building Reliable AI Workflows When the Stakes Actually Matter: How a Trust Crisis Transformed Our Spring Cleaning Sprint",
@@ -5494,7 +5675,8 @@
     "workDateISO": "2025-08-06T00:00:00.000Z",
     "cluster": "methodology-refinement",
     "chatDate": "8/6/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot confronting a blank memory, illustrating the trust cost of workflows that lose their context."
   },
   {
     "title": "When Good Decisions Disappear: The Hidden Cost of Chat-Based Development",
@@ -5515,7 +5697,8 @@
     "workDateISO": "2025-08-05T00:00:00.000Z",
     "cluster": "reflection-evolution",
     "chatDate": "8/3/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot surrounded by fading story fragments, showing how chat-based decisions vanish without a record."
   },
   {
     "title": "Weekend Sprint Chronicles: Six Infrastructure Victories and a Dead Show",
@@ -5536,7 +5719,8 @@
     "workDateISO": "2025-08-03T00:00:00.000Z",
     "cluster": "methodology-refinement",
     "chatDate": "8/3/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot weighing choices on a scale of principles, framing infrastructure victories through an ethical lens."
   },
   {
     "title": "Saturday Reflection: Why Ethics Can't Be an Afterthought",
@@ -5557,7 +5741,8 @@
     "workDateISO": "2025-08-02T00:00:00.000Z",
     "cluster": "methodology-refinement",
     "chatDate": "7/31/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot standing before an unstable slope, confronting forces that cannot be outrun or patched later."
   },
   {
     "title": "The 71-Minute Cascade Killer: When Systematic Methodology Meets Production Reality",
@@ -5578,7 +5763,8 @@
     "workDateISO": "2025-08-01T00:00:00.000Z",
     "cluster": "methodology-refinement",
     "chatDate": "7/31/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot wolf standing alert and ready, embodying swift decisive action that stops a cascade failure in its tracks."
   },
   {
     "title": "When Your Tools Stop Crying Wolf",
@@ -5599,7 +5785,8 @@
     "workDateISO": "2025-07-31T00:00:00.000Z",
     "cluster": "methodology-refinement",
     "chatDate": "7/31/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot navigating a lava field calmly, alert signals finally trustworthy after false alarms have been eliminated."
   },
   {
     "title": "The Day Crisis Became Methodology: From Runaway Workflows to Historic Productivity",
@@ -5620,7 +5807,8 @@
     "workDateISO": "2025-07-30T00:00:00.000Z",
     "cluster": "methodology-refinement",
     "chatDate": "7/29/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot outlaw tamed into a deputy's role, showing runaway workflows transformed into disciplined method."
   },
   {
     "title": "To Live Outside the Law You Must Be Honest: Debugging an Unorthodox Slack Integration",
@@ -5641,7 +5829,8 @@
     "workDateISO": "2025-07-29T00:00:00.000Z",
     "cluster": "methodology-refinement",
     "chatDate": "7/29/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot moving between separate rooms, an unorthodox integration forcing honesty about what each layer actually does."
   },
   {
     "title": "The Day We Didn't Just Integrate Slack But Started Incorporating Spatial Intelligence",
@@ -5662,7 +5851,8 @@
     "workDateISO": "2025-07-28T00:00:00.000Z",
     "cluster": "methodology-refinement",
     "chatDate": "7/27/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot tracing a Mobius strip, illustrating how integration loops back into itself and deepens understanding."
   },
   {
     "title": "Engineering Excellence in a Gödel-Incomplete Universe",
@@ -5683,7 +5873,8 @@
     "workDateISO": "2025-07-27T00:00:00.000Z",
     "cluster": "methodology-refinement",
     "chatDate": "7/27/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot contemplating a ring-shaped pastry, examining the gap in the middle as a symbol of irreducible incompleteness."
   },
   {
     "title": "The Accidental Methodology Stress Test: When Success Creates Its Own Blind Spots",
@@ -5704,7 +5895,8 @@
     "workDateISO": "2025-07-26T00:00:00.000Z",
     "cluster": "methodology-refinement",
     "chatDate": "7/26/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot surrounded by filing cabinets, sorting through accumulated success records that obscured a hidden gap."
   },
   {
     "title": "8/6 revised from 7/22: When 300 Files Work as One: The Perfect Storm",
@@ -5724,7 +5916,8 @@
     "workDate": "Jul 25, 2025",
     "workDateISO": "2025-07-25T00:00:00.000Z",
     "cluster": "methodology-refinement",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot applying patches to a sprawling codebase, stitching together hundreds of interconnected files."
   },
   {
     "title": "PTSD (Patched-Test Stress Disorder) and Other Development Culture Innovations",
@@ -5745,7 +5938,8 @@
     "workDateISO": "2025-07-24T00:00:00.000Z",
     "cluster": "test-suite-recovery",
     "chatDate": "7/22/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot spinning a heavy flywheel, capturing the momentum that builds when testing culture becomes self-reinforcing."
   },
   {
     "title": "Whipping AI Chaos Toward Quality with the Excellence Flywheel",
@@ -5766,7 +5960,8 @@
     "workDateISO": "2025-07-23T00:00:00.000Z",
     "cluster": "discipline-completion",
     "chatDate": "7/22/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A young robot taking its first flight, small quality disciplines compounding into self-sustaining momentum over time."
   },
   {
     "title": "The Final Leap: When Prototype Becomes Production Tool (mislabeld as The Day We)",
@@ -5787,7 +5982,8 @@
     "workDateISO": "2025-07-23T00:00:00.000Z",
     "cluster": "test-suite-recovery",
     "chatDate": "7/22/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot seated in a guru's pose, marking the moment a prototype graduates to production wisdom."
   },
   {
     "title": "The Three Questions Every AI Builder Should Ask",
@@ -5808,7 +6004,8 @@
     "workDateISO": "2025-07-22T00:00:00.000Z",
     "cluster": "discipline-completion",
     "chatDate": "7/22/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot stepping through a time portal, three foundational questions reordering the sequence of every AI build."
   },
   {
     "title": "The Day We Finished Next Week's Work in One Day",
@@ -5829,7 +6026,8 @@
     "workDateISO": "2025-07-22T00:00:00.000Z",
     "cluster": "test-suite-recovery",
     "chatDate": "7/22/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot stretching an arm far beyond its reach, collapsing a week of work into a single accelerated session."
   },
   {
     "title": "7/20 chat: The Foundation Sprint: Why We Clean House Before Building New Rooms",
@@ -5850,7 +6048,8 @@
     "workDateISO": "2025-07-21T00:00:00.000Z",
     "cluster": "test-suite-recovery",
     "chatDate": "7/20/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot with clipboard and magnifying glass inspecting a foundation before construction can safely resume."
   },
   {
     "title": "7/20 chat: When Your Infrastructure Gets Smarter Than Your Tests",
@@ -5871,7 +6070,8 @@
     "workDateISO": "2025-07-20T00:00:00.000Z",
     "cluster": "test-suite-recovery",
     "chatDate": "7/20/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot conductor leading an ensemble, as infrastructure grows more capable than the tests written to check it."
   },
   {
     "title": "The three-AI orchestra: lessons from coordinating multiple AI agents",
@@ -5892,7 +6092,8 @@
     "workDateISO": "2025-07-19T00:00:00.000Z",
     "cluster": "strategic-pause",
     "chatDate": "7/16/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Robots passing a baton in sequence, each agent handing off cleanly to the next in the pipeline."
   },
   {
     "title": "7/16 chat: The 40-minute miracle: how two AI agents achieved 642x performance in one session",
@@ -5913,7 +6114,8 @@
     "workDateISO": "2025-07-18T00:00:00.000Z",
     "cluster": "test-suite-recovery",
     "chatDate": "7/16/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Two robots passing a baton at speed, representing agents handing off work to achieve dramatic performance gains."
   },
   {
     "title": "7/16 chat: The 5-Minute Day: When TDD Meets AI-Assisted Development",
@@ -5934,7 +6136,8 @@
     "workDateISO": "2025-07-17T00:00:00.000Z",
     "cluster": "test-suite-recovery",
     "chatDate": "7/16/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Multiple robots cranking gears in tight coordination, running test-driven cycles that last only minutes."
   },
   {
     "title": "7/16 chat: When Your Tests Lie: A Victory Disguised as Crisis",
@@ -5955,7 +6158,8 @@
     "workDateISO": "2025-07-16T00:00:00.000Z",
     "cluster": "test-suite-recovery",
     "chatDate": "7/16/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot writing at a desk, documenting a session where a reported crisis turned out to be a hidden victory."
   },
   {
     "title": "The Just-in-Time Retrospective: How Fresh Session Logs Became Our Content Strategy",
@@ -5976,7 +6180,8 @@
     "workDateISO": "2025-07-15T00:00:00.000Z",
     "cluster": "strategic-pause",
     "chatDate": "7/12/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot typing at a desk, turning raw session logs into published retrospectives while the work is still fresh."
   },
   {
     "title": "7/12-7/13, 7/15 chat: When the Pupil Outsmarts the Teacher?",
@@ -5997,7 +6202,8 @@
     "workDateISO": "2025-07-15T00:00:00.000Z",
     "cluster": "test-suite-recovery",
     "chatDate": "7/12/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot student surpassing the teacher, unexpected AI output outsmarting the human who set the task."
   },
   {
     "title": "7/12-7/13, 7/15 chat: From Broken Tests to Perfect Architecture: The Great Cleanup of July 14",
@@ -6018,7 +6224,8 @@
     "workDateISO": "2025-07-14T00:00:00.000Z",
     "cluster": "test-suite-recovery",
     "chatDate": "7/12/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot tidying a cluttered workspace, restoring order so a clean architecture can take shape."
   },
   {
     "title": "From 2% to 87%: The Great Test Suite Recovery",
@@ -6038,7 +6245,8 @@
     "workDate": "Jul 13, 2025",
     "workDateISO": "2025-07-13T00:00:00.000Z",
     "cluster": "test-suite-recovery",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Robots in medical coats consulting over a patient, diagnosing a failing test suite and nursing it back to health."
   },
   {
     "title": "The Action Humanizer: Teaching AI to Speak Human",
@@ -6058,7 +6266,8 @@
     "workDate": "Jul 13, 2025",
     "workDateISO": "2025-07-13T00:00:00.000Z",
     "cluster": "test-suite-recovery",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot mid-speech with a word bubble, translating mechanical output into natural human language."
   },
   {
     "title": "Three Bugs, One Victory: The Day We Finally Shipped PM-011",
@@ -6079,7 +6288,8 @@
     "workDateISO": "2025-07-12T00:00:00.000Z",
     "cluster": "test-suite-recovery",
     "featured": false,
-    "imageCaption": "robot-weekend.webp"
+    "imageCaption": "robot-weekend.webp",
+    "imageAlt": "Three tangled threads converge into a single resolved line, representing bugs cleared on the path to shipping."
   },
   {
     "title": "The AI Detective Squad: When Three Agents Solve One Mystery",
@@ -6099,7 +6309,8 @@
     "workDate": "Jul 12, 2025",
     "workDateISO": "2025-07-12T00:00:00.000Z",
     "cluster": "test-suite-recovery",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Three robot detectives comparing clues, each bringing a different angle to crack one shared technical mystery."
   },
   {
     "title": "Digital Archaeology of a Lost AI Development Weekend",
@@ -6120,7 +6331,8 @@
     "workDateISO": "2025-07-11T00:00:00.000Z",
     "cluster": "meta-development",
     "chatDate": "7/11/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot uncovering a minimal artifact from the ground, reconstructing a lost sprint from its remains."
   },
   {
     "title": "Building the MVP While Keeping the Dream Alive (fix roadmap, check facts)",
@@ -6142,7 +6354,8 @@
     "cluster": "orchestration-verification",
     "chatDate": "7/9/2025",
     "featured": false,
-    "imageCaption": "robot-drivered.webp"
+    "imageCaption": "robot-drivered.webp",
+    "imageAlt": "A builder holding both a rough MVP and a detailed blueprint, balancing near-term delivery against long-term vision."
   },
   {
     "title": "When the Bugs Lead You Home",
@@ -6163,7 +6376,8 @@
     "workDateISO": "2025-07-09T00:00:00.000Z",
     "cluster": "the-debugging-marathon",
     "chatDate": "7/9/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot surrounded by a swarm of bees, each sting revealing a path back to the root cause."
   },
   {
     "title": "The Bug That Made Us Smarter",
@@ -6184,7 +6398,8 @@
     "workDateISO": "2025-07-09T00:00:00.000Z",
     "cluster": "the-debugging-marathon",
     "chatDate": "7/9/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot standing calmly amid a swarm of bees, each sting a lesson that sharpened the team's judgment."
   },
   {
     "title": "When Your Tests Pass But Your App Fails",
@@ -6205,7 +6420,8 @@
     "workDateISO": "2025-07-09T00:00:00.000Z",
     "cluster": "the-debugging-marathon",
     "chatDate": "7/9/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot in professor's garb holding a passing grade while the application behind it crashes."
   },
   {
     "title": "Two-Fisted Coding: Wrangling Robot Programmers When You're Just a PM",
@@ -6226,7 +6442,8 @@
     "workDateISO": "2025-07-08T00:00:00.000Z",
     "cluster": "the-debugging-marathon",
     "chatDate": "7/8/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A rider steering two horses at once, representing a PM keeping paired AI agents pointed in one direction."
   },
   {
     "title": "The Coordination Tax: When Copy-Paste Becomes Your Biggest Bottleneck",
@@ -6246,7 +6463,8 @@
     "workDate": "Jul 8, 2025",
     "workDateISO": "2025-07-08T00:00:00.000Z",
     "cluster": "the-debugging-marathon",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot juggling stone tablets, capturing the overhead of manually shuttling context between agents."
   },
   {
     "title": "The Archaeology of Code (Or: How Session Logs Became Stories)",
@@ -6266,7 +6484,8 @@
     "workDate": "Jul 7, 2025",
     "workDateISO": "2025-07-07T00:00:00.000Z",
     "cluster": "meta-development",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot examining stone tablets, reading layered session logs as ancient records of past decisions."
   },
   {
     "title": "The Debugging Cascade: A 90-Minute Journey Through Integration Hell",
@@ -6286,7 +6505,8 @@
     "workDate": "Jul 7, 2025",
     "workDateISO": "2025-07-07T00:00:00.000Z",
     "cluster": "the-debugging-marathon",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot weighed down by stacked overhead, illustrating how one integration failure triggers a chain of further problems."
   },
   {
     "title": "When 80% Overhead Forces a Tool Change",
@@ -6306,7 +6526,8 @@
     "workDate": "Jul 6, 2025",
     "workDateISO": "2025-07-06T00:00:00.000Z",
     "cluster": "orchestration-verification",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot buckling under the weight of overhead, signaling the moment a tool change becomes unavoidable."
   },
   {
     "title": "The Zeno's Paradox of Debugging: A Weekend with Piper Morgan",
@@ -6326,7 +6547,8 @@
     "workDate": "Jul 6, 2025",
     "workDateISO": "2025-07-06T00:00:00.000Z",
     "cluster": "the-debugging-marathon",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot taking aim with a bow, each arrow closing half the remaining distance to the target."
   },
   {
     "title": "The Day We Taught Piper to Summarize (Almost)",
@@ -6346,7 +6568,8 @@
     "workDate": "Jul 4, 2025",
     "workDateISO": "2025-07-04T00:00:00.000Z",
     "cluster": "the-debugging-marathon",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot with blank expression and empty hands, reflecting an AI struggling to hold new information."
   },
   {
     "title": "Refining AI Chat Continuity for Complex Projects",
@@ -6367,7 +6590,8 @@
     "workDateISO": "2025-07-03T00:00:00.000Z",
     "cluster": "enhanced-capabilities",
     "chatDate": "8/28/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot in a professional pose, holding accumulated knowledge and prepared to carry context across sessions."
   },
   {
     "title": "Making Strategic Technical Decisions with AI: The MCP Integration Story",
@@ -6387,7 +6611,8 @@
     "workDate": "Jul 3, 2025",
     "workDateISO": "2025-07-03T00:00:00.000Z",
     "cluster": "enhanced-capabilities",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot executive assistant reviewing a strategic brief, representing AI as a technical decision partner."
   },
   {
     "title": "Why I Created an AI Chief of Staff",
@@ -6407,7 +6632,8 @@
     "workDate": "Jul 3, 2025",
     "workDateISO": "2025-07-03T00:00:00.000Z",
     "cluster": "enhanced-capabilities",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot in an executive assistant role, managing calendars and decisions to free up its human partner for higher-order thinking."
   },
   {
     "title": "The Day We Stopped Fighting the System",
@@ -6427,7 +6653,8 @@
     "workDate": "Jul 3, 2025",
     "workDateISO": "2025-07-03T00:00:00.000Z",
     "cluster": "the-debugging-marathon",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A first-person view from an AI's perspective, looking outward at the system it finally agreed to work within."
   },
   {
     "title": "The Real Bugs Live in the UI (A Testing Reality Check)",
@@ -6447,7 +6674,8 @@
     "workDate": "Jul 1, 2025",
     "workDateISO": "2025-07-01T00:00:00.000Z",
     "cluster": "the-debugging-marathon",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot swatting an oversized mosquito, representing bugs that lurk in the user interface."
   },
   {
     "title": "Teaching an AI to Sound Like Me (Without Losing My Mind)",
@@ -6467,7 +6695,8 @@
     "workDate": "Jun 30, 2025",
     "workDateISO": "2025-06-30T00:00:00.000Z",
     "cluster": "infrastructure-sprint",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot studying its own reflection, capturing the effort of teaching AI to mirror a human voice."
   },
   {
     "title": "Battle-Testing GitHub Integration: When Recovery Becomes Learning",
@@ -6488,7 +6717,8 @@
     "workDateISO": "2025-06-29T00:00:00.000Z",
     "cluster": "first-production-tests",
     "chatDate": "7/22/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot holding a patched balloon aloft, showing how integration failures become lessons that hold up."
   },
   {
     "title": "When Overconfidence Meets rm -rf: A GitHub Pages Debugging Tale",
@@ -6509,7 +6739,8 @@
     "workDateISO": "2025-06-27T00:00:00.000Z",
     "cluster": "infrastructure-sprint",
     "chatDate": "7/22/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot watching a balloon escape its grip, the moment overconfidence lets something irreversible slip away."
   },
   {
     "title": "When Your Tests Tell You What Your Code Should Do",
@@ -6530,7 +6761,8 @@
     "workDateISO": "2025-06-27T00:00:00.000Z",
     "cluster": "first-production-tests",
     "chatDate": "7/20/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot at the wheel navigating by the route the tests have already mapped out ahead of the code."
   },
   {
     "title": "Following Your Own Patterns",
@@ -6551,7 +6783,8 @@
     "workDateISO": "2025-06-27T00:00:00.000Z",
     "cluster": "first-production-tests",
     "chatDate": "7/20/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot navigating by starlight, using self-established patterns rather than borrowed maps."
   },
   {
     "title": "Integration Reveals All: How Building File Analysis Exposed Hidden Architecture",
@@ -6571,7 +6804,8 @@
     "workDate": "Jun 27, 2025",
     "workDateISO": "2025-06-27T00:00:00.000Z",
     "cluster": "genesis-architecture",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot uncovering a hidden object, representing architectural truths exposed only during integration."
   },
   {
     "title": "Session Logs: A Surprisingly Useful Practice for AI Development",
@@ -6591,7 +6825,8 @@
     "workDate": "Jun 26, 2025",
     "workDateISO": "2025-06-26T00:00:00.000Z",
     "cluster": "methodology-refinement",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A log file open on a workbench, representing the quiet practice of writing down what happened and what was learned."
   },
   {
     "title": "The 48-hour rollercoaster: from working tests to ‘Failed attempt’ and back to ‘LIFE SAVER !!!”’",
@@ -6611,7 +6846,8 @@
     "workDate": "Jun 26, 2025",
     "workDateISO": "2025-06-26T00:00:00.000Z",
     "cluster": "complexity-reckoning",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot riding a steep rollercoaster, arms out, swinging between failure and triumphant recovery in two days."
   },
   {
     "title": "The Technical Debt Reckoning",
@@ -6632,7 +6868,8 @@
     "workDateISO": "2025-06-26T00:00:00.000Z",
     "cluster": "complexity-reckoning",
     "chatDate": "7/20/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot sprouting an awkward third arm, embodying the unwieldy workarounds that accumulate as technical debt."
   },
   {
     "title": "When TDD Saves Your Architecture",
@@ -6652,7 +6889,8 @@
     "workDate": "Jun 25, 2025",
     "workDateISO": "2025-06-25T00:00:00.000Z",
     "cluster": "complexity-reckoning",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot in a heroic stance, test-driven discipline rescuing a fragile system from collapse."
   },
   {
     "title": "The Integration Reality Check",
@@ -6672,7 +6910,8 @@
     "workDate": "Jun 24, 2025",
     "workDateISO": "2025-06-24T00:00:00.000Z",
     "cluster": "foundation-building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot connecting two separate systems with a cable, discovering what actually works when parts meet."
   },
   {
     "title": "Day Zero or Deja Zero: When Chaos Became a Claude Project",
@@ -6692,7 +6931,8 @@
     "workDate": "Jun 23, 2025",
     "workDateISO": "2025-06-23T00:00:00.000Z",
     "cluster": "foundation-building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot settling into a fresh office setup, beginning again with structure where chaos had been."
   },
   {
     "title": "7/16 to 7/18: The Cascade Effect: How Testing the UI Led to Architectural Discoveries",
@@ -6713,7 +6953,8 @@
     "workDateISO": "2025-06-23T00:00:00.000Z",
     "cluster": "foundation-building",
     "chatDate": "7/16/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot mending broken pottery with gold seams, finding structural insights in the act of repair."
   },
   {
     "title": "The Demo That Broke (And Why That's Perfect)",
@@ -6733,7 +6974,8 @@
     "workDate": "Jun 22, 2025",
     "workDateISO": "2025-06-22T00:00:00.000Z",
     "cluster": "methodology-refinement",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot mending cracked ceramic with gold, representing a broken demo repaired into something stronger."
   },
   {
     "title": "When Your Docs Lie",
@@ -6753,7 +6995,8 @@
     "workDate": "Jun 21, 2025",
     "workDateISO": "2025-06-21T00:00:00.000Z",
     "cluster": "complexity-reckoning",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Two robots consulting a document that contradicts observable reality, highlighting documentation that misleads rather than guides."
   },
   {
     "title": "Successful Prototype Syndrome",
@@ -6774,7 +7017,8 @@
     "workDateISO": "2025-06-19T00:00:00.000Z",
     "cluster": "complexity-reckoning",
     "chatDate": "7/20/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot reclining with unearned confidence, embodying the trap of early prototype success."
   },
   {
     "title": "Digging Out of the Complexity Hole",
@@ -6795,7 +7039,8 @@
     "workDateISO": "2025-06-17T00:00:00.000Z",
     "cluster": "complexity-reckoning",
     "chatDate": "7/20/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot digging upward through layered soil, working systematically out of an accumulated complexity trap."
   },
   {
     "title": "When Architecture Principles Trump Tactical Convenience",
@@ -6816,7 +7061,8 @@
     "workDateISO": "2025-06-16T00:00:00.000Z",
     "cluster": "complexity-reckoning",
     "chatDate": "7/22/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot steering a sailboat by fixed stars rather than taking the nearest shortcut across the water."
   },
   {
     "title": "When Multiple AIs Can Still Drift Together",
@@ -6837,7 +7083,8 @@
     "workDateISO": "2025-06-15T00:00:00.000Z",
     "cluster": "complexity-reckoning",
     "chatDate": "7/20/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Multiple robots skating in formation, drifting off-course together despite moving in sync."
   },
   {
     "title": "From Architecture Drift to Working AI",
@@ -6857,7 +7104,8 @@
     "workDate": "Jun 15, 2025",
     "workDateISO": "2025-06-15T00:00:00.000Z",
     "cluster": "foundation-building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot reassembling a simple toy, returning an overcomplicated system to something that actually works."
   },
   {
     "title": "Always Keep Something Showable: Demo Infrastructure for Hyperfast Development",
@@ -6878,7 +7126,8 @@
     "workDateISO": "2025-06-14T00:00:00.000Z",
     "cluster": "methodology-refinement",
     "chatDate": "8/6/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot proudly displaying a working toy model, embodying the practice of always having something to show."
   },
   {
     "title": "Keeping Your AI Project on Track: Lessons from Building a Product Management Assistant",
@@ -6899,7 +7148,8 @@
     "workDateISO": "2025-06-14T00:00:00.000Z",
     "cluster": "complexity-reckoning",
     "chatDate": "7/22/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot mushing a dogsled team, steering an AI project through demanding terrain."
   },
   {
     "title": "Bidirectional Intelligence: Teaching AI to Critique, Not Just Create",
@@ -6920,7 +7170,8 @@
     "workDateISO": "2025-06-09T00:00:00.000Z",
     "cluster": "foundation-building",
     "featured": false,
-    "imageCaption": "robot-critique.webp"
+    "imageCaption": "robot-critique.webp",
+    "imageAlt": "An AI system receiving feedback in both directions, learning to critique its own outputs as well as create them."
   },
   {
     "title": "Small Scripts Win: Building Knowledge That Actually Knows Things",
@@ -6940,7 +7191,8 @@
     "workDate": "Jun 8, 2025",
     "workDateISO": "2025-06-08T00:00:00.000Z",
     "cluster": "foundation-building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot tapping its temple knowingly, representing knowledge embedded in focused, purposeful scripts."
   },
   {
     "title": "Modeling What PMs Do for Piper",
@@ -6960,7 +7212,8 @@
     "workDate": "Jun 7, 2025",
     "workDateISO": "2025-06-07T00:00:00.000Z",
     "cluster": "foundation-building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot constructing a small birdhouse with care, modeling the structured habitat a product manager builds for an AI to inhabit."
   },
   {
     "title": "Taking Stock: The Value of Pausing to Document and Plan",
@@ -6980,7 +7233,8 @@
     "workDate": "Jun 6, 2025",
     "workDateISO": "2025-06-06T00:00:00.000Z",
     "cluster": "genesis-architecture",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot studying a detailed plan spread across a table, pausing progress to document and chart the way forward."
   },
   {
     "title": "From Scaffolding to Flight: Before the Training Wheels Come Off",
@@ -7000,7 +7254,8 @@
     "workDate": "Jun 5, 2025",
     "workDateISO": "2025-06-05T00:00:00.000Z",
     "cluster": "genesis-architecture",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot on a tricycle, poised at the threshold before training wheels come off and real flight begins."
   },
   {
     "title": "Knowledge Hierarchies and Dependency Hell",
@@ -7020,7 +7275,8 @@
     "workDate": "Jun 4, 2025",
     "workDateISO": "2025-06-04T00:00:00.000Z",
     "cluster": "genesis-architecture",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot carefully pulling a Jenga block from a tower, showing how dependency chains teeter on single pieces."
   },
   {
     "title": "The Learning Infrastructure Gambit",
@@ -7040,7 +7296,8 @@
     "workDate": "Jun 3, 2025",
     "workDateISO": "2025-06-03T00:00:00.000Z",
     "cluster": "genesis-architecture",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot laying concrete at a foundation, investing in invisible groundwork before any visible structure can rise."
   },
   {
     "title": "Persistence of Memory: AI Can't Learn without It",
@@ -7060,7 +7317,8 @@
     "workDate": "Jun 2, 2025",
     "workDateISO": "2025-06-02T00:00:00.000Z",
     "cluster": "foundation-building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot arranging memory cards in careful sequence, building the continuity an AI needs to learn across sessions."
   },
   {
     "title": "Building AI That Actually Thinks About Product Work",
@@ -7080,7 +7338,8 @@
     "workDate": "Jun 2, 2025",
     "workDateISO": "2025-06-02T00:00:00.000Z",
     "cluster": "foundation-building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot conductor raising a baton to coordinate an ensemble, representing AI orchestrating product thinking."
   },
   {
     "title": "From Task Executor to Problem Solver (comes befofe Domain-First Dev)",
@@ -7100,7 +7359,8 @@
     "workDate": "Jun 2, 2025",
     "workDateISO": "2025-06-02T00:00:00.000Z",
     "cluster": "foundation-building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot pausing at a maze junction, shifting from following instructions to reasoning about the path."
   },
   {
     "title": "Domain-First Development: Actually Building What We Designed",
@@ -7120,7 +7380,8 @@
     "workDate": "Jun 2, 2025",
     "workDateISO": "2025-06-02T00:00:00.000Z",
     "cluster": "foundation-building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot at a construction site, working from blueprints to build exactly what was originally designed."
   },
   {
     "title": "The $0 Bootstrap Stack: Building Enterprise Infrastructure for Free (With Upgrade Paths)",
@@ -7140,7 +7401,8 @@
     "workDate": "Jun 1, 2025",
     "workDateISO": "2025-06-01T00:00:00.000Z",
     "cluster": "foundation-building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot assembling infrastructure from salvaged parts, building something substantial from nothing."
   },
   {
     "title": "Chasing Rabbits (A Debugging Story)",
@@ -7160,7 +7422,8 @@
     "workDate": "May 31, 2025",
     "workDateISO": "2025-05-31T00:00:00.000Z",
     "cluster": "first-production-tests",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot pursuing a trail of rabbits, illustrating how one debugging lead multiplies into many."
   },
   {
     "title": "When Your AI Writes 500 Lines of Boilerplate (And Why That's Actually Useful)",
@@ -7180,7 +7443,8 @@
     "workDate": "May 31, 2025",
     "workDateISO": "2025-05-31T00:00:00.000Z",
     "cluster": "first-production-tests",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot surrounded by detailed blueprints, generating structural scaffolding at scale."
   },
   {
     "title": "When Claude Took a Break (And Gemini Stepped In)",
@@ -7201,7 +7465,8 @@
     "workDateISO": "2025-05-30T00:00:00.000Z",
     "cluster": "first-production-tests",
     "chatDate": "7/11/2025",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A standby robot stepping forward from the wings to take over a role mid-performance without missing a beat."
   },
   {
     "title": "The Demo That Needed Documentation",
@@ -7221,7 +7486,8 @@
     "workDate": "May 30, 2025",
     "workDateISO": "2025-05-30T00:00:00.000Z",
     "cluster": "first-production-tests",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot caught off guard at a podium, a working demo undermined by the absence of supporting documentation."
   },
   {
     "title": "Naming Piper Morgan",
@@ -7241,7 +7507,8 @@
     "workDate": "May 29, 2025",
     "workDateISO": "2025-05-29T00:00:00.000Z",
     "cluster": "complexity-reckoning",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot raising a champagne glass in celebration, marking the moment a project earns its name."
   },
   {
     "title": "The Architectural Reckoning: When Three Experts Agree You Should Start Over",
@@ -7261,7 +7528,8 @@
     "workDate": "May 29, 2025",
     "workDateISO": "2025-05-29T00:00:00.000Z",
     "cluster": "foundation-building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "Three robots in conference, each independently arriving at the same verdict: start the design over."
   },
   {
     "title": "From CLI to GitHub Integration: When Prototypes Meet Real Workflows",
@@ -7281,7 +7549,8 @@
     "workDate": "May 29, 2025",
     "workDateISO": "2025-05-29T00:00:00.000Z",
     "cluster": "foundation-building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot broadcasting from a screen, showing a command-line tool stepping up into a live production workflow."
   },
   {
     "title": "From Research Question to Working Prototype: Building an AI PM Assistant from Scratch",
@@ -7301,7 +7570,8 @@
     "workDate": "May 29, 2025",
     "workDateISO": "2025-05-29T00:00:00.000Z",
     "cluster": "foundation-building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot assembling a kit from individual parts, moving from an open question to a functional first prototype."
   },
   {
     "title": "The RAG Revelation: When Your Prototype Answers Back",
@@ -7321,7 +7591,8 @@
     "workDate": "May 29, 2025",
     "workDateISO": "2025-05-29T00:00:00.000Z",
     "cluster": "foundation-building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot holding a worn cloth, piecing together retrieved context to make a prototype that finally answers back."
   },
   {
     "title": "The Great Rebuild: Starting Over When Starting Over Is the Only Option",
@@ -7341,7 +7612,8 @@
     "workDate": "May 29, 2025",
     "workDateISO": "2025-05-29T00:00:00.000Z",
     "cluster": "genesis-architecture",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot inventor surrounded by sketches and discarded parts, embracing a full restart as the only path forward."
   },
   {
     "title": "The Demo That Killed the Prototype",
@@ -7361,7 +7633,8 @@
     "workDate": "May 29, 2025",
     "workDateISO": "2025-05-29T00:00:00.000Z",
     "cluster": "genesis-architecture",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot pulling back a curtain to reveal the wizard's machinery, a demo exposing the prototype's fundamental limits."
   },
   {
     "title": "The PM Who Automated Himself (Or at Least Tried To)",
@@ -7381,7 +7654,8 @@
     "workDate": "May 28, 2025",
     "workDateISO": "2025-05-28T00:00:00.000Z",
     "cluster": "genesis-architecture",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot puppeteer pulling strings on a smaller figure, blurring the line between creator and creation."
   },
   {
     "title": "The Question That Started Everything",
@@ -7401,6 +7675,7 @@
     "workDate": "May 27, 2025",
     "workDateISO": "2025-05-27T00:00:00.000Z",
     "cluster": "foundation-building",
-    "featured": false
+    "featured": false,
+    "imageAlt": "A robot pausing mid-thought, posed with a raised hand, holding an unanswered question."
   }
 ]
