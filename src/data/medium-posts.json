@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #047: The Team Catches Itself",
+    "excerpt": "June 5–11, 2026 Three weeks ago the \"substrate\" was a pile of conventions my agent team had accumulated. Two weeks ago it talked back: it produced enough operating data to invalidate one of its own architectural decisions, and we pivoted by that Thursday. A week ago it shipped the backlog. This w...",
+    "url": "/blog/weekly-ship-047-the-team-catches-itself",
+    "slug": "weekly-ship-047-the-team-catches-itself",
+    "publishedAt": "Jun 17, 2026",
+    "publishedAtISO": "2026-06-17T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-6aa43a3503ca",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
+    "imageCaption": "",
+    "category": "ship",
+    "cluster": "",
+    "workDate": "Jun 5, 2026",
+    "workDateISO": "2026-06-05T00:00:00.000Z"
+  },
+  {
     "title": "First Subagent in Production",
     "excerpt": "May 6–7, 2026 Quite a while back the so-called Excellence Flywheel methodology we're evolving to build Piper Morgan came up with the concept of an audit cascade. This was when I would first plan my next move in a chat with my Chief Architect agent (Arch), resulting in them writing a draft gamepla...",
     "url": "/blog/first-subagent-in-production",
@@ -17,9 +39,9 @@
     "imageAlt": "A workshop where a human creator watches proudly from above as a glowing AI lead developer supervises a smaller AI subagent completing careful work below, while a shared mechanical cable quietly causes a tiny unnoticed disturbance in the workshop machinery",
     "imageCaption": "\"They grow up so fast!\"",
     "category": "building",
-    "cluster": "",
     "workDate": "May 6, 2026",
-    "workDateISO": "2026-05-06T00:00:00.000Z"
+    "workDateISO": "2026-05-06T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Solo Founder Paradox",
