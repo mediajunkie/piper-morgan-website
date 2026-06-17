@@ -6,5 +6,5 @@ export const metadata = {
 };
 
 export default function NewsletterRedirect() {
-  return <ClientRedirect to="/try/beta" message="Redirecting to waitlist..." />;
+  return <ClientRedirect to="/blog" message="Redirecting to the blog..." />;
 }
