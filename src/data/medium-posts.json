@@ -1,5 +1,27 @@
 [
   {
+    "title": "Hypothesis Refuted",
+    "excerpt": "May 8–9, 2026 The system has an automated quality test we run periodically against a panel of scripted user inputs (we call it \"the canonical query list\") and it started off with a vision I had of something like a morning litany by which an entity might \"wake up\" and systematically review what it...",
+    "url": "/blog/hypothesis-refuted",
+    "slug": "hypothesis-refuted",
+    "publishedAt": "Jun 18, 2026",
+    "publishedAtISO": "2026-06-18T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-2175be6c7522",
+    "featuredImage": "/assets/blog-images/hypothesis-refuted.webp",
+    "thumbnail": "/assets/blog-images/hypothesis-refuted.webp",
+    "imageAlt": "A worried surveyor inspects a sturdy stone bridge using warped measuring tools—a bent ruler, tangled plumb line, and damaged map—while travelers cross the bridge without concern and a puzzled ghostly AI examines the crooked ruler, realizing the instruments are the real problem.",
+    "imageCaption": "\"Maybe check the ruler?\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "May 8, 2026",
+    "workDateISO": "2026-05-08T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #047: The Team Catches Itself",
     "excerpt": "June 5–11, 2026 Three weeks ago the \"substrate\" was a pile of conventions my agent team had accumulated. Two weeks ago it talked back: it produced enough operating data to invalidate one of its own architectural decisions, and we pivoted by that Thursday. A week ago it shipped the backlog. This w...",
     "url": "/blog/weekly-ship-047-the-team-catches-itself",
@@ -17,9 +39,9 @@
     "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
     "imageCaption": "",
     "category": "ship",
-    "cluster": "",
     "workDate": "Jun 5, 2026",
-    "workDateISO": "2026-06-05T00:00:00.000Z"
+    "workDateISO": "2026-06-05T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "First Subagent in Production",
