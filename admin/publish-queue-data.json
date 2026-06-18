@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-17T19:41:30.474Z",
+  "buildTime": "2026-06-18T13:55:46.421Z",
   "totalEntries": 394,
   "sections": {
     "readyToPublish": [
@@ -763,26 +763,6 @@
         "draftPath": "docs/public/comms/drafts/upstream-of-the-floor.md",
         "notes": "Beat 3 of 9-beat narrative slate. Multi-day A+B-plot. A-plot: Apr 25 STOP CONDITION (stale server) + Scenario 1 finding (floor isn't reachable; pre-classifier intercepts) → PPM 'audit-shape not build-quality' reframe → Architect 'ethics is upstream' → #1004 design through ship in 6 days. B-plot: Apr 26 mail-cascade comedy (CXO can't see Exec kickoff; Docs's subshell drift compounds) → targeted mailbox-discipline norm in 30 minutes. Through-line: fix one layer upstream of where the symptom shows.",
         "altText": "A newly built floodgate stands across a nearly dry river channel while most of the river flows down an unnoticed branch upstream, as workers realize the water has been bypassing their structure all along.",
-        "caption": ""
-      },
-      {
-        "title": "Weekly Ship #045: The Substrate Pivoted",
-        "theme": "ship",
-        "status": "published",
-        "workDate": "2026-05-22",
-        "endWorkDate": "2026-05-28",
-        "pubDate": "2026-06-03",
-        "mediumURL": "",
-        "liPubDate": "2026-06-03",
-        "linkedinURL": "https://www.linkedin.com/pulse/weekly-ship-045-substrate-pivoted-christian-crumlish-lb6xc/",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/shipping-news/weekly-ship-045-the-substrate-pivoted",
-        "blogPath": "/shipping-news/weekly-ship-045-the-substrate-pivoted",
-        "cartoon": "piper-ship",
-        "chatDate": "",
-        "draftPath": "docs/public/comms/drafts/weekly-ship-045-draft-2026-06-03.md",
-        "notes": "The Substrate Pivoted — worktree-as-cycle-default reversal week (May 22-28). LinkedIn-only syndication (ship cadence); liPubDate/linkedinURL pending PM post.",
-        "altText": "A child leads a boat crewed by robots.",
         "caption": ""
       }
     ],
