@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-18T13:55:46.421Z",
+  "buildTime": "2026-06-19T23:29:03.605Z",
   "totalEntries": 394,
   "sections": {
     "readyToPublish": [
@@ -743,26 +743,6 @@
         "draftPath": "docs/public/comms/drafts/preparatory-work-as-valuable-work-draft.md",
         "notes": "",
         "altText": "",
-        "caption": ""
-      },
-      {
-        "title": "Upstream of the Floor",
-        "theme": "building",
-        "status": "published",
-        "workDate": "2026-04-25",
-        "endWorkDate": "2026-04-28",
-        "pubDate": "2026-06-04",
-        "mediumURL": "https://medium.com/building-piper-morgan/upstream-of-the-floor-92f0a44ca239",
-        "liPubDate": "",
-        "linkedinURL": "",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/blog/upstream-of-the-floor",
-        "blogPath": "/blog/upstream-of-the-floor",
-        "cartoon": "",
-        "chatDate": "",
-        "draftPath": "docs/public/comms/drafts/upstream-of-the-floor.md",
-        "notes": "Beat 3 of 9-beat narrative slate. Multi-day A+B-plot. A-plot: Apr 25 STOP CONDITION (stale server) + Scenario 1 finding (floor isn't reachable; pre-classifier intercepts) → PPM 'audit-shape not build-quality' reframe → Architect 'ethics is upstream' → #1004 design through ship in 6 days. B-plot: Apr 26 mail-cascade comedy (CXO can't see Exec kickoff; Docs's subshell drift compounds) → targeted mailbox-discipline norm in 30 minutes. Through-line: fix one layer upstream of where the symptom shows.",
-        "altText": "A newly built floodgate stands across a nearly dry river channel while most of the river flows down an unnoticed branch upstream, as workers realize the water has been bypassing their structure all along.",
         "caption": ""
       }
     ],
