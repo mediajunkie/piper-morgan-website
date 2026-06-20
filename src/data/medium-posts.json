@@ -1,5 +1,27 @@
 [
   {
+    "title": "This One's Taken",
+    "excerpt": "May 9–11, 2026 This project has collected patterns for nearly a year now. Over time they've kind of drifted into framings around cautionary antipatterns (\"parallel-authoring drift\", \"extension without integration\", \"assembly assumption\") with our more positive \"yes, do this\" advice captured in me...",
+    "url": "/blog/this-ones-taken",
+    "slug": "this-ones-taken",
+    "publishedAt": "Jun 20, 2026",
+    "publishedAtISO": "2026-06-20T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-e3a074aa9d0f",
+    "featuredImage": "/assets/blog-images/this-ones-taken.webp",
+    "thumbnail": "/assets/blog-images/this-ones-taken.webp",
+    "imageAlt": "A glowing AI pattern detective studies a case board where two identical Pattern 067 cards point back to Pattern 063, revealing that the pattern catalog has become evidence of its own parallel-authoring drift.",
+    "imageCaption": "\"It''s elementary!\"",
+    "category": "insight",
+    "cluster": "era-2",
+    "workDate": "May 9, 2026",
+    "workDateISO": "2026-05-09T00:00:00.000Z"
+  },
+  {
     "title": "Hypothesis Refuted",
     "excerpt": "May 8–9, 2026 The system has an automated quality test we run periodically against a panel of scripted user inputs (we call it \"the canonical query list\") and it started off with a vision I had of something like a morning litany by which an entity might \"wake up\" and systematically review what it...",
     "url": "/blog/hypothesis-refuted",
@@ -17,9 +39,9 @@
     "imageAlt": "A worried surveyor inspects a sturdy stone bridge using warped measuring tools—a bent ruler, tangled plumb line, and damaged map—while travelers cross the bridge without concern and a puzzled ghostly AI examines the crooked ruler, realizing the instruments are the real problem.",
     "imageCaption": "\"Maybe check the ruler?\"",
     "category": "building",
-    "cluster": "",
     "workDate": "May 8, 2026",
-    "workDateISO": "2026-05-08T00:00:00.000Z"
+    "workDateISO": "2026-05-08T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #047: The Team Catches Itself",
