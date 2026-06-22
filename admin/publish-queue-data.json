@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-20T13:47:35.575Z",
+  "buildTime": "2026-06-22T02:14:47.375Z",
   "totalEntries": 394,
   "sections": {
     "readyToPublish": [
@@ -703,46 +703,6 @@
         "draftPath": "docs/public/comms/drafts/where-would-the-data-come-from.md",
         "notes": "Beat 4 of 9-beat narrative slate. Single-day Apr 30. Lead Dev files #1018 Phase 1 design 7:35 AM proposing real-traffic calibration before flag-flip; PM asks ~7:45 AM where the real-traffic data would come from (alpha = no real users → catch-22 named). 7:55 AM flip-now memo with 3-phase simulation-first reframe. 8:23 AM Architect ratifies with ADR-061 v1.0. 1:30 PM Phase F flag-flip merged → multi-week #992 ETHICS-ACTIVATE arc closes. Through-line: alpha plans drift toward production-shaped sequencing; ask where the data would come from. Distributed 6/9: blog + Medium published (building = Medium-only / no LinkedIn).",
         "altText": "A fisherman sits beside a tackle box and thermos, patiently casting into a vast dry lakebed while a glowing, semi-corporeal AI agent studies a clipboard and looks around in confusion at the complete absence of water.",
-        "caption": ""
-      },
-      {
-        "title": "Permission to Pause",
-        "theme": "insight",
-        "status": "published",
-        "workDate": "2026-03-13",
-        "endWorkDate": "",
-        "pubDate": "2026-06-07",
-        "mediumURL": "https://medium.com/building-piper-morgan/permission-to-pause-0580afe20acb",
-        "liPubDate": "2026-06-07",
-        "linkedinURL": "https://www.linkedin.com/pulse/permission-pause-christian-crumlish-eyqzc/",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/blog/permission-to-pause",
-        "blogPath": "/blog/permission-to-pause",
-        "cartoon": "",
-        "chatDate": "",
-        "draftPath": "docs/public/comms/drafts/permission-to-pause.md",
-        "notes": "Reframed + renamed 2026-06-05: draft H1 was still 'The Deliberate Pause' (doppelganger with the published Mar-22 narrative of that name) — retitled to Permission to Pause, foregrounded the permission/earned-trust angle, added a clause distinguishing the decision-pause from the narrative's rest-pause, refreshed stale footer (now teases Where Would the Data Come From, Jun 9), fixed load-bearing. Distinct from the narrative: decision-pauses (audit cadence / Colleague-Test-v2 hold / M1 holds) + earned-trust thesis vs the narrative's Mar-6 rest-story. NEEDS PM voice-pass on 2 placeholders (ADD PERSONAL ANECDOTE + CONSIDER) before Jun 7.",
-        "altText": "A mountaineer kneels to probe the snow ahead while impatient teammates wait behind, unaware of a hidden crevasse opening in the ridge.",
-        "caption": ""
-      },
-      {
-        "title": "Be Prepared (Preparatory Work as Valuable Work)",
-        "theme": "insight",
-        "status": "published",
-        "workDate": "2025-12-09",
-        "endWorkDate": "2025-12-09",
-        "pubDate": "2026-06-06",
-        "mediumURL": "https://medium.com/building-piper-morgan/be-prepared-bf15a8e4baf1",
-        "liPubDate": "2026-06-06",
-        "linkedinURL": "https://www.linkedin.com/pulse/prepared-christian-crumlish-4h41c/",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/blog/be-prepared",
-        "blogPath": "/blog/be-prepared",
-        "cartoon": "",
-        "chatDate": "2025-11-19",
-        "draftPath": "docs/public/comms/drafts/preparatory-work-as-valuable-work-draft.md",
-        "notes": "",
-        "altText": "",
         "caption": ""
       }
     ],
