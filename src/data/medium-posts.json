@@ -1,5 +1,27 @@
 [
   {
+    "title": "Extension Without Integration",
+    "excerpt": "March 13–19, 2026 Six features. Each one working and passing its tests. Together, they produced chaos. We ran into this pattern while investigating a conversation continuity bug: A user would say \"Sure\" after Piper made an offer to help with something, and instead of continuing the conversation, ...",
+    "url": "/blog/extension-without-integration",
+    "slug": "extension-without-integration",
+    "publishedAt": "Jun 22, 2026",
+    "publishedAtISO": "2026-06-22T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-6db4781ea389",
+    "featuredImage": "/assets/blog-images/extension-without-integration.webp",
+    "thumbnail": "/assets/blog-images/extension-without-integration.webp",
+    "imageAlt": "A hotel guest's casual gesture triggers four eager valets at once—one grabs the keys, one offers the elevator, and two compete over the same suitcase, while a translucent observer realizes the coordination problem.",
+    "imageCaption": "\"I''ve got it!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Mar 13, 2026",
+    "workDateISO": "2026-03-13T00:00:00.000Z"
+  },
+  {
     "title": "This One's Taken",
     "excerpt": "May 9–11, 2026 This project has collected patterns for nearly a year now. Over time they've kind of drifted into framings around cautionary antipatterns (\"parallel-authoring drift\", \"extension without integration\", \"assembly assumption\") with our more positive \"yes, do this\" advice captured in me...",
     "url": "/blog/this-ones-taken",
@@ -19,7 +41,8 @@
     "category": "insight",
     "cluster": "era-2",
     "workDate": "May 9, 2026",
-    "workDateISO": "2026-05-09T00:00:00.000Z"
+    "workDateISO": "2026-05-09T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Hypothesis Refuted",
