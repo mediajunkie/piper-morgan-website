@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev --turbopack -p ${PORT:-3002}",
     "prebuild": "node scripts/copy-editorial-calendar.js && node scripts/generate-publish-queue-data.js && node scripts/fetch-linkedin-stats.js",
     "fetch-medium": "node scripts/fetch-blog-posts.js",
     "sync-linkedin": "node scripts/fetch-linkedin-stats.js",
