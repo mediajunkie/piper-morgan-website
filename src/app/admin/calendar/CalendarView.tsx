@@ -281,11 +281,19 @@ function KV({ label, children }: { label: string; children: React.ReactNode }) {
   );
 }
 
+function composeSlug(draftPath: string): string {
+  const base = draftPath.split('/').pop() ?? '';
+  return base.endsWith('.md') ? base.slice(0, -3) : base;
+}
+
 function DetailLinks({ entry }: { entry: CalendarEntry }) {
-  const links: { href: string; label: string }[] = [];
-  if (entry.blogURL) links.push({ href: entry.blogURL, label: 'blog' });
-  if (entry.mediumURL) links.push({ href: entry.mediumURL, label: 'Medium' });
-  if (entry.linkedinURL) links.push({ href: entry.linkedinURL, label: 'LinkedIn' });
+  const links: { href: string; label: string; external?: boolean }[] = [];
+  if (entry.draftPath && entry.status !== 'published') {
+    links.push({ href: `/admin/calendar/compose?slug=${encodeURIComponent(composeSlug(entry.draftPath))}`, label: 'Edit draft' });
+  }
+  if (entry.blogURL) links.push({ href: entry.blogURL, label: 'blog', external: true });
+  if (entry.mediumURL) links.push({ href: entry.mediumURL, label: 'Medium', external: true });
+  if (entry.linkedinURL) links.push({ href: entry.linkedinURL, label: 'LinkedIn', external: true });
   if (links.length === 0) return null;
   return (
     <div className="mt-2 flex flex-wrap gap-2 text-xs">
@@ -293,10 +301,9 @@ function DetailLinks({ entry }: { entry: CalendarEntry }) {
         <a
           key={l.label}
           href={l.href}
-          target="_blank"
-          rel="noopener noreferrer"
+          {...(l.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
           className="text-primary-teal-text dark:text-primary-teal hover:underline"
-        >{l.label} ↗</a>
+        >{l.label}{l.external ? ' ↗' : ' →'}</a>
       ))}
     </div>
   );

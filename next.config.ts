@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 import { withSentryConfig } from '@sentry/nextjs';
 
 const nextConfig: NextConfig = {
-  // Enable static export for GitHub Pages deployment
-  output: 'export',
+  // Static export for GitHub Pages — disabled in dev so API routes work
+  ...(process.env.NODE_ENV === 'production' ? { output: 'export' as const } : {}),
 
   // No basePath needed for custom domain deployment
 
