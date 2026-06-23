@@ -1,6 +1,6 @@
 {
-  "buildTime": "2026-06-22T02:14:47.375Z",
-  "totalEntries": 394,
+  "buildTime": "2026-06-23T13:12:50.258Z",
+  "totalEntries": 396,
   "sections": {
     "readyToPublish": [
       {
@@ -24,52 +24,12 @@
         "caption": ""
       },
       {
-        "title": "First Subagent in Production",
-        "theme": "building",
-        "status": "queued",
-        "workDate": "2026-05-06",
-        "endWorkDate": "2026-05-07",
-        "pubDate": "2026-06-16",
-        "mediumURL": "",
-        "liPubDate": "",
-        "linkedinURL": "",
-        "canonicalSite": "",
-        "blogURL": "",
-        "blogPath": "",
-        "cartoon": "",
-        "chatDate": "",
-        "draftPath": "docs/public/comms/drafts/first-subagent-in-production.md",
-        "notes": "Beat 6 of 9-beat narrative slate. Two-day arc. May 6 prep day: Lead Dev preps #1053 STANDUP-TEST-MIGRATION with 3 audit-cascade gates (Issue 24+1; Gameplan 27+4 N/A; Prompts 36+6 N/A). Cursor-template N/A-rate observation produces template-drift-signal memory + #1058 hygiene tracking. May 7 deployment: subagent runs 6:48-7:18 AM; Phase 2 reframe (12 tests already passing; subagent annotated rather than improvising); cross-agent git collision during run (chained && doesn't gate on result, only exit code); commit `69aa5e74` merged 7:30 AM. Two new memory entries refining branch-show-current discipline (gate-on-result + subagent-requires-real-worktree-or-foreground-commits-first). Through-line: first production subagent deployment surfaces the methodology's fourth layer (scaffolding around the deployment).",
-        "altText": "A workshop where a human creator watches proudly from above as a glowing AI lead developer supervises a smaller AI subagent completing careful work below, while a shared mechanical cable quietly causes a tiny unnoticed disturbance in the workshop machinery",
-        "caption": ""
-      },
-      {
-        "title": "Hypothesis Refuted",
-        "theme": "building",
-        "status": "queued",
-        "workDate": "2026-05-08",
-        "endWorkDate": "2026-05-09",
-        "pubDate": "2026-06-18",
-        "mediumURL": "",
-        "liPubDate": "",
-        "linkedinURL": "",
-        "canonicalSite": "",
-        "blogURL": "",
-        "blogPath": "",
-        "cartoon": "",
-        "chatDate": "",
-        "draftPath": "docs/public/comms/drafts/hypothesis-refuted.md",
-        "notes": "Beat 7 of 9-beat narrative slate. Two-day arc. May 8: Run-4 retest shows Quality 65.6% (apparent 6-pt drop from baseline); #1064 P0 filed hypothesizing LLM fabrication regression; investigation finds 0 of 10 auto-fails pure fabrication, 7 false flags from judge-calibration drift + auto-fail amplification + fixture pollution (Q56 smoking gun: 15 real todos in DB from prior runs mutating state without cleanup); 3 narrow real bugs. CEO directive: do not enter M2f until benchmark recovered. May 9: fixture reset (15 stale + 111 orphan wiped) + rubric recalibration memo + 3 fixes → Run 7 68.9% PASS exceeds baseline → M2f unblocked. Same day M2f Group A+B closed via dead-code deletions (-1813 LOC net) producing Pattern-067 (Issue-Body Reality Mismatch) — 3-of-5 issues described code that didn't exist. Through-line: when a measurement or description has drifted from the system it tracks, fix the reference not the system.",
-        "altText": "",
-        "caption": ""
-      },
-      {
-        "title": "Patterns Naming Patterns",
+        "title": "We Built Onboarding in Our Own Image",
         "theme": "insight",
         "status": "queued",
-        "workDate": "2026-05-09",
-        "endWorkDate": "2026-05-11",
-        "pubDate": "2026-06-20",
+        "workDate": "2026-05-19",
+        "endWorkDate": "2026-05-31",
+        "pubDate": "",
         "mediumURL": "",
         "liPubDate": "",
         "linkedinURL": "",
@@ -78,30 +38,9 @@
         "blogPath": "",
         "cartoon": "",
         "chatDate": "",
-        "draftPath": "docs/public/comms/drafts/patterns-naming-patterns.md",
-        "notes": "Insight drawn from May 9-11 Pattern-067 slot collision. Lead Dev files P-067 (Issue-Body Reality Mismatch) May 9; CIO independently files different P-067 (Silent State Mutation) May 11; Architect surfaces collision; first-filed-wins resolution + CIO renumbers to P-068+P-069; Pattern-068 names parent meta-pattern over branch-drift+index-drift+residue-drift+working-tree-path-fragmentation family. Methodological response: slot-allocation check in filing convention (catalog Pattern-063 pattern applying to the catalog itself). Generalizes to any growing taxonomy with parallel authors.",
-        "altText": "",
-        "caption": ""
-      },
-      {
-        "title": "Extension Without Integration",
-        "theme": "insight",
-        "status": "queued",
-        "workDate": "2026-03-13",
-        "endWorkDate": "2026-03-20",
-        "pubDate": "2026-06-21",
-        "mediumURL": "",
-        "liPubDate": "",
-        "linkedinURL": "",
-        "canonicalSite": "",
-        "blogURL": "",
-        "blogPath": "",
-        "cartoon": "",
-        "chatDate": "",
-        "draftPath": "docs/public/comms/drafts/draft-insight-extension-without-integration.md",
-        "notes": "March insight backlog",
-        "altText": "",
-        "caption": ""
+        "draftPath": "docs/public/comms/drafts/draft-insight-built-in-our-own-image.md",
+        "notes": "Insight from BYOC cold-start interview testing May 19-31. PM built the onboarding serial-question-by-question because that is PM's personal working preference for ongoing use. The mode that earns trust in a working relationship turned out to be wrong for first-encounter onboarding — stretched experience, no map, no sense of how much was left. Through-line: building onboarding in your own image imports the assumptions of someone who has already crossed the threshold.",
+        "altText": ""
       },
       {
         "title": "Branch-or-Anchor in Ninety Minutes",
@@ -606,6 +545,106 @@
     ],
     "recentlyPublished": [
       {
+        "title": "Extension Without Integration",
+        "theme": "insight",
+        "status": "published",
+        "workDate": "2026-03-13",
+        "endWorkDate": "2026-03-20",
+        "pubDate": "2026-06-21",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "https://pipermorgan.ai/blog/extension-without-integration",
+        "blogPath": "/blog/extension-without-integration",
+        "cartoon": "ai-valets",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/extension-without-integration.md",
+        "notes": "March insight backlog",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "This One's Taken",
+        "theme": "insight",
+        "status": "published",
+        "workDate": "2026-05-09",
+        "endWorkDate": "2026-05-11",
+        "pubDate": "2026-06-20",
+        "mediumURL": "https://medium.com/building-piper-morgan/this-ones-taken-5387d9d5d21d",
+        "liPubDate": "2026-06-20",
+        "linkedinURL": "https://www.linkedin.com/pulse/ones-taken-christian-crumlish-hwixc/",
+        "canonicalSite": "distributed",
+        "blogURL": "https://pipermorgan.ai/blog/this-ones-taken",
+        "blogPath": "/blog/this-ones-taken",
+        "cartoon": "ai-detective",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/this-ones-taken.md",
+        "notes": "Insight drawn from May 9-11 Pattern-067 slot collision. Lead Dev files P-067 (Issue-Body Reality Mismatch) May 9; CIO independently files different P-067 (Silent State Mutation) May 11; Architect surfaces collision; first-filed-wins resolution + CIO renumbers to P-068+P-069; Pattern-068 names parent meta-pattern over branch-drift+index-drift+residue-drift+working-tree-path-fragmentation family. Methodological response: slot-allocation check in filing convention (catalog Pattern-063 pattern applying to the catalog itself). Generalizes to any growing taxonomy with parallel authors.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "Hypothesis Refuted",
+        "theme": "building",
+        "status": "published",
+        "workDate": "2026-05-08",
+        "endWorkDate": "2026-05-09",
+        "pubDate": "2026-06-18",
+        "mediumURL": "https://medium.com/building-piper-morgan/hypothesis-refuted-a2b51f8c7e38",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "distributed",
+        "blogURL": "https://pipermorgan.ai/blog/hypothesis-refuted",
+        "blogPath": "/blog/hypothesis-refuted",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/hypothesis-refuted.md",
+        "notes": "Beat 7 of 9-beat narrative slate. Two-day arc. May 8: Run-4 retest shows Quality 65.6% (apparent 6-pt drop from baseline); #1064 P0 filed hypothesizing LLM fabrication regression; investigation finds 0 of 10 auto-fails pure fabrication, 7 false flags from judge-calibration drift + auto-fail amplification + fixture pollution (Q56 smoking gun: 15 real todos in DB from prior runs mutating state without cleanup); 3 narrow real bugs. CEO directive: do not enter M2f until benchmark recovered. May 9: fixture reset (15 stale + 111 orphan wiped) + rubric recalibration memo + 3 fixes → Run 7 68.9% PASS exceeds baseline → M2f unblocked. Same day M2f Group A+B closed via dead-code deletions (-1813 LOC net) producing Pattern-067 (Issue-Body Reality Mismatch) — 3-of-5 issues described code that didn't exist. Through-line: when a measurement or description has drifted from the system it tracks, fix the reference not the system.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "Weekly Ship #047: The Team Catches Itself",
+        "theme": "ship",
+        "status": "published",
+        "workDate": "2026-06-05",
+        "endWorkDate": "2026-06-11",
+        "pubDate": "2026-06-17",
+        "mediumURL": "",
+        "liPubDate": "2026-06-17",
+        "linkedinURL": "https://www.linkedin.com/pulse/weekly-ship-047-team-catches-itself-christian-crumlish-rgchc/",
+        "canonicalSite": "distributed",
+        "blogURL": "https://pipermorgan.ai/shipping-news/weekly-ship-047-the-team-catches-itself",
+        "blogPath": "/shipping-news/weekly-ship-047-the-team-catches-itself",
+        "cartoon": "piper-ship",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/published/weekly-ship-047-draft-2026-06-12.md",
+        "notes": "The Team Catches Itself — Jun 5-11 2026. Self-correcting team; duty-cycle maturity; session-death limit named. Published 2026-06-17.",
+        "altText": "A child and a crew of robots checking each other's work on a boat.",
+        "caption": ""
+      },
+      {
+        "title": "First Subagent in Production",
+        "theme": "building",
+        "status": "published",
+        "workDate": "2026-05-06",
+        "endWorkDate": "2026-05-07",
+        "pubDate": "2026-06-16",
+        "mediumURL": "https://medium.com/building-piper-morgan/first-subagent-in-production-3b0072e857e2",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "distributed",
+        "blogURL": "https://pipermorgan.ai/blog/first-subagent-in-production/",
+        "blogPath": "/blog/first-subagent-in-production",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/first-subagent-in-production.md",
+        "notes": "Beat 6 of 9-beat narrative slate. Two-day arc. May 6 prep day: Lead Dev preps #1053 STANDUP-TEST-MIGRATION with 3 audit-cascade gates (Issue 24+1; Gameplan 27+4 N/A; Prompts 36+6 N/A). Cursor-template N/A-rate observation produces template-drift-signal memory + #1058 hygiene tracking. May 7 deployment: subagent runs 6:48-7:18 AM; Phase 2 reframe (12 tests already passing; subagent annotated rather than improvising); cross-agent git collision during run (chained && doesn't gate on result, only exit code); commit `69aa5e74` merged 7:30 AM. Two new memory entries refining branch-show-current discipline (gate-on-result + subagent-requires-real-worktree-or-foreground-commits-first). Through-line: first production subagent deployment surfaces the methodology's fourth layer (scaffolding around the deployment).",
+        "altText": "A workshop where a human creator watches proudly from above as a glowing AI lead developer supervises a smaller AI subagent completing careful work below, while a shared mechanical cable quietly causes a tiny unnoticed disturbance in the workshop machinery",
+        "caption": "\"They grow up so fast!\""
+      },
+      {
         "title": "The Solo Founder Paradox",
         "theme": "insight",
         "status": "published",
@@ -622,7 +661,7 @@
         "chatDate": "",
         "draftPath": "docs/public/comms/drafts/published/the-solo-founder-paradox.md",
         "notes": "February insight backlog — execution exceeds judgment capacity",
-        "altText": "A thoughtful ruler considers a small decision while an entire court of ingenious clockwork advisors waits patiently among completed inventions, scrolls, and architectural models.",
+        "altText": "",
         "caption": ""
       },
       {
@@ -642,7 +681,7 @@
         "chatDate": "",
         "draftPath": "docs/public/comms/drafts/published/critical-vs-commodity-work-in-a-role.md",
         "notes": "Insight drawn from Apr 23-27 cohort migration wave + PP-002 filing (Apr 27). Cohort-wide independent convergence on the same role-shape distinction: each role has a critical subset where distinctive judgment lives + larger commoditizable surface. Seven Section-6 reflections all named the shape in different vocabularies. Title is public-prose form of PP-002 (internal 'load-bearing' → public 'critical' per May 16 memory). Generalizes beyond AI — any knowledge-worker role.",
-        "altText": "A gentle AI conductor guides a crowded orchestra, highlighting the quiet melodic thread amid the many musicians at work.",
+        "altText": "",
         "caption": ""
       },
       {
@@ -662,7 +701,7 @@
         "chatDate": "",
         "draftPath": "docs/public/comms/drafts/published/the-pace-verified.md",
         "notes": "Beat 5 of 9-beat narrative slate. Multi-day A+B+coda. A-plot: May 2 cluster-commit (#1018+#1006/#1007/#1008 atomic, 58h design-to-ship) + audit-cascade catches conceptual drift before gameplan + May 3 record day (8 issues end-to-end + 221 new tests + 0 regressions + 3 mid-flight architectural calls: DDD strict-rewrite / channel-agnostic Push / two-layer COMPOSTED guardrail). B-plot: May 4 Architect first sustained workstream review — verdict structurally sound, 5 non-blocking cleanup items; PM instinct verified by independent review. Coda: May 5 multi-phase compounding payoff (#900 ships ~2h vs ~14h estimate because #1052 + Phase 1 state machine landed prior). Through-line: sustained pace from preparatory pieces compounding, not heroic effort.",
-        "altText": "Semi-corporeal AI pit crew calmly organizing tools and reviewing diagnostics as a race car blurs past at extreme speed.",
+        "altText": "",
         "caption": ""
       },
       {
@@ -682,7 +721,7 @@
         "chatDate": "",
         "draftPath": "docs/public/comms/drafts/published/weekly-ship-046-draft-2026-06-10.md",
         "notes": "The Substrate Delivered — May 29-Jun 4 sprint week: M2 closed, duty-cycle migration 10/11, EC-2/PDR-005 BYOC, LLM-touch boundary epic. LinkedIn-only syndication (ship cadence); fully distributed (blog + LinkedIn) 6/10.",
-        "altText": "A child leads a boat crewed by robots.",
+        "altText": "",
         "caption": ""
       },
       {
@@ -702,11 +741,86 @@
         "chatDate": "",
         "draftPath": "docs/public/comms/drafts/where-would-the-data-come-from.md",
         "notes": "Beat 4 of 9-beat narrative slate. Single-day Apr 30. Lead Dev files #1018 Phase 1 design 7:35 AM proposing real-traffic calibration before flag-flip; PM asks ~7:45 AM where the real-traffic data would come from (alpha = no real users → catch-22 named). 7:55 AM flip-now memo with 3-phase simulation-first reframe. 8:23 AM Architect ratifies with ADR-061 v1.0. 1:30 PM Phase F flag-flip merged → multi-week #992 ETHICS-ACTIVATE arc closes. Through-line: alpha plans drift toward production-shaped sequencing; ask where the data would come from. Distributed 6/9: blog + Medium published (building = Medium-only / no LinkedIn).",
-        "altText": "A fisherman sits beside a tackle box and thermos, patiently casting into a vast dry lakebed while a glowing, semi-corporeal AI agent studies a clipboard and looks around in confusion at the complete absence of water.",
+        "altText": "",
         "caption": ""
       }
     ],
     "syndicationGaps": [
+      {
+        "entry": {
+          "title": "Hypothesis Refuted",
+          "theme": "building",
+          "status": "published",
+          "workDate": "2026-05-08",
+          "endWorkDate": "2026-05-09",
+          "pubDate": "2026-06-18",
+          "mediumURL": "https://medium.com/building-piper-morgan/hypothesis-refuted-a2b51f8c7e38",
+          "liPubDate": "",
+          "linkedinURL": "",
+          "canonicalSite": "distributed",
+          "blogURL": "https://pipermorgan.ai/blog/hypothesis-refuted",
+          "blogPath": "/blog/hypothesis-refuted",
+          "cartoon": "",
+          "chatDate": "",
+          "draftPath": "docs/public/comms/drafts/hypothesis-refuted.md",
+          "notes": "Beat 7 of 9-beat narrative slate. Two-day arc. May 8: Run-4 retest shows Quality 65.6% (apparent 6-pt drop from baseline); #1064 P0 filed hypothesizing LLM fabrication regression; investigation finds 0 of 10 auto-fails pure fabrication, 7 false flags from judge-calibration drift + auto-fail amplification + fixture pollution (Q56 smoking gun: 15 real todos in DB from prior runs mutating state without cleanup); 3 narrow real bugs. CEO directive: do not enter M2f until benchmark recovered. May 9: fixture reset (15 stale + 111 orphan wiped) + rubric recalibration memo + 3 fixes → Run 7 68.9% PASS exceeds baseline → M2f unblocked. Same day M2f Group A+B closed via dead-code deletions (-1813 LOC net) producing Pattern-067 (Issue-Body Reality Mismatch) — 3-of-5 issues described code that didn't exist. Through-line: when a measurement or description has drifted from the system it tracks, fix the reference not the system.",
+          "altText": "",
+          "caption": ""
+        },
+        "missing": [
+          "linkedin"
+        ]
+      },
+      {
+        "entry": {
+          "title": "Weekly Ship #047: The Team Catches Itself",
+          "theme": "ship",
+          "status": "published",
+          "workDate": "2026-06-05",
+          "endWorkDate": "2026-06-11",
+          "pubDate": "2026-06-17",
+          "mediumURL": "",
+          "liPubDate": "2026-06-17",
+          "linkedinURL": "https://www.linkedin.com/pulse/weekly-ship-047-team-catches-itself-christian-crumlish-rgchc/",
+          "canonicalSite": "distributed",
+          "blogURL": "https://pipermorgan.ai/shipping-news/weekly-ship-047-the-team-catches-itself",
+          "blogPath": "/shipping-news/weekly-ship-047-the-team-catches-itself",
+          "cartoon": "piper-ship",
+          "chatDate": "",
+          "draftPath": "docs/public/comms/drafts/published/weekly-ship-047-draft-2026-06-12.md",
+          "notes": "The Team Catches Itself — Jun 5-11 2026. Self-correcting team; duty-cycle maturity; session-death limit named. Published 2026-06-17.",
+          "altText": "A child and a crew of robots checking each other's work on a boat.",
+          "caption": ""
+        },
+        "missing": [
+          "medium"
+        ]
+      },
+      {
+        "entry": {
+          "title": "First Subagent in Production",
+          "theme": "building",
+          "status": "published",
+          "workDate": "2026-05-06",
+          "endWorkDate": "2026-05-07",
+          "pubDate": "2026-06-16",
+          "mediumURL": "https://medium.com/building-piper-morgan/first-subagent-in-production-3b0072e857e2",
+          "liPubDate": "",
+          "linkedinURL": "",
+          "canonicalSite": "distributed",
+          "blogURL": "https://pipermorgan.ai/blog/first-subagent-in-production/",
+          "blogPath": "/blog/first-subagent-in-production",
+          "cartoon": "",
+          "chatDate": "",
+          "draftPath": "docs/public/comms/drafts/first-subagent-in-production.md",
+          "notes": "Beat 6 of 9-beat narrative slate. Two-day arc. May 6 prep day: Lead Dev preps #1053 STANDUP-TEST-MIGRATION with 3 audit-cascade gates (Issue 24+1; Gameplan 27+4 N/A; Prompts 36+6 N/A). Cursor-template N/A-rate observation produces template-drift-signal memory + #1058 hygiene tracking. May 7 deployment: subagent runs 6:48-7:18 AM; Phase 2 reframe (12 tests already passing; subagent annotated rather than improvising); cross-agent git collision during run (chained && doesn't gate on result, only exit code); commit `69aa5e74` merged 7:30 AM. Two new memory entries refining branch-show-current discipline (gate-on-result + subagent-requires-real-worktree-or-foreground-commits-first). Through-line: first production subagent deployment surfaces the methodology's fourth layer (scaffolding around the deployment).",
+          "altText": "A workshop where a human creator watches proudly from above as a glowing AI lead developer supervises a smaller AI subagent completing careful work below, while a shared mechanical cable quietly causes a tiny unnoticed disturbance in the workshop machinery",
+          "caption": "\"They grow up so fast!\""
+        },
+        "missing": [
+          "linkedin"
+        ]
+      },
       {
         "entry": {
           "title": "The Pace Verified",
@@ -725,7 +839,7 @@
           "chatDate": "",
           "draftPath": "docs/public/comms/drafts/published/the-pace-verified.md",
           "notes": "Beat 5 of 9-beat narrative slate. Multi-day A+B+coda. A-plot: May 2 cluster-commit (#1018+#1006/#1007/#1008 atomic, 58h design-to-ship) + audit-cascade catches conceptual drift before gameplan + May 3 record day (8 issues end-to-end + 221 new tests + 0 regressions + 3 mid-flight architectural calls: DDD strict-rewrite / channel-agnostic Push / two-layer COMPOSTED guardrail). B-plot: May 4 Architect first sustained workstream review — verdict structurally sound, 5 non-blocking cleanup items; PM instinct verified by independent review. Coda: May 5 multi-phase compounding payoff (#900 ships ~2h vs ~14h estimate because #1052 + Phase 1 state machine landed prior). Through-line: sustained pace from preparatory pieces compounding, not heroic effort.",
-          "altText": "Semi-corporeal AI pit crew calmly organizing tools and reviewing diagnostics as a race car blurs past at extreme speed.",
+          "altText": "",
           "caption": ""
         },
         "missing": [
@@ -750,7 +864,7 @@
           "chatDate": "",
           "draftPath": "docs/public/comms/drafts/published/weekly-ship-046-draft-2026-06-10.md",
           "notes": "The Substrate Delivered — May 29-Jun 4 sprint week: M2 closed, duty-cycle migration 10/11, EC-2/PDR-005 BYOC, LLM-touch boundary epic. LinkedIn-only syndication (ship cadence); fully distributed (blog + LinkedIn) 6/10.",
-          "altText": "A child leads a boat crewed by robots.",
+          "altText": "",
           "caption": ""
         },
         "missing": [
@@ -775,7 +889,7 @@
           "chatDate": "",
           "draftPath": "docs/public/comms/drafts/where-would-the-data-come-from.md",
           "notes": "Beat 4 of 9-beat narrative slate. Single-day Apr 30. Lead Dev files #1018 Phase 1 design 7:35 AM proposing real-traffic calibration before flag-flip; PM asks ~7:45 AM where the real-traffic data would come from (alpha = no real users → catch-22 named). 7:55 AM flip-now memo with 3-phase simulation-first reframe. 8:23 AM Architect ratifies with ADR-061 v1.0. 1:30 PM Phase F flag-flip merged → multi-week #992 ETHICS-ACTIVATE arc closes. Through-line: alpha plans drift toward production-shaped sequencing; ask where the data would come from. Distributed 6/9: blog + Medium published (building = Medium-only / no LinkedIn).",
-          "altText": "A fisherman sits beside a tackle box and thermos, patiently casting into a vast dry lakebed while a glowing, semi-corporeal AI agent studies a clipboard and looks around in confusion at the complete absence of water.",
+          "altText": "",
           "caption": ""
         },
         "missing": [
@@ -800,7 +914,7 @@
           "chatDate": "",
           "draftPath": "docs/public/comms/drafts/upstream-of-the-floor.md",
           "notes": "Beat 3 of 9-beat narrative slate. Multi-day A+B-plot. A-plot: Apr 25 STOP CONDITION (stale server) + Scenario 1 finding (floor isn't reachable; pre-classifier intercepts) → PPM 'audit-shape not build-quality' reframe → Architect 'ethics is upstream' → #1004 design through ship in 6 days. B-plot: Apr 26 mail-cascade comedy (CXO can't see Exec kickoff; Docs's subshell drift compounds) → targeted mailbox-discipline norm in 30 minutes. Through-line: fix one layer upstream of where the symptom shows.",
-          "altText": "A newly built floodgate stands across a nearly dry river channel while most of the river flows down an unnoticed branch upstream, as workers realize the water has been bypassing their structure all along.",
+          "altText": "",
           "caption": ""
         },
         "missing": [
@@ -825,7 +939,7 @@
           "chatDate": "",
           "draftPath": "docs/public/comms/drafts/weekly-ship-045-draft-2026-06-03.md",
           "notes": "The Substrate Pivoted — worktree-as-cycle-default reversal week (May 22-28). LinkedIn-only syndication (ship cadence); liPubDate/linkedinURL pending PM post.",
-          "altText": "A child leads a boat crewed by robots.",
+          "altText": "",
           "caption": ""
         },
         "missing": [
@@ -1400,7 +1514,7 @@
           "chatDate": "",
           "draftPath": "",
           "notes": "",
-          "altText": "Multiple perspectives converging into a single specification, unblocking a document that no single owner could finish.",
+          "altText": "",
           "caption": ""
         },
         "missing": [
@@ -1461,6 +1575,86 @@
     ],
     "imageMetadataGaps": [
       {
+        "title": "Extension Without Integration",
+        "theme": "insight",
+        "status": "published",
+        "workDate": "2026-03-13",
+        "endWorkDate": "2026-03-20",
+        "pubDate": "2026-06-21",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "https://pipermorgan.ai/blog/extension-without-integration",
+        "blogPath": "/blog/extension-without-integration",
+        "cartoon": "ai-valets",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/extension-without-integration.md",
+        "notes": "March insight backlog",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "This One's Taken",
+        "theme": "insight",
+        "status": "published",
+        "workDate": "2026-05-09",
+        "endWorkDate": "2026-05-11",
+        "pubDate": "2026-06-20",
+        "mediumURL": "https://medium.com/building-piper-morgan/this-ones-taken-5387d9d5d21d",
+        "liPubDate": "2026-06-20",
+        "linkedinURL": "https://www.linkedin.com/pulse/ones-taken-christian-crumlish-hwixc/",
+        "canonicalSite": "distributed",
+        "blogURL": "https://pipermorgan.ai/blog/this-ones-taken",
+        "blogPath": "/blog/this-ones-taken",
+        "cartoon": "ai-detective",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/this-ones-taken.md",
+        "notes": "Insight drawn from May 9-11 Pattern-067 slot collision. Lead Dev files P-067 (Issue-Body Reality Mismatch) May 9; CIO independently files different P-067 (Silent State Mutation) May 11; Architect surfaces collision; first-filed-wins resolution + CIO renumbers to P-068+P-069; Pattern-068 names parent meta-pattern over branch-drift+index-drift+residue-drift+working-tree-path-fragmentation family. Methodological response: slot-allocation check in filing convention (catalog Pattern-063 pattern applying to the catalog itself). Generalizes to any growing taxonomy with parallel authors.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "Hypothesis Refuted",
+        "theme": "building",
+        "status": "published",
+        "workDate": "2026-05-08",
+        "endWorkDate": "2026-05-09",
+        "pubDate": "2026-06-18",
+        "mediumURL": "https://medium.com/building-piper-morgan/hypothesis-refuted-a2b51f8c7e38",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "distributed",
+        "blogURL": "https://pipermorgan.ai/blog/hypothesis-refuted",
+        "blogPath": "/blog/hypothesis-refuted",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/hypothesis-refuted.md",
+        "notes": "Beat 7 of 9-beat narrative slate. Two-day arc. May 8: Run-4 retest shows Quality 65.6% (apparent 6-pt drop from baseline); #1064 P0 filed hypothesizing LLM fabrication regression; investigation finds 0 of 10 auto-fails pure fabrication, 7 false flags from judge-calibration drift + auto-fail amplification + fixture pollution (Q56 smoking gun: 15 real todos in DB from prior runs mutating state without cleanup); 3 narrow real bugs. CEO directive: do not enter M2f until benchmark recovered. May 9: fixture reset (15 stale + 111 orphan wiped) + rubric recalibration memo + 3 fixes → Run 7 68.9% PASS exceeds baseline → M2f unblocked. Same day M2f Group A+B closed via dead-code deletions (-1813 LOC net) producing Pattern-067 (Issue-Body Reality Mismatch) — 3-of-5 issues described code that didn't exist. Through-line: when a measurement or description has drifted from the system it tracks, fix the reference not the system.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "Weekly Ship #047: The Team Catches Itself",
+        "theme": "ship",
+        "status": "published",
+        "workDate": "2026-06-05",
+        "endWorkDate": "2026-06-11",
+        "pubDate": "2026-06-17",
+        "mediumURL": "",
+        "liPubDate": "2026-06-17",
+        "linkedinURL": "https://www.linkedin.com/pulse/weekly-ship-047-team-catches-itself-christian-crumlish-rgchc/",
+        "canonicalSite": "distributed",
+        "blogURL": "https://pipermorgan.ai/shipping-news/weekly-ship-047-the-team-catches-itself",
+        "blogPath": "/shipping-news/weekly-ship-047-the-team-catches-itself",
+        "cartoon": "piper-ship",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/published/weekly-ship-047-draft-2026-06-12.md",
+        "notes": "The Team Catches Itself — Jun 5-11 2026. Self-correcting team; duty-cycle maturity; session-death limit named. Published 2026-06-17.",
+        "altText": "A child and a crew of robots checking each other's work on a boat.",
+        "caption": ""
+      },
+      {
         "title": "The Solo Founder Paradox",
         "theme": "insight",
         "status": "published",
@@ -1477,7 +1671,7 @@
         "chatDate": "",
         "draftPath": "docs/public/comms/drafts/published/the-solo-founder-paradox.md",
         "notes": "February insight backlog — execution exceeds judgment capacity",
-        "altText": "A thoughtful ruler considers a small decision while an entire court of ingenious clockwork advisors waits patiently among completed inventions, scrolls, and architectural models.",
+        "altText": "",
         "caption": ""
       },
       {
@@ -1497,7 +1691,7 @@
         "chatDate": "",
         "draftPath": "docs/public/comms/drafts/published/critical-vs-commodity-work-in-a-role.md",
         "notes": "Insight drawn from Apr 23-27 cohort migration wave + PP-002 filing (Apr 27). Cohort-wide independent convergence on the same role-shape distinction: each role has a critical subset where distinctive judgment lives + larger commoditizable surface. Seven Section-6 reflections all named the shape in different vocabularies. Title is public-prose form of PP-002 (internal 'load-bearing' → public 'critical' per May 16 memory). Generalizes beyond AI — any knowledge-worker role.",
-        "altText": "A gentle AI conductor guides a crowded orchestra, highlighting the quiet melodic thread amid the many musicians at work.",
+        "altText": "",
         "caption": ""
       },
       {
@@ -1517,7 +1711,7 @@
         "chatDate": "",
         "draftPath": "docs/public/comms/drafts/published/the-pace-verified.md",
         "notes": "Beat 5 of 9-beat narrative slate. Multi-day A+B+coda. A-plot: May 2 cluster-commit (#1018+#1006/#1007/#1008 atomic, 58h design-to-ship) + audit-cascade catches conceptual drift before gameplan + May 3 record day (8 issues end-to-end + 221 new tests + 0 regressions + 3 mid-flight architectural calls: DDD strict-rewrite / channel-agnostic Push / two-layer COMPOSTED guardrail). B-plot: May 4 Architect first sustained workstream review — verdict structurally sound, 5 non-blocking cleanup items; PM instinct verified by independent review. Coda: May 5 multi-phase compounding payoff (#900 ships ~2h vs ~14h estimate because #1052 + Phase 1 state machine landed prior). Through-line: sustained pace from preparatory pieces compounding, not heroic effort.",
-        "altText": "Semi-corporeal AI pit crew calmly organizing tools and reviewing diagnostics as a race car blurs past at extreme speed.",
+        "altText": "",
         "caption": ""
       },
       {
@@ -1537,7 +1731,7 @@
         "chatDate": "",
         "draftPath": "docs/public/comms/drafts/published/weekly-ship-046-draft-2026-06-10.md",
         "notes": "The Substrate Delivered — May 29-Jun 4 sprint week: M2 closed, duty-cycle migration 10/11, EC-2/PDR-005 BYOC, LLM-touch boundary epic. LinkedIn-only syndication (ship cadence); fully distributed (blog + LinkedIn) 6/10.",
-        "altText": "A child leads a boat crewed by robots.",
+        "altText": "",
         "caption": ""
       },
       {
@@ -1557,7 +1751,7 @@
         "chatDate": "",
         "draftPath": "docs/public/comms/drafts/where-would-the-data-come-from.md",
         "notes": "Beat 4 of 9-beat narrative slate. Single-day Apr 30. Lead Dev files #1018 Phase 1 design 7:35 AM proposing real-traffic calibration before flag-flip; PM asks ~7:45 AM where the real-traffic data would come from (alpha = no real users → catch-22 named). 7:55 AM flip-now memo with 3-phase simulation-first reframe. 8:23 AM Architect ratifies with ADR-061 v1.0. 1:30 PM Phase F flag-flip merged → multi-week #992 ETHICS-ACTIVATE arc closes. Through-line: alpha plans drift toward production-shaped sequencing; ask where the data would come from. Distributed 6/9: blog + Medium published (building = Medium-only / no LinkedIn).",
-        "altText": "A fisherman sits beside a tackle box and thermos, patiently casting into a vast dry lakebed while a glowing, semi-corporeal AI agent studies a clipboard and looks around in confusion at the complete absence of water.",
+        "altText": "",
         "caption": ""
       },
       {
@@ -1577,7 +1771,7 @@
         "chatDate": "",
         "draftPath": "docs/public/comms/drafts/permission-to-pause.md",
         "notes": "Reframed + renamed 2026-06-05: draft H1 was still 'The Deliberate Pause' (doppelganger with the published Mar-22 narrative of that name) — retitled to Permission to Pause, foregrounded the permission/earned-trust angle, added a clause distinguishing the decision-pause from the narrative's rest-pause, refreshed stale footer (now teases Where Would the Data Come From, Jun 9), fixed load-bearing. Distinct from the narrative: decision-pauses (audit cadence / Colleague-Test-v2 hold / M1 holds) + earned-trust thesis vs the narrative's Mar-6 rest-story. NEEDS PM voice-pass on 2 placeholders (ADD PERSONAL ANECDOTE + CONSIDER) before Jun 7.",
-        "altText": "A mountaineer kneels to probe the snow ahead while impatient teammates wait behind, unaware of a hidden crevasse opening in the ridge.",
+        "altText": "",
         "caption": ""
       },
       {
@@ -1617,7 +1811,7 @@
         "chatDate": "",
         "draftPath": "docs/public/comms/drafts/upstream-of-the-floor.md",
         "notes": "Beat 3 of 9-beat narrative slate. Multi-day A+B-plot. A-plot: Apr 25 STOP CONDITION (stale server) + Scenario 1 finding (floor isn't reachable; pre-classifier intercepts) → PPM 'audit-shape not build-quality' reframe → Architect 'ethics is upstream' → #1004 design through ship in 6 days. B-plot: Apr 26 mail-cascade comedy (CXO can't see Exec kickoff; Docs's subshell drift compounds) → targeted mailbox-discipline norm in 30 minutes. Through-line: fix one layer upstream of where the symptom shows.",
-        "altText": "A newly built floodgate stands across a nearly dry river channel while most of the river flows down an unnoticed branch upstream, as workers realize the water has been bypassing their structure all along.",
+        "altText": "",
         "caption": ""
       },
       {
@@ -1637,7 +1831,7 @@
         "chatDate": "",
         "draftPath": "docs/public/comms/drafts/weekly-ship-045-draft-2026-06-03.md",
         "notes": "The Substrate Pivoted — worktree-as-cycle-default reversal week (May 22-28). LinkedIn-only syndication (ship cadence); liPubDate/linkedinURL pending PM post.",
-        "altText": "A child leads a boat crewed by robots.",
+        "altText": "",
         "caption": ""
       }
     ]
