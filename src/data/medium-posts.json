@@ -1,5 +1,27 @@
 [
   {
+    "title": "Branch-or-Anchor in Ninety Minutes",
+    "excerpt": "May 10, 2026 Last month my agentic team named a small methodology rule for what to do when you're extending an existing artifact and the new use case has a different shape than the original. It's a homely name that only a bot could love: Branch-or-Anchor. The choice it asks you to make: anchor th...",
+    "url": "/blog/branch-or-anchor-in-ninety-minutes",
+    "slug": "branch-or-anchor-in-ninety-minutes",
+    "publishedAt": "Jun 23, 2026",
+    "publishedAtISO": "2026-06-23T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-418017711853",
+    "featuredImage": "/assets/blog-images/branch-or-anchor-in-ninety-minutes.webp",
+    "thumbnail": "/assets/blog-images/branch-or-anchor-in-ninety-minutes.webp",
+    "imageAlt": "A translucent AI librarian pauses before shelving a new book that resembles an established series, then creates a neighboring shelf with a visible lineage link, recognizing that similar appearance does not mean the same category.",
+    "imageCaption": "\"Not so fast there!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "May 10, 2026",
+    "workDateISO": "2026-05-10T00:00:00.000Z"
+  },
+  {
     "title": "Extension Without Integration",
     "excerpt": "March 13–19, 2026 Six features. Each one working and passing its tests. Together, they produced chaos. We ran into this pattern while investigating a conversation continuity bug: A user would say \"Sure\" after Piper made an offer to help with something, and instead of continuing the conversation, ...",
     "url": "/blog/extension-without-integration",
@@ -17,9 +39,9 @@
     "imageAlt": "A hotel guest's casual gesture triggers four eager valets at once—one grabs the keys, one offers the elevator, and two compete over the same suitcase, while a translucent observer realizes the coordination problem.",
     "imageCaption": "\"I''ve got it!\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "Mar 13, 2026",
-    "workDateISO": "2026-03-13T00:00:00.000Z"
+    "workDateISO": "2026-03-13T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "This One's Taken",
