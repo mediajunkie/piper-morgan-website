@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #048: The team put it in writing",
+    "excerpt": "June 12–18, 2026 Three Ships ago the team crossed from \"we can run it\" to \"someone who isn't us can run it.\" This week it did the work that makes the next crossing possible: it wrote the contracts. Literally. The Architect agent ratified three architecture decision records in seven days — the con...",
+    "url": "/blog/weekly-ship-048-the-team-put-it-in-writing",
+    "slug": "weekly-ship-048-the-team-put-it-in-writing",
+    "publishedAt": "Jun 24, 2026",
+    "publishedAtISO": "2026-06-24T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-2f32fb35d613",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
+    "imageCaption": "",
+    "category": "ship",
+    "cluster": "d1-sprint",
+    "workDate": "Jun 12, 2026",
+    "workDateISO": "2026-06-12T00:00:00.000Z"
+  },
+  {
     "title": "Branch-or-Anchor in Ninety Minutes",
     "excerpt": "May 10, 2026 Last month my agentic team named a small methodology rule for what to do when you're extending an existing artifact and the new use case has a different shape than the original. It's a homely name that only a bot could love: Branch-or-Anchor. The choice it asks you to make: anchor th...",
     "url": "/blog/branch-or-anchor-in-ninety-minutes",
@@ -17,9 +39,9 @@
     "imageAlt": "A translucent AI librarian pauses before shelving a new book that resembles an established series, then creates a neighboring shelf with a visible lineage link, recognizing that similar appearance does not mean the same category.",
     "imageCaption": "\"Not so fast there!\"",
     "category": "building",
-    "cluster": "",
     "workDate": "May 10, 2026",
-    "workDateISO": "2026-05-10T00:00:00.000Z"
+    "workDateISO": "2026-05-10T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Extension Without Integration",
