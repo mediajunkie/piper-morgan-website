@@ -1,6 +1,6 @@
 {
-  "buildTime": "2026-06-24T15:21:54.558Z",
-  "totalEntries": 396,
+  "buildTime": "2026-06-24T15:23:17.219Z",
+  "totalEntries": 397,
   "sections": {
     "readyToPublish": [
       {
@@ -41,26 +41,6 @@
         "draftPath": "docs/public/comms/drafts/draft-insight-built-in-our-own-image.md",
         "notes": "Insight from BYOC cold-start interview testing May 19-31. PM built the onboarding serial-question-by-question because that is PM's personal working preference for ongoing use. The mode that earns trust in a working relationship turned out to be wrong for first-encounter onboarding — stretched experience, no map, no sense of how much was left. Through-line: building onboarding in your own image imports the assumptions of someone who has already crossed the threshold.",
         "altText": ""
-      },
-      {
-        "title": "Branch-or-Anchor in Ninety Minutes",
-        "theme": "building",
-        "status": "queued",
-        "workDate": "2026-05-10",
-        "endWorkDate": "",
-        "pubDate": "2026-06-23",
-        "mediumURL": "",
-        "liPubDate": "",
-        "linkedinURL": "",
-        "canonicalSite": "",
-        "blogURL": "",
-        "blogPath": "",
-        "cartoon": "",
-        "chatDate": "",
-        "draftPath": "docs/public/comms/drafts/branch-or-anchor-in-ninety-minutes.md",
-        "notes": "Beat 8 of 9-beat narrative slate. Single-day arc May 10. PPM files M2d gate criteria framing new rubric as 'Colleague Test R/C/T — adapted for UI'; CXO catches as Pattern-063 (Parallel-Authoring Drift) recreation; PPM concedes + branches per Methodology-24 (Branch-or-Anchor) to UI Lifecycle Verification Rubric v0.1 with explicit provenance; Architect ratifies as cleanest application yet (caught at instrument-naming moment, not after drift accumulates); CXO documents at CT v2.3 → v2.3.1 cross-referencing as canonical worked-example. End-to-end ~90 min inside same workstream-review cycle. Through-line: methodology catalog moves from documentation to language — anyone in cohort can speak in it.",
-        "altText": "",
-        "caption": ""
       },
       {
         "title": "The Hook and the Worktree",
@@ -545,6 +525,46 @@
     ],
     "recentlyPublished": [
       {
+        "title": "Weekly Ship #048: The team put it in writing",
+        "theme": "ship",
+        "status": "published",
+        "workDate": "2026-06-12",
+        "endWorkDate": "2026-06-18",
+        "pubDate": "2026-06-24",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "distributed",
+        "blogURL": "https://pipermorgan.ai/shipping-news/weekly-ship-048-the-team-put-it-in-writing",
+        "blogPath": "/shipping-news/weekly-ship-048-the-team-put-it-in-writing",
+        "cartoon": "piper-ship",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/weekly-ship-048-draft-2026-06-19.md",
+        "notes": "The team put it in writing — Jun 12-18 2026. ADRs week: 3 ratified + 1 scoped; D1 design sprint closed; entity-model spec frozen; role-portfolio wave launched.",
+        "altText": "A child and a crew of robots checking each other's work on a boat.",
+        "caption": ""
+      },
+      {
+        "title": "Branch-or-Anchor in Ninety Minutes",
+        "theme": "building",
+        "status": "published",
+        "workDate": "2026-05-10",
+        "endWorkDate": "",
+        "pubDate": "2026-06-23",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "distributed",
+        "blogPath": "https://pipermorgan.ai/blog/branch-or-anchor-in-ninety-minutes",
+        "cartoon": "/blog/branch-or-anchor-in-ninety-minutes",
+        "chatDate": "",
+        "draftPath": "",
+        "notes": "docs/public/comms/drafts/branch-or-anchor-in-ninety-minutes.md",
+        "altText": "Beat 8 of 9-beat narrative slate. Single-day arc May 10. PPM files M2d gate criteria framing new rubric as 'Colleague Test R/C/T — adapted for UI'; CXO catches as Pattern-063 (Parallel-Authoring Drift) recreation; PPM concedes + branches per Methodology-24 (Branch-or-Anchor) to UI Lifecycle Verification Rubric v0.1 with explicit provenance; Architect ratifies as cleanest application yet (caught at instrument-naming moment, not after drift accumulates); CXO documents at CT v2.3 → v2.3.1 cross-referencing as canonical worked-example. End-to-end ~90 min inside same workstream-review cycle. Through-line: methodology catalog moves from documentation to language — anyone in cohort can speak in it.",
+        "caption": ""
+      },
+      {
         "title": "Extension Without Integration",
         "theme": "insight",
         "status": "published",
@@ -726,6 +746,32 @@
       }
     ],
     "syndicationGaps": [
+      {
+        "entry": {
+          "title": "Weekly Ship #048: The team put it in writing",
+          "theme": "ship",
+          "status": "published",
+          "workDate": "2026-06-12",
+          "endWorkDate": "2026-06-18",
+          "pubDate": "2026-06-24",
+          "mediumURL": "",
+          "liPubDate": "",
+          "linkedinURL": "",
+          "canonicalSite": "distributed",
+          "blogURL": "https://pipermorgan.ai/shipping-news/weekly-ship-048-the-team-put-it-in-writing",
+          "blogPath": "/shipping-news/weekly-ship-048-the-team-put-it-in-writing",
+          "cartoon": "piper-ship",
+          "chatDate": "",
+          "draftPath": "docs/public/comms/drafts/weekly-ship-048-draft-2026-06-19.md",
+          "notes": "The team put it in writing — Jun 12-18 2026. ADRs week: 3 ratified + 1 scoped; D1 design sprint closed; entity-model spec frozen; role-portfolio wave launched.",
+          "altText": "A child and a crew of robots checking each other's work on a boat.",
+          "caption": ""
+        },
+        "missing": [
+          "medium",
+          "linkedin"
+        ]
+      },
       {
         "entry": {
           "title": "Hypothesis Refuted",
@@ -1554,6 +1600,46 @@
       }
     ],
     "imageMetadataGaps": [
+      {
+        "title": "Weekly Ship #048: The team put it in writing",
+        "theme": "ship",
+        "status": "published",
+        "workDate": "2026-06-12",
+        "endWorkDate": "2026-06-18",
+        "pubDate": "2026-06-24",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "distributed",
+        "blogURL": "https://pipermorgan.ai/shipping-news/weekly-ship-048-the-team-put-it-in-writing",
+        "blogPath": "/shipping-news/weekly-ship-048-the-team-put-it-in-writing",
+        "cartoon": "piper-ship",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/weekly-ship-048-draft-2026-06-19.md",
+        "notes": "The team put it in writing — Jun 12-18 2026. ADRs week: 3 ratified + 1 scoped; D1 design sprint closed; entity-model spec frozen; role-portfolio wave launched.",
+        "altText": "A child and a crew of robots checking each other's work on a boat.",
+        "caption": ""
+      },
+      {
+        "title": "Branch-or-Anchor in Ninety Minutes",
+        "theme": "building",
+        "status": "published",
+        "workDate": "2026-05-10",
+        "endWorkDate": "",
+        "pubDate": "2026-06-23",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "distributed",
+        "blogPath": "https://pipermorgan.ai/blog/branch-or-anchor-in-ninety-minutes",
+        "cartoon": "/blog/branch-or-anchor-in-ninety-minutes",
+        "chatDate": "",
+        "draftPath": "",
+        "notes": "docs/public/comms/drafts/branch-or-anchor-in-ninety-minutes.md",
+        "altText": "Beat 8 of 9-beat narrative slate. Single-day arc May 10. PPM files M2d gate criteria framing new rubric as 'Colleague Test R/C/T — adapted for UI'; CXO catches as Pattern-063 (Parallel-Authoring Drift) recreation; PPM concedes + branches per Methodology-24 (Branch-or-Anchor) to UI Lifecycle Verification Rubric v0.1 with explicit provenance; Architect ratifies as cleanest application yet (caught at instrument-naming moment, not after drift accumulates); CXO documents at CT v2.3 → v2.3.1 cross-referencing as canonical worked-example. End-to-end ~90 min inside same workstream-review cycle. Through-line: methodology catalog moves from documentation to language — anyone in cohort can speak in it.",
+        "caption": ""
+      },
       {
         "title": "Extension Without Integration",
         "theme": "insight",
