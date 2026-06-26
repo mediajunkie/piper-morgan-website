@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Hook and the Worktree",
+    "excerpt": "May 13–15, 2026 By the second week of May we'd written a procedure called close-issue-properly and turned it into a working skill the agents were supposed to invoke whenever they closed a GitHub issue. The procedure was short. Update the description checkboxes first. Then move the issue to closed...",
+    "url": "/blog/the-hook-and-the-worktree",
+    "slug": "the-hook-and-the-worktree",
+    "publishedAt": "Jun 26, 2026",
+    "publishedAtISO": "2026-06-26T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-b156d89cf226",
+    "featuredImage": "/assets/blog-images/the-hook-and-the-worktree.webp",
+    "thumbnail": "/assets/blog-images/the-hook-and-the-worktree.webp",
+    "imageAlt": "A crowded bridge crossing is surrounded by piles of reminders warning about a missing plank, while a quiet carpenter simply installs the missing board—showing how a small structural fix succeeds where constant vigilance does not.",
+    "imageCaption": "Mind the gap!",
+    "category": "building",
+    "cluster": "building-piper-morgan",
+    "workDate": "May 13, 2026",
+    "workDateISO": "2026-05-13T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #048: The Team Puts It in Writing",
     "excerpt": "June 12–18, 2026 Three Ships ago the team crossed from \"we can run it\" to \"someone who isn't us can run it.\" This week it did the work that makes the next crossing possible: it wrote the contracts. Literally. The Architect agent ratified three architecture decision records in seven days — the con...",
     "url": "/blog/weekly-ship-048-the-team-put-it-in-writing",
@@ -19,7 +41,8 @@
     "category": "ship",
     "cluster": "d1-sprint",
     "workDate": "Jun 12, 2026",
-    "workDateISO": "2026-06-12T00:00:00.000Z"
+    "workDateISO": "2026-06-12T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Branch-or-Anchor in Ninety Minutes",
