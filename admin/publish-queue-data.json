@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-24T16:56:14.328Z",
+  "buildTime": "2026-06-26T04:38:00.469Z",
   "totalEntries": 397,
   "sections": {
     "readyToPublish": [
@@ -701,46 +701,6 @@
         "chatDate": "",
         "draftPath": "docs/public/comms/drafts/published/critical-vs-commodity-work-in-a-role.md",
         "notes": "Insight drawn from Apr 23-27 cohort migration wave + PP-002 filing (Apr 27). Cohort-wide independent convergence on the same role-shape distinction: each role has a critical subset where distinctive judgment lives + larger commoditizable surface. Seven Section-6 reflections all named the shape in different vocabularies. Title is public-prose form of PP-002 (internal 'load-bearing' → public 'critical' per May 16 memory). Generalizes beyond AI — any knowledge-worker role.",
-        "altText": "",
-        "caption": ""
-      },
-      {
-        "title": "The Pace Verified",
-        "theme": "building",
-        "status": "published",
-        "workDate": "2026-05-02",
-        "endWorkDate": "2026-05-05",
-        "pubDate": "2026-06-11",
-        "mediumURL": "https://medium.com/building-piper-morgan/the-pace-verified-c787557063a2",
-        "liPubDate": "",
-        "linkedinURL": "",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/blog/the-pace-verified",
-        "blogPath": "/blog/the-pace-verified",
-        "cartoon": "ai-pitcrew",
-        "chatDate": "",
-        "draftPath": "docs/public/comms/drafts/published/the-pace-verified.md",
-        "notes": "Beat 5 of 9-beat narrative slate. Multi-day A+B+coda. A-plot: May 2 cluster-commit (#1018+#1006/#1007/#1008 atomic, 58h design-to-ship) + audit-cascade catches conceptual drift before gameplan + May 3 record day (8 issues end-to-end + 221 new tests + 0 regressions + 3 mid-flight architectural calls: DDD strict-rewrite / channel-agnostic Push / two-layer COMPOSTED guardrail). B-plot: May 4 Architect first sustained workstream review — verdict structurally sound, 5 non-blocking cleanup items; PM instinct verified by independent review. Coda: May 5 multi-phase compounding payoff (#900 ships ~2h vs ~14h estimate because #1052 + Phase 1 state machine landed prior). Through-line: sustained pace from preparatory pieces compounding, not heroic effort.",
-        "altText": "",
-        "caption": ""
-      },
-      {
-        "title": "Weekly Ship #046: The Substrate Delivered",
-        "theme": "ship",
-        "status": "published",
-        "workDate": "2026-05-29",
-        "endWorkDate": "2026-06-04",
-        "pubDate": "2026-06-10",
-        "mediumURL": "",
-        "liPubDate": "2026-06-10",
-        "linkedinURL": "https://www.linkedin.com/pulse/weekly-ship-046-substrate-delivered-christian-crumlish-pn5ac",
-        "canonicalSite": "distributed",
-        "blogURL": "https://pipermorgan.ai/shipping-news/weekly-ship-046-the-substrate-delivered",
-        "blogPath": "/shipping-news/weekly-ship-046-the-substrate-delivered",
-        "cartoon": "piper-ship",
-        "chatDate": "",
-        "draftPath": "docs/public/comms/drafts/published/weekly-ship-046-draft-2026-06-10.md",
-        "notes": "The Substrate Delivered — May 29-Jun 4 sprint week: M2 closed, duty-cycle migration 10/11, EC-2/PDR-005 BYOC, LLM-touch boundary epic. LinkedIn-only syndication (ship cadence); fully distributed (blog + LinkedIn) 6/10.",
         "altText": "",
         "caption": ""
       }
