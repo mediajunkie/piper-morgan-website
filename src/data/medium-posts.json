@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Triad Model",
+    "excerpt": "December 2, 2025 Back in December I started thinking about what the first-time user experience should be for Piper Morgan. In discussion with my principal product manager agent (PPM) we adopted the concept of a product decision record (PDR), modeled on the ADR (architectural decision record) idea...",
+    "url": "/blog/the-triad-model",
+    "slug": "the-triad-model",
+    "publishedAt": "Jun 27, 2026",
+    "publishedAtISO": "2026-06-27T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-64267a5e395d",
+    "featuredImage": "/assets/blog-images/the-triad-model.webp",
+    "thumbnail": "/assets/blog-images/the-triad-model.webp",
+    "imageAlt": "Three glowing AI collaborators refine a floating crystal together while a human founder watches approvingly from the side, illustrating product, design, and engineering perspectives combining into a stronger shared idea.",
+    "imageCaption": "\"This is really coming together!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Dec 2, 2025",
+    "workDateISO": "2025-12-02T00:00:00.000Z"
+  },
+  {
     "title": "The Hook and the Worktree",
     "excerpt": "May 13–15, 2026 By the second week of May we'd written a procedure called close-issue-properly and turned it into a working skill the agents were supposed to invoke whenever they closed a GitHub issue. The procedure was short. Update the description checkboxes first. Then move the issue to closed...",
     "url": "/blog/the-hook-and-the-worktree",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "building-piper-morgan",
     "workDate": "May 13, 2026",
-    "workDateISO": "2026-05-13T00:00:00.000Z"
+    "workDateISO": "2026-05-13T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #048: The Team Puts It in Writing",
