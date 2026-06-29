@@ -1,5 +1,27 @@
 [
   {
+    "title": "Relationship-First Ethics",
+    "excerpt": "November 30, 2025 I'd been designing and starting to build an elaborate ethical architecture. Without access to a human board to help adjudicate ethically tricky situations, Claude had proposed a synthetic \"board\" of specialized agents - an ethicist, a devil's advocate, a boundary guardian - that...",
+    "url": "/blog/relationship-first-ethics",
+    "slug": "relationship-first-ethics",
+    "publishedAt": "Jun 29, 2026",
+    "publishedAtISO": "2026-06-29T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-387238c2a510",
+    "featuredImage": "/assets/blog-images/relationship-first-ethics.webp",
+    "thumbnail": "/assets/blog-images/relationship-first-ethics.webp",
+    "imageAlt": "A human and a friendly AI companion dance stiffly under the scrutiny of a committee of tiny rule-enforcing AI helpers, while nearby the same pair dances gracefully together after the judges step away, illustrating how trust and shared history create fluency beyond rules.",
+    "imageCaption": "\"Getting to know you...\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Nov 30, 2025",
+    "workDateISO": "2025-11-30T00:00:00.000Z"
+  },
+  {
     "title": "The Triad Model",
     "excerpt": "December 2, 2025 Back in December I started thinking about what the first-time user experience should be for Piper Morgan. In discussion with my principal product manager agent (PPM) we adopted the concept of a product decision record (PDR), modeled on the ADR (architectural decision record) idea...",
     "url": "/blog/the-triad-model",
@@ -17,9 +39,9 @@
     "imageAlt": "Three glowing AI collaborators refine a floating crystal together while a human founder watches approvingly from the side, illustrating product, design, and engineering perspectives combining into a stronger shared idea.",
     "imageCaption": "\"This is really coming together!\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "Dec 2, 2025",
-    "workDateISO": "2025-12-02T00:00:00.000Z"
+    "workDateISO": "2025-12-02T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Hook and the Worktree",
