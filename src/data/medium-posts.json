@@ -1,5 +1,27 @@
 [
   {
+    "title": "From Briefing to Vision",
+    "excerpt": "March 30 – April 10, 2026 Day one, the new agent read sixty architectural decision records. Forty-seven patterns. Fifteen omnibus logs. Twelve cross-pollination briefs. The roadmap. The vision document. The autobiography. Eight hours of absorbing nine months of institutional knowledge. It deliver...",
+    "url": "/blog/from-briefing-to-vision",
+    "slug": "from-briefing-to-vision",
+    "publishedAt": "Jun 30, 2026",
+    "publishedAtISO": "2026-06-30T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-7f28abc14ad5",
+    "featuredImage": "/assets/blog-images/from-briefing-to-vision.webp",
+    "thumbnail": "/assets/blog-images/from-briefing-to-vision.webp",
+    "imageAlt": "A glowing geometric AI companion climbs a mountain from towering stacks of project documents to an observatory overlooking a vast landscape, symbolizing how accumulated context becomes strategic vision and better judgment over time.",
+    "imageCaption": "It starts with a single step",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Mar 30, 2026",
+    "workDateISO": "2026-03-30T00:00:00.000Z"
+  },
+  {
     "title": "Relationship-First Ethics",
     "excerpt": "November 30, 2025 I'd been designing and starting to build an elaborate ethical architecture. Without access to a human board to help adjudicate ethically tricky situations, Claude had proposed a synthetic \"board\" of specialized agents - an ethicist, a devil's advocate, a boundary guardian - that...",
     "url": "/blog/relationship-first-ethics",
@@ -17,9 +39,9 @@
     "imageAlt": "A human and a friendly AI companion dance stiffly under the scrutiny of a committee of tiny rule-enforcing AI helpers, while nearby the same pair dances gracefully together after the judges step away, illustrating how trust and shared history create fluency beyond rules.",
     "imageCaption": "\"Getting to know you...\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "Nov 30, 2025",
-    "workDateISO": "2025-11-30T00:00:00.000Z"
+    "workDateISO": "2025-11-30T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Triad Model",
