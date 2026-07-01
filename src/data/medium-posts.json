@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #049: The Team Builds Its Own Reliability",
+    "excerpt": "June 19–25, 2026 Six portfolio milestones closed this week — the connector contract ratified, the D2 design-system sprint done in 48 hours, the nine-beat building-narrative arc completed, the push-to-ref mechanism shipped. Also: a rate-limit cascade took six of nine cycling roles dark for three d...",
+    "url": "/blog/weekly-ship-049-the-team-builds-its-own-reliability",
+    "slug": "weekly-ship-049-the-team-builds-its-own-reliability",
+    "publishedAt": "Jul 1, 2026",
+    "publishedAtISO": "2026-07-01T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-406fba157dd4",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
+    "imageCaption": "",
+    "category": "ship",
+    "cluster": "reconnect",
+    "workDate": "Jun 19, 2026",
+    "workDateISO": "2026-06-19T00:00:00.000Z"
+  },
+  {
     "title": "From Briefing to Vision",
     "excerpt": "March 30 – April 10, 2026 Day one, the new agent read sixty architectural decision records. Forty-seven patterns. Fifteen omnibus logs. Twelve cross-pollination briefs. The roadmap. The vision document. The autobiography. Eight hours of absorbing nine months of institutional knowledge. It deliver...",
     "url": "/blog/from-briefing-to-vision",
@@ -17,9 +39,9 @@
     "imageAlt": "A glowing geometric AI companion climbs a mountain from towering stacks of project documents to an observatory overlooking a vast landscape, symbolizing how accumulated context becomes strategic vision and better judgment over time.",
     "imageCaption": "It starts with a single step",
     "category": "building",
-    "cluster": "",
     "workDate": "Mar 30, 2026",
-    "workDateISO": "2026-03-30T00:00:00.000Z"
+    "workDateISO": "2026-03-30T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Relationship-First Ethics",
