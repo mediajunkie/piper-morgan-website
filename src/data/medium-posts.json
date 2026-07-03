@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Airport Corrections",
+    "excerpt": "May 25–26, 2026 I spent most of the weekend away from my desk. There was a college reunion, and I spent the last day between checking out of a hotel in New York in the morning and an afternoon at the airport, the kind of day where you're never quite anywhere — half present, half in transit, check...",
+    "url": "/blog/the-airport-corrections",
+    "slug": "the-airport-corrections",
+    "publishedAt": "Jul 2, 2026",
+    "publishedAtISO": "2026-07-02T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-6c74263d4862",
+    "featuredImage": "/assets/blog-images/the-airport-corrections.webp",
+    "thumbnail": "/assets/blog-images/the-airport-corrections.webp",
+    "imageAlt": "At an airport gate, a traveler supervises a whimsical team of glowing AI helpers tending an autonomous work loop while planes wait outside the windows.",
+    "imageCaption": "\"Now don't stray too far before boarding!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "May 25, 2026",
+    "workDateISO": "2026-05-25T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #049: The Team Builds Its Own Reliability",
     "excerpt": "June 19–25, 2026 Six portfolio milestones closed this week — the connector contract ratified, the D2 design-system sprint done in 48 hours, the nine-beat building-narrative arc completed, the push-to-ref mechanism shipped. Also: a rate-limit cascade took six of nine cycling roles dark for three d...",
     "url": "/blog/weekly-ship-049-the-team-builds-its-own-reliability",
@@ -19,7 +41,8 @@
     "category": "ship",
     "cluster": "reconnect",
     "workDate": "Jun 19, 2026",
-    "workDateISO": "2026-06-19T00:00:00.000Z"
+    "workDateISO": "2026-06-19T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "From Briefing to Vision",
