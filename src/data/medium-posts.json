@@ -1,5 +1,27 @@
 [
   {
+    "title": "Climbing Higher When the Platform Laps You",
+    "excerpt": "May 6–18, 2026 Anthropic shipped Outcomes on May 6 — verification-as-an-API, the productized version of roughly what I'd been building bespoke for months. It would be easy to find this frustrating: Well, there goes that work. I had a verification harness running. It was tuned to our specific patt...",
+    "url": "/blog/climbing-higher-when-the-platform-laps-you",
+    "slug": "climbing-higher-when-the-platform-laps-you",
+    "publishedAt": "Jul 4, 2026",
+    "publishedAtISO": "2026-07-04T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-887c7c3d0fc7",
+    "featuredImage": "/assets/blog-images/climbing-higher-when-the-platform-laps-you.webp",
+    "thumbnail": "/assets/blog-images/climbing-higher-when-the-platform-laps-you.webp",
+    "imageAlt": "A mountain climber ascends toward a summit observatory while the rough path below evolves into permanent stone stairs and an elegant mechanical lift, symbolizing custom work becoming shared infrastructure.",
+    "imageCaption": "\"You've got to be kidding me!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "May 6, 2026",
+    "workDateISO": "2026-05-06T00:00:00.000Z"
+  },
+  {
     "title": "The Airport Corrections",
     "excerpt": "May 25–26, 2026 I spent most of the weekend away from my desk. There was a college reunion, and I spent the last day between checking out of a hotel in New York in the morning and an afternoon at the airport, the kind of day where you're never quite anywhere — half present, half in transit, check...",
     "url": "/blog/the-airport-corrections",
@@ -17,9 +39,9 @@
     "imageAlt": "At an airport gate, a traveler supervises a whimsical team of glowing AI helpers tending an autonomous work loop while planes wait outside the windows.",
     "imageCaption": "\"Now don't stray too far before boarding!\"",
     "category": "building",
-    "cluster": "",
     "workDate": "May 25, 2026",
-    "workDateISO": "2026-05-25T00:00:00.000Z"
+    "workDateISO": "2026-05-25T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #049: The Team Builds Its Own Reliability",
