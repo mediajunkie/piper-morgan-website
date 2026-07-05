@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Practice That Got Retired",
+    "excerpt": "May 17–21, 2026 For three or four days in mid-May, a small set of role-named agents in my project tried a new practice, part of what I have started calling a \"duty cycle.\" Each agent set up a small recurring job that fired on an hourly schedule, checked the agent's mailbox for new arrivals, ran a...",
+    "url": "/blog/the-practice-that-got-retired",
+    "slug": "the-practice-that-got-retired",
+    "publishedAt": "Jul 5, 2026",
+    "publishedAtISO": "2026-07-05T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-56e79d586c0a",
+    "featuredImage": "/assets/blog-images/the-practice-that-got-retired.webp",
+    "thumbnail": "/assets/blog-images/the-practice-that-got-retired.webp",
+    "imageAlt": "A gardener gently removes the support stakes from a young tree that has grown strong enough to stand on its own, while several small glowing AI companions carefully coil the ropes, take notes, and neatly stack the retired stakes, symbolizing a successful practice whose lessons endure after the implementation is retired.",
+    "imageCaption": "\"I think we''re ready!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "May 17, 2026",
+    "workDateISO": "2026-05-17T00:00:00.000Z"
+  },
+  {
     "title": "Climbing Higher When the Platform Laps You",
     "excerpt": "May 6–18, 2026 Anthropic shipped Outcomes on May 6 — verification-as-an-API, the productized version of roughly what I'd been building bespoke for months. It would be easy to find this frustrating: Well, there goes that work. I had a verification harness running. It was tuned to our specific patt...",
     "url": "/blog/climbing-higher-when-the-platform-laps-you",
@@ -17,9 +39,9 @@
     "imageAlt": "A mountain climber ascends toward a summit observatory while the rough path below evolves into permanent stone stairs and an elegant mechanical lift, symbolizing custom work becoming shared infrastructure.",
     "imageCaption": "\"You've got to be kidding me!\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "May 6, 2026",
-    "workDateISO": "2026-05-06T00:00:00.000Z"
+    "workDateISO": "2026-05-06T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Airport Corrections",
