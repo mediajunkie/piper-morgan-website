@@ -17,9 +17,9 @@
     "imageAlt": "A warm editorial cartoon of several craftspeople crowding around one oversized workbench, accidentally interfering with one another despite working carefully, while a row of newly opened individual workbenches lets them spread out and continue building independently. A blueprint on the wall quietly guides newcomers setting up their own spaces.",
     "imageCaption": "\"I think we''re getting the hang of this!\"",
     "category": "building",
-    "cluster": "",
     "workDate": "May 27, 2026",
-    "workDateISO": "2026-05-27T00:00:00.000Z"
+    "workDateISO": "2026-05-27T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Practice That Got Retired",
