@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Team Catches the Cycle",
+    "excerpt": "May 27–28, 2026 For weeks I'd been testing a duty cycle with one agent at a time. The idea is simple enough: a scheduled prompt fires on an interval, the agent wakes up, checks its mail, advances whatever work is unblocked, and goes back to sleep. When I'm not around to hand out tasks, the agent ...",
+    "url": "/blog/the-cohort-catches-the-cycle",
+    "slug": "the-cohort-catches-the-cycle",
+    "publishedAt": "Jul 7, 2026",
+    "publishedAtISO": "2026-07-07T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-b35c816da851",
+    "featuredImage": "/assets/blog-images/the-cohort-catches-the-cycle.webp",
+    "thumbnail": "/assets/blog-images/the-cohort-catches-the-cycle.webp",
+    "imageAlt": "A warm editorial cartoon of several craftspeople crowding around one oversized workbench, accidentally interfering with one another despite working carefully, while a row of newly opened individual workbenches lets them spread out and continue building independently. A blueprint on the wall quietly guides newcomers setting up their own spaces.",
+    "imageCaption": "\"I think we''re getting the hang of this!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "May 27, 2026",
+    "workDateISO": "2026-05-27T00:00:00.000Z"
+  },
+  {
     "title": "The Practice That Got Retired",
     "excerpt": "May 17–21, 2026 For three or four days in mid-May, a small set of role-named agents in my project tried a new practice, part of what I have started calling a \"duty cycle.\" Each agent set up a small recurring job that fired on an hourly schedule, checked the agent's mailbox for new arrivals, ran a...",
     "url": "/blog/the-practice-that-got-retired",
@@ -17,9 +39,9 @@
     "imageAlt": "A gardener gently removes the support stakes from a young tree that has grown strong enough to stand on its own, while several small glowing AI companions carefully coil the ropes, take notes, and neatly stack the retired stakes, symbolizing a successful practice whose lessons endure after the implementation is retired.",
     "imageCaption": "\"I think we''re ready!\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "May 17, 2026",
-    "workDateISO": "2026-05-17T00:00:00.000Z"
+    "workDateISO": "2026-05-17T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Climbing Higher When the Platform Laps You",
