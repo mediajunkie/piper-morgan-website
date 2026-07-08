@@ -1,6 +1,6 @@
 [
   {
-    "title": "Weekly Ship #050: The connector gets real",
+    "title": "Weekly Ship #050: The Connector Gets Real",
     "excerpt": "June 26–July 2, 2026 The GitHub connector stopped pretending this week. What had been running against a simulated backend went live — verified by pulling 179 real issues through real authentication, not test fixtures. The calendar connector got the same treatment on the same shared contract. A se...",
     "url": "/blog/weekly-ship-050-the-connector-gets-real",
     "slug": "weekly-ship-050-the-connector-gets-real",
