@@ -1,9 +1,9 @@
 [
   {
-    "title": "Weekly Ship #050: The first real user",
-    "excerpt": "June 26–July 2, 2026 Someone outside the team used Piper Morgan for real this week. Jake Krajewski installed the new Claude plugin and started using it — the first person who isn't part of the project putting it to work. The GitHub connector went from simulated to real in the same window, live-ve...",
-    "url": "/blog/weekly-ship-050-the-first-real-user",
-    "slug": "weekly-ship-050-the-first-real-user",
+    "title": "Weekly Ship #050: The connector gets real",
+    "excerpt": "June 26–July 2, 2026 The GitHub connector stopped pretending this week. What had been running against a simulated backend went live — verified by pulling 179 real issues through real authentication, not test fixtures. The calendar connector got the same treatment on the same shared contract. A se...",
+    "url": "/blog/weekly-ship-050-the-connector-gets-real",
+    "slug": "weekly-ship-050-the-connector-gets-real",
     "publishedAt": "Jul 8, 2026",
     "publishedAtISO": "2026-07-08T00:00:00.000Z",
     "author": "christian crumlish",
@@ -11,7 +11,7 @@
     "tags": [
       "Building in Public"
     ],
-    "guid": "blog-first-cc8d1f372cd1",
+    "guid": "blog-first-f5eb18e35ee6",
     "featuredImage": "/assets/blog-images/piper-ship.webp",
     "thumbnail": "/assets/blog-images/piper-ship.webp",
     "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
