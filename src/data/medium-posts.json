@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Package and the First Bite",
+    "excerpt": "May 29–30, 2026 A few weeks ago I started moving my agents to a new way of working. I called it the \"duty cycle.\" Each agent runs on its own schedule, checks its mailbox, picks up unblocked work, and signs off cleanly. The design had been getting better in fits and starts. By the end of last week...",
+    "url": "/blog/the-package-and-the-first-bite",
+    "slug": "the-package-and-the-first-bite",
+    "publishedAt": "Jul 9, 2026",
+    "publishedAtISO": "2026-07-09T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-89405e386f0f",
+    "featuredImage": "/assets/blog-images/the-package-and-the-first-bite.webp",
+    "thumbnail": "/assets/blog-images/the-package-and-the-first-bite.webp",
+    "imageAlt": "A sheepdog confidently patrols a farm fence while, nearby, the farmer quietly inspects one overlooked corner with a lantern—an illustration of trusted routines backed by occasional careful verification.",
+    "imageCaption": "\"Good thing we checked!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "May 29, 2026",
+    "workDateISO": "2026-05-29T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #050: The Connector Gets Real",
     "excerpt": "June 26–July 2, 2026 The GitHub connector stopped pretending this week. What had been running against a simulated backend went live — verified by pulling 179 real issues through real authentication, not test fixtures. The calendar connector got the same treatment on the same shared contract. A se...",
     "url": "/blog/weekly-ship-050-the-connector-gets-real",
@@ -17,9 +39,9 @@
     "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
     "imageCaption": "",
     "category": "ship",
-    "cluster": "",
     "workDate": "Jun 26, 2026",
-    "workDateISO": "2026-06-26T00:00:00.000Z"
+    "workDateISO": "2026-06-26T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Team Catches the Cycle",
