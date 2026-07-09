@@ -370,6 +370,18 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
     }
   });
 
+  // Build title set from existing blog-first posts for title-based dedup fallback.
+  // Catches syndicated posts whose Medium URL is the short medium.com/p/xxxxxxxx form
+  // (extractSlugFromMediumUrl returns null) or whose auto-derived title-slug doesn't
+  // match the hand-chosen blog-first slug. Title alone is sufficient because the
+  // blog-first entry's presence in the archive already proves it's canonical.
+  const blogFirstTitles = new Set();
+  existingPosts.forEach(post => {
+    if (post.guid && post.guid.startsWith('blog-first-') && post.title) {
+      blogFirstTitles.add(post.title.trim().toLowerCase());
+    }
+  });
+
   // Build set of Medium hashIds known to be syndicated copies (catches the
   // common case where Medium auto-derives a longer title-slug that doesn't
   // match the blog-first slug — relies on editorial-calendar.csv's
@@ -418,6 +430,16 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
         // This RSS post matches a blog-first post by slug — skip it
         console.log(`\n⏭️  Skipping syndicated duplicate (slug match): "${rssPost.title.substring(0, 60)}..."`);
         console.log(`   Blog-first slug "${rssSlug}" already exists (blog hashId: ${csvBySlug ? csvBySlug.hashId : 'in archive'})`);
+        skippedBlogFirst++;
+        continue;
+      }
+
+      // Title-based fallback: catches syndicated posts whose Medium URL is the short
+      // medium.com/p/xxxxxxxx form (extractSlugFromMediumUrl returns null) or whose
+      // auto-derived title-slug doesn't match the hand-chosen blog-first slug.
+      const rssTitle = (rssPost.title || '').trim().toLowerCase();
+      if (rssTitle && blogFirstTitles.has(rssTitle)) {
+        console.log(`\n⏭️  Skipping syndicated duplicate (title match): "${rssPost.title.substring(0, 60)}"`);
         skippedBlogFirst++;
         continue;
       }
@@ -549,19 +571,26 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
 
   // Remove RSS duplicates of blog-first posts that were already in the archive.
   // A blog-first post has guid "blog-first-{hashId}". If an RSS entry exists with
-  // a different hashId but the same slug, the RSS entry is a syndicated duplicate.
+  // a different hashId but the same slug or title, the RSS entry is a syndicated duplicate.
   let removedDuplicates = 0;
   const blogFirstSlugToHashId = new Map();
+  const blogFirstTitleToHashId = new Map();
   for (const [hashId, post] of existingMap) {
-    if (post.guid && post.guid.startsWith('blog-first-') && post.slug) {
-      blogFirstSlugToHashId.set(post.slug, hashId);
+    if (post.guid && post.guid.startsWith('blog-first-')) {
+      if (post.slug) blogFirstSlugToHashId.set(post.slug, hashId);
+      if (post.title) blogFirstTitleToHashId.set(post.title.trim().toLowerCase(), hashId);
     }
   }
   for (const [hashId, post] of existingMap) {
     if (post.guid && post.guid.startsWith('blog-first-')) continue; // Skip blog-first entries
     const slug = post.slug || extractSlugFromMediumUrl(post.url || post.link || post.guid);
+    const titleKey = (post.title || '').trim().toLowerCase();
     if (slug && blogFirstSlugToHashId.has(slug) && blogFirstSlugToHashId.get(slug) !== hashId) {
       console.log(`  🗑️  Removing RSS duplicate: "${post.title}" (${hashId} → blog-first ${blogFirstSlugToHashId.get(slug)})`);
+      existingMap.delete(hashId);
+      removedDuplicates++;
+    } else if (titleKey && blogFirstTitleToHashId.has(titleKey) && blogFirstTitleToHashId.get(titleKey) !== hashId) {
+      console.log(`  🗑️  Removing RSS duplicate (title match): "${post.title}" (${hashId} → blog-first ${blogFirstTitleToHashId.get(titleKey)})`);
       existingMap.delete(hashId);
       removedDuplicates++;
     }
