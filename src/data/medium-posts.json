@@ -1,5 +1,27 @@
 [
   {
+    "title": "When the Documentation Drifts",
+    "excerpt": "May 19–20, 2026 The morning of May 20, an engineer on the project (Lead Developer, one of the role-named agents on the team) spent the first thirty-five minutes reverting work. A small skill that synced a manifest file across mailboxes had run during the previous day's session and done the job wr...",
+    "url": "/blog/when-the-documentation-drifts",
+    "slug": "when-the-documentation-drifts",
+    "publishedAt": "Jul 12, 2026",
+    "publishedAtISO": "2026-07-12T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-bb88ff0db1b3",
+    "featuredImage": "/assets/blog-images/when-the-documentation-drifts.webp",
+    "thumbnail": "/assets/blog-images/when-the-documentation-drifts.webp",
+    "imageAlt": "Two trains on railroad tracks that begin together but slowly diverge into different directions, symbolizing documentation drifting away from code.",
+    "imageCaption": "\"Headed my way?\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "May 19, 2026",
+    "workDateISO": "2026-05-19T00:00:00.000Z"
+  },
+  {
     "title": "The Package and the First Bite",
     "excerpt": "May 29–30, 2026 A few weeks ago I started moving my agents to a new way of working. I called it the \"duty cycle.\" Each agent runs on its own schedule, checks its mailbox, picks up unblocked work, and signs off cleanly. The design had been getting better in fits and starts. By the end of last week...",
     "url": "/blog/the-package-and-the-first-bite",
@@ -17,9 +39,9 @@
     "imageAlt": "A sheepdog confidently patrols a farm fence while, nearby, the farmer quietly inspects one overlooked corner with a lantern—an illustration of trusted routines backed by occasional careful verification.",
     "imageCaption": "\"Good thing we checked!\"",
     "category": "building",
-    "cluster": "",
     "workDate": "May 29, 2026",
-    "workDateISO": "2026-05-29T00:00:00.000Z"
+    "workDateISO": "2026-05-29T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #050: The Connector Gets Real",
