@@ -15,6 +15,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import path from 'path';
 import fs from 'fs';
+import { execSync } from 'child_process';
 import { loadCalendar } from '@/lib/editorial-calendar';
 import { parseDraft, writeDraft, stripCaptionQuotes, wrapCaptionQuotes, Frontmatter } from '@/lib/editorial/draft';
 
@@ -88,7 +89,22 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     const frontmatter: Frontmatter = { image, alt, caption: wrapCaptionQuotes(caption) };
     try {
       writeDraft(absPath, frontmatter, body);
-      return res.status(200).json({ saved: true, slug });
+
+      // Commit the saved file in the product repo so PM doesn't need to git manually.
+      // Silently swallow "nothing to commit" — the save succeeded regardless.
+      let committed = false;
+      try {
+        execSync(`git -C "${PRODUCT_ROOT}" add "${entry.draftPath}"`, { stdio: 'pipe' });
+        execSync(
+          `git -C "${PRODUCT_ROOT}" commit -m "content(${slug}): edit via admin UI"`,
+          { stdio: 'pipe' },
+        );
+        committed = true;
+      } catch {
+        // nothing to commit, or git unavailable — save succeeded
+      }
+
+      return res.status(200).json({ saved: true, committed, slug });
     } catch (e) {
       return res.status(500).json({ error: String(e) });
     }

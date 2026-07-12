@@ -25,7 +25,7 @@ type SaveStatus =
   | { kind: 'idle' }
   | { kind: 'unsaved' }
   | { kind: 'saving' }
-  | { kind: 'saved'; time: string }
+  | { kind: 'saved'; time: string; committed: boolean }
   | { kind: 'error'; message: string };
 
 // ─── List view ───────────────────────────────────────────────────────────────
@@ -71,6 +71,46 @@ function ComposeList() {
       ))}
     </ul>
   );
+}
+
+// ─── Markdown preview ─────────────────────────────────────────────────────────
+
+function mdToHtml(md: string): string {
+  // Minimal markdown → HTML for admin preview. Not exhaustive — covers typical post content.
+  let html = md
+    // Fenced code blocks (before inline code)
+    .replace(/```[^\n]*\n([\s\S]*?)```/g, (_m, code) => `<pre><code>${escHtml(code.trim())}</code></pre>`)
+    // Headings
+    .replace(/^#### (.+)$/gm, '<h4>$1</h4>')
+    .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+    .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+    .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+    // Horizontal rule
+    .replace(/^---+$/gm, '<hr>')
+    // Unordered list items
+    .replace(/^[*-] (.+)$/gm, '<li>$1</li>')
+    // Inline formatting
+    .replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>')
+    .replace(/`([^`]+)`/g, '<code>$1</code>');
+
+  // Wrap consecutive <li> blocks in <ul>
+  html = html.replace(/(<li>[\s\S]*?<\/li>\n?)+/g, m => `<ul>${m}</ul>`);
+
+  // Wrap bare text blocks (not already wrapped in a block tag) in <p>
+  html = html.split('\n\n').map(block => {
+    const t = block.trim();
+    if (!t) return '';
+    if (/^<(h[1-6]|ul|ol|pre|hr|blockquote)/.test(t)) return t;
+    return `<p>${t.replace(/\n/g, '<br>')}</p>`;
+  }).join('\n');
+
+  return html;
+}
+
+function escHtml(s: string): string {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
 // ─── Edit view ────────────────────────────────────────────────────────────────
@@ -126,8 +166,9 @@ function ComposeEdit({ slug }: { slug: string }) {
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       lastSavedRef.current = key;
+      const { committed } = await res.json();
       const t = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-      setSaveStatus({ kind: 'saved', time: t });
+      setSaveStatus({ kind: 'saved', time: t, committed: !!committed });
     } catch (e) {
       setSaveStatus({ kind: 'error', message: String(e) });
     }
@@ -229,15 +270,24 @@ function ComposeEdit({ slug }: { slug: string }) {
           />
         </Field>
 
-        <Field label="Body" htmlFor="field-body">
-          <textarea
-            id="field-body"
-            value={body}
-            onChange={e => handleBodyChange(e.target.value)}
-            rows={40}
-            className={`${inputCls} font-mono text-sm resize-y`}
-          />
-        </Field>
+        <div>
+          <label className="block text-xs font-medium text-gray-600 dark:text-gray-400 mb-1">Body</label>
+          <div className="flex flex-col xl:flex-row gap-4">
+            <textarea
+              id="field-body"
+              value={body}
+              onChange={e => handleBodyChange(e.target.value)}
+              rows={40}
+              className={`${inputCls} font-mono text-sm resize-y xl:w-1/2`}
+              aria-label="Markdown source"
+            />
+            <div
+              className="xl:w-1/2 min-h-[10rem] border border-gray-200 dark:border-gray-700 rounded-md p-4 overflow-auto bg-gray-50 dark:bg-gray-900 prose prose-sm dark:prose-invert max-w-none"
+              aria-label="Preview"
+              dangerouslySetInnerHTML={{ __html: mdToHtml(body) }}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -247,7 +297,7 @@ function ComposeEdit({ slug }: { slug: string }) {
 
 export function ComposeApp() {
   const params = useSearchParams();
-  const slug = params.get('slug');
+  const slug = params?.get('slug') ?? null;
   return slug ? <ComposeEdit slug={slug} /> : <ComposeList />;
 }
 
@@ -280,7 +330,11 @@ function SaveIndicator({ status, onSave }: { status: SaveStatus; onSave: () => v
     </button>
   );
   if (status.kind === 'saving') return <span className={`${base} bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400`}>Saving…</span>;
-  if (status.kind === 'saved') return <span className={`${base} bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300`}>Saved {status.time}</span>;
+  if (status.kind === 'saved') return (
+    <span className={`${base} bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300`}>
+      {status.committed ? `Saved + committed ${status.time}` : `Saved ${status.time}`}
+    </span>
+  );
   return <span className={`${base} bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300`}>Save failed: {status.message}</span>;
 }
 

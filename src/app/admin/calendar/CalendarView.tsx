@@ -288,8 +288,9 @@ function composeSlug(draftPath: string): string {
 
 function DetailLinks({ entry }: { entry: CalendarEntry }) {
   const links: { href: string; label: string; external?: boolean }[] = [];
-  if (entry.draftPath && entry.status !== 'published') {
-    links.push({ href: `/admin/calendar/compose?slug=${encodeURIComponent(composeSlug(entry.draftPath))}`, label: 'Edit draft' });
+  if (entry.draftPath) {
+    const label = (entry.status || '').toLowerCase() === 'published' ? 'Edit post' : 'Edit draft';
+    links.push({ href: `/admin/calendar/compose?slug=${encodeURIComponent(composeSlug(entry.draftPath))}`, label });
   }
   if (entry.blogURL) links.push({ href: entry.blogURL, label: 'blog', external: true });
   if (entry.mediumURL) links.push({ href: entry.mediumURL, label: 'Medium', external: true });
