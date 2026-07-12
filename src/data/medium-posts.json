@@ -17,9 +17,31 @@
     "imageAlt": "Two trains on railroad tracks that begin together but slowly diverge into different directions, symbolizing documentation drifting away from code.",
     "imageCaption": "\"Headed my way?\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "May 19, 2026",
-    "workDateISO": "2026-05-19T00:00:00.000Z"
+    "workDateISO": "2026-05-19T00:00:00.000Z",
+    "featured": false
+  },
+  {
+    "title": "The Server Crashed Mid-Draft",
+    "excerpt": "May 17–21, 2026 I was drafting a post one evening — somewhere past the halfway point, deep into the part of the writing where revision and forward motion blur into the same activity. The session ended unexpectedly. Server error, network drop, something on the platform side I couldn't see and coul...",
+    "url": "/blog/the-server-crashed-mid-draft",
+    "slug": "the-server-crashed-mid-draft",
+    "publishedAt": "Jul 12, 2026",
+    "publishedAtISO": "2026-07-12T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-b63577f98aa8",
+    "featuredImage": "/assets/blog-images/the-server-crashed-mid-draft.webp",
+    "thumbnail": "/assets/blog-images/the-server-crashed-mid-draft.webp",
+    "imageAlt": "A writer watches as a single page lifts from a neatly stacked manuscript and blows out through a slightly open window, illustrating how a brief window of vulnerability can put valuable work at risk.",
+    "imageCaption": "\"I meant to close that!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "May 17, 2026",
+    "workDateISO": "2026-05-17T00:00:00.000Z"
   },
   {
     "title": "The Package and the First Bite",
