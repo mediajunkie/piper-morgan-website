@@ -19,6 +19,8 @@ interface DraftDetail {
   pubDate: string;
   frontmatter: { image: string; alt: string; caption: string };
   body: string;
+  /** GitHub file SHA (GitHub storage mode) — null in local filesystem mode. */
+  sha: string | null;
 }
 
 type SaveStatus =
@@ -134,6 +136,7 @@ function ComposeEdit({ slug }: { slug: string }) {
 
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lastSavedRef = useRef<string | null>(null);
+  const shaRef = useRef<string | null>(null);
 
   // Load draft on mount
   useEffect(() => {
@@ -146,6 +149,7 @@ function ComposeEdit({ slug }: { slug: string }) {
         setCaption(d.frontmatter.caption);
         setBody(d.body);
         scanPlaceholders(d.body);
+        shaRef.current = d.sha ?? null;
         lastSavedRef.current = JSON.stringify({ image: d.frontmatter.image, alt: d.frontmatter.alt, caption: d.frontmatter.caption, body: d.body });
       })
       .catch(e => setLoadError(String(e)));
@@ -162,15 +166,19 @@ function ComposeEdit({ slug }: { slug: string }) {
       const res = await fetch(`/api/compose?slug=${encodeURIComponent(slug)}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: key,
+        body: JSON.stringify({ ...payload, sha: shaRef.current }),
       });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      if (!res.ok) {
+        const errBody = await res.json().catch(() => null) as { error?: string } | null;
+        throw new Error(errBody?.error || `HTTP ${res.status}`);
+      }
       lastSavedRef.current = key;
-      const { committed } = await res.json();
+      const { committed, sha: newSha } = await res.json();
+      if (newSha) shaRef.current = newSha;
       const t = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
       setSaveStatus({ kind: 'saved', time: t, committed: !!committed });
     } catch (e) {
-      setSaveStatus({ kind: 'error', message: String(e) });
+      setSaveStatus({ kind: 'error', message: e instanceof Error ? e.message : String(e) });
     }
   }, [slug, getPayload]);
 

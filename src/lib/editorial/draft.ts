@@ -72,25 +72,37 @@ function parseLegacyComments(text: string): Frontmatter {
   return fm;
 }
 
-export function parseDraft(filePath: string): { frontmatter: Frontmatter; body: string } {
-  const text = fs.readFileSync(filePath, 'utf-8');
+/** Parse draft text (YAML frontmatter preferred, legacy HTML comments fallback). */
+export function parseDraftContent(text: string): { frontmatter: Frontmatter; body: string } {
   const yaml = parseYamlBlock(text);
   if (yaml) return { frontmatter: yaml.fm, body: yaml.body };
   return { frontmatter: parseLegacyComments(text), body: text };
+}
+
+export function parseDraft(filePath: string): { frontmatter: Frontmatter; body: string } {
+  return parseDraftContent(fs.readFileSync(filePath, 'utf-8'));
 }
 
 function yamlSingleQuote(value: string): string {
   return "'" + value.replace(/'/g, "''") + "'";
 }
 
-export function writeDraft(filePath: string, frontmatter: Frontmatter, body: string): void {
+/** Serialize frontmatter + body to draft file text. */
+export function serializeDraft(frontmatter: Frontmatter, body: string): string {
   const lines = ['---'];
   for (const key of FRONTMATTER_KEYS) {
     lines.push(`${key}: ${yamlSingleQuote(frontmatter[key] ?? '')}`);
   }
-  lines.push('---', '');
+  // Blank line between frontmatter and body — parseYamlBlock strips exactly one,
+  // so parse → serialize round-trips hand-authored drafts without a diff.
+  lines.push('---', '', '');
   let content = lines.join('\n') + body;
   if (!content.endsWith('\n')) content += '\n';
+  return content;
+}
+
+export function writeDraft(filePath: string, frontmatter: Frontmatter, body: string): void {
+  const content = serializeDraft(frontmatter, body);
 
   const tmp = filePath + '.tmp';
   try {
