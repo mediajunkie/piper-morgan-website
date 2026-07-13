@@ -27,6 +27,7 @@ import {
   githubDraftsEnabled, fetchDraft, saveDraft,
   DraftNotFoundError, DraftConflictError,
 } from '@/lib/github-drafts';
+import { ensureAdmin } from '@/lib/admin-auth';
 
 const PRODUCT_ROOT = process.env.PIPER_PRODUCT_ROOT
   || path.resolve(process.cwd(), '..', 'piper-morgan-product');
@@ -48,6 +49,8 @@ function findEntry(slug: string) {
 }
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  if (!await ensureAdmin(req, res)) return;
+
   const slug = typeof req.query.slug === 'string' ? req.query.slug : null;
 
   if (req.method === 'GET' && !slug) {

@@ -17,7 +17,7 @@ export default function ComposePage() {
           </p>
           <h1 className="text-3xl font-bold text-text-dark dark:text-dark-text mt-1">Compose</h1>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
-            Local editorial tool — works only in dev mode. Autosaves 30 s after last change, and on focus-out.
+            Edits save to the product repo and commit automatically. Autosaves 30 s after last change, and on focus-out.
           </p>
         </header>
 
