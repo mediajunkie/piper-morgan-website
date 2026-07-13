@@ -9,6 +9,7 @@
     "fetch-medium": "node scripts/fetch-blog-posts.js",
     "sync-linkedin": "node scripts/fetch-linkedin-stats.js",
     "build": "NODE_ENV=production next build",
+    "build:static": "STATIC_EXPORT=true npm run build",
     "start": "next start",
     "lint": "next lint",
     "export": "next build && next export",

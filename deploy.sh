@@ -3,9 +3,9 @@
 # Manual deployment script for Piper Morgan website
 echo "🚀 Starting manual deployment..."
 
-# Build the site
+# Build the site (static export for GitHub Pages)
 echo "📦 Building Next.js site..."
-npm run build
+npm run build:static
 
 # Check if build succeeded
 if [ $? -ne 0 ]; then
