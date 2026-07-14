@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Migration Wave",
+    "excerpt": "May 31 – June 2, 2026 For the past week I've been writing about the scaffolding: handoff memos, misfiled documents, a four-layer system to catch stale trackers before they drift, an autonomous duty cycle running quietly overnight. Scaffolding is what you build before the thing it holds up. Over t...",
+    "url": "/blog/the-migration-wave",
+    "slug": "the-migration-wave",
+    "publishedAt": "Jul 14, 2026",
+    "publishedAtISO": "2026-07-14T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-b3bb0278b2c2",
+    "featuredImage": "/assets/blog-images/the-migration-wave.webp",
+    "thumbnail": "/assets/blog-images/the-migration-wave.webp",
+    "imageAlt": "A crew of geometric agents operates distinct stations aboard a newly launched ship, while two inspect a painted false hatch as the unfinished vessel gets underway.",
+    "imageCaption": "\"All aboard?\"",
+    "category": "building",
+    "cluster": "may-2026-buildout",
+    "workDate": "May 31, 2026",
+    "workDateISO": "2026-05-31T00:00:00.000Z"
+  },
+  {
     "title": "The Server Crashed Mid-Draft",
     "excerpt": "May 17–21, 2026 I was drafting a post one evening — somewhere past the halfway point, deep into the part of the writing where revision and forward motion blur into the same activity. The session ended unexpectedly. Server error, network drop, something on the platform side I couldn't see and coul...",
     "url": "/blog/the-server-crashed-mid-draft",
