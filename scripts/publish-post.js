@@ -659,11 +659,13 @@ try {
     }
   }
 
-  // Empty-meta check (Gap 3) — only for full publish on non-ship posts
-  if (cfg.mode === 'publish' && cfg.category !== 'ship') {
+  // Empty-meta check (Gap 3) — full publish only. Ships share piper-ship.webp
+  // and conventionally have no caption, but their CSV rows still carry alt to
+  // production, so alt is checked for every category.
+  if (cfg.mode === 'publish') {
     const emptyFields = [];
     if (isEmptyMetaValue(meta.alt)) emptyFields.push('alt');
-    if (isEmptyMetaValue(meta.caption)) emptyFields.push('caption');
+    if (cfg.category !== 'ship' && isEmptyMetaValue(meta.caption)) emptyFields.push('caption');
     if (emptyFields.length > 0) {
       if (cfg.force) {
         log(`⚠️  proceeding with empty frontmatter ${emptyFields.join(' + ')} (--force in effect)`);
