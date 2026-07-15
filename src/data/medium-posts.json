@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #051: Impossible by Construction",
+    "excerpt": "July 3–9, 2026 Last week's Ship ended on a lesson about trusting yourself to remember: three fixes that turned \"someone has to check this\" into \"the system checks itself.\" This week, the same instinct showed up at a different scale. Instead of individual habits, it was architecture — three ADRs d...",
+    "url": "/blog/weekly-ship-051-impossible-by-construction",
+    "slug": "weekly-ship-051-impossible-by-construction",
+    "publishedAt": "Jul 15, 2026",
+    "publishedAtISO": "2026-07-15T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-5a170754eb2b",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "",
+    "imageCaption": "",
+    "category": "ship",
+    "cluster": "ship-051",
+    "workDate": "Jul 3, 2026",
+    "workDateISO": "2026-07-03T00:00:00.000Z"
+  },
+  {
     "title": "The Migration Wave",
     "excerpt": "May 31 – June 2, 2026 For the past week I've been writing about the scaffolding: handoff memos, misfiled documents, a four-layer system to catch stale trackers before they drift, an autonomous duty cycle running quietly overnight. Scaffolding is what you build before the thing it holds up. Over t...",
     "url": "/blog/the-migration-wave",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "may-2026-buildout",
     "workDate": "May 31, 2026",
-    "workDateISO": "2026-05-31T00:00:00.000Z"
+    "workDateISO": "2026-05-31T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Server Crashed Mid-Draft",
