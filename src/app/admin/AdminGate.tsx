@@ -12,16 +12,20 @@
 import { useEffect, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 
-type GateState = 'checking' | 'allowed' | 'unconfigured';
+type GateState = 'checking' | 'allowed' | 'unconfigured' | 'static-fallback';
+
+const IS_STATIC_EXPORT = process.env.NEXT_PUBLIC_STATIC_EXPORT === 'true';
 
 export function AdminGate({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
   const isLoginPage = (pathname ?? '').startsWith('/admin/login');
-  const [state, setState] = useState<GateState>(isLoginPage ? 'allowed' : 'checking');
+  const [state, setState] = useState<GateState>(
+    IS_STATIC_EXPORT ? 'static-fallback' : isLoginPage ? 'allowed' : 'checking',
+  );
 
   useEffect(() => {
-    if (isLoginPage) return;
+    if (IS_STATIC_EXPORT || isLoginPage) return;
     let cancelled = false;
     fetch('/api/admin/me')
       .then(res => {
@@ -40,6 +44,18 @@ export function AdminGate({ children }: { children: React.ReactNode }) {
   }, [isLoginPage, pathname, router]);
 
   if (state === 'allowed') return <>{children}</>;
+
+  if (state === 'static-fallback') {
+    return (
+      <div className="min-h-screen bg-gray-50 dark:bg-dark-bg flex items-start justify-center pt-24 px-4">
+        <div className="max-w-md p-4 bg-amber-50 dark:bg-amber-900/20 rounded border border-amber-200 dark:border-amber-700 text-amber-800 dark:text-amber-300 text-sm">
+          This is the static emergency-fallback build — it has no server, so admin editing
+          isn&apos;t available here. Use <a href="https://pipermorgan.ai/admin/" className="underline font-medium">pipermorgan.ai/admin/</a>{' '}
+          instead.
+        </div>
+      </div>
+    );
+  }
 
   if (state === 'unconfigured') {
     return (

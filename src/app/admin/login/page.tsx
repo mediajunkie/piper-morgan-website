@@ -3,6 +3,19 @@
 import { useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 
+const IS_STATIC_EXPORT = process.env.NEXT_PUBLIC_STATIC_EXPORT === 'true';
+
+function StaticFallbackNotice() {
+  return (
+    <div className="max-w-md p-4 bg-amber-50 dark:bg-amber-900/20 rounded border border-amber-200 dark:border-amber-700 text-amber-800 dark:text-amber-300 text-sm">
+      This is the static emergency-fallback build — it has no server, so admin
+      sign-in isn&apos;t available here. Use{' '}
+      <a href="https://pipermorgan.ai/admin/" className="underline font-medium">pipermorgan.ai/admin/</a>{' '}
+      instead.
+    </div>
+  );
+}
+
 function LoginForm() {
   const router = useRouter();
   const params = useSearchParams();
@@ -71,9 +84,13 @@ function LoginForm() {
 export default function AdminLoginPage() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-dark-bg flex items-start justify-center pt-24 px-4">
-      <Suspense fallback={null}>
-        <LoginForm />
-      </Suspense>
+      {IS_STATIC_EXPORT ? (
+        <StaticFallbackNotice />
+      ) : (
+        <Suspense fallback={null}>
+          <LoginForm />
+        </Suspense>
+      )}
     </div>
   );
 }

@@ -2,9 +2,16 @@ import type { NextConfig } from "next";
 import { withSentryConfig } from '@sentry/nextjs';
 
 const nextConfig: NextConfig = {
-  // Static export only for GitHub Pages builds (STATIC_EXPORT=true, set in
-  // deploy.yml / deploy.sh). Dev and Vercel builds keep API routes available.
+  // Static export only for the manual deploy.sh emergency-fallback build
+  // (STATIC_EXPORT=true). Dev and Vercel builds keep API routes available.
   ...(process.env.STATIC_EXPORT === 'true' ? { output: 'export' as const } : {}),
+
+  // Forwards the build-time STATIC_EXPORT flag to the client bundle (only
+  // NEXT_PUBLIC_-prefixed vars are inlined) so /admin/* can show a fallback
+  // notice instead of a dead login form when served from a static build.
+  env: {
+    NEXT_PUBLIC_STATIC_EXPORT: process.env.STATIC_EXPORT === 'true' ? 'true' : '',
+  },
 
   // No basePath needed for custom domain deployment
 
