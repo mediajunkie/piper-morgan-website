@@ -133,6 +133,8 @@ function ComposeEdit({ slug }: { slug: string }) {
 
   const [saveStatus, setSaveStatus] = useState<SaveStatus>({ kind: 'idle' });
   const [placeholders, setPlaceholders] = useState<string[]>([]);
+  const [uploading, setUploading] = useState(false);
+  const [uploadError, setUploadError] = useState<string | null>(null);
 
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lastSavedRef = useRef<string | null>(null);
@@ -249,13 +251,31 @@ function ComposeEdit({ slug }: { slug: string }) {
 
       <div className="space-y-4">
         <Field label="Image filename" htmlFor="field-image">
-          <input
-            id="field-image"
-            type="text"
-            value={image}
-            onChange={e => handleFieldChange(setImage)(e.target.value)}
-            className={inputCls}
-          />
+          <div className="flex gap-2">
+            <input
+              id="field-image"
+              type="text"
+              value={image}
+              onChange={e => handleFieldChange(setImage)(e.target.value)}
+              className={`${inputCls} flex-1`}
+            />
+            <ImageUpload
+              slug={slug}
+              uploading={uploading}
+              onUploadStart={() => setUploading(true)}
+              onUploaded={filename => {
+                setUploading(false);
+                handleFieldChange(setImage)(filename);
+              }}
+              onError={message => {
+                setUploading(false);
+                setUploadError(message);
+              }}
+            />
+          </div>
+          {uploadError && (
+            <p className="mt-1 text-xs text-red-700 dark:text-red-300" role="alert">{uploadError}</p>
+          )}
         </Field>
 
         <Field label="Alt text" htmlFor="field-alt">
@@ -317,6 +337,73 @@ const inputCls = [
   'focus:outline-none focus:ring-2 focus:ring-primary-teal/50 focus:border-primary-teal',
   'text-sm',
 ].join(' ');
+
+function fileToBase64(file: File): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const result = reader.result as string;
+      // data:<mime>;base64,<payload> — strip the prefix, keep the payload
+      resolve(result.slice(result.indexOf(',') + 1));
+    };
+    reader.onerror = () => reject(reader.error ?? new Error('Failed to read file'));
+    reader.readAsDataURL(file);
+  });
+}
+
+function ImageUpload({
+  slug, uploading, onUploadStart, onUploaded, onError,
+}: {
+  slug: string;
+  uploading: boolean;
+  onUploadStart: () => void;
+  onUploaded: (filename: string) => void;
+  onError: (message: string) => void;
+}) {
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  const handleChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    e.target.value = ''; // allow re-selecting the same file later
+    if (!file) return;
+    onUploadStart();
+    try {
+      const contentBase64 = await fileToBase64(file);
+      const res = await fetch(`/api/compose/upload?slug=${encodeURIComponent(slug)}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ filename: file.name, contentBase64 }),
+      });
+      const data = await res.json().catch(() => null) as { filename?: string; error?: string } | null;
+      if (!res.ok) throw new Error(data?.error || `HTTP ${res.status}`);
+      if (!data?.filename) throw new Error('Upload succeeded but no filename returned');
+      onUploaded(data.filename);
+    } catch (err) {
+      onError(err instanceof Error ? err.message : String(err));
+    }
+  };
+
+  return (
+    <>
+      <input
+        ref={inputRef}
+        type="file"
+        accept="image/png,image/jpeg,image/gif,image/webp"
+        onChange={handleChange}
+        className="hidden"
+        aria-label="Upload image"
+      />
+      <button
+        type="button"
+        onClick={() => inputRef.current?.click()}
+        disabled={uploading}
+        className="px-3 py-2 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-dark-surface text-sm text-text-dark dark:text-dark-text hover:bg-gray-50 dark:hover:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+      >
+        {uploading ? 'Uploading…' : 'Upload…'}
+      </button>
+    </>
+  );
+}
 
 function Field({ label, htmlFor, children }: { label: string; htmlFor: string; children: React.ReactNode }) {
   return (
