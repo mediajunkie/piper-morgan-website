@@ -102,19 +102,19 @@ export default function PrivacyPolicy() {
                 Email Service Provider
               </h3>
               <p className="mb-4">
-                We use <strong>ConvertKit</strong> to manage our newsletter subscriptions. ConvertKit is GDPR-compliant and processes your data according to their privacy policy:
+                We use <strong>Buttondown</strong> to manage our newsletter subscriptions. Buttondown is GDPR-compliant and processes your data according to their privacy policy:
               </p>
               <ul className="list-disc pl-6 space-y-2 mb-6">
-                <li>Your email and consent data are stored on ConvertKit's secure servers</li>
-                <li>ConvertKit may process data in the United States under appropriate safeguards</li>
-                <li>You can review ConvertKit's privacy policy at: <a href="https://convertkit.com/privacy" className="text-primary-teal-text hover:underline" target="_blank" rel="noopener noreferrer">https://convertkit.com/privacy</a></li>
+                <li>Your email and consent data are stored on Buttondown's secure servers</li>
+                <li>Buttondown may process data in the United States under appropriate safeguards</li>
+                <li>You can review Buttondown's privacy policy at: <a href="https://buttondown.com/legal/privacy" className="text-primary-teal-text hover:underline" target="_blank" rel="noopener noreferrer">https://buttondown.com/legal/privacy</a></li>
               </ul>
 
               <h3 className="text-xl font-semibold text-text-dark mb-3">
                 Website Hosting
               </h3>
               <p className="mb-6">
-                Our website is hosted on <strong>GitHub Pages</strong>, which may collect basic server logs including IP addresses and request information. GitHub is GDPR-compliant and you can review their privacy policy at: <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" className="text-primary-teal-text hover:underline" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.
+                Our website is hosted on <strong>Vercel</strong>, which may collect basic server logs including IP addresses and request information. Vercel is GDPR-compliant and you can review their privacy policy at: <a href="https://vercel.com/legal/privacy-policy" className="text-primary-teal-text hover:underline" target="_blank" rel="noopener noreferrer">Vercel Privacy Policy</a>.
               </p>
 
               <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg mb-6">
@@ -177,7 +177,7 @@ export default function PrivacyPolicy() {
               <p className="mb-4">We implement appropriate security measures to protect your personal information:</p>
               <ul className="list-disc pl-6 space-y-2 mb-6">
                 <li>All data transmission is encrypted using HTTPS</li>
-                <li>Email data is stored with ConvertKit using industry-standard encryption</li>
+                <li>Email data is stored with Buttondown using industry-standard encryption</li>
                 <li>We regularly review and update our security practices</li>
                 <li>We limit access to personal data to authorized personnel only</li>
               </ul>
@@ -225,7 +225,7 @@ export default function PrivacyPolicy() {
               </h2>
               
               <p className="mb-4">
-                Your data may be processed in the United States by our service providers (ConvertKit, GitHub). These providers comply with appropriate data protection safeguards:
+                Your data may be processed in the United States by our service providers (Buttondown, Vercel). These providers comply with appropriate data protection safeguards:
               </p>
               <ul className="list-disc pl-6 space-y-2 mb-6">
                 <li>Standard Contractual Clauses (SCCs) for GDPR compliance</li>
