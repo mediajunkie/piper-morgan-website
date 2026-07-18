@@ -1,5 +1,27 @@
 [
   {
+    "title": "Into Production",
+    "excerpt": "June 6–7, 2026 The production branch had been last updated on March 4. The main branch, where I push all the newest code, had moved 4,139 commits ahead of it in the time since. This included the M1 and M2 Minimum Valuable Product (MVP) sprints, most of M3, the migration wave and the duty-cycle la...",
+    "url": "/blog/into-production",
+    "slug": "into-production",
+    "publishedAt": "Jul 16, 2026",
+    "publishedAtISO": "2026-07-16T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-235e3018a88a",
+    "featuredImage": "/assets/blog-images/into-production.webp",
+    "thumbnail": "/assets/blog-images/into-production.webp",
+    "imageAlt": "An explorer kneels just beyond the doorway of a tidy workshop, calmly gathering small hardware pieces shaken loose by the uneven ground, illustrating how a new environment reveals hidden assumptions.",
+    "imageCaption": "\"Hello, world!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Jun 6, 2026",
+    "workDateISO": "2026-06-06T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #051: Impossible by Construction",
     "excerpt": "July 3–9, 2026 Last week's Ship ended on a lesson about trusting yourself to remember: three fixes that turned \"someone has to check this\" into \"the system checks itself.\" This week, the same instinct showed up at a different scale. Instead of individual habits, it was architecture — three ADRs d...",
     "url": "/blog/weekly-ship-051-impossible-by-construction",
@@ -19,7 +41,8 @@
     "category": "ship",
     "cluster": "ship-051",
     "workDate": "Jul 3, 2026",
-    "workDateISO": "2026-07-03T00:00:00.000Z"
+    "workDateISO": "2026-07-03T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Migration Wave",

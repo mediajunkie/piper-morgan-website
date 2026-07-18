@@ -1,5 +1,27 @@
 [
   {
+    "title": "Mechanical First, Then Read",
+    "excerpt": "May 21, 2026 I was proofreading a blog post for this series a few weeks ago. I read it through twice, actively checking for one of my rules when Claude is outlining for me: no semicolons in this kind of published prose. I caught three, fixed them, felt good about it. I handed it off to an agent t...",
+    "url": "/blog/mechanical-first-then-read",
+    "slug": "mechanical-first-then-read",
+    "publishedAt": "Jul 18, 2026",
+    "publishedAtISO": "2026-07-18T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-42ed7944c5c8",
+    "featuredImage": "/assets/blog-images/mechanical-first-then-read.webp",
+    "thumbnail": "/assets/blog-images/mechanical-first-then-read.webp",
+    "imageAlt": "A mechanical wiper clears semicolon-shaped specks from a telescope lens while a human observer studies the distant landscape, freeing attention for meaning rather than pattern-checking.",
+    "imageCaption": "\"Clear as day!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "May 21, 2026",
+    "workDateISO": "2026-05-21T00:00:00.000Z"
+  },
+  {
     "title": "Into Production",
     "excerpt": "June 6–7, 2026 The production branch had been last updated on March 4. The main branch, where I push all the newest code, had moved 4,139 commits ahead of it in the time since. This included the M1 and M2 Minimum Valuable Product (MVP) sprints, most of M3, the migration wave and the duty-cycle la...",
     "url": "/blog/into-production",
@@ -17,9 +39,9 @@
     "imageAlt": "An explorer kneels just beyond the doorway of a tidy workshop, calmly gathering small hardware pieces shaken loose by the uneven ground, illustrating how a new environment reveals hidden assumptions.",
     "imageCaption": "\"Hello, world!\"",
     "category": "building",
-    "cluster": "",
     "workDate": "Jun 6, 2026",
-    "workDateISO": "2026-06-06T00:00:00.000Z"
+    "workDateISO": "2026-06-06T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #051: Impossible by Construction",
