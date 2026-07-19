@@ -10,9 +10,17 @@
  *
  * Body: { filename: string, contentBase64: string }  (no data: URI prefix)
  * 200 { filename }  — the (possibly de-conflicted) filename to put in frontmatter
- * 413 — file too large (Vercel's platform request-body cap is ~4.5MB; this
- *       endpoint enforces a slightly lower limit so the error is legible
- *       rather than a raw platform 413 with no body)
+ * 413 — file too large
+ *
+ * Sizing note: base64 inflates the original file by ~4/3. Vercel's platform
+ * request-body cap for Node.js functions is commonly cited around ~4.5MB but
+ * isn't published as an exact figure, so bodyParser.sizeLimit and the
+ * app-level check below are both set with real margin under that estimate
+ * rather than tuned to the edge — an original file up to ~3.3MB should clear
+ * both. (Originally shipped with sizeLimit and the app-level check both
+ * measured in ORIGINAL-file terms, not raw-body terms — that mismatch meant
+ * a 3.2MB file's ~4.27MB base64 body exceeded the 4MB bodyParser cap before
+ * the app-level check ever ran. Fixed 2026-07-19.)
  */
 
 import type { NextApiRequest, NextApiResponse } from 'next';
@@ -22,8 +30,16 @@ import { loadCalendar } from '@/lib/editorial-calendar';
 import { githubDraftsEnabled, uploadBinaryFile, DraftConflictError } from '@/lib/github-drafts';
 import { ensureAdmin } from '@/lib/admin-auth';
 
+// The enforced business-logic limit — kept comfortably under bodyParser's
+// cap below so the friendly message here (not Next's generic "Body exceeded
+// Nmb limit") is what fires for any realistically-oversized upload.
+const MAX_ORIGINAL_FILE_BYTES = 3.3 * 1024 * 1024;
+
 export const config = {
-  api: { bodyParser: { sizeLimit: '4mb' } },
+  // Deliberately looser than MAX_ORIGINAL_FILE_BYTES's real ceiling (~4.4MB
+  // post-base64) so this route's own check — not Next's bodyParser — is what
+  // rejects an oversized upload with an accurate, actionable message.
+  api: { bodyParser: { sizeLimit: '8mb' } },
 };
 
 const PRODUCT_ROOT = process.env.PIPER_PRODUCT_ROOT
@@ -55,11 +71,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(400).json({ error: `Unsupported file type "${ext}". Use PNG, JPEG, GIF, or WebP.` });
   }
 
-  // Rough size check on the base64 payload (base64 is ~4/3 the binary size).
+  // Decode the base64 payload back to approximate original-file bytes for a
+  // user-facing check phrased in terms people actually think in (file size),
+  // while bodyParser.sizeLimit above guards the actual (inflated) wire size.
   const approxBytes = (contentBase64.length * 3) / 4;
-  if (approxBytes > 4 * 1024 * 1024) {
+  if (approxBytes > MAX_ORIGINAL_FILE_BYTES) {
+    const mb = (approxBytes / (1024 * 1024)).toFixed(1);
     return res.status(413).json({
-      error: 'Image is larger than 4MB. Resize or compress it before uploading (Vercel\'s upload limit is ~4.5MB).',
+      error: `Image is ${mb}MB — over the ~3.3MB limit for this upload path (base64 transport inflates it further, and Vercel's request-body cap leaves no room past that). Resize or compress it before uploading.`,
     });
   }
 
