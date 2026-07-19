@@ -1,5 +1,27 @@
 [
   {
+    "title": "What Staff Reports Don't Show",
+    "excerpt": "May 20, 2026 My Chief of Staff agent (I call them Exec) was drafting a weekly progress post a few days ago, the kind of synthesis post where they review what the team of role-named agents on my project shipped during the past week and report it out. They'd opened all six of the role-specific week...",
+    "url": "/blog/what-staff-reports-dont-show",
+    "slug": "what-staff-reports-dont-show",
+    "publishedAt": "Jul 19, 2026",
+    "publishedAtISO": "2026-07-19T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-f531dd1a95f8",
+    "featuredImage": "/assets/blog-images/what-staff-reports-dont-show.webp",
+    "thumbnail": "/assets/blog-images/what-staff-reports-dont-show.webp",
+    "imageAlt": "A chief and six cartographers scrutinize a detailed map while, behind them, workers finish a large bridge missing entirely from the map.",
+    "imageCaption": "\"Where''s that confounded bridge?\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "May 20, 2026",
+    "workDateISO": "2026-05-20T00:00:00.000Z"
+  },
+  {
     "title": "Mechanical First, Then Read",
     "excerpt": "May 21, 2026 I was proofreading a blog post for this series a few weeks ago. I read it through twice, actively checking for one of my rules when Claude is outlining for me: no semicolons in this kind of published prose. I caught three, fixed them, felt good about it. I handed it off to an agent t...",
     "url": "/blog/mechanical-first-then-read",
@@ -17,9 +39,9 @@
     "imageAlt": "A mechanical wiper clears semicolon-shaped specks from a telescope lens while a human observer studies the distant landscape, freeing attention for meaning rather than pattern-checking.",
     "imageCaption": "\"Clear as day!\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "May 21, 2026",
-    "workDateISO": "2026-05-21T00:00:00.000Z"
+    "workDateISO": "2026-05-21T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Into Production",
