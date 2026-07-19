@@ -59,6 +59,15 @@ src/
     └── medium-posts.json  # Cached Medium blog posts
 ```
 
+## Design Principles
+
+**Human-first, agent-aware.** Every tool, UI, or CLI built for this project is designed for its human primary user first — but architected so agents can also read and call it without needing the rendered surface. In practice:
+- A UI's writes should land in an agent-readable store (git-tracked files, a queryable CSV/JSON), not a UI-only datastore.
+- No interactive-only surfaces: if a step needs human input, give it a non-interactive equivalent too (a flag, a direct API call).
+- Don't trap state — if a dashboard displays data, that data should already be readable directly, without the dashboard.
+
+**Concrete example**: `/admin/calendar/compose` (the editorial admin UI) commits every save directly to `piper-morgan-product` via the GitHub API — the same git history other agents already read. There's no separate sync step, and no risk of the human's edits being invisible to the agents who pick up the work next. This is by design, not incidental.
+
 ## Domain Architecture
 
 The codebase follows Domain-Driven Design with comprehensive type modeling:
