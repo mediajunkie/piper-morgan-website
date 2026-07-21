@@ -1,0 +1,133 @@
+1:"$Sreact.fragment"
+9:I[8393,[],""]
+:HL["/_next/static/css/80a0189f83a8311f.css","style"]
+2:T1313,
+            :root{--primary-teal:#2DD4BF;--primary-teal-text:#0D9488;--text-dark:#1F2937;--text-light:#6B7280;--background:#FFFFFF;--surface:#F9FAFB}
+            .dark{--text-dark:#F1F5F9;--text-light:#94A3B8;--background:#0F172A;--surface:#1E293B}
+            @font-face{font-family:'Inter';src:url('/fonts/inter-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+            *{box-sizing:border-box}
+            html{scroll-behavior:smooth;font-size:16px;margin:0;padding:0;border:none;outline:none}
+            body{background:var(--background);color:var(--text-dark);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell',sans-serif;line-height:1.6;margin:0;padding:0;border:none;outline:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+            nav{border:none !important;outline:none !important}
+            h1,h2,h3,h4,h5,h6{font-family:'Hoss Round','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+            p,span{max-width:75ch;line-height:1.7}
+            .text-content div{max-width:75ch;line-height:1.7}
+            .text-content{max-width:65ch}
+            @media (max-width:640px){
+              h1{font-size:1.75rem;line-height:1.2}
+              h2{font-size:1.25rem;line-height:1.3}
+              h3{font-size:1.1rem;line-height:1.4}
+              h4{font-size:1rem;line-height:1.4}
+            }
+            @media (min-width:641px) and (max-width:768px){
+              h1{font-size:2rem;line-height:1.2}
+              h2{font-size:1.5rem;line-height:1.3}
+              h3{font-size:1.25rem;line-height:1.4}
+            }
+            @media (prefers-reduced-motion: reduce){
+              *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}
+            }
+            a:hover{color:#0D9488;transition:color 0.2s ease}
+            .hover-lift:hover{transform:translateY(-2px);transition:transform 0.2s ease}
+            button:focus,a:focus{outline:2px solid #2DD4BF;outline-offset:2px;border-radius:4px}
+            .skip-to-content{position:absolute;top:-100px;left:0;z-index:999;padding:8px 16px;background:#1F2937;color:white;text-decoration:none;border-radius:0 0 4px 0;transition:top 0.3s}
+            .skip-to-content:focus{top:0;outline:2px solid #2DD4BF;outline-offset:2px}
+            .section-spacing{margin-bottom:4rem}
+            .component-spacing{margin-bottom:1.5rem}
+            .micro-spacing{margin-bottom:0.5rem}
+            @media (min-width:768px){
+              .section-spacing{margin-bottom:6rem}
+              .component-spacing{margin-bottom:2rem}
+            }
+            .site-container{width:100%;max-width:1200px;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+            @media (min-width:640px){.site-container{padding-left:1.5rem;padding-right:1.5rem}}
+            @media (min-width:768px){.site-container{padding-left:2rem;padding-right:2rem}}
+            @media (min-width:1024px){.site-container{max-width:1200px}}
+            @media (min-width:1200px){.site-container{max-width:1200px}}
+            .section-padding{padding-top:4rem;padding-bottom:4rem}
+            @media (min-width:768px){.section-padding{padding-top:5rem;padding-bottom:5rem}}
+            .mx-auto{margin-left:auto;margin-right:auto}
+            .max-w-4xl{max-width:56rem}
+            .pt-16{padding-top:4rem}
+            .pb-8{padding-bottom:2rem}
+            .px-4{padding-left:1rem;padding-right:1rem}
+            .mb-6{margin-bottom:1.5rem}
+            .mb-8{margin-bottom:2rem}
+            .text-left{text-align:left}
+            .text-center{text-align:center}
+            .text-primary-teal-text{color:#0F766E}
+            .text-text-dark{color:#1F2937}
+            .text-text-light{color:#6B7280}
+            .font-bold{font-weight:700}
+            .text-4xl{font-size:2.25rem;line-height:2.5rem}
+            .text-5xl{font-size:3rem;line-height:1}
+            .text-6xl{font-size:3.75rem;line-height:1}
+            .text-lg{font-size:1.125rem;line-height:1.75rem}
+            .text-xl{font-size:1.25rem;line-height:1.75rem}
+            .leading-tight{line-height:1.25}
+            .leading-relaxed{line-height:1.625}
+            .min-h-screen{min-height:100vh}
+            @media (min-width:768px){
+              .md\:pt-24{padding-top:6rem}
+              .md\:pb-12{padding-bottom:3rem}
+              .md\:text-5xl{font-size:3rem;line-height:1}
+              .md\:text-xl{font-size:1.25rem;line-height:1.75rem}
+            }
+            @media (min-width:1024px){
+              .lg\:text-6xl{font-size:3.75rem;line-height:1}
+            }
+          0:{"P":null,"b":"_LVQXABJAlMy-eybt-pFw","p":"","c":["","blog","the-server-crashed-mid-draft",""],"i":false,"f":[[["",{"children":["(public)",{"children":["blog",{"children":[["slug","the-server-crashed-mid-draft","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/80a0189f83a8311f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"font-inter","children":[["$","head",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                const theme = localStorage.getItem('theme') ||\n                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');\n                if (theme === 'dark') {\n                  document.documentElement.classList.add('dark');\n                  document.body.classList.add('dark');\n                }\n              })();\n            "}}],["$","link",null,{"rel":"dns-prefetch","href":"//pipermorgan.ai"}],["$","link",null,{"rel":"preconnect","href":"https://pipermorgan.ai"}],["$","link",null,{"rel":"preload","as":"image","href":"/assets/pm-logo.png"}],["$","link",null,{"rel":"preload","href":"/fonts/inter-latin.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preload","href":"/fonts/HossRound-Regular.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],"$L3"]}]]}],{"children":["(public)","$L4",{"children":["blog","$L5",{"children":[["slug","the-server-crashed-mid-draft","d"],"$L6",{"children":["__PAGE__","$L7",{},null,false]},null,false]},null,false]},null,false]},null,false],"$L8",false]],"m":"$undefined","G":["$9",[]],"s":false,"S":true}
+a:I[9119,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-1f32ffe444205514.js","177","static/chunks/app/layout-e943a41a5fb44957.js"],"ClientLayout"]
+b:I[7555,[],""]
+c:I[1295,[],""]
+d:I[9795,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-1f32ffe444205514.js","177","static/chunks/app/layout-e943a41a5fb44957.js"],"default"]
+e:I[6874,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-1f32ffe444205514.js","497","static/chunks/497-667c6224ac86d8ea.js","170","static/chunks/170-68483e6f72f98af0.js","443","static/chunks/443-101864fccc056f10.js","864","static/chunks/app/(public)/blog/page-e28e13f606f448c3.js"],""]
+10:I[9665,[],"OutletBoundary"]
+12:I[4911,[],"AsyncMetadataOutlet"]
+14:I[9665,[],"ViewportBoundary"]
+16:I[9665,[],"MetadataBoundary"]
+17:"$Sreact.suspense"
+3:["$","body",null,{"className":"font-sans antialiased","children":[["$","$La",null,{"children":["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$Ld",null,{}]]}]
+4:["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"min-h-screen","children":["$","div",null,{"className":"site-container max-w-4xl pt-16 md:pt-24 pb-8 md:pb-12 text-center","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-8xl md:text-9xl font-bold text-primary-teal-text mb-4","children":"404"}],["$","h2",null,{"className":"text-3xl md:text-4xl font-semibold text-text-dark mb-4","children":"Page Not Found"}],["$","p",null,{"className":"text-xl text-text-light leading-relaxed max-w-2xl mx-auto","children":"Looks like this page got lost in the AI training data. Don't worry – even the best algorithms make mistakes sometimes."}]]}],["$","div",null,{"className":"mb-12","children":[["$","h3",null,{"className":"text-xl font-semibold text-text-dark mb-6","children":"Where would you like to go instead?"}],["$","div",null,{"className":"grid md:grid-cols-2 gap-6 max-w-2xl mx-auto","children":[["$","div",null,{"className":"space-y-4","children":[["$","$Le",null,{"href":"/","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"🏠 Homepage"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Start from the beginning of our AI PM journey"}]]}],["$","$Le",null,{"href":"/methodology","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"⚙️ How It Works"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Discover our AI-powered product management methodology"}]]}]]}],["$","div",null,{"className":"space-y-4","children":[["$","$Le",null,{"href":"/what-weve-learned","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"💡 What We've Learned"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Building-in-public insights and breakthroughs"}]]}],["$","$Le",null,{"href":"/blog","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"📝 Journey"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Follow our building-in-public blog posts"}]]}],["$","$Le",null,{"href":"/get-involved","className":"block p-4 bg-surface rounded-card hover:bg-gray-50 transition-colors group","children":[["$","h4",null,{"className":"font-semibold text-text-dark group-hover:text-primary-teal-text","children":"🚀 Get Involved"}],["$","p",null,{"className":"text-sm text-text-light mt-1","children":"Join our community and stay updated"}]]}]]}]]}]]}],["$","div",null,{"className":"text-center","children":[["$","p",null,{"className":"text-text-light mb-6","children":"Still can't find what you're looking for?"}],["$","$Le",null,{"href":"/get-involved","className":"inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:transform-none bg-primary-teal text-white hover:bg-teal-600 focus:ring-primary-teal shadow-component hover:shadow-component-hover hover:-translate-y-0.5 hover:scale-105 font-bold text-lg px-8 py-4 text-lg rounded-button","aria-label":"$undefined","children":[false,"Get Help & Stay Updated"]}]]}],["$","div",null,{"className":"mt-12 p-6 bg-gray-50 rounded-card max-w-lg mx-auto","children":["$","p",null,{"className":"text-sm text-text-light italic","children":["💬 ",["$","strong",null,{"children":"Piper Morgan says:"}]," \"Even the most sophisticated neural networks occasionally return null. Let's navigate back to more productive paths together!\""]}]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+5:["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+6:["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+7:["$","$1","c",{"children":["$Lf",null,["$","$L10",null,{"children":["$L11",["$","$L12",null,{"promise":"$@13"}]]}]]}]
+8:["$","$1","h",{"children":[null,[["$","$L14",null,{"children":"$L15"}],null],["$","$L16",null,{"children":["$","div",null,{"hidden":true,"children":["$","$17",null,{"fallback":null,"children":"$L18"}]}]}]]}]
+19:I[7887,["874","static/chunks/874-668c89038fa04eb8.js","972","static/chunks/app/(public)/blog/%5Bslug%5D/page-d77bb6e505e4c783.js"],"BlogPostContent"]
+1a:T1df2,<p><em>May 17–21, 2026</em></p>
+<p>I was drafting a post one evening — somewhere past the halfway point, deep into the part of the writing where revision and forward motion blur into the same activity. The session ended unexpectedly. Server error, network drop, something on the platform side I couldn't see and couldn't recover. When I came back to look two days later, I expected to find my draft as an untracked file in the working tree.</p>
+<p>It wasn't there.</p>
+<p>I'd saved it, but I hadn't "committed" it. Untracked files don't always survive a hard session crash. The post was gone.</p>
+<h1>The category</h1>
+<p>This is a specific category of vulnerability that's easy to miss because most of the time it costs you nothing. New files in untracked state — files you've written to disk but not yet committed to version control — exist in a small window where they're visible to you, accessible to your tools, present on the filesystem, but completely outside the repository's safety net.</p>
+<p>A <code>git pull</code> may move them or warn about them or proceed past them depending on flags and conflicts. A <code>git checkout</code> to a different branch may or may not preserve them depending on what the destination branch has at the same path. A <code>git stash -u</code> will sweep them into the stash and remove them from disk. A session crash that loses the working directory entirely loses them silently, with no rollback path and no diagnostic trail.</p>
+<p>This is git working exactly as documented. The vulnerability lives in the gap between <em>I wrote this</em> and <em>this is in the history.</em></p>
+<h1>Why it's hard to remember to close the window</h1>
+<p>In normal flow, the cost of an uncommitted file feels low. You can see it. You know where it is. You'll commit it in a few minutes when you reach a natural stopping point. The vulnerability window is short. The probability of a session crash inside that window is small.</p>
+<p>The trouble is the probability is small <em>but nonzero</em>, and the consequences are total. Most of the time the few-minute window costs you nothing. Sometimes it costs you the file.</p>
+<p>That asymmetry — high-frequency tiny win, low-frequency total loss — is why people ignore disciplines for years without consequence and then catastrophically regret skipping in a single moment. Wear a seatbelt every car ride. Back up your laptop weekly. Commit immediately after writing a new file. The first two are old wisdom. The third one I had to learn the way you learn most things — by losing the file. And I still treat it like flossing!</p>
+<h1>What "immediately" actually means</h1>
+<p>The discipline that came out of the incident is mechanical: after writing a new file with substantive content, run <code>git add</code> and <code>git commit</code> and <code>git push</code> <em>in that order, before any other substantive tool call</em>. Thirty seconds of overhead. Closes the window from minutes-or-hours down to a few seconds.</p>
+<p>The commit doesn't have to be polished. The message can be "WIP draft" or "scaffolding the structure" or "initial sketch." The commit is a checkpoint, not a release. What matters is that the file exists in the repository's history, not just on disk.</p>
+<p>Push matters too, separately. A local commit survives most session crashes — git's object database is durable on disk. But the worktree's disk itself can fail. Network outages and hardware faults aren't the most common failure mode, but the cost of the push is so low that there's no good reason to defer it. Push is what makes the file survive everything below the level of the remote.</p>
+<h1>The variance is what kills you</h1>
+<p>Loss of an uncommitted file isn't proportional to its size. Reconstructing a fifteen-hundred-word post from memory is a few hours of focused work, in a state where you've already done the hardest part — the original drafting — and you're now doing it again, more slowly, with the friction of <em>I already had this and I lost it.</em> The reconstruction is usually worse than the original.</p>
+<p>Reconstructing a one-line commit message is seconds. The variance of recovery cost on uncommitted work is wildly skewed. New files with substantive content sit at the high end. New scaffolding files that haven't been touched since you created them sit at the low end. The category that warrants the discipline is the high-cost end. You can be looser about the low-cost end — but the discipline that says <em>just always commit immediately</em> is easier to follow than the discipline that says <em>commit immediately when the cost-of-loss is high.</em> The first one is mechanical. The second one requires judgment in the moment you're least likely to apply it.</p>
+<p><em>I will be honest, though. I am still sloppy about this. Some of it is the context switching. I am editing directly on my Mac, in a file editor. To commit the work after editing means switching to a terminal or development tool. I am lazy. "Can't you do it for me?" is my whiny refrain.</em></p>
+<h1>What rescued me this time</h1>
+<p>The draft did get recovered, two days later. I remembered the through-line clearly. I'd been writing in voice that returned naturally. The reconstruction landed close enough to what I'd lost that the post made it to production on its original schedule.</p>
+<p>That's a happy ending, but not one I want to count on. The recovery took a real chunk of focused work — attention I'd planned to spend on something else. The discipline I now run is the alternative: thirty seconds of commit-immediately, no recovery cost, no detour.</p>
+<p>The math isn't subtle. The math is almost too obvious to write down. The seductive thing about the few-minute window is that it almost always feels safe. Each individual instance you skipped the commit and got away with it reinforces the <em>almost always.</em> The instance where you don't get away with it is the one that pays for all the times you did.</p>
+<h1>The deeper read</h1>
+<p>Every workflow has invisible failure modes. The mature response isn't to avoid the failure modes — that's mostly impossible. The mature response is to identify the windows of maximum vulnerability and close them mechanically.</p>
+<p>Commit-immediately-after-write is one of those mechanisms. There are others: regular pushes, version-control-everything-not-just-code, treating your editor's autosave as no substitute for git history, treating cloud sync as no substitute for either. Each closes a particular kind of window. None of them are clever. All of them are habits.</p>
+<p>The discipline is about recognizing where you're exposed and shortening the window, not about being unusually careful. Once the discipline is muscle memory, the cognitive cost drops to near zero — the keyboard knows to type the commit before the next thought arrives. The vulnerability window collapses from minutes to seconds, and the few-minute window stops existing as a category of risk.</p>
+<p>The post I lost did come back. The next post won't have to. Thirty seconds of immediate commit closes a window that, in retrospect, never should have been open.</p>
+<hr>
+<p><em>Next on Building Piper Morgan: "The Migration Wave" — a realignment, the team gone worktree-native, a confabulation caught, and a launch: the arc's resolution, told as operational-not-finished.</em></p>
+<p><em>What's a discipline you only adopted after losing the file the discipline would have saved? Where in your workflow do the few-minute windows still live? What does it take to make a mechanical habit out of something that mostly costs you nothing?</em></p>f:["$","$L19",null,{"post":{"title":"The Server Crashed Mid-Draft","guid":"blog-first-b63577f98aa8","url":"/blog/the-server-crashed-mid-draft","publishedAt":"Jul 12, 2026","workDate":"May 17, 2026","author":"christian crumlish","featuredImage":"/assets/blog-images/the-server-crashed-mid-draft.webp","imageAlt":"A writer watches as a single page lifts from a neatly stacked manuscript and blows out through a slightly open window, illustrating how a brief window of vulnerability can put valuable work at risk.","imageCaption":"\"I meant to close that!\"","tags":["Building in Public"]},"content":{"title":"The Server Crashed Mid-Draft","content":"$1a"}}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+11:null
+1b:I[8175,[],"IconMark"]
+13:{"metadata":[["$","title","0",{"children":"The Server Crashed Mid-Draft | Piper Morgan"}],["$","meta","1",{"name":"description","content":"May 17–21, 2026 I was drafting a post one evening — somewhere past the halfway point, deep into the part of the writing where revision and forward motion blur into the same activity. The session ended unexpectedly. Server error, network drop, something on the platform side I couldn't see and coul..."}],["$","meta","2",{"name":"author","content":"Christian Crumlish"}],["$","meta","3",{"name":"keywords","content":"AI,Product Management,Methodology,Building in Public"}],["$","meta","4",{"name":"creator","content":"Christian Crumlish"}],["$","meta","5",{"name":"publisher","content":"Christian Crumlish"}],["$","meta","6",{"name":"robots","content":"index, follow"}],["$","meta","7",{"name":"googlebot","content":"index, follow"}],["$","link","8",{"rel":"canonical","href":"https://pipermorgan.ai/"}],["$","meta","9",{"name":"format-detection","content":"telephone=no, address=no, email=no"}],["$","meta","10",{"property":"og:title","content":"The Server Crashed Mid-Draft"}],["$","meta","11",{"property":"og:description","content":"May 17–21, 2026 I was drafting a post one evening — somewhere past the halfway point, deep into the part of the writing where revision and forward motion blur into the same activity. The session ended unexpectedly. Server error, network drop, something on the platform side I couldn't see and coul..."}],["$","meta","12",{"property":"og:image","content":"https://pipermorgan.ai/assets/blog-images/the-server-crashed-mid-draft.webp"}],["$","meta","13",{"property":"og:type","content":"article"}],["$","meta","14",{"property":"article:author","content":"christian crumlish"}],["$","meta","15",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","16",{"name":"twitter:title","content":"The Server Crashed Mid-Draft"}],["$","meta","17",{"name":"twitter:description","content":"May 17–21, 2026 I was drafting a post one evening — somewhere past the halfway point, deep into the part of the writing where revision and forward motion blur into the same activity. The session ended unexpectedly. Server error, network drop, something on the platform side I couldn't see and coul..."}],["$","meta","18",{"name":"twitter:image","content":"https://pipermorgan.ai/assets/blog-images/the-server-crashed-mid-draft.webp"}],["$","link","19",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"32x33"}],["$","link","20",{"rel":"icon","href":"/favicon.ico","sizes":"32x32","type":"image/x-icon"}],["$","link","21",{"rel":"icon","href":"/pm-favicon-16.png","sizes":"16x16","type":"image/png"}],["$","link","22",{"rel":"icon","href":"/pm-favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","23",{"rel":"icon","href":"/pm-favicon-48.png","sizes":"48x48","type":"image/png"}],["$","link","24",{"rel":"apple-touch-icon","href":"/pm-favicon-180.png","sizes":"180x180","type":"image/png"}],["$","link","25",{"rel":"icon","href":"/pm-favicon-192.png","sizes":"192x192","type":"image/png"}],["$","$L1b","26",{}]],"error":null,"digest":"$undefined"}
+18:"$13:metadata"

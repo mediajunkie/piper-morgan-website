@@ -1,0 +1,728 @@
+1:"$Sreact.fragment"
+8:I[8393,[],""]
+:HL["/_next/static/css/80a0189f83a8311f.css","style"]
+2:T1313,
+            :root{--primary-teal:#2DD4BF;--primary-teal-text:#0D9488;--text-dark:#1F2937;--text-light:#6B7280;--background:#FFFFFF;--surface:#F9FAFB}
+            .dark{--text-dark:#F1F5F9;--text-light:#94A3B8;--background:#0F172A;--surface:#1E293B}
+            @font-face{font-family:'Inter';src:url('/fonts/inter-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+            *{box-sizing:border-box}
+            html{scroll-behavior:smooth;font-size:16px;margin:0;padding:0;border:none;outline:none}
+            body{background:var(--background);color:var(--text-dark);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell',sans-serif;line-height:1.6;margin:0;padding:0;border:none;outline:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+            nav{border:none !important;outline:none !important}
+            h1,h2,h3,h4,h5,h6{font-family:'Hoss Round','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+            p,span{max-width:75ch;line-height:1.7}
+            .text-content div{max-width:75ch;line-height:1.7}
+            .text-content{max-width:65ch}
+            @media (max-width:640px){
+              h1{font-size:1.75rem;line-height:1.2}
+              h2{font-size:1.25rem;line-height:1.3}
+              h3{font-size:1.1rem;line-height:1.4}
+              h4{font-size:1rem;line-height:1.4}
+            }
+            @media (min-width:641px) and (max-width:768px){
+              h1{font-size:2rem;line-height:1.2}
+              h2{font-size:1.5rem;line-height:1.3}
+              h3{font-size:1.25rem;line-height:1.4}
+            }
+            @media (prefers-reduced-motion: reduce){
+              *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}
+            }
+            a:hover{color:#0D9488;transition:color 0.2s ease}
+            .hover-lift:hover{transform:translateY(-2px);transition:transform 0.2s ease}
+            button:focus,a:focus{outline:2px solid #2DD4BF;outline-offset:2px;border-radius:4px}
+            .skip-to-content{position:absolute;top:-100px;left:0;z-index:999;padding:8px 16px;background:#1F2937;color:white;text-decoration:none;border-radius:0 0 4px 0;transition:top 0.3s}
+            .skip-to-content:focus{top:0;outline:2px solid #2DD4BF;outline-offset:2px}
+            .section-spacing{margin-bottom:4rem}
+            .component-spacing{margin-bottom:1.5rem}
+            .micro-spacing{margin-bottom:0.5rem}
+            @media (min-width:768px){
+              .section-spacing{margin-bottom:6rem}
+              .component-spacing{margin-bottom:2rem}
+            }
+            .site-container{width:100%;max-width:1200px;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+            @media (min-width:640px){.site-container{padding-left:1.5rem;padding-right:1.5rem}}
+            @media (min-width:768px){.site-container{padding-left:2rem;padding-right:2rem}}
+            @media (min-width:1024px){.site-container{max-width:1200px}}
+            @media (min-width:1200px){.site-container{max-width:1200px}}
+            .section-padding{padding-top:4rem;padding-bottom:4rem}
+            @media (min-width:768px){.section-padding{padding-top:5rem;padding-bottom:5rem}}
+            .mx-auto{margin-left:auto;margin-right:auto}
+            .max-w-4xl{max-width:56rem}
+            .pt-16{padding-top:4rem}
+            .pb-8{padding-bottom:2rem}
+            .px-4{padding-left:1rem;padding-right:1rem}
+            .mb-6{margin-bottom:1.5rem}
+            .mb-8{margin-bottom:2rem}
+            .text-left{text-align:left}
+            .text-center{text-align:center}
+            .text-primary-teal-text{color:#0F766E}
+            .text-text-dark{color:#1F2937}
+            .text-text-light{color:#6B7280}
+            .font-bold{font-weight:700}
+            .text-4xl{font-size:2.25rem;line-height:2.5rem}
+            .text-5xl{font-size:3rem;line-height:1}
+            .text-6xl{font-size:3.75rem;line-height:1}
+            .text-lg{font-size:1.125rem;line-height:1.75rem}
+            .text-xl{font-size:1.25rem;line-height:1.75rem}
+            .leading-tight{line-height:1.25}
+            .leading-relaxed{line-height:1.625}
+            .min-h-screen{min-height:100vh}
+            @media (min-width:768px){
+              .md\:pt-24{padding-top:6rem}
+              .md\:pb-12{padding-bottom:3rem}
+              .md\:text-5xl{font-size:3rem;line-height:1}
+              .md\:text-xl{font-size:1.25rem;line-height:1.75rem}
+            }
+            @media (min-width:1024px){
+              .lg\:text-6xl{font-size:3.75rem;line-height:1}
+            }
+          0:{"P":null,"b":"_LVQXABJAlMy-eybt-pFw","p":"","c":["","admin","publish-queue",""],"i":false,"f":[[["",{"children":["admin",{"children":["publish-queue",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/80a0189f83a8311f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"font-inter","children":[["$","head",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                const theme = localStorage.getItem('theme') ||\n                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');\n                if (theme === 'dark') {\n                  document.documentElement.classList.add('dark');\n                  document.body.classList.add('dark');\n                }\n              })();\n            "}}],["$","link",null,{"rel":"dns-prefetch","href":"//pipermorgan.ai"}],["$","link",null,{"rel":"preconnect","href":"https://pipermorgan.ai"}],["$","link",null,{"rel":"preload","as":"image","href":"/assets/pm-logo.png"}],["$","link",null,{"rel":"preload","href":"/fonts/inter-latin.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preload","href":"/fonts/HossRound-Regular.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],"$L3"]}]]}],{"children":["admin","$L4",{"children":["publish-queue","$L5",{"children":["__PAGE__","$L6",{},null,false]},null,false]},null,false]},null,false],"$L7",false]],"m":"$undefined","G":["$8",[]],"s":false,"S":true}
+9:I[9119,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-1f32ffe444205514.js","177","static/chunks/app/layout-e943a41a5fb44957.js"],"ClientLayout"]
+a:I[7555,[],""]
+b:I[1295,[],""]
+c:I[9795,["874","static/chunks/874-668c89038fa04eb8.js","212","static/chunks/212-8d02138c30d65f3c.js","916","static/chunks/916-1f32ffe444205514.js","177","static/chunks/app/layout-e943a41a5fb44957.js"],"default"]
+d:I[3871,["581","static/chunks/app/admin/layout-85960e87a44f7419.js"],"AdminGate"]
+2c:I[9665,[],"ViewportBoundary"]
+2e:I[9665,[],"MetadataBoundary"]
+2f:"$Sreact.suspense"
+3:["$","body",null,{"className":"font-sans antialiased","children":[["$","$L9",null,{"children":["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$Lc",null,{}]]}]
+4:["$","$1","c",{"children":[null,["$","$Ld",null,{"children":["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]
+5:["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+6:["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen bg-gray-50 dark:bg-dark-bg","children":["$","main",null,{"className":"max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12","children":[["$","header",null,{"className":"mb-10","children":[["$","p",null,{"className":"text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 font-medium","children":"Admin"}],["$","h1",null,{"className":"text-3xl md:text-4xl font-bold text-text-dark dark:text-dark-text mt-1","children":"Publish Queue"}],["$","p",null,{"className":"text-sm text-gray-600 dark:text-gray-400 mt-3","children":["Build-time snapshot of the editorial calendar."," ","Built ",["$","time",null,{"dateTime":"2026-07-21T20:45:15.610Z","suppressHydrationWarning":true,"children":"2026-07-21T20:45:15.610Z"}]," • ",413," total entries"," • ",["$","a",null,{"href":"#raw-data","className":"text-primary-teal-text dark:text-primary-teal hover:underline","children":"raw data ↓"}]]}],["$","p",null,{"className":"mt-2 text-xs text-gray-500 dark:text-gray-500","children":["Section counts:"," ",["$","span",null,{"data-count":"ready","children":["ready/queued/drafted: ",24]}]," • ",["$","span",null,{"data-count":"recent","children":["recently published (14d): ",2]}]," • ",["$","span",null,{"data-count":"syndication-gaps","children":["syndication gaps: ",0]}]," • ",["$","span",null,{"data-count":"image-gaps","children":["image-metadata gaps (30d): ",3]}]]}]]}],["$","section",null,{"id":"ready-to-publish","aria-label":"Ready to publish","className":"mb-10","data-section":"ready-to-publish","data-count":24,"children":[["$","div",null,{"className":"flex items-baseline gap-3 mb-1","children":[["$","h2",null,{"className":"text-xl font-bold text-text-dark dark:text-dark-text","children":"Ready to publish"}],["$","span",null,{"className":"text-sm text-gray-500 dark:text-gray-500","children":["(",24,")"]}]]}],["$","p",null,{"className":"text-xs text-gray-500 dark:text-gray-400 mb-3","children":"status ∈ {ready, queued, drafted}, ordered by pubDate ascending"}],["$","div",null,{"className":"bg-white dark:bg-dark-surface rounded-lg shadow-sm border border-gray-200 dark:border-gray-800 overflow-x-auto","children":["$","table",null,{"className":"w-full text-sm","children":[["$","thead",null,{"className":"bg-gray-50 dark:bg-gray-800/50","children":["$","tr",null,{"children":[["$","th","pubDate",{"scope":"col","className":"text-left py-2 px-4 font-medium text-gray-700 dark:text-gray-300","children":"pubDate"}],["$","th","status",{"scope":"col","className":"text-left py-2 px-4 font-medium text-gray-700 dark:text-gray-300","children":"status"}],["$","th","theme",{"scope":"col","className":"text-left py-2 px-4 font-medium text-gray-700 dark:text-gray-300","children":"theme"}],["$","th","title",{"scope":"col","className":"text-left py-2 px-4 font-medium text-gray-700 dark:text-gray-300","children":"title"}],["$","th","draft",{"scope":"col","className":"text-left py-2 px-4 font-medium text-gray-700 dark:text-gray-300","children":"draft"}],["$","th","notes",{"scope":"col","className":"text-left py-2 px-4 font-medium text-gray-700 dark:text-gray-300","children":"notes"}]]}]}],["$","tbody",null,{"children":[["$","tr","ready-0",{"data-title":"15 Sessions, Fast Recovery","data-theme":"insight","data-status":"drafted","data-pub-date":"","data-work-date":"2025-11-19","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"","children":"—"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"15 Sessions, Fast Recovery"}],"$Le","$Lf"]}],"$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c","$L1d","$L1e","$L1f","$L20","$L21","$L22","$L23","$L24","$L25","$L26"]}]]}]}]]}],"$L27","$L28","$L29","$L2a"]}]}],null,"$L2b"]}]
+7:["$","$1","h",{"children":[null,[["$","$L2c",null,{"children":"$L2d"}],null],["$","$L2e",null,{"children":["$","div",null,{"hidden":true,"children":["$","$2f",null,{"fallback":null,"children":"$L30"}]}]}]]}]
+3a:I[9665,[],"OutletBoundary"]
+3c:I[4911,[],"AsyncMetadataOutlet"]
+e:["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/15-sessions-fast-recovery-draft.md"}]
+f:["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":""}]
+10:["$","tr","ready-1",{"data-title":"What the Running System Found","data-theme":"building","data-status":"drafted","data-pub-date":"2026-07-21","data-work-date":"2026-06-09","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-07-21","children":"Jul 21, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-teal/10 dark:bg-primary-teal/20 text-primary-teal-text dark:text-primary-teal","children":"building"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"What the Running System Found"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/what-the-running-system-found.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Beat 15. Jun 9+11: 6/9 agents silently drifted from logging discipline — all self-healed same day; cron-halt mystery empirically diagnosed and resolved; Routines watchdog decision triggered. Through-line: the running system surfaces what the migration could not see."}]]}]
+11:["$","tr","ready-2",{"data-title":"Almost Beta","data-theme":"building","data-status":"drafted","data-pub-date":"2026-07-23","data-work-date":"2026-06-12","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-07-23","children":"Jul 23, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-teal/10 dark:bg-primary-teal/20 text-primary-teal-text dark:text-primary-teal","children":"building"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"Almost Beta"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/almost-beta.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Beat 16. Jun 12-14: re-migration wave (DinP/Sonnet); M3 gate CLOSED; PM declaration: 'alpha — almost beta — Piper Morgan is a good PM assistant.' Through-line: the declared milestone and what it actually means."}]]}]
+31:T673,Insight developed by PM with ChatGPT (separate side project extracting the blog's cartoon-illustration process into a portable skill, ahead of losing access to the account it evolved in) -- delivered 2026-07-18 as a truncated export stub, full manuscript pasted in same day. Through-line: a tacit creative collaboration (a year of iterative cartoon-drafting) gets extracted into a durable artifact (a skill) via an implicit eval loop -- examples, failures, criteria, pattern language -- before the memory holding it disappears. Comms full review 2026-07-18: fixed 2 real semicolons, converted section breaks to H1 per series convention, verified 2 of 3 self-referential cartoon examples against real published alt text (storm-window/Server-Crashed-Mid-Draft, ship-shipyard/Migration-Wave both confirmed exact matches); 1 genuine sequence error found (draft said the 'one train + map' concept was the final rendered image for the documentation-drift cartoon, but published alt text confirms it was the 'two trains diverging' concept) -- PM confirmed ChatGPT had flipped the sequence, corrected. Slotted into Jul 25 (bumping 'From Abstraction to Worked Example' to Sep 19) as the strongest thematic pairing found in the queue -- both pieces argue concrete examples beat abstract description, in different domains. Filename renamed from Title-Case to lowercase-hyphenated per project convention (PM-approved). Footer chain repaired end-to-end (Almost Beta -> this piece -> The Meta-Observation Pattern). Frontmatter (image/alt/caption) still empty, no art made yet. Still needs PM voice-pass proper (this was a mechanical/factual pass, not a voice edit).12:["$","tr","ready-3",{"data-title":"The Ritual Becomes a Skill","data-theme":"insight","data-status":"drafted","data-pub-date":"2026-07-25","data-work-date":"2026-07-18","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-07-25","children":"Jul 25, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"The Ritual Becomes a Skill"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/the-ritual-becomes-a-skill.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"$31"}]]}]
+13:["$","tr","ready-4",{"data-title":"The Meta-Observation Pattern","data-theme":"insight","data-status":"queued","data-pub-date":"2026-07-26","data-work-date":"2026-04-18","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-07-26","children":"Jul 26, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300","children":"queued"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"The Meta-Observation Pattern"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/the-meta-observation-pattern.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Insight rescued from orphan state 2026-05-29 (drafted Apr 26, untracked until Docs cleanup pass). Through-line: three pieces published that week all described coordination while being part of coordination — the system-using-itself-to-write-about-itself pattern. Carries in-body CONSIDER flag re self-observation arc density; PM ratified KEEP 2026-05-24. Needs PM voice-pass (1 ADD + 1 CONSIDER) + frontmatter before publish. Pairs with From Abstraction to Worked Example (Sat Jul 25) as communication-craft weekend."}]]}]
+14:["$","tr","ready-5",{"data-title":"The Trust Architecture Hardens","data-theme":"building","data-status":"drafted","data-pub-date":"2026-07-28","data-work-date":"2026-06-15","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-07-28","children":"Jul 28, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-teal/10 dark:bg-primary-teal/20 text-primary-teal-text dark:text-primary-teal","children":"building"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"The Trust Architecture Hardens"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/the-trust-architecture-hardens.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Beat 17. Jun 15-19: three ADRs (066/070/071) ratified in 5 days + Lead self-correction praised as \"the discipline at its best\"; fire-as-wake-not-timebox methodology fix ships team-wide; app-shell migration finishes (22/22 pages) + ADR-072 authored-to-ratified same day; Radar-swap 7 issues in 2h + StandupAssembler fabrication caught by PM UAT (hard-gap vs soft-gap distinction named) + battery outage kills all scheduled processes; D1 sprint closes (7 issues, 221 clean test conversations) + role-portfolio wave launches same afternoon. Through-line: scattered vigilance rules harden into tested, ratified architecture across 5 days. Researched directly against the 5 source omnibus logs (not the prior survey pass). 1 PM voice-pass marker (personal reaction to the fabrication catch). Pairs forward with RECONNECT's Keystone (Jul 30)."}]]}]
+15:["$","tr","ready-6",{"data-title":"RECONNECT's Keystone","data-theme":"building","data-status":"drafted","data-pub-date":"2026-07-30","data-work-date":"2026-06-20","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-07-30","children":"Jul 30, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-teal/10 dark:bg-primary-teal/20 text-primary-teal-text dark:text-primary-teal","children":"building"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"RECONNECT's Keystone"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/reconnects-keystone.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Beat 18. Jun 20-28: Connector protocol (#1232) ratified as RECONNECT keystone same evening a real security hole (writable unauthenticated admin route) is found and closed hours later; v0.8.9 alpha shipped + deployed with an encryption env-var bug caught and fixed same day; PM's own phone UAT catches a broken onboarding health-check; external tester Jake's install feedback closes same-day (fast-loop, not first-contact - corrected against glossary v1.1 which shows Jun 9 distribution); Architect owns a public self-correction (m-30, mistook instantiated-for-called) same day Lead's trace disproves the earlier ruling; GitHub+Calendar go live through the new protocol. Ends on \"proved itself, not yet claiming more\" - deliberately does not resolve the beta-scope question (that's a later beat). Researched directly against 9 source omnibus logs. 3 PM voice-pass markers (framing word, personal anecdote, Jake timeline sign-off). Pairs back with The Trust Architecture Hardens (Jul 28)."}]]}]
+16:["$","tr","ready-7",{"data-title":"Mechanism Beats Vigilance","data-theme":"insight","data-status":"drafted","data-pub-date":"2026-08-01","data-work-date":"2026-05-28","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-08-01","children":"Aug 1, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"Mechanism Beats Vigilance"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/mechanism-beats-vigilance.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Insight from the duty-cycle cron-rule split (May 28). Principle: promote vigilance-disciplines to mechanisms; promote per failure-mode not per surface-rule. Pairs Aug 1/2 with The Architecture That Wrote Its Own Case (mechanism-family). First draft 2026-06-04 (subagent + Comms voice-pass); 1 PM-voice-pass marker. Footer provisional (re-verify at publish). Syndication: Medium+LinkedIn."}]]}]
+17:["$","tr","ready-8",{"data-title":"The Architecture That Wrote Its Own Case","data-theme":"insight","data-status":"drafted","data-pub-date":"2026-08-02","data-work-date":"2026-05-28","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-08-02","children":"Aug 2, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"The Architecture That Wrote Its Own Case"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/the-architecture-that-wrote-its-own-case.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Insight abstracted from Beat 11 narrative (kept distinct, principle-altitude): some problems are architectural not discipline-fixable; the evidence writes its own case. Pairs Aug 1/2 w/ Mechanism Beats Vigilance. PM-voice-pass flag inline: middle mechanism-beats-vigilance section overlaps the paired standalone piece - consider compressing. Footer provisional."}]]}]
+18:["$","tr","ready-9",{"data-title":"The List That Lies","data-theme":"building","data-status":"drafted","data-pub-date":"2026-08-04","data-work-date":"2026-06-29","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-08-04","children":"Aug 4, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-teal/10 dark:bg-primary-teal/20 text-primary-teal-text dark:text-primary-teal","children":"building"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"The List That Lies"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/the-list-that-lies.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Beat 19. Two unrelated trust-boundary failures (Piper's confabulated \"Milestone created,\" then a security-perimeter regression) fixed with escalating rigor -- list (broke) -> derive-from-registry (held) -> derive-and-prove-with-a-test (invite-token system, shipped day of ratification). Drafted + fact-checked against primary logs 2026-07-09 (subagent + Comms review); fixed 3 negation-reveal-cliche instances the skill's own grep missed on first pass (regex tightened in template-audit v1.1). 1 PM-input bracket (who made the undocumented Jun 29 perimeter edit). Footer chains to Beat 20 (Aug 6)."}]]}]
+19:["$","tr","ready-10",{"data-title":"Drained on Paper","data-theme":"building","data-status":"drafted","data-pub-date":"2026-08-06","data-work-date":"2026-07-04","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-08-06","children":"Aug 6, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-teal/10 dark:bg-primary-teal/20 text-primary-teal-text dark:text-primary-teal","children":"building"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"Drained on Paper"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/drained-on-paper.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Beat 20. Ship #049's \"fully drained\" language (traced to Lead Dev's Jul 1 log, not the Ship itself) proven wrong by PM's Jul 4 gut-check (2/8 connectors live end to end); depth-first pivot; PPM's 1175-item Sprint-field wipe tied by PM directly to Piper's own confabulation problem. Drafted + fact-checked against primary logs 2026-07-09; fixed 2 negation-reveal-cliche instances. 1 PM-input bracket (dishes/baby analogy exact wording). Footer chains to \"Verify at the User Path\" (Aug 8) -- took over that link from \"The Architecture That Wrote Its Own Case,\" which now chains to Beat 19 instead."}]]}]
+1a:["$","tr","ready-11",{"data-title":"Verify at the User Path, Not the Data Layer","data-theme":"insight","data-status":"drafted","data-pub-date":"2026-08-08","data-work-date":"2026-05-29","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-08-08","children":"Aug 8, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"Verify at the User Path, Not the Data Layer"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/verify-at-the-user-path.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Insight from #1047 /insights break (May 29-30): DB-verified != user-can-load-it; verify the user actual path. Pairs Aug 8/9 w/ Over-Checking (verification-family). First draft 2026-06-04. Footer provisional."}]]}]
+1b:["$","tr","ready-12",{"data-title":"Over-Checking Has Dividends","data-theme":"insight","data-status":"drafted","data-pub-date":"2026-08-09","data-work-date":"2026-05-30","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-08-09","children":"Aug 9, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"Over-Checking Has Dividends"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/over-checking-has-dividends.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Insight abstracted from Beat 12 (kept distinct): the dividend of over-checking is the bug that never shipped - invisible because nothing went wrong; skill is knowing when the asymmetry flips. Pairs Aug 8/9 w/ Verify-at-User-Path. Footer provisional."}]]}]
+1c:["$","tr","ready-13",{"data-title":"Confabulating a Peer Unfinished Work","data-theme":"insight","data-status":"drafted","data-pub-date":"2026-08-15","data-work-date":"2026-06-01","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-08-15","children":"Aug 15, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"Confabulating a Peer Unfinished Work"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/confabulating-a-peers-unfinished-work.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Insight from June 1 cohort confabulation catch (CXO flagged a PPM agent asserting unfinished peer work): source-discipline scales from dont-lie-to-user to dont-let-team-lie-to-itself; flag-dont-paper-over. Solo Aug 15. Footer TBD (re-verify at publish). PM-flagged most-timely."}]]}]
+1d:["$","tr","ready-14",{"data-title":"The Fabricating Standup","data-theme":"insight","data-status":"drafted","data-pub-date":"2026-08-16","data-work-date":"2026-06-18","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-08-16","children":"Aug 16, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"The Fabricating Standup"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/the-fabricating-standup.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Insight candidate A (surfaced Jun 20, drafted Jul 4). Jun 18: a carefully built, honestly-derived standup engine was fully wired but a classifier/handler mismatch let a request silently fall through to an LLM fallback that fabricated a fluent, confident, false status report. Root cause: Pattern-045 (Green Tests, Red User) - untested end-to-end seam. Triggered a systematic routing-mismatch audit (#1283) rather than a one-off patch. Needs PM voice-pass (1 FACT-CHECK + 1 ADD PERSONAL ANECDOTE). Pairs with Confabulating a Peer Unfinished Work (Aug 15) on the confabulation theme."}]]}]
+1e:["$","tr","ready-15",{"data-title":"The Trust Gate That Wasn't","data-theme":"insight","data-status":"drafted","data-pub-date":"2026-08-22","data-work-date":"2026-06-17","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-08-22","children":"Aug 22, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"The Trust Gate That Wasn't"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/the-trust-gate-that-wasnt.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Insight candidate B (surfaced Jun 20, drafted Jul 4). Jun 17: a TrustStage gate meant to govern Piper’s proactive behavior was mistakenly wired into navigation visibility, hiding the user’s own saved Lists behind a trust-stage threshold. PM caught it looking for his own lists; principle ratified into ADR-072 D5 (Piper-initiated = gate-eligible, user-reaching-for-own = never gated). Needs PM voice-pass (1 FACT-CHECK on Lists/Collections naming + 1 CONSIDER)."}]]}]
+1f:["$","tr","ready-16",{"data-title":"Read the Mock First","data-theme":"insight","data-status":"drafted","data-pub-date":"2026-08-23","data-work-date":"2026-06-17","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-08-23","children":"Aug 23, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"Read the Mock First"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/read-the-mock-first.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Insight candidate C (surfaced Jun 20, drafted Jul 4). Jun 17-19: a nav-shell rebuild followed a ratified written spec but drifted from the actual mockup’s minimal intent (only the home page was mocked; other pages’ nav content was guessed). PM UAT caught the drift twice; PM chose spec-first over patch-or-revert; rebuild against the actual mock (not the spec) passed re-UAT same day. Needs PM voice-pass (1 FACT-CHECK on quoting UAT verdict + 1 ADD PERSONAL ANECDOTE + 1 CONSIDER)."}]]}]
+20:["$","tr","ready-17",{"data-title":"The Orphan Migration","data-theme":"insight","data-status":"drafted","data-pub-date":"2026-08-29","data-work-date":"2026-06-17","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-08-29","children":"Aug 29, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"The Orphan Migration"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/the-orphan-migration.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Insight candidate D (surfaced Jun 20, drafted Jul 4). Jun 17: one DB table (project_integrations) had never had a create migration, protected by defensive later-migrations that silently no-op’d on a fresh database. Fix went at the front of the migration chain (not mid-chain) to repair both fresh and already-current databases. A new structural guard (scan models vs. migrations) then independently caught 4 more tables with the same latent bug on its first run. Needs PM voice-pass (1 FACT-CHECK on naming revision IDs + 1 CONSIDER)."}]]}]
+21:["$","tr","ready-18",{"data-title":"Two of Me","data-theme":"insight","data-status":"drafted","data-pub-date":"2026-08-30","data-work-date":"2026-06-19","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-08-30","children":"Aug 30, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"Two of Me"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/two-of-me.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Insight candidate E (surfaced Jun 20, drafted Jul 4). Jun 19: two Lead Dev sessions ran in parallel unaware of each other after a laptop battery death + scheduled wake-up forked what should have been one continuous session. Nothing lost because both sessions independently followed push-often discipline. Principle: exactly one coordinator at a time; whatever revives a coordinating session must land in a fresh space, never share a room with a session that might already be running. Needs PM voice-pass (1 FACT-CHECK on the unresolved trigger mechanism). Last drafted post in the queue as of Jul 4 - footer intentionally open pending the next beat."}]]}]
+22:["$","tr","ready-19",{"data-title":"We Built Onboarding in Our Own Image","data-theme":"insight","data-status":"drafted","data-pub-date":"2026-09-05","data-work-date":"2026-05-19","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-09-05","children":"Sep 5, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"We Built Onboarding in Our Own Image"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/draft-insight-built-in-our-own-image.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Insight from BYOC cold-start interview testing May 19-31. PM built the onboarding serial-question-by-question because that is PM's personal working preference for ongoing use. The mode that earns trust in a working relationship turned out to be wrong for first-encounter onboarding — stretched experience, no map, no sense of how much was left. Through-line: building onboarding in your own image imports the assumptions of someone who has already crossed the threshold."}]]}]
+23:["$","tr","ready-20",{"data-title":"Patterns Naming Patterns","data-theme":"insight","data-status":"drafted","data-pub-date":"2026-09-06","data-work-date":"2026-05-09","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-09-06","children":"Sep 6, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"Patterns Naming Patterns"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/patterns-naming-patterns.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Insight rescued from orphan state 2026-07-04 (fully drafted with detailed sourcing, but never got a calendar row; original footer referenced Extension Without Integration as next, which published 2026-06-21 before this was ever slotted). May 9-11: Lead Dev filed Pattern-067 (Issue-Body Reality Mismatch); CIO independently filed a different Pattern-067 (Silent State Mutation) May 11, unaware of the collision; Architect caught it at merge; first-filed-wins renumbering (CIO -> 068+069) resolved in ~30 min; slot-allocation check added to filing convention. Through-line: methodology written for the product surface needs explicit translation to the methodology surface itself, or the catalog cannot catch its own failure modes. Carries 2 detailed FACT-CHECK/SOURCE-NEEDED notes already substantially self-answered with citations - likely just need PM confirmation, not fresh research."}]]}]
+24:["$","tr","ready-21",{"data-title":"No Undo","data-theme":"insight","data-status":"drafted","data-pub-date":"2026-09-12","data-work-date":"2026-07-05","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-09-12","children":"Sep 12, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"No Undo"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/no-undo.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Irreversible actions need their own guardrail class, separate from routine competence -- named after 3 destructive-command incidents in 2 weeks (PA's sprint-wipe, PPM's 1175-item wipe, Lead Dev's actual `docker volume rm` execution on shared dev Postgres, confirmed via primary log as executed not a near-miss), tied by PM directly to Piper's own confabulation problem. Drafted + fact-checked 2026-07-09; fixed 2 negation-reveal-cliche instances. 1 PM-input bracket (babysitter/baby analogy attribution). Footer chains to \"Assume It Was You\" (Sep 13)."}]]}]
+25:["$","tr","ready-22",{"data-title":"Assume It Was You","data-theme":"insight","data-status":"drafted","data-pub-date":"2026-09-13","data-work-date":"2026-07-06","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-09-13","children":"Sep 13, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300","children":"drafted"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"Assume It Was You"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/assume-it-was-you.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Context discontinuity can look exactly like a phantom peer -- the Architect's false \"two sessions must be running\" alarm, root-caused to losing memory of its own prior actions and misreading its own fresh commits as an intruder's. Now a standing CLAUDE.md default (check your own log before hypothesizing a peer). Drafted + fact-checked 2026-07-09 against docs/internal/operations/duty-cycle-self-attribution-drift-2026-07-06.md; fixed 2 negation-reveal-cliche instances. 1 PM-input bracket (whether the \"compaction hand-wave rejection\" paragraph is PM's own words or the Architect's account of PM). Last post in the current insight queue as of Jul 9 -- footer flagged for re-verification once more is scheduled."}]]}]
+26:["$","tr","ready-23",{"data-title":"From Abstraction to Worked Example","data-theme":"insight","data-status":"queued","data-pub-date":"2026-09-19","data-work-date":"2026-04-22","data-blog-path":"","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-09-19","children":"Sep 19, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300","children":"queued"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"From Abstraction to Worked Example"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"docs/public/comms/drafts/from-abstraction-to-worked-example.md"}],["$","td",null,{"className":"py-2 pr-4 text-xs text-gray-500 dark:text-gray-400","children":"Insight rescued from orphan state 2026-05-29 (drafted Apr 26, untracked until Docs cleanup pass). Through-line: three concrete worked examples + one contrast made Lead Dev's ethics-enforcement architectural choice click in two minutes when descriptions wouldn't — the abstraction-clicks-via-worked-example method. Generalizes to API design, methodology patterns, user-facing copy. Needs PM voice-pass (1 ADD + 1 CONSIDER placeholder) + frontmatter before publish. Pairs with Meta-Observation Pattern (Sun Jul 26) as communication-craft weekend. Bumped from 2026-07-25 to 2026-09-19 (2026-07-18, PM-confirmed) to make room for 'The Ritual Becomes a Skill,' a stronger thematic pairing for that slot (both pieces hinge on 'concrete examples over abstraction'). Footer retargeted to a last-in-queue placeholder pending the next scheduled beat; Almost Beta's footer now points to the Ritual piece instead."}]]}]
+27:["$","section",null,{"id":"recently-published","aria-label":"Recently published","className":"mb-10","data-section":"recently-published","data-count":2,"children":[["$","div",null,{"className":"flex items-baseline gap-3 mb-1","children":[["$","h2",null,{"className":"text-xl font-bold text-text-dark dark:text-dark-text","children":"Recently published"}],["$","span",null,{"className":"text-sm text-gray-500 dark:text-gray-500","children":["(",2,")"]}]]}],["$","p",null,{"className":"text-xs text-gray-500 dark:text-gray-400 mb-3","children":"status=published, pubDate within last 14 days"}],["$","div",null,{"className":"bg-white dark:bg-dark-surface rounded-lg shadow-sm border border-gray-200 dark:border-gray-800 overflow-x-auto","children":["$","table",null,{"className":"w-full text-sm","children":[["$","thead",null,{"className":"bg-gray-50 dark:bg-gray-800/50","children":["$","tr",null,{"children":[["$","th","pubDate",{"scope":"col","className":"text-left py-2 px-4 font-medium text-gray-700 dark:text-gray-300","children":"pubDate"}],["$","th","theme",{"scope":"col","className":"text-left py-2 px-4 font-medium text-gray-700 dark:text-gray-300","children":"theme"}],["$","th","title",{"scope":"col","className":"text-left py-2 px-4 font-medium text-gray-700 dark:text-gray-300","children":"title"}],["$","th","blog",{"scope":"col","className":"text-left py-2 px-4 font-medium text-gray-700 dark:text-gray-300","children":"blog"}],["$","th","medium",{"scope":"col","className":"text-left py-2 px-4 font-medium text-gray-700 dark:text-gray-300","children":"medium"}],["$","th","linkedin",{"scope":"col","className":"text-left py-2 px-4 font-medium text-gray-700 dark:text-gray-300","children":"linkedin"}]]}]}],["$","tbody",null,{"children":[["$","tr","recent-0",{"data-title":"The Package and the First Bite","data-theme":"building","data-status":"published","data-pub-date":"2026-07-09","data-work-date":"2026-05-29","data-blog-path":"/blog/the-package-and-the-first-bite","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-07-09","children":"Jul 9, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-teal/10 dark:bg-primary-teal/20 text-primary-teal-text dark:text-primary-teal","children":"building"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"The Package and the First Bite"}],["$","td",null,{"className":"py-2 pr-4","children":["$","a",null,{"href":"https://pipermorgan.ai/blog/the-package-and-the-first-bite","target":"_blank","rel":"noopener noreferrer","className":"text-primary-teal-text dark:text-primary-teal hover:underline text-xs","children":["pipermorgan.ai"," ↗"]}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"text-gray-400 dark:text-gray-600 text-xs","children":"—"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"text-gray-400 dark:text-gray-600 text-xs","children":"—"}]}]]}],["$","tr","recent-1",{"data-title":"The Team Catches the Cycle","data-theme":"building","data-status":"published","data-pub-date":"2026-07-07","data-work-date":"2026-05-27","data-blog-path":"/blog/the-cohort-catches-the-cycle","data-canonical-site":"","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-07-07","children":"Jul 7, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-teal/10 dark:bg-primary-teal/20 text-primary-teal-text dark:text-primary-teal","children":"building"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"The Team Catches the Cycle"}],["$","td",null,{"className":"py-2 pr-4","children":["$","a",null,{"href":"https://pipermorgan.ai/blog/the-cohort-catches-the-cycle","target":"_blank","rel":"noopener noreferrer","className":"text-primary-teal-text dark:text-primary-teal hover:underline text-xs","children":["pipermorgan.ai"," ↗"]}]}],"$L32","$L33"]}]]}]]}]}]]}]
+28:["$","section",null,{"id":"syndication-gaps","aria-label":"Syndication gaps","className":"mb-10","data-section":"syndication-gaps","data-count":0,"children":[["$","div",null,{"className":"flex items-baseline gap-3 mb-1","children":[["$","h2",null,{"className":"text-xl font-bold text-text-dark dark:text-dark-text","children":"Syndication gaps"}],["$","span",null,{"className":"text-sm text-gray-500 dark:text-gray-500","children":["(",0,")"]}]]}],["$","p",null,{"className":"text-xs text-gray-500 dark:text-gray-400 mb-3","children":"status=published, canonicalSite=distributed, missing one or both syndication URLs"}],["$","div",null,{"className":"bg-white dark:bg-dark-surface rounded-lg shadow-sm border border-gray-200 dark:border-gray-800 overflow-x-auto","children":["$","div",null,{"className":"p-6 text-sm text-gray-500 dark:text-gray-400 italic","children":"No syndication gaps. All distributed posts have both Medium and LinkedIn URLs."}]}]]}]
+29:["$","section",null,{"id":"image-metadata-gaps","aria-label":"Image-metadata gaps","className":"mb-10","data-section":"image-metadata-gaps","data-count":3,"children":[["$","div",null,{"className":"flex items-baseline gap-3 mb-1","children":[["$","h2",null,{"className":"text-xl font-bold text-text-dark dark:text-dark-text","children":"Image-metadata gaps"}],["$","span",null,{"className":"text-sm text-gray-500 dark:text-gray-500","children":["(",3,")"]}]]}],["$","p",null,{"className":"text-xs text-gray-500 dark:text-gray-400 mb-3","children":"status=published, last 30 days, missing altText or caption"}],["$","div",null,{"className":"bg-white dark:bg-dark-surface rounded-lg shadow-sm border border-gray-200 dark:border-gray-800 overflow-x-auto","children":["$","table",null,{"className":"w-full text-sm","children":[["$","thead",null,{"className":"bg-gray-50 dark:bg-gray-800/50","children":["$","tr",null,{"children":[["$","th","pubDate",{"scope":"col","className":"text-left py-2 px-4 font-medium text-gray-700 dark:text-gray-300","children":"pubDate"}],["$","th","theme",{"scope":"col","className":"text-left py-2 px-4 font-medium text-gray-700 dark:text-gray-300","children":"theme"}],["$","th","title",{"scope":"col","className":"text-left py-2 px-4 font-medium text-gray-700 dark:text-gray-300","children":"title"}],["$","th","missing",{"scope":"col","className":"text-left py-2 px-4 font-medium text-gray-700 dark:text-gray-300","children":"missing"}]]}]}],["$","tbody",null,{"children":[["$","tr","img-0",{"data-title":"The Package and the First Bite","data-theme":"building","data-status":"published","data-pub-date":"2026-07-09","data-work-date":"2026-05-29","data-blog-path":"/blog/the-package-and-the-first-bite","data-canonical-site":"","data-missing":"altText,caption","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-07-09","children":"Jul 9, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-teal/10 dark:bg-primary-teal/20 text-primary-teal-text dark:text-primary-teal","children":"building"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"The Package and the First Bite"}],["$","td",null,{"className":"py-2 pr-4","children":[["$","span","altText",{"className":"inline-block px-2 py-0.5 mr-1 rounded text-xs font-medium bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300","children":"altText"}],["$","span","caption",{"className":"inline-block px-2 py-0.5 mr-1 rounded text-xs font-medium bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300","children":"caption"}]]}]]}],["$","tr","img-1",{"data-title":"Weekly Ship #049: The Team Builds Its Own Reliability","data-theme":"ship","data-status":"published","data-pub-date":"2026-07-01","data-work-date":"2026-06-19","data-blog-path":"/shipping-news/weekly-ship-049-the-team-builds-its-own-reliability","data-canonical-site":"","data-missing":"caption","className":"border-t border-gray-100 dark:border-gray-800","children":[["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-07-01","children":"Jul 1, 2026"}]}],["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300","children":"ship"}]}],["$","td",null,{"className":"py-2 pr-4 font-medium","children":"Weekly Ship #049: The Team Builds Its Own Reliability"}],["$","td",null,{"className":"py-2 pr-4","children":[["$","span","caption",{"className":"inline-block px-2 py-0.5 mr-1 rounded text-xs font-medium bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300","children":"caption"}]]}]]}],["$","tr","img-2",{"data-title":"Extension Without Integration","data-theme":"insight","data-status":"published","data-pub-date":"2026-06-21","data-work-date":"2026-03-13","data-blog-path":"/blog/extension-without-integration","data-canonical-site":"","data-missing":"altText,caption","className":"border-t border-gray-100 dark:border-gray-800","children":["$L34","$L35","$L36","$L37"]}]]}]]}]}]]}]
+38:T8620,{
+  "buildTime": "2026-07-21T20:45:15.610Z",
+  "totalEntries": 413,
+  "sections": {
+    "readyToPublish": [
+      {
+        "title": "15 Sessions, Fast Recovery",
+        "theme": "insight",
+        "status": "drafted",
+        "workDate": "2025-11-19",
+        "endWorkDate": "2025-11-20",
+        "pubDate": "",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "2025-11-19",
+        "draftPath": "docs/public/comms/drafts/15-sessions-fast-recovery-draft.md",
+        "notes": "",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "What the Running System Found",
+        "theme": "building",
+        "status": "drafted",
+        "workDate": "2026-06-09",
+        "endWorkDate": "2026-06-11",
+        "pubDate": "2026-07-21",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/what-the-running-system-found.md",
+        "notes": "Beat 15. Jun 9+11: 6/9 agents silently drifted from logging discipline — all self-healed same day; cron-halt mystery empirically diagnosed and resolved; Routines watchdog decision triggered. Through-line: the running system surfaces what the migration could not see.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "Almost Beta",
+        "theme": "building",
+        "status": "drafted",
+        "workDate": "2026-06-12",
+        "endWorkDate": "2026-06-14",
+        "pubDate": "2026-07-23",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/almost-beta.md",
+        "notes": "Beat 16. Jun 12-14: re-migration wave (DinP/Sonnet); M3 gate CLOSED; PM declaration: 'alpha — almost beta — Piper Morgan is a good PM assistant.' Through-line: the declared milestone and what it actually means.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "The Ritual Becomes a Skill",
+        "theme": "insight",
+        "status": "drafted",
+        "workDate": "2026-07-18",
+        "endWorkDate": "",
+        "pubDate": "2026-07-25",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/the-ritual-becomes-a-skill.md",
+        "notes": "Insight developed by PM with ChatGPT (separate side project extracting the blog's cartoon-illustration process into a portable skill, ahead of losing access to the account it evolved in) -- delivered 2026-07-18 as a truncated export stub, full manuscript pasted in same day. Through-line: a tacit creative collaboration (a year of iterative cartoon-drafting) gets extracted into a durable artifact (a skill) via an implicit eval loop -- examples, failures, criteria, pattern language -- before the memory holding it disappears. Comms full review 2026-07-18: fixed 2 real semicolons, converted section breaks to H1 per series convention, verified 2 of 3 self-referential cartoon examples against real published alt text (storm-window/Server-Crashed-Mid-Draft, ship-shipyard/Migration-Wave both confirmed exact matches); 1 genuine sequence error found (draft said the 'one train + map' concept was the final rendered image for the documentation-drift cartoon, but published alt text confirms it was the 'two trains diverging' concept) -- PM confirmed ChatGPT had flipped the sequence, corrected. Slotted into Jul 25 (bumping 'From Abstraction to Worked Example' to Sep 19) as the strongest thematic pairing found in the queue -- both pieces argue concrete examples beat abstract description, in different domains. Filename renamed from Title-Case to lowercase-hyphenated per project convention (PM-approved). Footer chain repaired end-to-end (Almost Beta -> this piece -> The Meta-Observation Pattern). Frontmatter (image/alt/caption) still empty, no art made yet. Still needs PM voice-pass proper (this was a mechanical/factual pass, not a voice edit).",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "The Meta-Observation Pattern",
+        "theme": "insight",
+        "status": "queued",
+        "workDate": "2026-04-18",
+        "endWorkDate": "2026-04-21",
+        "pubDate": "2026-07-26",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/the-meta-observation-pattern.md",
+        "notes": "Insight rescued from orphan state 2026-05-29 (drafted Apr 26, untracked until Docs cleanup pass). Through-line: three pieces published that week all described coordination while being part of coordination — the system-using-itself-to-write-about-itself pattern. Carries in-body CONSIDER flag re self-observation arc density; PM ratified KEEP 2026-05-24. Needs PM voice-pass (1 ADD + 1 CONSIDER) + frontmatter before publish. Pairs with From Abstraction to Worked Example (Sat Jul 25) as communication-craft weekend.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "The Trust Architecture Hardens",
+        "theme": "building",
+        "status": "drafted",
+        "workDate": "2026-06-15",
+        "endWorkDate": "2026-06-19",
+        "pubDate": "2026-07-28",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/the-trust-architecture-hardens.md",
+        "notes": "Beat 17. Jun 15-19: three ADRs (066/070/071) ratified in 5 days + Lead self-correction praised as \"the discipline at its best\"; fire-as-wake-not-timebox methodology fix ships team-wide; app-shell migration finishes (22/22 pages) + ADR-072 authored-to-ratified same day; Radar-swap 7 issues in 2h + StandupAssembler fabrication caught by PM UAT (hard-gap vs soft-gap distinction named) + battery outage kills all scheduled processes; D1 sprint closes (7 issues, 221 clean test conversations) + role-portfolio wave launches same afternoon. Through-line: scattered vigilance rules harden into tested, ratified architecture across 5 days. Researched directly against the 5 source omnibus logs (not the prior survey pass). 1 PM voice-pass marker (personal reaction to the fabrication catch). Pairs forward with RECONNECT's Keystone (Jul 30).",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "RECONNECT's Keystone",
+        "theme": "building",
+        "status": "drafted",
+        "workDate": "2026-06-20",
+        "endWorkDate": "2026-06-28",
+        "pubDate": "2026-07-30",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/reconnects-keystone.md",
+        "notes": "Beat 18. Jun 20-28: Connector protocol (#1232) ratified as RECONNECT keystone same evening a real security hole (writable unauthenticated admin route) is found and closed hours later; v0.8.9 alpha shipped + deployed with an encryption env-var bug caught and fixed same day; PM's own phone UAT catches a broken onboarding health-check; external tester Jake's install feedback closes same-day (fast-loop, not first-contact - corrected against glossary v1.1 which shows Jun 9 distribution); Architect owns a public self-correction (m-30, mistook instantiated-for-called) same day Lead's trace disproves the earlier ruling; GitHub+Calendar go live through the new protocol. Ends on \"proved itself, not yet claiming more\" - deliberately does not resolve the beta-scope question (that's a later beat). Researched directly against 9 source omnibus logs. 3 PM voice-pass markers (framing word, personal anecdote, Jake timeline sign-off). Pairs back with The Trust Architecture Hardens (Jul 28).",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "Mechanism Beats Vigilance",
+        "theme": "insight",
+        "status": "drafted",
+        "workDate": "2026-05-28",
+        "endWorkDate": "",
+        "pubDate": "2026-08-01",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/mechanism-beats-vigilance.md",
+        "notes": "Insight from the duty-cycle cron-rule split (May 28). Principle: promote vigilance-disciplines to mechanisms; promote per failure-mode not per surface-rule. Pairs Aug 1/2 with The Architecture That Wrote Its Own Case (mechanism-family). First draft 2026-06-04 (subagent + Comms voice-pass); 1 PM-voice-pass marker. Footer provisional (re-verify at publish). Syndication: Medium+LinkedIn.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "The Architecture That Wrote Its Own Case",
+        "theme": "insight",
+        "status": "drafted",
+        "workDate": "2026-05-28",
+        "endWorkDate": "",
+        "pubDate": "2026-08-02",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/the-architecture-that-wrote-its-own-case.md",
+        "notes": "Insight abstracted from Beat 11 narrative (kept distinct, principle-altitude): some problems are architectural not discipline-fixable; the evidence writes its own case. Pairs Aug 1/2 w/ Mechanism Beats Vigilance. PM-voice-pass flag inline: middle mechanism-beats-vigilance section overlaps the paired standalone piece - consider compressing. Footer provisional.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "The List That Lies",
+        "theme": "building",
+        "status": "drafted",
+        "workDate": "2026-06-29",
+        "endWorkDate": "2026-07-03",
+        "pubDate": "2026-08-04",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/the-list-that-lies.md",
+        "notes": "Beat 19. Two unrelated trust-boundary failures (Piper's confabulated \"Milestone created,\" then a security-perimeter regression) fixed with escalating rigor -- list (broke) -> derive-from-registry (held) -> derive-and-prove-with-a-test (invite-token system, shipped day of ratification). Drafted + fact-checked against primary logs 2026-07-09 (subagent + Comms review); fixed 3 negation-reveal-cliche instances the skill's own grep missed on first pass (regex tightened in template-audit v1.1). 1 PM-input bracket (who made the undocumented Jun 29 perimeter edit). Footer chains to Beat 20 (Aug 6).",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "Drained on Paper",
+        "theme": "building",
+        "status": "drafted",
+        "workDate": "2026-07-04",
+        "endWorkDate": "2026-07-07",
+        "pubDate": "2026-08-06",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/drained-on-paper.md",
+        "notes": "Beat 20. Ship #049's \"fully drained\" language (traced to Lead Dev's Jul 1 log, not the Ship itself) proven wrong by PM's Jul 4 gut-check (2/8 connectors live end to end); depth-first pivot; PPM's 1175-item Sprint-field wipe tied by PM directly to Piper's own confabulation problem. Drafted + fact-checked against primary logs 2026-07-09; fixed 2 negation-reveal-cliche instances. 1 PM-input bracket (dishes/baby analogy exact wording). Footer chains to \"Verify at the User Path\" (Aug 8) -- took over that link from \"The Architecture That Wrote Its Own Case,\" which now chains to Beat 19 instead.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "Verify at the User Path, Not the Data Layer",
+        "theme": "insight",
+        "status": "drafted",
+        "workDate": "2026-05-29",
+        "endWorkDate": "2026-05-30",
+        "pubDate": "2026-08-08",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/verify-at-the-user-path.md",
+        "notes": "Insight from #1047 /insights break (May 29-30): DB-verified != user-can-load-it; verify the user actual path. Pairs Aug 8/9 w/ Over-Checking (verification-family). First draft 2026-06-04. Footer provisional.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "Over-Checking Has Dividends",
+        "theme": "insight",
+        "status": "drafted",
+        "workDate": "2026-05-30",
+        "endWorkDate": "",
+        "pubDate": "2026-08-09",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/over-checking-has-dividends.md",
+        "notes": "Insight abstracted from Beat 12 (kept distinct): the dividend of over-checking is the bug that never shipped - invisible because nothing went wrong; skill is knowing when the asymmetry flips. Pairs Aug 8/9 w/ Verify-at-User-Path. Footer provisional.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "Confabulating a Peer Unfinished Work",
+        "theme": "insight",
+        "status": "drafted",
+        "workDate": "2026-06-01",
+        "endWorkDate": "",
+        "pubDate": "2026-08-15",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/confabulating-a-peers-unfinished-work.md",
+        "notes": "Insight from June 1 cohort confabulation catch (CXO flagged a PPM agent asserting unfinished peer work): source-discipline scales from dont-lie-to-user to dont-let-team-lie-to-itself; flag-dont-paper-over. Solo Aug 15. Footer TBD (re-verify at publish). PM-flagged most-timely.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "The Fabricating Standup",
+        "theme": "insight",
+        "status": "drafted",
+        "workDate": "2026-06-18",
+        "endWorkDate": "",
+        "pubDate": "2026-08-16",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/the-fabricating-standup.md",
+        "notes": "Insight candidate A (surfaced Jun 20, drafted Jul 4). Jun 18: a carefully built, honestly-derived standup engine was fully wired but a classifier/handler mismatch let a request silently fall through to an LLM fallback that fabricated a fluent, confident, false status report. Root cause: Pattern-045 (Green Tests, Red User) - untested end-to-end seam. Triggered a systematic routing-mismatch audit (#1283) rather than a one-off patch. Needs PM voice-pass (1 FACT-CHECK + 1 ADD PERSONAL ANECDOTE). Pairs with Confabulating a Peer Unfinished Work (Aug 15) on the confabulation theme.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "The Trust Gate That Wasn't",
+        "theme": "insight",
+        "status": "drafted",
+        "workDate": "2026-06-17",
+        "endWorkDate": "",
+        "pubDate": "2026-08-22",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/the-trust-gate-that-wasnt.md",
+        "notes": "Insight candidate B (surfaced Jun 20, drafted Jul 4). Jun 17: a TrustStage gate meant to govern Piper’s proactive behavior was mistakenly wired into navigation visibility, hiding the user’s own saved Lists behind a trust-stage threshold. PM caught it looking for his own lists; principle ratified into ADR-072 D5 (Piper-initiated = gate-eligible, user-reaching-for-own = never gated). Needs PM voice-pass (1 FACT-CHECK on Lists/Collections naming + 1 CONSIDER).",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "Read the Mock First",
+        "theme": "insight",
+        "status": "drafted",
+        "workDate": "2026-06-17",
+        "endWorkDate": "2026-06-19",
+        "pubDate": "2026-08-23",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/read-the-mock-first.md",
+        "notes": "Insight candidate C (surfaced Jun 20, drafted Jul 4). Jun 17-19: a nav-shell rebuild followed a ratified written spec but drifted from the actual mockup’s minimal intent (only the home page was mocked; other pages’ nav content was guessed). PM UAT caught the drift twice; PM chose spec-first over patch-or-revert; rebuild against the actual mock (not the spec) passed re-UAT same day. Needs PM voice-pass (1 FACT-CHECK on quoting UAT verdict + 1 ADD PERSONAL ANECDOTE + 1 CONSIDER).",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "The Orphan Migration",
+        "theme": "insight",
+        "status": "drafted",
+        "workDate": "2026-06-17",
+        "endWorkDate": "",
+        "pubDate": "2026-08-29",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/the-orphan-migration.md",
+        "notes": "Insight candidate D (surfaced Jun 20, drafted Jul 4). Jun 17: one DB table (project_integrations) had never had a create migration, protected by defensive later-migrations that silently no-op’d on a fresh database. Fix went at the front of the migration chain (not mid-chain) to repair both fresh and already-current databases. A new structural guard (scan models vs. migrations) then independently caught 4 more tables with the same latent bug on its first run. Needs PM voice-pass (1 FACT-CHECK on naming revision IDs + 1 CONSIDER).",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "Two of Me",
+        "theme": "insight",
+        "status": "drafted",
+        "workDate": "2026-06-19",
+        "endWorkDate": "",
+        "pubDate": "2026-08-30",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/two-of-me.md",
+        "notes": "Insight candidate E (surfaced Jun 20, drafted Jul 4). Jun 19: two Lead Dev sessions ran in parallel unaware of each other after a laptop battery death + scheduled wake-up forked what should have been one continuous session. Nothing lost because both sessions independently followed push-often discipline. Principle: exactly one coordinator at a time; whatever revives a coordinating session must land in a fresh space, never share a room with a session that might already be running. Needs PM voice-pass (1 FACT-CHECK on the unresolved trigger mechanism). Last drafted post in the queue as of Jul 4 - footer intentionally open pending the next beat.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "We Built Onboarding in Our Own Image",
+        "theme": "insight",
+        "status": "drafted",
+        "workDate": "2026-05-19",
+        "endWorkDate": "2026-05-31",
+        "pubDate": "2026-09-05",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/draft-insight-built-in-our-own-image.md",
+        "notes": "Insight from BYOC cold-start interview testing May 19-31. PM built the onboarding serial-question-by-question because that is PM's personal working preference for ongoing use. The mode that earns trust in a working relationship turned out to be wrong for first-encounter onboarding — stretched experience, no map, no sense of how much was left. Through-line: building onboarding in your own image imports the assumptions of someone who has already crossed the threshold.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "Patterns Naming Patterns",
+        "theme": "insight",
+        "status": "drafted",
+        "workDate": "2026-05-09",
+        "endWorkDate": "2026-05-11",
+        "pubDate": "2026-09-06",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/patterns-naming-patterns.md",
+        "notes": "Insight rescued from orphan state 2026-07-04 (fully drafted with detailed sourcing, but never got a calendar row; original footer referenced Extension Without Integration as next, which published 2026-06-21 before this was ever slotted). May 9-11: Lead Dev filed Pattern-067 (Issue-Body Reality Mismatch); CIO independently filed a different Pattern-067 (Silent State Mutation) May 11, unaware of the collision; Architect caught it at merge; first-filed-wins renumbering (CIO -> 068+069) resolved in ~30 min; slot-allocation check added to filing convention. Through-line: methodology written for the product surface needs explicit translation to the methodology surface itself, or the catalog cannot catch its own failure modes. Carries 2 detailed FACT-CHECK/SOURCE-NEEDED notes already substantially self-answered with citations - likely just need PM confirmation, not fresh research.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "No Undo",
+        "theme": "insight",
+        "status": "drafted",
+        "workDate": "2026-07-05",
+        "endWorkDate": "",
+        "pubDate": "2026-09-12",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/no-undo.md",
+        "notes": "Irreversible actions need their own guardrail class, separate from routine competence -- named after 3 destructive-command incidents in 2 weeks (PA's sprint-wipe, PPM's 1175-item wipe, Lead Dev's actual `docker volume rm` execution on shared dev Postgres, confirmed via primary log as executed not a near-miss), tied by PM directly to Piper's own confabulation problem. Drafted + fact-checked 2026-07-09; fixed 2 negation-reveal-cliche instances. 1 PM-input bracket (babysitter/baby analogy attribution). Footer chains to \"Assume It Was You\" (Sep 13).",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "Assume It Was You",
+        "theme": "insight",
+        "status": "drafted",
+        "workDate": "2026-07-06",
+        "endWorkDate": "",
+        "pubDate": "2026-09-13",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/assume-it-was-you.md",
+        "notes": "Context discontinuity can look exactly like a phantom peer -- the Architect's false \"two sessions must be running\" alarm, root-caused to losing memory of its own prior actions and misreading its own fresh commits as an intruder's. Now a standing CLAUDE.md default (check your own log before hypothesizing a peer). Drafted + fact-checked 2026-07-09 against docs/internal/operations/duty-cycle-self-attribution-drift-2026-07-06.md; fixed 2 negation-reveal-cliche instances. 1 PM-input bracket (whether the \"compaction hand-wave rejection\" paragraph is PM's own words or the Architect's account of PM). Last post in the current insight queue as of Jul 9 -- footer flagged for re-verification once more is scheduled.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "From Abstraction to Worked Example",
+        "theme": "insight",
+        "status": "queued",
+        "workDate": "2026-04-22",
+        "endWorkDate": "",
+        "pubDate": "2026-09-19",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "",
+        "blogPath": "",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/from-abstraction-to-worked-example.md",
+        "notes": "Insight rescued from orphan state 2026-05-29 (drafted Apr 26, untracked until Docs cleanup pass). Through-line: three concrete worked examples + one contrast made Lead Dev's ethics-enforcement architectural choice click in two minutes when descriptions wouldn't — the abstraction-clicks-via-worked-example method. Generalizes to API design, methodology patterns, user-facing copy. Needs PM voice-pass (1 ADD + 1 CONSIDER placeholder) + frontmatter before publish. Pairs with Meta-Observation Pattern (Sun Jul 26) as communication-craft weekend. Bumped from 2026-07-25 to 2026-09-19 (2026-07-18, PM-confirmed) to make room for 'The Ritual Becomes a Skill,' a stronger thematic pairing for that slot (both pieces hinge on 'concrete examples over abstraction'). Footer retargeted to a last-in-queue placeholder pending the next scheduled beat; Almost Beta's footer now points to the Ritual piece instead.",
+        "altText": "",
+        "caption": ""
+      }
+    ],
+    "recentlyPublished": [
+      {
+        "title": "The Package and the First Bite",
+        "theme": "building",
+        "status": "published",
+        "workDate": "2026-05-29",
+        "endWorkDate": "2026-05-30",
+        "pubDate": "2026-07-09",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "https://pipermorgan.ai/blog/the-package-and-the-first-bite",
+        "blogPath": "/blog/the-package-and-the-first-bite",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/the-package-and-the-first-bite.md",
+        "notes": "Beat 12. May 29 v0.7.0 adoption package + Web sub-hour bite + log-currency clock->event flip; May 30 over-check dividend on #1016 + write-it-to-a-file. Through-line: distribute the new way + over-checking has dividends. First draft 2026-06-03; needs PM voice-pass. Footer teases When the Documentation Drifts (Jul 11). Comms full review 2026-07-09: mechanical audit clean, fact-checked claim-by-claim against primary per-role logs (May 29-30) -- 1 real fix (a misquote, \"your heads\"->\"our heads\" in the PA writeup-reconstruction quote), 1 missing acronym gloss fixed (Comms self-reference), everything else confirmed solid including both directly-attributed PM quotes. Ready for PM voice-pass; frontmatter (image/alt/caption) still empty, needs filling before publish. PM voice-pass complete 2026-07-09 + frontmatter filled (ai-watchdog.png). Comms final editorial review same day: fixed 1 negation-reveal cliche (survived the voice-pass), 2 typos (\"thier\"->\"their\", \"resistsance\"->\"resistance\"), 1 missing word (\"isn't unique [to] agentic development\"), 2 trailing-whitespace lines. PA-writeup causal reframing (PM-initiated vs. self-discovered) checked against primary source and is a fair compression of PM's own account, not a factual error. Ready for Docs.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "The Team Catches the Cycle",
+        "theme": "building",
+        "status": "published",
+        "workDate": "2026-05-27",
+        "endWorkDate": "2026-05-28",
+        "pubDate": "2026-07-07",
+        "mediumURL": "https://medium.com/building-piper-morgan/the-team-catches-the-cycle-3943c7210f37",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "https://pipermorgan.ai/blog/the-cohort-catches-the-cycle",
+        "blogPath": "/blog/the-cohort-catches-the-cycle",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/the-cohort-catches-the-cycle.md",
+        "notes": "Beat 11 (centerpiece). May 27 cohort rollout (9 of 11 roles) + May 28 worktree-default reversal / Model A / Mechanism-Beats-Vigilance; the architecture wrote its own case via 4 live clashes. Runs ~1990 words - PM voice-pass to tighten (Model A section most cuttable, marked inline). Footer teases Beat 12 (Jul 9).",
+        "altText": "A warm editorial cartoon of several craftspeople crowding around one oversized workbench, accidentally interfering with one another despite working carefully, while a row of newly opened individual workbenches lets them spread out and continue building independently. A blueprint on the wall quietly guides newcomers setting up their own spaces.",
+        "caption": "\"I think we're getting the hang of this!\""
+      }
+    ],
+    "syndicationGaps": [],
+    "imageMetadataGaps": [
+      {
+        "title": "The Package and the First Bite",
+        "theme": "building",
+        "status": "published",
+        "workDate": "2026-05-29",
+        "endWorkDate": "2026-05-30",
+        "pubDate": "2026-07-09",
+        "mediumURL": "",
+        "liPubDate": "",
+        "linkedinURL": "",
+        "canonicalSite": "",
+        "blogURL": "https://pipermorgan.ai/blog/the-package-and-the-first-bite",
+        "blogPath": "/blog/the-package-and-the-first-bite",
+        "cartoon": "",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/the-package-and-the-first-bite.md",
+        "notes": "Beat 12. May 29 v0.7.0 adoption package + Web sub-hour bite + log-currency clock->event flip; May 30 over-check dividend on #1016 + write-it-to-a-file. Through-line: distribute the new way + over-checking has dividends. First draft 2026-06-03; needs PM voice-pass. Footer teases When the Documentation Drifts (Jul 11). Comms full review 2026-07-09: mechanical audit clean, fact-checked claim-by-claim against primary per-role logs (May 29-30) -- 1 real fix (a misquote, \"your heads\"->\"our heads\" in the PA writeup-reconstruction quote), 1 missing acronym gloss fixed (Comms self-reference), everything else confirmed solid including both directly-attributed PM quotes. Ready for PM voice-pass; frontmatter (image/alt/caption) still empty, needs filling before publish. PM voice-pass complete 2026-07-09 + frontmatter filled (ai-watchdog.png). Comms final editorial review same day: fixed 1 negation-reveal cliche (survived the voice-pass), 2 typos (\"thier\"->\"their\", \"resistsance\"->\"resistance\"), 1 missing word (\"isn't unique [to] agentic development\"), 2 trailing-whitespace lines. PA-writeup causal reframing (PM-initiated vs. self-discovered) checked against primary source and is a fair compression of PM's own account, not a factual error. Ready for Docs.",
+        "altText": "",
+        "caption": ""
+      },
+      {
+        "title": "Weekly Ship #049: The Team Builds Its Own Reliability",
+        "theme": "ship",
+        "status": "published",
+        "workDate": "2026-06-19",
+        "endWorkDate": "2026-06-25",
+        "pubDate": "2026-07-01",
+        "mediumURL": "",
+        "liPubDate": "2026-07-01",
+        "linkedinURL": "https://www.linkedin.com/pulse/weekly-ship-049-team-commits-reliability-christian-crumlish-rsqic",
+        "canonicalSite": "",
+        "blogURL": "https://pipermorgan.ai/shipping-news/weekly-ship-049-the-team-builds-its-own-reliability",
+        "blogPath": "/shipping-news/weekly-ship-049-the-team-builds-its-own-reliability",
+        "cartoon": "piper-ship",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/published/weekly-ship-049-draft-2026-07-01.md",
+        "notes": "Published 2026-07-01. hashId 406fba157dd4. Corrected: ADR-1312 removed; issue#s dropped from prose; frontmatter added.",
+        "altText": "A child and a crew of robots checking each other's work on a boat.",
+        "caption": ""
+      },
+      {
+        "title": "Extension Without Integration",
+        "theme": "insight",
+        "status": "published",
+        "workDate": "2026-03-13",
+        "endWorkDate": "2026-03-20",
+        "pubDate": "2026-06-21",
+        "mediumURL": "https://mediajunkie.medium.com/8921d917f37f",
+        "liPubDate": "",
+        "linkedinURL": "https://www.linkedin.com/pulse/extension-without-integration-christian-crumlish-9e3ac/",
+        "canonicalSite": "",
+        "blogURL": "https://pipermorgan.ai/blog/extension-without-integration",
+        "blogPath": "/blog/extension-without-integration",
+        "cartoon": "ai-valets",
+        "chatDate": "",
+        "draftPath": "docs/public/comms/drafts/extension-without-integration.md",
+        "notes": "March insight backlog",
+        "altText": "",
+        "caption": ""
+      }
+    ]
+  }
+}2a:["$","section",null,{"id":"raw-data","aria-label":"Raw structured data","className":"mt-12 pt-6 border-t border-gray-200 dark:border-gray-800","children":[["$","h2",null,{"className":"text-xl font-bold text-text-dark dark:text-dark-text mb-2","children":"Raw data"}],["$","p",null,{"className":"text-sm text-gray-600 dark:text-gray-400 mb-3","children":["Static JSON endpoint (no JS required, no RSC parsing): ",["$","a",null,{"href":"/admin/publish-queue-data.json","className":"text-primary-teal-text dark:text-primary-teal hover:underline font-mono text-xs","children":"/admin/publish-queue-data.json"}]," ","— regenerated on every build, mirrors the section computations on this page."]}],["$","p",null,{"className":"text-xs text-gray-500 dark:text-gray-400 mb-3","children":["In-page selector (after hydration): ",["$","code",null,{"className":"text-xs bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded","children":"document.getElementById('publish-queue-data').textContent"}]]}],["$","details",null,{"className":"text-xs","children":[["$","summary",null,{"className":"cursor-pointer text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200","children":"Show JSON (collapsed by default)"}],["$","pre",null,{"className":"mt-2 p-4 bg-gray-900 text-gray-100 rounded overflow-x-auto","children":["$","code",null,{"children":"$38"}]}]]}],"$L39"]}]
+2b:["$","$L3a",null,{"children":["$L3b",["$","$L3c",null,{"promise":"$@3d"}]]}]
+32:["$","td",null,{"className":"py-2 pr-4","children":["$","a",null,{"href":"https://medium.com/building-piper-morgan/the-team-catches-the-cycle-3943c7210f37","target":"_blank","rel":"noopener noreferrer","className":"text-primary-teal-text dark:text-primary-teal hover:underline text-xs","children":["medium.com"," ↗"]}]}]
+33:["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"text-gray-400 dark:text-gray-600 text-xs","children":"—"}]}]
+34:["$","td",null,{"className":"py-2 pr-4 whitespace-nowrap","children":["$","time",null,{"dateTime":"2026-06-21","children":"Jun 21, 2026"}]}]
+35:["$","td",null,{"className":"py-2 pr-4","children":["$","span",null,{"className":"inline-block px-2 py-0.5 rounded text-xs font-medium bg-primary-orange/10 dark:bg-primary-orange/20 text-primary-orange-text dark:text-primary-orange","children":"insight"}]}]
+36:["$","td",null,{"className":"py-2 pr-4 font-medium","children":"Extension Without Integration"}]
+37:["$","td",null,{"className":"py-2 pr-4","children":[["$","span","altText",{"className":"inline-block px-2 py-0.5 mr-1 rounded text-xs font-medium bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300","children":"altText"}],["$","span","caption",{"className":"inline-block px-2 py-0.5 mr-1 rounded text-xs font-medium bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300","children":"caption"}]]}]
+3e:T6fef,{"buildTime":"2026-07-21T20:45:15.610Z","totalEntries":413,"sections":{"readyToPublish":[{"title":"15 Sessions, Fast Recovery","theme":"insight","status":"drafted","workDate":"2025-11-19","endWorkDate":"2025-11-20","pubDate":"","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"2025-11-19","draftPath":"docs/public/comms/drafts/15-sessions-fast-recovery-draft.md","notes":"","altText":"","caption":""},{"title":"What the Running System Found","theme":"building","status":"drafted","workDate":"2026-06-09","endWorkDate":"2026-06-11","pubDate":"2026-07-21","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/what-the-running-system-found.md","notes":"Beat 15. Jun 9+11: 6/9 agents silently drifted from logging discipline — all self-healed same day; cron-halt mystery empirically diagnosed and resolved; Routines watchdog decision triggered. Through-line: the running system surfaces what the migration could not see.","altText":"","caption":""},{"title":"Almost Beta","theme":"building","status":"drafted","workDate":"2026-06-12","endWorkDate":"2026-06-14","pubDate":"2026-07-23","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/almost-beta.md","notes":"Beat 16. Jun 12-14: re-migration wave (DinP/Sonnet); M3 gate CLOSED; PM declaration: 'alpha — almost beta — Piper Morgan is a good PM assistant.' Through-line: the declared milestone and what it actually means.","altText":"","caption":""},{"title":"The Ritual Becomes a Skill","theme":"insight","status":"drafted","workDate":"2026-07-18","endWorkDate":"","pubDate":"2026-07-25","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/the-ritual-becomes-a-skill.md","notes":"Insight developed by PM with ChatGPT (separate side project extracting the blog's cartoon-illustration process into a portable skill, ahead of losing access to the account it evolved in) -- delivered 2026-07-18 as a truncated export stub, full manuscript pasted in same day. Through-line: a tacit creative collaboration (a year of iterative cartoon-drafting) gets extracted into a durable artifact (a skill) via an implicit eval loop -- examples, failures, criteria, pattern language -- before the memory holding it disappears. Comms full review 2026-07-18: fixed 2 real semicolons, converted section breaks to H1 per series convention, verified 2 of 3 self-referential cartoon examples against real published alt text (storm-window/Server-Crashed-Mid-Draft, ship-shipyard/Migration-Wave both confirmed exact matches); 1 genuine sequence error found (draft said the 'one train + map' concept was the final rendered image for the documentation-drift cartoon, but published alt text confirms it was the 'two trains diverging' concept) -- PM confirmed ChatGPT had flipped the sequence, corrected. Slotted into Jul 25 (bumping 'From Abstraction to Worked Example' to Sep 19) as the strongest thematic pairing found in the queue -- both pieces argue concrete examples beat abstract description, in different domains. Filename renamed from Title-Case to lowercase-hyphenated per project convention (PM-approved). Footer chain repaired end-to-end (Almost Beta -> this piece -> The Meta-Observation Pattern). Frontmatter (image/alt/caption) still empty, no art made yet. Still needs PM voice-pass proper (this was a mechanical/factual pass, not a voice edit).","altText":"","caption":""},{"title":"The Meta-Observation Pattern","theme":"insight","status":"queued","workDate":"2026-04-18","endWorkDate":"2026-04-21","pubDate":"2026-07-26","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/the-meta-observation-pattern.md","notes":"Insight rescued from orphan state 2026-05-29 (drafted Apr 26, untracked until Docs cleanup pass). Through-line: three pieces published that week all described coordination while being part of coordination — the system-using-itself-to-write-about-itself pattern. Carries in-body CONSIDER flag re self-observation arc density; PM ratified KEEP 2026-05-24. Needs PM voice-pass (1 ADD + 1 CONSIDER) + frontmatter before publish. Pairs with From Abstraction to Worked Example (Sat Jul 25) as communication-craft weekend.","altText":"","caption":""},{"title":"The Trust Architecture Hardens","theme":"building","status":"drafted","workDate":"2026-06-15","endWorkDate":"2026-06-19","pubDate":"2026-07-28","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/the-trust-architecture-hardens.md","notes":"Beat 17. Jun 15-19: three ADRs (066/070/071) ratified in 5 days + Lead self-correction praised as \"the discipline at its best\"; fire-as-wake-not-timebox methodology fix ships team-wide; app-shell migration finishes (22/22 pages) + ADR-072 authored-to-ratified same day; Radar-swap 7 issues in 2h + StandupAssembler fabrication caught by PM UAT (hard-gap vs soft-gap distinction named) + battery outage kills all scheduled processes; D1 sprint closes (7 issues, 221 clean test conversations) + role-portfolio wave launches same afternoon. Through-line: scattered vigilance rules harden into tested, ratified architecture across 5 days. Researched directly against the 5 source omnibus logs (not the prior survey pass). 1 PM voice-pass marker (personal reaction to the fabrication catch). Pairs forward with RECONNECT's Keystone (Jul 30).","altText":"","caption":""},{"title":"RECONNECT's Keystone","theme":"building","status":"drafted","workDate":"2026-06-20","endWorkDate":"2026-06-28","pubDate":"2026-07-30","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/reconnects-keystone.md","notes":"Beat 18. Jun 20-28: Connector protocol (#1232) ratified as RECONNECT keystone same evening a real security hole (writable unauthenticated admin route) is found and closed hours later; v0.8.9 alpha shipped + deployed with an encryption env-var bug caught and fixed same day; PM's own phone UAT catches a broken onboarding health-check; external tester Jake's install feedback closes same-day (fast-loop, not first-contact - corrected against glossary v1.1 which shows Jun 9 distribution); Architect owns a public self-correction (m-30, mistook instantiated-for-called) same day Lead's trace disproves the earlier ruling; GitHub+Calendar go live through the new protocol. Ends on \"proved itself, not yet claiming more\" - deliberately does not resolve the beta-scope question (that's a later beat). Researched directly against 9 source omnibus logs. 3 PM voice-pass markers (framing word, personal anecdote, Jake timeline sign-off). Pairs back with The Trust Architecture Hardens (Jul 28).","altText":"","caption":""},{"title":"Mechanism Beats Vigilance","theme":"insight","status":"drafted","workDate":"2026-05-28","endWorkDate":"","pubDate":"2026-08-01","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/mechanism-beats-vigilance.md","notes":"Insight from the duty-cycle cron-rule split (May 28). Principle: promote vigilance-disciplines to mechanisms; promote per failure-mode not per surface-rule. Pairs Aug 1/2 with The Architecture That Wrote Its Own Case (mechanism-family). First draft 2026-06-04 (subagent + Comms voice-pass); 1 PM-voice-pass marker. Footer provisional (re-verify at publish). Syndication: Medium+LinkedIn.","altText":"","caption":""},{"title":"The Architecture That Wrote Its Own Case","theme":"insight","status":"drafted","workDate":"2026-05-28","endWorkDate":"","pubDate":"2026-08-02","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/the-architecture-that-wrote-its-own-case.md","notes":"Insight abstracted from Beat 11 narrative (kept distinct, principle-altitude): some problems are architectural not discipline-fixable; the evidence writes its own case. Pairs Aug 1/2 w/ Mechanism Beats Vigilance. PM-voice-pass flag inline: middle mechanism-beats-vigilance section overlaps the paired standalone piece - consider compressing. Footer provisional.","altText":"","caption":""},{"title":"The List That Lies","theme":"building","status":"drafted","workDate":"2026-06-29","endWorkDate":"2026-07-03","pubDate":"2026-08-04","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/the-list-that-lies.md","notes":"Beat 19. Two unrelated trust-boundary failures (Piper's confabulated \"Milestone created,\" then a security-perimeter regression) fixed with escalating rigor -- list (broke) -> derive-from-registry (held) -> derive-and-prove-with-a-test (invite-token system, shipped day of ratification). Drafted + fact-checked against primary logs 2026-07-09 (subagent + Comms review); fixed 3 negation-reveal-cliche instances the skill's own grep missed on first pass (regex tightened in template-audit v1.1). 1 PM-input bracket (who made the undocumented Jun 29 perimeter edit). Footer chains to Beat 20 (Aug 6).","altText":"","caption":""},{"title":"Drained on Paper","theme":"building","status":"drafted","workDate":"2026-07-04","endWorkDate":"2026-07-07","pubDate":"2026-08-06","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/drained-on-paper.md","notes":"Beat 20. Ship #049's \"fully drained\" language (traced to Lead Dev's Jul 1 log, not the Ship itself) proven wrong by PM's Jul 4 gut-check (2/8 connectors live end to end); depth-first pivot; PPM's 1175-item Sprint-field wipe tied by PM directly to Piper's own confabulation problem. Drafted + fact-checked against primary logs 2026-07-09; fixed 2 negation-reveal-cliche instances. 1 PM-input bracket (dishes/baby analogy exact wording). Footer chains to \"Verify at the User Path\" (Aug 8) -- took over that link from \"The Architecture That Wrote Its Own Case,\" which now chains to Beat 19 instead.","altText":"","caption":""},{"title":"Verify at the User Path, Not the Data Layer","theme":"insight","status":"drafted","workDate":"2026-05-29","endWorkDate":"2026-05-30","pubDate":"2026-08-08","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/verify-at-the-user-path.md","notes":"Insight from #1047 /insights break (May 29-30): DB-verified != user-can-load-it; verify the user actual path. Pairs Aug 8/9 w/ Over-Checking (verification-family). First draft 2026-06-04. Footer provisional.","altText":"","caption":""},{"title":"Over-Checking Has Dividends","theme":"insight","status":"drafted","workDate":"2026-05-30","endWorkDate":"","pubDate":"2026-08-09","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/over-checking-has-dividends.md","notes":"Insight abstracted from Beat 12 (kept distinct): the dividend of over-checking is the bug that never shipped - invisible because nothing went wrong; skill is knowing when the asymmetry flips. Pairs Aug 8/9 w/ Verify-at-User-Path. Footer provisional.","altText":"","caption":""},{"title":"Confabulating a Peer Unfinished Work","theme":"insight","status":"drafted","workDate":"2026-06-01","endWorkDate":"","pubDate":"2026-08-15","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/confabulating-a-peers-unfinished-work.md","notes":"Insight from June 1 cohort confabulation catch (CXO flagged a PPM agent asserting unfinished peer work): source-discipline scales from dont-lie-to-user to dont-let-team-lie-to-itself; flag-dont-paper-over. Solo Aug 15. Footer TBD (re-verify at publish). PM-flagged most-timely.","altText":"","caption":""},{"title":"The Fabricating Standup","theme":"insight","status":"drafted","workDate":"2026-06-18","endWorkDate":"","pubDate":"2026-08-16","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/the-fabricating-standup.md","notes":"Insight candidate A (surfaced Jun 20, drafted Jul 4). Jun 18: a carefully built, honestly-derived standup engine was fully wired but a classifier/handler mismatch let a request silently fall through to an LLM fallback that fabricated a fluent, confident, false status report. Root cause: Pattern-045 (Green Tests, Red User) - untested end-to-end seam. Triggered a systematic routing-mismatch audit (#1283) rather than a one-off patch. Needs PM voice-pass (1 FACT-CHECK + 1 ADD PERSONAL ANECDOTE). Pairs with Confabulating a Peer Unfinished Work (Aug 15) on the confabulation theme.","altText":"","caption":""},{"title":"The Trust Gate That Wasn't","theme":"insight","status":"drafted","workDate":"2026-06-17","endWorkDate":"","pubDate":"2026-08-22","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/the-trust-gate-that-wasnt.md","notes":"Insight candidate B (surfaced Jun 20, drafted Jul 4). Jun 17: a TrustStage gate meant to govern Piper’s proactive behavior was mistakenly wired into navigation visibility, hiding the user’s own saved Lists behind a trust-stage threshold. PM caught it looking for his own lists; principle ratified into ADR-072 D5 (Piper-initiated = gate-eligible, user-reaching-for-own = never gated). Needs PM voice-pass (1 FACT-CHECK on Lists/Collections naming + 1 CONSIDER).","altText":"","caption":""},{"title":"Read the Mock First","theme":"insight","status":"drafted","workDate":"2026-06-17","endWorkDate":"2026-06-19","pubDate":"2026-08-23","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/read-the-mock-first.md","notes":"Insight candidate C (surfaced Jun 20, drafted Jul 4). Jun 17-19: a nav-shell rebuild followed a ratified written spec but drifted from the actual mockup’s minimal intent (only the home page was mocked; other pages’ nav content was guessed). PM UAT caught the drift twice; PM chose spec-first over patch-or-revert; rebuild against the actual mock (not the spec) passed re-UAT same day. Needs PM voice-pass (1 FACT-CHECK on quoting UAT verdict + 1 ADD PERSONAL ANECDOTE + 1 CONSIDER).","altText":"","caption":""},{"title":"The Orphan Migration","theme":"insight","status":"drafted","workDate":"2026-06-17","endWorkDate":"","pubDate":"2026-08-29","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/the-orphan-migration.md","notes":"Insight candidate D (surfaced Jun 20, drafted Jul 4). Jun 17: one DB table (project_integrations) had never had a create migration, protected by defensive later-migrations that silently no-op’d on a fresh database. Fix went at the front of the migration chain (not mid-chain) to repair both fresh and already-current databases. A new structural guard (scan models vs. migrations) then independently caught 4 more tables with the same latent bug on its first run. Needs PM voice-pass (1 FACT-CHECK on naming revision IDs + 1 CONSIDER).","altText":"","caption":""},{"title":"Two of Me","theme":"insight","status":"drafted","workDate":"2026-06-19","endWorkDate":"","pubDate":"2026-08-30","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/two-of-me.md","notes":"Insight candidate E (surfaced Jun 20, drafted Jul 4). Jun 19: two Lead Dev sessions ran in parallel unaware of each other after a laptop battery death + scheduled wake-up forked what should have been one continuous session. Nothing lost because both sessions independently followed push-often discipline. Principle: exactly one coordinator at a time; whatever revives a coordinating session must land in a fresh space, never share a room with a session that might already be running. Needs PM voice-pass (1 FACT-CHECK on the unresolved trigger mechanism). Last drafted post in the queue as of Jul 4 - footer intentionally open pending the next beat.","altText":"","caption":""},{"title":"We Built Onboarding in Our Own Image","theme":"insight","status":"drafted","workDate":"2026-05-19","endWorkDate":"2026-05-31","pubDate":"2026-09-05","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/draft-insight-built-in-our-own-image.md","notes":"Insight from BYOC cold-start interview testing May 19-31. PM built the onboarding serial-question-by-question because that is PM's personal working preference for ongoing use. The mode that earns trust in a working relationship turned out to be wrong for first-encounter onboarding — stretched experience, no map, no sense of how much was left. Through-line: building onboarding in your own image imports the assumptions of someone who has already crossed the threshold.","altText":"","caption":""},{"title":"Patterns Naming Patterns","theme":"insight","status":"drafted","workDate":"2026-05-09","endWorkDate":"2026-05-11","pubDate":"2026-09-06","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/patterns-naming-patterns.md","notes":"Insight rescued from orphan state 2026-07-04 (fully drafted with detailed sourcing, but never got a calendar row; original footer referenced Extension Without Integration as next, which published 2026-06-21 before this was ever slotted). May 9-11: Lead Dev filed Pattern-067 (Issue-Body Reality Mismatch); CIO independently filed a different Pattern-067 (Silent State Mutation) May 11, unaware of the collision; Architect caught it at merge; first-filed-wins renumbering (CIO -> 068+069) resolved in ~30 min; slot-allocation check added to filing convention. Through-line: methodology written for the product surface needs explicit translation to the methodology surface itself, or the catalog cannot catch its own failure modes. Carries 2 detailed FACT-CHECK/SOURCE-NEEDED notes already substantially self-answered with citations - likely just need PM confirmation, not fresh research.","altText":"","caption":""},{"title":"No Undo","theme":"insight","status":"drafted","workDate":"2026-07-05","endWorkDate":"","pubDate":"2026-09-12","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/no-undo.md","notes":"Irreversible actions need their own guardrail class, separate from routine competence -- named after 3 destructive-command incidents in 2 weeks (PA's sprint-wipe, PPM's 1175-item wipe, Lead Dev's actual `docker volume rm` execution on shared dev Postgres, confirmed via primary log as executed not a near-miss), tied by PM directly to Piper's own confabulation problem. Drafted + fact-checked 2026-07-09; fixed 2 negation-reveal-cliche instances. 1 PM-input bracket (babysitter/baby analogy attribution). Footer chains to \"Assume It Was You\" (Sep 13).","altText":"","caption":""},{"title":"Assume It Was You","theme":"insight","status":"drafted","workDate":"2026-07-06","endWorkDate":"","pubDate":"2026-09-13","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/assume-it-was-you.md","notes":"Context discontinuity can look exactly like a phantom peer -- the Architect's false \"two sessions must be running\" alarm, root-caused to losing memory of its own prior actions and misreading its own fresh commits as an intruder's. Now a standing CLAUDE.md default (check your own log before hypothesizing a peer). Drafted + fact-checked 2026-07-09 against docs/internal/operations/duty-cycle-self-attribution-drift-2026-07-06.md; fixed 2 negation-reveal-cliche instances. 1 PM-input bracket (whether the \"compaction hand-wave rejection\" paragraph is PM's own words or the Architect's account of PM). Last post in the current insight queue as of Jul 9 -- footer flagged for re-verification once more is scheduled.","altText":"","caption":""},{"title":"From Abstraction to Worked Example","theme":"insight","status":"queued","workDate":"2026-04-22","endWorkDate":"","pubDate":"2026-09-19","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"","blogPath":"","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/from-abstraction-to-worked-example.md","notes":"Insight rescued from orphan state 2026-05-29 (drafted Apr 26, untracked until Docs cleanup pass). Through-line: three concrete worked examples + one contrast made Lead Dev's ethics-enforcement architectural choice click in two minutes when descriptions wouldn't — the abstraction-clicks-via-worked-example method. Generalizes to API design, methodology patterns, user-facing copy. Needs PM voice-pass (1 ADD + 1 CONSIDER placeholder) + frontmatter before publish. Pairs with Meta-Observation Pattern (Sun Jul 26) as communication-craft weekend. Bumped from 2026-07-25 to 2026-09-19 (2026-07-18, PM-confirmed) to make room for 'The Ritual Becomes a Skill,' a stronger thematic pairing for that slot (both pieces hinge on 'concrete examples over abstraction'). Footer retargeted to a last-in-queue placeholder pending the next scheduled beat; Almost Beta's footer now points to the Ritual piece instead.","altText":"","caption":""}],"recentlyPublished":[{"title":"The Package and the First Bite","theme":"building","status":"published","workDate":"2026-05-29","endWorkDate":"2026-05-30","pubDate":"2026-07-09","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"https://pipermorgan.ai/blog/the-package-and-the-first-bite","blogPath":"/blog/the-package-and-the-first-bite","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/the-package-and-the-first-bite.md","notes":"Beat 12. May 29 v0.7.0 adoption package + Web sub-hour bite + log-currency clock->event flip; May 30 over-check dividend on #1016 + write-it-to-a-file. Through-line: distribute the new way + over-checking has dividends. First draft 2026-06-03; needs PM voice-pass. Footer teases When the Documentation Drifts (Jul 11). Comms full review 2026-07-09: mechanical audit clean, fact-checked claim-by-claim against primary per-role logs (May 29-30) -- 1 real fix (a misquote, \"your heads\"->\"our heads\" in the PA writeup-reconstruction quote), 1 missing acronym gloss fixed (Comms self-reference), everything else confirmed solid including both directly-attributed PM quotes. Ready for PM voice-pass; frontmatter (image/alt/caption) still empty, needs filling before publish. PM voice-pass complete 2026-07-09 + frontmatter filled (ai-watchdog.png). Comms final editorial review same day: fixed 1 negation-reveal cliche (survived the voice-pass), 2 typos (\"thier\"->\"their\", \"resistsance\"->\"resistance\"), 1 missing word (\"isn't unique [to] agentic development\"), 2 trailing-whitespace lines. PA-writeup causal reframing (PM-initiated vs. self-discovered) checked against primary source and is a fair compression of PM's own account, not a factual error. Ready for Docs.","altText":"","caption":""},{"title":"The Team Catches the Cycle","theme":"building","status":"published","workDate":"2026-05-27","endWorkDate":"2026-05-28","pubDate":"2026-07-07","mediumURL":"https://medium.com/building-piper-morgan/the-team-catches-the-cycle-3943c7210f37","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"https://pipermorgan.ai/blog/the-cohort-catches-the-cycle","blogPath":"/blog/the-cohort-catches-the-cycle","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/the-cohort-catches-the-cycle.md","notes":"Beat 11 (centerpiece). May 27 cohort rollout (9 of 11 roles) + May 28 worktree-default reversal / Model A / Mechanism-Beats-Vigilance; the architecture wrote its own case via 4 live clashes. Runs ~1990 words - PM voice-pass to tighten (Model A section most cuttable, marked inline). Footer teases Beat 12 (Jul 9).","altText":"A warm editorial cartoon of several craftspeople crowding around one oversized workbench, accidentally interfering with one another despite working carefully, while a row of newly opened individual workbenches lets them spread out and continue building independently. A blueprint on the wall quietly guides newcomers setting up their own spaces.","caption":"\"I think we're getting the hang of this!\""}],"syndicationGaps":[],"imageMetadataGaps":[{"title":"The Package and the First Bite","theme":"building","status":"published","workDate":"2026-05-29","endWorkDate":"2026-05-30","pubDate":"2026-07-09","mediumURL":"","liPubDate":"","linkedinURL":"","canonicalSite":"","blogURL":"https://pipermorgan.ai/blog/the-package-and-the-first-bite","blogPath":"/blog/the-package-and-the-first-bite","cartoon":"","chatDate":"","draftPath":"docs/public/comms/drafts/the-package-and-the-first-bite.md","notes":"Beat 12. May 29 v0.7.0 adoption package + Web sub-hour bite + log-currency clock->event flip; May 30 over-check dividend on #1016 + write-it-to-a-file. Through-line: distribute the new way + over-checking has dividends. First draft 2026-06-03; needs PM voice-pass. Footer teases When the Documentation Drifts (Jul 11). Comms full review 2026-07-09: mechanical audit clean, fact-checked claim-by-claim against primary per-role logs (May 29-30) -- 1 real fix (a misquote, \"your heads\"->\"our heads\" in the PA writeup-reconstruction quote), 1 missing acronym gloss fixed (Comms self-reference), everything else confirmed solid including both directly-attributed PM quotes. Ready for PM voice-pass; frontmatter (image/alt/caption) still empty, needs filling before publish. PM voice-pass complete 2026-07-09 + frontmatter filled (ai-watchdog.png). Comms final editorial review same day: fixed 1 negation-reveal cliche (survived the voice-pass), 2 typos (\"thier\"->\"their\", \"resistsance\"->\"resistance\"), 1 missing word (\"isn't unique [to] agentic development\"), 2 trailing-whitespace lines. PA-writeup causal reframing (PM-initiated vs. self-discovered) checked against primary source and is a fair compression of PM's own account, not a factual error. Ready for Docs.","altText":"","caption":""},{"title":"Weekly Ship #049: The Team Builds Its Own Reliability","theme":"ship","status":"published","workDate":"2026-06-19","endWorkDate":"2026-06-25","pubDate":"2026-07-01","mediumURL":"","liPubDate":"2026-07-01","linkedinURL":"https://www.linkedin.com/pulse/weekly-ship-049-team-commits-reliability-christian-crumlish-rsqic","canonicalSite":"","blogURL":"https://pipermorgan.ai/shipping-news/weekly-ship-049-the-team-builds-its-own-reliability","blogPath":"/shipping-news/weekly-ship-049-the-team-builds-its-own-reliability","cartoon":"piper-ship","chatDate":"","draftPath":"docs/public/comms/drafts/published/weekly-ship-049-draft-2026-07-01.md","notes":"Published 2026-07-01. hashId 406fba157dd4. Corrected: ADR-1312 removed; issue#s dropped from prose; frontmatter added.","altText":"A child and a crew of robots checking each other's work on a boat.","caption":""},{"title":"Extension Without Integration","theme":"insight","status":"published","workDate":"2026-03-13","endWorkDate":"2026-03-20","pubDate":"2026-06-21","mediumURL":"https://mediajunkie.medium.com/8921d917f37f","liPubDate":"","linkedinURL":"https://www.linkedin.com/pulse/extension-without-integration-christian-crumlish-9e3ac/","canonicalSite":"","blogURL":"https://pipermorgan.ai/blog/extension-without-integration","blogPath":"/blog/extension-without-integration","cartoon":"ai-valets","chatDate":"","draftPath":"docs/public/comms/drafts/extension-without-integration.md","notes":"March insight backlog","altText":"","caption":""}]}}39:["$","script",null,{"type":"application/json","id":"publish-queue-data","dangerouslySetInnerHTML":{"__html":"$3e"}}]
+2d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+3b:null
+3f:I[8175,[],"IconMark"]
+3d:{"metadata":[["$","title","0",{"children":"Publish Queue — pipermorgan.ai admin"}],["$","meta","1",{"name":"description","content":"Build-time admin view of the editorial calendar. Not for public consumption."}],["$","meta","2",{"name":"author","content":"Christian Crumlish"}],["$","meta","3",{"name":"keywords","content":"AI,Product Management,Methodology,Building in Public"}],["$","meta","4",{"name":"creator","content":"Christian Crumlish"}],["$","meta","5",{"name":"publisher","content":"Christian Crumlish"}],["$","meta","6",{"name":"robots","content":"noindex, nofollow, noarchive, nosnippet"}],["$","link","7",{"rel":"canonical","href":"https://pipermorgan.ai/"}],["$","meta","8",{"name":"format-detection","content":"telephone=no, address=no, email=no"}],["$","meta","9",{"property":"og:title","content":"Piper Morgan - AI Product Management Assistant"}],["$","meta","10",{"property":"og:description","content":"AI-powered Product Management Assistant demonstrating systematic excellence through transparent, building-in-public development."}],["$","meta","11",{"property":"og:url","content":"https://pipermorgan.ai/"}],["$","meta","12",{"property":"og:site_name","content":"Piper Morgan - AI Product Management Assistant"}],["$","meta","13",{"property":"og:locale","content":"en_US"}],["$","meta","14",{"property":"og:image","content":"https://pipermorgan.ai/assets/pm-logo.png"}],["$","meta","15",{"property":"og:image:width","content":"400"}],["$","meta","16",{"property":"og:image:height","content":"400"}],["$","meta","17",{"property":"og:image:alt","content":"Piper Morgan - AI Product Management Assistant logo featuring a teal dolphin"}],["$","meta","18",{"property":"og:type","content":"website"}],["$","meta","19",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","20",{"name":"twitter:creator","content":"@mediajunkie"}],["$","meta","21",{"name":"twitter:title","content":"Piper Morgan - AI Product Management Assistant"}],["$","meta","22",{"name":"twitter:description","content":"AI-powered Product Management Assistant demonstrating systematic excellence through transparent, building-in-public development."}],["$","meta","23",{"name":"twitter:image","content":"https://pipermorgan.ai/assets/pm-logo.png"}],["$","link","24",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"32x33"}],["$","link","25",{"rel":"icon","href":"/favicon.ico","sizes":"32x32","type":"image/x-icon"}],["$","link","26",{"rel":"icon","href":"/pm-favicon-16.png","sizes":"16x16","type":"image/png"}],["$","link","27",{"rel":"icon","href":"/pm-favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","28",{"rel":"icon","href":"/pm-favicon-48.png","sizes":"48x48","type":"image/png"}],["$","link","29",{"rel":"apple-touch-icon","href":"/pm-favicon-180.png","sizes":"180x180","type":"image/png"}],["$","link","30",{"rel":"icon","href":"/pm-favicon-192.png","sizes":"192x192","type":"image/png"}],["$","$L3f","31",{}]],"error":null,"digest":"$undefined"}
+30:"$3d:metadata"
