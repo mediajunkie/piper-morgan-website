@@ -1,5 +1,27 @@
 [
   {
+    "title": "What the Running System Found",
+    "excerpt": "June 9 and 11, 2026 On Tuesday morning, I flagged something. The agent managing our documentation (Docs), one of the eleven roles in the team, had been running for six days without keeping their primary session log. They were maintaining something else instead, a lower-priority working scratchpad...",
+    "url": "/blog/what-the-running-system-found",
+    "slug": "what-the-running-system-found",
+    "publishedAt": "Jul 21, 2026",
+    "publishedAtISO": "2026-07-21T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-b48a55023a86",
+    "featuredImage": "/assets/blog-images/what-the-running-system-found.webp",
+    "thumbnail": "/assets/blog-images/what-the-running-system-found.webp",
+    "imageAlt": "A master clockmaker studies the subtle wear patterns inside a still-running grandfather clock, discovering how the mechanism has truly been working over time.",
+    "imageCaption": "\"I see what’s going on here!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Jun 9, 2026",
+    "workDateISO": "2026-06-09T00:00:00.000Z"
+  },
+  {
     "title": "What Staff Reports Don't Show",
     "excerpt": "May 20, 2026 My Chief of Staff agent (I call them Exec) was drafting a weekly progress post a few days ago, the kind of synthesis post where they review what the team of role-named agents on my project shipped during the past week and report it out. They'd opened all six of the role-specific week...",
     "url": "/blog/what-staff-reports-dont-show",
@@ -17,9 +39,9 @@
     "imageAlt": "A chief and six cartographers scrutinize a detailed map while, behind them, workers finish a large bridge missing entirely from the map.",
     "imageCaption": "\"Where''s that confounded bridge?\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "May 20, 2026",
-    "workDateISO": "2026-05-20T00:00:00.000Z"
+    "workDateISO": "2026-05-20T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Mechanical First, Then Read",
