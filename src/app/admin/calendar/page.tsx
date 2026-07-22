@@ -39,7 +39,7 @@ export default function EditorialCalendarPage() {
     total: all.length,
     scheduled: scheduled.length,
     unscheduled: unscheduled.length,
-    published: scheduled.filter(e => e.status === 'published').length,
+    published: scheduled.filter(e => e.status === 'published' || e.status === 'distributed').length,
     queued: scheduled.filter(e => e.status === 'queued').length,
     drafted: scheduled.filter(e => ['drafted', 'ready'].includes(e.status)).length,
   };

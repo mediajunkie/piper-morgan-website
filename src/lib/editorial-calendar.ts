@@ -10,7 +10,7 @@ import fs from 'fs';
 import path from 'path';
 import { parse } from 'csv-parse/sync';
 
-export type CalendarStatus = 'published' | 'queued' | 'drafted' | 'ready' | '' | string;
+export type CalendarStatus = 'published' | 'distributed' | 'queued' | 'drafted' | 'ready' | '' | string;
 export type CalendarTheme = 'building' | 'insight' | 'ship' | '' | string;
 
 export interface CalendarEntry {
@@ -70,7 +70,7 @@ export function recentlyPublished(rows: CalendarEntry[], days = 14, now = new Da
   const cutoff = new Date(now);
   cutoff.setDate(cutoff.getDate() - days);
   const cutoffKey = cutoff.toISOString().slice(0, 10);
-  const published = rows.filter(r => r.status === 'published' && r.pubDate >= cutoffKey);
+  const published = rows.filter(r => (r.status === 'published' || r.status === 'distributed') && r.pubDate >= cutoffKey);
   return sortByPubDate(published, 'desc');
 }
 
@@ -99,7 +99,7 @@ export function imageMetadataGaps(rows: CalendarEntry[], days = 30, now = new Da
   cutoff.setDate(cutoff.getDate() - days);
   const cutoffKey = cutoff.toISOString().slice(0, 10);
   const gaps = rows.filter(r =>
-    r.status === 'published' &&
+    (r.status === 'published' || r.status === 'distributed') &&
     r.pubDate >= cutoffKey &&
     (!r.altText || !r.caption)
   );

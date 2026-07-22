@@ -27,6 +27,7 @@ function parseMonth(s: string): { year: number; month: number } {
 
 function statusOf(e: CalendarEntry): 'published' | 'queued' | 'drafted' | 'ready' {
   const s = (e.status || '').toLowerCase();
+  if (s === 'distributed') return 'published';
   if (s === 'published' || s === 'queued' || s === 'ready') return s;
   return 'drafted';
 }
