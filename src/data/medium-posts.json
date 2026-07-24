@@ -1,5 +1,27 @@
 [
   {
+    "title": "Almost Beta",
+    "excerpt": "June 12–14, 2026 That Friday, we moved four roles to a new account. Saturday,two more followed. Six roles in two days, a re-migration wave, the team shifting accounts mid-sprint while the sprint continued. All migrations create friction. You take a session that has weeks of context and history, w...",
+    "url": "/blog/almost-beta",
+    "slug": "almost-beta",
+    "publishedAt": "Jul 23, 2026",
+    "publishedAtISO": "2026-07-23T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-864ead908622",
+    "featuredImage": "/assets/blog-images/almost-beta.webp",
+    "thumbnail": "/assets/blog-images/almost-beta.webp",
+    "imageAlt": "A proud, glowing AI sous-chef presents a clean cake tester while the head baker takes the first bite of an almost-finished cake.",
+    "imageCaption": "\"OK, let''s see!\"",
+    "category": "building",
+    "cluster": "may-jun-2026-buildout",
+    "workDate": "Jun 12, 2026",
+    "workDateISO": "2026-06-12T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #052: The Mechanism, Not the Memory",
     "excerpt": "July 10–16, 2026 Last week's Ship ended on \"impossible by construction\" — three decisions built so the wrong behavior couldn't be expressed in code. This week pushed the same idea up a level: instead of fixing one instance so it can't recur, the team built the rule so a whole class of future inst...",
     "url": "/blog/weekly-ship-052-the-mechanism-not-the-memory",
@@ -19,7 +41,8 @@
     "category": "ship",
     "cluster": "ship-052",
     "workDate": "Jul 10, 2026",
-    "workDateISO": "2026-07-10T00:00:00.000Z"
+    "workDateISO": "2026-07-10T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "What the Running System Found",
