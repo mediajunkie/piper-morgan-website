@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Ritual Becomes a Skill",
+    "excerpt": "July 2025 to July 2026 For nearly a year, I have been illustrating posts in this series with cartoons. The process started simply. I would describe the topic and ask for help brainstorming a \"vivid visual metaphor\" to illustrate the post with a cartoon. I started pasting in the whole draft after ...",
+    "url": "/blog/the-ritual-becomes-a-skill",
+    "slug": "the-ritual-becomes-a-skill",
+    "publishedAt": "Jul 25, 2026",
+    "publishedAtISO": "2026-07-25T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-71cfc16a0690",
+    "featuredImage": "/assets/blog-images/the-ritual-becomes-a-skill.webp",
+    "thumbnail": "/assets/blog-images/the-ritual-becomes-a-skill.webp",
+    "imageAlt": "A dance instructor welcomes a new glowing, network-like partner onto a floor marked with choreography as another luminous dancer exits through the doorway.",
+    "imageCaption": "\"You''ll get the hang of this in no time!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Jul 18, 2026",
+    "workDateISO": "2026-07-18T00:00:00.000Z"
+  },
+  {
     "title": "Almost Beta",
     "excerpt": "June 12–14, 2026 That Friday, we moved four roles to a new account. Saturday,two more followed. Six roles in two days, a re-migration wave, the team shifting accounts mid-sprint while the sprint continued. All migrations create friction. You take a session that has weeks of context and history, w...",
     "url": "/blog/almost-beta",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "may-jun-2026-buildout",
     "workDate": "Jun 12, 2026",
-    "workDateISO": "2026-06-12T00:00:00.000Z"
+    "workDateISO": "2026-06-12T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #052: The Mechanism, Not the Memory",
