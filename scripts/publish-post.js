@@ -199,9 +199,17 @@ function parseDraft(draftPath) {
       if (m) {
         const key = m[1].trim();
         let val = m[2].trim();
-        // Strip surrounding quotes (single or double)
-        if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
+        // Strip surrounding quotes (single or double).
+        // YAML single-quoted scalars escape a literal apostrophe by DOUBLING it
+        // ('don''t' means "don't"), so the unescape is required — without it the
+        // literal '' leaks all the way to the published page. That bug shipped in
+        // 8 posts between 2026-06-20 and 2026-07-26 before being caught.
+        // Double-quoted YAML uses backslash escapes instead, so it must NOT be
+        // given the same treatment.
+        if (val.startsWith('"') && val.endsWith('"')) {
           val = val.slice(1, -1);
+        } else if (val.startsWith("'") && val.endsWith("'")) {
+          val = val.slice(1, -1).replace(/''/g, "'");
         }
         if (key in meta) meta[key] = val;
       }

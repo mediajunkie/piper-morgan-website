@@ -24,7 +24,15 @@ function parseCsvRow(row) {
   for (let i = 0; i < row.length; i++) {
     const char = row[i];
     if (char === '"') {
-      inQuotes = !inQuotes;
+      // RFC-4180: inside a quoted field, "" is an escaped literal quote.
+      // Without this branch every quote character is swallowed, which silently
+      // stripped the surrounding quotation marks off every spoken-line caption.
+      if (inQuotes && row[i + 1] === '"') {
+        current += '"';
+        i++;
+      } else {
+        inQuotes = !inQuotes;
+      }
     } else if (char === ',' && !inQuotes) {
       fields.push(current);
       current = '';
@@ -124,7 +132,14 @@ const updatedPosts = posts.map((post, idx) => {
     chatDate: metadata.chatDate || undefined,
     category: metadata.category,
     cluster: metadata.cluster || undefined,
-    featured: metadata.featured === 'true' || metadata.featured === true
+    featured: metadata.featured === 'true' || metadata.featured === true,
+    // imageAlt/imageCaption were read into metadataMap above but never written
+    // back, so the CSV could not correct them once publish-post.js had written
+    // them into the JSON. That is why the YAML '' escaping bug stayed live in 8
+    // published posts. CSV wins only when non-empty, so this can never blank an
+    // existing JSON value.
+    imageAlt: metadata.imageAlt || post.imageAlt,
+    imageCaption: metadata.imageCaption || post.imageCaption
   };
 });
 
