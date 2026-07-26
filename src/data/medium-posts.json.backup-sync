@@ -1,5 +1,139 @@
 [
   {
+    "title": "The Ritual Becomes a Skill",
+    "excerpt": "July 2025 to July 2026 For nearly a year, I have been illustrating posts in this series with cartoons. The process started simply. I would describe the topic and ask for help brainstorming a \"vivid visual metaphor\" to illustrate the post with a cartoon. I started pasting in the whole draft after ...",
+    "url": "/blog/the-ritual-becomes-a-skill",
+    "slug": "the-ritual-becomes-a-skill",
+    "publishedAt": "Jul 25, 2026",
+    "publishedAtISO": "2026-07-25T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-71cfc16a0690",
+    "featuredImage": "/assets/blog-images/the-ritual-becomes-a-skill.webp",
+    "thumbnail": "/assets/blog-images/the-ritual-becomes-a-skill.webp",
+    "imageAlt": "A dance instructor welcomes a new glowing, network-like partner onto a floor marked with choreography as another luminous dancer exits through the doorway.",
+    "imageCaption": "\"You''ll get the hang of this in no time!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Jul 18, 2026",
+    "workDateISO": "2026-07-18T00:00:00.000Z"
+  },
+  {
+    "title": "Almost Beta",
+    "excerpt": "June 12–14, 2026 That Friday, we moved four roles to a new account. Saturday,two more followed. Six roles in two days, a re-migration wave, the team shifting accounts mid-sprint while the sprint continued. All migrations create friction. You take a session that has weeks of context and history, w...",
+    "url": "/blog/almost-beta",
+    "slug": "almost-beta",
+    "publishedAt": "Jul 23, 2026",
+    "publishedAtISO": "2026-07-23T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-864ead908622",
+    "featuredImage": "/assets/blog-images/almost-beta.webp",
+    "thumbnail": "/assets/blog-images/almost-beta.webp",
+    "imageAlt": "A proud, glowing AI sous-chef presents a clean cake tester while the head baker takes the first bite of an almost-finished cake.",
+    "imageCaption": "\"OK, let''s see!\"",
+    "category": "building",
+    "cluster": "may-jun-2026-buildout",
+    "workDate": "Jun 12, 2026",
+    "workDateISO": "2026-06-12T00:00:00.000Z",
+    "featured": false
+  },
+  {
+    "title": "Weekly Ship #052: The Mechanism, Not the Memory",
+    "excerpt": "July 10–16, 2026 Last week's Ship ended on \"impossible by construction\" — three decisions built so the wrong behavior couldn't be expressed in code. This week pushed the same idea up a level: instead of fixing one instance so it can't recur, the team built the rule so a whole class of future inst...",
+    "url": "/blog/weekly-ship-052-the-mechanism-not-the-memory",
+    "slug": "weekly-ship-052-the-mechanism-not-the-memory",
+    "publishedAt": "Jul 22, 2026",
+    "publishedAtISO": "2026-07-22T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-c74a7f1d0d35",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
+    "imageCaption": "",
+    "category": "ship",
+    "cluster": "ship-052",
+    "workDate": "Jul 10, 2026",
+    "workDateISO": "2026-07-10T00:00:00.000Z",
+    "featured": false
+  },
+  {
+    "title": "What the Running System Found",
+    "excerpt": "June 9 and 11, 2026 On Tuesday morning, I flagged something. The agent managing our documentation (Docs), one of the eleven roles in the team, had been running for six days without keeping their primary session log. They were maintaining something else instead, a lower-priority working scratchpad...",
+    "url": "/blog/what-the-running-system-found",
+    "slug": "what-the-running-system-found",
+    "publishedAt": "Jul 21, 2026",
+    "publishedAtISO": "2026-07-21T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-b48a55023a86",
+    "featuredImage": "/assets/blog-images/what-the-running-system-found.webp",
+    "thumbnail": "/assets/blog-images/what-the-running-system-found.webp",
+    "imageAlt": "A master clockmaker studies the subtle wear patterns inside a still-running grandfather clock, discovering how the mechanism has truly been working over time.",
+    "imageCaption": "\"I see what’s going on here!\"",
+    "category": "building",
+    "workDate": "Jun 9, 2026",
+    "workDateISO": "2026-06-09T00:00:00.000Z",
+    "featured": false
+  },
+  {
+    "title": "What Staff Reports Don't Show",
+    "excerpt": "May 20, 2026 My Chief of Staff agent (I call them Exec) was drafting a weekly progress post a few days ago, the kind of synthesis post where they review what the team of role-named agents on my project shipped during the past week and report it out. They'd opened all six of the role-specific week...",
+    "url": "/blog/what-staff-reports-dont-show",
+    "slug": "what-staff-reports-dont-show",
+    "publishedAt": "Jul 19, 2026",
+    "publishedAtISO": "2026-07-19T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-f531dd1a95f8",
+    "featuredImage": "/assets/blog-images/what-staff-reports-dont-show.webp",
+    "thumbnail": "/assets/blog-images/what-staff-reports-dont-show.webp",
+    "imageAlt": "A chief and six cartographers scrutinize a detailed map while, behind them, workers finish a large bridge missing entirely from the map.",
+    "imageCaption": "\"Where''s that confounded bridge?\"",
+    "category": "insight",
+    "workDate": "May 20, 2026",
+    "workDateISO": "2026-05-20T00:00:00.000Z",
+    "featured": false
+  },
+  {
+    "title": "Mechanical First, Then Read",
+    "excerpt": "May 21, 2026 I was proofreading a blog post for this series a few weeks ago. I read it through twice, actively checking for one of my rules when Claude is outlining for me: no semicolons in this kind of published prose. I caught three, fixed them, felt good about it. I handed it off to an agent t...",
+    "url": "/blog/mechanical-first-then-read",
+    "slug": "mechanical-first-then-read",
+    "publishedAt": "Jul 18, 2026",
+    "publishedAtISO": "2026-07-18T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-42ed7944c5c8",
+    "featuredImage": "/assets/blog-images/mechanical-first-then-read.webp",
+    "thumbnail": "/assets/blog-images/mechanical-first-then-read.webp",
+    "imageAlt": "A mechanical wiper clears semicolon-shaped specks from a telescope lens while a human observer studies the distant landscape, freeing attention for meaning rather than pattern-checking.",
+    "imageCaption": "\"Clear as day!\"",
+    "category": "insight",
+    "workDate": "May 21, 2026",
+    "workDateISO": "2026-05-21T00:00:00.000Z",
+    "featured": false
+  },
+  {
     "title": "Into Production",
     "excerpt": "June 6–7, 2026 The production branch had been last updated on March 4. The main branch, where I push all the newest code, had moved 4,139 commits ahead of it in the time since. This included the M1 and M2 Minimum Valuable Product (MVP) sprints, most of M3, the migration wave and the duty-cycle la...",
     "url": "/blog/into-production",
@@ -17,9 +151,9 @@
     "imageAlt": "An explorer kneels just beyond the doorway of a tidy workshop, calmly gathering small hardware pieces shaken loose by the uneven ground, illustrating how a new environment reveals hidden assumptions.",
     "imageCaption": "\"Hello, world!\"",
     "category": "building",
-    "cluster": "",
     "workDate": "Jun 6, 2026",
-    "workDateISO": "2026-06-06T00:00:00.000Z"
+    "workDateISO": "2026-06-06T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #051: Impossible by Construction",

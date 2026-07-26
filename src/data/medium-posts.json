@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Meta-Observation Pattern",
+    "excerpt": "April 18–21, 2026 In one week we published three pieces that all shared a peculiar recursive quality: Thirteen Mailboxes on Saturday, Sibling Intelligence on Sunday, Four Roles, Ninety Minutes on Tuesday. Each one was a piece about coordination, written by a coordination system, describing the wa...",
+    "url": "/blog/the-meta-observation-pattern",
+    "slug": "the-meta-observation-pattern",
+    "publishedAt": "Jul 26, 2026",
+    "publishedAtISO": "2026-07-26T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-82a94eaff7b0",
+    "featuredImage": "/assets/blog-images/the-meta-observation-pattern.webp",
+    "thumbnail": "/assets/blog-images/the-meta-observation-pattern.webp",
+    "imageAlt": "A person leads a small group of AI companions along a branching trail while they draw and follow a continuous map of their own journey.",
+    "imageCaption": "\"Since we don''t know where we''re going, we have to stick together in case someone gets there\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Apr 18, 2026",
+    "workDateISO": "2026-04-18T00:00:00.000Z"
+  },
+  {
     "title": "The Ritual Becomes a Skill",
     "excerpt": "July 2025 to July 2026 For nearly a year, I have been illustrating posts in this series with cartoons. The process started simply. I would describe the topic and ask for help brainstorming a \"vivid visual metaphor\" to illustrate the post with a cartoon. I started pasting in the whole draft after ...",
     "url": "/blog/the-ritual-becomes-a-skill",
@@ -17,9 +39,9 @@
     "imageAlt": "A dance instructor welcomes a new glowing, network-like partner onto a floor marked with choreography as another luminous dancer exits through the doorway.",
     "imageCaption": "\"You''ll get the hang of this in no time!\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "Jul 18, 2026",
-    "workDateISO": "2026-07-18T00:00:00.000Z"
+    "workDateISO": "2026-07-18T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Almost Beta",
