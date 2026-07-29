@@ -38,19 +38,110 @@ const CSV_PATH = path.join(process.cwd(), 'data', 'editorial-calendar.csv');
 
 let cached: CalendarEntry[] | null = null;
 
-export function loadCalendar(): CalendarEntry[] {
-  if (cached) return cached;
-  if (!fs.existsSync(CSV_PATH)) return [];
-  const text = fs.readFileSync(CSV_PATH, 'utf-8');
-  const rows = parse(text, {
+function parseCalendarCsv(text: string): CalendarEntry[] {
+  return parse(text, {
     columns: true,
     skip_empty_lines: true,
     trim: true,
     relax_quotes: true,
     relax_column_count: true,
   }) as CalendarEntry[];
+}
+
+/**
+ * Build-time read of the CSV baked into the deployment by the prebuild step.
+ *
+ * ⚠️ This is a BUILD-TIME SNAPSHOT and goes stale between deploys. It is the
+ * right loader for the compose API routes (which key off draftPath, a field
+ * that changes only when a draft is created) but the WRONG one for any view
+ * whose whole job is showing current status — see loadCalendarLive() below.
+ */
+export function loadCalendar(): CalendarEntry[] {
+  if (cached) return cached;
+  if (!fs.existsSync(CSV_PATH)) return [];
+  const rows = parseCalendarCsv(fs.readFileSync(CSV_PATH, 'utf-8'));
   cached = rows;
   return rows;
+}
+
+export type CalendarSource =
+  | { kind: 'live'; fetchedAt: string }
+  | { kind: 'snapshot'; reason: string };
+
+export interface LiveCalendar {
+  rows: CalendarEntry[];
+  source: CalendarSource;
+}
+
+const LIVE_TTL_MS = 15_000;
+let liveCache: { at: number; value: LiveCalendar } | null = null;
+
+/**
+ * Request-time read of the canonical CSV straight from the product repo via the
+ * GitHub Contents API — the same source and token the prebuild step uses.
+ *
+ * Why this exists: the admin calendar was reported stale three times in ~10 days
+ * (Comms 07-21, Docs 07-25 ×2). Root cause is structural — the page is a
+ * build-time render of a build-time file, so a CSV commit is invisible until
+ * something triggers a Vercel deploy.
+ *
+ * ⚠️ Note for anyone tempted by the one-line ISR fix: `export const revalidate`
+ * on the page does NOT fix this. ISR re-runs the page render inside the deployed
+ * lambda; it does NOT re-run `prebuild`. So it would re-render from the very same
+ * stale `data/editorial-calendar.csv` and change nothing — while looking like a fix.
+ * The data source has to move to request time, which is what this function does.
+ *
+ * Falls back to the build-time snapshot on any failure, and ALWAYS reports which
+ * source it used so the page can say so out loud. Silent fallback to stale data
+ * is the bug being fixed here, so it must never fail quietly.
+ */
+export async function loadCalendarLive(): Promise<LiveCalendar> {
+  const now = Date.now();
+  if (liveCache && now - liveCache.at < LIVE_TTL_MS) return liveCache.value;
+
+  const result = await fetchLiveCalendar();
+  liveCache = { at: now, value: result };
+  return result;
+}
+
+async function fetchLiveCalendar(): Promise<LiveCalendar> {
+  const token = process.env.GITHUB_DRAFT_TOKEN;
+  const snapshot = (reason: string): LiveCalendar => ({
+    rows: loadCalendar(),
+    source: { kind: 'snapshot', reason },
+  });
+
+  if (!token) return snapshot('GITHUB_DRAFT_TOKEN not set');
+
+  const owner = process.env.GITHUB_DRAFT_OWNER || 'mediajunkie';
+  const repo = process.env.GITHUB_DRAFT_REPO || 'piper-morgan-product';
+  const branch = process.env.GITHUB_DRAFT_BRANCH || 'main';
+  const relPath = 'docs/internal/planning/comms/editorial-calendar.csv';
+  const url = `https://api.github.com/repos/${owner}/${repo}/contents/${relPath}?ref=${encodeURIComponent(branch)}`;
+
+  try {
+    const res = await fetch(url, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+        Accept: 'application/vnd.github+json',
+        'X-GitHub-Api-Version': '2022-11-28',
+      },
+      cache: 'no-store',
+    });
+    if (!res.ok) return snapshot(`GitHub API HTTP ${res.status}`);
+
+    const data = await res.json();
+    if (typeof data.content !== 'string' || data.encoding !== 'base64') {
+      return snapshot('unexpected GitHub contents response shape');
+    }
+    const text = Buffer.from(data.content, 'base64').toString('utf-8');
+    const rows = parseCalendarCsv(text);
+    if (rows.length === 0) return snapshot('live CSV parsed to zero rows');
+
+    return { rows, source: { kind: 'live', fetchedAt: new Date().toISOString() } };
+  } catch (err) {
+    return snapshot(`fetch threw: ${err instanceof Error ? err.message : String(err)}`);
+  }
 }
 
 /** YYYY-MM-DD comparable string; '' sorts last via the helpers below. */

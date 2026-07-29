@@ -1,16 +1,21 @@
 import type { Metadata } from 'next';
-import { loadCalendar, CalendarEntry } from '@/lib/editorial-calendar';
+import { loadCalendarLive, CalendarEntry } from '@/lib/editorial-calendar';
 import { CalendarView } from './CalendarView';
 
 export const metadata: Metadata = {
   title: 'Editorial Calendar — pipermorgan.ai admin',
-  description: 'Always-current admin view of the editorial calendar (build-time). Not for public consumption.',
+  description: 'Always-current admin view of the editorial calendar (live read). Not for public consumption.',
   robots: { index: false, follow: false, noarchive: true, nosnippet: true },
 };
 
-export default function EditorialCalendarPage() {
-  const all = loadCalendar();
-  const buildTime = new Date().toISOString();
+// Read the canonical CSV at REQUEST time, not build time. A build-time render of a
+// build-time file was the cause of three PM-visible staleness reports in ~10 days;
+// `revalidate` alone would not have fixed it (ISR does not re-run prebuild).
+export const dynamic = 'force-dynamic';
+
+export default async function EditorialCalendarPage() {
+  const { rows: all, source } = await loadCalendarLive();
+  const renderedAt = new Date().toISOString();
 
   // Partition: entries with a pubDate go on the grid; the rest are "unscheduled"
   const scheduled: CalendarEntry[] = [];
@@ -44,7 +49,7 @@ export default function EditorialCalendarPage() {
     drafted: scheduled.filter(e => ['drafted', 'ready'].includes(e.status)).length,
   };
 
-  const structuredData = { buildTime, counts, months, byDate, unscheduled };
+  const structuredData = { renderedAt, source, counts, months, byDate, unscheduled };
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-dark-bg">
@@ -52,15 +57,33 @@ export default function EditorialCalendarPage() {
         <header className="mb-8">
           <p className="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 font-medium">Admin</p>
           <h1 className="text-3xl md:text-4xl font-bold text-text-dark dark:text-dark-text mt-1">Editorial Calendar</h1>
-          <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">
-            Build-time snapshot of the editorial calendar.
-            {' '}
-            Built <time dateTime={buildTime} suppressHydrationWarning>{buildTime}</time>
-            {' • '}
-            {counts.total} total entries ({counts.scheduled} scheduled, {counts.unscheduled} unscheduled)
-            {' • '}
-            <a href="#raw-data" className="text-primary-teal-text dark:text-primary-teal hover:underline">raw data ↓</a>
-          </p>
+          {source.kind === 'live' ? (
+            <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">
+              <span className="font-medium text-green-700 dark:text-green-400">Live</span>
+              {' — read from the product repo at page load, '}
+              <time dateTime={source.fetchedAt} suppressHydrationWarning>{source.fetchedAt}</time>
+              {' • '}
+              {counts.total} total entries ({counts.scheduled} scheduled, {counts.unscheduled} unscheduled)
+              {' • '}
+              <a href="#raw-data" className="text-primary-teal-text dark:text-primary-teal hover:underline">raw data ↓</a>
+            </p>
+          ) : (
+            <>
+              <p className="mt-3 rounded border border-amber-400 bg-amber-50 dark:border-amber-600 dark:bg-amber-950/40 px-3 py-2 text-sm text-amber-900 dark:text-amber-200">
+                <strong>⚠️ Stale — showing the build-time snapshot, not live data.</strong>
+                {' The live read failed: '}
+                <code className="text-xs">{source.reason}</code>.
+                {' Status shown below may lag the canonical CSV. Reload to retry.'}
+              </p>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                Rendered <time dateTime={renderedAt} suppressHydrationWarning>{renderedAt}</time>
+                {' • '}
+                {counts.total} total entries ({counts.scheduled} scheduled, {counts.unscheduled} unscheduled)
+                {' • '}
+                <a href="#raw-data" className="text-primary-teal-text dark:text-primary-teal hover:underline">raw data ↓</a>
+              </p>
+            </>
+          )}
           <p className="mt-2 text-xs text-gray-500 dark:text-gray-500">
             {counts.published} published
             {' • '}
