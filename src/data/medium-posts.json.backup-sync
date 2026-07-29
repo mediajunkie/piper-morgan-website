@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Trust Architecture Hardens",
+    "excerpt": "June 15–19, 2026 Over a five day stretch the team made three architecture decisions and then closed a sprint. In between, the team fixed its own working process, finished a months-long visual redesign, caught a fabrication bug before I could act on the wrong answer, and survived a battery outage ...",
+    "url": "/blog/the-trust-architecture-hardens",
+    "slug": "the-trust-architecture-hardens",
+    "publishedAt": "Jul 28, 2026",
+    "publishedAtISO": "2026-07-28T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-d317291bddb8",
+    "featuredImage": "/assets/blog-images/the-trust-architecture-hardens.webp",
+    "thumbnail": "/assets/blog-images/the-trust-architecture-hardens.webp",
+    "imageAlt": "A newly completed medieval city wall encircles a peaceful town as relaxed watchmen patrol above and a mason carries away his tools, illustrating how careful design can replace constant vigilance.",
+    "imageCaption": "\"I haven't shouted 'Look out!' all week\"",
+    "category": "building",
+    "workDate": "Jun 15, 2026",
+    "workDateISO": "2026-06-15T00:00:00.000Z",
+    "featured": false
+  },
+  {
     "title": "The Meta-Observation Pattern",
     "excerpt": "April 18–21, 2026 In one week we published three pieces that all shared a peculiar recursive quality: Thirteen Mailboxes on Saturday, Sibling Intelligence on Sunday, Four Roles, Ninety Minutes on Tuesday. Each one was a piece about coordination, written by a coordination system, describing the wa...",
     "url": "/blog/the-meta-observation-pattern",

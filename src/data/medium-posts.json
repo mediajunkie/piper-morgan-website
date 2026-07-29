@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #053: The Invariant Held",
+    "excerpt": "July 17–23, 2026 Last week's Ship ended on \"the mechanism, not the memory\" — turning rules people had to remember into contracts the system enforces automatically. This week put that thesis under real stress and proved the point. Two separate infrastructure outages took most of the leadership tea...",
+    "url": "/blog/weekly-ship-053-the-invariant-held",
+    "slug": "weekly-ship-053-the-invariant-held",
+    "publishedAt": "Jul 29, 2026",
+    "publishedAtISO": "2026-07-29T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-7e98a844b11a",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
+    "imageCaption": "",
+    "category": "ship",
+    "cluster": "ship-053",
+    "workDate": "Jul 17, 2026",
+    "workDateISO": "2026-07-17T00:00:00.000Z"
+  },
+  {
     "title": "The Trust Architecture Hardens",
     "excerpt": "June 15–19, 2026 Over a five day stretch the team made three architecture decisions and then closed a sprint. In between, the team fixed its own working process, finished a months-long visual redesign, caught a fabrication bug before I could act on the wrong answer, and survived a battery outage ...",
     "url": "/blog/the-trust-architecture-hardens",
@@ -17,9 +39,9 @@
     "imageAlt": "A newly completed medieval city wall encircles a peaceful town as relaxed watchmen patrol above and a mason carries away his tools, illustrating how careful design can replace constant vigilance.",
     "imageCaption": "\"I haven't shouted 'Look out!' all week\"",
     "category": "building",
-    "cluster": "",
     "workDate": "Jun 15, 2026",
-    "workDateISO": "2026-06-15T00:00:00.000Z"
+    "workDateISO": "2026-06-15T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Meta-Observation Pattern",
