@@ -120,6 +120,58 @@ function escHtml(s: string): string {
 const AUTOSAVE_MS = 30_000;
 const PLACEHOLDER_RE = /\[[^\]]{1,120}\]/g;
 
+/**
+ * Local-storage safety net for the compose editor.
+ *
+ * The GitHub-Contents-API save is optimistic-concurrency guarded (rejects with
+ * 409 if the file's sha changed since load — e.g. Comms pushing a direct git
+ * commit while PM has the same draft open). Before this, a rejected save meant
+ * PM had to manually copy the in-progress edit out, reload, and paste it back
+ * in — and the pasted-back copy was based on the STALE pre-reload load, so
+ * concurrent fixes (Comms' typos) got silently reverted on reapply (Comms
+ * 2026-07-25). This persists every edit to localStorage as it happens, so a
+ * failed save — or a crashed tab, or a stray navigation — never risks the
+ * in-progress edit: reload always offers it back, with an explicit choice
+ * rather than a silent overwrite of whatever just loaded from the server.
+ */
+function localDraftKey(slug: string) {
+  return `compose-draft:${slug}`;
+}
+
+interface LocalDraft {
+  image: string;
+  alt: string;
+  caption: string;
+  body: string;
+  savedAt: string;
+}
+
+function readLocalDraft(slug: string): LocalDraft | null {
+  try {
+    const raw = window.localStorage.getItem(localDraftKey(slug));
+    return raw ? (JSON.parse(raw) as LocalDraft) : null;
+  } catch {
+    return null;
+  }
+}
+
+function writeLocalDraft(slug: string, d: Omit<LocalDraft, 'savedAt'>) {
+  try {
+    window.localStorage.setItem(localDraftKey(slug), JSON.stringify({ ...d, savedAt: new Date().toISOString() }));
+  } catch {
+    // Storage full/unavailable (private browsing, quota) — the safety net is
+    // best-effort; the server save path is unaffected either way.
+  }
+}
+
+function clearLocalDraft(slug: string) {
+  try {
+    window.localStorage.removeItem(localDraftKey(slug));
+  } catch {
+    // no-op — see writeLocalDraft
+  }
+}
+
 function ComposeEdit({ slug }: { slug: string }) {
   const router = useRouter();
   const [draft, setDraft] = useState<DraftDetail | null>(null);
@@ -135,6 +187,7 @@ function ComposeEdit({ slug }: { slug: string }) {
   const [placeholders, setPlaceholders] = useState<string[]>([]);
   const [uploading, setUploading] = useState(false);
   const [uploadError, setUploadError] = useState<string | null>(null);
+  const [localDraftOffer, setLocalDraftOffer] = useState<LocalDraft | null>(null);
 
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lastSavedRef = useRef<string | null>(null);
@@ -152,12 +205,29 @@ function ComposeEdit({ slug }: { slug: string }) {
         setBody(d.body);
         scanPlaceholders(d.body);
         shaRef.current = d.sha ?? null;
-        lastSavedRef.current = JSON.stringify({ image: d.frontmatter.image, alt: d.frontmatter.alt, caption: d.frontmatter.caption, body: d.body });
+        const serverKey = JSON.stringify({ image: d.frontmatter.image, alt: d.frontmatter.alt, caption: d.frontmatter.caption, body: d.body });
+        lastSavedRef.current = serverKey;
+
+        // Offer a local draft only if it exists AND differs from what the
+        // server just returned — an identical local copy is just noise.
+        const local = readLocalDraft(slug);
+        if (local) {
+          const localKey = JSON.stringify({ image: local.image, alt: local.alt, caption: local.caption, body: local.body });
+          if (localKey !== serverKey) setLocalDraftOffer(local);
+          else clearLocalDraft(slug); // redundant, safe to drop
+        }
       })
       .catch(e => setLoadError(String(e)));
   }, [slug]);
 
   const getPayload = useCallback(() => ({ image, alt, caption, body }), [image, alt, caption, body]);
+
+  // Persist every edit locally — cheap, synchronous, and the whole point is
+  // that it survives whatever the server save does or doesn't do.
+  useEffect(() => {
+    if (!draft) return; // don't clobber localStorage with pre-load empty state
+    writeLocalDraft(slug, { image, alt, caption, body });
+  }, [slug, draft, image, alt, caption, body]);
 
   const doSave = useCallback(async () => {
     const payload = getPayload();
@@ -172,6 +242,9 @@ function ComposeEdit({ slug }: { slug: string }) {
       });
       if (!res.ok) {
         const errBody = await res.json().catch(() => null) as { error?: string } | null;
+        // Deliberately do NOT clear the local draft here — a rejected save
+        // (409 conflict or otherwise) is exactly the case this safety net
+        // exists for. It stays in localStorage until a save succeeds.
         throw new Error(errBody?.error || `HTTP ${res.status}`);
       }
       lastSavedRef.current = key;
@@ -179,6 +252,9 @@ function ComposeEdit({ slug }: { slug: string }) {
       if (newSha) shaRef.current = newSha;
       const t = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
       setSaveStatus({ kind: 'saved', time: t, committed: !!committed });
+      // Successfully persisted server-side — the local safety copy is no
+      // longer the only record of this content, so clear it.
+      clearLocalDraft(slug);
     } catch (e) {
       setSaveStatus({ kind: 'error', message: e instanceof Error ? e.message : String(e) });
     }
@@ -189,6 +265,22 @@ function ComposeEdit({ slug }: { slug: string }) {
     setSaveStatus(s => s.kind === 'saved' ? { kind: 'unsaved' } : s.kind === 'idle' ? { kind: 'unsaved' } : s);
     timerRef.current = setTimeout(doSave, AUTOSAVE_MS);
   }, [doSave]);
+
+  const applyLocalDraft = useCallback((local: LocalDraft) => {
+    setImage(local.image);
+    setAlt(local.alt);
+    setCaption(local.caption);
+    setBody(local.body);
+    scanPlaceholders(local.body);
+    setLocalDraftOffer(null);
+    setSaveStatus({ kind: 'unsaved' });
+    scheduleAutosave();
+  }, [scheduleAutosave]);
+
+  const discardLocalDraft = useCallback(() => {
+    clearLocalDraft(slug);
+    setLocalDraftOffer(null);
+  }, [slug]);
 
   function scanPlaceholders(text: string) {
     setPlaceholders(Array.from(text.matchAll(PLACEHOLDER_RE), m => m[0]));
@@ -239,6 +331,29 @@ function ComposeEdit({ slug }: { slug: string }) {
         </div>
         <SaveIndicator status={saveStatus} onSave={doSave} />
       </div>
+
+      {localDraftOffer && (
+        <div className="mb-4 p-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded text-sm text-blue-900 dark:text-blue-200" role="alert" aria-live="polite">
+          <strong>An unsaved local copy was found</strong> from{' '}
+          {new Date(localDraftOffer.savedAt).toLocaleString([], { dateStyle: 'short', timeStyle: 'short' })},
+          different from what just loaded from GitHub — likely from a save that didn&apos;t go through
+          (e.g. someone else edited this file in the meantime).
+          <div className="mt-2 flex gap-2">
+            <button
+              onClick={() => applyLocalDraft(localDraftOffer)}
+              className="px-3 py-1.5 rounded-md bg-blue-600 text-white text-xs font-medium hover:bg-blue-700"
+            >
+              Restore local copy
+            </button>
+            <button
+              onClick={discardLocalDraft}
+              className="px-3 py-1.5 rounded-md border border-blue-300 dark:border-blue-700 text-xs font-medium hover:bg-blue-100 dark:hover:bg-blue-900/40"
+            >
+              Discard, keep what loaded
+            </button>
+          </div>
+        </div>
+      )}
 
       {placeholders.length > 0 && (
         <div className="mb-4 p-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded text-sm text-amber-800 dark:text-amber-300" role="alert" aria-live="polite">
