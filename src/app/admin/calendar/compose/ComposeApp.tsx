@@ -192,6 +192,16 @@ function ComposeEdit({ slug }: { slug: string }) {
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lastSavedRef = useRef<string | null>(null);
   const shaRef = useRef<string | null>(null);
+  // Autosave's 30s setTimeout closure is created at the moment a field changes and can
+  // outlive several further edits before it fires. If doSave read `image`/`alt`/`caption`/
+  // `body` from that closure, it would save whatever those fields were AT ARM TIME, not at
+  // fire time — a real incident (2026-07-30): a timer armed by a field's first edit captured
+  // that field as empty, a later manual "Save now" click correctly persisted the real value
+  // but didn't cancel the pending timer, and 28s later it fired and silently overwrote the
+  // correct save with its stale empty snapshot. Reading current values through this ref
+  // (kept in sync every render, below) makes ANY leftover timer harmless — whenever it fires,
+  // it saves what is actually on screen, never a frozen-in-time snapshot.
+  const fieldsRef = useRef({ image: '', alt: '', caption: '', body: '' });
 
   // Load draft on mount
   useEffect(() => {
@@ -220,11 +230,15 @@ function ComposeEdit({ slug }: { slug: string }) {
       .catch(e => setLoadError(String(e)));
   }, [slug]);
 
-  const getPayload = useCallback(() => ({ image, alt, caption, body }), [image, alt, caption, body]);
+  // getPayload reads the ref, not the closed-over state — see fieldsRef's comment above for why.
+  const getPayload = useCallback(() => ({ ...fieldsRef.current }), []);
 
-  // Persist every edit locally — cheap, synchronous, and the whole point is
-  // that it survives whatever the server save does or doesn't do.
+  // Keep fieldsRef current AND persist every edit locally — one effect, since both need to
+  // fire on exactly the same changes. Cheap, synchronous-enough (effects run before any
+  // queued setTimeout can fire), and the whole point of both is surviving whatever the
+  // server save does or doesn't do.
   useEffect(() => {
+    fieldsRef.current = { image, alt, caption, body };
     if (!draft) return; // don't clobber localStorage with pre-load empty state
     writeLocalDraft(slug, { image, alt, caption, body });
   }, [slug, draft, image, alt, caption, body]);
@@ -307,6 +321,16 @@ function ComposeEdit({ slug }: { slug: string }) {
     }
   }, [doSave]);
 
+  // Manual "Save now" click — belt-and-suspenders defense alongside the fieldsRef fix above:
+  // this used to call doSave directly without cancelling a pending autosave timer, which was
+  // half of the 2026-07-30 incident (the other half was the timer's stale closure, fixed
+  // above). Clearing the timer here means a manual save also cancels whatever's still armed,
+  // matching handleFormBlur's behavior instead of leaving a redundant timer ticking.
+  const handleManualSave = useCallback(() => {
+    if (timerRef.current) clearTimeout(timerRef.current);
+    doSave();
+  }, [doSave]);
+
   // Cleanup timer on unmount
   useEffect(() => () => { if (timerRef.current) clearTimeout(timerRef.current); }, []);
 
@@ -329,7 +353,7 @@ function ComposeEdit({ slug }: { slug: string }) {
           <h2 className="text-xl font-bold text-text-dark dark:text-dark-text">{draft.title || slug}</h2>
           {draft.pubDate && <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Scheduled {draft.pubDate}</p>}
         </div>
-        <SaveIndicator status={saveStatus} onSave={doSave} />
+        <SaveIndicator status={saveStatus} onSave={handleManualSave} />
       </div>
 
       {localDraftOffer && (
