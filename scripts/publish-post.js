@@ -518,7 +518,10 @@ function prepImage(srcPath, destSlug) {
     }
   }
 
-  // Fallback: Python Pillow (skill v0.9 confirms this is the established fallback)
+  // Fallback 2: Python Pillow (skill v0.9 confirms this is the established fallback).
+  // NOTE: this branch used to THROW when Pillow was missing, which made it terminal
+  // rather than a fallback — python3 exists on every macOS host, so the branch was
+  // always entered and always fatal if PIL wasn't installed. Now it falls through.
   if (which('python3')) {
     const py = [
       'from PIL import Image',
@@ -526,16 +529,46 @@ function prepImage(srcPath, destSlug) {
       'img.thumbnail((1200, 1200), Image.LANCZOS)',
       `img.save(${JSON.stringify(dest)}, "WEBP", quality=80)`,
     ].join('\n');
-    const r = spawnSync('python3', ['-c', py], { stdio: 'inherit' });
-    if (r.status !== 0) {
-      throw Object.assign(new Error('Pillow image prep failed (install with: pip3 install Pillow)'), { exitCode: 3 });
+    const r = spawnSync('python3', ['-c', py], { stdio: 'ignore' });
+    if (r.status === 0) {
+      log(`✅ image prepared (Pillow): ${dest}`);
+      filesMutated.push(path.relative(REPO_ROOT, dest));
+      return dest;
     }
-    log(`✅ image prepared (Pillow): ${dest}`);
-    filesMutated.push(path.relative(REPO_ROOT, dest));
-    return dest;
+    log('   Pillow unavailable or failed — falling through to sharp');
   }
 
-  throw Object.assign(new Error('no image processor available (need cwebp or python3+Pillow)'), { exitCode: 3 });
+  // Fallback 3: sharp — a DIRECT DEPENDENCY of this repo, so if node_modules is
+  // installed it is present by construction. Added 2026-07-30 (Docs) after both
+  // documented paths failed on the Amber host: cwebp is not installed, Pillow is
+  // not installed, and `sips` cannot emit webp (verified behaviorally, not from
+  // its help text). Publishing was blocked on an image-prep chain whose every
+  // documented rung was missing, while the repo's own image library sat unused.
+  // Run it in a subprocess via spawnSync so prepImage stays SYNCHRONOUS — sharp's
+  // API is promise-based, and returning a promise from here would hand the caller a
+  // Promise where it expects a path string. Same shape as the cwebp/Pillow branches.
+  {
+    const js = [
+      'const sharp = require("sharp");',
+      `sharp(${JSON.stringify(srcPath)})`,
+      '  .resize({ width: 1200, height: 1200, fit: "inside", withoutEnlargement: true })',
+      '  .webp({ quality: 80 })',
+      `  .toFile(${JSON.stringify(dest)})`,
+      '  .then(() => process.exit(0))',
+      '  .catch((e) => { console.error(String(e && e.message || e)); process.exit(1); });',
+    ].join('\n');
+    const r = spawnSync(process.execPath, ['-e', js], { stdio: 'inherit', cwd: REPO_ROOT });
+    if (r.status === 0) {
+      log(`✅ image prepared (sharp): ${dest}`);
+      filesMutated.push(path.relative(REPO_ROOT, dest));
+      return dest;
+    }
+  }
+
+  throw Object.assign(
+    new Error('no image processor available (need cwebp, python3+Pillow, or sharp in node_modules)'),
+    { exitCode: 3 },
+  );
 }
 
 // ─── Step 5: CSV append ─────────────────────────────────────────────────────
