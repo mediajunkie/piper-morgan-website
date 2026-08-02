@@ -114,15 +114,38 @@ export function writeDraft(filePath: string, frontmatter: Frontmatter, body: str
   }
 }
 
-/** Strip the spoken-line `"..."` wrapper from a caption for UI display. */
+/**
+ * Strip the spoken-line `"..."` wrapper from a caption for UI display.
+ *
+ * Strips ALL matching leading/trailing quote pairs, not just one — a caption
+ * can accumulate multiple layers if a save round-tripped through the
+ * historical unconditional-wrap bug in wrapCaptionQuotes (fixed below,
+ * 2026-08-01; instance: '""Different strokes!""' on the "Mechanism Beats
+ * Vigilance" post). A single-layer strip would leave one layer visible in
+ * the edit field, which then gets re-wrapped and compounds on the next save.
+ * Multi-layer strip means the edit field always shows genuinely bare text,
+ * so a single subsequent save self-heals an already-corrupted caption
+ * instead of only preventing new corruption.
+ */
 export function stripCaptionQuotes(caption: string): string {
-  const v = caption.trim();
-  if (v.startsWith('"') && v.endsWith('"') && v.length >= 2) return v.slice(1, -1);
+  let v = caption.trim();
+  while (v.startsWith('"') && v.endsWith('"') && v.length >= 2) {
+    v = v.slice(1, -1).trim();
+  }
   return v;
 }
 
-/** Add the spoken-line `"..."` wrapper to a caption before storage. */
+/**
+ * Add the spoken-line `"..."` wrapper to a caption before storage.
+ *
+ * Strips any existing wrapping first, so this is idempotent regardless of
+ * whether the input already carries quotes — the field label tells the user
+ * "double quotes added automatically," so a user who reasonably types their
+ * own quotes anyway (or a value that already round-tripped through the old
+ * bug) must not accumulate a second layer.
+ */
 export function wrapCaptionQuotes(caption: string): string {
-  if (!caption) return caption;
-  return `"${caption}"`;
+  const stripped = stripCaptionQuotes(caption);
+  if (!stripped) return stripped;
+  return `"${stripped}"`;
 }
