@@ -1,5 +1,27 @@
 [
   {
+    "title": "Mechanism Beats Vigilance",
+    "excerpt": "May 28, 2026 Here's something I keep having to relearn, and I suspect I'm not alone: When you find yourself reminding anyone, even yourself, to remember to do X, you've already lost. Not yet, maybe. But you've signed up for a slow leak. The reminder works most of the time, which is exactly what m...",
+    "url": "/blog/mechanism-beats-vigilance",
+    "slug": "mechanism-beats-vigilance",
+    "publishedAt": "Aug 1, 2026",
+    "publishedAtISO": "2026-08-01T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-c5cda952249d",
+    "featuredImage": "/assets/blog-images/mechanism-beats-vigilance.webp",
+    "thumbnail": "/assets/blog-images/mechanism-beats-vigilance.webp",
+    "imageAlt": "A boss and robot architect observe two guarded doorways: At one, speed defeats vigilance. At the other, a built-in mechanism calmly controls access.",
+    "imageCaption": "\"Different strokes!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "May 28, 2026",
+    "workDateISO": "2026-05-28T00:00:00.000Z"
+  },
+  {
     "title": "RECONNECT's Keystone",
     "excerpt": "June 20–28, 2026 On a Saturday evening in late June, my Lead Developer agent (Lead Dev) and I looked at a pile of unfinished connector work, the credentials that tie Piper to the outside services it needs to be useful (GitHub, Slack, Notion, Google Calendar being the core set of example connectio...",
     "url": "/blog/reconnects-keystone",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "reconnect",
     "workDate": "Jun 20, 2026",
-    "workDateISO": "2026-06-20T00:00:00.000Z"
+    "workDateISO": "2026-06-20T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #053: The Invariant Held",
