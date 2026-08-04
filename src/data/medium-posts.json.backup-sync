@@ -1,5 +1,27 @@
 [
   {
+    "title": "You Can't \"White Knuckle\" Structural Problems",
+    "excerpt": "May 28, 2026 There's a kind of failure you can't fix by trying harder. You've already tried harder. You were careful. You did the thing the careful person does — checked, double-checked, built a little ritual to catch the mistake before it happened. And it happened anyway, in the gap your ritual ...",
+    "url": "/blog/you-cant-white-knuckle-structural-problems",
+    "slug": "you-cant-white-knuckle-structural-problems",
+    "publishedAt": "Aug 2, 2026",
+    "publishedAtISO": "2026-08-02T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-6da47b26d616",
+    "featuredImage": "/assets/blog-images/you-cant-white-knuckle-structural-problems.webp",
+    "thumbnail": "/assets/blog-images/you-cant-white-knuckle-structural-problems.webp",
+    "imageAlt": "A restaurant manager watches as five careful chefs struggle to keep separate dishes organized on one crowded serving counter, while individual pickup shelves wait unused behind them.",
+    "imageCaption": "\"Now don't all jump at once!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "May 28, 2026",
+    "workDateISO": "2026-05-28T00:00:00.000Z"
+  },
+  {
     "title": "Mechanism Beats Vigilance",
     "excerpt": "May 28, 2026 Here's something I keep having to relearn, and I suspect I'm not alone: When you find yourself reminding anyone, even yourself, to remember to do X, you've already lost. Not yet, maybe. But you've signed up for a slow leak. The reminder works most of the time, which is exactly what m...",
     "url": "/blog/mechanism-beats-vigilance",
@@ -17,9 +39,9 @@
     "imageAlt": "A boss and robot architect observe two guarded doorways: At one, speed defeats vigilance. At the other, a built-in mechanism calmly controls access.",
     "imageCaption": "\"Different strokes!\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "May 28, 2026",
-    "workDateISO": "2026-05-28T00:00:00.000Z"
+    "workDateISO": "2026-05-28T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "RECONNECT's Keystone",
