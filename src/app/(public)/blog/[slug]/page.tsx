@@ -7,6 +7,13 @@ import type { MediumPost, BlogContentEntry } from '@/types/domain';
 
 const mediumPosts = mediumPostsRaw as MediumPost[];
 
+// medium-posts.json is a build-time static import — no slug can exist that
+// isn't already in generateStaticParams() without a rebuild. So an unknown
+// slug should 404 immediately at the routing layer, not go through a dynamic
+// render + notFound() that Vercel's ISR cache can serve back as a stale 200
+// (observed live: 200 + the not-found shell for slugs that never existed).
+export const dynamicParams = false;
+
 // Generate static params for all blog posts
 // Only generates slug-based URLs
 export async function generateStaticParams() {

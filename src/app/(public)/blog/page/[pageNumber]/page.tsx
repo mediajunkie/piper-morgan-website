@@ -7,6 +7,13 @@ import { notFound } from 'next/navigation';
 
 const POSTS_PER_PAGE = 24;
 
+// medium-posts.json is a build-time static import, so the total page count
+// is fixed at build time — an out-of-range page number can never become
+// valid without a rebuild. Force it to 404 at the routing layer instead of
+// going through a dynamic render + notFound() that Vercel's ISR cache can
+// serve back as a stale 200 (confirmed live: /blog/page/999/ → 200).
+export const dynamicParams = false;
+
 interface PageProps {
   params: Promise<{
     pageNumber: string;
