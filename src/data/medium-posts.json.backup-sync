@@ -1,5 +1,27 @@
 [
   {
+    "title": "The List That Lies",
+    "excerpt": "June 29–July 3, 2026 Two things broke this week that had nothing to do with each other. One was in the product: Piper told me it had done something it hadn't. The other was in the plumbing, days later, on the live server, where a door I'd decided to keep locked had quietly been unlocked and the t...",
+    "url": "/blog/the-list-that-lies",
+    "slug": "the-list-that-lies",
+    "publishedAt": "Aug 4, 2026",
+    "publishedAtISO": "2026-08-04T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-e65b5e18f2d6",
+    "featuredImage": "/assets/blog-images/the-list-that-lies.webp",
+    "thumbnail": "/assets/blog-images/the-list-that-lies.webp",
+    "imageAlt": "A translucent dolphinoid AI gatekeeper confidently consults a ledger beside an observant human, as the supposedly secured gate stands wide open behind them",
+    "imageCaption": "\"Nothing can go wrong!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Jun 29, 2026",
+    "workDateISO": "2026-06-29T00:00:00.000Z"
+  },
+  {
     "title": "You Can't \"White Knuckle\" Structural Problems",
     "excerpt": "May 28, 2026 There's a kind of failure you can't fix by trying harder. You've already tried harder. You were careful. You did the thing the careful person does — checked, double-checked, built a little ritual to catch the mistake before it happened. And it happened anyway, in the gap your ritual ...",
     "url": "/blog/you-cant-white-knuckle-structural-problems",
@@ -17,9 +39,9 @@
     "imageAlt": "A restaurant manager watches as five careful chefs struggle to keep separate dishes organized on one crowded serving counter, while individual pickup shelves wait unused behind them.",
     "imageCaption": "\"Now don't all jump at once!\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "May 28, 2026",
-    "workDateISO": "2026-05-28T00:00:00.000Z"
+    "workDateISO": "2026-05-28T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Mechanism Beats Vigilance",
