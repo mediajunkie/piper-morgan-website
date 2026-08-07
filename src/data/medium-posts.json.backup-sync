@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #054: Clear Is Not a Measurement",
+    "excerpt": "July 24–30, 2026 This week the team found several quality checks reporting \"all clear\" without measuring anything at all: A quality gate whose test suite ends silently when credentials are missing. A watchdog covering four roles and believing that's the whole list. A pre-commit hook that had neve...",
+    "url": "/blog/weekly-ship-054-clear-is-not-a-measurement",
+    "slug": "weekly-ship-054-clear-is-not-a-measurement",
+    "publishedAt": "Aug 5, 2026",
+    "publishedAtISO": "2026-08-05T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-ff0c023840c8",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
+    "imageCaption": "",
+    "category": "ship",
+    "cluster": "ship-054",
+    "workDate": "Jul 24, 2026",
+    "workDateISO": "2026-07-24T00:00:00.000Z"
+  },
+  {
     "title": "The List That Lies",
     "excerpt": "June 29–July 3, 2026 Two things broke this week that had nothing to do with each other. One was in the product: Piper told me it had done something it hadn't. The other was in the plumbing, days later, on the live server, where a door I'd decided to keep locked had quietly been unlocked and the t...",
     "url": "/blog/the-list-that-lies",
@@ -17,9 +39,9 @@
     "imageAlt": "A translucent dolphinoid AI gatekeeper confidently consults a ledger beside an observant human, as the supposedly secured gate stands wide open behind them",
     "imageCaption": "\"Nothing can go wrong!\"",
     "category": "building",
-    "cluster": "",
     "workDate": "Jun 29, 2026",
-    "workDateISO": "2026-06-29T00:00:00.000Z"
+    "workDateISO": "2026-06-29T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "You Can't \"White Knuckle\" Structural Problems",

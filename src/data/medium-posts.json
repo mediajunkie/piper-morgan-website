@@ -1,5 +1,27 @@
 [
   {
+    "title": "Drained on Paper",
+    "excerpt": "July 4–7, 2026 Ever since I started putting my agents on what I call a duty cycle, in which they periodically wake up, check for new messages, do any unblocked work, and repeat until there are no new unready messages and no work they can do without input from me. The agents refer to an empty inbo...",
+    "url": "/blog/drained-on-paper",
+    "slug": "drained-on-paper",
+    "publishedAt": "Aug 7, 2026",
+    "publishedAtISO": "2026-08-07T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-dabe471ff1fd",
+    "featuredImage": "/assets/blog-images/drained-on-paper.webp",
+    "thumbnail": "/assets/blog-images/drained-on-paper.webp",
+    "imageAlt": "In a restaurant kitchen, a glowing, translucent AI assistant Piper signals that the empty order rail is clear while a human manager points in alarm to a fallen printer spewing a huge backlog of tickets across the floor.",
+    "imageCaption": "\"All caught up!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Jul 4, 2026",
+    "workDateISO": "2026-07-04T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #054: Clear Is Not a Measurement",
     "excerpt": "July 24–30, 2026 This week the team found several quality checks reporting \"all clear\" without measuring anything at all: A quality gate whose test suite ends silently when credentials are missing. A watchdog covering four roles and believing that's the whole list. A pre-commit hook that had neve...",
     "url": "/blog/weekly-ship-054-clear-is-not-a-measurement",
@@ -19,7 +41,8 @@
     "category": "ship",
     "cluster": "ship-054",
     "workDate": "Jul 24, 2026",
-    "workDateISO": "2026-07-24T00:00:00.000Z"
+    "workDateISO": "2026-07-24T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The List That Lies",
