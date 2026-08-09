@@ -8,17 +8,28 @@
  * /admin/calendar) can read it.
  *
  * Two source strategies, tried in order:
- *  1. Local sibling checkout (../piper-morgan-product/...) — used in dev, where
- *     a developer/agent has both repos checked out side by side.
- *  2. GitHub Contents API (GITHUB_DRAFT_TOKEN) — used on Vercel and CI, which
- *     have no sibling checkout. Without this, deploys would silently keep
- *     whatever data/editorial-calendar.csv was last committed — stale until
- *     someone happened to rebuild locally and commit the result (discovered
- *     2026-07-16: a full day of published posts/ships missing from the admin
- *     UI because of exactly this).
+ *  1. GitHub Contents API (GITHUB_DRAFT_TOKEN) — preferred. This is the same
+ *     mechanism already proven in production by the /admin/calendar
+ *     runtime-read fix (2026-07-29); it doesn't depend on any assumption
+ *     about the on-disk layout around this checkout.
+ *  2. Local sibling checkout (../piper-morgan-product/...) — fallback for
+ *     the classic side-by-side dev layout, when no token is configured.
+ *
+ * Why the API is preferred over the sibling path-walk (2026-08-09, per Docs
+ * ruling on #web-jul29-worktree-sibling-path-bug): Model A worktrees
+ * (../piper-morgan-website-worktrees/{role}, ../piper-morgan-worktrees/{role})
+ * are stable per-agent paths, not a fixed relative layout — a path-walk that
+ * happens to resolve today breaks silently the next time worktree
+ * provisioning changes shape, and nobody would notice until a publish hit it
+ * mid-flow. It previously ran first, so a worktree checkout with no sibling
+ * directory fell through to the API anyway, but only by accident of
+ * fs.existsSync() returning false — any on-disk coincidence at that path
+ * (e.g. a differently-shaped clone) would have shadowed the API silently.
+ * Trying the already-battle-tested mechanism first removes that dependency
+ * entirely instead of relying on the fallback to fail correctly.
  *
  * Skips with warning (does not fail) only if BOTH are unavailable — deploys
- * without either a sibling checkout or the token still succeed; the admin
+ * without either the token or a sibling checkout still succeed; the admin
  * pages just show "(source unavailable)" rows.
  */
 
@@ -65,13 +76,6 @@ async function fetchViaGitHubApi() {
 async function main() {
   fs.mkdirSync(DEST_DIR, { recursive: true });
 
-  if (fs.existsSync(SRC)) {
-    fs.copyFileSync(SRC, DEST);
-    const stat = fs.statSync(DEST);
-    console.log(`✅ Copied editorial-calendar.csv (${stat.size} bytes, local sibling checkout) → ${path.relative(REPO_ROOT, DEST)}`);
-    return;
-  }
-
   const remote = await fetchViaGitHubApi();
   if (remote !== null) {
     fs.writeFileSync(DEST, remote, 'utf-8');
@@ -79,7 +83,14 @@ async function main() {
     return;
   }
 
-  console.warn(`⚠️  editorial-calendar.csv unavailable (no sibling checkout at ${SRC}, no GITHUB_DRAFT_TOKEN, or fetch failed) — skipping copy.`);
+  if (fs.existsSync(SRC)) {
+    fs.copyFileSync(SRC, DEST);
+    const stat = fs.statSync(DEST);
+    console.log(`✅ Copied editorial-calendar.csv (${stat.size} bytes, local sibling checkout fallback — no GITHUB_DRAFT_TOKEN) → ${path.relative(REPO_ROOT, DEST)}`);
+    return;
+  }
+
+  console.warn(`⚠️  editorial-calendar.csv unavailable (no GITHUB_DRAFT_TOKEN or fetch failed, and no sibling checkout at ${SRC}) — skipping copy.`);
   console.warn(`   Admin pages will render with placeholder or stale data.`);
   if (!fs.existsSync(DEST)) {
     fs.writeFileSync(DEST, 'title,theme,status,workDate,endWorkDate,pubDate,mediumURL,liPubDate,linkedinURL,canonicalSite,blogURL,blogPath,cartoon,chatDate,draftPath,notes,altText,caption\n', 'utf-8');

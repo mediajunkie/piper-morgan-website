@@ -97,6 +97,7 @@ export default async function BlogPageNumber({ params }: PageProps) {
         }}
         background="surface"
         align="center"
+        compact
       />
 
       <BlogContent currentPage={pageNumber} />

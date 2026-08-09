@@ -39,6 +39,7 @@ export default function BlogPage() {
         }}
         background="surface"
         align="center"
+        compact
       />
 
       <Suspense fallback={<div className="text-center py-16">Loading blog posts...</div>}>

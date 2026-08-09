@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import {
-  loadCalendar,
+  loadCalendarLive,
   readyToPublish,
   recentlyPublished,
   syndicationGaps,
@@ -11,9 +11,19 @@ import {
 
 export const metadata: Metadata = {
   title: 'Publish Queue — pipermorgan.ai admin',
-  description: 'Build-time admin view of the editorial calendar. Not for public consumption.',
+  description: 'Always-current admin view of the editorial calendar (live read). Not for public consumption.',
   robots: { index: false, follow: false, noarchive: true, nosnippet: true },
 };
+
+// Read the canonical CSV at REQUEST time, not build time — same fix and same
+// reasoning as /admin/calendar (2026-08-04): a build-time render of a
+// build-time file goes stale between deploys, and `revalidate` alone would
+// not fix it since ISR never re-runs prebuild. Approved for this page by
+// Docs 2026-08-09 (in-reply-to the 2026-07-29 memo that shipped the calendar
+// fix). The static public/admin/publish-queue-data.json mirror stays
+// build-time — it's an unconsumed-elsewhere artifact, not the surface PM or
+// Dispatch actually look at, so only this render needed to move.
+export const dynamic = 'force-dynamic';
 
 function fmtDate(s: string): string {
   if (!s) return '—';
@@ -34,16 +44,17 @@ function rowAttrs(e: CalendarEntry): Record<string, string> {
   };
 }
 
-export default function PublishQueuePage() {
-  const all = loadCalendar();
-  const buildTime = new Date().toISOString();
+export default async function PublishQueuePage() {
+  const { rows: all, source } = await loadCalendarLive();
+  const renderedAt = new Date().toISOString();
   const ready = readyToPublish(all);
   const recent = recentlyPublished(all);
   const gaps = syndicationGaps(all);
   const imgGaps = imageMetadataGaps(all);
 
   const structuredData = {
-    buildTime,
+    renderedAt,
+    source,
     totalEntries: all.length,
     sections: {
       readyToPublish: ready,
@@ -59,15 +70,33 @@ export default function PublishQueuePage() {
         <header className="mb-10">
           <p className="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 font-medium">Admin</p>
           <h1 className="text-3xl md:text-4xl font-bold text-text-dark dark:text-dark-text mt-1">Publish Queue</h1>
-          <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">
-            Build-time snapshot of the editorial calendar.
-            {' '}
-            Built <time dateTime={buildTime} suppressHydrationWarning>{buildTime}</time>
-            {' • '}
-            {all.length} total entries
-            {' • '}
-            <a href="#raw-data" className="text-primary-teal-text dark:text-primary-teal hover:underline">raw data ↓</a>
-          </p>
+          {source.kind === 'live' ? (
+            <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">
+              <span className="font-medium text-green-700 dark:text-green-400">Live</span>
+              {' — read from the product repo at page load, '}
+              <time dateTime={source.fetchedAt} suppressHydrationWarning>{source.fetchedAt}</time>
+              {' • '}
+              {all.length} total entries
+              {' • '}
+              <a href="#raw-data" className="text-primary-teal-text dark:text-primary-teal hover:underline">raw data ↓</a>
+            </p>
+          ) : (
+            <>
+              <p className="mt-3 rounded border border-amber-400 bg-amber-50 dark:border-amber-600 dark:bg-amber-950/40 px-3 py-2 text-sm text-amber-900 dark:text-amber-200">
+                <strong>⚠️ Stale — showing the build-time snapshot, not live data.</strong>
+                {' The live read failed: '}
+                <code className="text-xs">{source.reason}</code>.
+                {' Status shown below may lag the canonical CSV. Reload to retry.'}
+              </p>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                Rendered <time dateTime={renderedAt} suppressHydrationWarning>{renderedAt}</time>
+                {' • '}
+                {all.length} total entries
+                {' • '}
+                <a href="#raw-data" className="text-primary-teal-text dark:text-primary-teal hover:underline">raw data ↓</a>
+              </p>
+            </>
+          )}
           <p className="mt-2 text-xs text-gray-500 dark:text-gray-500">
             Section counts:
             {' '}<span data-count="ready">ready/queued/drafted: {ready.length}</span>
@@ -165,7 +194,7 @@ export default function PublishQueuePage() {
           <h2 className="text-xl font-bold text-text-dark dark:text-dark-text mb-2">Raw data</h2>
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
             Static JSON endpoint (no JS required, no RSC parsing): <a href="/admin/publish-queue-data.json" className="text-primary-teal-text dark:text-primary-teal hover:underline font-mono text-xs">/admin/publish-queue-data.json</a>
-            {' '}— regenerated on every build, mirrors the section computations on this page.
+            {' '}— regenerated on every build; mirrors this page&apos;s section shape but, unlike the page above (now a live read), it lags until the next deploy.
           </p>
           <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">
             In-page selector (after hydration): <code className="text-xs bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded">document.getElementById(&apos;publish-queue-data&apos;).textContent</code>

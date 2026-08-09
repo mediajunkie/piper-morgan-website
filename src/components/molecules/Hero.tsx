@@ -26,6 +26,10 @@ export interface HeroProps {
   align?: 'left' | 'center';
   /** Show logo above headline */
   showLogo?: boolean;
+  /** Reduced vertical padding and spacing — for pages where the hero is a
+   *  header on top of the real content (e.g. a post index) rather than a
+   *  standalone marketing section a visitor lands on. */
+  compact?: boolean;
   /** Additional CSS classes */
   className?: string;
 }
@@ -45,10 +49,11 @@ export function Hero({
   background = 'default',
   align = 'left',
   showLogo = false,
+  compact = false,
   className = '',
 }: HeroProps) {
   const containerClasses = [
-    'pt-16 md:pt-24 pb-8 md:pb-12',
+    compact ? 'pt-8 md:pt-10 pb-6 md:pb-8' : 'pt-16 md:pt-24 pb-8 md:pb-12',
     backgroundClasses[background],
     className,
   ].filter(Boolean).join(' ');
@@ -78,7 +83,7 @@ export function Hero({
 
           <h1
             style={{ color: 'var(--text-dark)' }}
-            className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight"
+            className={`font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight ${compact ? 'mb-4' : 'mb-8'}`}
           >
             {headline}
             {highlightText && (
@@ -90,7 +95,7 @@ export function Hero({
 
           <div
             style={{ color: 'var(--text-light)' }}
-            className={`text-lg md:text-xl mb-8 leading-relaxed ${align === 'center' ? 'max-w-3xl mx-auto text-center' : 'max-w-3xl'}`}
+            className={`text-lg md:text-xl leading-relaxed ${compact ? 'mb-4' : 'mb-8'} ${align === 'center' ? 'max-w-3xl mx-auto text-center' : 'max-w-3xl'}`}
           >
             {subheadline}
           </div>
