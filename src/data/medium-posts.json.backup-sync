@@ -1,5 +1,27 @@
 [
   {
+    "title": "Verify at the User Path, Not the Data Layer",
+    "excerpt": "May 29–30, 2026 There's a particular kind of green checkmark that lies to you. What it checked may be correct — the data is in the database, the server is up, the test passed — but the check is sitting in the wrong place. It's measuring something true that happens not to be the thing you actually...",
+    "url": "/blog/verify-at-the-user-path",
+    "slug": "verify-at-the-user-path",
+    "publishedAt": "Aug 8, 2026",
+    "publishedAtISO": "2026-08-08T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-25e803dd5cfe",
+    "featuredImage": "/assets/blog-images/verify-at-the-user-path.webp",
+    "thumbnail": "/assets/blog-images/verify-at-the-user-path.webp",
+    "imageAlt": "A weary hotel guest’s keycard fails at a locked door while, in a cutaway view inside, two glowing AI staff proudly inspect the immaculate room and mark it with a green check.",
+    "imageCaption": "\"Sheesh! They told me the room was ready!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "May 29, 2026",
+    "workDateISO": "2026-05-29T00:00:00.000Z"
+  },
+  {
     "title": "Drained on Paper",
     "excerpt": "July 4–7, 2026 Ever since I started putting my agents on what I call a duty cycle, in which they periodically wake up, check for new messages, do any unblocked work, and repeat until there are no new unready messages and no work they can do without input from me. The agents refer to an empty inbo...",
     "url": "/blog/drained-on-paper",
@@ -17,9 +39,9 @@
     "imageAlt": "In a restaurant kitchen, a glowing, translucent AI assistant Piper signals that the empty order rail is clear while a human manager points in alarm to a fallen printer spewing a huge backlog of tickets across the floor.",
     "imageCaption": "\"All caught up!\"",
     "category": "building",
-    "cluster": "",
     "workDate": "Jul 4, 2026",
-    "workDateISO": "2026-07-04T00:00:00.000Z"
+    "workDateISO": "2026-07-04T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #054: Clear Is Not a Measurement",
