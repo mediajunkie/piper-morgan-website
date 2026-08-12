@@ -17,9 +17,9 @@
     "imageAlt": "A translucent AI messenger races alongside a pneumatic tube, comparing her copy with the document a recipient has pulled from the arriving capsule after several routing mechanisms were repaired.",
     "imageCaption": "\"Okay, *this time* it worked!\"",
     "category": "building",
-    "cluster": "",
     "workDate": "Jul 8, 2026",
-    "workDateISO": "2026-07-08T00:00:00.000Z"
+    "workDateISO": "2026-07-08T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Over-Checking Pays Dividends",
