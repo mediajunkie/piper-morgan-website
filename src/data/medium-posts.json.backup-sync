@@ -1,5 +1,49 @@
 [
   {
+    "title": "The Write-Path Chase",
+    "excerpt": "July 8–9, 2026 Here's a new rule my Lead Developer agent built: a GitHub write only counts as verified if the same session reads it back and confirms it landed. Not \"the API returned success.\" Not \"no exception was thrown.\" An actual read of the actual issue, in the actual repo, checked against w...",
+    "url": "/blog/the-write-path-chase",
+    "slug": "the-write-path-chase",
+    "publishedAt": "Aug 11, 2026",
+    "publishedAtISO": "2026-08-11T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-ec44defb5f3d",
+    "featuredImage": "/assets/blog-images/the-write-path-chase.webp",
+    "thumbnail": "/assets/blog-images/the-write-path-chase.webp",
+    "imageAlt": "A translucent AI messenger races alongside a pneumatic tube, comparing her copy with the document a recipient has pulled from the arriving capsule after several routing mechanisms were repaired.",
+    "imageCaption": "\"Okay, *this time* it worked!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Jul 8, 2026",
+    "workDateISO": "2026-07-08T00:00:00.000Z"
+  },
+  {
+    "title": "Over-Checking Pays Dividends",
+    "excerpt": "May 30, 2026 Most of what I know about process discipline points one direction: don't over-do it. Ship, don't gold-plate. Good enough is good enough. A good product manager needs to resist the urge to polish the corner nobody will ever look at, to add the abstraction layer for the use case that w...",
+    "url": "/blog/over-checking-pays-dividends",
+    "slug": "over-checking-pays-dividends",
+    "publishedAt": "Aug 9, 2026",
+    "publishedAtISO": "2026-08-09T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-2f08553c9737",
+    "featuredImage": "/assets/blog-images/over-checking-pays-dividends.webp",
+    "thumbnail": "/assets/blog-images/over-checking-pays-dividends.webp",
+    "imageAlt": "A translucent engineer makes one last inspection beneath a magnificent airship, pointing out a loose safety hook while the expedition leader pauses at the final launch lever.",
+    "imageCaption": "\"Ready to fly?\"",
+    "category": "insight",
+    "workDate": "May 30, 2026",
+    "workDateISO": "2026-05-30T00:00:00.000Z",
+    "featured": false
+  },
+  {
     "title": "Verify at the User Path, Not the Data Layer",
     "excerpt": "May 29–30, 2026 There's a particular kind of green checkmark that lies to you. What it checked may be correct — the data is in the database, the server is up, the test passed — but the check is sitting in the wrong place. It's measuring something true that happens not to be the thing you actually...",
     "url": "/blog/verify-at-the-user-path",
@@ -17,9 +61,9 @@
     "imageAlt": "A weary hotel guest’s keycard fails at a locked door while, in a cutaway view inside, two glowing AI staff proudly inspect the immaculate room and mark it with a green check.",
     "imageCaption": "\"Sheesh! They told me the room was ready!\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "May 29, 2026",
-    "workDateISO": "2026-05-29T00:00:00.000Z"
+    "workDateISO": "2026-05-29T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Drained on Paper",
