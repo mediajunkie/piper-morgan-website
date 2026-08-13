@@ -1,5 +1,27 @@
 [
   {
+    "title": "Alpha Launches",
+    "excerpt": "July 10–12, 2026 A small band of intrepid folks have volunteered since last winter to test the janky alpha version of Piper Morgan by cloning the repo and braving the manual installation flow in a \"works on my machine\" environment. So in a sense the software has been \"in alpha\" since then, but a ...",
+    "url": "/blog/alpha-launches",
+    "slug": "alpha-launches",
+    "publishedAt": "Aug 13, 2026",
+    "publishedAtISO": "2026-08-13T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-68871ac2f54f",
+    "featuredImage": "/assets/blog-images/alpha-launches.webp",
+    "thumbnail": "/assets/blog-images/alpha-launches.webp",
+    "imageAlt": "A translucent theater company rehearses and repairs the real stage while a human founder holds the curtain and invited audience members wait outside the closed doors.",
+    "imageCaption": "\"I think we're ready!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Jul 10, 2026",
+    "workDateISO": "2026-07-10T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #055: Shipped Is a Layer Word",
     "excerpt": "July 31–August 6, 2026 Last week's Ship discussed checks that report \"all clear\" without measuring anything. This week the team found the same failure at the scale that matters most: two major security fixes merged to the main branch on Tuesday, and the running server didn't have either of them f...",
     "url": "/blog/weekly-ship-055-shipped-is-a-layer-word",
@@ -19,7 +41,8 @@
     "category": "ship",
     "cluster": "piper-ship",
     "workDate": "Jul 31, 2026",
-    "workDateISO": "2026-07-31T00:00:00.000Z"
+    "workDateISO": "2026-07-31T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Write-Path Chase",

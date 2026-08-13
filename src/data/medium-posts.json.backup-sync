@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #055: Shipped Is a Layer Word",
+    "excerpt": "July 31–August 6, 2026 Last week's Ship discussed checks that report \"all clear\" without measuring anything. This week the team found the same failure at the scale that matters most: two major security fixes merged to the main branch on Tuesday, and the running server didn't have either of them f...",
+    "url": "/blog/weekly-ship-055-shipped-is-a-layer-word",
+    "slug": "weekly-ship-055-shipped-is-a-layer-word",
+    "publishedAt": "Aug 12, 2026",
+    "publishedAtISO": "2026-08-12T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-29b8f7325b27",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
+    "imageCaption": "",
+    "category": "ship",
+    "cluster": "piper-ship",
+    "workDate": "Jul 31, 2026",
+    "workDateISO": "2026-07-31T00:00:00.000Z"
+  },
+  {
     "title": "The Write-Path Chase",
     "excerpt": "July 8–9, 2026 Here's a new rule my Lead Developer agent built: a GitHub write only counts as verified if the same session reads it back and confirms it landed. Not \"the API returned success.\" Not \"no exception was thrown.\" An actual read of the actual issue, in the actual repo, checked against w...",
     "url": "/blog/the-write-path-chase",
