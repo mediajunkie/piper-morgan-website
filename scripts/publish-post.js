@@ -283,6 +283,8 @@ function parseDatelineFromBody(body) {
 //  - Em dashes: ` -- ` → ` — `
 //  - Inline: **bold**, *italic*, [text](url)
 //  - `_standalone italic line_` / `*standalone italic line*` → `<p><em>…</em></p>`
+//    (only when the inner content has no other `*`; see #31)
+//  - `**standalone bold line**` (no other `*` inside) → `<p><strong>…</strong></p>` (#31)
 //  - Unordered lists: `- item` → <ul><li>…</li></ul>
 //  - Blockquotes: consecutive `> text` lines → <blockquote><p>…</p></blockquote>
 //  - Markdown tables: `| col | col |` + `| --- | --- |` separator → <table>…</table>
@@ -445,11 +447,26 @@ function convertToHtml(body) {
       continue;
     }
 
-    // Standalone italic line: `_…_` or `*…*` on its own line → <p><em>…</em></p>
+    // Standalone bold line: `**…**` on its own line, with no other `*` inside,
+    // → <p><strong>…</strong></p>. Checked BEFORE the italic detector — #31: the
+    // old greedy `^\*(.+)\*$` matched a standalone `**bold**` line by construction
+    // (first char `*`, last char `*`), wrapping it in <em> and double-emphasizing
+    // via renderInline → <em><em>…</em></em> (rendered italic, not bold).
+    const b1 = trimmed.match(/^\*\*(.+)\*\*$/);
+    if (b1 && !b1[1].includes('*')) {
+      out.push(`<p><strong>${renderInline(b1[1])}</strong></p>`);
+      i++; continue;
+    }
+
+    // Standalone italic line: `_…_` or `*…*` on its own line → <p><em>…</em></p>.
+    // The `*…*` form only counts when the inner content contains NO other `*` —
+    // a line that merely starts and ends with `*` (e.g. `**Bold.** text: *"q."*`)
+    // is a normal paragraph, not a standalone italic; treating it as one produced
+    // literal stray asterisks in rendered output (#31, Ship #055 manifestation).
     const it1 = trimmed.match(/^_(.+)_$/);
     const it2 = trimmed.match(/^\*(.+)\*$/);
     if (it1) { out.push(`<p><em>${renderInline(it1[1])}</em></p>`); i++; continue; }
-    if (it2) { out.push(`<p><em>${renderInline(it2[1])}</em></p>`); i++; continue; }
+    if (it2 && !it2[1].includes('*')) { out.push(`<p><em>${renderInline(it2[1])}</em></p>`); i++; continue; }
 
     // Multi-line paragraph block: collect consecutive non-blank, non-block-starting lines.
     // Join with <br /> inside one <p> if >1 line; else just a <p>.
