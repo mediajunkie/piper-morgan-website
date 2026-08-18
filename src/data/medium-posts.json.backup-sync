@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Fabricating Standup",
+    "excerpt": "June 18, 2026 The \"morning standup\" feature an agent vibe-coded for Piper Morgan last summer had been hollow for a while. Ask it what happened yesterday and it told you \"no recent GitHub activity detected.\" Ask it what's on the plate today and you got a hardcoded fallback list, the same handful o...",
+    "url": "/blog/the-fabricating-standup",
+    "slug": "the-fabricating-standup",
+    "publishedAt": "Aug 16, 2026",
+    "publishedAtISO": "2026-08-16T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-f8d5f8fb8a5b",
+    "featuredImage": "/assets/blog-images/the-fabricating-standup.webp",
+    "thumbnail": "/assets/blog-images/the-fabricating-standup.webp",
+    "imageAlt": "A puzzled diner receives a towering stack of fancy pancakes from a confident AI waiter while his simple breakfast waits unused in the real kitchen.",
+    "imageCaption": "\"But I ordered eggs!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Jun 18, 2026",
+    "workDateISO": "2026-06-18T00:00:00.000Z"
+  },
+  {
     "title": "Confabulating a Peer's Unfinished Work",
     "excerpt": "June 1, 2026 There's a failure mode everyone building with AI knows by now. The model asserts something that didn't happen. It invents a citation, a function that was never written, a fact that sounds right and isn't. We have names for it — hallucination, confabulation — and a whole discipline ha...",
     "url": "/blog/confabulating-a-peers-unfinished-work",
@@ -17,9 +39,9 @@
     "imageAlt": "A museum registrar calmly stops a translucent AI restorer from painting a blank framed canvas, while holding a catalog sheet that falsely shows the artwork as finished.",
     "imageCaption": "\"Where'd you get that idea?\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "Jun 1, 2026",
-    "workDateISO": "2026-06-01T00:00:00.000Z"
+    "workDateISO": "2026-06-01T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Alpha Launches",
