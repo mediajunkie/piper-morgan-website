@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Architect's Own Trap",
+    "excerpt": "July 12–15, 2026 So I noticed, on a Sunday, that Piper Morgan could do stuff now but couldn't say what it had just done. Follow up with a request like \"actually, change the title\" or \"what did we just create\" and it failed both times, for the same underlying reason — nothing kept a durable, per-u...",
+    "url": "/blog/the-architects-own-trap",
+    "slug": "the-architects-own-trap",
+    "publishedAt": "Aug 18, 2026",
+    "publishedAtISO": "2026-08-18T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-573dcf38b95a",
+    "featuredImage": "/assets/blog-images/the-architects-own-trap.webp",
+    "thumbnail": "/assets/blog-images/the-architects-own-trap.webp",
+    "imageAlt": "Two translucent AI architects compare a three-staircase building model as one reveals the full-sized fourth staircase behind it.",
+    "imageCaption": "\"According to my model, that fourth staircase does not exist!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Jul 12, 2026",
+    "workDateISO": "2026-07-12T00:00:00.000Z"
+  },
+  {
     "title": "The Fabricating Standup",
     "excerpt": "June 18, 2026 The \"morning standup\" feature an agent vibe-coded for Piper Morgan last summer had been hollow for a while. Ask it what happened yesterday and it told you \"no recent GitHub activity detected.\" Ask it what's on the plate today and you got a hardcoded fallback list, the same handful o...",
     "url": "/blog/the-fabricating-standup",
@@ -17,9 +39,9 @@
     "imageAlt": "A puzzled diner receives a towering stack of fancy pancakes from a confident AI waiter while his simple breakfast waits unused in the real kitchen.",
     "imageCaption": "\"But I ordered eggs!\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "Jun 18, 2026",
-    "workDateISO": "2026-06-18T00:00:00.000Z"
+    "workDateISO": "2026-06-18T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Confabulating a Peer's Unfinished Work",
