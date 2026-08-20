@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Dead Code That Wasn't",
+    "excerpt": "July 16–18, 2026 My agent team spent three days that week deleting code that produces lies. The code runs, returns a plausible answer, and never tells you the answer was fake. We'd found a lot of this. A file-search feature that could quietly serve simulated results instead of real ones. A securi...",
+    "url": "/blog/the-dead-code-that-wasnt",
+    "slug": "the-dead-code-that-wasnt",
+    "publishedAt": "Aug 20, 2026",
+    "publishedAtISO": "2026-08-20T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-1d60801a6bdf",
+    "featuredImage": "/assets/blog-images/the-dead-code-that-wasnt.webp",
+    "thumbnail": "/assets/blog-images/the-dead-code-that-wasnt.webp",
+    "imageAlt": "An ephemeral arborist pauses before sawing a dead-looking limb after a human supervisor has noticed a leafy branch growing from its hidden side",
+    "imageCaption": "\"Don't cut the live wood!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Jul 16, 2026",
+    "workDateISO": "2026-07-16T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #056: Fundamentals First",
     "excerpt": "August 7–13, 2026 Last week's Ship was about a word doing two jobs at once — \"shipped\" meaning both the branch and the running server, and the team catching the difference. This week the sprint's own honesty got tested at a bigger scale: live testing on Friday surfaced structurally more unfinishe...",
     "url": "/blog/weekly-ship-056-fundamentals-first",
@@ -17,9 +39,9 @@
     "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
     "imageCaption": "",
     "category": "ship",
-    "cluster": "",
     "workDate": "Aug 7, 2026",
-    "workDateISO": "2026-08-07T00:00:00.000Z"
+    "workDateISO": "2026-08-07T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Architect's Own Trap",
