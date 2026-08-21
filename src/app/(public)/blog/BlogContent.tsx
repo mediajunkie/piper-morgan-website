@@ -278,9 +278,11 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
                             {era.description}
                           </p>
                           <p className="text-sm text-gray-600 dark:text-gray-400">
-                            {new Date(era.startDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                            {new Date(era.startDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' })}
                             {' - '}
-                            {new Date(era.endDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                            {era.endDate
+                              ? new Date(era.endDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
+                              : 'Present'}
                             {' • '}
                             {eraPosts.length} {eraPosts.length === 1 ? 'post' : 'posts'}
                           </p>

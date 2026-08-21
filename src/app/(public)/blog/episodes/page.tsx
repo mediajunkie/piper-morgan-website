@@ -5,10 +5,10 @@ import { CTAButton } from '@/components';
 
 export const metadata: Metadata = {
   title: 'Development Eras - Building Piper Morgan',
-  description: '5 development eras chronicling the journey of building Piper Morgan, from initial prototype to production-ready AI-augmented product management tool.',
+  description: `${ERAS.length} development eras chronicling the journey of building Piper Morgan, from initial prototype to production-ready AI-augmented product management tool.`,
   openGraph: {
     title: 'Development Eras - Building Piper Morgan',
-    description: '5 development eras chronicling the journey of building Piper Morgan',
+    description: `${ERAS.length} development eras chronicling the journey of building Piper Morgan`,
     type: 'website'
   }
 };
@@ -26,7 +26,11 @@ export default function EpisodesPage() {
               Development Eras
             </h1>
             <p className="text-xl text-text-light mb-8">
-              The complete journey of building Piper Morgan, organized into 5 chronological eras spanning May 2025 - March 2026. Each era captures key themes, breakthroughs, and lessons learned in our transparent building-in-public approach.
+              The complete journey of building Piper Morgan, organized into {ERAS.length} chronological eras spanning {new Date(ERAS[0].startDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' })}
+              {' - '}
+              {ERAS[ERAS.length - 1].endDate
+                ? new Date(ERAS[ERAS.length - 1].endDate as string).toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' })
+                : 'present'}. Each era captures key themes, breakthroughs, and lessons learned in our transparent building-in-public approach.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <CTAButton href="/blog" variant="primary" size="lg">
@@ -89,9 +93,11 @@ export default function EpisodesPage() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
                         <span>
-                          {new Date(era.startDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                          {new Date(era.startDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' })}
                           {' - '}
-                          {new Date(era.endDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                          {era.endDate
+                            ? new Date(era.endDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
+                            : 'Present'}
                         </span>
                       </div>
 
@@ -134,7 +140,7 @@ export default function EpisodesPage() {
                   <div className="text-3xl font-bold text-primary-teal-text mb-2">
                     {(() => {
                       const start = new Date(ERAS[0].startDate);
-                      const end = new Date(ERAS[ERAS.length - 1].endDate);
+                      const end = ERAS[ERAS.length - 1].endDate ? new Date(ERAS[ERAS.length - 1].endDate as string) : new Date();
                       const days = Math.ceil((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
                       return days;
                     })()}

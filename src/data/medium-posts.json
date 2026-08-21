@@ -17,9 +17,10 @@
     "imageAlt": "An ephemeral arborist pauses before sawing a dead-looking limb after a human supervisor has noticed a leafy branch growing from its hidden side",
     "imageCaption": "\"Don't cut the live wood!\"",
     "category": "building",
-    "cluster": "",
+    "cluster": "the-alpha",
     "workDate": "Jul 16, 2026",
-    "workDateISO": "2026-07-16T00:00:00.000Z"
+    "workDateISO": "2026-07-16T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #056: Fundamentals First",
@@ -41,7 +42,8 @@
     "category": "ship",
     "workDate": "Aug 7, 2026",
     "workDateISO": "2026-08-07T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-alpha"
   },
   {
     "title": "The Architect's Own Trap",
@@ -63,7 +65,8 @@
     "category": "building",
     "workDate": "Jul 12, 2026",
     "workDateISO": "2026-07-12T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-alpha"
   },
   {
     "title": "The Fabricating Standup",
@@ -85,7 +88,8 @@
     "category": "insight",
     "workDate": "Jun 18, 2026",
     "workDateISO": "2026-06-18T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-alpha"
   },
   {
     "title": "Confabulating a Peer's Unfinished Work",
@@ -107,7 +111,8 @@
     "category": "insight",
     "workDate": "Jun 1, 2026",
     "workDateISO": "2026-06-01T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-alpha"
   },
   {
     "title": "Alpha Launches",
@@ -129,7 +134,8 @@
     "category": "building",
     "workDate": "Jul 10, 2026",
     "workDateISO": "2026-07-10T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-alpha"
   },
   {
     "title": "Weekly Ship #055: Shipped Is a Layer Word",
@@ -149,7 +155,7 @@
     "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
     "imageCaption": "",
     "category": "ship",
-    "cluster": "piper-ship",
+    "cluster": "the-alpha",
     "workDate": "Jul 31, 2026",
     "workDateISO": "2026-07-31T00:00:00.000Z",
     "featured": false
@@ -174,7 +180,8 @@
     "category": "building",
     "workDate": "Jul 8, 2026",
     "workDateISO": "2026-07-08T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-alpha"
   },
   {
     "title": "Over-Checking Pays Dividends",
@@ -196,7 +203,8 @@
     "category": "insight",
     "workDate": "May 30, 2026",
     "workDateISO": "2026-05-30T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-alpha"
   },
   {
     "title": "Verify at the User Path, Not the Data Layer",
@@ -218,7 +226,8 @@
     "category": "insight",
     "workDate": "May 29, 2026",
     "workDateISO": "2026-05-29T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-alpha"
   },
   {
     "title": "Drained on Paper",
@@ -240,7 +249,8 @@
     "category": "building",
     "workDate": "Jul 4, 2026",
     "workDateISO": "2026-07-04T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-alpha"
   },
   {
     "title": "Weekly Ship #054: Clear Is Not a Measurement",
@@ -260,7 +270,7 @@
     "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
     "imageCaption": "",
     "category": "ship",
-    "cluster": "ship-054",
+    "cluster": "the-alpha",
     "workDate": "Jul 24, 2026",
     "workDateISO": "2026-07-24T00:00:00.000Z",
     "featured": false
@@ -285,7 +295,8 @@
     "category": "building",
     "workDate": "Jun 29, 2026",
     "workDateISO": "2026-06-29T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-alpha"
   },
   {
     "title": "You Can't \"White Knuckle\" Structural Problems",
@@ -307,7 +318,8 @@
     "category": "insight",
     "workDate": "May 28, 2026",
     "workDateISO": "2026-05-28T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-alpha"
   },
   {
     "title": "Mechanism Beats Vigilance",
@@ -329,7 +341,8 @@
     "category": "insight",
     "workDate": "May 28, 2026",
     "workDateISO": "2026-05-28T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-alpha"
   },
   {
     "title": "RECONNECT's Keystone",
@@ -349,7 +362,7 @@
     "imageAlt": "A mason quietly watches as people begin walking beneath a newly completed stone arch, illustrating how the true test of a keystone is the ordinary weight it quietly carries.",
     "imageCaption": "\"It's holding!\"",
     "category": "building",
-    "cluster": "reconnect",
+    "cluster": "the-mechanism",
     "workDate": "Jun 20, 2026",
     "workDateISO": "2026-06-20T00:00:00.000Z",
     "featured": false
@@ -372,7 +385,7 @@
     "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
     "imageCaption": "",
     "category": "ship",
-    "cluster": "ship-053",
+    "cluster": "the-mechanism",
     "workDate": "Jul 17, 2026",
     "workDateISO": "2026-07-17T00:00:00.000Z",
     "featured": false
@@ -397,7 +410,8 @@
     "category": "building",
     "workDate": "Jun 15, 2026",
     "workDateISO": "2026-06-15T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Meta-Observation Pattern",
@@ -419,7 +433,8 @@
     "category": "insight",
     "workDate": "Apr 18, 2026",
     "workDateISO": "2026-04-18T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Ritual Becomes a Skill",
@@ -441,7 +456,8 @@
     "category": "insight",
     "workDate": "Jul 18, 2026",
     "workDateISO": "2026-07-18T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Almost Beta",
@@ -461,7 +477,7 @@
     "imageAlt": "A proud, glowing AI sous-chef presents a clean cake tester while the head baker takes the first bite of an almost-finished cake.",
     "imageCaption": "\"OK, let's see!\"",
     "category": "building",
-    "cluster": "may-jun-2026-buildout",
+    "cluster": "the-mechanism",
     "workDate": "Jun 12, 2026",
     "workDateISO": "2026-06-12T00:00:00.000Z",
     "featured": false
@@ -484,7 +500,7 @@
     "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
     "imageCaption": "",
     "category": "ship",
-    "cluster": "ship-052",
+    "cluster": "the-mechanism",
     "workDate": "Jul 10, 2026",
     "workDateISO": "2026-07-10T00:00:00.000Z",
     "featured": false
@@ -509,7 +525,8 @@
     "category": "building",
     "workDate": "Jun 9, 2026",
     "workDateISO": "2026-06-09T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "What Staff Reports Don't Show",
@@ -531,7 +548,8 @@
     "category": "insight",
     "workDate": "May 20, 2026",
     "workDateISO": "2026-05-20T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Mechanical First, Then Read",
@@ -553,7 +571,8 @@
     "category": "insight",
     "workDate": "May 21, 2026",
     "workDateISO": "2026-05-21T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Into Production",
@@ -575,7 +594,8 @@
     "category": "building",
     "workDate": "Jun 6, 2026",
     "workDateISO": "2026-06-06T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Weekly Ship #051: Impossible by Construction",
@@ -595,7 +615,7 @@
     "imageAlt": "",
     "imageCaption": "",
     "category": "ship",
-    "cluster": "ship-051",
+    "cluster": "the-mechanism",
     "workDate": "Jul 3, 2026",
     "workDateISO": "2026-07-03T00:00:00.000Z",
     "featured": false
@@ -618,7 +638,7 @@
     "imageAlt": "A crew of geometric agents operates distinct stations aboard a newly launched ship, while two inspect a painted false hatch as the unfinished vessel gets underway.",
     "imageCaption": "\"All aboard?\"",
     "category": "building",
-    "cluster": "may-2026-buildout",
+    "cluster": "the-mechanism",
     "workDate": "May 31, 2026",
     "workDateISO": "2026-05-31T00:00:00.000Z",
     "featured": false
@@ -643,7 +663,8 @@
     "category": "insight",
     "workDate": "May 17, 2026",
     "workDateISO": "2026-05-17T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "When the Documentation Drifts",
@@ -665,7 +686,8 @@
     "category": "insight",
     "workDate": "May 19, 2026",
     "workDateISO": "2026-05-19T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Package and the First Bite",
@@ -687,7 +709,8 @@
     "category": "building",
     "workDate": "May 29, 2026",
     "workDateISO": "2026-05-29T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Weekly Ship #050: The Connector Gets Real",
@@ -709,7 +732,8 @@
     "category": "ship",
     "workDate": "Jun 26, 2026",
     "workDateISO": "2026-06-26T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Team Catches the Cycle",
@@ -731,7 +755,8 @@
     "category": "building",
     "workDate": "May 27, 2026",
     "workDateISO": "2026-05-27T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Practice That Got Retired",
@@ -753,7 +778,8 @@
     "category": "insight",
     "workDate": "May 17, 2026",
     "workDateISO": "2026-05-17T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Climbing Higher When the Platform Laps You",
@@ -775,7 +801,8 @@
     "category": "insight",
     "workDate": "May 6, 2026",
     "workDateISO": "2026-05-06T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Airport Corrections",
@@ -797,7 +824,8 @@
     "category": "building",
     "workDate": "May 25, 2026",
     "workDateISO": "2026-05-25T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Weekly Ship #049: The Team Builds Its Own Reliability",
@@ -817,7 +845,7 @@
     "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
     "imageCaption": "",
     "category": "ship",
-    "cluster": "reconnect",
+    "cluster": "the-mechanism",
     "workDate": "Jun 19, 2026",
     "workDateISO": "2026-06-19T00:00:00.000Z",
     "featured": false
@@ -842,7 +870,8 @@
     "category": "building",
     "workDate": "Mar 30, 2026",
     "workDateISO": "2026-03-30T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Relationship-First Ethics",
@@ -864,7 +893,8 @@
     "category": "insight",
     "workDate": "Nov 30, 2025",
     "workDateISO": "2025-11-30T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Triad Model",
@@ -886,7 +916,8 @@
     "category": "insight",
     "workDate": "Dec 2, 2025",
     "workDateISO": "2025-12-02T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Hook and the Worktree",
@@ -906,7 +937,7 @@
     "imageAlt": "A crowded bridge crossing is surrounded by piles of reminders warning about a missing plank, while a quiet carpenter simply installs the missing board—showing how a small structural fix succeeds where constant vigilance does not.",
     "imageCaption": "Mind the gap!",
     "category": "building",
-    "cluster": "building-piper-morgan",
+    "cluster": "the-mechanism",
     "workDate": "May 13, 2026",
     "workDateISO": "2026-05-13T00:00:00.000Z",
     "featured": false
@@ -929,7 +960,7 @@
     "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
     "imageCaption": "",
     "category": "ship",
-    "cluster": "d1-sprint",
+    "cluster": "the-mechanism",
     "workDate": "Jun 12, 2026",
     "workDateISO": "2026-06-12T00:00:00.000Z",
     "featured": false
@@ -954,7 +985,8 @@
     "category": "building",
     "workDate": "May 10, 2026",
     "workDateISO": "2026-05-10T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Extension Without Integration",
@@ -976,7 +1008,8 @@
     "category": "insight",
     "workDate": "Mar 13, 2026",
     "workDateISO": "2026-03-13T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "This One's Taken",
@@ -996,7 +1029,7 @@
     "imageAlt": "A glowing AI pattern detective studies a case board where two identical Pattern 067 cards point back to Pattern 063, revealing that the pattern catalog has become evidence of its own parallel-authoring drift.",
     "imageCaption": "\"It's elementary!\"",
     "category": "insight",
-    "cluster": "era-2",
+    "cluster": "the-mechanism",
     "workDate": "May 9, 2026",
     "workDateISO": "2026-05-09T00:00:00.000Z",
     "featured": false
@@ -1021,7 +1054,8 @@
     "category": "building",
     "workDate": "May 8, 2026",
     "workDateISO": "2026-05-08T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Weekly Ship #047: The Team Catches Itself",
@@ -1043,7 +1077,8 @@
     "category": "ship",
     "workDate": "Jun 5, 2026",
     "workDateISO": "2026-06-05T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "First Subagent in Production",
@@ -1065,7 +1100,8 @@
     "category": "building",
     "workDate": "May 6, 2026",
     "workDateISO": "2026-05-06T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Solo Founder Paradox",
@@ -1087,7 +1123,8 @@
     "category": "insight",
     "workDate": "Feb 15, 2026",
     "workDateISO": "2026-02-15T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Critical vs Commodity Work in a Role",
@@ -1109,7 +1146,8 @@
     "category": "insight",
     "workDate": "Apr 23, 2026",
     "workDateISO": "2026-04-23T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Pace Verified",
@@ -1131,7 +1169,8 @@
     "category": "building",
     "workDate": "May 2, 2026",
     "workDateISO": "2026-05-02T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Weekly Ship #046: The Substrate Delivered",
@@ -1153,7 +1192,8 @@
     "category": "ship",
     "workDate": "May 29, 2026",
     "workDateISO": "2026-05-29T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Where Would the Data Come From?",
@@ -1175,7 +1215,8 @@
     "category": "building",
     "workDate": "Apr 30, 2026",
     "workDateISO": "2026-04-30T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Permission to Pause",
@@ -1197,7 +1238,8 @@
     "category": "insight",
     "workDate": "Mar 13, 2026",
     "workDateISO": "2026-03-13T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Be Prepared",
@@ -1219,7 +1261,8 @@
     "category": "insight",
     "workDate": "Dec 9, 2025",
     "workDateISO": "2025-12-09T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Upstream of the Floor",
@@ -1241,7 +1284,8 @@
     "category": "building",
     "workDate": "Apr 25, 2026",
     "workDateISO": "2026-04-25T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Weekly Ship #045: The Substrate Pivoted",
@@ -1263,7 +1307,8 @@
     "category": "ship",
     "workDate": "May 22, 2026",
     "workDateISO": "2026-05-22T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Bring Your Own Chat",
@@ -1285,7 +1330,8 @@
     "category": "building",
     "workDate": "Apr 8, 2026",
     "workDateISO": "2026-04-08T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "When Your AI Makes Things Up",
@@ -1307,7 +1353,8 @@
     "category": "insight",
     "workDate": "Feb 1, 2026",
     "workDateISO": "2026-02-01T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Stacked Silent Failures",
@@ -1329,7 +1376,8 @@
     "category": "insight",
     "workDate": "May 8, 2026",
     "workDateISO": "2026-05-08T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Misfiled Voice Guide",
@@ -1351,7 +1399,8 @@
     "category": "building",
     "workDate": "Apr 24, 2026",
     "workDateISO": "2026-04-24T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Weekly Ship #044: What Survives an Experiment",
@@ -1395,7 +1444,8 @@
     "category": "ship",
     "workDate": "May 27, 2026",
     "workDateISO": "2026-05-27T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Two Migrations in One Day",
@@ -1417,7 +1467,8 @@
     "category": "building",
     "workDate": "Apr 23, 2026",
     "workDateISO": "2026-04-23T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Five Whys for Design Decisions",
@@ -1439,7 +1490,8 @@
     "category": "insight",
     "workDate": "Dec 20, 2025",
     "workDateISO": "2025-12-20T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Project Biorhythms",
@@ -1461,7 +1513,8 @@
     "category": "insight",
     "workDate": "Nov 22, 2025",
     "workDateISO": "2025-11-22T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Voice of a Denial",
@@ -1483,7 +1536,8 @@
     "category": "building",
     "workDate": "Apr 22, 2026",
     "workDateISO": "2026-04-22T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Weekly Ship #043: The Skill That Doesn't Fire",
@@ -1505,7 +1559,8 @@
     "category": "ship",
     "workDate": "May 8, 2026",
     "workDateISO": "2026-05-08T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Log That Fact-Checked Itself",
@@ -1527,7 +1582,8 @@
     "category": "building",
     "workDate": "Apr 22, 2026",
     "workDateISO": "2026-04-22T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "From Protocol to Infrastructure",
@@ -1549,7 +1605,8 @@
     "category": "insight",
     "workDate": "Feb 25, 2026",
     "workDateISO": "2026-02-25T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Family Resemblance",
@@ -1571,7 +1628,8 @@
     "category": "insight",
     "workDate": "Apr 18, 2026",
     "workDateISO": "2026-04-18T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Same Failure, Six Agents, Ninety Minutes",
@@ -1593,7 +1651,8 @@
     "workDateISO": "2026-04-19T00:00:00.000Z",
     "imageAlt": "A high-speed train entering a rail junction where six parallel tracks branch into different analytical landscapes before merging again, with one exaggerated claim diverted onto a repair siding",
     "imageCaption": "People get ready!",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "Weekly Ship #042: What Was Working Got Written Down",
@@ -1614,7 +1673,8 @@
     "workDate": "May 1, 2026",
     "workDateISO": "2026-05-01T00:00:00.000Z",
     "featured": false,
-    "imageAlt": "A boy leads a boat crewed by robots."
+    "imageAlt": "A boy leads a boat crewed by robots.",
+    "cluster": "the-mechanism"
   },
   {
     "title": "Audit and Talk",
@@ -1636,7 +1696,8 @@
     "workDateISO": "2026-04-17T00:00:00.000Z",
     "featured": false,
     "imageAlt": "Cross-section cartoon of glowing AI beings maintaining a hidden routing machine beneath a fragile cliffside roadway full of warning barriers and drifting mismatched diagrams, showing structure quietly preventing unsafe paths before they can be reached.",
-    "imageCaption": "Safety first!"
+    "imageCaption": "Safety first!",
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Inchworm Position",
@@ -1659,7 +1720,8 @@
     "chatDate": "2025-11-19",
     "featured": false,
     "imageAlt": "An inchworm traverses a branching numbered tree while a human and glowing AI-being observe its precise progress through the hierarchy.",
-    "imageCaption": "How does that song go?"
+    "imageCaption": "How does that song go?",
+    "cluster": "the-mechanism"
   },
   {
     "title": "A Hail of Memos",
@@ -1682,7 +1744,8 @@
     "chatDate": "2026-04-16",
     "featured": false,
     "imageAlt": "Figure at center of a radial storm of incoming message-slips, struggling to catch them while working.",
-    "imageCaption": "Let me get back to you on that!"
+    "imageCaption": "Let me get back to you on that!",
+    "cluster": "the-mechanism"
   },
   {
     "title": "Weekly Ship #041: The Methodology Closes Its Own Loops",
@@ -1704,7 +1767,8 @@
     "workDateISO": "2026-04-24T00:00:00.000Z",
     "chatDate": "2026-04-24",
     "featured": false,
-    "imageAlt": "A child leads a ship operated by robots."
+    "imageAlt": "A child leads a ship operated by robots.",
+    "cluster": "the-mechanism"
   },
   {
     "title": "Six Issues Before Dinner",
@@ -1727,7 +1791,8 @@
     "chatDate": "2026-04-14",
     "featured": false,
     "imageAlt": "A calm engineer stands beside a large, smoothly turning flywheel machine, where completed tasks gently drop off as the system runs.",
-    "imageCaption": "Like a Swiss watch..."
+    "imageCaption": "Like a Swiss watch...",
+    "cluster": "the-mechanism"
   },
   {
     "title": "Friction-Focused Feedback",
@@ -1750,7 +1815,8 @@
     "chatDate": "2026-03-13",
     "featured": false,
     "imageAlt": "Hand-drawn cartoon of small agents sending gear ideas through a narrowing filter into a strained central machine; complex add-ons jam it, while simple parts pass through and make the gears run smoothly.",
-    "imageCaption": "Now, don't all shout at once!"
+    "imageCaption": "Now, don't all shout at once!",
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Drift You Don't Notice",
@@ -1773,7 +1839,8 @@
     "chatDate": "2026-02-01",
     "featured": false,
     "imageAlt": "A ghostlike clerk feeds ‘yesterday’s’ page into a copier while a nearby ‘Original Spec’ sits unused, as the output copies become progressively faded and warped; a supervisor watches, realizing the issue.",
-    "imageCaption": "Just as good as the original!"
+    "imageCaption": "Just as good as the original!",
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Floor Comes Alive",
@@ -1796,7 +1863,8 @@
     "chatDate": "2026-04-08",
     "featured": false,
     "imageAlt": "Person kneels on a smooth tiled floor as a small crack reveals a softly glowing, living layer beneath.",
-    "imageCaption": "Who said that?"
+    "imageCaption": "Who said that?",
+    "cluster": "the-mechanism"
   },
   {
     "title": "Weekly Ship #040: The Methodology Audits Itself",
@@ -1817,7 +1885,8 @@
     "workDate": "Apr 23, 2026",
     "workDateISO": "2026-04-23T00:00:00.000Z",
     "featured": false,
-    "imageAlt": "A person leads a small boat crewed by robots."
+    "imageAlt": "A person leads a small boat crewed by robots.",
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Deeper Why",
@@ -1839,7 +1908,8 @@
     "workDateISO": "2026-04-07T00:00:00.000Z",
     "featured": false,
     "imageAlt": "Hand-drawn cutaway of a backyard pool: people enjoy calm, clear water above while below an overly complex maze of pipes and labeled systems shows unnecessary engineering beneath a simple, working experience.",
-    "imageCaption": "The water's fine!"
+    "imageCaption": "The water's fine!",
+    "cluster": "the-mechanism"
   },
   {
     "title": "Verify the Paraphrase",
@@ -1861,7 +1931,8 @@
     "workDateISO": "2026-04-19T00:00:00.000Z",
     "featured": false,
     "imageAlt": "A whisper chain simplifies a message into a confident claim while one person checks a detailed source book showing different information.",
-    "imageCaption": "Behold! The confidence of the mediocre..."
+    "imageCaption": "Behold! The confidence of the mediocre...",
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Multi-Wave Investigation",
@@ -1883,7 +1954,8 @@
     "workDateISO": "2025-12-25T00:00:00.000Z",
     "featured": false,
     "imageAlt": "Hand-drawn scene of a person directing waves of searchlights across a landscape, revealing systems, categories, and obstacles, with a central map summarizing findings.",
-    "imageCaption": "\"Fan out!\""
+    "imageCaption": "\"Fan out!\"",
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Gate",
@@ -1905,7 +1977,8 @@
     "workDateISO": "2026-04-03T00:00:00.000Z",
     "featured": false,
     "imageAlt": "A path of varied inputs is diverted before reaching a large gate, emerging instead as identical gray boxes while a person looks on in confusion.",
-    "imageCaption": "\"Wait, what?\""
+    "imageCaption": "\"Wait, what?\"",
+    "cluster": "the-mechanism"
   },
   {
     "title": "Weekly Ship #039: The Voice Takes Shape",
@@ -1926,7 +1999,8 @@
     "workDate": "Apr 16, 2026",
     "workDateISO": "2026-04-16T00:00:00.000Z",
     "featured": false,
-    "imageAlt": "A person leads a small boat crewed by robots."
+    "imageAlt": "A person leads a small boat crewed by robots.",
+    "cluster": "the-mechanism"
   },
   {
     "title": "Four Roles, Ninety Minutes",
@@ -1948,7 +2022,8 @@
     "workDateISO": "2026-03-23T00:00:00.000Z",
     "featured": false,
     "imageAlt": "Four roles working separately in a small office diagram, sending memos back and forth while a lead developer assembles a design document.",
-    "imageCaption": "\"No meeting? How will we interrupt each other?\""
+    "imageCaption": "\"No meeting? How will we interrupt each other?\"",
+    "cluster": "the-mechanism"
   },
   {
     "title": "Sibling Intelligence",
@@ -1970,7 +2045,8 @@
     "workDateISO": "2026-03-19T00:00:00.000Z",
     "featured": false,
     "imageAlt": "A hand-drawn cartoon of a person sweeping a metal detector across a beach scattered with small objects like papers, gears, and abstract shapes. Most items remain dull and half-buried, but a few glow softly as the detector passes over them. The person kneels to collect only the glowing items into a small pouch, leaving the rest behind.",
-    "imageCaption": "\"Solid gold!\""
+    "imageCaption": "\"Solid gold!\"",
+    "cluster": "the-mechanism"
   },
   {
     "title": "Thirteen Mailboxes",
@@ -1992,7 +2068,8 @@
     "workDateISO": "2026-01-13T00:00:00.000Z",
     "featured": false,
     "imageAlt": "A human postal worker moves a letter from one mailbox to another in a wall of many adjacent mailboxes, most marked with abstract AI-like symbols, suggesting manual message routing between neighboring agents.",
-    "imageCaption": "\"You've got mail!\""
+    "imageCaption": "\"You've got mail!\"",
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Migration",
@@ -2014,7 +2091,8 @@
     "workDateISO": "2026-03-28T00:00:00.000Z",
     "featured": false,
     "imageAlt": "A human guides a line of small AI helpers carrying boxes from a cluttered room into a clean one through a central doorway.",
-    "imageCaption": "Time to unpack!"
+    "imageCaption": "Time to unpack!",
+    "cluster": "the-mechanism"
   },
   {
     "title": "Weekly Ship #038: The Floor Comes Alive",
@@ -2035,7 +2113,8 @@
     "workDate": "Apr 3, 2026",
     "workDateISO": "2026-04-03T00:00:00.000Z",
     "featured": false,
-    "imageAlt": "A person leads a small boat crewed by robots."
+    "imageAlt": "A person leads a small boat crewed by robots.",
+    "cluster": "the-mechanism"
   },
   {
     "title": "The Closing Sprint",
@@ -2057,7 +2136,8 @@
     "workDateISO": "2026-03-20T00:00:00.000Z",
     "featured": false,
     "imageAlt": "A runner crosses a finish line on a newly solid track while ghostly alternate paths converge behind them guided by glowing translucent AI companions assembling the final pieces in midair.",
-    "imageCaption": "Almost there!"
+    "imageCaption": "Almost there!",
+    "cluster": "the-mechanism"
   },
   {
     "title": "Archaeological Debugging: Finding What You've Already Built",
@@ -2075,7 +2155,7 @@
     "featuredImage": "/assets/blog-images/ai-scarab.webp",
     "thumbnail": "/assets/blog-images/ai-scarab.webp",
     "category": "insight",
-    "cluster": "the-foundation",
+    "cluster": "the-mechanism",
     "workDate": "Dec 22, 2025",
     "workDateISO": "2025-12-22T00:00:00.000Z",
     "chatDate": "12/22/2025",
@@ -2099,7 +2179,7 @@
     "featuredImage": "/assets/blog-images/ai-roundtable.webp",
     "thumbnail": "/assets/blog-images/ai-roundtable.webp",
     "category": "insight",
-    "cluster": "the-sprint",
+    "cluster": "the-mechanism",
     "workDate": "Mar 14, 2026",
     "workDateISO": "2026-03-14T00:00:00.000Z",
     "chatDate": "3/14/2026",
@@ -2123,7 +2203,7 @@
     "featuredImage": "/assets/blog-images/ai-kitchen.webp",
     "thumbnail": "/assets/blog-images/ai-kitchen.webp",
     "category": "building",
-    "cluster": "the-sprint",
+    "cluster": "the-mechanism",
     "workDate": "Mar 19, 2026",
     "workDateISO": "2026-03-19T00:00:00.000Z",
     "chatDate": "3/19/2026",
@@ -2147,7 +2227,7 @@
     "featuredImage": "/assets/blog-images/piper-ship.webp",
     "thumbnail": "/assets/blog-images/piper-ship.webp",
     "category": "ship",
-    "cluster": "the-sprint",
+    "cluster": "the-mechanism",
     "workDate": "Mar 27, 2026",
     "workDateISO": "2026-03-27T00:00:00.000Z",
     "chatDate": "3/27/2026",
@@ -2170,7 +2250,7 @@
     "featuredImage": "/assets/blog-images/ai-set.webp",
     "thumbnail": "/assets/blog-images/ai-set.webp",
     "category": "building",
-    "cluster": "the-sprint",
+    "cluster": "the-mechanism",
     "workDate": "Mar 17, 2026",
     "workDateISO": "2026-03-17T00:00:00.000Z",
     "chatDate": "3/17/2026",
@@ -2194,7 +2274,7 @@
     "featuredImage": "/assets/blog-images/ai-handshake.webp",
     "thumbnail": "/assets/blog-images/ai-handshake.webp",
     "category": "insight",
-    "cluster": "the-sprint",
+    "cluster": "the-mechanism",
     "workDate": "Mar 3, 2026",
     "workDateISO": "2026-03-03T00:00:00.000Z",
     "chatDate": "3/3/2026",
@@ -2218,7 +2298,7 @@
     "featuredImage": "/assets/blog-images/ai-departures.webp",
     "thumbnail": "/assets/blog-images/ai-departures.webp",
     "category": "insight",
-    "cluster": "the-sprint",
+    "cluster": "the-mechanism",
     "workDate": "Mar 3, 2026",
     "workDateISO": "2026-03-03T00:00:00.000Z",
     "chatDate": "3/3/2026",
@@ -2242,7 +2322,7 @@
     "featuredImage": "/assets/blog-images/ai-umbrella.webp",
     "thumbnail": "/assets/blog-images/ai-umbrella.webp",
     "category": "building",
-    "cluster": "the-sprint",
+    "cluster": "the-mechanism",
     "workDate": "Mar 15, 2026",
     "workDateISO": "2026-03-15T00:00:00.000Z",
     "chatDate": "3/15/2026",
@@ -2266,7 +2346,7 @@
     "featuredImage": "/assets/blog-images/piper-ship.webp",
     "thumbnail": "/assets/blog-images/piper-ship.webp",
     "category": "ship",
-    "cluster": "the-sprint",
+    "cluster": "the-mechanism",
     "workDate": "Mar 20, 2026",
     "workDateISO": "2026-03-20T00:00:00.000Z",
     "chatDate": "3/20/2026",

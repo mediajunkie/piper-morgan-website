@@ -1,10 +1,11 @@
 /**
  * Era Definitions
  *
- * 5 chronological eras organizing the development journey.
+ * 7 chronological eras organizing the development journey.
  * Replaces the original 15-episode system (which was never connected to post data).
  *
- * Each era covers a non-overlapping time period from May 2025 to March 2026.
+ * Each era covers a non-overlapping time period from May 2025 onward.
+ * The most recent era's endDate is null while it is still running.
  */
 
 export interface Era {
@@ -13,7 +14,7 @@ export interface Era {
   shortName: string;
   description: string;
   startDate: string;
-  endDate: string;
+  endDate: string | null;
   theme: string;
 }
 
@@ -65,6 +66,24 @@ export const ERAS: Era[] = [
     startDate: '2026-02-01',
     endDate: '2026-03-31',
     theme: 'M0 launch, M1 sprint, multi-agent coordination, blog-first publishing pipeline',
+  },
+  {
+    slug: 'the-mechanism',
+    name: 'Era 6: The Mechanism',
+    shortName: 'The Mechanism',
+    description: 'Rules become architecture: duty-cycle autonomy, the connector rebuild, production catches up to development',
+    startDate: '2026-04-01',
+    endDate: '2026-07-31',
+    theme: 'Autonomous duty-cycle operation scales cohort-wide, RECONNECT rebuilds the connector substrate, first production deploy since March, contracts (ADRs, portfolios) replace memory as the team\'s primary discipline',
+  },
+  {
+    slug: 'the-alpha',
+    name: 'Era 7: The Alpha',
+    shortName: 'The Alpha',
+    description: 'Durable infrastructure lands, hosted alpha opens to outside testers, verification culture hardens',
+    startDate: '2026-08-01',
+    endDate: null,
+    theme: 'The team moves to always-on infrastructure, the beta-readiness gate proves itself against real defects, first external testers admitted, beta target extended for quality',
   },
 ];
 
