@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Trust Gate That Wasn't",
+    "excerpt": "June 17, 2026 Piper Morgan has to earn your trust. Why should you trust Piper before you have any reason to? As you use it more, it earns the standing to do more on its own — offer suggestions before you ask, surface things proactively, take a little more initiative. Right now Piper's trust gradi...",
+    "url": "/blog/the-trust-gate-that-wasnt",
+    "slug": "the-trust-gate-that-wasnt",
+    "publishedAt": "Aug 22, 2026",
+    "publishedAtISO": "2026-08-22T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-2d7632080b36",
+    "featuredImage": "/assets/blog-images/the-trust-gate-that-wasnt.webp",
+    "thumbnail": "/assets/blog-images/the-trust-gate-that-wasnt.webp",
+    "imageAlt": "At a coat check, a puzzled customer presents the claim ticket for her visible purple coat while a well-meaning translucent attendant keeps her behind a velvet rope.",
+    "imageCaption": "\"I already trusted you with them!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Jun 17, 2026",
+    "workDateISO": "2026-06-17T00:00:00.000Z"
+  },
+  {
     "title": "The Dead Code That Wasn't",
     "excerpt": "July 16–18, 2026 My agent team spent three days that week deleting code that produces lies. The code runs, returns a plausible answer, and never tells you the answer was fake. We'd found a lot of this. A file-search feature that could quietly serve simulated results instead of real ones. A securi...",
     "url": "/blog/the-dead-code-that-wasnt",
