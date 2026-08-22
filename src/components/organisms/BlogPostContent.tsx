@@ -36,6 +36,7 @@ export function BlogPostContent({ post, content }: BlogPostContentProps) {
       year: 'numeric',
       month: 'long',
       day: 'numeric',
+      timeZone: 'UTC',
     });
   };
 
