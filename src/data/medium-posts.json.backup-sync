@@ -1,5 +1,27 @@
 [
   {
+    "title": "Read the Mock First",
+    "excerpt": "June 17–19, 2026 We had a mockup. A real one, HTML and CSS, sitting in the repo since mid-June, showing exactly what I wanted the app's left-hand navigation to look like: a dark, minimal rail with your conversations in it, a \"new chat\" button, and a short row of utility links at the bottom. Nothi...",
+    "url": "/blog/read-the-mock-first",
+    "slug": "read-the-mock-first",
+    "publishedAt": "Aug 23, 2026",
+    "publishedAtISO": "2026-08-23T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-d7768541669e",
+    "featuredImage": "/assets/blog-images/read-the-mock-first.webp",
+    "thumbnail": "/assets/blog-images/read-the-mock-first.webp",
+    "imageAlt": "A human design lead studies a spare room model while an AI designer holds the matching plan beside a finished room crowded with inherited furniture.",
+    "imageCaption": "\"What is wrong with this picture?\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Jun 17, 2026",
+    "workDateISO": "2026-06-17T00:00:00.000Z"
+  },
+  {
     "title": "The Trust Gate That Wasn't",
     "excerpt": "June 17, 2026 Piper Morgan has to earn your trust. Why should you trust Piper before you have any reason to? As you use it more, it earns the standing to do more on its own — offer suggestions before you ask, surface things proactively, take a little more initiative. Right now Piper's trust gradi...",
     "url": "/blog/the-trust-gate-that-wasnt",
@@ -17,9 +39,9 @@
     "imageAlt": "At a coat check, a puzzled customer presents the claim ticket for her visible purple coat while a well-meaning translucent attendant keeps her behind a velvet rope.",
     "imageCaption": "\"I already trusted you with them!\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "Jun 17, 2026",
-    "workDateISO": "2026-06-17T00:00:00.000Z"
+    "workDateISO": "2026-06-17T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Dead Code That Wasn't",
