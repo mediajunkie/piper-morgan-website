@@ -465,7 +465,15 @@ function ComposeEdit({ slug }: { slug: string }) {
 export function ComposeApp() {
   const params = useSearchParams();
   const slug = params?.get('slug') ?? null;
-  return slug ? <ComposeEdit slug={slug} /> : <ComposeList />;
+  // key={slug} forces a full remount on every slug change (website#35) — without it, React
+  // reuses the same ComposeEdit instance across different drafts (same component type, same
+  // JSX position), so a slug change lands mid-render with the PREVIOUS draft's still-loaded
+  // state (draft/image/alt/caption/body) intact. The local-draft write-effect's guard
+  // (`if (!draft) return`) checks whether ANY draft is loaded, not whether it's the draft for
+  // the CURRENT slug — so it can persist the previous draft's content under the new slug's
+  // localStorage key before the new slug's own fetch resolves, which the load-effect's
+  // local-vs-server diff then offers back as an "unsaved local copy" for the wrong draft.
+  return slug ? <ComposeEdit key={slug} slug={slug} /> : <ComposeList />;
 }
 
 // ─── Shared sub-components ────────────────────────────────────────────────────
