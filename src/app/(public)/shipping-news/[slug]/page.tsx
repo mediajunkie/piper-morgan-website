@@ -34,11 +34,20 @@ export async function generateMetadata({
     };
   }
 
+  // Without an explicit per-post canonical, this page inherited the root layout's
+  // alternates.canonical: '/' -- every Ship post canonicalized to the homepage.
+  // trailingSlash: true (next.config.ts) means the served URL always ends in '/'.
+  const canonicalUrl = `https://pipermorgan.ai/shipping-news/${slug}/`;
+
   return {
     title: `${post.title} | The Shipping News | Piper Morgan`,
     description: 'Weekly development update from the Piper Morgan team.',
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: post.title,
+      url: canonicalUrl,
       type: 'article',
       publishedTime: post.publishedAtISO || post.publishedAt,
       images: ['/assets/blog-images/piper-ship.webp'],

@@ -3,12 +3,18 @@ import { ERAS, getEraCounts } from '@/lib/episodes';
 import mediumPosts from '@/data/medium-posts.json';
 import { CTAButton } from '@/components';
 
+const canonicalUrl = 'https://pipermorgan.ai/blog/episodes/';
+
 export const metadata: Metadata = {
   title: 'Development Eras - Building Piper Morgan',
   description: `${ERAS.length} development eras chronicling the journey of building Piper Morgan, from initial prototype to production-ready AI-augmented product management tool.`,
+  alternates: {
+    canonical: canonicalUrl,
+  },
   openGraph: {
     title: 'Development Eras - Building Piper Morgan',
     description: `${ERAS.length} development eras chronicling the journey of building Piper Morgan`,
+    url: canonicalUrl,
     type: 'website'
   }
 };

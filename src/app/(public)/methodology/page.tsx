@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Hero, CTAButton } from '@/components';
 
+const canonicalUrl = 'https://pipermorgan.ai/methodology/';
+
 export const metadata: Metadata = {
   title: 'The Excellence Flywheel | Piper Morgan Methodology',
   description: 'Learn how we build AI that actually helps. Our systematic approach to human-AI collaboration compounds quality over time.',
+  alternates: {
+    canonical: canonicalUrl,
+  },
   openGraph: {
     title: 'The Excellence Flywheel | Piper Morgan',
     description: 'Building AI that actually helps requires more than good intentions. It requires systematic methodology.',
+    url: canonicalUrl,
   },
 };
 

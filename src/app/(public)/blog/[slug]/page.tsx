@@ -54,13 +54,21 @@ export async function generateMetadata({
 
   const content = lookupContent(post);
   const description = content?.subtitle || post.excerpt || '';
+  // Without an explicit per-post canonical, this page inherited the root layout's
+  // alternates.canonical: '/' -- every blog post canonicalized to the homepage.
+  // trailingSlash: true (next.config.ts) means the served URL always ends in '/'.
+  const canonicalUrl = `https://pipermorgan.ai/blog/${slug}/`;
 
   return {
     title: `${post.title} | Piper Morgan`,
     description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: post.title,
       description,
+      url: canonicalUrl,
       type: 'article',
       publishedTime: post.pubDate,
       authors: post.author ? [post.author] : undefined,

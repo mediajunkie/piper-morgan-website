@@ -6,6 +6,9 @@ import { NewsletterSignup } from '@/components/organisms/NewsletterSignup';
 export const metadata: Metadata = {
   title: 'Join the Waitlist | Piper Morgan',
   description: 'Sign up for early beta access to Piper Morgan — AI-powered product management assistance built in public.',
+  alternates: {
+    canonical: 'https://pipermorgan.ai/try/beta/',
+  },
 };
 
 export default function BetaPage() {

@@ -2,12 +2,18 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { Hero, CTAButton } from '@/components';
 
+const canonicalUrl = 'https://pipermorgan.ai/try/alpha/';
+
 export const metadata: Metadata = {
   title: 'Join the Alpha | Piper Morgan',
   description: 'Join the Piper Morgan alpha program. Help shape the future of AI-assisted product management.',
+  alternates: {
+    canonical: canonicalUrl,
+  },
   openGraph: {
     title: 'Join the Piper Morgan Alpha',
     description: 'Help shape the future of AI-assisted product management.',
+    url: canonicalUrl,
   },
 };
 

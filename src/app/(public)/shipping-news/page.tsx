@@ -2,12 +2,18 @@ import { Metadata } from 'next';
 import { Suspense } from 'react';
 import ShippingNewsContent from './ShippingNewsContent';
 
+const canonicalUrl = 'https://pipermorgan.ai/shipping-news/';
+
 export const metadata: Metadata = {
   title: 'The Shipping News | Piper Morgan',
   description: 'Weekly updates from the Piper Morgan development team. What shipped, what we learned, and what\'s next.',
+  alternates: {
+    canonical: canonicalUrl,
+  },
   openGraph: {
     title: 'The Shipping News | Piper Morgan',
     description: 'Weekly updates from the Piper Morgan development team.',
+    url: canonicalUrl,
     images: ['/assets/blog-images/piper-ship.webp'],
   },
 };
