@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Burn-Down",
+    "excerpt": "July 20–23, 2026 For weeks, the test suite that's supposed to catch problems before they reach production had a problem of its own: it hadn't passed, fully, in over forty consecutive runs. Not a flaky test here or there. The whole workflow, red, run after run, long enough that I had stopped notic...",
+    "url": "/blog/the-burn-down",
+    "slug": "the-burn-down",
+    "publishedAt": "Aug 25, 2026",
+    "publishedAtISO": "2026-08-25T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-073804a66fe4",
+    "featuredImage": "/assets/blog-images/the-burn-down.webp",
+    "thumbnail": "/assets/blog-images/the-burn-down.webp",
+    "imageAlt": "A (translucent) AI electrician tests a fully illuminated theater marquee at dusk while a delighted manager looks on, with trays of replaced bulbs and a single-bulb tester nearby.",
+    "imageCaption": "\"At least all the lights are working now!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Jul 20, 2026",
+    "workDateISO": "2026-07-20T00:00:00.000Z"
+  },
+  {
     "title": "Read the Mock First",
     "excerpt": "June 17–19, 2026 We had a mockup. A real one, HTML and CSS, sitting in the repo since mid-June, showing exactly what I wanted the app's left-hand navigation to look like: a dark, minimal rail with your conversations in it, a \"new chat\" button, and a short row of utility links at the bottom. Nothi...",
     "url": "/blog/read-the-mock-first",
@@ -17,9 +39,9 @@
     "imageAlt": "A human design lead studies a spare room model while an AI designer holds the matching plan beside a finished room crowded with inherited furniture.",
     "imageCaption": "\"What is wrong with this picture?\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "Jun 17, 2026",
-    "workDateISO": "2026-06-17T00:00:00.000Z"
+    "workDateISO": "2026-06-17T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Trust Gate That Wasn't",

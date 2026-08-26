@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #057: A Checked Claim Has a Shelf Life",
+    "excerpt": "August 14–20, 2026 The team adopted a sharper version of a discipline. The rule used to be \"check the source, not the summary.\" This week four different agent roles ran into the same flaw: a correctly verified claim may still go stale before someone else relies on it. Verification is required at ...",
+    "url": "/blog/weekly-ship-057-a-checked-claim-has-a-shelf-life",
+    "slug": "weekly-ship-057-a-checked-claim-has-a-shelf-life",
+    "publishedAt": "Aug 26, 2026",
+    "publishedAtISO": "2026-08-26T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-e5ec30dfede7",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
+    "imageCaption": "",
+    "category": "ship",
+    "cluster": "",
+    "workDate": "Aug 14, 2026",
+    "workDateISO": "2026-08-14T00:00:00.000Z"
+  },
+  {
     "title": "The Burn-Down",
     "excerpt": "July 20–23, 2026 For weeks, the test suite that's supposed to catch problems before they reach production had a problem of its own: it hadn't passed, fully, in over forty consecutive runs. Not a flaky test here or there. The whole workflow, red, run after run, long enough that I had stopped notic...",
     "url": "/blog/the-burn-down",
@@ -17,9 +39,9 @@
     "imageAlt": "A (translucent) AI electrician tests a fully illuminated theater marquee at dusk while a delighted manager looks on, with trays of replaced bulbs and a single-bulb tester nearby.",
     "imageCaption": "\"At least all the lights are working now!\"",
     "category": "building",
-    "cluster": "",
     "workDate": "Jul 20, 2026",
-    "workDateISO": "2026-07-20T00:00:00.000Z"
+    "workDateISO": "2026-07-20T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Read the Mock First",
