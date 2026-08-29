@@ -1,8 +1,17 @@
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
 import { generateSEOMetadata } from '@/lib/domain-utils';
-import { Hero } from '@/components';
+import { FeaturedPost } from '@/components';
 import BlogContent from './BlogContent';
+import mediumPostsRaw from '@/data/medium-posts.json';
+import { sortByPubDate } from '@/lib/blog-utils';
+import type { MediumPost } from '@/types/domain';
+
+const mediumPosts = mediumPostsRaw as MediumPost[];
+const mostRecentPost = sortByPubDate(
+  mediumPosts.filter((p) => p.category !== 'ship'),
+  'desc'
+)[0];
 
 const seoData = generateSEOMetadata(
   'Building-in-Public: AI-Powered PM Methodology Development',
@@ -24,23 +33,23 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   return (
     <div>
-      {/* Hero Section */}
-      <Hero
-        headline="Building-in-public:"
-        highlightText="systematic PM excellence"
-        subheadline="Follow our transparent journey as we develop AI-powered product management methodology through verified patterns, breakthrough discoveries, and systematic excellence. Every decision documented, every pattern captured, every lesson shared."
-        primaryCTA={{
-          text: "Read Latest Updates",
-          href: "#recent-posts"
-        }}
-        secondaryCTA={{
-          text: "Join the Journey",
-          href: "/newsletter"
-        }}
-        background="surface"
-        align="center"
-        compact
-      />
+      {/* Featured Post — the actual most recent post, not generic marketing copy.
+          Replaces the old Hero (PM's 08-15 finding, confirmed live 08-28: the compact
+          Hero fix reduced padding but never addressed what's above the fold). */}
+      {mostRecentPost && (
+        <FeaturedPost
+          title={mostRecentPost.title}
+          excerpt={mostRecentPost.excerpt ?? ''}
+          href={mostRecentPost.url}
+          workDate={mostRecentPost.workDate}
+          publishedAt={mostRecentPost.publishedAt ?? ''}
+          readingTime={mostRecentPost.readingTime}
+          featuredImage={mostRecentPost.featuredImage}
+          category={mostRecentPost.category as 'building' | 'insight' | undefined}
+          cluster={mostRecentPost.cluster}
+          compact
+        />
+      )}
 
       <Suspense fallback={<div className="text-center py-16">Loading blog posts...</div>}>
         <BlogContent currentPage={1} />

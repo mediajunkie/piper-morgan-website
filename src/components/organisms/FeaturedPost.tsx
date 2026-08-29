@@ -23,6 +23,9 @@ export interface FeaturedPostProps {
   author?: string;
   /** Featured image URL */
   featuredImage?: string;
+  /** Reduced padding, no badge, no secondary CTA — for a post-index page's
+   *  above-the-fold slot rather than a homepage marketing section. */
+  compact?: boolean;
 }
 
 export function FeaturedPost({
@@ -36,27 +39,31 @@ export function FeaturedPost({
   href,
   author = 'Christian Crumlish',
   featuredImage,
+  compact = false,
 }: FeaturedPostProps) {
   const handleClick = () => {
-    trackBlogClick(title, href, 'featured_homepage');
+    trackBlogClick(title, href, compact ? 'featured_blog_index' : 'featured_homepage');
   };
 
   const episode = cluster ? getEra(cluster) : null;
   const episodeNumber = cluster ? getEraNumber(cluster) : null;
 
   return (
-    <section className="bg-gradient-to-br from-primary-teal/10 via-primary-orange/10 to-primary-teal/10 py-16 md:py-24">
+    <section className={`bg-gradient-to-br from-primary-teal/10 via-primary-orange/10 to-primary-teal/10 ${compact ? 'py-8 md:py-10' : 'py-16 md:py-24'}`}>
       <div className="site-container">
         <div className="max-w-7xl mx-auto">
-          {/* Featured Badge */}
-          <div className="flex items-center justify-center mb-8">
-            <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary-teal text-white font-semibold rounded-full text-sm shadow-md">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-              Featured Article
-            </span>
-          </div>
+          {/* Featured Badge — homepage only; redundant on an index page whose whole
+              purpose is showing posts */}
+          {!compact && (
+            <div className="flex items-center justify-center mb-8">
+              <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary-teal text-white font-semibold rounded-full text-sm shadow-md">
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                Featured Article
+              </span>
+            </div>
+          )}
 
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Content */}
@@ -82,19 +89,21 @@ export function FeaturedPost({
               )}
 
               {/* Title */}
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-dark dark:text-dark-text leading-tight mb-4">
+              <h1 className={`font-bold text-text-dark dark:text-dark-text leading-tight mb-4 ${
+                compact ? 'text-2xl md:text-3xl' : 'text-3xl md:text-4xl lg:text-5xl'
+              }`}>
                 {title}
-              </h2>
+              </h1>
 
               {/* Excerpt */}
               {excerpt && (
-                <p className="text-lg md:text-xl text-text-light dark:text-gray-300 mb-6 line-clamp-3">
+                <p className={`text-text-light dark:text-gray-300 mb-6 line-clamp-3 ${compact ? 'text-base md:text-lg' : 'text-lg md:text-xl'}`}>
                   {excerpt}
                 </p>
               )}
 
               {/* Temporal Metadata */}
-              <div className="flex flex-wrap items-center gap-3 text-sm text-gray-600 dark:text-gray-400 mb-8">
+              <div className={`flex flex-wrap items-center gap-3 text-sm text-gray-600 dark:text-gray-400 ${compact ? 'mb-4' : 'mb-8'}`}>
                 {workDate && workDate !== publishedAt ? (
                   <>
                     <span className="text-primary-teal-text dark:text-primary-teal font-medium">Work:</span>
@@ -114,7 +123,8 @@ export function FeaturedPost({
                 )}
               </div>
 
-              {/* CTA */}
+              {/* CTA — "View All Posts" dropped in compact mode: redundant on the
+                  page whose entire remaining content IS all the posts. */}
               <div className="flex flex-wrap gap-4">
                 <CTAButton
                   href={href}
@@ -124,13 +134,15 @@ export function FeaturedPost({
                 >
                   Read Full Article
                 </CTAButton>
-                <CTAButton
-                  href="/blog"
-                  variant="outline"
-                  size="lg"
-                >
-                  View All Posts
-                </CTAButton>
+                {!compact && (
+                  <CTAButton
+                    href="/blog"
+                    variant="outline"
+                    size="lg"
+                  >
+                    View All Posts
+                  </CTAButton>
+                )}
               </div>
             </div>
 
