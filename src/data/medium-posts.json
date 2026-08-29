@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Orphan Migration",
+    "excerpt": "June 17, 2026 We were missing a database table and a tool whose job is making sure tables exist told us nothing was wrong. The Projects page was returning a 500 error on a fresh database. The database had been built the correct way, the documented way, the way every other database in the system g...",
+    "url": "/blog/the-orphan-migration",
+    "slug": "the-orphan-migration",
+    "publishedAt": "Aug 29, 2026",
+    "publishedAtISO": "2026-08-29T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-c3f5fb093a4a",
+    "featuredImage": "/assets/blog-images/the-orphan-migration.webp",
+    "thumbnail": "/assets/blog-images/the-orphan-migration.webp",
+    "imageAlt": "A translucent AI surveyor and a city official compare a streetscape with a master plan, discovering that a large, established building occupies a conspicuously blank space on the official drawing.",
+    "imageCaption": "\"It's been there this whole time?\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Jun 17, 2026",
+    "workDateISO": "2026-06-17T00:00:00.000Z"
+  },
+  {
     "title": "The Detector That Notified Nobody",
     "excerpt": "July 26–28, 2026 My chief architect agent (Arch) noticed a pattern: a lot of the team's worst near-misses have had something in common. An agent is assigned to check something. It correctly finds nothing wrong, or it looks at the wrong thing, or it only looks at part of what it actually claimed t...",
     "url": "/blog/the-detector-that-notified-nobody",
@@ -17,9 +39,9 @@
     "imageAlt": "An AI lighthouse keeper proudly tends a powerful lamp shining inland, while a concerned harbor master notices an unwarned boat approaching rocky shallows offshore.",
     "imageCaption": "\"They can't see it!\"",
     "category": "building",
-    "cluster": "",
     "workDate": "Jul 26, 2026",
-    "workDateISO": "2026-07-26T00:00:00.000Z"
+    "workDateISO": "2026-07-26T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #057: A Checked Claim Has a Shelf Life",
