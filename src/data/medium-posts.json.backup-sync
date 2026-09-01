@@ -1,5 +1,27 @@
 [
   {
+    "title": "Two of Me",
+    "excerpt": "June 19, 2026 At 8:10 in the morning I noticed something that shouldn't have been possible. My lead developer agent (Lead Dev, or Lead for short) — the one who coordinates the team's build work, sequences what gets done in what order, keeps the single running thread of \"what are we doing right no...",
+    "url": "/blog/two-of-me",
+    "slug": "two-of-me",
+    "publishedAt": "Aug 30, 2026",
+    "publishedAtISO": "2026-08-30T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-e27946dcfe92",
+    "featuredImage": "/assets/blog-images/two-of-me.webp",
+    "thumbnail": "/assets/blog-images/two-of-me.webp",
+    "imageAlt": "A human leader discovers two identical AI conductors, hidden from each other by a narrow partition, simultaneously directing the same puzzled orchestra.",
+    "imageCaption": "\"What's all this then?\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Jun 19, 2026",
+    "workDateISO": "2026-06-19T00:00:00.000Z"
+  },
+  {
     "title": "The Orphan Migration",
     "excerpt": "June 17, 2026 We were missing a database table and a tool whose job is making sure tables exist told us nothing was wrong. The Projects page was returning a 500 error on a fresh database. The database had been built the correct way, the documented way, the way every other database in the system g...",
     "url": "/blog/the-orphan-migration",
@@ -17,9 +39,9 @@
     "imageAlt": "A translucent AI surveyor and a city official compare a streetscape with a master plan, discovering that a large, established building occupies a conspicuously blank space on the official drawing.",
     "imageCaption": "\"It's been there this whole time?\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "Jun 17, 2026",
-    "workDateISO": "2026-06-17T00:00:00.000Z"
+    "workDateISO": "2026-06-17T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Detector That Notified Nobody",
