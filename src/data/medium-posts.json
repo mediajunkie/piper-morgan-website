@@ -1,6 +1,6 @@
 [
   {
-    "title": "Weekly Ship #058: What we actually had",
+    "title": "Weekly Ship #058: What We Actually Had",
     "excerpt": "August 21–27, 2026 The architecture diagram shows four connectors, all labeled the same way. The code shows only one of them fit the label, the others being misleading. Similar patterns all week: An agent checked a safety claim attached to a routing decision and found it was false. A canonical-li...",
     "url": "/blog/weekly-ship-058-what-we-actually-had",
     "slug": "weekly-ship-058-what-we-actually-had",
