@@ -18,7 +18,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import path from 'path';
 import fs from 'fs';
 import { execSync } from 'child_process';
-import { loadCalendar } from '@/lib/editorial-calendar';
+import { loadCalendarLive, CalendarEntry } from '@/lib/editorial-calendar';
 import {
   parseDraftContent, writeDraft, serializeDraft,
   stripCaptionQuotes, wrapCaptionQuotes, Frontmatter,
@@ -42,8 +42,8 @@ function resolveAbsPath(draftPath: string): string {
   return path.join(PRODUCT_ROOT, draftPath);
 }
 
-function findEntry(slug: string) {
-  return loadCalendar().find(
+function findEntry(rows: CalendarEntry[], slug: string) {
+  return rows.find(
     e => e.draftPath && slugFromDraftPath(e.draftPath) === slug,
   );
 }
@@ -53,22 +53,29 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   const slug = typeof req.query.slug === 'string' ? req.query.slug : null;
 
+  // Live, not the build-time snapshot: this is an authoring surface whose whole
+  // job is opening things that were just created (a fresh calendar row is
+  // invisible to the bundled CSV until the next deploy). Same token the draft
+  // body already reads with; falls back to the snapshot on any failure and
+  // reports which source it used, never silently.
+  const { rows: entries, source } = await loadCalendarLive();
+
   if (req.method === 'GET' && !slug) {
-    const entries = loadCalendar().filter(
+    const openEntries = entries.filter(
       e => e.draftPath && !DONE_STATUSES.has((e.status || '').toLowerCase()),
     );
-    const drafts = entries.map(e => ({
+    const drafts = openEntries.map(e => ({
       slug: slugFromDraftPath(e.draftPath),
       title: e.title,
       status: e.status,
       pubDate: e.pubDate,
       draftPath: e.draftPath,
     }));
-    return res.status(200).json({ drafts });
+    return res.status(200).json({ drafts, source });
   }
 
   if (req.method === 'GET' && slug) {
-    const entry = findEntry(slug);
+    const entry = findEntry(entries, slug);
     if (!entry) return res.status(404).json({ error: `Draft not found: ${slug}` });
 
     try {
@@ -93,6 +100,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         frontmatter: { ...frontmatter, caption: stripCaptionQuotes(frontmatter.caption) },
         body,
         sha,
+        source,
       });
     } catch (e) {
       if (e instanceof DraftNotFoundError) return res.status(404).json({ error: e.message });
@@ -104,7 +112,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const { image = '', alt = '', caption = '', body = '', sha = null } = (req.body ?? {}) as {
       image?: string; alt?: string; caption?: string; body?: string; sha?: string | null;
     };
-    const entry = findEntry(slug);
+    const entry = findEntry(entries, slug);
     if (!entry) return res.status(404).json({ error: `Draft not found: ${slug}` });
 
     const frontmatter: Frontmatter = { image, alt, caption: wrapCaptionQuotes(caption) };
