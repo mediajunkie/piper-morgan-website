@@ -1,5 +1,27 @@
 [
   {
+    "title": "A Sender-Impersonation Bug, Four Days Before Beta",
+    "excerpt": "August 4, 2026 Four days before the first outside testers were due, my product-assistant agent (Piper Alpha) found something that broke my own stated rule for the forthcoming beta: no cross-user leakage on any surface a tester could reach. The Slack connector had a real bad one. Every direct mess...",
+    "url": "/blog/a-sender-impersonation-bug-four-days-before-beta",
+    "slug": "a-sender-impersonation-bug-four-days-before-beta",
+    "publishedAt": "Sep 1, 2026",
+    "publishedAtISO": "2026-09-01T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-a6b9db053776",
+    "featuredImage": "/assets/blog-images/a-sender-impersonation-bug-four-days-before-beta.webp",
+    "thumbnail": "/assets/blog-images/a-sender-impersonation-bug-four-days-before-beta.webp",
+    "imageAlt": "Three translucent AI bank inspectors continue checking a newly locked vault: one points out an exposed master-key machine while another stops a confused customer from retrying a disabled entrance, as their human leader watches.",
+    "imageCaption": "\"Careful, this isn't working yet!\"",
+    "category": "building",
+    "cluster": "",
+    "workDate": "Aug 4, 2026",
+    "workDateISO": "2026-08-04T00:00:00.000Z"
+  },
+  {
     "title": "Two of Me",
     "excerpt": "June 19, 2026 At 8:10 in the morning I noticed something that shouldn't have been possible. My lead developer agent (Lead Dev, or Lead for short) — the one who coordinates the team's build work, sequences what gets done in what order, keeps the single running thread of \"what are we doing right no...",
     "url": "/blog/two-of-me",
@@ -17,9 +39,9 @@
     "imageAlt": "A human leader discovers two identical AI conductors, hidden from each other by a narrow partition, simultaneously directing the same puzzled orchestra.",
     "imageCaption": "\"What's all this then?\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "Jun 19, 2026",
-    "workDateISO": "2026-06-19T00:00:00.000Z"
+    "workDateISO": "2026-06-19T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Orphan Migration",
