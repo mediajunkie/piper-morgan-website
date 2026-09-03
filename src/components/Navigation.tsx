@@ -84,7 +84,7 @@ export default function Navigation() {
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className="site-container">
+      <div className="site-container" ref={dropdownRef}>
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
@@ -107,7 +107,7 @@ export default function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6" ref={dropdownRef}>
+          <div className="hidden md:flex items-center space-x-6">
             {navigationItems.map((item) => {
               // Emphasized button (Try Piper)
               if (item.emphasized) {
