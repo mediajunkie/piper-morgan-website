@@ -111,17 +111,6 @@ export function ShipPostContent({ post, content }: ShipPostContentProps) {
         </div>
       </div>
 
-      {/* Ship image — fixed for all ships */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-8">
-        <div className="relative w-full h-48 md:h-72 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
-          <img
-            src="/assets/blog-images/piper-ship.webp"
-            alt="Piper Morgan ship illustration"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-
       {/* Content */}
       {content ? (
         <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 mb-12">
