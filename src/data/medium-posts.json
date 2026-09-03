@@ -1,5 +1,27 @@
 [
   {
+    "title": "Repetition Isn't Convergence",
+    "excerpt": "August 5–8, 2026 Two days before a beta deadline, my product-assistant agent (Piper Alpha, or PA for short) found something alarming: the production branch was 2,269 commits behind the main line of development, missing over four thousand files' worth of change. One reason it mattered was that a s...",
+    "url": "/blog/repetition-isnt-convergence",
+    "slug": "repetition-isnt-convergence",
+    "publishedAt": "Sep 3, 2026",
+    "publishedAtISO": "2026-09-03T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-3e2fea0f6b72",
+    "featuredImage": "/assets/blog-images/repetition-isnt-convergence.webp",
+    "thumbnail": "/assets/blog-images/repetition-isnt-convergence.webp",
+    "imageAlt": "Four AI detectives compare identical photos of a huge breach, while a fifth steps outside to inspect the actual unsecured door directly.",
+    "imageCaption": "\"Hey did anyone check this door?\"",
+    "category": "building",
+    "cluster": "2026-08-05",
+    "workDate": "Aug 5, 2026",
+    "workDateISO": "2026-08-05T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #058: What We Actually Had",
     "excerpt": "August 21–27, 2026 The architecture diagram shows four connectors, all labeled the same way. The code shows only one of them fit the label, the others being misleading. Similar patterns all week: An agent checked a safety claim attached to a routing decision and found it was false. A canonical-li...",
     "url": "/blog/weekly-ship-058-what-we-actually-had",
@@ -17,9 +39,9 @@
     "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
     "imageCaption": "",
     "category": "ship",
-    "cluster": "",
     "workDate": "Aug 21, 2026",
-    "workDateISO": "2026-08-21T00:00:00.000Z"
+    "workDateISO": "2026-08-21T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "A Sender-Impersonation Bug, Four Days Before Beta",
