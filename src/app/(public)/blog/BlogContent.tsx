@@ -175,9 +175,9 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
                         className="w-full md:w-auto px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-teal focus:border-transparent"
                       >
                         <option value="all">All Eras ({allSortedPosts.length} posts)</option>
-                        {ERAS.map((era) => (
+                        {ERAS.filter((era) => (episodeCounts[era.slug] || 0) > 0).map((era) => (
                           <option key={era.slug} value={era.slug}>
-                            {era.shortName} ({episodeCounts[era.slug] || 0} posts)
+                            {era.shortName} ({episodeCounts[era.slug]} posts)
                           </option>
                         ))}
                       </select>
