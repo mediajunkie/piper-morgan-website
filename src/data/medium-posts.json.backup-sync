@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #058: What We Actually Had",
+    "excerpt": "August 21–27, 2026 The architecture diagram shows four connectors, all labeled the same way. The code shows only one of them fit the label, the others being misleading. Similar patterns all week: An agent checked a safety claim attached to a routing decision and found it was false. A canonical-li...",
+    "url": "/blog/weekly-ship-058-what-we-actually-had",
+    "slug": "weekly-ship-058-what-we-actually-had",
+    "publishedAt": "Sep 2, 2026",
+    "publishedAtISO": "2026-09-02T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-201e33efbf5c",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
+    "imageCaption": "",
+    "category": "ship",
+    "cluster": "",
+    "workDate": "Aug 21, 2026",
+    "workDateISO": "2026-08-21T00:00:00.000Z"
+  },
+  {
     "title": "A Sender-Impersonation Bug, Four Days Before Beta",
     "excerpt": "August 4, 2026 Four days before the first outside testers were due, my product-assistant agent (Piper Alpha) found something that broke my own stated rule for the forthcoming beta: no cross-user leakage on any surface a tester could reach. The Slack connector had a real bad one. Every direct mess...",
     "url": "/blog/a-sender-impersonation-bug-four-days-before-beta",
@@ -17,9 +39,9 @@
     "imageAlt": "Three translucent AI bank inspectors continue checking a newly locked vault: one points out an exposed master-key machine while another stops a confused customer from retrying a disabled entrance, as their human leader watches.",
     "imageCaption": "\"Careful, this isn't working yet!\"",
     "category": "building",
-    "cluster": "",
     "workDate": "Aug 4, 2026",
-    "workDateISO": "2026-08-04T00:00:00.000Z"
+    "workDateISO": "2026-08-04T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Two of Me",
