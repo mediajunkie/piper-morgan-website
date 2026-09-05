@@ -1,5 +1,27 @@
 [
   {
+    "title": "We Built Onboarding in Our Own Image",
+    "excerpt": "May 19–31, 2026 My personal working preference for conversations is serial. One thing at a time. I've worked out over time that this keeps me from feeling overwhelmed by too much at once. While building a Claude plugin for a client, I deconstructed some of the plugins Anthropic was releasing at t...",
+    "url": "/blog/we-built-onboarding-in-our-own-image",
+    "slug": "we-built-onboarding-in-our-own-image",
+    "publishedAt": "Sep 5, 2026",
+    "publishedAtISO": "2026-09-05T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-b0d5a5e718ef",
+    "featuredImage": "/assets/blog-images/we-built-onboarding-in-our-own-image.webp",
+    "thumbnail": "/assets/blog-images/we-built-onboarding-in-our-own-image.webp",
+    "imageAlt": "A smiling, translucent dolphin concierge gestures toward a service bell while a weary hotel guest slumps beside her suitcase, waiting for the welcome to end.",
+    "imageCaption": "\"...oh, and did I mention the pool and gym?\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "May 19, 2026",
+    "workDateISO": "2026-05-19T00:00:00.000Z"
+  },
+  {
     "title": "Repetition Isn't Convergence",
     "excerpt": "August 5–8, 2026 Two days before a beta deadline, my product-assistant agent (Piper Alpha, or PA for short) found something alarming: the production branch was 2,269 commits behind the main line of development, missing over four thousand files' worth of change. One reason it mattered was that a s...",
     "url": "/blog/repetition-isnt-convergence",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "2026-08-05",
     "workDate": "Aug 5, 2026",
-    "workDateISO": "2026-08-05T00:00:00.000Z"
+    "workDateISO": "2026-08-05T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #058: What We Actually Had",
