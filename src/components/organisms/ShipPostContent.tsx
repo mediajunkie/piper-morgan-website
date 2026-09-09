@@ -62,7 +62,7 @@ export function ShipPostContent({ post, content }: ShipPostContentProps) {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-dark-bg">
+    <div className="min-h-screen bg-gray-50 dark:bg-dark-background">
       {/* Header — orange accent for ships */}
       <div className="bg-white dark:bg-dark-surface border-b-2 border-orange-400 dark:border-orange-500">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

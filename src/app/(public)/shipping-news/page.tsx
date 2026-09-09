@@ -31,7 +31,7 @@ const mostRecentShip = sortByPubDate(
 
 export default function ShippingNewsPage() {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-dark-bg">
+    <div className="min-h-screen bg-gray-50 dark:bg-dark-background">
       {/* Hero — banner-style branding, the ship illustration shown fully (native
           16:9, object-contain so a future differently-shaped image never gets
           silently cropped) rather than cropped into a thin strip like the old

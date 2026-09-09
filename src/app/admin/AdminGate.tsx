@@ -47,7 +47,7 @@ export function AdminGate({ children }: { children: React.ReactNode }) {
 
   if (state === 'static-fallback') {
     return (
-      <div className="min-h-screen bg-gray-50 dark:bg-dark-bg flex items-start justify-center pt-24 px-4">
+      <div className="min-h-screen bg-gray-50 dark:bg-dark-background flex items-start justify-center pt-24 px-4">
         <div className="max-w-md p-4 bg-amber-50 dark:bg-amber-900/20 rounded border border-amber-200 dark:border-amber-700 text-amber-800 dark:text-amber-300 text-sm">
           This is the static emergency-fallback build — it has no server, so admin editing
           isn&apos;t available here. Use <a href="https://pipermorgan.ai/admin/" className="underline font-medium">pipermorgan.ai/admin/</a>{' '}
@@ -59,7 +59,7 @@ export function AdminGate({ children }: { children: React.ReactNode }) {
 
   if (state === 'unconfigured') {
     return (
-      <div className="min-h-screen bg-gray-50 dark:bg-dark-bg flex items-start justify-center pt-24 px-4">
+      <div className="min-h-screen bg-gray-50 dark:bg-dark-background flex items-start justify-center pt-24 px-4">
         <div className="max-w-md p-4 bg-red-50 dark:bg-red-900/20 rounded border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 text-sm">
           Admin auth is not configured on this deployment — set <code>ADMIN_PASSWORD_HASH</code> and{' '}
           <code>ADMIN_SESSION_SECRET</code> in the environment.
@@ -69,7 +69,7 @@ export function AdminGate({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-dark-bg flex items-start justify-center pt-24">
+    <div className="min-h-screen bg-gray-50 dark:bg-dark-background flex items-start justify-center pt-24">
       <p className="text-sm text-gray-500 dark:text-gray-400 animate-pulse">Checking session…</p>
     </div>
   );

@@ -52,7 +52,7 @@ export default async function EditorialCalendarPage() {
   const structuredData = { renderedAt, source, counts, months, byDate, unscheduled };
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-dark-bg">
+    <div className="min-h-screen bg-gray-50 dark:bg-dark-background">
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="mb-8">
           <p className="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 font-medium">Admin</p>

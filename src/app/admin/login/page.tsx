@@ -83,7 +83,7 @@ function LoginForm() {
 
 export default function AdminLoginPage() {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-dark-bg flex items-start justify-center pt-24 px-4">
+    <div className="min-h-screen bg-gray-50 dark:bg-dark-background flex items-start justify-center pt-24 px-4">
       {IS_STATIC_EXPORT ? (
         <StaticFallbackNotice />
       ) : (
