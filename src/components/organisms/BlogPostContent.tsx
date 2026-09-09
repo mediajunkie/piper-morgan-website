@@ -158,18 +158,20 @@ export function BlogPostContent({ post, content }: BlogPostContentProps) {
       {/* Featured Image */}
       {post.featuredImage && (
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-8">
-          <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
-            <img
-              src={post.featuredImage}
-              alt={post.imageAlt || post.title}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          {imageCaption && (
-            <p className="text-center text-sm text-gray-600 dark:text-gray-400 mt-3 italic">
-              {imageCaption}
-            </p>
-          )}
+          <figure>
+            <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
+              <img
+                src={post.featuredImage}
+                alt={post.imageAlt || post.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            {imageCaption && (
+              <figcaption className="text-center text-sm text-gray-600 dark:text-gray-400 mt-3 italic">
+                {imageCaption}
+              </figcaption>
+            )}
+          </figure>
         </div>
       )}
 
