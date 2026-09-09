@@ -468,6 +468,28 @@ function convertToHtml(body) {
     if (it1) { out.push(`<p><em>${renderInline(it1[1])}</em></p>`); i++; continue; }
     if (it2 && !it2[1].includes('*')) { out.push(`<p><em>${renderInline(it2[1])}</em></p>`); i++; continue; }
 
+    // Image (linked or plain) immediately followed by a standalone italic caption
+    // line (no blank line between) → <figure><img/></figure> with a <figcaption>,
+    // instead of falling through to the generic multi-line-paragraph <p>...<br />...</p>
+    // path below. Without a programmatic figure/figcaption association a screen
+    // reader announces the caption as an unrelated next paragraph, not as the
+    // image's caption (Dispatch-PM proposal, 2026-09-09). Adjacent-source is
+    // the authoring convention going forward (Docs, same thread) — a blank
+    // line between image and caption still falls through to the paragraph path.
+    const imgOnly = trimmed.match(/^\[!\[([^\]]*)\]\(([^)]+)\)\]\(([^)]+)\)$/) ||
+                    trimmed.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+    if (imgOnly && i + 1 < lines.length) {
+      const nextTrimmed = lines[i + 1].trim();
+      const capIt1 = nextTrimmed.match(/^_(.+)_$/);
+      const capIt2 = nextTrimmed.match(/^\*(.+)\*$/);
+      const caption = capIt1 ? capIt1[1] : (capIt2 && !capIt2[1].includes('*') ? capIt2[1] : null);
+      if (caption !== null) {
+        out.push(`<figure>${renderInline(trimmed)}<figcaption>${renderInline(caption)}</figcaption></figure>`);
+        i += 2;
+        continue;
+      }
+    }
+
     // Multi-line paragraph block: collect consecutive non-blank, non-block-starting lines.
     // Join with <br /> inside one <p> if >1 line; else just a <p>.
     const paraLines = [];
