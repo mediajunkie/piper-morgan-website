@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Mailbox Trust Violation",
+    "excerpt": "August 8–9, 2026 On August 8th, my lead developer agent (Lead) sent my chief architect agent (Arch) a memo — the results of a probe Arch had ordered themself, showing that one specific piece of our routing system was carrying more than half the traffic. Good news, worth reading carefully. Ninety-...",
+    "url": "/blog/the-mailbox-trust-violation",
+    "slug": "the-mailbox-trust-violation",
+    "publishedAt": "Sep 11, 2026",
+    "publishedAtISO": "2026-09-11T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-defb143fe6eb",
+    "featuredImage": "/assets/blog-images/the-mailbox-trust-violation.webp",
+    "thumbnail": "/assets/blog-images/the-mailbox-trust-violation.webp",
+    "imageAlt": "A human discovers sealed mail filed as read while one luminous agent celebrates an empty inbox and another confronts an overflowing inbox beyond a disconnected mechanism.",
+    "imageCaption": "\"Did we read these, or just file them?\"",
+    "category": "building",
+    "cluster": "the-alpha",
+    "workDate": "Aug 9, 2026",
+    "workDateISO": "2026-08-09T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #059: The Verifier Is Not Exempt",
     "excerpt": "August 28 – September 3, 2026 A full architectural review went from a Saturday-morning \"step up and assert your point of view\" to a ratified constitution in about thirty-six hours, and the rest of the week executed against it. The open-work count fell by nineteen, the most it has moved in a week....",
     "url": "/blog/weekly-ship-059-the-verifier-is-not-exempt",
@@ -19,7 +41,8 @@
     "category": "ship",
     "cluster": "the-alpha",
     "workDate": "Aug 28, 2026",
-    "workDateISO": "2026-08-28T00:00:00.000Z"
+    "workDateISO": "2026-08-28T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "More Than Anyone Ever Reported to Me",

@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #059: The Verifier Is Not Exempt",
+    "excerpt": "August 28 – September 3, 2026 A full architectural review went from a Saturday-morning \"step up and assert your point of view\" to a ratified constitution in about thirty-six hours, and the rest of the week executed against it. The open-work count fell by nineteen, the most it has moved in a week....",
+    "url": "/blog/weekly-ship-059-the-verifier-is-not-exempt",
+    "slug": "weekly-ship-059-the-verifier-is-not-exempt",
+    "publishedAt": "Sep 9, 2026",
+    "publishedAtISO": "2026-09-09T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-d5d96e000593",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
+    "imageCaption": "",
+    "category": "ship",
+    "cluster": "the-alpha",
+    "workDate": "Aug 28, 2026",
+    "workDateISO": "2026-08-28T00:00:00.000Z"
+  },
+  {
     "title": "More Than Anyone Ever Reported to Me",
     "excerpt": "August 8, 2026 I spent a Friday morning one month ago testing the product myself, the way an actual user would, instead of reading reports about how ready it was. A reminder feature broke three separate ways in under an hour. Three distinct, unrelated failures, each one a real defect that had bee...",
     "url": "/blog/more-than-anyone-ever-reported-to-me",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "the-alpha",
     "workDate": "Aug 8, 2026",
-    "workDateISO": "2026-08-08T00:00:00.000Z"
+    "workDateISO": "2026-08-08T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "We Built Onboarding in Our Own Image",
