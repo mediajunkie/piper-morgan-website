@@ -485,7 +485,7 @@ const inputCls = [
   'text-sm',
 ].join(' ');
 
-function fileToBase64(file: File): Promise<string> {
+function fileToBase64(file: Blob): Promise<string> {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.onload = () => {
@@ -496,6 +496,51 @@ function fileToBase64(file: File): Promise<string> {
     reader.onerror = () => reject(reader.error ?? new Error('Failed to read file'));
     reader.readAsDataURL(file);
   });
+}
+
+// Client-side normalize for phone uploads (PM report 2026-09-12): modern phone
+// photos routinely exceed the server's ~3.3MB cap (Vercel body-limit headroom),
+// and a HEIC picked via the Files app bypasses the Photos picker's automatic
+// JPEG transcode and hits the server's extension allowlist. Decoding into a
+// canvas solves both at once — Safari (where HEICs come from) can decode HEIC
+// natively — and a 2000px-max JPEG re-encode is comfortably under the cap while
+// staying a good webp-conversion source for publish time. Files that can't
+// decode (or GIFs, which would lose animation) fall through untouched to the
+// existing server checks.
+const NORMALIZE_MAX_DIM = 2000;
+const NORMALIZE_QUALITY = 0.88;
+const NORMALIZE_SKIP_TYPES = new Set(['image/gif']);
+const NORMALIZE_THRESHOLD_BYTES = 2.5 * 1024 * 1024;
+
+async function normalizeImageIfNeeded(file: File): Promise<{ file: Blob; filename: string }> {
+  const ext = file.name.slice(file.name.lastIndexOf('.')).toLowerCase();
+  const needsFormatFix = ['.heic', '.heif'].includes(ext);
+  const needsSizeFix = file.size > NORMALIZE_THRESHOLD_BYTES;
+  if ((!needsFormatFix && !needsSizeFix) || NORMALIZE_SKIP_TYPES.has(file.type)) {
+    return { file, filename: file.name };
+  }
+  try {
+    const bitmap = await createImageBitmap(file);
+    const scale = Math.min(1, NORMALIZE_MAX_DIM / Math.max(bitmap.width, bitmap.height));
+    const w = Math.round(bitmap.width * scale);
+    const h = Math.round(bitmap.height * scale);
+    const canvas = document.createElement('canvas');
+    canvas.width = w;
+    canvas.height = h;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return { file, filename: file.name };
+    ctx.drawImage(bitmap, 0, 0, w, h);
+    bitmap.close();
+    const blob = await new Promise<Blob | null>(resolve =>
+      canvas.toBlob(resolve, 'image/jpeg', NORMALIZE_QUALITY));
+    if (!blob) return { file, filename: file.name };
+    const base = file.name.slice(0, file.name.lastIndexOf('.')) || file.name;
+    return { file: blob, filename: `${base}.jpg` };
+  } catch {
+    // Not decodable in this browser (e.g. HEIC on Chrome) — let the server's
+    // own checks produce their specific, actionable message.
+    return { file, filename: file.name };
+  }
 }
 
 function ImageUpload({
@@ -515,11 +560,12 @@ function ImageUpload({
     if (!file) return;
     onUploadStart();
     try {
-      const contentBase64 = await fileToBase64(file);
+      const normalized = await normalizeImageIfNeeded(file);
+      const contentBase64 = await fileToBase64(normalized.file);
       const res = await fetch(`/api/compose/upload?slug=${encodeURIComponent(slug)}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ filename: file.name, contentBase64 }),
+        body: JSON.stringify({ filename: normalized.filename, contentBase64 }),
       });
       const data = await res.json().catch(() => null) as { filename?: string; error?: string } | null;
       if (!res.ok) throw new Error(data?.error || `HTTP ${res.status}`);
@@ -535,7 +581,7 @@ function ImageUpload({
       <input
         ref={inputRef}
         type="file"
-        accept="image/png,image/jpeg,image/gif,image/webp"
+        accept="image/png,image/jpeg,image/gif,image/webp,image/heic,image/heif"
         onChange={handleChange}
         className="hidden"
         aria-label="Upload image"
