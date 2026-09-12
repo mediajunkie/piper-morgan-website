@@ -26,7 +26,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import path from 'path';
 import fs from 'fs';
-import { loadCalendar } from '@/lib/editorial-calendar';
+import { loadCalendarLive } from '@/lib/editorial-calendar';
 import { githubDraftsEnabled, uploadBinaryFile, DraftConflictError } from '@/lib/github-drafts';
 import { ensureAdmin } from '@/lib/admin-auth';
 
@@ -58,7 +58,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const slug = typeof req.query.slug === 'string' ? req.query.slug : null;
   if (!slug) return res.status(400).json({ error: 'Missing slug' });
 
-  const entry = loadCalendar().find(e => e.draftPath && slugFromDraftPath(e.draftPath) === slug);
+  // Request-time calendar read, not the build-time snapshot (same fix as
+  // website#38's compose.ts switch on 2026-09-02 — this endpoint was missed
+  // in that pass, so uploads to any draft whose calendar row was added since
+  // the last deploy 404'd here while the editor itself worked).
+  const { rows: calendarRows } = await loadCalendarLive();
+  const entry = calendarRows.find(e => e.draftPath && slugFromDraftPath(e.draftPath) === slug);
   if (!entry) return res.status(404).json({ error: `Draft not found: ${slug}` });
 
   const { filename, contentBase64 } = (req.body ?? {}) as { filename?: string; contentBase64?: string };
