@@ -99,8 +99,17 @@ export default function RootLayout({
         <link rel="preload" as="image" href="/assets/pm-logo.png" />
         <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/HossRound-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        {/* Critical above-the-fold CSS. Wrapped in @layer base (website#40): unlayered,
+            these hand-copied rules outranked EVERY layered rule in the compiled Tailwind
+            stylesheet — including dark: variants — permanently pinning e.g. .text-text-dark
+            to its light-mode color in dark mode. In Tailwind's own base layer they paint
+            early exactly as before (sole-source rules like .site-container are unaffected)
+            but correctly lose to components/utilities once the real stylesheet loads. A NEW
+            layer name would NOT work here: the compiled stylesheet loads earlier in document
+            order, so a later-declared layer would outrank utilities and re-create the bug. */}
         <style dangerouslySetInnerHTML={{
           __html: `
+            @layer base {
             :root{--primary-teal:#2DD4BF;--primary-teal-text:#0D9488;--text-dark:#1F2937;--text-light:#6B7280;--background:#FFFFFF;--surface:#F9FAFB}
             .dark{--text-dark:#F1F5F9;--text-light:#94A3B8;--background:#0F172A;--surface:#1E293B}
             @font-face{font-family:'Inter';src:url('/fonts/inter-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -174,6 +183,7 @@ export default function RootLayout({
             }
             @media (min-width:1024px){
               .lg\\:text-6xl{font-size:3.75rem;line-height:1}
+            }
             }
           `
         }} />
