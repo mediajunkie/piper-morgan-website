@@ -19,7 +19,8 @@
     "category": "building",
     "cluster": "the-alpha",
     "workDate": "Aug 9, 2026",
-    "workDateISO": "2026-08-09T00:00:00.000Z"
+    "workDateISO": "2026-08-09T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #059: The Verifier Is Not Exempt",
@@ -933,7 +934,7 @@
     "guid": "blog-first-5a170754eb2b",
     "featuredImage": "/assets/blog-images/piper-ship.webp",
     "thumbnail": "/assets/blog-images/piper-ship.webp",
-    "imageAlt": "",
+    "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
     "imageCaption": "",
     "category": "ship",
     "cluster": "the-mechanism",
