@@ -144,7 +144,17 @@ if (errors.length) {
   process.exit(1);
 }
 
-const todayIso = () => new Date().toISOString().slice(0, 10);
+// LOCAL calendar date, not UTC (#32): toISOString() is UTC, so at ~5pm-midnight
+// Pacific "today" had already rolled to tomorrow — a live 2026-08-11 publish got
+// the wrong pubDate this way (caught by the caller, not the tool). pubDate means
+// "the day this went out" in the publisher's own terms, so local is the correct
+// default. (workDate has NO default at all — that's deliberate and different:
+// a defaulted workDate is semantically wrong in every case, not just near the
+// UTC boundary; see the v0.17 fail-loud fix.)
+const todayIso = () => {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+};
 const cfg = {
   draftPath: path.resolve(args.draft),
   imagePath: args.image ? path.resolve(args.image) : null,
