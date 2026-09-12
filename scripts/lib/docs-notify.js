@@ -85,7 +85,7 @@ Per skill v0.16 procedure:
 
 - **Step 6** (after PM syndicates): \`/update-calendar\` to backfill \`status=published\`, \`blogURL\`, \`blogPath\`, \`canonicalSite=distributed\`, \`mediumURL\`, \`linkedinURL\`, \`altText\`, \`caption\`
 - **Step 7**: commit product repo
-- **Step 9** (after syndication confirmed): drafts archival — \`drafts/published/\` for the .md, \`drafts/images-archive/\` for the source image
+- **Step 9** (after syndication confirmed): archive the .md to \`drafts/published/\`. (The source image is now archived there AUTOMATICALLY by publish-post.js at image-prep time — website#37; the old \`images-archive/\` split is retired, per Docs' 2026-09-02 practice correction.)
 
 ## Structured data (for \`/update-calendar\` consumption)
 

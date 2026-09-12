@@ -541,11 +541,52 @@ function which(cmd) {
   return r.status === 0 ? r.stdout.trim() : null;
 }
 
+// website#37: archive destination for a source image after successful conversion —
+// a `published/` subdirectory NEXT TO the source. For the standard flow (source in
+// the product repo's docs/public/comms/drafts/) this is exactly Docs' current
+// archive practice (drafts/published/ for BOTH files since 2026-08-31 — per Docs'
+// corrections on the issue, NOT the stale images-archive/ split docs-notify.js
+// used to describe). Destination is COMMITTED, not ignored — restating Docs'
+// existing deliberate choice (their archive commits are real) rather than
+// silently inheriting it.
+function archivedImagePath(srcPath) {
+  return path.join(path.dirname(srcPath), 'published', path.basename(srcPath));
+}
+
+function archiveSourceImage(srcPath) {
+  const dest = archivedImagePath(srcPath);
+  if (cfg.dryRun) { log(`[dry-run] would archive source image: ${srcPath} → ${dest}`); return; }
+  try {
+    fs.mkdirSync(path.dirname(dest), { recursive: true });
+    fs.renameSync(srcPath, dest);
+    log(`📦 source image archived: ${dest}`);
+  } catch (e) {
+    // Archival failing must never fail a publish whose webp already landed —
+    // the archive is hygiene (website#37's git-stash hazard), not correctness.
+    log(`⚠️  source-image archival failed (publish itself is fine): ${e.message}`);
+  }
+}
+
 function prepImage(srcPath, destSlug) {
   const dest = path.join(BLOG_IMAGES_DIR, `${destSlug}.webp`);
-  if (cfg.dryRun) { log(`[dry-run] would prep image: ${srcPath} → ${dest}`); return dest; }
+  if (cfg.dryRun) {
+    log(`[dry-run] would prep image: ${srcPath} → ${dest}`);
+    archiveSourceImage(srcPath);
+    return dest;
+  }
+  let srcAlreadyArchived = false;
   if (!fs.existsSync(srcPath)) {
-    throw Object.assign(new Error(`image not found: ${srcPath}`), { exitCode: 3 });
+    // Idempotent re-publish (website#37): a prior run may have already archived
+    // the source. If it's sitting at the archive location, use it from there —
+    // and skip re-archiving below, since it's already home.
+    const archived = archivedImagePath(srcPath);
+    if (fs.existsSync(archived)) {
+      log(`ℹ️  source not at ${srcPath} — using already-archived copy: ${archived}`);
+      srcPath = archived;
+      srcAlreadyArchived = true;
+    } else {
+      throw Object.assign(new Error(`image not found: ${srcPath}`), { exitCode: 3 });
+    }
   }
   fs.mkdirSync(path.dirname(dest), { recursive: true });
 
@@ -561,6 +602,7 @@ function prepImage(srcPath, destSlug) {
       if (r.status !== 0) throw new Error('cwebp failed');
       log(`✅ image prepared (cwebp): ${dest}`);
       filesMutated.push(path.relative(REPO_ROOT, dest));
+      if (!srcAlreadyArchived) archiveSourceImage(srcPath);
       return dest;
     } finally {
       try { fs.unlinkSync(tmp); } catch {}
@@ -582,6 +624,7 @@ function prepImage(srcPath, destSlug) {
     if (r.status === 0) {
       log(`✅ image prepared (Pillow): ${dest}`);
       filesMutated.push(path.relative(REPO_ROOT, dest));
+      if (!srcAlreadyArchived) archiveSourceImage(srcPath);
       return dest;
     }
     log('   Pillow unavailable or failed — falling through to sharp');
@@ -610,6 +653,7 @@ function prepImage(srcPath, destSlug) {
     if (r.status === 0) {
       log(`✅ image prepared (sharp): ${dest}`);
       filesMutated.push(path.relative(REPO_ROOT, dest));
+      if (!srcAlreadyArchived) archiveSourceImage(srcPath);
       return dest;
     }
   }
