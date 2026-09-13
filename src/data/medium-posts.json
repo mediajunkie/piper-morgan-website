@@ -1,5 +1,27 @@
 [
   {
+    "title": "Who's Who at Piper Morgan",
+    "excerpt": "September 2026 A friend who's a pretty keen explorer of AI, savvy about the societal ills underpinning so much of the business behind these new methods as well as equally fascinated by the better possibilities, asked me a fair question a month or so ago when we were discussing this blog series ab...",
+    "url": "/blog/whos-who-at-piper-morgan",
+    "slug": "whos-who-at-piper-morgan",
+    "publishedAt": "Sep 13, 2026",
+    "publishedAtISO": "2026-09-13T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-3081272aa6c2",
+    "featuredImage": "/assets/blog-images/whos-who-at-piper-morgan.webp",
+    "thumbnail": "/assets/blog-images/whos-who-at-piper-morgan.webp",
+    "imageAlt": "A bespectacled founder holding coffee poses with eleven colorful luminous AI colleagues, while a developed photograph transforms the agents into role-playing variations of the founder himself.",
+    "imageCaption": "\"How about one where everybody shows a little personality?\"",
+    "category": "insight",
+    "cluster": "the-alpha",
+    "workDate": "Sep 8, 2026",
+    "workDateISO": "2026-09-08T00:00:00.000Z"
+  },
+  {
     "title": "Piper Morgan Eras",
     "excerpt": "September 2026 On the Piper Morgan website where this blog appears canonically (before some posts are syndicated to the Building Piper Morgan newsletter on LinkedIn or the Medium publication of the same name, or both), the navigation includes a working \"eras\" structure that clusters the posts int...",
     "url": "/blog/piper-morgan-eras",
@@ -19,7 +41,8 @@
     "category": "insight",
     "cluster": "the-alpha",
     "workDate": "Sep 6, 2026",
-    "workDateISO": "2026-09-06T00:00:00.000Z"
+    "workDateISO": "2026-09-06T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Mailbox Trust Violation",
