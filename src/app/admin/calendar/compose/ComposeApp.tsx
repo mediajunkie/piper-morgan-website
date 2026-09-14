@@ -1,7 +1,7 @@
 'use client';
 
 import { useSearchParams, useRouter } from 'next/navigation';
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useLayoutEffect, useRef, useCallback } from 'react';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -172,6 +172,41 @@ function clearLocalDraft(slug: string) {
   }
 }
 
+/**
+ * Body view mode (PM request 2026-09-12).
+ *
+ * PM's stated pain was NOT remembering markdown syntax — it was that raw markdown
+ * is "literally easier to read" when rendered. PM proposed the cheapest fix
+ * themselves: a toggle that maintains cursor location. That's this.
+ *
+ * Deliberately NOT a true WYSIWYG: a real rich-text editor re-serializes markdown
+ * on save, which normalizes formatting (noisy git diffs on a file Comms also edits
+ * directly, more spurious 409s) and risks silently breaking publish-post.js's house
+ * conventions — the adjacent image+caption <figure> rule among them. This keeps
+ * markdown as the single stored representation and changes only what's on screen.
+ *
+ * Preference is per-user, not per-draft, so it persists across drafts and reloads.
+ */
+type BodyView = 'split' | 'source' | 'preview';
+const BODY_VIEW_KEY = 'compose-body-view';
+
+function readBodyView(): BodyView {
+  try {
+    const v = window.localStorage.getItem(BODY_VIEW_KEY);
+    return v === 'source' || v === 'preview' || v === 'split' ? v : 'split';
+  } catch {
+    return 'split';
+  }
+}
+
+function writeBodyView(v: BodyView) {
+  try {
+    window.localStorage.setItem(BODY_VIEW_KEY, v);
+  } catch {
+    // no-op — a lost view preference is cosmetic
+  }
+}
+
 function ComposeEdit({ slug }: { slug: string }) {
   const router = useRouter();
   const [draft, setDraft] = useState<DraftDetail | null>(null);
@@ -188,6 +223,29 @@ function ComposeEdit({ slug }: { slug: string }) {
   const [uploading, setUploading] = useState(false);
   const [uploadError, setUploadError] = useState<string | null>(null);
   const [localDraftOffer, setLocalDraftOffer] = useState<LocalDraft | null>(null);
+
+  // Body view toggle + caret preservation (PM 2026-09-12). Initialized from a
+  // lazy initializer, not a useEffect: reading localStorage during the first
+  // client render avoids a visible flip from the default to the stored view.
+  // (Safe here — this file is 'use client' and ComposeEdit only ever renders
+  // client-side, behind the admin gate.)
+  const [bodyView, setBodyView] = useState<BodyView>(() =>
+    typeof window === 'undefined' ? 'split' : readBodyView());
+  const bodyRef = useRef<HTMLTextAreaElement>(null);
+  const previewRef = useRef<HTMLDivElement>(null);
+  // The textarea is UNMOUNTED in 'preview' mode, so its selection can't be read
+  // at toggle time — it has to be captured continuously while it exists.
+  const caretRef = useRef({ start: 0, end: 0, scrollTop: 0 });
+
+  const rememberCaret = useCallback(() => {
+    const el = bodyRef.current;
+    if (!el) return;
+    caretRef.current = {
+      start: el.selectionStart,
+      end: el.selectionEnd,
+      scrollTop: el.scrollTop,
+    };
+  }, []);
 
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lastSavedRef = useRef<string | null>(null);
@@ -334,6 +392,34 @@ function ComposeEdit({ slug }: { slug: string }) {
   // Cleanup timer on unmount
   useEffect(() => () => { if (timerRef.current) clearTimeout(timerRef.current); }, []);
 
+  // Restore caret + scroll whenever the textarea comes back (PM's explicit ask:
+  // "a toggle that maintains cursor location"). useLayoutEffect, not useEffect —
+  // it runs before paint, so the caret never visibly lands at position 0 first.
+  // Depends on bodyView only: this must fire on remount, not on every keystroke.
+  useLayoutEffect(() => {
+    if (bodyView === 'preview') {
+      // Scroll the preview to roughly where the caret was. Proportional mapping
+      // (caret line / total lines), NOT a real source-to-output map — mdToHtml is
+      // regex-based and tracks no line numbers, so an exact anchor would mean
+      // rewriting it. Approximate is honest here and costs nothing.
+      const el = previewRef.current;
+      if (!el) return;
+      const total = body.split('\n').length;
+      if (total <= 1) return;
+      const caretLine = body.slice(0, caretRef.current.start).split('\n').length;
+      const ratio = Math.min(1, Math.max(0, (caretLine - 1) / (total - 1)));
+      el.scrollTop = ratio * Math.max(0, el.scrollHeight - el.clientHeight);
+      return;
+    }
+    const el = bodyRef.current;
+    if (!el) return;
+    const { start, end, scrollTop } = caretRef.current;
+    const max = el.value.length;
+    el.selectionStart = Math.min(start, max);
+    el.selectionEnd = Math.min(end, max);
+    el.scrollTop = scrollTop;
+  }, [bodyView, body]);
+
   if (loadError) return (
     <div className="p-4 bg-red-50 dark:bg-red-900/20 rounded border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 text-sm">
       {loadError}
@@ -438,21 +524,56 @@ function ComposeEdit({ slug }: { slug: string }) {
         </Field>
 
         <div>
-          <label className="block text-xs font-medium text-gray-600 dark:text-gray-400 mb-1">Body</label>
+          <div className="flex items-center justify-between mb-1">
+            <label className="block text-xs font-medium text-gray-600 dark:text-gray-400">Body</label>
+            <div className="flex rounded-md border border-gray-300 dark:border-gray-700 overflow-hidden" role="group" aria-label="Body view">
+              {(['source', 'split', 'preview'] as BodyView[]).map(v => (
+                <button
+                  key={v}
+                  type="button"
+                  onClick={() => {
+                    // Capture BEFORE the state change — in 'preview' the textarea
+                    // unmounts, so this is the last chance to read its selection.
+                    rememberCaret();
+                    setBodyView(v);
+                    writeBodyView(v);
+                  }}
+                  aria-pressed={bodyView === v}
+                  className={`px-3 py-1 text-xs font-medium transition-colors ${
+                    bodyView === v
+                      ? 'bg-primary-teal text-white'
+                      : 'bg-white dark:bg-dark-surface text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800'
+                  }`}
+                >
+                  {v === 'source' ? 'Source' : v === 'split' ? 'Split' : 'Preview'}
+                </button>
+              ))}
+            </div>
+          </div>
           <div className="flex flex-col xl:flex-row gap-4">
-            <textarea
-              id="field-body"
-              value={body}
-              onChange={e => handleBodyChange(e.target.value)}
-              rows={40}
-              className={`${inputCls} font-mono text-sm resize-y xl:w-1/2`}
-              aria-label="Markdown source"
-            />
-            <div
-              className="xl:w-1/2 min-h-[10rem] border border-gray-200 dark:border-gray-700 rounded-md p-4 overflow-auto bg-gray-50 dark:bg-gray-900 prose prose-sm dark:prose-invert max-w-none"
-              aria-label="Preview"
-              dangerouslySetInnerHTML={{ __html: mdToHtml(body) }}
-            />
+            {bodyView !== 'preview' && (
+              <textarea
+                id="field-body"
+                ref={bodyRef}
+                value={body}
+                onChange={e => handleBodyChange(e.target.value)}
+                // Track the caret continuously: onSelect covers clicks, arrow keys,
+                // and typing; onScroll covers scrolling without moving the caret.
+                onSelect={rememberCaret}
+                onScroll={rememberCaret}
+                rows={40}
+                className={`${inputCls} font-mono text-sm resize-y ${bodyView === 'split' ? 'xl:w-1/2' : 'w-full'}`}
+                aria-label="Markdown source"
+              />
+            )}
+            {bodyView !== 'source' && (
+              <div
+                ref={previewRef}
+                className={`${bodyView === 'split' ? 'xl:w-1/2' : 'w-full'} min-h-[10rem] ${bodyView === 'preview' ? 'max-h-[80vh]' : ''} border border-gray-200 dark:border-gray-700 rounded-md p-4 overflow-auto bg-gray-50 dark:bg-gray-900 prose prose-sm dark:prose-invert max-w-none`}
+                aria-label="Preview"
+                dangerouslySetInnerHTML={{ __html: mdToHtml(body) }}
+              />
+            )}
           </div>
         </div>
       </div>
