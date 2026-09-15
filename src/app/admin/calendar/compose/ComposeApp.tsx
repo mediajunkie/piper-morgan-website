@@ -236,6 +236,10 @@ function ComposeEdit({ slug }: { slug: string }) {
   // The textarea is UNMOUNTED in 'preview' mode, so its selection can't be read
   // at toggle time — it has to be captured continuously while it exists.
   const caretRef = useRef({ start: 0, end: 0, scrollTop: 0 });
+  // Which view the restore effect below has already run for. Restoring is only
+  // correct on a view CHANGE; doing it on a body change fights the browser's own
+  // caret advance and inserts typed text backwards.
+  const restoredViewRef = useRef<BodyView | null>(null);
 
   const rememberCaret = useCallback(() => {
     const el = bodyRef.current;
@@ -395,8 +399,15 @@ function ComposeEdit({ slug }: { slug: string }) {
   // Restore caret + scroll whenever the textarea comes back (PM's explicit ask:
   // "a toggle that maintains cursor location"). useLayoutEffect, not useEffect —
   // it runs before paint, so the caret never visibly lands at position 0 first.
-  // Depends on bodyView only: this must fire on remount, not on every keystroke.
+  // Must fire on a VIEW CHANGE only, never on a keystroke. `body` is in the deps
+  // because the preview scroll math reads it, so the guard — not the deps array —
+  // is what enforces that. Without the guard this effect re-ran on every
+  // keystroke and rewound the caret to its pre-keystroke position, so typed
+  // characters came out reversed ("odd" → "ddo"). Regression shipped in bb579b5,
+  // reported by PM 2026-09-15.
   useLayoutEffect(() => {
+    if (restoredViewRef.current === bodyView) return;
+    restoredViewRef.current = bodyView;
     if (bodyView === 'preview') {
       // Scroll the preview to roughly where the caret was. Proportional mapping
       // (caret line / total lines), NOT a real source-to-output map — mdToHtml is
