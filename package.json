@@ -18,7 +18,8 @@
     "fetch-posts": "node scripts/fetch-blog-posts.js",
     "publish": "node scripts/publish-cli.js",
     "test:corpus": "node scripts/test-publish-post-corpus.js",
-    "check:hero-images": "node scripts/check-hero-image-refs.js"
+    "check:hero-images": "node scripts/check-hero-image-refs.js",
+    "test": "jest"
   },
   "dependencies": {
     "@inquirer/prompts": "^8.4.3",
@@ -45,12 +46,14 @@
     "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^6.6.4",
     "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.7",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "critical": "^7.2.1",
     "eslint": "^9",
     "eslint-config-next": "15.4.5",
+    "jest": "^30.5.1",
     "jest-environment-jsdom": "^30.0.5",
     "tailwindcss": "^4",
     "typescript": "^5"
