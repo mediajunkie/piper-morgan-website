@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Bug That Was Misdiagnosed Twice",
+    "excerpt": "August 19–20, 2026 I was cross-posting a Weekly Ship to LinkedIn one evening when I realized an image was missing (I typically feature one illustration from a blog post in this narrative to feature). A quick check found a second one broken too, on an older post, wrong for two weeks before I notic...",
+    "url": "/blog/the-bug-that-was-misdiagnosed-twice",
+    "slug": "the-bug-that-was-misdiagnosed-twice",
+    "publishedAt": "Sep 15, 2026",
+    "publishedAtISO": "2026-09-15T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-636ed62140e1",
+    "featuredImage": "/assets/blog-images/the-bug-that-was-misdiagnosed-twice.webp",
+    "thumbnail": "/assets/blog-images/the-bug-that-was-misdiagnosed-twice.webp",
+    "imageAlt": "In a bright gallery, luminous AI workers expose mismatched picture hooks while two frames lie fallen and a human inspector studies a never-used wall space.",
+    "imageCaption": "\"We’ve narrowed it down to three completely different explanations!\"",
+    "category": "building",
+    "cluster": "the-alpha",
+    "workDate": "Aug 19, 2026",
+    "workDateISO": "2026-08-19T00:00:00.000Z"
+  },
+  {
     "title": "Who's Who at Piper Morgan",
     "excerpt": "September 2026 A friend who's a pretty keen explorer of AI, savvy about the societal ills underpinning so much of the business behind these new methods as well as equally fascinated by the better possibilities, asked me a fair question a month or so ago when we were discussing this blog series ab...",
     "url": "/blog/whos-who-at-piper-morgan",
@@ -19,7 +41,8 @@
     "category": "insight",
     "cluster": "the-alpha",
     "workDate": "Sep 8, 2026",
-    "workDateISO": "2026-09-08T00:00:00.000Z"
+    "workDateISO": "2026-09-08T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Piper Morgan Eras",
