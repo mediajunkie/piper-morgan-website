@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #060: Four Bugs, One Contract",
+    "excerpt": "September 4 – 10, 2026 Twenty-six issues closed this week, eighteen of them against the MVP milestone. Most of them came from one place: sitting down with the product and using it. The week's best single result is small to describe and took two days to find. Four separate bugs — a standup that ac...",
+    "url": "/blog/weekly-ship-060-four-bugs-one-contract",
+    "slug": "weekly-ship-060-four-bugs-one-contract",
+    "publishedAt": "Sep 16, 2026",
+    "publishedAtISO": "2026-09-16T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-aa5096ae5b40",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
+    "imageCaption": "",
+    "category": "ship",
+    "cluster": "the-alpha",
+    "workDate": "Sep 4, 2026",
+    "workDateISO": "2026-09-04T00:00:00.000Z"
+  },
+  {
     "title": "The Bug That Was Misdiagnosed Twice",
     "excerpt": "August 19–20, 2026 I was cross-posting a Weekly Ship to LinkedIn one evening when I realized an image was missing (I typically feature one illustration from a blog post in this narrative to feature). A quick check found a second one broken too, on an older post, wrong for two weeks before I notic...",
     "url": "/blog/the-bug-that-was-misdiagnosed-twice",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "the-alpha",
     "workDate": "Aug 19, 2026",
-    "workDateISO": "2026-08-19T00:00:00.000Z"
+    "workDateISO": "2026-08-19T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Who's Who at Piper Morgan",
