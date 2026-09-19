@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Week the Checks Started Checking Themselves",
+    "excerpt": "August 21–24, 2026 My agent in charge of what I call \"sapient trust\" (HOST) keeps a checker that watches whether its own status page has gone stale — whether the content changed without the \"last updated\" date following it. That morning, the checker caught a lapse. Again. The third time in a row....",
+    "url": "/blog/the-week-the-checks-started-checking-themselves",
+    "slug": "the-week-the-checks-started-checking-themselves",
+    "publishedAt": "Sep 17, 2026",
+    "publishedAtISO": "2026-09-17T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-19c8e3b74bc2",
+    "featuredImage": "/assets/blog-images/the-week-the-checks-started-checking-themselves.webp",
+    "thumbnail": "/assets/blog-images/the-week-the-checks-started-checking-themselves.webp",
+    "imageAlt": "Two luminous AI carpenters compare a proper square with a comically misangled one. Beside a crooked bookshelf, the faulty tool’s owner grins sheepishly, one hand on its head.",
+    "imageCaption": "\"Well, at least I’ve been consistent!\"",
+    "category": "building",
+    "cluster": "the-alpha",
+    "workDate": "Aug 21, 2026",
+    "workDateISO": "2026-08-21T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #060: Four Bugs, One Contract",
     "excerpt": "September 4 – 10, 2026 Twenty-six issues closed this week, eighteen of them against the MVP milestone. Most of them came from one place: sitting down with the product and using it. The week's best single result is small to describe and took two days to find. Four separate bugs — a standup that ac...",
     "url": "/blog/weekly-ship-060-four-bugs-one-contract",
@@ -19,7 +41,8 @@
     "category": "ship",
     "cluster": "the-alpha",
     "workDate": "Sep 4, 2026",
-    "workDateISO": "2026-09-04T00:00:00.000Z"
+    "workDateISO": "2026-09-04T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Bug That Was Misdiagnosed Twice",
