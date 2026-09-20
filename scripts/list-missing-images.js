@@ -14,7 +14,7 @@ const __dirname = path.dirname(__filename);
 
 const CSV_PATH = path.join(__dirname, '..', 'Medium-Posts-updated-xian-2025-10-11-1207.csv');
 const POSTS_PATH = path.join(__dirname, '..', 'src/data/medium-posts.json');
-const SOURCE_DIR = path.join(__dirname, '..', 'public/assets/blog-images/source');
+const SOURCE_DIR = path.join(__dirname, '..', 'assets-source/blog-images');
 
 function extractPostId(url) {
   if (!url) return null;

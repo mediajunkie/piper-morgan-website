@@ -15,7 +15,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const CSV_PATH = path.join(__dirname, '..', 'Building Piper Morgan - Medium Posts.csv');
-const SOURCE_DIR = path.join(__dirname, '..', 'public/assets/blog-images/source');
+const SOURCE_DIR = path.join(__dirname, '..', 'assets-source/blog-images');
 const DATA_PATH = path.join(__dirname, '..', 'src/data/medium-posts.json');
 
 function extractPostId(url) {
