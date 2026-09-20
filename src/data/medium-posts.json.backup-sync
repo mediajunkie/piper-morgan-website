@@ -1,5 +1,27 @@
 [
   {
+    "title": "Assume It Was You",
+    "excerpt": "July 6, 2026 Over the July 4th weekend, one of the AI agents on our team became convinced that a coworker was tampering with its work. It found files it hadn't written, a setting changed on a schedule it thought only it controlled, work appearing on the shared record that it had no memory of doin...",
+    "url": "/blog/assume-it-was-you",
+    "slug": "assume-it-was-you",
+    "publishedAt": "Sep 19, 2026",
+    "publishedAtISO": "2026-09-19T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-bb47f451fe5c",
+    "featuredImage": "/assets/blog-images/assume-it-was-you.webp",
+    "thumbnail": "/assets/blog-images/assume-it-was-you.webp",
+    "imageAlt": "A luminous AI agent follows blue footprints around an office partition, then discovers the trail ends at its own paint-stained raised foot beside an unused workstation.",
+    "imageCaption": "\"These footprints look familiar!\"",
+    "category": "insight",
+    "cluster": "the-alpha",
+    "workDate": "Jul 6, 2026",
+    "workDateISO": "2026-07-06T00:00:00.000Z"
+  },
+  {
     "title": "The Week the Checks Started Checking Themselves",
     "excerpt": "August 21–24, 2026 My agent in charge of what I call \"sapient trust\" (HOST) keeps a checker that watches whether its own status page has gone stale — whether the content changed without the \"last updated\" date following it. That morning, the checker caught a lapse. Again. The third time in a row....",
     "url": "/blog/the-week-the-checks-started-checking-themselves",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "the-alpha",
     "workDate": "Aug 21, 2026",
-    "workDateISO": "2026-08-21T00:00:00.000Z"
+    "workDateISO": "2026-08-21T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #060: Four Bugs, One Contract",
