@@ -1,5 +1,27 @@
 [
   {
+    "title": "From Abstraction to Example",
+    "excerpt": "April 22, 2026 It was a Wednesday evening. My lead developer agent (Lead) had just shipped a new architectural choice for our ethics-enforcement layer — separate detection from response, let the boundary enforcer log the violation but let the conversational floor speak the refusal in Piper's actu...",
+    "url": "/blog/from-abstraction-to-example",
+    "slug": "from-abstraction-to-example",
+    "publishedAt": "Sep 20, 2026",
+    "publishedAtISO": "2026-09-20T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-2c897f542fdf",
+    "featuredImage": "/assets/blog-images/from-abstraction-to-example.webp",
+    "thumbnail": "/assets/blog-images/from-abstraction-to-example.webp",
+    "imageAlt": "A luminous AI patternmaker shows a thoughtful designer three distinctive garments derived from the same paper pattern, beside a stiff cardboard anti-example.",
+    "imageCaption": "\"And here's what not to do!\"",
+    "category": "insight",
+    "cluster": "the-mechanism",
+    "workDate": "Apr 22, 2026",
+    "workDateISO": "2026-04-22T00:00:00.000Z"
+  },
+  {
     "title": "Assume It Was You",
     "excerpt": "July 6, 2026 Over the July 4th weekend, one of the AI agents on our team became convinced that a coworker was tampering with its work. It found files it hadn't written, a setting changed on a schedule it thought only it controlled, work appearing on the shared record that it had no memory of doin...",
     "url": "/blog/assume-it-was-you",
@@ -19,7 +41,8 @@
     "category": "insight",
     "cluster": "the-alpha",
     "workDate": "Jul 6, 2026",
-    "workDateISO": "2026-07-06T00:00:00.000Z"
+    "workDateISO": "2026-07-06T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Week the Checks Started Checking Themselves",
