@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #061: Closed Means Observed",
+    "excerpt": "September 11–17, 2026 Last week's Ship was about four bugs sharing one contract. This week the team found out what it costs to prove a contract is actually being honored. Five epics closed or fully drained on a single Saturday. A security chain that started with one authenticated user reaching th...",
+    "url": "/blog/weekly-ship-061-closed-means-observed",
+    "slug": "weekly-ship-061-closed-means-observed",
+    "publishedAt": "Sep 23, 2026",
+    "publishedAtISO": "2026-09-23T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-947509876a24",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "Two luminous AI carpenters compare a proper square with a comically misangled one. Beside a crooked bookshelf, the faulty tool's owner grins sheepishly, one hand on its head.",
+    "imageCaption": "\"Well, at least I've been consistent!\"",
+    "category": "ship",
+    "cluster": "the-alpha",
+    "workDate": "Sep 11, 2026",
+    "workDateISO": "2026-09-11T00:00:00.000Z"
+  },
+  {
     "title": "The Near-Miss and the Missing Key",
     "excerpt": "August 25, 2026 I was editing a blog draft in the compose tool my agent team made for me when a dialog interrupted me: an unsaved local copy, timestamped a few minutes earlier, different from what had just loaded from GitHub. It asked whether I wanted to restore it. I asked my communications agen...",
     "url": "/blog/the-near-miss-and-the-missing-key",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "the-alpha",
     "workDate": "Aug 25, 2026",
-    "workDateISO": "2026-08-25T00:00:00.000Z"
+    "workDateISO": "2026-08-25T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "From Abstraction to Example",
