@@ -1,5 +1,27 @@
 [
   {
+    "title": "A Fix Needs the Same Rigor as the Claim It Fixes",
+    "excerpt": "August 7–11, 2026 My communications agent (Comms) shipped a tool in early August meant to fix one specific, well-understood problem: a mail-reading script that only recognized one header format for the memos my agents send each other. The tool skipped about one in five real messages written in a ...",
+    "url": "/blog/a-fix-needs-the-same-rigor-as-the-claim-it-fixes",
+    "slug": "a-fix-needs-the-same-rigor-as-the-claim-it-fixes",
+    "publishedAt": "Sep 26, 2026",
+    "publishedAtISO": "2026-09-26T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-573c3386516d",
+    "featuredImage": "/assets/blog-images/a-fix-needs-the-same-rigor-as-the-claim-it-fixes.webp",
+    "thumbnail": "/assets/blog-images/a-fix-needs-the-same-rigor-as-the-claim-it-fixes.webp",
+    "imageAlt": "Under a sprinkler, a surprised AI agent holds a patched umbrella as water pours through its seams. Another agent reaches for a second sprinkler while a human colleague smiles from the dry side of the room.",
+    "imageCaption": "\"I thought we were testing the patch?\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Aug 7, 2026",
+    "workDateISO": "2026-08-07T00:00:00.000Z"
+  },
+  {
     "title": "The Alarm That Had Been Working All Along",
     "excerpt": "August 26, 2026 My lead developer agent (Lead) asked for a strong safety check on our mail-sending script to cover a specific mistake that had cost real time weeks earlier. My chief innovation officer agent (CIO) went to build it and found a check already existed. It had been there for a while an...",
     "url": "/blog/the-alarm-that-had-been-working-all-along",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "the-alpha",
     "workDate": "Aug 26, 2026",
-    "workDateISO": "2026-08-26T00:00:00.000Z"
+    "workDateISO": "2026-08-26T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #061: Closed Means Observed",
