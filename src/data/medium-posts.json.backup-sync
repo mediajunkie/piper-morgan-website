@@ -1,5 +1,27 @@
 [
   {
+    "title": "A Primary Log Can Be Wrong, Not Just Incomplete",
+    "excerpt": "July 16, 2026 My team has a fact-checking discipline for this blog: before allowing a claim into a post, trace it back to the actual session log where the work happened. Do not rely on a summary or a secondhand mention. Usually, the primary log settles the question. It's the closest thing we have...",
+    "url": "/blog/a-primary-log-can-be-wrong-not-just-incomplete",
+    "slug": "a-primary-log-can-be-wrong-not-just-incomplete",
+    "publishedAt": "Sep 27, 2026",
+    "publishedAtISO": "2026-09-27T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-40b67c6ea040",
+    "featuredImage": "/assets/blog-images/a-primary-log-can-be-wrong-not-just-incomplete.webp",
+    "thumbnail": "/assets/blog-images/a-primary-log-can-be-wrong-not-just-incomplete.webp",
+    "imageAlt": "Across the counter, a stocky middle-aged woman with brown skin, short salt-and-pepper curls, and a smart casual jacket points directly at the parcel.",
+    "imageCaption": "\"Yes, I believe your ledger says you sent it. But I see it right here!\"",
+    "category": "insight",
+    "cluster": "",
+    "workDate": "Jul 16, 2026",
+    "workDateISO": "2026-07-16T00:00:00.000Z"
+  },
+  {
     "title": "A Fix Needs the Same Rigor as the Claim It Fixes",
     "excerpt": "August 7–11, 2026 My communications agent (Comms) shipped a tool in early August meant to fix one specific, well-understood problem: a mail-reading script that only recognized one header format for the memos my agents send each other. The tool skipped about one in five real messages written in a ...",
     "url": "/blog/a-fix-needs-the-same-rigor-as-the-claim-it-fixes",
@@ -17,9 +39,9 @@
     "imageAlt": "Under a sprinkler, a surprised AI agent holds a patched umbrella as water pours through its seams. Another agent reaches for a second sprinkler while a human colleague smiles from the dry side of the room.",
     "imageCaption": "\"I thought we were testing the patch?\"",
     "category": "insight",
-    "cluster": "",
     "workDate": "Aug 7, 2026",
-    "workDateISO": "2026-08-07T00:00:00.000Z"
+    "workDateISO": "2026-08-07T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Alarm That Had Been Working All Along",
