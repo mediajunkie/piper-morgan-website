@@ -32,9 +32,14 @@
  *                        was the source of 119 corrected mismatches per Docs
  *                        2026-06-02 audit).
  *   --pub-date <date>    YYYY-MM-DD; defaults to today
- *   --cluster <slug>     Era cluster slug; defaults to empty. Clusters are
- *                        assigned during a periodic manual review, not at
- *                        publish time — leaving this empty is normal.
+ *   --cluster <slug>     Era cluster slug. If omitted, derived from workDate
+ *                        against episodes.ts's ERAS date ranges (mechanical
+ *                        since the 2026-09-06 backfill, website#39) — fails
+ *                        loud if workDate falls outside every era's range,
+ *                        same discipline as --work-date. Supersedes the
+ *                        2026-05-16 "leave empty, manual review" note: two
+ *                        posts (2026-09-26/27) silently dropped from the
+ *                        Eras browse under that default (website issue 1905).
  *   --featured           Mark as featured (default false)
  *   --report <fmt>       text (default) | json (single-line JSON on stdout)
  *   --dry-run            Log intended mutations without writing
@@ -283,6 +288,46 @@ function parseDatelineFromBody(body) {
     return `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
   }
   return null;
+}
+
+// ─── Step 1c: workDate → cluster (era mapping) ─────────────────────────────
+// Deferred to periodic manual review as of the 2026-05-16 --help note
+// (Docs's CLI dry-run follow-up) — at the time, cluster assignment wasn't a
+// pure function of workDate. That's no longer true: the 2026-09-06 backfill
+// (website#39, 287 posts) re-derived every cluster from scratch purely from
+// workDate against episodes.ts's ERAS date ranges, exact match, zero
+// ambiguity. Two posts published 2026-09-26/27 without --cluster (website
+// issue 1905, Comms) sat with an empty cluster and dropped out of the Eras
+// browse silently, the same failure shape --work-date's defense-in-depth
+// fix (Docs 2026-06-02) already closed for the workDate field. Deriving here
+// closes it the same way: try, fail loud (never silently empty).
+const EPISODES_PATH = path.join(REPO_ROOT, 'src', 'lib', 'episodes.ts');
+
+function loadErasForClusterDerivation() {
+  const content = fs.readFileSync(EPISODES_PATH, 'utf-8');
+  // Matches each era object regardless of key order; endDate may be a quoted
+  // string OR the literal `null` (the current, open-ended era) — the
+  // regex-per-key scripts elsewhere in this repo (prepare-new-post.js) only
+  // handle the quoted-string case and would silently drop the open era.
+  const eraPattern = /\{\s*slug:\s*['"]([^'"]+)['"][\s\S]*?startDate:\s*['"]([^'"]+)['"][\s\S]*?endDate:\s*(null|['"][^'"]+['"])[\s\S]*?\}/g;
+  const eras = [];
+  let m;
+  while ((m = eraPattern.exec(content)) !== null) {
+    eras.push({
+      slug: m[1],
+      startDate: m[2],
+      endDate: m[3] === 'null' ? null : m[3].replace(/['"]/g, ''),
+    });
+  }
+  return eras;
+}
+
+function deriveClusterFromWorkDate(workDate) {
+  const eras = loadErasForClusterDerivation();
+  const match = eras.find(
+    (era) => workDate >= era.startDate && (era.endDate === null || workDate <= era.endDate)
+  );
+  return match ? match.slug : null;
 }
 
 // ─── Step 2: markdown → HTML ────────────────────────────────────────────────
@@ -787,6 +832,29 @@ try {
         `--work-date not passed and no parseable dateline found near top of ${cfg.draftPath}.\n` +
         `   Pass --work-date YYYY-MM-DD, OR add a standalone italic dateline like *April 8, 2026* (single date or *Apr 8–10, 2026* range) within the first ~8 lines of the body.\n` +
         `   (Silent default-to-today was the source of 119 corrected workDate mismatches per Docs 2026-06-02 audit.)`
+      );
+      err.exitCode = 2;
+      throw err;
+    }
+  }
+
+  // Resolve cluster (website issue 1905). Priority: explicit --cluster →
+  // derived from workDate against episodes.ts's ERAS → fail loud. Edit-pass
+  // skips this for the same reason workDate is skipped there.
+  if (cfg.mode === 'edit-pass') {
+    // No-op; CSV stays as-is.
+  } else if (cfg.cluster) {
+    log(`🏷️  cluster: ${cfg.cluster} (from --cluster)`);
+  } else {
+    const derived = deriveClusterFromWorkDate(cfg.workDate);
+    if (derived) {
+      cfg.cluster = derived;
+      log(`🏷️  cluster: ${derived} (derived from workDate ${cfg.workDate} via episodes.ts)`);
+    } else {
+      const err = new Error(
+        `Could not derive cluster from workDate ${cfg.workDate} — it falls outside every era's ` +
+        `date range in src/lib/episodes.ts (earliest era starts ${loadErasForClusterDerivation()[0]?.startDate ?? 'unknown'}).\n` +
+        `   Pass --cluster <slug> explicitly, or check workDate for a typo.`
       );
       err.exitCode = 2;
       throw err;

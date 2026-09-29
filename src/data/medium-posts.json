@@ -19,7 +19,8 @@
     "category": "building",
     "cluster": "the-alpha",
     "workDate": "Aug 27, 2026",
-    "workDateISO": "2026-08-27T00:00:00.000Z"
+    "workDateISO": "2026-08-27T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "A Primary Log Can Be Wrong, Not Just Incomplete",
@@ -41,7 +42,8 @@
     "category": "insight",
     "workDate": "Jul 16, 2026",
     "workDateISO": "2026-07-16T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-mechanism"
   },
   {
     "title": "A Fix Needs the Same Rigor as the Claim It Fixes",
@@ -63,7 +65,8 @@
     "category": "insight",
     "workDate": "Aug 7, 2026",
     "workDateISO": "2026-08-07T00:00:00.000Z",
-    "featured": false
+    "featured": false,
+    "cluster": "the-alpha"
   },
   {
     "title": "The Alarm That Had Been Working All Along",

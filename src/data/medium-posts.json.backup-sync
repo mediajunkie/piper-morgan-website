@@ -1,5 +1,27 @@
 [
   {
+    "title": "Three Seats Stay Dark Longer",
+    "excerpt": "August 27–29, 2026 The whole team hit its weekly usage limit around three in the afternoon, and went quiet together, before the week was up, shuttering the team for a while. This has become a normal occurrence since I set an 11-agent team loose with daily duty cycles chewing through a maxed-out C...",
+    "url": "/blog/three-seats-stay-dark-longer",
+    "slug": "three-seats-stay-dark-longer",
+    "publishedAt": "Sep 29, 2026",
+    "publishedAtISO": "2026-09-29T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-9b1d5232ab15",
+    "featuredImage": "/assets/blog-images/three-seats-stay-dark-longer.webp",
+    "thumbnail": "/assets/blog-images/three-seats-stay-dark-longer.webp",
+    "imageAlt": "Three luminous AI agents wait in an open elevator, work supplies in hand, while an amused human reaches inside to press a button. Office activity continues down the corridor.",
+    "imageCaption": "\"We've been waiting!\"",
+    "category": "building",
+    "cluster": "the-alpha",
+    "workDate": "Aug 27, 2026",
+    "workDateISO": "2026-08-27T00:00:00.000Z"
+  },
+  {
     "title": "A Primary Log Can Be Wrong, Not Just Incomplete",
     "excerpt": "July 16, 2026 My team has a fact-checking discipline for this blog: before allowing a claim into a post, trace it back to the actual session log where the work happened. Do not rely on a summary or a secondhand mention. Usually, the primary log settles the question. It's the closest thing we have...",
     "url": "/blog/a-primary-log-can-be-wrong-not-just-incomplete",
