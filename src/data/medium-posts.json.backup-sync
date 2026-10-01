@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #062: Says What It Can Do",
+    "excerpt": "September 18–24, 2026 This week the team asked if the product's interface will say only what the system underneath can actually back up. A new alpha tester spent the window unable to get past the very first screen of signup — a working install incorrectly told the user that its own database and c...",
+    "url": "/blog/weekly-ship-062-says-what-it-can-do",
+    "slug": "weekly-ship-062-says-what-it-can-do",
+    "publishedAt": "Sep 30, 2026",
+    "publishedAtISO": "2026-09-30T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-e2a7fd07777a",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A luminous AI guide cheerfully points toward a missing bridge while a wary traveler signals “stop,” her manuscript safely stowed in the open car.",
+    "imageCaption": "\"Agreed. That bridge is definitely missing! Please go ahead.\"",
+    "category": "ship",
+    "cluster": "the-alpha",
+    "workDate": "Sep 18, 2026",
+    "workDateISO": "2026-09-18T00:00:00.000Z"
+  },
+  {
     "title": "Three Seats Stay Dark Longer",
     "excerpt": "August 27–29, 2026 The whole team hit its weekly usage limit around three in the afternoon, and went quiet together, before the week was up, shuttering the team for a while. This has become a normal occurrence since I set an 11-agent team loose with daily duty cycles chewing through a maxed-out C...",
     "url": "/blog/three-seats-stay-dark-longer",
