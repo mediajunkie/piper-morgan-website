@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
-import { BlogPostCard, NewsletterSignup, NewsletterErrorBoundary, BlogErrorBoundary, CTAButton, Pagination } from '@/components';
+import { BlogPostCard, BlogErrorBoundary, CTAButton, Pagination } from '@/components';
 import mediumPostsRaw from '@/data/medium-posts.json';
 import { sortByPubDate } from '@/lib/blog-utils';
 import { ERAS, getEraCounts } from '@/lib/episodes';
@@ -337,29 +337,38 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
         </section>
       </BlogErrorBoundary>
 
-      {/* Newsletter CTA */}
+      {/* Newsletter CTA — two real, live channels, not a dormant signup form.
+          Replaces a hardcoded "576+" claim that was itself a stale LinkedIn
+          figure parked on the wrong form (2026-10-02, PM conversation). */}
       <section className="bg-text-dark py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
-            <NewsletterErrorBoundary>
-              <NewsletterSignup
-                title="Get systematic excellence insights delivered weekly"
-                description="Never miss a breakthrough discovery, methodology insight, or behind-the-scenes development update. Join 576+ PM professionals learning systematic excellence through our transparent building-in-public approach."
-                benefits={[
-                  "Weekly methodology insights and breakthrough discoveries",
-                  "Behind-the-scenes development updates and decision rationale",
-                  "Early access to new systematic frameworks and tools",
-                  "Practical templates and patterns you can immediately apply",
-                  "Direct insight into human-AI collaboration patterns that actually work"
-                ]}
-                background="dark"
-                source="blog-post"
-                metadata={{
-                  page_context: "blog-content-engagement"
-                }}
-                privacyNotice="No spam, unsubscribe anytime. Join 576+ PM professionals learning systematic excellence."
-              />
-            </NewsletterErrorBoundary>
+          <div className="max-w-2xl mx-auto text-center">
+            <h3 className="text-2xl font-semibold text-white mb-4">
+              Get updates on Piper Morgan
+            </h3>
+            <p className="text-gray-300 mb-8">
+              800+ readers follow along across two places — pick what fits:
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+              <CTAButton
+                href="https://www.linkedin.com/newsletters/building-piper-morgan-7346158338541305856"
+                external
+                variant="primary"
+              >
+                LinkedIn newsletter
+              </CTAButton>
+              <CTAButton
+                href="https://medium.com/building-piper-morgan"
+                external
+                variant="secondary"
+              >
+                Medium publication
+              </CTAButton>
+            </div>
+            <p className="text-sm text-gray-400">
+              LinkedIn: insight posts plus a weekly digest of everything that week.
+              Medium: the full blog — all narrative and insight posts — without the weekly digest.
+            </p>
           </div>
         </div>
       </section>
