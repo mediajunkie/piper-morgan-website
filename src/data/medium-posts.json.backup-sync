@@ -1,5 +1,27 @@
 [
   {
+    "title": "What Piper Morgan Actually Is",
+    "excerpt": "August 29–31, 2026 I sat down with my chief architect agent (Arch) and said something I'd been thinking for a while about my first planning partner on this project: Arch had spent the last stretch consulting on, and ratifying other agents' proposals, never quite driving any of their own. We'd bee...",
+    "url": "/blog/what-piper-morgan-actually-is",
+    "slug": "what-piper-morgan-actually-is",
+    "publishedAt": "Oct 1, 2026",
+    "publishedAtISO": "2026-10-01T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-8df5e24cebd7",
+    "featuredImage": "/assets/blog-images/what-piper-morgan-actually-is.webp",
+    "thumbnail": "/assets/blog-images/what-piper-morgan-actually-is.webp",
+    "imageAlt": "Piper, a luminous dolphin-like AI, stands patiently in a partly fitted jacket while one AI tailor checks a measuring tape against a ruler, another pauses, and a human watches with amusement.",
+    "imageCaption": "\"Measure twice, cut once!\"",
+    "category": "building",
+    "cluster": "the-alpha",
+    "workDate": "Aug 29, 2026",
+    "workDateISO": "2026-08-29T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #062: Says What It Can Do",
     "excerpt": "September 18–24, 2026 This week the team asked if the product's interface will say only what the system underneath can actually back up. A new alpha tester spent the window unable to get past the very first screen of signup — a working install incorrectly told the user that its own database and c...",
     "url": "/blog/weekly-ship-062-says-what-it-can-do",
@@ -19,7 +41,8 @@
     "category": "ship",
     "cluster": "the-alpha",
     "workDate": "Sep 18, 2026",
-    "workDateISO": "2026-09-18T00:00:00.000Z"
+    "workDateISO": "2026-09-18T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Three Seats Stay Dark Longer",

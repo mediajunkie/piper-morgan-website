@@ -1,5 +1,27 @@
 [
   {
+    "title": "Described Is Not Running",
+    "excerpt": "August 12, 2026 When we learn something on one of my projects, it gets reported in something we call the \"Cross-Pollination Briefing,\" a daily newsletter distributed to all of my agent teams (along with an occasional column in which I reply to questions from the agents). The Piper Morgan team thu...",
+    "url": "/blog/described-is-not-running",
+    "slug": "described-is-not-running",
+    "publishedAt": "Oct 3, 2026",
+    "publishedAtISO": "2026-10-03T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-4d3639ad8d3d",
+    "featuredImage": "/assets/blog-images/described-is-not-running.webp",
+    "thumbnail": "/assets/blog-images/described-is-not-running.webp",
+    "imageAlt": "Two luminous AI caretakers admire a plan showing a fountain spraying water, while a human tests the actual fountain’s dry spout and glances back at them.",
+    "imageCaption": "\"The water is clearly specified!\"",
+    "category": "insight",
+    "cluster": "the-alpha",
+    "workDate": "Aug 12, 2026",
+    "workDateISO": "2026-08-12T00:00:00.000Z"
+  },
+  {
     "title": "What Piper Morgan Actually Is",
     "excerpt": "August 29–31, 2026 I sat down with my chief architect agent (Arch) and said something I'd been thinking for a while about my first planning partner on this project: Arch had spent the last stretch consulting on, and ratifying other agents' proposals, never quite driving any of their own. We'd bee...",
     "url": "/blog/what-piper-morgan-actually-is",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "the-alpha",
     "workDate": "Aug 29, 2026",
-    "workDateISO": "2026-08-29T00:00:00.000Z"
+    "workDateISO": "2026-08-29T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #062: Says What It Can Do",
