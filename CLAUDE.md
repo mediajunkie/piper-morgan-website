@@ -11,23 +11,29 @@ npm run type-check       # TypeScript type checking
 npm run lint             # Run ESLint
 npm run lint:fix         # Fix ESLint issues
 
+# Tests
+npm test                 # Jest (next/jest, with an @/ alias)
+
 # Build & Deploy
-npm run fetch-posts      # Fetch latest Medium blog posts
-npm run build            # Build for production (includes prebuild step)
+npm run build            # Production build (runs the prebuild step first)
 npm run start            # Start production server
-./deploy.sh              # Manual deployment to GitHub Pages
+npm run build:static     # Static export build (STATIC_EXPORT=true) -- emergency path only
+./deploy.sh              # Emergency fallback: static export to the gh-pages branch (see Deployment Process)
 
 # Blog Content
-npm run prebuild         # Runs automatically before build - fetches Medium posts
-node scripts/fetch-blog-posts.js  # Manually fetch blog posts
+npm run fetch-posts      # Manual: fetch Medium RSS posts (not part of prebuild)
 ```
+
+`npm run prebuild` runs automatically before `build` and does four things:
+`copy-editorial-calendar.js`, `generate-publish-queue-data.js`,
+`fetch-linkedin-stats.js`, `check-hero-image-refs.js`. It does NOT fetch Medium posts.
 
 ## Architecture Overview
 
-This is a **Next.js 15** static website using **App Router** with static site generation for GitHub Pages deployment. The site follows **Domain-Driven Design** principles with TypeScript throughout.
+This is a **Next.js 15** website using **App Router**, deployed to **Vercel** (pipermorgan.ai). Public pages are statically generated; API routes under `src/pages/api/` and the `/admin` UI need the server runtime. The site follows **Domain-Driven Design** principles with TypeScript throughout.
 
 ### Key Technologies
-- **Next.js 15** with App Router and static export (`output: 'export'`)
+- **Next.js 15** with App Router, served by Vercel (static export only when `STATIC_EXPORT=true`)
 - **TypeScript** with strict type checking
 - **Tailwind CSS 4** for styling
 - **Atomic Design** component architecture (atoms → molecules → organisms)
@@ -85,12 +91,10 @@ The codebase follows Domain-Driven Design with comprehensive type modeling:
 
 ## Blog Content System
 
-The blog integrates with Medium's RSS feed for the "building-piper-morgan" publication:
+Blog content lives in `src/data/` (`blog-content.json`, `medium-posts.json`; the fetch script updates both) and is read through `src/lib/blog-utils.ts` and related helpers. Medium RSS ingestion is a **manual** step, not an automated or build-time one:
 
-1. **Build-time Fetch**: `scripts/fetch-blog-posts.js` runs automatically before build
-2. **Local Caching**: Posts cached in `src/data/medium-posts.json`
-3. **Fallback Content**: Hardcoded fallback articles if RSS fetch fails
-4. **Content Processing**: Extracts excerpts, reading time, tags from RSS data
+1. `npm run fetch-posts` (`scripts/fetch-blog-posts.js`) fetches the RSS feed and writes `src/data/medium-posts.json`.
+2. Review and commit the result. Pushing to `main` deploys it.
 
 ## Component Development
 
@@ -108,83 +112,38 @@ Components follow **Atomic Design** with full TypeScript definitions:
 - Follow accessibility standards (WCAG 2.1 AA)
 - Export both component and props type from index.ts
 
-## Static Site Configuration
+## Build Configuration
 
-**Important**: This site uses static export for GitHub Pages:
+`next.config.ts` (read it before changing build behavior):
 
-- `next.config.ts` configured with `output: 'export'`
-- Image optimization disabled (`images: { unoptimized: true }`)
-- Trailing slashes enabled for better URL consistency
-- Build-time linting/type-checking skipped (handled separately)
-- Security headers configured for static export compatibility
+- `output: 'export'` is applied **only when `STATIC_EXPORT=true`** (the `build:static` script and `deploy.sh`). Normal dev and Vercel builds keep API routes available.
+- `NEXT_PUBLIC_STATIC_EXPORT` is forwarded to the client so `/admin/*` can show a fallback notice instead of a dead login form on a static build.
+- Image optimization disabled (`images: { unoptimized: true }`); trailing slashes enabled.
+- Build-time ESLint and type-checking are skipped (`ignoreDuringBuilds`, `ignoreBuildErrors`), so run `npm run lint` and `npm run type-check` yourself before pushing.
+- Security headers (CSP etc.) are set in `next.config.ts`.
 
-### Static Export Limitations & Design Decisions
+### What needs the server (and so is absent from a static export)
 
-**❌ What Static Export Cannot Do:**
-- **No Server-Side Runtime**: No API routes, middleware, or ISR
-- **No Dynamic Caching**: No `revalidate` or stale-while-revalidate strategies
-- **No Rate Limiting**: Client-side only, relies on external service limits
-- **No Server-Side CORS**: CORS handled by external APIs or browser policies
+- API routes in `src/pages/api/` (`admin/login|logout|me`, `compose`, `compose/upload`) and `src/middleware.ts`.
+- The `/admin` UI, including the editorial compose screen at `/admin/calendar/compose`.
 
-**✅ How We Handle These Constraints:**
+A test file placed under `src/pages/` becomes a Next route. Keep tests elsewhere.
 
-**External API Integration:**
-- **ConvertKit**: Direct form submission to external endpoint
-- **Medium RSS**: Build-time fetch with scheduled rebuilds (not runtime)
-- **Google Analytics**: Client-side tracking via gtag.js
-
-**Caching Strategy:**
-- **Build-time caching**: Medium posts fetched during CI/CD and cached in JSON
-- **Scheduled rebuilds**: Daily GitHub Actions runs for content freshness
-- **Client-side caching**: Browser caching via proper HTTP headers
-
-**Security Approach:**
-- **Content Security Policy**: Configured in `next.config.ts` headers
-- **No exposed secrets**: Only public environment variables in static export
-- **External service authentication**: Direct API integration (ConvertKit, GA4)
-
-**Performance Optimizations:**
-- **Static asset optimization**: Build-time optimization via Next.js
-- **External script loading**: Proper loading strategies for third-party scripts
-- **Image optimization disabled**: Relies on proper source image sizing
-
-This architecture prioritizes **simplicity, reliability, and zero server costs** while maintaining professional functionality through strategic external service integration.
+External services: Buttondown/ConvertKit newsletter signup is a direct form submission, Google Analytics is client-side gtag.
 
 ## Deployment Process
 
-### **Automatic Deployment**
-Three automated deployment triggers:
+### Production: Vercel, on every push to `main`
 
-1. **Push to Main**: GitHub Actions deploys on every commit
-2. **Scheduled Content Updates**: Daily at 7:30 PM UTC via GitHub Actions
-3. **Manual Trigger**: Via GitHub Actions UI (`workflow_dispatch`)
+Pushing `main` triggers a Vercel **Production** deployment. Checked 2026-10-05: `gh api repos/mediajunkie/piper-morgan-website/deployments` shows `Production` deployments for each recent `main` commit, and `curl -sI https://pipermorgan.ai` returns `server: Vercel`.
 
-### **Manual Deployment** 
-Emergency fallback deployment:
-```bash
-./deploy.sh    # Manual deployment script
-```
+There is no CI-driven deploy: the GitHub Actions workflows (`deploy.yml`, `update-blog-posts.yml`) were removed in July 2026 and `.github/workflows/` no longer exists. Pushing to `main` is therefore a production release. Run `npm test`, `npm run build`, `npm run lint` and `npm run type-check` first.
 
-### **Deployment Architecture (Option D - Scheduled Rebuilds)**
-The site uses a **two-workflow system** for automated content updates:
+### Emergency fallback: `./deploy.sh`
 
-1. **`update-blog-posts.yml`**: 
-   - Runs daily at `cron: '30 19 * * *'` (7:30 PM UTC)
-   - Fetches latest Medium posts via RSS
-   - Only commits if new posts detected
-   - Triggers site rebuild via `repository_dispatch`
+Builds a static export (`npm run build:static`) and force-publishes it to the `gh-pages` branch, writing a `CNAME` of `pipermorgan.ai`. The `gh-pages` branch still exists, and a "Delete CNAME" commit landed on it on 2026-10-05, so the domain is currently not claimed by GitHub Pages. Running `deploy.sh` would re-add that CNAME, and a static export drops the API routes and the admin UI, so treat it as a last resort and check with PM first.
 
-2. **`deploy.yml`**:
-   - Triggered by push, manual trigger, or blog updates
-   - Runs full build process (including RSS fetch)
-   - Deploys to GitHub Pages using `peaceiris/actions-gh-pages@v4`
-
-**Key Benefits**: 
-- Fresh Medium content daily without manual intervention
-- Static site performance with dynamic content freshness
-- Error handling with automatic GitHub issue creation on failures
-
-## SEO & Metadata
+## ## SEO & Metadata
 
 Centralized SEO management through `src/lib/domain-utils.ts`:
 
@@ -204,11 +163,8 @@ The `scripts/fetch-blog-posts.js` script:
 - Falls back to hardcoded articles if RSS fails
 - Caches results in `src/data/medium-posts.json`
 
-### **Automated Content Updates**
-- **Schedule**: Daily at 7:30 PM UTC via GitHub Actions
-- **Process**: RSS fetch → change detection → commit → deploy
-- **Error Handling**: Creates GitHub issues on failures with troubleshooting steps
-- **Manual Trigger**: `gh workflow run "Update Medium Blog Posts"`
+### **Content updates**
+Nothing runs on a schedule. The former daily GitHub Actions job was removed with the workflows; refresh Medium content by running `npm run fetch-posts` and committing.
 
 ### **Blog Content Access**
 - **Direct URL**: `/blog` (RSS content with error boundaries)
@@ -235,42 +191,21 @@ npm run lint:fix
 **Content Update Failures:**
 ```bash
 # Test RSS feed manually
-node scripts/fetch-blog-posts.js
+npm run fetch-posts
 
 # Check RSS feed directly
 curl https://medium.com/feed/building-piper-morgan
-
-# Manual workflow trigger
-gh workflow run "Update Medium Blog Posts"
 ```
 
 **Deployment Issues:**
 ```bash
-# View recent workflow runs
-gh run list --limit 10
+# Recent production deployments for main
+gh api "repos/mediajunkie/piper-morgan-website/deployments?per_page=5" --jq '.[] | [.environment,.created_at,.sha[0:7]] | @tsv'
 
-# Check specific run logs
-gh run view <run-id> --log
-
-# Emergency manual deployment
-./deploy.sh
+# Check what is serving the live site
+curl -sI https://pipermorgan.ai | grep -i server
 ```
-
-### **GitHub Actions Troubleshooting**
-
-**Permission Errors (403):**
-- Verify `contents: write` permission in workflow files
-- Check repository Actions settings allow workflows
-
-**Workflow Not Running:**
-- Ensure repository is active (workflows pause on inactivity)
-- Verify workflow file syntax: `gh workflow list`
-- Check if scheduled workflows are enabled in repository settings
-
-**Build or Deploy Failures:**
-- Check workflow logs for specific errors
-- Automated GitHub issues created with troubleshooting steps
-- Review recent commits for breaking changes
+Vercel build logs are in the Vercel project dashboard. `./deploy.sh` is the emergency fallback only (see Deployment Process).
 
 ## Type Safety
 

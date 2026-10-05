@@ -47,9 +47,9 @@ export default function AlphaPage() {
                 <li className="flex items-start gap-4">
                   <span className="flex-shrink-0 w-8 h-8 bg-primary-teal/10 text-primary-teal rounded-full flex items-center justify-center font-semibold text-sm">1</span>
                   <div>
-                    <strong className="text-text-dark dark:text-white">Setup required</strong>
+                    <strong className="text-text-dark dark:text-white">Invite-only, nothing to install</strong>
                     <p className="text-text-light dark:text-gray-400 mt-1">
-                      You&apos;ll install Piper locally using our developer documentation
+                      The alpha runs in your browser. We send you an invite code and you create your account
                     </p>
                   </div>
                 </li>
@@ -91,7 +91,7 @@ export default function AlphaPage() {
               <ul className="space-y-3 text-text-light dark:text-gray-400">
                 <li className="flex items-start gap-2">
                   <span className="text-primary-teal mt-0.5">•</span>
-                  <span>Comfort with technical setup (command line, environment variables, Docker optional)</span>
+                  <span>An OpenAI or Anthropic API key. You bring your own, and you&apos;ll add it when you set up your account</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary-teal mt-0.5">•</span>
@@ -111,19 +111,19 @@ export default function AlphaPage() {
             {/* CTA Section */}
             <div className="bg-gradient-to-r from-primary-teal/10 to-primary-orange/10 rounded-2xl p-8 text-center mb-12">
               <h2 className="text-2xl font-bold text-text-dark dark:text-white mb-4">
-                Ready?
+                Want in?
               </h2>
               <p className="text-text-light dark:text-gray-400 mb-6">
-                This will take you to pmorgan.tech, our developer documentation site,
-                where you&apos;ll find the installation guide.
+                Email us and we&apos;ll send you an invite code and a link to the hosted alpha.
+                Tell us a little about the product work you do.
               </p>
               <CTAButton
-                href="https://pmorgan.tech"
+                href="mailto:alpha@pipermorgan.ai?subject=Alpha%20invite%20request"
                 variant="primary"
                 size="lg"
                 external
               >
-                Start Alpha Setup →
+                Request an invite →
               </CTAButton>
             </div>
 

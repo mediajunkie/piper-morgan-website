@@ -18,7 +18,7 @@ export default function BetaPage() {
         headline="Join the waitlist"
         subheadline={
           <p className="text-lg md:text-xl text-text-light dark:text-gray-400 max-w-2xl mx-auto">
-            Piper Morgan isn&apos;t quite ready for everyone yet — but it&apos;s getting close.
+            Piper Morgan isn&apos;t open to everyone yet, and there&apos;s no date to promise.
             Leave your email and we&apos;ll reach out when beta opens.
           </p>
         }

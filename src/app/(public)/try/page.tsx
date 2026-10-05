@@ -6,7 +6,7 @@ const canonicalUrl = 'https://pipermorgan.ai/try/';
 
 export const metadata: Metadata = {
   title: 'Try Piper Morgan | Get Started',
-  description: 'Choose your path to experience Piper Morgan. Join our alpha for hands-on testing or sign up for the beta waitlist.',
+  description: 'Choose your path to experience Piper Morgan. Request an invite to the hosted alpha for hands-on testing, or sign up for the beta waitlist.',
   alternates: {
     canonical: canonicalUrl,
   },
@@ -50,14 +50,18 @@ export default function TryPage() {
                   I&apos;m ready to get my hands dirty
                 </h2>
                 <p className="text-text-light dark:text-gray-400 mb-6">
-                  Join our alpha testers. You&apos;ll need to set up a local development environment,
-                  and things will break sometimes. But you&apos;ll be among the first to experience
-                  what we&apos;re building — and your feedback will directly shape Piper&apos;s development.
+                  Join our alpha testers. The alpha is hosted and invite-only, so there&apos;s nothing
+                  to install. Things will break sometimes. But you&apos;ll be among the first to
+                  experience what we&apos;re building, and your feedback will directly shape Piper&apos;s development.
                 </p>
                 <ul className="space-y-2 text-sm text-text-light dark:text-gray-400 mb-8">
                   <li className="flex items-start gap-2">
                     <span className="text-primary-teal mt-0.5">✓</span>
-                    <span>Setup required (command line, environment)</span>
+                    <span>Invite-only; nothing to install</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary-teal mt-0.5">✓</span>
+                    <span>Bring your own OpenAI or Anthropic API key</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary-teal mt-0.5">✓</span>
@@ -70,7 +74,7 @@ export default function TryPage() {
                 </ul>
               </div>
               <CTAButton href="/try/alpha" variant="primary" size="lg" className="w-full justify-center">
-                Join the alpha →
+                Request an invite →
               </CTAButton>
             </div>
 
@@ -84,9 +88,9 @@ export default function TryPage() {
                   Keep me posted
                 </h2>
                 <p className="text-text-light dark:text-gray-400 mb-6">
-                  Join the beta waitlist. We&apos;ll let you know when Piper is ready for broader
-                  testing — probably in the next few months. No setup required. Just leave your
-                  email and we&apos;ll reach out when it&apos;s time.
+                  Join the beta waitlist. We&apos;ll let you know when Piper opens for broader
+                  testing. There&apos;s no date yet, and we&apos;d rather tell you when it&apos;s real than guess.
+                  No setup required. Just leave your email and we&apos;ll reach out when it&apos;s time.
                 </p>
                 <ul className="space-y-2 text-sm text-text-light dark:text-gray-400 mb-8">
                   <li className="flex items-start gap-2">
