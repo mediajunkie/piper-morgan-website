@@ -30,6 +30,103 @@ type SaveStatus =
   | { kind: 'saved'; time: string; committed: boolean }
   | { kind: 'error'; message: string };
 
+// ─── Title editor ────────────────────────────────────────────────────────────
+
+/**
+ * Edits the calendar row's title only (website#44). Deliberately self-contained: its own
+ * state, its own endpoint action, no contact with the draft body's autosave/caret machinery.
+ * The slug/filename is NOT changed here — that is the draft's identity (URL, local-draft key,
+ * footer teases, publish slug) and is deferred on purpose.
+ */
+function TitleEditor({ slug, title, onRenamed }: {
+  slug: string; title: string; onRenamed: (title: string) => void;
+}) {
+  const [editing, setEditing] = useState(false);
+  const [value, setValue] = useState(title);
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function save() {
+    const next = value.trim();
+    if (next === title) { setEditing(false); setError(null); return; }
+    setBusy(true);
+    setError(null);
+    try {
+      const res = await fetch(`/api/compose?slug=${encodeURIComponent(slug)}&action=title`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ title: next }),
+      });
+      if (!res.ok) {
+        const errBody = await res.json().catch(() => null) as { error?: string } | null;
+        throw new Error(errBody?.error || `HTTP ${res.status}`);
+      }
+      onRenamed(next);
+      setEditing(false);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : String(e));
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  if (!editing) {
+    return (
+      <div className="flex items-baseline gap-3 flex-wrap">
+        <h2 className="text-xl font-bold text-text-dark dark:text-dark-text">{title || slug}</h2>
+        <button
+          type="button"
+          onClick={() => { setValue(title); setError(null); setEditing(true); }}
+          className="text-xs text-primary-teal-text dark:text-primary-teal hover:underline"
+        >
+          Edit title
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      <div className="flex items-center gap-2 flex-wrap">
+        <input
+          type="text"
+          aria-label="Post title"
+          value={value}
+          maxLength={300}
+          autoFocus
+          disabled={busy}
+          onChange={e => setValue(e.target.value)}
+          onKeyDown={e => {
+            if (e.key === 'Enter') { e.preventDefault(); void save(); }
+            if (e.key === 'Escape') { setEditing(false); setError(null); }
+          }}
+          className="min-w-[20rem] flex-1 px-2 py-1 text-lg font-bold border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-800 text-text-dark dark:text-dark-text"
+        />
+        <button
+          type="button"
+          onClick={() => void save()}
+          disabled={busy || !value.trim()}
+          className="px-3 py-1 text-sm rounded bg-primary-teal-text text-white disabled:opacity-50"
+        >
+          {busy ? 'Saving…' : 'Save title'}
+        </button>
+        <button
+          type="button"
+          onClick={() => { setEditing(false); setError(null); }}
+          disabled={busy}
+          className="px-3 py-1 text-sm rounded border border-gray-300 dark:border-gray-600"
+        >
+          Cancel
+        </button>
+      </div>
+      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+        Changes the title in the editorial calendar. The filename and URL slug stay the same.
+      </p>
+      {error && <p role="alert" className="text-sm text-red-700 dark:text-red-300 mt-1">{error}</p>}
+    </div>
+  );
+}
+
 // ─── List view ───────────────────────────────────────────────────────────────
 
 function ComposeList() {
@@ -447,7 +544,11 @@ function ComposeEdit({ slug }: { slug: string }) {
               ← All drafts
             </button>
           </p>
-          <h2 className="text-xl font-bold text-text-dark dark:text-dark-text">{draft.title || slug}</h2>
+          <TitleEditor
+            slug={slug}
+            title={draft.title}
+            onRenamed={t => setDraft(d => (d ? { ...d, title: t } : d))}
+          />
           {draft.pubDate && <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Scheduled {draft.pubDate}</p>}
         </div>
         <SaveIndicator status={saveStatus} onSave={handleManualSave} />

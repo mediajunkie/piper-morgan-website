@@ -76,6 +76,13 @@ export interface LiveCalendar {
 const LIVE_TTL_MS = 15_000;
 let liveCache: { at: number; value: LiveCalendar } | null = null;
 
+export const CALENDAR_REL_PATH = 'docs/internal/planning/comms/editorial-calendar.csv';
+
+/** Drop the 15s live cache so the next read sees a write this process just made. */
+export function invalidateLiveCalendar(): void {
+  liveCache = null;
+}
+
 /**
  * Request-time read of the canonical CSV straight from the product repo via the
  * GitHub Contents API — the same source and token the prebuild step uses.
@@ -116,7 +123,7 @@ async function fetchLiveCalendar(): Promise<LiveCalendar> {
   const owner = process.env.GITHUB_DRAFT_OWNER || 'mediajunkie';
   const repo = process.env.GITHUB_DRAFT_REPO || 'piper-morgan-product';
   const branch = process.env.GITHUB_DRAFT_BRANCH || 'main';
-  const relPath = 'docs/internal/planning/comms/editorial-calendar.csv';
+  const relPath = CALENDAR_REL_PATH;
   const url = `https://api.github.com/repos/${owner}/${repo}/contents/${relPath}?ref=${encodeURIComponent(branch)}`;
 
   try {

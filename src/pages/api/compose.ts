@@ -12,13 +12,15 @@
  * GET  /api/compose         → list non-published drafts
  * GET  /api/compose?slug=x  → read draft content + frontmatter (+ sha in GitHub mode)
  * POST /api/compose?slug=x  → save draft (body: { image, alt, caption, body, sha? })
+ * POST /api/compose?slug=x&action=title → rename the calendar row's title (body: { title })
  */
 
 import type { NextApiRequest, NextApiResponse } from 'next';
 import path from 'path';
 import fs from 'fs';
 import { execSync } from 'child_process';
-import { loadCalendarLive, CalendarEntry } from '@/lib/editorial-calendar';
+import { loadCalendarLive, invalidateLiveCalendar, CALENDAR_REL_PATH, CalendarEntry } from '@/lib/editorial-calendar';
+import { setCalendarTitle } from '@/lib/editorial/calendar-title';
 import {
   parseDraftContent, writeDraft, serializeDraft,
   stripCaptionQuotes, wrapCaptionQuotes, Frontmatter,
@@ -46,6 +48,75 @@ function findEntry(rows: CalendarEntry[], slug: string) {
   return rows.find(
     e => e.draftPath && slugFromDraftPath(e.draftPath) === slug,
   );
+}
+
+const MAX_TITLE_LEN = 300;
+
+/** Rename a queued post's calendar-row title. Slug/filename are deliberately untouched (website#44). */
+async function renameTitle(
+  req: NextApiRequest, res: NextApiResponse, slug: string, entry: CalendarEntry,
+) {
+  const raw = (req.body ?? {}).title;
+  const title = typeof raw === 'string' ? raw.trim() : '';
+  if (!title) return res.status(400).json({ error: 'Title cannot be empty.' });
+  if (/[\r\n]/.test(title)) return res.status(400).json({ error: 'Title must be a single line.' });
+  if (title.length > MAX_TITLE_LEN) {
+    return res.status(400).json({ error: `Title is too long (max ${MAX_TITLE_LEN} characters).` });
+  }
+
+  const message = `content(${slug}): rename calendar title via admin UI`;
+  const failure = (kind: 'not-found' | 'ambiguous' | 'bad-header') => {
+    if (kind === 'not-found') {
+      return res.status(404).json({ error: `No calendar row has draftPath ${entry.draftPath} anymore.` });
+    }
+    return res.status(409).json({
+      error: kind === 'ambiguous'
+        ? `More than one calendar row has draftPath ${entry.draftPath}; fix the calendar by hand first.`
+        : 'The calendar CSV is missing its title or draftPath column; fix it by hand first.',
+    });
+  };
+
+  try {
+    if (githubDraftsEnabled()) {
+      // Read-modify-write on a FRESH read, matched by draftPath, so a concurrent edit to any
+      // other row is preserved. The PUT is sha-checked; on a race we re-read once, then 409.
+      for (let attempt = 0; attempt < 2; attempt++) {
+        const { content, sha } = await fetchDraft(CALENDAR_REL_PATH);
+        const r = setCalendarTitle(content, entry.draftPath, title);
+        if (r.kind === 'unchanged') return res.status(200).json({ saved: true, changed: false, title });
+        if (r.kind !== 'updated') return failure(r.kind);
+        try {
+          await saveDraft(CALENDAR_REL_PATH, r.text, sha, message);
+          invalidateLiveCalendar();
+          return res.status(200).json({ saved: true, changed: true, committed: true, title });
+        } catch (e) {
+          if (!(e instanceof DraftConflictError) || attempt === 1) throw e;
+        }
+      }
+    }
+
+    const absCsv = path.join(PRODUCT_ROOT, CALENDAR_REL_PATH);
+    if (!fs.existsSync(absCsv)) {
+      return res.status(404).json({ error: `Calendar file missing on disk: ${CALENDAR_REL_PATH}` });
+    }
+    const r = setCalendarTitle(fs.readFileSync(absCsv, 'utf-8'), entry.draftPath, title);
+    if (r.kind === 'unchanged') return res.status(200).json({ saved: true, changed: false, title });
+    if (r.kind !== 'updated') return failure(r.kind);
+    fs.writeFileSync(absCsv, r.text, 'utf-8');
+    invalidateLiveCalendar();
+    let committed = false;
+    try {
+      execSync(`git -C "${PRODUCT_ROOT}" commit -m "${message}" -- "${CALENDAR_REL_PATH}"`, { stdio: 'pipe' });
+      committed = true;
+    } catch {
+      // git unavailable or nothing to commit — the file write succeeded
+    }
+    return res.status(200).json({ saved: true, changed: true, committed, title });
+  } catch (e) {
+    if (e instanceof DraftConflictError) return res.status(409).json({ error: e.message });
+    if (e instanceof DraftNotFoundError) return res.status(404).json({ error: e.message });
+    return res.status(500).json({ error: String(e) });
+  }
 }
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
@@ -106,6 +177,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       if (e instanceof DraftNotFoundError) return res.status(404).json({ error: e.message });
       return res.status(500).json({ error: String(e) });
     }
+  }
+
+  if (req.method === 'POST' && slug && req.query.action === 'title') {
+    const entry = findEntry(entries, slug);
+    if (!entry) return res.status(404).json({ error: `Draft not found: ${slug}` });
+    return renameTitle(req, res, slug, entry);
   }
 
   if (req.method === 'POST' && slug) {

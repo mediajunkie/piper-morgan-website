@@ -16,6 +16,7 @@ const config = {
   // Scoped deliberately: this is a component-test net, not a runner for
   // scripts/test-publish-post-corpus.js (which is a standalone node harness
   // with its own entry point and stays on `npm run test:corpus`).
+  moduleNameMapper: { '^@/(.*)$': '<rootDir>/src/$1' },
   testMatch: ['<rootDir>/src/**/*.test.{ts,tsx}'],
 };
 
