@@ -1,5 +1,27 @@
 [
   {
+    "title": "Distribution Is a Product Decision, Not a Marketing One",
+    "excerpt": "September 1 – October 1, 2026 I made a decision a while back to build a way to use Piper Morgan requiring no dedicated app to download, no chat UI in a web browser, no second location at all. Instead, imagine Piper showing up inside the chat tools people already have open — Claude, ChatGPT, whate...",
+    "url": "/blog/distribution-is-a-product-decision-not-a-marketing-one",
+    "slug": "distribution-is-a-product-decision-not-a-marketing-one",
+    "publishedAt": "Oct 4, 2026",
+    "publishedAtISO": "2026-10-04T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-13339a480c6b",
+    "featuredImage": "/assets/blog-images/distribution-is-a-product-decision-not-a-marketing-one.webp",
+    "thumbnail": "/assets/blog-images/distribution-is-a-product-decision-not-a-marketing-one.webp",
+    "imageAlt": "A human observer watches as glowing AI agents adapt Piper Morgan to fit a display shelf’s standardized connectors, showing how a new distribution surface can change the product itself.",
+    "imageCaption": "\"It fit perfectly on the other shelf!\"",
+    "category": "insight",
+    "cluster": "the-alpha",
+    "workDate": "Sep 1, 2026",
+    "workDateISO": "2026-09-01T00:00:00.000Z"
+  },
+  {
     "title": "Described Is Not Running",
     "excerpt": "August 12, 2026 When we learn something on one of my projects, it gets reported in something we call the \"Cross-Pollination Briefing,\" a daily newsletter distributed to all of my agent teams (along with an occasional column in which I reply to questions from the agents). The Piper Morgan team thu...",
     "url": "/blog/described-is-not-running",
@@ -19,7 +41,8 @@
     "category": "insight",
     "cluster": "the-alpha",
     "workDate": "Aug 12, 2026",
-    "workDateISO": "2026-08-12T00:00:00.000Z"
+    "workDateISO": "2026-08-12T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "What Piper Morgan Actually Is",
