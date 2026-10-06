@@ -51,6 +51,11 @@ export default function AlphaPage() {
                     <p className="text-text-light dark:text-gray-400 mt-1">
                       The alpha runs in your browser. We send you an invite code and you create your account
                     </p>
+                    <p className="text-text-light dark:text-gray-400 mt-2">
+                      There are two ways to use Piper. Connect your own LLM provider key to use the web app,
+                      or install Piper&apos;s plugin in Claude to bring Piper&apos;s skills and what it knows about
+                      your work into a chat you already use.
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
@@ -89,6 +94,10 @@ export default function AlphaPage() {
                 What we&apos;re looking for
               </h2>
               <ul className="space-y-3 text-text-light dark:text-gray-400">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary-teal mt-0.5">•</span>
+                  <span>An API key from your own LLM provider. Piper doesn&apos;t provide or pay for LLM usage, so you bring your own</span>
+                </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary-teal mt-0.5">•</span>
                   <span>Willingness to report what&apos;s working and what isn&apos;t</span>

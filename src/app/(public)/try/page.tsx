@@ -61,6 +61,10 @@ export default function TryPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary-teal mt-0.5">✓</span>
+                    <span>Bring your own LLM provider key; Piper doesn&apos;t cover LLM costs</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary-teal mt-0.5">✓</span>
                     <span>Direct influence on development</span>
                   </li>
                   <li className="flex items-start gap-2">
