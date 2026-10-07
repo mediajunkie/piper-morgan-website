@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { generateSEOMetadata } from '@/lib/domain-utils';
 
 // PM-owned fills. Leave null until PM supplies each value; the page marks the gap visibly.
-const SUPPORT_ADDRESS: string | null = null;
-const RESPONSE_DAYS: string | null = null;
+const SUPPORT_ADDRESS: string | null = 'support@pipermorgan.ai';
+const RESPONSE_DAYS: string | null = 'two';
 // Flip to true only after the Connected apps "Revoke" fix is live and seen working.
 const REVOKE_IN_SETTINGS_LIVE = false;
 
