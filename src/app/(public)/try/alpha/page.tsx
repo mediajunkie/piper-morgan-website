@@ -53,8 +53,9 @@ export default function AlphaPage() {
                     </p>
                     <p className="text-text-light dark:text-gray-400 mt-2">
                       There are two ways to use Piper. Connect your own LLM provider key to use the web app,
-                      or install Piper&apos;s plugin in Claude to bring Piper&apos;s skills and what it knows about
-                      your work into a chat you already use.
+                      or bring Piper into Claude. On a paid Claude plan, open Customize &gt; Plugins, add Piper&apos;s
+                      plugin, then click Connect on its Connectors tab. It works in ordinary Claude chats, and in
+                      Cowork and Claude Code.
                     </p>
                   </div>
                 </li>
