@@ -82,9 +82,8 @@ export default function SupportPage() {
                   have expired. Reconnect from your assistant.
                 </li>
                 <li>
-                  <em>Parts of the answer are empty:</em> that&apos;s honest, not broken. Piper only
-                  reports what it actually has, and a new account has little in its colleague model
-                  yet.
+                  <em>Parts of the answer are empty:</em> that&apos;s expected, not broken. Piper only
+                  reports what&apos;s actually there, and a new account doesn&apos;t have much yet.
                 </li>
               </ul>
             </section>
