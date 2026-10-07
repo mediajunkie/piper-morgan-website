@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Exceptions That Test the Rule",
+    "excerpt": "August 10, 2026 My chief architect agent (Arch) spent the early hours of the morning writing down a rule I'd asked for two days earlier. The problem it addressed was one we'd been patching piecemeal for weeks: Piper would sometimes assert something about a user's own data that wasn't true, a task...",
+    "url": "/blog/the-exceptions-that-test-the-rule",
+    "slug": "the-exceptions-that-test-the-rule",
+    "publishedAt": "Oct 6, 2026",
+    "publishedAtISO": "2026-10-06T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-e5dd78e07042",
+    "featuredImage": "/assets/blog-images/the-exceptions-that-test-the-rule.webp",
+    "thumbnail": "/assets/blog-images/the-exceptions-that-test-the-rule.webp",
+    "imageAlt": "An AI lifeguard offers a rescue ring to a swimmer pictured on a poolside poster, while a colleague gently holds it back and points toward the real pool.",
+    "imageCaption": "\"But she’s had her hand up all morning!\"",
+    "category": "building",
+    "cluster": "the-alpha",
+    "workDate": "Aug 10, 2026",
+    "workDateISO": "2026-08-10T00:00:00.000Z"
+  },
+  {
     "title": "Distribution Is a Product Decision, Not a Marketing One",
     "excerpt": "September 1 – October 1, 2026 I made a decision a while back to build a way to use Piper Morgan requiring no dedicated app to download, no chat UI in a web browser, no second location at all. Instead, imagine Piper showing up inside the chat tools people already have open — Claude, ChatGPT, whate...",
     "url": "/blog/distribution-is-a-product-decision-not-a-marketing-one",
@@ -19,7 +41,8 @@
     "category": "insight",
     "cluster": "the-alpha",
     "workDate": "Sep 1, 2026",
-    "workDateISO": "2026-09-01T00:00:00.000Z"
+    "workDateISO": "2026-09-01T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Described Is Not Running",
