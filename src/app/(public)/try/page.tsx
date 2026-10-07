@@ -6,7 +6,7 @@ const canonicalUrl = 'https://pipermorgan.ai/try/';
 
 export const metadata: Metadata = {
   title: 'Try Piper Morgan | Get Started',
-  description: 'Choose your path to experience Piper Morgan. Learn about the invite-only hosted alpha for hands-on testing, or sign up for the beta waitlist.',
+  description: 'Choose your path to experience Piper Morgan. Request an invite to the hosted alpha for hands-on testing, or sign up for the beta waitlist.',
   alternates: {
     canonical: canonicalUrl,
   },
@@ -74,7 +74,7 @@ export default function TryPage() {
                 </ul>
               </div>
               <CTAButton href="/try/alpha" variant="primary" size="lg" className="w-full justify-center">
-                About the alpha →
+                Request an invite →
               </CTAButton>
             </div>
 

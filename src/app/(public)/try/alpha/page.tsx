@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { Hero } from '@/components';
+import { Hero, CTAButton } from '@/components';
 
 const canonicalUrl = 'https://pipermorgan.ai/try/alpha/';
 
@@ -116,11 +116,36 @@ export default function AlphaPage() {
             {/* CTA Section */}
             <div className="bg-gradient-to-r from-primary-teal/10 to-primary-orange/10 rounded-2xl p-8 text-center mb-12">
               <h2 className="text-2xl font-bold text-text-dark dark:text-white mb-4">
-                Interested?
+                Want in?
               </h2>
+              <p className="text-text-light dark:text-gray-400 mb-6">
+                Email us and we&apos;ll send you an invite code and a link to the hosted alpha.
+                Tell us a little about the product work you do.
+              </p>
+              <CTAButton
+                href="mailto:alpha@pipermorgan.ai?subject=Alpha%20invite%20request"
+                variant="primary"
+                size="lg"
+                external
+              >
+                Request an invite →
+              </CTAButton>
+            </div>
+
+            {/* Questions Section */}
+            <div className="text-center border-t border-gray-200 dark:border-gray-700 pt-8">
+              <h3 className="text-lg font-semibold text-text-dark dark:text-white mb-2">
+                Have questions first?
+              </h3>
               <p className="text-text-light dark:text-gray-400">
-                The alpha is invite-only, and we haven&apos;t opened a public way to request an invite yet.
-                Check back here soon.
+                Email us at{' '}
+                <a
+                  href="mailto:alpha@pipermorgan.ai"
+                  className="text-primary-teal-text dark:text-primary-teal hover:underline"
+                >
+                  alpha@pipermorgan.ai
+                </a>
+                {' '}— we&apos;re happy to chat before you commit.
               </p>
             </div>
 
