@@ -1,5 +1,27 @@
 [
   {
+    "title": "Three Failures Inspire One Law",
+    "excerpt": "August 12, 2026 I wouldn't trust a stoplight if I saw everyone running the red. Nor would I trust a light that was always green. I've had to teach my team to be equally suspicious of tests that always pass. The morning started with my lead developer agent (Lead) closing out a problem that had bee...",
+    "url": "/blog/three-failures-inspire-one-law",
+    "slug": "three-failures-inspire-one-law",
+    "publishedAt": "Oct 8, 2026",
+    "publishedAtISO": "2026-10-08T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-8cdbc8433035",
+    "featuredImage": "/assets/blog-images/three-failures-inspire-one-law.webp",
+    "thumbnail": "/assets/blog-images/three-failures-inspire-one-law.webp",
+    "imageAlt": "An elephant stands on a scale reading zero while a luminous AI assistant records the result and a skeptical human leans in to inspect the dial.",
+    "imageCaption": "\"I’m beginning to suspect the scale!\"",
+    "category": "building",
+    "cluster": "the-alpha",
+    "workDate": "Aug 12, 2026",
+    "workDateISO": "2026-08-12T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #063: Check Before You Leap",
     "excerpt": "September 25 – October 1, 2026 This week I finally tested Piper's new hosted MCP connector and it broke. It still had a default setting that only accepted requests from the machine it was running on, which had eluded tests that never left that machine. I got that fixed and shipped the same day. T...",
     "url": "/blog/weekly-ship-063-check-before-you-leap",
@@ -19,7 +41,8 @@
     "category": "ship",
     "cluster": "the-alpha",
     "workDate": "Sep 25, 2026",
-    "workDateISO": "2026-09-25T00:00:00.000Z"
+    "workDateISO": "2026-09-25T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "August 10, 2026",
