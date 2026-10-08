@@ -6,7 +6,7 @@ import { generateSEOMetadata } from '@/lib/domain-utils';
 const SUPPORT_ADDRESS: string | null = 'support@pipermorgan.ai';
 const RESPONSE_DAYS: string | null = 'two';
 // Flip to true only after the Connected apps "Revoke" fix is live and seen working.
-const REVOKE_IN_SETTINGS_LIVE = false;
+const REVOKE_IN_SETTINGS_LIVE = true;
 
 const seoData = generateSEOMetadata(
   'Support - Piper Morgan',
