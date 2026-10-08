@@ -30,7 +30,7 @@ export default function PrivacyPolicy() {
           <div className="prose prose-lg max-w-none space-y-8 text-text-light">
             <div className="bg-primary-teal/10 p-6 rounded-lg mb-8">
               <p className="text-text-dark font-medium mb-2">
-                <strong>Last updated:</strong> May 2026
+                <strong>Last updated:</strong> October 2026
               </p>
               <p className="text-text-dark">
                 This privacy policy explains how Piper Morgan collects, uses, and protects your personal information when you visit our website and subscribe to our newsletter.
@@ -122,6 +122,51 @@ export default function PrivacyPolicy() {
                   <strong>Important:</strong> We never sell, rent, or share your email address with third parties for marketing purposes.
                 </p>
               </div>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-text-dark mb-4">
+                Using Piper from ChatGPT, Claude and other AI assistants
+              </h2>
+
+              <p className="mb-4">
+                You can connect Piper to an AI assistant you already use, such as ChatGPT or Claude, through Piper&apos;s connector at{' '}
+                <code className="text-text-dark before:content-none after:content-none">mcp.pipermorgan.ai</code>{' '}
+                (built on the Model Context Protocol, &ldquo;MCP&rdquo;). Here is what that connection does and doesn&apos;t do.
+              </p>
+
+              <p className="mb-4">
+                <strong>What the assistant can read.</strong> With your approval, given on a Piper sign-in page, the assistant can read:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>Your Piper profile: organization, active projects and stated priorities.</li>
+                <li>The things Piper has confirmed with you about how you work.</li>
+                <li>Your open GitHub issues, read through the GitHub account you connected to Piper.</li>
+              </ul>
+              <p className="mb-6">
+                The assistant <strong>cannot change anything</strong> in Piper through this connection, and it <strong>cannot see another person&apos;s data</strong>.
+              </p>
+
+              <p className="mb-6">
+                <strong>Where your data goes.</strong> When your assistant reads from Piper, that information goes to the assistant&apos;s provider (for example OpenAI or Anthropic) as part of your conversation. From then on it&apos;s handled under <strong>that provider&apos;s</strong> privacy terms, not ours. No AI model runs on Piper&apos;s side of this connection.
+              </p>
+
+              <p className="mb-4">
+                <strong>What Piper keeps about the connection.</strong>
+              </p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>A record of each connected assistant app: the name it registers with and its sign-in callback addresses.</li>
+                <li>Access credentials, <strong>stored only as one-way hashes, never in readable form</strong>. Access tokens expire after one hour. The longer-lived token that renews them expires after 30 days.</li>
+                <li>When each connection was created and last used.</li>
+                <li>Standard technical request logs (time, address requested, result), kept for security and troubleshooting.</li>
+              </ul>
+              <p className="mb-6">
+                Piper <strong>does not receive your conversations</strong> with the assistant. It only receives the specific requests your assistant makes to read the items listed above.
+              </p>
+
+              <p className="mb-6">
+                <strong>Turning it off.</strong> You can stop an assistant from using Piper at any time by removing Piper from the assistant&apos;s own settings.
+              </p>
             </section>
 
             <section>
