@@ -3,7 +3,7 @@ import { generateSEOMetadata } from '@/lib/domain-utils';
 
 const seoData = generateSEOMetadata(
   'Privacy Policy - Piper Morgan',
-  'Privacy policy for the Piper Morgan website and newsletter. Learn how we collect, use, and protect your personal information.',
+  'Privacy policy for the Piper Morgan website, newsletter, and AI-assistant connector. Learn how we collect, use, and protect your personal information.',
   { canonical: 'https://pipermorgan.ai/privacy' }
 );
 
@@ -33,7 +33,7 @@ export default function PrivacyPolicy() {
                 <strong>Last updated:</strong> October 2026
               </p>
               <p className="text-text-dark">
-                This privacy policy explains how Piper Morgan collects, uses, and protects your personal information when you visit our website and subscribe to our newsletter.
+                This privacy policy explains how Piper Morgan collects, uses, and protects your personal information when you visit our website, subscribe to our newsletter, or connect Piper to an AI assistant.
               </p>
             </div>
 
