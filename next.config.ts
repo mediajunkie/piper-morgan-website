@@ -60,6 +60,11 @@ const nextConfig: NextConfig = {
             value: 'camera=(), microphone=(), geolocation=()'
           }
         ]
+      },
+      {
+        // MCP Registry domain proof: serve as plain text, not octet-stream
+        source: '/.well-known/mcp-registry-auth',
+        headers: [{ key: 'Content-Type', value: 'text/plain; charset=utf-8' }]
       }
     ];
   },
