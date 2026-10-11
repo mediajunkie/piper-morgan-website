@@ -1,5 +1,27 @@
 [
   {
+    "title": "No Undo",
+    "excerpt": "July 5, 2026 When one of my agents ran a command to add new sprint options to the GitHub project board I use to track, well, everything, they also managed to erase the sprint assignment on all 1,175 items, the entire organizational history of the project. The values were simply gone, with no undo...",
+    "url": "/blog/no-undo",
+    "slug": "no-undo",
+    "publishedAt": "Oct 10, 2026",
+    "publishedAtISO": "2026-10-10T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-0022e0430c68",
+    "featuredImage": "/assets/blog-images/no-undo.webp",
+    "thumbnail": "/assets/blog-images/no-undo.webp",
+    "imageAlt": "An AI sculptor tries to press a broken nose back onto a marble bust. Nearby sit clay practice heads. A skeptical woman holds a dustpan of marble chips.",
+    "imageCaption": "\"The rest of my sculpting today was excellent.\"",
+    "category": "insight",
+    "cluster": "the-mechanism",
+    "workDate": "Jul 5, 2026",
+    "workDateISO": "2026-07-05T00:00:00.000Z"
+  },
+  {
     "title": "Three Failures Inspire One Law",
     "excerpt": "August 12, 2026 I wouldn't trust a stoplight if I saw everyone running the red. Nor would I trust a light that was always green. I've had to teach my team to be equally suspicious of tests that always pass. The morning started with my lead developer agent (Lead) closing out a problem that had bee...",
     "url": "/blog/three-failures-inspire-one-law",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "the-alpha",
     "workDate": "Aug 12, 2026",
-    "workDateISO": "2026-08-12T00:00:00.000Z"
+    "workDateISO": "2026-08-12T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #063: Check Before You Leap",

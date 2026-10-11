@@ -1,5 +1,27 @@
 [
   {
+    "title": "It Doesn't Count if You Skip It",
+    "excerpt": "September 12, 2026 If a step fails to happen in a forest and nothing changes, does it make sound? While closing out their work day, my experience-design agent (CXO) checked whether they had been closing out their days correctly recently. Turns out they hadn't, for sixteen days, for some reason. T...",
+    "url": "/blog/it-doesnt-count-if-you-skip-it",
+    "slug": "it-doesnt-count-if-you-skip-it",
+    "publishedAt": "Oct 11, 2026",
+    "publishedAtISO": "2026-10-11T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-a8d418714440",
+    "featuredImage": "/assets/blog-images/it-doesnt-count-if-you-skip-it.webp",
+    "thumbnail": "/assets/blog-images/it-doesnt-count-if-you-skip-it.webp",
+    "imageAlt": "An AI clerk reveals a rubber stamp’s blank face while a puzzled human holds two matching forms with empty approval boxes.",
+    "imageCaption": "\"How long have we been approving things with that?\"",
+    "category": "insight",
+    "cluster": "the-alpha",
+    "workDate": "Sep 12, 2026",
+    "workDateISO": "2026-09-12T00:00:00.000Z"
+  },
+  {
     "title": "No Undo",
     "excerpt": "July 5, 2026 When one of my agents ran a command to add new sprint options to the GitHub project board I use to track, well, everything, they also managed to erase the sprint assignment on all 1,175 items, the entire organizational history of the project. The values were simply gone, with no undo...",
     "url": "/blog/no-undo",
@@ -19,7 +41,8 @@
     "category": "insight",
     "cluster": "the-mechanism",
     "workDate": "Jul 5, 2026",
-    "workDateISO": "2026-07-05T00:00:00.000Z"
+    "workDateISO": "2026-07-05T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Three Failures Inspire One Law",
