@@ -5,7 +5,7 @@ import { generateSEOMetadata } from '@/lib/domain-utils';
 // PM-owned fills. Leave null until PM supplies each value; the page marks the gap visibly.
 const SUPPORT_ADDRESS: string | null = 'support@pipermorgan.ai';
 const RESPONSE_DAYS: string | null = 'two';
-// Flip to true only after the Connected apps "Revoke" fix is live and seen working.
+// Connected apps "Revoke" is live and verified (PM test 2026-10-11); false would fall back to the assistant-only sentence.
 const REVOKE_IN_SETTINGS_LIVE = true;
 
 const seoData = generateSEOMetadata(
@@ -92,7 +92,7 @@ export default function SupportPage() {
               <h2 className="text-2xl font-semibold text-text-dark mb-4">Removing access</h2>
               <p>
                 {REVOKE_IN_SETTINGS_LIVE
-                  ? 'You can revoke access in Settings → Connected apps in Piper, or remove Piper from your assistant.'
+                  ? 'You can revoke access in Settings → Connected apps in Piper, and access ends right away. You can also remove Piper from your assistant.'
                   : 'Remove Piper from your assistant.'}
               </p>
             </section>

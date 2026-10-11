@@ -165,7 +165,7 @@ export default function PrivacyPolicy() {
               </p>
 
               <p className="mb-6">
-                <strong>Turning it off.</strong> You can remove an assistant&apos;s access at any time in <strong>Settings → Connected apps</strong> in Piper. Removing Piper from your assistant&apos;s own settings also stops the assistant from using it.
+                <strong>Turning it off.</strong> You can remove an assistant&apos;s access at any time in <strong>Settings → Connected apps</strong> in Piper. Access ends right away. Removing Piper from your assistant&apos;s own settings also stops the assistant from using it.
               </p>
             </section>
 
