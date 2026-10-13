@@ -1,5 +1,27 @@
 [
   {
+    "title": "Giving It Away, and Wondering Who May Want It",
+    "excerpt": "August 13, 2026 I decided to open-source Piper Morgan under Apache 2.0. The details came together fast: a patent grant, a trademark carve-out, no ambiguity about what \"open\" means to anyone evaluating the license. My chief of staff agent (Exec) drafted it, fixing a stale MIT badge that had been s...",
+    "url": "/blog/giving-it-away-and-wondering-who-may-want-it",
+    "slug": "giving-it-away-and-wondering-who-may-want-it",
+    "publishedAt": "Oct 13, 2026",
+    "publishedAtISO": "2026-10-13T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-f27e517ec886",
+    "featuredImage": "/assets/blog-images/giving-it-away-and-wondering-who-may-want-it.webp",
+    "thumbnail": "/assets/blog-images/giving-it-away-and-wondering-who-may-want-it.webp",
+    "imageAlt": "A worried bicycle maker reaches across a shop counter as a delighted customer proudly holds up the brakes they’ve removed from their new bike.",
+    "imageCaption": "\"Do you mind taking my name off it first?\"",
+    "category": "building",
+    "cluster": "the-alpha",
+    "workDate": "Aug 13, 2026",
+    "workDateISO": "2026-08-13T00:00:00.000Z"
+  },
+  {
     "title": "It Doesn't Count if You Skip It",
     "excerpt": "September 12, 2026 If a step fails to happen in a forest and nothing changes, does it make sound? While closing out their work day, my experience-design agent (CXO) checked whether they had been closing out their days correctly recently. Turns out they hadn't, for sixteen days, for some reason. T...",
     "url": "/blog/it-doesnt-count-if-you-skip-it",
@@ -19,7 +41,8 @@
     "category": "insight",
     "cluster": "the-alpha",
     "workDate": "Sep 12, 2026",
-    "workDateISO": "2026-09-12T00:00:00.000Z"
+    "workDateISO": "2026-09-12T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "No Undo",
