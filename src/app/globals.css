@@ -24,7 +24,7 @@
 :root {
   /* Brand Colors */
   --primary-teal: #2DD4BF;
-  --primary-teal-text: #0D9488;  /* WCAG AA compliant variant for text */
+  --primary-teal-text: #0F766E;  /* WCAG AA for text: 5.47:1 on white; same value as the Tailwind primary-teal-text token */
   --primary-orange: #FB923C;
   --focus-ring: #0F766E;  /* 5.47:1 on white (WCAG 1.4.11 needs 3:1); dark mode overrides below */
 

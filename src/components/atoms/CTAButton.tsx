@@ -60,7 +60,7 @@ const variantClasses = {
     'bg-primary-orange',
     'text-white',
     'hover:bg-orange-600',
-    'focus:ring-primary-orange',
+    'focus:ring-orange-700 dark:focus:ring-primary-orange',
     'shadow-component',
     'hover:shadow-component-hover',
     'hover:-translate-y-0.5',
