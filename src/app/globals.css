@@ -26,6 +26,8 @@
   --primary-teal: #2DD4BF;
   --primary-teal-text: #0F766E;  /* WCAG AA for text: 5.47:1 on white; same value as the Tailwind primary-teal-text token */
   --primary-orange: #FB923C;
+  --link: #0F766E;  /* default link text: 5.47:1 on white */
+  --link-hover: #115E59;  /* teal-800, 7.9:1 on white */
   --focus-ring: #0F766E;  /* 5.47:1 on white (WCAG 1.4.11 needs 3:1); dark mode overrides below */
 
   /* Text Colors */
@@ -51,7 +53,16 @@
   --text-light: #94A3B8;
   --background: #0F172A;
   --surface: #1E293B;
+  --link: #2DD4BF;  /* 9.59:1 on #0F172A */
+  --link-hover: #5EEAD4;
   --focus-ring: #2DD4BF;  /* 9.59:1 on #0F172A, 7.86:1 on #1E293B */
+}
+
+/* The footer is a dark band in both themes, so its links use the dark-mode link colours */
+footer {
+  --link: #2DD4BF;  /* 7.89:1 on the footer background */
+  --link-hover: #5EEAD4;
+  --focus-ring: #2DD4BF;
 }
 
 /* Dark mode utility classes that work with CSS variables */
@@ -142,13 +153,13 @@
   }
 
   a {
-    color: var(--primary-teal);
+    color: var(--link);
     text-decoration: none;
     transition: color 0.2s ease-in-out;
   }
 
   a:hover {
-    color: #14B8A6; /* teal-600 */
+    color: var(--link-hover);
   }
 
   /* Focus Styles for Accessibility */
@@ -179,7 +190,7 @@
   position: absolute;
   top: -40px;
   left: 6px;
-  background: var(--text-dark);
+  background: #1F2937;  /* fixed dark: var(--text-dark) turns near-white in dark mode, leaving white text on white */
   color: white;
   padding: 8px;
   text-decoration: none;

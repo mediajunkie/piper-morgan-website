@@ -110,8 +110,8 @@ export default function RootLayout({
         <style dangerouslySetInnerHTML={{
           __html: `
             @layer base {
-            :root{--primary-teal:#2DD4BF;--primary-teal-text:#0F766E;--text-dark:#1F2937;--text-light:#6B7280;--background:#FFFFFF;--surface:#F9FAFB;--focus-ring:#0F766E}
-            .dark{--text-dark:#F1F5F9;--text-light:#94A3B8;--background:#0F172A;--surface:#1E293B;--focus-ring:#2DD4BF}
+            :root{--primary-teal:#2DD4BF;--primary-teal-text:#0F766E;--text-dark:#1F2937;--text-light:#6B7280;--background:#FFFFFF;--surface:#F9FAFB;--focus-ring:#0F766E;--link:#0F766E;--link-hover:#115E59}
+            .dark{--text-dark:#F1F5F9;--text-light:#94A3B8;--background:#0F172A;--surface:#1E293B;--focus-ring:#2DD4BF;--link:#2DD4BF;--link-hover:#5EEAD4}
             @font-face{font-family:'Inter';src:url('/fonts/inter-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
             *{box-sizing:border-box}
             html{scroll-behavior:smooth;font-size:16px;margin:0;padding:0;border:none;outline:none}
@@ -135,7 +135,7 @@ export default function RootLayout({
             @media (prefers-reduced-motion: reduce){
               *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}
             }
-            a:hover{color:#0F766E;transition:color 0.2s ease}
+            a:hover{color:var(--link-hover);transition:color 0.2s ease}
             .hover-lift:hover{transform:translateY(-2px);transition:transform 0.2s ease}
             button:focus,a:focus{outline:2px solid var(--focus-ring);outline-offset:2px;border-radius:4px}
             .skip-to-content{position:absolute;top:-100px;left:0;z-index:999;padding:8px 16px;background:#1F2937;color:white;text-decoration:none;border-radius:0 0 4px 0;transition:top 0.3s}
