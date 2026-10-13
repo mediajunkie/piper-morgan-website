@@ -133,7 +133,7 @@ export function Pagination({
               href={getPageUrl(pageNumber)}
               className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                 isActive
-                  ? 'bg-primary-teal dark:bg-primary-teal text-white'
+                  ? 'bg-primary-teal dark:bg-primary-teal text-dark-background font-semibold'
                   : 'text-text-dark dark:text-dark-text hover:text-primary-teal-text dark:hover:text-primary-teal hover:bg-gray-50 dark:hover:bg-gray-800'
               }`}
               aria-label={`Go to page ${pageNumber}`}

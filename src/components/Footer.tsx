@@ -107,7 +107,7 @@ export default function Footer() {
             <div className="mt-6">
               <Link
                 href="/try"
-                className="inline-block bg-primary-teal text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-teal-600 transition-colors"
+                className="inline-block bg-primary-teal text-dark-background px-4 py-2 rounded-lg text-sm font-semibold hover:bg-teal-600 transition-colors"
               >
                 Try Piper
               </Link>

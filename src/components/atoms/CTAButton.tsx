@@ -46,7 +46,7 @@ const baseClasses = [
 const variantClasses = {
   primary: [
     'bg-primary-teal',
-    'text-white',
+    'text-dark-background',
     'hover:bg-teal-600',
     'focus:ring-primary-teal-text dark:focus:ring-primary-teal',
     'shadow-component',

@@ -55,7 +55,7 @@ class NewsletterErrorBoundary extends Component<Props, State> {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={this.handleRetry}
-                className="px-6 py-3 bg-primary-teal text-white rounded-button hover:bg-primary-teal/90 transition-colors"
+                className="px-6 py-3 bg-primary-teal text-dark-background font-semibold rounded-button hover:bg-primary-teal/90 transition-colors"
               >
                 Try Again
               </button>

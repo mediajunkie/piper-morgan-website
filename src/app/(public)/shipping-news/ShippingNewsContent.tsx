@@ -69,7 +69,7 @@ export default function ShippingNewsContent() {
               )}
 
               {/* Title */}
-              <span className="text-lg font-medium text-text-dark dark:text-dark-text group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">
+              <span className="text-lg font-medium text-text-dark dark:text-dark-text group-hover:text-orange-700 dark:group-hover:text-orange-400 transition-colors">
                 {subtitle}
               </span>
 

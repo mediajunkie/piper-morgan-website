@@ -115,7 +115,7 @@ export default function Navigation() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="px-4 py-2 bg-primary-teal text-white font-semibold rounded-lg hover:bg-primary-teal/90 transition-all duration-200 hover:-translate-y-0.5"
+                    className="px-4 py-2 bg-primary-teal text-dark-background font-semibold rounded-lg hover:bg-primary-teal/90 transition-all duration-200 hover:-translate-y-0.5"
                   >
                     {item.label}
                   </Link>
@@ -247,7 +247,7 @@ export default function Navigation() {
                     <Link
                       key={item.href}
                       href={item.href}
-                      className="px-4 py-3 bg-primary-teal text-white font-semibold rounded-lg text-center"
+                      className="px-4 py-3 bg-primary-teal text-dark-background font-semibold rounded-lg text-center"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {item.label}

@@ -69,7 +69,7 @@ export function ShipPostContent({ post, content }: ShipPostContentProps) {
           {/* Back Link */}
           <Link
             href="/shipping-news"
-            className="inline-flex items-center text-orange-600 dark:text-orange-400 hover:underline mb-6"
+            className="inline-flex items-center text-orange-700 dark:text-orange-400 hover:underline mb-6"
           >
             ← The Shipping News
           </Link>
@@ -102,7 +102,7 @@ export function ShipPostContent({ post, content }: ShipPostContentProps) {
             {weekRange && (
               <>
                 <span>•</span>
-                <span className="text-orange-600 dark:text-orange-400">
+                <span className="text-orange-700 dark:text-orange-400">
                   Week of {weekRange}
                 </span>
               </>
@@ -119,10 +119,10 @@ export function ShipPostContent({ post, content }: ShipPostContentProps) {
               prose-headings:font-display prose-headings:font-bold prose-headings:text-text-dark dark:prose-headings:text-dark-text prose-headings:leading-tight prose-headings:tracking-tight
               prose-h1:text-3xl prose-h1:mt-12 prose-h1:mb-6 prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
               prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:leading-relaxed prose-p:mb-6 prose-p:text-lg
-              prose-a:text-orange-600 dark:prose-a:text-orange-400 prose-a:no-underline hover:prose-a:underline prose-a:transition-colors
+              prose-a:text-orange-700 dark:prose-a:text-orange-400 prose-a:no-underline hover:prose-a:underline prose-a:transition-colors
               prose-strong:text-text-dark dark:prose-strong:text-dark-text prose-strong:font-semibold
               prose-em:text-gray-700 dark:prose-em:text-gray-300 prose-em:italic
-              prose-code:text-orange-600 dark:prose-code:text-orange-400 prose-code:bg-gray-100 dark:prose-code:bg-gray-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-mono
+              prose-code:text-orange-700 dark:prose-code:text-orange-400 prose-code:bg-gray-100 dark:prose-code:bg-gray-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-mono
               prose-pre:bg-gray-900 dark:prose-pre:bg-gray-950 prose-pre:text-gray-100 prose-pre:p-6 prose-pre:rounded-lg prose-pre:overflow-x-auto prose-pre:my-8
               prose-img:rounded-lg prose-img:shadow-lg prose-img:my-8
               prose-blockquote:border-l-4 prose-blockquote:border-orange-400 prose-blockquote:pl-6 prose-blockquote:py-1 prose-blockquote:italic prose-blockquote:text-gray-700 dark:prose-blockquote:text-gray-400 prose-blockquote:my-8
@@ -145,7 +145,7 @@ export function ShipPostContent({ post, content }: ShipPostContentProps) {
                   href={post.linkedinURL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-orange-600 dark:text-orange-400 hover:underline"
+                  className="text-orange-700 dark:text-orange-400 hover:underline"
                 >
                   LinkedIn
                 </a>
@@ -161,7 +161,7 @@ export function ShipPostContent({ post, content }: ShipPostContentProps) {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <Link
             href="/shipping-news"
-            className="inline-flex items-center text-orange-600 dark:text-orange-400 hover:underline"
+            className="inline-flex items-center text-orange-700 dark:text-orange-400 hover:underline"
           >
             ← The Shipping News
           </Link>
