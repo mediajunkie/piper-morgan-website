@@ -172,7 +172,7 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
                         id="era-filter"
                         value={selectedEpisode}
                         onChange={(e) => updateFilter('episode', e.target.value)}
-                        className="w-full md:w-auto px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-teal focus:border-transparent"
+                        className="w-full md:w-auto px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-teal-text dark:focus:ring-primary-teal focus:border-transparent"
                       >
                         <option value="all">All Eras ({allSortedPosts.length} posts)</option>
                         {ERAS.filter((era) => (episodeCounts[era.slug] || 0) > 0).map((era) => (

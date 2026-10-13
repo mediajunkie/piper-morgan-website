@@ -209,7 +209,7 @@ export function NewsletterSignup({
               placeholder={placeholder}
               className={`
                 flex-1 px-4 py-3 border border-gray-300 rounded-button
-                focus:ring-2 focus:ring-primary-teal focus:border-transparent
+                focus:ring-2 focus:ring-primary-teal-text dark:focus:ring-primary-teal focus:border-transparent
                 ${background === 'dark' ? 'bg-white text-text-dark' : 'bg-white'}
                 disabled:opacity-50
               `}
@@ -234,7 +234,7 @@ export function NewsletterSignup({
                 type="checkbox" 
                 checked={gdprConsent}
                 onChange={(e) => setGdprConsent(e.target.checked)}
-                className="mt-1 h-5 w-5 text-primary-teal-text bg-white border-gray-300 rounded focus:ring-primary-teal focus:ring-2"
+                className="mt-1 h-5 w-5 text-primary-teal-text bg-white border-gray-300 rounded focus:ring-primary-teal-text dark:focus:ring-primary-teal focus:ring-2"
                 disabled={status === 'loading'}
                 required
                 aria-describedby="gdpr-consent-text"

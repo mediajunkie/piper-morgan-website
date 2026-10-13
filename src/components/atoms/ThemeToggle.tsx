@@ -12,7 +12,7 @@ export function ThemeToggle({ className = '' }: ThemeToggleProps) {
   return (
     <button
       onClick={toggleTheme}
-      className={`p-2 rounded-lg transition-colors hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-teal ${className}`}
+      className={`p-2 rounded-lg transition-colors hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-teal-text dark:focus:ring-primary-teal ${className}`}
       aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
       title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
     >

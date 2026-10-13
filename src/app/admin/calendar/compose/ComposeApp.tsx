@@ -714,7 +714,7 @@ export function ComposeApp() {
 const inputCls = [
   'w-full px-3 py-2 rounded-md border border-gray-300 dark:border-gray-700',
   'bg-white dark:bg-dark-surface text-text-dark dark:text-dark-text',
-  'focus:outline-none focus:ring-2 focus:ring-primary-teal/50 focus:border-primary-teal',
+  'focus:outline-none focus:ring-2 focus:ring-primary-teal-text dark:focus:ring-primary-teal focus:border-primary-teal',
   'text-sm',
 ].join(' ');
 

@@ -26,6 +26,7 @@
   --primary-teal: #2DD4BF;
   --primary-teal-text: #0D9488;  /* WCAG AA compliant variant for text */
   --primary-orange: #FB923C;
+  --focus-ring: #0F766E;  /* 5.47:1 on white (WCAG 1.4.11 needs 3:1); dark mode overrides below */
 
   /* Text Colors */
   --text-dark: #1F2937;
@@ -50,6 +51,7 @@
   --text-light: #94A3B8;
   --background: #0F172A;
   --surface: #1E293B;
+  --focus-ring: #2DD4BF;  /* 9.59:1 on #0F172A, 7.86:1 on #1E293B */
 }
 
 /* Dark mode utility classes that work with CSS variables */
@@ -151,7 +153,7 @@
 
   /* Focus Styles for Accessibility */
   :focus-visible {
-    outline: 2px solid var(--primary-teal);
+    outline: 2px solid var(--focus-ring);
     outline-offset: 2px;
   }
 

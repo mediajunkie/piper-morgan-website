@@ -48,7 +48,7 @@ const variantClasses = {
     'bg-primary-teal',
     'text-white',
     'hover:bg-teal-600',
-    'focus:ring-primary-teal',
+    'focus:ring-primary-teal-text dark:focus:ring-primary-teal',
     'shadow-component',
     'hover:shadow-component-hover',
     'hover:-translate-y-0.5',
