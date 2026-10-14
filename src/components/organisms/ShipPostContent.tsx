@@ -122,7 +122,7 @@ export function ShipPostContent({ post, content }: ShipPostContentProps) {
               prose-a:text-orange-700 dark:prose-a:text-orange-400 prose-a:no-underline hover:prose-a:underline prose-a:transition-colors
               prose-strong:text-text-dark dark:prose-strong:text-dark-text prose-strong:font-semibold
               prose-em:text-gray-700 dark:prose-em:text-gray-300 prose-em:italic
-              prose-code:text-orange-700 dark:prose-code:text-orange-400 prose-code:bg-gray-100 dark:prose-code:bg-gray-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-mono
+              prose-code:text-orange-700 dark:prose-code:text-orange-400 prose-code:bg-gray-100 dark:prose-code:bg-gray-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-mono prose-code:[overflow-wrap:anywhere]
               prose-pre:bg-gray-900 dark:prose-pre:bg-gray-950 prose-pre:text-gray-100 prose-pre:p-6 prose-pre:rounded-lg prose-pre:overflow-x-auto prose-pre:my-8
               prose-img:rounded-lg prose-img:shadow-lg prose-img:my-8
               prose-blockquote:border-l-4 prose-blockquote:border-orange-400 prose-blockquote:pl-6 prose-blockquote:py-1 prose-blockquote:italic prose-blockquote:text-gray-700 dark:prose-blockquote:text-gray-400 prose-blockquote:my-8
