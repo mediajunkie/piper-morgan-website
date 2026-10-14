@@ -115,7 +115,7 @@ export function ShipPostContent({ post, content }: ShipPostContentProps) {
       {content ? (
         <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 mb-12">
           <div
-            className="prose prose-lg dark:prose-invert max-w-none
+            className="prose prose-lg dark:prose-invert max-w-none break-words
               prose-headings:font-display prose-headings:font-bold prose-headings:text-text-dark dark:prose-headings:text-dark-text prose-headings:leading-tight prose-headings:tracking-tight
               prose-h1:text-3xl prose-h1:mt-12 prose-h1:mb-6 prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
               prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:leading-relaxed prose-p:mb-6 prose-p:text-lg
