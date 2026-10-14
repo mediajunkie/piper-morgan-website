@@ -33,7 +33,7 @@ export default function PrivacyPolicy() {
                 <strong>Last updated:</strong> October 2026
               </p>
               <p className="text-text-dark">
-                This privacy policy explains how Piper Morgan collects, uses, and protects your personal information when you visit our website, subscribe to our newsletter, or connect Piper to an AI assistant.
+                This privacy policy explains how Piper Morgan collects, uses, and protects your personal information when you visit our website, subscribe to our newsletter, use Piper, or connect Piper to an AI assistant.
               </p>
             </div>
 
@@ -167,6 +167,60 @@ export default function PrivacyPolicy() {
               <p className="mb-6">
                 <strong>Turning it off.</strong> You can remove an assistant&apos;s access at any time in <strong>Settings → Connected apps</strong> in Piper. Access ends right away. Removing Piper from your assistant&apos;s own settings also stops the assistant from using it.
               </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-text-dark mb-4">
+                Your Piper account
+              </h2>
+
+              <p className="mb-4">
+                When you sign up for Piper and use it, here is what we keep, where it lives, and what you can delete.
+              </p>
+
+              <p className="mb-4">
+                <strong>What we store.</strong>
+              </p>
+              <ul className="list-disc pl-6 space-y-2 mb-6">
+                <li>Your account details: username, email address, your settings, and your answers during setup.</li>
+                <li>Your conversations with Piper: each message you send and each reply. These are <strong>encrypted</strong> when stored.</li>
+                <li>What you create or connect in Piper: reminders and to-dos, projects and linked repositories, files you upload, and what Piper learns from your documents and your work. Uploaded files are stored as-is, not encrypted.</li>
+                <li>The AI provider key you add. It&apos;s stored <strong>encrypted</strong>, and it&apos;s never written to our logs.</li>
+              </ul>
+
+              <p className="mb-6">
+                <strong>Where it lives.</strong> On our hosting provider, Fly.io, in San Jose, California. Our admin tools don&apos;t display your conversations, and the stored copies are encrypted.
+              </p>
+
+              <p className="mb-6">
+                <strong>Your AI provider.</strong> Piper sends your messages to the AI provider you connected (Anthropic or OpenAI), using <strong>your own key</strong>. From then on they&apos;re handled under that provider&apos;s privacy terms. There&apos;s no shared Piper key processing your conversations.
+              </p>
+
+              <p className="mb-6">
+                <strong>Logs.</strong> Our server logs don&apos;t keep the text of the messages you send to Piper. At most, they keep a scrambled fingerprint of a message. This doesn&apos;t affect your conversations, which you can still see in Piper.
+              </p>
+
+              <p className="mb-6">
+                <strong>Services you connect.</strong> If you connect GitHub, Google Calendar, Slack or Notion, Piper reads and writes there when you ask. For GitHub and Slack, Piper never sees your password. Piper keeps the access the service grants, encrypted. When you disconnect GitHub, Piper deletes the stored copy.
+              </p>
+
+              <p className="mb-6">
+                <strong>No analytics or ad tracking in the app.</strong> The Piper app doesn&apos;t use analytics, advertising or error-reporting services.
+              </p>
+
+              <p className="mb-6">
+                <strong>How long we keep it.</strong> As long as your account exists. Nothing is deleted automatically.
+              </p>
+
+              <p className="mb-4">
+                <strong>Deleting your data.</strong> In Piper you can delete files you uploaded, your AI provider key, what Piper has learned about you, your settings, and your to-dos, projects and linked repositories. Deleting removes them.
+              </p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li><strong>Conversations.</strong> Deleting a conversation hides it from you, but the encrypted copy stays on our servers. Our goal is for deleted conversations to go to a trash, where you can purge them from your data for good.</li>
+                <li><strong>Your whole account.</strong> There&apos;s no way to delete your account inside Piper yet. We plan to add one. Until then, email{' '}
+                  <a href="mailto:support@pipermorgan.ai" className="text-primary-teal-text hover:underline">support@pipermorgan.ai</a>{' '}
+                  and we&apos;ll delete your account and everything in it within 14 days.</li>
+              </ul>
             </section>
 
             <section>
