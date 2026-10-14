@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #064: Code Decides Permission",
+    "excerpt": "October 2–8, 2026 On Monday I ran an end-to-end test round against the live alpha and it failed in three places. Piper was fumbling natural language such as \"Mark the first three complete and leave the fourth one pending.\" Lead prepared a quick fix: a new pair of pattern-matching rules, and I pus...",
+    "url": "/blog/weekly-ship-064-code-decides-permission",
+    "slug": "weekly-ship-064-code-decides-permission",
+    "publishedAt": "Oct 14, 2026",
+    "publishedAtISO": "2026-10-14T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-0ff42ee72081",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
+    "imageCaption": "",
+    "category": "ship",
+    "cluster": "the-alpha",
+    "workDate": "Oct 2, 2026",
+    "workDateISO": "2026-10-02T00:00:00.000Z"
+  },
+  {
     "title": "Giving It Away, and Wondering Who May Want It",
     "excerpt": "August 13, 2026 I decided to open-source Piper Morgan under Apache 2.0. The details came together fast: a patent grant, a trademark carve-out, no ambiguity about what \"open\" means to anyone evaluating the license. My chief of staff agent (Exec) drafted it, fixing a stale MIT badge that had been s...",
     "url": "/blog/giving-it-away-and-wondering-who-may-want-it",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "the-alpha",
     "workDate": "Aug 13, 2026",
-    "workDateISO": "2026-08-13T00:00:00.000Z"
+    "workDateISO": "2026-08-13T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "It Doesn't Count if You Skip It",
