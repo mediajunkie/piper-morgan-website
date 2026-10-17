@@ -216,7 +216,7 @@ export default function PrivacyPolicy() {
                 <strong>Deleting your data.</strong> In Piper you can delete files you uploaded, your AI provider key, what Piper has learned about you, your settings, and your to-dos, projects and linked repositories. Deleting removes them.
               </p>
               <ul className="list-disc pl-6 space-y-2 mb-4">
-                <li><strong>Conversations.</strong> Deleting a conversation hides it from you, but the encrypted copy stays on our servers. Our goal is for deleted conversations to go to a trash, where you can purge them from your data for good.</li>
+                <li><strong>Conversations.</strong> There&apos;s no way to delete a conversation inside Piper yet, so your conversations stay on our servers, encrypted. Our goal is a trash, where you can purge a conversation from your data for good.</li>
                 <li><strong>Your whole account.</strong> There&apos;s no way to delete your account inside Piper yet. We plan to add one. Until then, email{' '}
                   <a href="mailto:support@pipermorgan.ai" className="text-primary-teal-text hover:underline">support@pipermorgan.ai</a>{' '}
                   and we&apos;ll delete your account and everything in it within 14 days.</li>
