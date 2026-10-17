@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Overzealous Cleanup Routine",
+    "excerpt": "August 14, 2026 Friday morning, my chief of staff agent (Exec) sent out the week's workstream-review kickoff — a message to ten different roles across the team, asking each of them to write up their week for the regular report we call the Weekly Ship. The message landed in all ten inboxes, plus m...",
+    "url": "/blog/the-overzealous-cleanup-routine",
+    "slug": "the-overzealous-cleanup-routine",
+    "publishedAt": "Oct 15, 2026",
+    "publishedAtISO": "2026-10-15T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-e2d0bf05776c",
+    "featuredImage": "/assets/blog-images/the-overzealous-cleanup-routine.webp",
+    "thumbnail": "/assets/blog-images/the-overzealous-cleanup-routine.webp",
+    "imageAlt": "A smiling AI waiter carries two untouched, steaming dinners away as one diner reaches after her meal and the other stares at the bare table, utensils poised.",
+    "imageCaption": "\"Are you forgetting something?\"",
+    "category": "building",
+    "cluster": "the-alpha",
+    "workDate": "Aug 14, 2026",
+    "workDateISO": "2026-08-14T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #064: Code Decides Permission",
     "excerpt": "October 2–8, 2026 On Monday I ran an end-to-end test round against the live alpha and it failed in three places. Piper was fumbling natural language such as \"Mark the first three complete and leave the fourth one pending.\" Lead prepared a quick fix: a new pair of pattern-matching rules, and I pus...",
     "url": "/blog/weekly-ship-064-code-decides-permission",
@@ -19,7 +41,8 @@
     "category": "ship",
     "cluster": "the-alpha",
     "workDate": "Oct 2, 2026",
-    "workDateISO": "2026-10-02T00:00:00.000Z"
+    "workDateISO": "2026-10-02T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Giving It Away, and Wondering Who May Want It",
