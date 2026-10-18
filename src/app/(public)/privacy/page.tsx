@@ -184,7 +184,7 @@ export default function PrivacyPolicy() {
               <ul className="list-disc pl-6 space-y-2 mb-6">
                 <li>Your account details: username, email address, your password (stored only as a one-way hash, never in readable form), your settings, and your answers during setup.</li>
                 <li>Your conversations with Piper: each message you send and each reply. These are <strong>encrypted</strong> when stored.</li>
-                <li>What you create or connect in Piper: reminders and to-dos, projects and linked repositories, files you upload, and what Piper learns from your documents and your work. Uploaded files are stored as-is, not encrypted.</li>
+                <li>What you create or connect in Piper: reminders and to-dos, projects and linked repositories, files you upload, and what Piper learns from your documents and your work. Uploaded files are <strong>encrypted</strong> when stored.</li>
                 <li>The AI provider key you add. It&apos;s stored <strong>encrypted</strong>, and it&apos;s never written to our logs.</li>
               </ul>
 
