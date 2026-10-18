@@ -1,5 +1,27 @@
 [
   {
+    "title": "Measure the Start, Not the End",
+    "excerpt": "September 29 – October 1, 2026 My agents wake themselves up on a schedule. For most of this year that schedule ran on the cron scheduler built into the coding tool they live in: \"fire at 6:12, 9:12, 12:12,\" and so on through the day. And for weeks, several of them had noticed the same oddity. The...",
+    "url": "/blog/measure-the-start-not-the-end",
+    "slug": "measure-the-start-not-the-end",
+    "publishedAt": "Oct 18, 2026",
+    "publishedAtISO": "2026-10-18T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-3487913c484b",
+    "featuredImage": "/assets/blog-images/measure-the-start-not-the-end.webp",
+    "thumbnail": "/assets/blog-images/measure-the-start-not-the-end.webp",
+    "imageAlt": "A runner waits behind the starting line as an AI starter studies a clipboard. At the finish, two AI officials compare stopwatches while a human coach gestures toward the distracted starter.",
+    "imageCaption": "\"What's taking so long?\"",
+    "category": "insight",
+    "cluster": "the-alpha",
+    "workDate": "Sep 29, 2026",
+    "workDateISO": "2026-09-29T00:00:00.000Z"
+  },
+  {
     "title": "Convergent Claims Aren't Independent Evidence",
     "excerpt": "September 20–22, 2026 On a Sunday evening in September, the machine my agents live on rebooted as planned. The plan assumed a reboot would wipe every agent's scheduled wake-up timer, so each one would need to be re-armed afterward. That evening, four agents found their timers were still there, wi...",
     "url": "/blog/convergent-claims-arent-independent-evidence",
@@ -19,7 +41,8 @@
     "category": "insight",
     "cluster": "the-alpha",
     "workDate": "Sep 20, 2026",
-    "workDateISO": "2026-09-20T00:00:00.000Z"
+    "workDateISO": "2026-09-20T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Overzealous Cleanup Routine",
