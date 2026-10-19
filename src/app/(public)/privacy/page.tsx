@@ -201,7 +201,27 @@ export default function PrivacyPolicy() {
               </p>
 
               <p className="mb-6">
-                <strong>Services you connect.</strong> If you connect GitHub, Google Calendar, Slack or Notion, Piper reads and writes there when you ask. For GitHub and Slack, Piper never sees your password. Piper keeps the access the service grants, encrypted. When you disconnect GitHub, Piper deletes the stored copy.
+                <strong>Services you connect.</strong> If you connect GitHub, Slack or Notion, Piper reads and writes there when you ask. Google Calendar is read-only (see below). For GitHub and Slack, Piper never sees your password. Piper keeps the access the service grants, encrypted. When you disconnect GitHub, Piper deletes the stored copy.
+              </p>
+
+              <p className="mb-6">
+                <strong>Google Calendar.</strong> If you connect Google Calendar, Piper asks Google for read-only access to your calendar and for your Google account&apos;s email address. Piper reads your events only when you ask about your schedule or start your standup, and uses them only to answer you. Piper can&apos;t create, change or delete events.
+              </p>
+
+              <p className="mb-6">
+                To write that answer, Piper sends the details of the events you asked about to the AI provider you connected, using your own key. Piper&apos;s answer is kept with your conversations, encrypted.
+              </p>
+
+              <p className="mb-6">
+                Piper doesn&apos;t sell Google user data, use it for advertising, or use it to build or train AI models. No one at Piper Morgan reads it unless you ask us to, for example for support, or unless it&apos;s needed for security or to comply with the law.
+              </p>
+
+              <p className="mb-6">
+                The access Google grants is stored encrypted. When you disconnect Google Calendar in Piper, Piper revokes that access at Google and deletes its copy.
+              </p>
+
+              <p className="mb-6">
+                Piper Morgan&apos;s use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" className="text-primary-teal-text hover:underline" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements.
               </p>
 
               <p className="mb-6">

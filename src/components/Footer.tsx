@@ -13,6 +13,7 @@ const footerLinks: FooterLink[] = [
   { label: 'Journey', href: '/blog' },
   { label: 'Methodology', href: '/methodology' },
   { label: 'About', href: '/about' },
+  { label: 'Privacy', href: '/privacy' },
 ];
 
 const developerLinks: FooterLink[] = [
