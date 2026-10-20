@@ -91,11 +91,9 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
     setTheme(newTheme);
   };
 
-  // Prevent flash of incorrect theme and context errors by not rendering until mounted
-  if (!mounted) {
-    return null;
-  }
-
+  // Children render on the server and before mount, so the served HTML carries the whole
+  // page (nav, footer, body text). The dark class is set before first paint by the inline
+  // script in layout.tsx <head>, so dark-mode visitors don't see a light flash.
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme, setTheme }}>
       {children}

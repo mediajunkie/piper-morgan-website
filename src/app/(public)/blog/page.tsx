@@ -52,7 +52,9 @@ export default function BlogPage() {
       )}
 
       <Suspense fallback={<div className="text-center py-16">Loading blog posts...</div>}>
-        <BlogContent currentPage={1} />
+        <Suspense fallback={null}>
+          <BlogContent currentPage={1} />
+        </Suspense>
       </Suspense>
     </div>
   );

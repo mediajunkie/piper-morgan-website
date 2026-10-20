@@ -22,7 +22,9 @@ export default function ComposePage() {
         </header>
 
         <Suspense fallback={<p className="text-sm text-gray-500 dark:text-gray-400 animate-pulse">Loading…</p>}>
-          <ComposeApp />
+          <Suspense fallback={null}>
+            <ComposeApp />
+          </Suspense>
         </Suspense>
       </main>
     </div>

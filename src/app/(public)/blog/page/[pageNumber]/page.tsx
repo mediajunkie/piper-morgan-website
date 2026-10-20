@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import { generateSEOMetadata } from '@/lib/domain-utils';
 import { Hero } from '@/components';
@@ -100,7 +101,9 @@ export default async function BlogPageNumber({ params }: PageProps) {
         compact
       />
 
-      <BlogContent currentPage={pageNumber} />
+      <Suspense fallback={null}>
+        <BlogContent currentPage={pageNumber} />
+      </Suspense>
     </div>
   );
 }

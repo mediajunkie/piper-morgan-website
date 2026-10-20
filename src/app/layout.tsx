@@ -78,7 +78,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="font-inter">
+    <html lang="en" className="font-inter" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -88,7 +88,6 @@ export default function RootLayout({
                   (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
                 if (theme === 'dark') {
                   document.documentElement.classList.add('dark');
-                  document.body.classList.add('dark');
                 }
               })();
             `,
