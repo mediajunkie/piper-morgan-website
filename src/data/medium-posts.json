@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Phantom Feature",
+    "excerpt": "August 15 – October 19, 2026 Testing a fresh deploy on a Saturday, I hit a flow that failed. I asked Piper to summarize a document, and Piper told me it was unable to do so. I flagged it to my lead developer agent (Lead) as a regression. Something that used to work had apparently stopped working,...",
+    "url": "/blog/the-phantom-feature",
+    "slug": "the-phantom-feature",
+    "publishedAt": "Oct 20, 2026",
+    "publishedAtISO": "2026-10-20T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-a4e323a7665d",
+    "featuredImage": "/assets/blog-images/the-phantom-feature.webp",
+    "thumbnail": "/assets/blog-images/the-phantom-feature.webp",
+    "imageAlt": "A luminous AI inspector gestures confidently at a bricked-up doorway while a skeptical woman holds up an old key.",
+    "imageCaption": "\"If there was never a door here, where did I get this key?\"",
+    "category": "building",
+    "cluster": "the-alpha",
+    "workDate": "Aug 15, 2026",
+    "workDateISO": "2026-08-15T00:00:00.000Z"
+  },
+  {
     "title": "Measure the Start, Not the End",
     "excerpt": "September 29 – October 1, 2026 My agents wake themselves up on a schedule. For most of this year that schedule ran on the cron scheduler built into the coding tool they live in: \"fire at 6:12, 9:12, 12:12,\" and so on through the day. And for weeks, several of them had noticed the same oddity. The...",
     "url": "/blog/measure-the-start-not-the-end",
@@ -19,7 +41,8 @@
     "category": "insight",
     "cluster": "the-alpha",
     "workDate": "Sep 29, 2026",
-    "workDateISO": "2026-09-29T00:00:00.000Z"
+    "workDateISO": "2026-09-29T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Convergent Claims Aren't Independent Evidence",
