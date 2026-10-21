@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #065: The Truth About State",
+    "excerpt": "October 9–15, 2026 The list of issues standing between us and the beta went from fourteen to six this week, and the target beta date (October 30) has not moved. Alpha was updated eight times, and most of what changed was verified on the hosted running build, by the agents and by me, before it was...",
+    "url": "/blog/weekly-ship-065-the-truth-about-state",
+    "slug": "weekly-ship-065-the-truth-about-state",
+    "publishedAt": "Oct 21, 2026",
+    "publishedAtISO": "2026-10-21T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-aca550e0cdbb",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
+    "imageCaption": "",
+    "category": "ship",
+    "cluster": "the-alpha",
+    "workDate": "Oct 9, 2026",
+    "workDateISO": "2026-10-09T00:00:00.000Z"
+  },
+  {
     "title": "The Phantom Feature",
     "excerpt": "August 15 – October 19, 2026 Testing a fresh deploy on a Saturday, I hit a flow that failed. I asked Piper to summarize a document, and Piper told me it was unable to do so. I flagged it to my lead developer agent (Lead) as a regression. Something that used to work had apparently stopped working,...",
     "url": "/blog/the-phantom-feature",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "the-alpha",
     "workDate": "Aug 15, 2026",
-    "workDateISO": "2026-08-15T00:00:00.000Z"
+    "workDateISO": "2026-08-15T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Measure the Start, Not the End",
