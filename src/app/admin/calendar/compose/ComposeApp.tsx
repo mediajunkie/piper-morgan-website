@@ -241,6 +241,91 @@ interface LocalDraft {
   caption: string;
   body: string;
   savedAt: string;
+  /** The GitHub sha this edit started from (website#51). Absent on copies written before it. */
+  baseSha?: string | null;
+  /** The saved/loaded content (JSON key) this edit started from. If the local content still
+   *  equals it, the user has no unsaved edits of their own (website#51). */
+  baseKey?: string;
+}
+
+interface LocalBase {
+  baseSha: string | null;
+  baseKey: string | null;
+}
+
+/** How a differing local copy relates to what just loaded (website#51). */
+type LocalDraftKind =
+  | 'edits' // your unsaved edits, on top of the version that just loaded
+  | 'conflict' // your unsaved edits AND the file changed since you started
+  | 'unknown'; // an older copy with no base recorded: cannot tell, show the diff
+
+/**
+ * Decide what a differing local copy is. Returns 'remote' when the local copy holds
+ * nothing the user wrote since the last save, only an older copy of the file: someone
+ * else committed in between, and offering Restore would silently revert them.
+ */
+export function classifyLocalDraft(
+  local: Pick<LocalDraft, 'image' | 'alt' | 'caption' | 'body' | 'baseSha' | 'baseKey'>,
+  loadedSha: string | null,
+): LocalDraftKind | 'remote' {
+  if (local.baseKey === undefined || local.baseKey === null) return 'unknown';
+  const localKey = JSON.stringify({ image: local.image, alt: local.alt, caption: local.caption, body: local.body });
+  if (localKey === local.baseKey) return 'remote';
+  if (local.baseSha === undefined || local.baseSha === null || local.baseSha === loadedSha) return 'edits';
+  return 'conflict';
+}
+
+type DiffRow = { kind: 'same' | 'changed'; theirs: string | null; mine: string | null };
+
+/** Line diff (LCS) between what loaded and the local copy, as aligned rows for two columns. */
+export function diffLines(theirs: string, mine: string): DiffRow[] {
+  const a = theirs.split('\n');
+  const b = mine.split('\n');
+  const n = a.length;
+  const m = b.length;
+  const lcs: number[][] = Array.from({ length: n + 1 }, () => new Array<number>(m + 1).fill(0));
+  for (let i = n - 1; i >= 0; i--) {
+    for (let j = m - 1; j >= 0; j--) {
+      lcs[i][j] = a[i] === b[j] ? lcs[i + 1][j + 1] + 1 : Math.max(lcs[i + 1][j], lcs[i][j + 1]);
+    }
+  }
+  const rows: DiffRow[] = [];
+  let i = 0;
+  let j = 0;
+  while (i < n && j < m) {
+    if (a[i] === b[j]) {
+      rows.push({ kind: 'same', theirs: a[i], mine: b[j] });
+      i++;
+      j++;
+    } else if (lcs[i + 1][j] >= lcs[i][j + 1]) {
+      rows.push({ kind: 'changed', theirs: a[i++], mine: null });
+    } else {
+      rows.push({ kind: 'changed', theirs: null, mine: b[j++] });
+    }
+  }
+  while (i < n) rows.push({ kind: 'changed', theirs: a[i++], mine: null });
+  while (j < m) rows.push({ kind: 'changed', theirs: null, mine: b[j++] });
+  return rows;
+}
+
+function LocalDraftDiff({ theirs, mine }: { theirs: string; mine: string }) {
+  const rows = diffLines(theirs, mine).filter(r => r.kind === 'changed');
+  return (
+    <div className="mt-2 grid grid-cols-2 gap-2 text-xs font-mono" data-testid="local-draft-diff">
+      <div>
+        <div className="font-sans font-semibold mb-1">What loaded from GitHub</div>
+        {rows.map((r, i) => (
+          <div key={i} className={r.theirs === null ? 'min-h-4' : 'bg-red-100 dark:bg-red-900/30 whitespace-pre-wrap'}>{r.theirs}</div>
+        ))}
+      </div>
+      <div>
+        <div className="font-sans font-semibold mb-1">Your local copy</div>
+        {rows.map((r, i) => (
+          <div key={i} className={r.mine === null ? 'min-h-4' : 'bg-green-100 dark:bg-green-900/30 whitespace-pre-wrap'}>{r.mine}</div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 function readLocalDraft(slug: string): LocalDraft | null {
@@ -252,9 +337,9 @@ function readLocalDraft(slug: string): LocalDraft | null {
   }
 }
 
-function writeLocalDraft(slug: string, d: Omit<LocalDraft, 'savedAt'>) {
+function writeLocalDraft(slug: string, d: Pick<LocalDraft, 'image' | 'alt' | 'caption' | 'body'>, base: LocalBase) {
   try {
-    window.localStorage.setItem(localDraftKey(slug), JSON.stringify({ ...d, savedAt: new Date().toISOString() }));
+    window.localStorage.setItem(localDraftKey(slug), JSON.stringify({ ...d, ...base, savedAt: new Date().toISOString() }));
   } catch {
     // Storage full/unavailable (private browsing, quota) — the safety net is
     // best-effort; the server save path is unaffected either way.
@@ -320,6 +405,9 @@ function ComposeEdit({ slug }: { slug: string }) {
   const [uploading, setUploading] = useState(false);
   const [uploadError, setUploadError] = useState<string | null>(null);
   const [localDraftOffer, setLocalDraftOffer] = useState<LocalDraft | null>(null);
+  const [localDraftKind, setLocalDraftKind] = useState<LocalDraftKind>('unknown');
+  const [loadedFields, setLoadedFields] = useState<{ image: string; alt: string; caption: string; body: string } | null>(null);
+  const [remoteNotice, setRemoteNotice] = useState<string | null>(null);
 
   // Body view toggle + caret preservation (PM 2026-09-12). Initialized from a
   // lazy initializer, not a useEffect: reading localStorage during the first
@@ -382,8 +470,21 @@ function ComposeEdit({ slug }: { slug: string }) {
         const local = readLocalDraft(slug);
         if (local) {
           const localKey = JSON.stringify({ image: local.image, alt: local.alt, caption: local.caption, body: local.body });
-          if (localKey !== serverKey) setLocalDraftOffer(local);
-          else clearLocalDraft(slug); // redundant, safe to drop
+          if (localKey === serverKey) {
+            clearLocalDraft(slug); // redundant, safe to drop
+          } else {
+            const kind = classifyLocalDraft(local, d.sha ?? null);
+            if (kind === 'remote') {
+              // Nothing the user wrote is in this copy: it is an older version of the
+              // file and the server has moved on. Restoring would revert that edit.
+              clearLocalDraft(slug);
+              setRemoteNotice(`This draft was updated remotely since your last save (${new Date(local.savedAt).toLocaleString([], { dateStyle: 'short', timeStyle: 'short' })}); showing the latest version. Nothing of yours was unsaved.`);
+            } else {
+              setLoadedFields({ image: d.frontmatter.image, alt: d.frontmatter.alt, caption: d.frontmatter.caption, body: d.body });
+              setLocalDraftKind(kind);
+              setLocalDraftOffer(local);
+            }
+          }
         }
       })
       .catch(e => setLoadError(String(e)));
@@ -399,7 +500,7 @@ function ComposeEdit({ slug }: { slug: string }) {
   useEffect(() => {
     fieldsRef.current = { image, alt, caption, body };
     if (!draft) return; // don't clobber localStorage with pre-load empty state
-    writeLocalDraft(slug, { image, alt, caption, body });
+    writeLocalDraft(slug, { image, alt, caption, body }, { baseSha: shaRef.current, baseKey: lastSavedRef.current });
   }, [slug, draft, image, alt, caption, body]);
 
   const doSave = useCallback(async () => {
@@ -426,8 +527,12 @@ function ComposeEdit({ slug }: { slug: string }) {
       const t = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
       setSaveStatus({ kind: 'saved', time: t, committed: !!committed });
       // Successfully persisted server-side — the local safety copy is no
-      // longer the only record of this content, so clear it.
-      clearLocalDraft(slug);
+      // longer the only record of this content, so clear it. But only if nothing was typed
+      // while the save was in flight: those newer edits exist only in the local copy, so
+      // keep it, now based on what was just saved (website#51).
+      const now = getPayload();
+      if (JSON.stringify(now) === key) clearLocalDraft(slug);
+      else writeLocalDraft(slug, now, { baseSha: shaRef.current, baseKey: key });
     } catch (e) {
       setSaveStatus({ kind: 'error', message: e instanceof Error ? e.message : String(e) });
     }
@@ -554,12 +659,30 @@ function ComposeEdit({ slug }: { slug: string }) {
         <SaveIndicator status={saveStatus} onSave={handleManualSave} />
       </div>
 
+      {remoteNotice && (
+        <div className="mb-4 p-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded text-sm text-blue-900 dark:text-blue-200" role="status" aria-live="polite">
+          {remoteNotice}
+        </div>
+      )}
+
       {localDraftOffer && (
         <div className="mb-4 p-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded text-sm text-blue-900 dark:text-blue-200" role="alert" aria-live="polite">
-          <strong>An unsaved local copy was found</strong> from{' '}
-          {new Date(localDraftOffer.savedAt).toLocaleString([], { dateStyle: 'short', timeStyle: 'short' })},
-          different from what just loaded from GitHub — likely from a save that didn&apos;t go through
-          (e.g. someone else edited this file in the meantime).
+          <strong>
+            {localDraftKind === 'edits' && 'You have unsaved edits'}
+            {localDraftKind === 'conflict' && 'Conflict: you have unsaved edits, and this draft changed since you started them'}
+            {localDraftKind === 'unknown' && 'A local copy was found that differs from what loaded'}
+          </strong>{' '}
+          (local copy from{' '}
+          {new Date(localDraftOffer.savedAt).toLocaleString([], { dateStyle: 'short', timeStyle: 'short' })}).
+          {localDraftKind === 'edits' && ' Likely from a save that did not go through. The lines below show what differs.'}
+          {localDraftKind === 'conflict' && ' Restoring replaces the newer version with your copy. Check the lines below first.'}
+          {localDraftKind === 'unknown' && ' This copy has no record of the version it started from, so it may be only an older copy of the file: Restore could revert someone else\'s edit. Check the lines below first.'}
+          {loadedFields && (
+            <LocalDraftDiff
+              theirs={[loadedFields.image, loadedFields.alt, loadedFields.caption, loadedFields.body].join('\n')}
+              mine={[localDraftOffer.image, localDraftOffer.alt, localDraftOffer.caption, localDraftOffer.body].join('\n')}
+            />
+          )}
           <div className="mt-2 flex gap-2">
             <button
               onClick={() => applyLocalDraft(localDraftOffer)}

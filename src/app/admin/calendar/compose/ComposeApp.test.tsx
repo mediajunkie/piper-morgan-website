@@ -17,7 +17,7 @@
 import '@testing-library/jest-dom';
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { ComposeApp } from './ComposeApp';
+import { ComposeApp, classifyLocalDraft, diffLines } from './ComposeApp';
 
 // Mutable so a test can navigate between drafts — website#35's mechanism is a
 // slug CHANGE, which a static mock cannot express.
@@ -220,5 +220,78 @@ describe('compose local-draft restore (website#35)', () => {
 
     releaseOther();
     global.fetch = realFetch;
+  });
+});
+
+/**
+ * website#51 — the restore banner must tell "your unsaved edits" from "someone else edited
+ * the file since your last save", and show a diff before either choice. On 2026-10-24 a bare
+ * Restore reverted five approved fixes because the local copy was just an older saved text.
+ */
+function seedBasedDraft(slug: string, body: string, base: { baseKey?: string; baseSha?: string | null }) {
+  window.localStorage.setItem(`compose-draft:${slug}`, JSON.stringify({
+    image: '', alt: '', caption: '', body, savedAt: new Date().toISOString(), ...base,
+  }));
+}
+const keyOf = (body: string) => JSON.stringify({ image: '', alt: '', caption: '', body });
+
+describe('compose restore banner (website#51)', () => {
+  it('edited remotely: local copy equals its own base, so no Restore is offered and the user is told', async () => {
+    const OLD = '# Test Draft\n\nAn older text that the server has since replaced.';
+    seedBasedDraft('test-draft', OLD, { baseKey: keyOf(OLD), baseSha: 'old-sha' });
+    render(<ComposeApp />);
+    await bodyField();
+
+    expect(await screen.findByText(/updated remotely since your last save/i)).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /restore local copy/i })).not.toBeInTheDocument();
+    expect(window.localStorage.getItem('compose-draft:test-draft')).not.toContain('older text');
+  });
+
+  it('unsaved edits: says so and shows the two sides before the buttons', async () => {
+    const BASE = BODY;
+    const MINE = BODY + '\n\nA sentence I typed and never saved.';
+    seedBasedDraft('test-draft', MINE, { baseKey: keyOf(BASE), baseSha: null });
+    render(<ComposeApp />);
+
+    expect(await screen.findByText(/You have unsaved edits/i)).toBeInTheDocument();
+    const diff = screen.getByTestId('local-draft-diff');
+    expect(diff).toHaveTextContent('A sentence I typed and never saved.');
+    expect(screen.getByRole('button', { name: /restore local copy/i })).toBeInTheDocument();
+  });
+
+  it('conflict: unsaved edits on an older base, and the file moved on', async () => {
+    const BASE = '# Test Draft\n\nBase text at the time I started.';
+    const MINE = BASE + ' Plus my edit.';
+    seedBasedDraft('test-draft', MINE, { baseKey: keyOf(BASE), baseSha: 'old-sha' });
+    render(<ComposeApp />);
+
+    expect(await screen.findByText(/Conflict: you have unsaved edits/i)).toBeInTheDocument();
+    expect(screen.getByTestId('local-draft-diff')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /restore local copy/i })).toBeInTheDocument();
+  });
+
+  it('older copy with no recorded base: warns that Restore could revert someone else and shows the diff', async () => {
+    seedLocalDraft('test-draft', '# Local edit\n\nNo base recorded for this one.');
+    render(<ComposeApp />);
+
+    expect(await screen.findByText(/no record of the version it started from/i)).toBeInTheDocument();
+    expect(screen.getByTestId('local-draft-diff')).toHaveTextContent('No base recorded for this one.');
+  });
+});
+
+describe('classifyLocalDraft and diffLines (website#51)', () => {
+  const f = { image: '', alt: '', caption: '' };
+  it('classifies the four cases', () => {
+    expect(classifyLocalDraft({ ...f, body: 'x' }, 's')).toBe('unknown');
+    expect(classifyLocalDraft({ ...f, body: 'x', baseKey: keyOf('x'), baseSha: 'a' }, 'b')).toBe('remote');
+    expect(classifyLocalDraft({ ...f, body: 'y', baseKey: keyOf('x'), baseSha: 'a' }, 'a')).toBe('edits');
+    expect(classifyLocalDraft({ ...f, body: 'y', baseKey: keyOf('x'), baseSha: 'a' }, 'b')).toBe('conflict');
+  });
+  it('diffLines marks only the lines that differ', () => {
+    const rows = diffLines('a\nb\nc', 'a\nB\nc');
+    expect(rows.filter(r => r.kind === 'changed')).toEqual([
+      { kind: 'changed', theirs: 'b', mine: null },
+      { kind: 'changed', theirs: null, mine: 'B' },
+    ]);
   });
 });
