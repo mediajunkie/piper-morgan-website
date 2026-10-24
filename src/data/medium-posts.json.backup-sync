@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Tracker That Lost Track",
+    "excerpt": "August 16, 2026 By ten-thirty on a Sunday night, most of my team had already wrapped up their work for the day. More than half of my eleven agents had logged their evening check-ins as routine (standing items unchanged, nothing to report). What I couldn't tell was what we had actually got done th...",
+    "url": "/blog/the-tracker-that-lost-track",
+    "slug": "the-tracker-that-lost-track",
+    "publishedAt": "Oct 22, 2026",
+    "publishedAtISO": "2026-10-22T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-43c07c4b6c8b",
+    "featuredImage": "/assets/blog-images/the-tracker-that-lost-track.webp",
+    "thumbnail": "/assets/blog-images/the-tracker-that-lost-track.webp",
+    "imageAlt": "A luminous harbor attendant counts docked boats in a miniature harbor while a human points out the window, where their full-size counterparts are already sailing.",
+    "imageCaption": "\"Shouldn’t be long now!\"",
+    "category": "building",
+    "cluster": "the-alpha",
+    "workDate": "Aug 16, 2026",
+    "workDateISO": "2026-08-16T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #065: The Truth About State",
     "excerpt": "October 9–15, 2026 The list of issues standing between us and the beta went from fourteen to six this week, and the target beta date (October 30) has not moved. Alpha was updated eight times, and most of what changed was verified on the hosted running build, by the agents and by me, before it was...",
     "url": "/blog/weekly-ship-065-the-truth-about-state",
@@ -19,7 +41,8 @@
     "category": "ship",
     "cluster": "the-alpha",
     "workDate": "Oct 9, 2026",
-    "workDateISO": "2026-10-09T00:00:00.000Z"
+    "workDateISO": "2026-10-09T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Phantom Feature",
