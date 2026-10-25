@@ -295,3 +295,81 @@ describe('classifyLocalDraft and diffLines (website#51)', () => {
     ]);
   });
 });
+
+/**
+ * Comms, 2026-10-25: "Draft changed on GitHub since it was loaded" against the editor's
+ * own save. A save can commit while its response never arrives; the browser then holds
+ * the old sha and every later save is refused. These cover the browser half (the server
+ * half returns the current sha when GitHub already holds exactly the content sent).
+ */
+describe('compose save: stale sha after a save whose response was lost', () => {
+  const draftDetail = (body: string, sha: string) => ({
+    ok: true,
+    json: () => Promise.resolve({
+      slug: 'test-draft', title: 't', pubDate: '2026-09-15',
+      frontmatter: { image: '', alt: '', caption: '' }, body, sha,
+    }),
+  });
+
+  it('adopts the current sha when GitHub holds the lost save, then saves the newer edit', async () => {
+    const user = userEvent.setup();
+    const posts: Array<{ sha: string; body: string }> = [];
+    let remoteBody = BODY;
+    let remoteSha = 'A';
+    global.fetch = jest.fn((url: string, init?: RequestInit) => {
+      if (init?.method === 'POST') {
+        const sent = JSON.parse(String(init.body));
+        posts.push({ sha: sent.sha, body: sent.body });
+        if (posts.length === 1) {
+          // Commits on GitHub, but the browser never hears back.
+          remoteBody = sent.body; remoteSha = 'B';
+          return Promise.reject(new TypeError('Failed to fetch'));
+        }
+        if (sent.sha !== remoteSha) {
+          return Promise.resolve({ ok: false, status: 409, json: () => Promise.resolve({ error: 'Draft changed on GitHub since it was loaded' }) });
+        }
+        remoteBody = sent.body; remoteSha = 'C';
+        return Promise.resolve({ ok: true, status: 200, json: () => Promise.resolve({ saved: true, committed: true, sha: 'C' }) });
+      }
+      return Promise.resolve(draftDetail(remoteBody, remoteSha));
+    }) as unknown as typeof fetch;
+
+    render(<ComposeApp />);
+    const el = await bodyField();
+    await waitFor(() => expect(el.value).toContain('First paragraph'));
+
+    await user.type(el, 'one', { initialSelectionStart: 0, initialSelectionEnd: 0 });
+    await user.click(await screen.findByRole('button', { name: /save now/i }));
+    await screen.findByText(/Save failed/);
+
+    await user.type(el, 'two', { initialSelectionStart: 0, initialSelectionEnd: 0 });
+    await user.click(await screen.findByRole('button', { name: /save now/i }));
+    await screen.findByText(/Saved/);
+
+    expect(posts).toHaveLength(3);
+    expect(posts[1].sha).toBe('A');   // stale: refused
+    expect(posts[2].sha).toBe('B');   // adopted from GitHub, then accepted
+    expect(posts[2].body.startsWith('two')).toBe(true);
+  });
+
+  it('does not take over a sha when GitHub holds someone else\'s content', async () => {
+    const user = userEvent.setup();
+    let posts = 0;
+    global.fetch = jest.fn((url: string, init?: RequestInit) => {
+      if (init?.method === 'POST') {
+        posts += 1;
+        return Promise.resolve({ ok: false, status: 409, json: () => Promise.resolve({ error: 'Draft changed on GitHub since it was loaded. Last change on GitHub: Someone, now.' }) });
+      }
+      return Promise.resolve(draftDetail('# Edited elsewhere', 'Z'));
+    }) as unknown as typeof fetch;
+
+    render(<ComposeApp />);
+    const el = await bodyField();
+    await waitFor(() => expect(el.value).toContain('Edited elsewhere'));
+    await user.type(el, 'mine', { initialSelectionStart: 0, initialSelectionEnd: 0 });
+    await user.click(await screen.findByRole('button', { name: /save now/i }));
+
+    await screen.findByText(/Last change on GitHub: Someone/);
+    expect(posts).toBe(1);
+  });
+});

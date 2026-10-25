@@ -26,7 +26,7 @@ import {
   stripCaptionQuotes, wrapCaptionQuotes, Frontmatter,
 } from '@/lib/editorial/draft';
 import {
-  githubDraftsEnabled, fetchDraft, saveDraft,
+  githubDraftsEnabled, fetchDraft, saveDraft, latestCommitInfo,
   DraftNotFoundError, DraftConflictError,
 } from '@/lib/github-drafts';
 import { ensureAdmin } from '@/lib/admin-auth';
@@ -207,7 +207,26 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         );
         return res.status(200).json({ saved: true, committed: true, slug, sha: newSha });
       } catch (e) {
-        if (e instanceof DraftConflictError) return res.status(409).json({ error: e.message });
+        if (e instanceof DraftConflictError) {
+          // A save can commit while its response never reaches the browser (a dropped
+          // connection, a timeout), leaving the browser holding the old sha. If GitHub
+          // already holds exactly what this request would write, the save is done: hand
+          // back the current sha instead of refusing (Comms, 2026-10-25).
+          const wanted = serializeDraft(frontmatter, body);
+          try {
+            const cur = await fetchDraft(entry.draftPath);
+            if (cur.content === wanted) {
+              return res.status(200).json({ saved: true, committed: false, reconciled: true, slug, sha: cur.sha });
+            }
+          } catch {
+            // fall through to the plain conflict
+          }
+          // Otherwise say what changed and by whom, so the person can tell their own
+          // earlier save from someone else's edit.
+          const info = await latestCommitInfo(entry.draftPath);
+          const who = info ? ` Last change on GitHub: ${info.author}, ${new Date(info.date).toUTCString()}.` : '';
+          return res.status(409).json({ error: e.message + who });
+        }
         if (e instanceof DraftNotFoundError) return res.status(404).json({ error: e.message });
         return res.status(500).json({ error: String(e) });
       }

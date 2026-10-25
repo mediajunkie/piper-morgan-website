@@ -438,6 +438,9 @@ function ComposeEdit({ slug }: { slug: string }) {
 
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lastSavedRef = useRef<string | null>(null);
+  // Key of the last save whose outcome we never learned (the request failed in transit or
+  // came back as a 5xx): it may have committed on GitHub while we still hold the old sha.
+  const unconfirmedRef = useRef<string | null>(null);
   const shaRef = useRef<string | null>(null);
   // Autosave's 30s setTimeout closure is created at the moment a field changes and can
   // outlive several further edits before it fires. If doSave read `image`/`alt`/`caption`/
@@ -509,11 +512,45 @@ function ComposeEdit({ slug }: { slug: string }) {
     if (lastSavedRef.current === key) return;
     setSaveStatus({ kind: 'saving' });
     try {
-      const res = await fetch(`/api/compose?slug=${encodeURIComponent(slug)}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...payload, sha: shaRef.current }),
-      });
+      let retried = false;
+      let res: Response;
+      for (;;) {
+        try {
+          res = await fetch(`/api/compose?slug=${encodeURIComponent(slug)}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ ...payload, sha: shaRef.current }),
+          });
+        } catch (netErr) {
+          // No response: the save may or may not have committed.
+          unconfirmedRef.current = key;
+          throw netErr;
+        }
+        if (res.status >= 500) unconfirmedRef.current = key;
+        if (res.status === 409 && !retried && unconfirmedRef.current) {
+          // A save of ours may have committed without us hearing. If GitHub now holds
+          // exactly that content, our sha is merely stale: take the new one and go again.
+          const cur = await fetch(`/api/compose?slug=${encodeURIComponent(slug)}`)
+            .then(r => (r.ok ? r.json() : null)).catch(() => null) as DraftDetail | null;
+          const curKey = cur ? JSON.stringify({ image: cur.frontmatter.image, alt: cur.frontmatter.alt, caption: cur.frontmatter.caption, body: cur.body }) : null;
+          if (cur?.sha && curKey && (curKey === unconfirmedRef.current || curKey === key)) {
+            shaRef.current = cur.sha;
+            lastSavedRef.current = curKey;
+            unconfirmedRef.current = null;
+            retried = true;
+            if (curKey === key) break; // already saved; nothing to resend
+            continue;
+          }
+        }
+        break;
+      }
+      if (lastSavedRef.current === key && !res.ok) {
+        // Reconciled: GitHub already holds this exact content.
+        const t = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        setSaveStatus({ kind: 'saved', time: t, committed: false });
+        clearLocalDraft(slug);
+        return;
+      }
       if (!res.ok) {
         const errBody = await res.json().catch(() => null) as { error?: string } | null;
         // Deliberately do NOT clear the local draft here — a rejected save
@@ -522,6 +559,7 @@ function ComposeEdit({ slug }: { slug: string }) {
         throw new Error(errBody?.error || `HTTP ${res.status}`);
       }
       lastSavedRef.current = key;
+      unconfirmedRef.current = null;
       const { committed, sha: newSha } = await res.json();
       if (newSha) shaRef.current = newSha;
       const t = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });

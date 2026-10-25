@@ -72,6 +72,25 @@ export async function fetchDraft(draftPath: string): Promise<{ content: string; 
   return { content: Buffer.from(data.content, 'base64').toString('utf-8'), sha: data.sha };
 }
 
+/**
+ * Who last changed a file and when, for a conflict message ("Draft changed on GitHub ...
+ * by <author> at <time>"). Best effort: any failure returns null, never throws, since it
+ * only decorates a message.
+ */
+export async function latestCommitInfo(draftPath: string): Promise<{ author: string; date: string } | null> {
+  try {
+    const cfg = config();
+    const url = `${API_ROOT}/repos/${cfg.owner}/${cfg.repo}/commits?path=${encodeURIComponent(draftPath)}&sha=${encodeURIComponent(cfg.branch)}&per_page=1`;
+    const res = await ghFetch(url, cfg);
+    if (!res.ok) return null;
+    const list = (await res.json()) as Array<{ commit?: { author?: { name?: string; date?: string } } }>;
+    const a = list[0]?.commit?.author;
+    return a?.name && a?.date ? { author: a.name, date: a.date } : null;
+  } catch {
+    return null;
+  }
+}
+
 export async function saveDraft(
   draftPath: string,
   content: string,
