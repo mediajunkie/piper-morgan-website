@@ -14,6 +14,7 @@ const footerLinks: FooterLink[] = [
   { label: 'Methodology', href: '/methodology' },
   { label: 'About', href: '/about' },
   { label: 'Privacy', href: '/privacy' },
+  { label: 'Terms', href: '/terms' },
 ];
 
 const developerLinks: FooterLink[] = [
