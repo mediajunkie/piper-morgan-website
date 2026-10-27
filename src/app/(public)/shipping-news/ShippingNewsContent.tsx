@@ -63,7 +63,7 @@ export default function ShippingNewsContent() {
             >
               {/* Ship number */}
               {number && (
-                <span className="text-sm font-mono text-orange-500 dark:text-orange-400 w-8 text-right shrink-0">
+                <span className="text-sm font-mono text-orange-700 dark:text-orange-400 w-8 text-right shrink-0">
                   #{number}
                 </span>
               )}

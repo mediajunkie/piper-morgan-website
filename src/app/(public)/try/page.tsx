@@ -81,7 +81,7 @@ export default function TryPage() {
             {/* Beta Card */}
             <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 flex flex-col">
               <div className="flex-1">
-                <div className="inline-block px-3 py-1 bg-primary-orange/10 text-primary-orange text-sm font-medium rounded-full mb-4">
+                <div className="inline-block px-3 py-1 bg-primary-orange/10 text-orange-700 dark:text-orange-400 text-sm font-medium rounded-full mb-4">
                   For the curious
                 </div>
                 <h2 className="text-2xl font-bold text-text-dark dark:text-white mb-4">

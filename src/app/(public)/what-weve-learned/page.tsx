@@ -275,7 +275,7 @@ export default function WhatWeveLearnedPage() {
                     </p>
                   </div>
 
-                  <div className="bg-primary-orange/10 p-4 rounded-lg">
+                  <div className="bg-primary-orange/10 p-4 rounded-lg [&_.text-text-light]:text-gray-600">
                     <h4 className="font-semibold text-text-dark mb-2">
                       Strategic insight
                     </h4>
@@ -359,7 +359,7 @@ export default function WhatWeveLearnedPage() {
                     </p>
                   </div>
 
-                  <div className="bg-primary-orange/10 p-4 rounded-lg">
+                  <div className="bg-primary-orange/10 p-4 rounded-lg [&_.text-text-light]:text-gray-600">
                     <h4 className="font-semibold text-text-dark mb-2">
                       Strategic insight
                     </h4>
@@ -614,7 +614,7 @@ export default function WhatWeveLearnedPage() {
                     </p>
                   </div>
 
-                  <div className="bg-primary-orange/10 p-4 rounded-lg">
+                  <div className="bg-primary-orange/10 p-4 rounded-lg [&_.text-text-light]:text-gray-600">
                     <h4 className="font-semibold text-text-dark mb-2">
                       The evidence
                     </h4>
@@ -671,7 +671,7 @@ export default function WhatWeveLearnedPage() {
                 </ul>
               </div>
 
-              <div className="bg-primary-orange/10 p-8 rounded-lg">
+              <div className="bg-primary-orange/10 p-8 rounded-lg [&_.text-text-light]:text-gray-600">
                 <h3 className="text-xl font-semibold text-text-dark mb-4">
                   If You're Already Using AI
                 </h3>
@@ -723,7 +723,7 @@ export default function WhatWeveLearnedPage() {
       </section>
 
       {/* Bottom Line */}
-      <section className="bg-gradient-to-r from-primary-teal/10 to-primary-orange/10 py-16">
+      <section className="bg-gradient-to-r from-primary-teal/10 to-primary-orange/10 py-16 [&_.text-text-light]:text-gray-600">
         <div className="site-container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-text-dark mb-8">

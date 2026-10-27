@@ -164,7 +164,7 @@ export default function GetInvolvedPage() {
               Reach out at{" "}
               <a
                 href="mailto:contribute@pipermorgan.ai"
-                className="text-primary-teal-text hover:underline"
+                className="text-primary-teal-text underline"
               >
                 contribute@pipermorgan.ai
               </a>

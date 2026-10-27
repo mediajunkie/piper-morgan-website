@@ -58,7 +58,7 @@ const variantClasses = {
   ].join(' '),
   secondary: [
     'bg-primary-orange',
-    'text-white',
+    'text-gray-900',
     'hover:bg-orange-600',
     'focus:ring-orange-700 dark:focus:ring-primary-orange',
     'shadow-component',

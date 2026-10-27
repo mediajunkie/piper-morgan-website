@@ -127,7 +127,7 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
                 <div className="flex flex-wrap gap-3 mb-6">
                   <button
                     onClick={() => updateFilter('category', 'all')}
-                    style={selectedCategory === 'all' ? { backgroundColor: '#2DD4BF', color: '#FFFFFF' } : undefined}
+                    style={selectedCategory === 'all' ? { backgroundColor: '#2DD4BF', color: '#111827' } : undefined}
                     className={`px-8 py-3 rounded-full font-medium transition-all duration-200 ${
                       selectedCategory === 'all'
                         ? 'shadow-md'
@@ -138,7 +138,7 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
                   </button>
                   <button
                     onClick={() => updateFilter('category', 'building')}
-                    style={selectedCategory === 'building' ? { backgroundColor: '#2DD4BF', color: '#FFFFFF' } : undefined}
+                    style={selectedCategory === 'building' ? { backgroundColor: '#2DD4BF', color: '#111827' } : undefined}
                     className={`px-8 py-3 rounded-full font-medium transition-all duration-200 ${
                       selectedCategory === 'building'
                         ? 'shadow-md'
@@ -149,7 +149,7 @@ export default function BlogContent({ currentPage: currentPageProp = 1 }: BlogCo
                   </button>
                   <button
                     onClick={() => updateFilter('category', 'insight')}
-                    style={selectedCategory === 'insight' ? { backgroundColor: '#2DD4BF', color: '#FFFFFF' } : undefined}
+                    style={selectedCategory === 'insight' ? { backgroundColor: '#2DD4BF', color: '#111827' } : undefined}
                     className={`px-8 py-3 rounded-full font-medium transition-all duration-200 ${
                       selectedCategory === 'insight'
                         ? 'shadow-md'

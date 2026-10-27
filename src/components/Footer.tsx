@@ -70,7 +70,7 @@ export default function Footer() {
 
           {/* Navigation Links */}
           <div>
-            <h3 className="font-semibold mb-4">Navigation</h3>
+            <h2 className="font-semibold mb-4 text-[length:clamp(1.5rem,3vw,2.25rem)]">Navigation</h2>
             <ul className="space-y-2">
               {footerLinks.map((link) => (
                 <li key={link.href}>
@@ -87,7 +87,7 @@ export default function Footer() {
 
           {/* Social Links */}
           <div>
-            <h3 className="font-semibold mb-4">Connect</h3>
+            <h2 className="font-semibold mb-4 text-[length:clamp(1.5rem,3vw,2.25rem)]">Connect</h2>
             <ul className="space-y-2">
               {socialLinks.map((link) => (
                 <li key={link.href}>
@@ -118,7 +118,7 @@ export default function Footer() {
 
           {/* Developer Resources */}
           <div>
-            <h3 className="font-semibold mb-4">Developers</h3>
+            <h2 className="font-semibold mb-4 text-[length:clamp(1.5rem,3vw,2.25rem)]">Developers</h2>
             <ul className="space-y-2">
               {developerLinks.map((link) => (
                 <li key={link.href}>
