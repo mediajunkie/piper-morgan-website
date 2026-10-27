@@ -54,7 +54,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-primary-teal rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">PM</span>
+                <span className="text-gray-900 font-bold text-sm">PM</span>
               </div>
               <span className="text-xl font-bold">Piper Morgan</span>
             </Link>
@@ -145,7 +145,7 @@ export default function Footer() {
               <p className="text-gray-400 text-sm">
                 © {new Date().getFullYear()} Piper Morgan. Building in public.
               </p>
-              <p className="text-gray-500 text-xs mt-1">
+              <p className="text-gray-400 text-xs mt-1">
                 Built by{' '}
                 <a
                   href="https://designinproduct.com"
