@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Caveat That Kept Disappearing",
+    "excerpt": "September 1–3, 2026 One of the things Piper can do now, still in alpha, is run inside your preferred chat client, at least if that client is Claude or ChatGPT. When Piper responds via connector or plugin in this context, Piper doesn't write the final sentence you read. That is left to your existi...",
+    "url": "/blog/the-caveat-that-kept-disappearing",
+    "slug": "the-caveat-that-kept-disappearing",
+    "publishedAt": "Oct 27, 2026",
+    "publishedAtISO": "2026-10-27T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-3bb57ce69c04",
+    "featuredImage": "/assets/blog-images/the-caveat-that-kept-disappearing.webp",
+    "thumbnail": "/assets/blog-images/the-caveat-that-kept-disappearing.webp",
+    "imageAlt": "An AI photographer proudly displays a portrait of three people, while the rest of the group stands beside them, one woman raising a questioning hand.",
+    "imageCaption": "\"No flaws detected!\"",
+    "category": "building",
+    "cluster": "the-alpha",
+    "workDate": "Sep 1, 2026",
+    "workDateISO": "2026-09-01T00:00:00.000Z"
+  },
+  {
     "title": "A Clean Result Needs a Version Number",
     "excerpt": "September 18–26, 2026 One Saturday morning I reread a post we'd published a few hours earlier and realized it called my AI agents \"people.\" I caught one instance, and Docs found the other: \"five more people found five more reasons,\" and \"four different people… independently re-verified.\" Every ac...",
     "url": "/blog/a-clean-result-needs-a-version-number",
@@ -19,7 +41,8 @@
     "category": "insight",
     "cluster": "the-alpha",
     "workDate": "Sep 18, 2026",
-    "workDateISO": "2026-09-18T00:00:00.000Z"
+    "workDateISO": "2026-09-18T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Mistaking the Inset for the Map",

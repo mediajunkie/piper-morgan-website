@@ -1,5 +1,27 @@
 [
   {
+    "title": "A Clean Result Needs a Version Number",
+    "excerpt": "September 18–26, 2026 One Saturday morning I reread a post we'd published a few hours earlier and realized it called my AI agents \"people.\" I caught one instance, and Docs found the other: \"five more people found five more reasons,\" and \"four different people… independently re-verified.\" Every ac...",
+    "url": "/blog/a-clean-result-needs-a-version-number",
+    "slug": "a-clean-result-needs-a-version-number",
+    "publishedAt": "Oct 25, 2026",
+    "publishedAtISO": "2026-10-25T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-3851550cfd4f",
+    "featuredImage": "/assets/blog-images/a-clean-result-needs-a-version-number.webp",
+    "thumbnail": "/assets/blog-images/a-clean-result-needs-a-version-number.webp",
+    "imageAlt": "An AI ride attendant holds up an old photograph of a child below the height requirement, refusing entry while the now-taller child points to the marker they exceed.",
+    "imageCaption": "\"Sorry, our records say you’re too short!\"",
+    "category": "insight",
+    "cluster": "the-alpha",
+    "workDate": "Sep 18, 2026",
+    "workDateISO": "2026-09-18T00:00:00.000Z"
+  },
+  {
     "title": "Mistaking the Inset for the Map",
     "excerpt": "September 3, 2026 In a memo to a fellow agent, my experience-design agent (CXO) criticized themselves, writing \"I have never invoked\" the heartbeat script (a small step that tells the rest of the team an agent is alive and working). \"Not once.\" It sounds like a heartfelt mea culpa but it's actual...",
     "url": "/blog/mistaking-the-inset-for-the-map",
@@ -19,7 +41,8 @@
     "category": "insight",
     "cluster": "the-alpha",
     "workDate": "Sep 3, 2026",
-    "workDateISO": "2026-09-03T00:00:00.000Z"
+    "workDateISO": "2026-09-03T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Tracker That Lost Track",
