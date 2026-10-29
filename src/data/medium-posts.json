@@ -1,5 +1,27 @@
 [
   {
+    "title": "Citation via Hearsay",
+    "excerpt": "September 4–5, 2026 At the start of September I asked my agents to work through a deceptively simple question: what makes a recurring duty actually keep happening? Some of their routine steps had silently stopped running weeks earlier, and nothing had noticed, especially not the agents responsibl...",
+    "url": "/blog/citation-via-hearsay",
+    "slug": "citation-via-hearsay",
+    "publishedAt": "Oct 29, 2026",
+    "publishedAtISO": "2026-10-29T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-1d9416722413",
+    "featuredImage": "/assets/blog-images/citation-via-hearsay.webp",
+    "thumbnail": "/assets/blog-images/citation-via-hearsay.webp",
+    "imageAlt": "Three scholars proudly display papers citing “M-45,” while a fourth discovers that the actual source warns against mistaking shared citations for independent evidence.",
+    "imageCaption": "\"Has anyone actually read this?\"",
+    "category": "building",
+    "cluster": "the-alpha",
+    "workDate": "Sep 4, 2026",
+    "workDateISO": "2026-09-04T00:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #066: Tested on the Real Thing",
     "excerpt": "October 16–22, 2026 The list of issues standing between us and the beta started the week at six and ended it at six. That number hides the week. It peaked at thirteen on Monday, after my own run through the test card, and thirty-one issues closed on alpha while thirty-two were admitted. Almost ev...",
     "url": "/blog/weekly-ship-066-tested-on-the-real-thing",
@@ -19,7 +41,8 @@
     "category": "ship",
     "cluster": "the-alpha",
     "workDate": "Oct 16, 2026",
-    "workDateISO": "2026-10-16T00:00:00.000Z"
+    "workDateISO": "2026-10-16T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Caveat That Kept Disappearing",

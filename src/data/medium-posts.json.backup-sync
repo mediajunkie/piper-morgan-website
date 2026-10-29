@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #066: Tested on the Real Thing",
+    "excerpt": "October 16–22, 2026 The list of issues standing between us and the beta started the week at six and ended it at six. That number hides the week. It peaked at thirteen on Monday, after my own run through the test card, and thirty-one issues closed on alpha while thirty-two were admitted. Almost ev...",
+    "url": "/blog/weekly-ship-066-tested-on-the-real-thing",
+    "slug": "weekly-ship-066-tested-on-the-real-thing",
+    "publishedAt": "Oct 28, 2026",
+    "publishedAtISO": "2026-10-28T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-ad45d39c73ad",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
+    "imageCaption": "",
+    "category": "ship",
+    "cluster": "the-alpha",
+    "workDate": "Oct 16, 2026",
+    "workDateISO": "2026-10-16T00:00:00.000Z"
+  },
+  {
     "title": "The Caveat That Kept Disappearing",
     "excerpt": "September 1–3, 2026 One of the things Piper can do now, still in alpha, is run inside your preferred chat client, at least if that client is Claude or ChatGPT. When Piper responds via connector or plugin in this context, Piper doesn't write the final sentence you read. That is left to your existi...",
     "url": "/blog/the-caveat-that-kept-disappearing",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "the-alpha",
     "workDate": "Sep 1, 2026",
-    "workDateISO": "2026-09-01T00:00:00.000Z"
+    "workDateISO": "2026-09-01T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "A Clean Result Needs a Version Number",
