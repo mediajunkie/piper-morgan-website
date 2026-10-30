@@ -3,7 +3,7 @@ import { generateSEOMetadata } from '@/lib/domain-utils';
 
 const seoData = generateSEOMetadata(
   'Terms - Piper Morgan',
-  'What you are agreeing to when you use the Piper Morgan alpha: who owns your work, who sees it, how your key is handled, and how to leave.',
+  'What you are agreeing to when you use the Piper Morgan beta: who owns your work, who sees it, how your key is handled, and how to leave.',
   { canonical: 'https://pipermorgan.ai/terms' }
 );
 
@@ -28,7 +28,7 @@ const sections: Array<[string, string]> = [
   [`If the database stops`, `Recovery is automatic and usually takes 15 to 30 minutes. The alert reaches me either way.`],
   [`Leaving`, `You can download your uploaded files, and what Piper has learned about how you work. Exporting your conversations and to-dos is the goal, and isn't built yet. There's no delete-account button yet either. If you'd like to delete your account, just email support@pipermorgan.ai and we'll delete your account and everything in it within 14 days. Deleting a single conversation inside Piper isn't possible yet. The roadmap includes the ability to put things in trash and to empty it for good yourself, so we hope to get there before too long.`],
   [`Your invite code`, `Your code works once, for one account. Please don't share it. If it leaks before you use it, tell us and we'll cancel it. Once used, it can't be taken back, because the account exists. We won't publish who our testers are, and we won't quote you without asking first.`],
-  [`What this alpha is`, `Expect errors, and go carefully. Using your real work is OK.`],
+  [`What this beta is`, `Expect errors, and go carefully. Using your real work is OK.`],
   [``, `Before Production, we'll add deleting a conversation for good, deleting your account in the app, exporting your conversations and to-dos, and undo. Today, the sections above describe what's true.`],
   [`Who it's for`, `Piper Morgan is an assistant who gets it for product managers and for people making products who need the support of a product manager and don't have a human one at hand.`],
 ];
@@ -45,7 +45,7 @@ export default function Terms() {
           <div className="prose prose-lg max-w-none space-y-8 text-text-light">
             <div className="bg-primary-teal/10 p-6 rounded-lg mb-8">
               <p className="text-text-dark font-medium mb-2">
-                <strong>Last updated:</strong> October 25, 2026
+                <strong>Last updated:</strong> October 30, 2026
               </p>
               <p className="text-text-dark">
                 For how we handle personal information on this website, see our <a href="/privacy/" className="text-primary-teal-text hover:underline">Privacy Policy</a>.
