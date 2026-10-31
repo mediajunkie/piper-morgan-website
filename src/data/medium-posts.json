@@ -1,5 +1,27 @@
 [
   {
+    "title": "Build the Instrument Before the Theory",
+    "excerpt": "October 19–20, 2026 When a bug crops up in Piper Morgan, the agents tend to jump straight from hypothesis to patch without always fully understanding the cause of the bug. Earlier this month, the chat feature of the alpha version was stalling, and after the team threw up a series of theories that...",
+    "url": "/blog/build-the-instrument-before-the-theory",
+    "slug": "build-the-instrument-before-the-theory",
+    "publishedAt": "Oct 31, 2026",
+    "publishedAtISO": "2026-10-31T00:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-9dafac37923d",
+    "featuredImage": "/assets/blog-images/build-the-instrument-before-the-theory.webp",
+    "thumbnail": "/assets/blog-images/build-the-instrument-before-the-theory.webp",
+    "imageAlt": "Two luminous AI bakers stand beside failed cakes: one offers another egg while the other places a thermometer inside the oven.",
+    "imageCaption": "\"Maybe another egg?\"",
+    "category": "insight",
+    "cluster": "the-alpha",
+    "workDate": "Oct 19, 2026",
+    "workDateISO": "2026-10-19T00:00:00.000Z"
+  },
+  {
     "title": "Citation via Hearsay",
     "excerpt": "September 4–5, 2026 At the start of September I asked my agents to work through a deceptively simple question: what makes a recurring duty actually keep happening? Some of their routine steps had silently stopped running weeks earlier, and nothing had noticed, especially not the agents responsibl...",
     "url": "/blog/citation-via-hearsay",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "the-alpha",
     "workDate": "Sep 4, 2026",
-    "workDateISO": "2026-09-04T00:00:00.000Z"
+    "workDateISO": "2026-09-04T00:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #066: Tested on the Real Thing",
