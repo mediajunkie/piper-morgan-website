@@ -66,7 +66,11 @@ function extractSlugFromMediumUrl(url) {
  */
 function dateToISO(dateString) {
   if (!dateString) return '';
-  const date = new Date(dateString);
+  // A bare YYYY-MM-DD means a day in this project's zone (Pacific). `new Date('2026-07-11')`
+  // is UTC midnight, which is the evening of the 10th in Pacific (#1389 issue 1), so read a
+  // bare date as noon Pacific daylight time. Strings that carry a time or zone are unchanged.
+  const bare = /^\d{4}-\d{2}-\d{2}$/.test(String(dateString).trim());
+  const date = bare ? new Date(`${String(dateString).trim()}T12:00:00-07:00`) : new Date(dateString);
   if (isNaN(date.getTime())) return '';
   return date.toISOString();
 }
@@ -528,7 +532,15 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
   let blogFirstCount = 0;
   csvMetadata.forEach(meta => {
     if (!meta.slug || !meta.hashId) return;
-    if (existingMap.has(meta.hashId)) return; // Already have this post from RSS
+    if (existingMap.has(meta.hashId)) {
+      // A pubDate corrected in the CSV must reach an already-archived blog-first post (#1389 issue 2).
+      const existing = existingMap.get(meta.hashId);
+      if (existing && existing.guid && existing.guid.startsWith('blog-first-') && (meta.pubDate || meta.workDate)) {
+        existing.publishedAt = formatDate(meta.pubDate || meta.workDate);
+        existing.publishedAtISO = dateToISO(meta.pubDate || meta.workDate);
+      }
+      return; // Already have this post (RSS or an earlier blog-first run)
+    }
 
     // Build a post entry from CSV metadata + blog-content.json
     const content = blogContent[meta.hashId];
@@ -639,10 +651,17 @@ async function mergeArchive(existingPosts, rssPosts, csvMetadata) {
   });
 
   // Sort by date (newest first)
+  // Same-date posts tie on the timestamp. Two blog-first posts break the tie by archive order: the
+  // one added later sorts first (#1389 issue 3). Medium RSS posts already sit newest-first in the
+  // archive, so any tie that involves one keeps its existing order (the sort is stable).
+  const isBlogFirst = p => Boolean(p.guid && p.guid.startsWith('blog-first-'));
+  const archiveIndex = new Map(mergedPosts.map((p, i) => [p, i]));
   mergedPosts.sort((a, b) => {
     const dateA = new Date(a.publishedAtISO || a.isoDate || a.pubDate);
     const dateB = new Date(b.publishedAtISO || b.isoDate || b.pubDate);
-    return dateB - dateA;
+    const byDate = dateB - dateA;
+    if (byDate !== 0) return byDate;
+    return isBlogFirst(a) && isBlogFirst(b) ? archiveIndex.get(b) - archiveIndex.get(a) : 0;
   });
 
   console.log(`\n📊 Merge Summary:`);
