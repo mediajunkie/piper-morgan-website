@@ -136,7 +136,7 @@ export default function InvitePage() {
                 Email us at{' '}
                 <a
                   href="mailto:support@pipermorgan.ai"
-                  className="text-primary-teal-text dark:text-primary-teal hover:underline"
+                  className="text-primary-teal-text dark:text-primary-teal underline hover:no-underline"
                 >
                   support@pipermorgan.ai
                 </a>
