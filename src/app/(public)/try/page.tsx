@@ -6,13 +6,13 @@ const canonicalUrl = 'https://pipermorgan.ai/try/';
 
 export const metadata: Metadata = {
   title: 'Try Piper Morgan | Get Started',
-  description: 'Choose your path to experience Piper Morgan. Request an invite to the hosted alpha for hands-on testing, or sign up for the beta waitlist.',
+  description: 'Choose your path to Piper Morgan. See what the private beta is like, or join the waiting list for an invitation or a note when the public beta starts.',
   alternates: {
     canonical: canonicalUrl,
   },
   openGraph: {
     title: 'Try Piper Morgan',
-    description: 'Choose your path to experience Piper Morgan. Alpha testing or beta waitlist.',
+    description: 'See the private beta, or join the waiting list.',
     url: canonicalUrl,
   },
 };
@@ -73,7 +73,7 @@ export default function TryPage() {
                 </ul>
               </div>
               <CTAButton href="/try/invite" variant="primary" size="lg" className="w-full justify-center">
-                Request a beta invite →
+                See what the beta is like →
               </CTAButton>
             </div>
 
@@ -84,30 +84,29 @@ export default function TryPage() {
                   For the curious
                 </div>
                 <h2 className="text-2xl font-bold text-text-dark dark:text-white mb-4">
-                  Keep me posted
+                  Join the waiting list
                 </h2>
                 <p className="text-text-light dark:text-gray-400 mb-6">
-                  Join the beta waitlist. We&apos;ll let you know when Piper opens for broader
-                  testing. There&apos;s no date yet, and we&apos;d rather tell you when it&apos;s real than guess.
-                  No setup required. Just leave your email and we&apos;ll reach out when it&apos;s time.
+                  Piper Morgan is in private beta. We&apos;re sending invitations in waves, so we can meet
+                  the needs of our beta testers. Sign up for the waiting list, or to hear when the public beta starts.
                 </p>
                 <ul className="space-y-2 text-sm text-text-light dark:text-gray-400 mb-8">
                   <li className="flex items-start gap-2">
                     <span className="text-primary-orange mt-0.5">✓</span>
-                    <span>No technical setup needed</span>
+                    <span>No setup needed</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary-orange mt-0.5">✓</span>
-                    <span>Notification when beta opens</span>
+                    <span>A place on the waiting list</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary-orange mt-0.5">✓</span>
-                    <span>Smoother experience</span>
+                    <span>A note when the public beta starts</span>
                   </li>
                 </ul>
               </div>
               <CTAButton href="/try/beta" variant="secondary" size="lg" className="w-full justify-center">
-                Join the waitlist →
+                Join the waiting list →
               </CTAButton>
             </div>
 

@@ -6,7 +6,7 @@ const canonicalUrl = 'https://pipermorgan.ai/try/invite/';
 
 export const metadata: Metadata = {
   title: 'Join the Private Beta | Piper Morgan',
-  description: 'Request an invite to the Piper Morgan private beta and help shape AI-assisted product management.',
+  description: 'See what the Piper Morgan private beta is like, and join the waiting list for an invitation.',
   alternates: {
     canonical: canonicalUrl,
   },
@@ -115,16 +115,15 @@ export default function InvitePage() {
                 Want in?
               </h2>
               <p className="text-text-light dark:text-gray-400 mb-6">
-                Email us with a line about the product work you do and what you&apos;d use Piper for.
-                We&apos;re sending invites a few at a time, so we can&apos;t promise one.
+                Join the waiting list. We&apos;re sending invitations in waves, so we can meet the needs of
+                our beta testers, and we can&apos;t promise when yours will come.
               </p>
               <CTAButton
-                href="mailto:support@pipermorgan.ai?subject=Beta%20invite%20request"
+                href="/try/beta"
                 variant="primary"
                 size="lg"
-                external
               >
-                Request an invite →
+                Join the waiting list →
               </CTAButton>
             </div>
 
@@ -141,7 +140,7 @@ export default function InvitePage() {
                 >
                   support@pipermorgan.ai
                 </a>
-                . We&apos;re happy to chat before you commit.
+                . We&apos;re happy to chat, and to hear about the product work you do.
               </p>
             </div>
 

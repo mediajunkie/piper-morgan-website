@@ -4,8 +4,8 @@ import { Hero } from '@/components';
 import { NewsletterSignup } from '@/components/organisms/NewsletterSignup';
 
 export const metadata: Metadata = {
-  title: 'Join the Waitlist | Piper Morgan',
-  description: 'Sign up for early beta access to Piper Morgan — AI-powered product management assistance built in public.',
+  title: 'Join the Waiting List | Piper Morgan',
+  description: 'Piper Morgan is in private beta, with invitations going out in waves. Join the waiting list, or hear when the public beta starts.',
   alternates: {
     canonical: 'https://pipermorgan.ai/try/beta/',
   },
@@ -15,11 +15,11 @@ export default function BetaPage() {
   return (
     <main>
       <Hero
-        headline="Join the waitlist"
+        headline="Join the waiting list"
         subheadline={
           <p className="text-lg md:text-xl text-text-light dark:text-gray-400 max-w-2xl mx-auto">
-            Piper Morgan isn&apos;t open to everyone yet, and there&apos;s no date to promise.
-            Leave your email and we&apos;ll reach out when beta opens.
+            Piper Morgan is in private beta. We&apos;re sending invitations in waves, so we can meet
+            the needs of our beta testers.
           </p>
         }
         background="surface"
@@ -30,15 +30,15 @@ export default function BetaPage() {
         <div className="site-container">
           <div className="max-w-xl mx-auto">
             <NewsletterSignup
-              title="Get early access"
-              description="Be among the first to try Piper Morgan when beta opens. We'll email you directly — no mass-blast, just a personal note."
+              title="Sign up"
+              description="Join the waiting list for an invitation, or to hear when the public beta starts."
               benefits={[
-                "First access when beta opens",
-                "Help shape the product with your feedback",
-                "Weekly updates on what we're building",
+                "A place on the waiting list",
+                "A note when the public beta starts",
+                "No setup needed",
               ]}
-              submitText="Join Waitlist"
-              successMessage="You're on the list. We'll reach out personally when beta opens — keep an eye on your inbox (and spam folder) for the confirmation link."
+              submitText="Join the waiting list"
+              successMessage="You're on the list. Check your inbox (and spam folder) for the confirmation link."
               source="beta-waitlist"
               background="surface"
             />

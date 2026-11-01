@@ -5,7 +5,7 @@ import { Hero, CTAButton } from "@/components";
 
 const seoData = generateSEOMetadata(
   "Get Involved - Help Build Piper Morgan",
-  "Piper Morgan is an open project. The code is public. The methodology is documented. Join the private beta, contribute code, or share your expertise.",
+  "Piper Morgan is an open project. The code is public. The methodology is documented. Join the waiting list for the private beta, contribute code, or share your expertise.",
   { canonical: "https://pipermorgan.ai/get-involved" }
 );
 
@@ -52,10 +52,10 @@ export default function GetInvolvedPage() {
                 </h3>
                 <p className="text-lg text-text-light dark:text-gray-400 mb-4">
                   The most valuable contribution is using Piper and telling us what works and what doesn&apos;t.
-                  Request a beta invite if you&apos;re ready to dive in.
+                  Join the waiting list for the private beta if you&apos;re ready to dive in.
                 </p>
-                <CTAButton href="/try/invite" variant="outline">
-                  Request a beta invite →
+                <CTAButton href="/try/beta" variant="outline">
+                  Join the waiting list →
                 </CTAButton>
               </div>
 
