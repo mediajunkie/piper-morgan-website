@@ -164,9 +164,9 @@ export function NewsletterSignup({
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
           </div>
-          <h3 className={`text-2xl font-semibold ${textColor} mb-2`}>
+          <h2 className={`text-2xl font-semibold ${textColor} mb-2`}>
             Check your email! 
-          </h3>
+          </h2>
           <p className={`${subtextColor} mb-4`}>
             {successMessage}
           </p>
@@ -181,9 +181,9 @@ export function NewsletterSignup({
   return (
     <div className={containerClasses}>
       <div className={compact ? '' : 'max-w-2xl mx-auto'}>
-        <h3 className={`text-2xl font-semibold ${textColor} mb-4`}>
+        <h2 className={`text-2xl font-semibold ${textColor} mb-4`}>
           {title}
-        </h3>
+        </h2>
 
         <p className={`${subtextColor} mb-6`}>
           {description}
@@ -243,7 +243,7 @@ export function NewsletterSignup({
                 I agree to receive marketing communications and acknowledge that my data will be processed according to the{' '}
                 <Link 
                   href="/privacy" 
-                  className="text-primary-teal-text hover:underline focus:underline"
+                  className="text-primary-teal-text underline hover:no-underline focus:no-underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -265,7 +265,7 @@ export function NewsletterSignup({
           {privacyNotice}
         </p>
 
-        <p className={`text-xs ${subtextColor} mt-2 opacity-75`}>
+        <p className={`text-xs ${subtextColor} mt-2`}>
           <a
             href="https://buttondown.com/refer/pipermorgan"
             target="_blank"
