@@ -2,31 +2,31 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { Hero, CTAButton } from '@/components';
 
-const canonicalUrl = 'https://pipermorgan.ai/try/alpha/';
+const canonicalUrl = 'https://pipermorgan.ai/try/invite/';
 
 export const metadata: Metadata = {
-  title: 'Join the Alpha | Piper Morgan',
-  description: 'Join the Piper Morgan alpha program. Help shape the future of AI-assisted product management.',
+  title: 'Join the Private Beta | Piper Morgan',
+  description: 'Request an invite to the Piper Morgan private beta and help shape AI-assisted product management.',
   alternates: {
     canonical: canonicalUrl,
   },
   openGraph: {
-    title: 'Join the Piper Morgan Alpha',
+    title: 'Join the Piper Morgan Private Beta',
     description: 'Help shape the future of AI-assisted product management.',
     url: canonicalUrl,
   },
 };
 
-export default function AlphaPage() {
+export default function InvitePage() {
   return (
     <main>
       {/* Hero Section */}
       <Hero
-        headline="Welcome to the alpha"
+        headline="Join the private beta"
         subheadline={
           <p className="text-lg md:text-xl text-text-light dark:text-gray-400 max-w-2xl mx-auto">
-            You&apos;re joining a small group of people who are helping shape Piper Morgan
-            while it&apos;s still taking form. This is hands-on, early-stage work.
+            Piper Morgan is in private beta. We&apos;re inviting a small number of product people
+            to use it for their real work and tell us what they find.
           </p>
         }
         background="surface"
@@ -49,13 +49,8 @@ export default function AlphaPage() {
                   <div>
                     <strong className="text-text-dark dark:text-white">Invite-only, nothing to install</strong>
                     <p className="text-text-light dark:text-gray-400 mt-1">
-                      The alpha runs in your browser. We send you an invite code and you create your account
-                    </p>
-                    <p className="text-text-light dark:text-gray-400 mt-2">
-                      There are two ways to use Piper. Connect your own LLM provider key to use the web app,
-                      or bring Piper into Claude. On a paid Claude plan, open Customize &gt; Plugins, add Piper&apos;s
-                      plugin, then click Connect on its Connectors tab. It works in ordinary Claude chats, and in
-                      Cowork and Claude Code.
+                      Piper runs in your browser. We send you an invite code and you create your account.
+                      You connect your own Anthropic API key to use it.
                     </p>
                   </div>
                 </li>
@@ -64,7 +59,7 @@ export default function AlphaPage() {
                   <div>
                     <strong className="text-text-dark dark:text-white">Things will break</strong>
                     <p className="text-text-light dark:text-gray-400 mt-1">
-                      We&apos;re iterating fast; bugs are part of the process
+                      We&apos;re iterating fast, and bugs are part of the process.
                     </p>
                   </div>
                 </li>
@@ -73,7 +68,7 @@ export default function AlphaPage() {
                   <div>
                     <strong className="text-text-dark dark:text-white">Your voice matters</strong>
                     <p className="text-text-light dark:text-gray-400 mt-1">
-                      Alpha feedback directly influences what we build next
+                      Your feedback reaches the team building it.
                     </p>
                   </div>
                 </li>
@@ -82,7 +77,7 @@ export default function AlphaPage() {
                   <div>
                     <strong className="text-text-dark dark:text-white">Real access</strong>
                     <p className="text-text-light dark:text-gray-400 mt-1">
-                      You&apos;ll use Piper for your actual work, not a sandbox
+                      You&apos;ll use Piper for your actual work, not a sandbox.
                     </p>
                   </div>
                 </li>
@@ -97,7 +92,7 @@ export default function AlphaPage() {
               <ul className="space-y-3 text-text-light dark:text-gray-400">
                 <li className="flex items-start gap-2">
                   <span className="text-primary-teal mt-0.5">•</span>
-                  <span>An API key from your own LLM provider. Piper doesn&apos;t provide or pay for LLM usage, so you bring your own</span>
+                  <span>An Anthropic API key of your own. Piper doesn&apos;t provide or pay for model usage</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary-teal mt-0.5">•</span>
@@ -120,11 +115,11 @@ export default function AlphaPage() {
                 Want in?
               </h2>
               <p className="text-text-light dark:text-gray-400 mb-6">
-                Email us and we&apos;ll send you an invite code and a link to the hosted alpha.
-                Tell us a little about the product work you do.
+                Email us with a line about the product work you do and what you&apos;d use Piper for.
+                We&apos;re sending invites a few at a time, so we can&apos;t promise one.
               </p>
               <CTAButton
-                href="mailto:alpha@pipermorgan.ai?subject=Alpha%20invite%20request"
+                href="mailto:support@pipermorgan.ai?subject=Beta%20invite%20request"
                 variant="primary"
                 size="lg"
                 external
@@ -141,12 +136,12 @@ export default function AlphaPage() {
               <p className="text-text-light dark:text-gray-400">
                 Email us at{' '}
                 <a
-                  href="mailto:alpha@pipermorgan.ai"
+                  href="mailto:support@pipermorgan.ai"
                   className="text-primary-teal-text dark:text-primary-teal hover:underline"
                 >
-                  alpha@pipermorgan.ai
+                  support@pipermorgan.ai
                 </a>
-                {' '}— we&apos;re happy to chat before you commit.
+                . We&apos;re happy to chat before you commit.
               </p>
             </div>
 

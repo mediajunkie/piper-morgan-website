@@ -50,31 +50,30 @@ export default function TryPage() {
                   I&apos;m ready to get my hands dirty
                 </h2>
                 <p className="text-text-light dark:text-gray-400 mb-6">
-                  Join our alpha testers. The alpha is hosted and invite-only, so there&apos;s nothing
-                  to install. Things will break sometimes. But you&apos;ll be among the first to
-                  experience what we&apos;re building, and your feedback will directly shape Piper&apos;s development.
+                  Piper Morgan is in private beta. It&apos;s hosted and invite-only, so there&apos;s nothing
+                  to install. It&apos;s early, with rough edges, and your feedback is read by the team.
                 </p>
                 <ul className="space-y-2 text-sm text-text-light dark:text-gray-400 mb-8">
                   <li className="flex items-start gap-2">
                     <span className="text-primary-teal mt-0.5">✓</span>
-                    <span>Invite-only; nothing to install</span>
+                    <span>Invite-only, nothing to install</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary-teal mt-0.5">✓</span>
-                    <span>Bring your own LLM provider key; Piper doesn&apos;t cover LLM costs</span>
+                    <span>Bring your own Anthropic API key. Piper doesn&apos;t cover model costs</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary-teal mt-0.5">✓</span>
-                    <span>Direct influence on development</span>
+                    <span>Works with GitHub and Google Calendar</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary-teal mt-0.5">✓</span>
-                    <span>Real usage for your actual work</span>
+                    <span>Your feedback reaches the team building it</span>
                   </li>
                 </ul>
               </div>
-              <CTAButton href="/try/alpha" variant="primary" size="lg" className="w-full justify-center">
-                Request an invite →
+              <CTAButton href="/try/invite" variant="primary" size="lg" className="w-full justify-center">
+                Request a beta invite →
               </CTAButton>
             </div>
 

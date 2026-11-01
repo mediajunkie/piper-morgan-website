@@ -69,6 +69,14 @@ const nextConfig: NextConfig = {
     ];
   },
 
+  // The alpha invite page became /try/invite/ when the beta opened (#2229).
+  // Old links in the alpha letters and posts still land on it.
+  async redirects() {
+    return [
+      { source: '/try/alpha', destination: '/try/invite/', permanent: true },
+    ];
+  },
+
   // Experimental features (disabled for static export compatibility)
   // experimental: {
   //   optimizeCss: true,
