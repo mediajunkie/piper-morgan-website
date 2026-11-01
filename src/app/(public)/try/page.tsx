@@ -26,7 +26,7 @@ export default function TryPage() {
         subheadline={
           <p className="text-lg md:text-xl text-text-light dark:text-gray-400 max-w-2xl mx-auto">
             Piper Morgan is in active development. Some people want to dive in now and help shape it.
-            Others prefer to wait until things are smoother.
+            Others would rather wait for the public beta.
             <br /><br />
             Both are good. Which sounds like you?
           </p>
