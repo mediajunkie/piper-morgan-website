@@ -116,8 +116,8 @@ export default function TryPage() {
                 Want in?
               </h2>
               <p className="text-text-light dark:text-gray-400 mb-6">
-                Join the waiting list. We&apos;re sending invitations in waves, so we can meet the needs of
-                our beta testers, and we can&apos;t promise when yours will come.
+                Join the waiting list for an invitation, or just to hear when the public beta starts.
+                We&apos;re sending invitations in waves, and we can&apos;t promise when yours will come.
               </p>
               <CTAButton
                 href="/try/beta"
