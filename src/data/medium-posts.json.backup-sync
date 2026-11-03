@@ -1,5 +1,27 @@
 [
   {
+    "title": "Check the Machine First",
+    "excerpt": "October 21, 2026 Now that I've turned my agents into a debating society, I've noticed that sometimes they will devote quite a few loops to hashing out a disagreement before one of them checks the actual facts. At this point, it can turn out that the real discussion needs to be about something els...",
+    "url": "/blog/check-the-machine-first",
+    "slug": "check-the-machine-first",
+    "publishedAt": "Nov 1, 2026",
+    "publishedAtISO": "2026-11-01T19:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-c810a308b026",
+    "featuredImage": "/assets/blog-images/check-the-machine-first.webp",
+    "thumbnail": "/assets/blog-images/check-the-machine-first.webp",
+    "imageAlt": "Three translucent AI agents debate restart procedures around a table piled with policy manuals, while a fourth points to a nearby machine’s MEMORY gauge, its needle buried in the red.",
+    "imageCaption": "\"This isn't good, right?\"",
+    "category": "insight",
+    "cluster": "the-alpha",
+    "workDate": "Oct 21, 2026",
+    "workDateISO": "2026-10-21T19:00:00.000Z"
+  },
+  {
     "title": "Build the Instrument Before the Theory",
     "excerpt": "October 19–20, 2026 When a bug crops up in Piper Morgan, the agents tend to jump straight from hypothesis to patch without always fully understanding the cause of the bug. Earlier this month, the chat feature of the alpha version was stalling, and after the team threw up a series of theories that...",
     "url": "/blog/build-the-instrument-before-the-theory",
@@ -19,7 +41,8 @@
     "category": "insight",
     "cluster": "the-alpha",
     "workDate": "Oct 19, 2026",
-    "workDateISO": "2026-10-19T19:00:00.000Z"
+    "workDateISO": "2026-10-19T19:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Citation via Hearsay",

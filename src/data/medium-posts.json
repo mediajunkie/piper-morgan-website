@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Unguarded Entrance",
+    "excerpt": "September 6, 2026 If you’ve followed this tale for any amount of time at all you kind of already know this one. Agent finds problem. Agent makes rule to check itself. Agent discovers the culprit is itself. The calls were coming from your house. The butler did it. It was a dark and stormy night It...",
+    "url": "/blog/the-unguarded-entrance",
+    "slug": "the-unguarded-entrance",
+    "publishedAt": "Nov 3, 2026",
+    "publishedAtISO": "2026-11-03T19:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-8da248244c15",
+    "featuredImage": "/assets/blog-images/the-unguarded-entrance.webp",
+    "thumbnail": "/assets/blog-images/the-unguarded-entrance.webp",
+    "imageAlt": "A translucent AI safety inspector sheepishly touches their bare head as a helmeted worker points it out. The inspector’s hard hat sits beside a clipboard on a small table.",
+    "imageCaption": "\"Some safety inspector you are!\"",
+    "category": "building",
+    "cluster": "the-alpha",
+    "workDate": "Sep 6, 2026",
+    "workDateISO": "2026-09-06T19:00:00.000Z"
+  },
+  {
     "title": "Check the Machine First",
     "excerpt": "October 21, 2026 Now that I've turned my agents into a debating society, I've noticed that sometimes they will devote quite a few loops to hashing out a disagreement before one of them checks the actual facts. At this point, it can turn out that the real discussion needs to be about something els...",
     "url": "/blog/check-the-machine-first",
@@ -19,7 +41,8 @@
     "category": "insight",
     "cluster": "the-alpha",
     "workDate": "Oct 21, 2026",
-    "workDateISO": "2026-10-21T19:00:00.000Z"
+    "workDateISO": "2026-10-21T19:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Build the Instrument Before the Theory",
