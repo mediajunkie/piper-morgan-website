@@ -73,7 +73,8 @@ const nextConfig: NextConfig = {
   // Old links in the alpha letters and posts still land on it.
   async redirects() {
     return [
-      { source: '/try/alpha', destination: '/try/invite/', permanent: true },
+      { source: '/try/alpha', destination: '/try/', permanent: true },
+      { source: '/try/invite', destination: '/try/', permanent: true },
     ];
   },
 

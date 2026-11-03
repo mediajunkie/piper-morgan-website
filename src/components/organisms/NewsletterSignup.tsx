@@ -185,9 +185,11 @@ export function NewsletterSignup({
           {title}
         </h2>
 
-        <p className={`${subtextColor} mb-6`}>
-          {description}
-        </p>
+        {description && (
+          <p className={`${subtextColor} mb-6`}>
+            {description}
+          </p>
+        )}
 
         {!compact && benefits && benefits.length > 0 && (
           <ul className="text-left space-y-3 mb-8 max-w-md mx-auto">
@@ -261,9 +263,11 @@ export function NewsletterSignup({
           </div>
         </form>
 
-        <p className={`text-sm ${subtextColor} mt-4`}>
-          {privacyNotice}
-        </p>
+        {privacyNotice && (
+          <p className={`text-sm ${subtextColor} mt-4`}>
+            {privacyNotice}
+          </p>
+        )}
 
         <p className={`text-xs ${subtextColor} mt-2`}>
           <a

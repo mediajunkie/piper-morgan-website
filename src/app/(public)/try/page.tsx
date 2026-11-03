@@ -5,14 +5,14 @@ import { Hero, CTAButton } from '@/components';
 const canonicalUrl = 'https://pipermorgan.ai/try/';
 
 export const metadata: Metadata = {
-  title: 'Try Piper Morgan | Get Started',
-  description: 'Choose your path to Piper Morgan. See what the private beta is like, or join the waiting list for an invitation or a note when the public beta starts.',
+  title: 'Join the Private Beta | Piper Morgan',
+  description: 'Piper Morgan is in private beta. See what it asks of you, and join the waiting list for an invitation or a note when the public beta starts.',
   alternates: {
     canonical: canonicalUrl,
   },
   openGraph: {
-    title: 'Try Piper Morgan',
-    description: 'See the private beta, or join the waiting list.',
+    title: 'Join the Piper Morgan Private Beta',
+    description: 'See what the private beta asks, and join the waiting list.',
     url: canonicalUrl,
   },
 };
@@ -22,107 +22,142 @@ export default function TryPage() {
     <main>
       {/* Hero Section */}
       <Hero
-        headline="How ready are you?"
+        headline="Join the private beta"
         subheadline={
           <p className="text-lg md:text-xl text-text-light dark:text-gray-400 max-w-2xl mx-auto">
-            Piper Morgan is in active development. Some people want to dive in now and help shape it.
-            Others would rather wait for the public beta.
-            <br /><br />
-            Both are good. Which sounds like you?
+            Piper Morgan is in private beta. We&apos;re inviting a small number of product people
+            to use it for their real work and tell us what they find.
           </p>
         }
         background="surface"
         align="center"
       />
 
-      {/* Choice Cards */}
+      {/* Main Content */}
       <section className="py-16 md:py-24">
         <div className="site-container">
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="max-w-2xl mx-auto">
 
-            {/* Alpha Card */}
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 flex flex-col">
-              <div className="flex-1">
-                <div className="inline-block px-3 py-1 bg-primary-teal/10 text-primary-teal-text dark:text-primary-teal text-sm font-medium rounded-full mb-4">
-                  For early adopters
-                </div>
-                <h2 className="text-2xl font-bold text-text-dark dark:text-white mb-4">
-                  I&apos;m ready to get my hands dirty
-                </h2>
-                <p className="text-text-light dark:text-gray-400 mb-6">
-                  Piper Morgan is in private beta. It&apos;s hosted and invite-only, so there&apos;s nothing
-                  to install. It&apos;s early, with rough edges, and your feedback is read by the team.
-                </p>
-                <ul className="space-y-2 text-sm text-text-light dark:text-gray-400 mb-8">
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary-teal mt-0.5">✓</span>
-                    <span>Invite-only, nothing to install</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary-teal mt-0.5">✓</span>
-                    <span>Bring your own Anthropic API key. Piper doesn&apos;t cover model costs</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary-teal mt-0.5">✓</span>
-                    <span>Works with GitHub and Google Calendar</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary-teal mt-0.5">✓</span>
-                    <span>Your feedback reaches the team building it</span>
-                  </li>
-                </ul>
-              </div>
-              <CTAButton href="/try/invite" variant="primary" size="lg" className="w-full justify-center">
-                See what the beta is like →
-              </CTAButton>
+            {/* What to Expect */}
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold text-text-dark dark:text-white mb-6">
+                What to expect
+              </h2>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-4">
+                  <span className="flex-shrink-0 w-8 h-8 bg-primary-teal/10 text-primary-teal rounded-full flex items-center justify-center font-semibold text-sm">1</span>
+                  <div>
+                    <strong className="text-text-dark dark:text-white">Invite-only, nothing to install</strong>
+                    <p className="text-text-light dark:text-gray-400 mt-1">
+                      Piper runs in your browser. We send you an invite code and you create your account.
+                      You connect your own Anthropic API key to use it.
+                    </p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <span className="flex-shrink-0 w-8 h-8 bg-primary-teal/10 text-primary-teal rounded-full flex items-center justify-center font-semibold text-sm">2</span>
+                  <div>
+                    <strong className="text-text-dark dark:text-white">Things will break</strong>
+                    <p className="text-text-light dark:text-gray-400 mt-1">
+                      We&apos;re iterating fast, and bugs are part of the process.
+                    </p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <span className="flex-shrink-0 w-8 h-8 bg-primary-teal/10 text-primary-teal rounded-full flex items-center justify-center font-semibold text-sm">3</span>
+                  <div>
+                    <strong className="text-text-dark dark:text-white">Your voice matters</strong>
+                    <p className="text-text-light dark:text-gray-400 mt-1">
+                      Your feedback reaches the team building it.
+                    </p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <span className="flex-shrink-0 w-8 h-8 bg-primary-teal/10 text-primary-teal rounded-full flex items-center justify-center font-semibold text-sm">4</span>
+                  <div>
+                    <strong className="text-text-dark dark:text-white">Real access</strong>
+                    <p className="text-text-light dark:text-gray-400 mt-1">
+                      You&apos;ll use Piper for your actual work, not a sandbox. It works with
+                      GitHub and Google Calendar.
+                    </p>
+                  </div>
+                </li>
+              </ul>
             </div>
 
-            {/* Beta Card */}
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 flex flex-col">
-              <div className="flex-1">
-                <div className="inline-block px-3 py-1 bg-primary-orange/10 text-orange-700 dark:text-orange-400 text-sm font-medium rounded-full mb-4">
-                  For the curious
-                </div>
-                <h2 className="text-2xl font-bold text-text-dark dark:text-white mb-4">
-                  Join the waiting list
-                </h2>
-                <p className="text-text-light dark:text-gray-400 mb-6">
-                  Piper Morgan is in private beta. We&apos;re sending invitations in waves, so we can meet
-                  the needs of our beta testers. Sign up for the waiting list, or to hear when the public beta starts.
-                </p>
-                <ul className="space-y-2 text-sm text-text-light dark:text-gray-400 mb-8">
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary-orange mt-0.5">✓</span>
-                    <span>No setup needed</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary-orange mt-0.5">✓</span>
-                    <span>A place on the waiting list</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary-orange mt-0.5">✓</span>
-                    <span>A note when the public beta starts</span>
-                  </li>
-                </ul>
-              </div>
-              <CTAButton href="/try/beta" variant="secondary" size="lg" className="w-full justify-center">
+            {/* What we're looking for */}
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold text-text-dark dark:text-white mb-6">
+                What we&apos;re looking for
+              </h2>
+              <ul className="space-y-3 text-text-light dark:text-gray-400">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary-teal mt-0.5">•</span>
+                  <span>An Anthropic API key of your own. Piper doesn&apos;t provide or pay for model usage</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary-teal mt-0.5">•</span>
+                  <span>Willingness to report what&apos;s working and what isn&apos;t</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary-teal mt-0.5">•</span>
+                  <span>Interest in AI-assisted product management</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary-teal mt-0.5">•</span>
+                  <span>Patience with rough edges</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* CTA Section */}
+            <div className="bg-gradient-to-r from-primary-teal/10 to-primary-orange/10 rounded-2xl p-8 text-center mb-12">
+              <h2 className="text-2xl font-bold text-text-dark dark:text-white mb-4">
+                Want in?
+              </h2>
+              <p className="text-text-light dark:text-gray-400 mb-6">
+                Join the waiting list. We&apos;re sending invitations in waves, so we can meet the needs of
+                our beta testers, and we can&apos;t promise when yours will come.
+              </p>
+              <CTAButton
+                href="/try/beta"
+                variant="primary"
+                size="lg"
+              >
                 Join the waiting list →
               </CTAButton>
             </div>
 
-          </div>
+            {/* Questions Section */}
+            <div className="text-center border-t border-gray-200 dark:border-gray-700 pt-8">
+              <h3 className="text-lg font-semibold text-text-dark dark:text-white mb-2">
+                Have questions first?
+              </h3>
+              <p className="text-text-light dark:text-gray-400">
+                Email us at{' '}
+                <a
+                  href="mailto:support@pipermorgan.ai"
+                  className="text-primary-teal-text dark:text-primary-teal underline hover:no-underline"
+                >
+                  support@pipermorgan.ai
+                </a>
+                . We&apos;re happy to chat, and to hear about the product work you do.
+              </p>
+            </div>
 
-          {/* Bottom Note */}
-          <p className="text-center text-sm text-text-light dark:text-gray-500 mt-12 max-w-xl mx-auto">
-            Not sure? That&apos;s okay. You can always{' '}
-            <Link href="/blog" className="text-primary-teal-text dark:text-primary-teal hover:underline">
-              read about the journey
-            </Link>{' '}
-            first, or{' '}
-            <Link href="/about" className="text-primary-teal-text dark:text-primary-teal hover:underline">
-              learn more about the project
-            </Link>.
-          </p>
+            {/* Bottom Note */}
+            <p className="text-center text-sm text-text-light dark:text-gray-500 mt-12 max-w-xl mx-auto">
+              Not sure? That&apos;s okay. You can always{' '}
+              <Link href="/blog" className="text-primary-teal-text dark:text-primary-teal underline hover:no-underline">
+                read about the journey
+              </Link>{' '}
+              first, or{' '}
+              <Link href="/about" className="text-primary-teal-text dark:text-primary-teal underline hover:no-underline">
+                learn more about the project
+              </Link>.
+            </p>
+
+          </div>
         </div>
       </section>
     </main>
