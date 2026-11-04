@@ -30,7 +30,7 @@ export default function PrivacyPolicy() {
           <div className="prose prose-lg max-w-none space-y-8 text-text-light">
             <div className="bg-primary-teal/10 p-6 rounded-lg mb-8">
               <p className="text-text-dark font-medium mb-2">
-                <strong>Last updated:</strong> October 2026
+                <strong>Last updated:</strong> November 2026
               </p>
               <p className="text-text-dark">
                 This privacy policy explains how Piper Morgan collects, uses, and protects your personal information when you visit our website, subscribe to our newsletter, use Piper, or connect Piper to an AI assistant.
