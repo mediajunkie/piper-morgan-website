@@ -37,7 +37,7 @@ export default function BetaPage() {
               consentBefore="I agree to these emails, as described in the"
               consentAfter=". I can unsubscribe at any time."
               submitText="Join the waiting list"
-              successMessage="You're on the list. Check your inbox (and spam folder) for the confirmation link."
+              successMessage="Almost there. Check your email and confirm your address to join the list."
               source="beta-waitlist"
               background="surface"
             />
