@@ -79,7 +79,7 @@ export default function PrivacyPolicy() {
               </h3>
               <p className="mb-4">We use your email address to:</p>
               <ul className="list-disc pl-6 space-y-2 mb-6">
-                <li>Send weekly newsletter content about AI-powered product management</li>
+                <li>Send occasional news and updates about Piper Morgan, and, if you joined the beta waiting list, your invitation to the private beta</li>
                 <li>Share methodology insights and building-in-public updates</li>
                 <li>Notify you about new features or significant site updates</li>
                 <li>Send double opt-in confirmation emails (required by law)</li>

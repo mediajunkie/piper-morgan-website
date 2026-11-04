@@ -20,6 +20,10 @@ export interface NewsletterSignupProps {
   successMessage?: string;
   /** Privacy notice text */
   privacyNotice?: string;
+  /** Consent checkbox text before the Privacy Policy link */
+  consentBefore?: string;
+  /** Consent checkbox text after the Privacy Policy link */
+  consentAfter?: string;
   /** Compact layout for embedding */
   compact?: boolean;
   /** Background variant */
@@ -57,6 +61,8 @@ export function NewsletterSignup({
   submitText = "Subscribe",
   successMessage = "We've sent you a confirmation email with a verification link. Please check your inbox (and spam folder) and click the link to complete your subscription and start receiving our systematic AI collaboration insights.",
   privacyNotice = "No spam, unsubscribe at any time.",
+  consentBefore = "I agree to receive marketing communications and acknowledge that my data will be processed according to the",
+  consentAfter = ". I understand I can unsubscribe at any time.",
   compact = false,
   background = 'surface',
   className = '',
@@ -242,7 +248,7 @@ export function NewsletterSignup({
                 aria-describedby="gdpr-consent-text"
               />
               <span id="gdpr-consent-text" className={subtextColor}>
-                I agree to receive marketing communications and acknowledge that my data will be processed according to the{' '}
+                {consentBefore}{' '}
                 <Link 
                   href="/privacy" 
                   className="text-primary-teal-text underline hover:no-underline focus:no-underline"
@@ -251,7 +257,7 @@ export function NewsletterSignup({
                 >
                   Privacy Policy
                 </Link>
-                . I understand I can unsubscribe at any time.
+                {consentAfter}
               </span>
             </label>
 

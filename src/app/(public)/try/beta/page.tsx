@@ -31,9 +31,11 @@ export default function BetaPage() {
           <div className="max-w-xl mx-auto">
             <NewsletterSignup
               title="Sign up"
-              description=""
+              description="You'll get occasional news and updates from Piper Morgan, and a place on the waiting list for the private beta."
               benefits={[]}
               privacyNotice=""
+              consentBefore="I agree to these emails, as described in the"
+              consentAfter=". I can unsubscribe at any time."
               submitText="Join the waiting list"
               successMessage="You're on the list. Check your inbox (and spam folder) for the confirmation link."
               source="beta-waitlist"
