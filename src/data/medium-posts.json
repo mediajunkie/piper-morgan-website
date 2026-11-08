@@ -1,5 +1,27 @@
 [
   {
+    "title": "At Long Last, Beta",
+    "excerpt": "October 30–31, 2026 When I decided (perhaps prematurely) that Piper Morgan was ready to go into alpha testing, a little under a year ago, I thought the beta test would follow fairly soon thereafter, perhaps by spring or early summer. This summer I opened up the hosted alpha. Would you believe, Se...",
+    "url": "/blog/at-long-last-beta",
+    "slug": "at-long-last-beta",
+    "publishedAt": "Nov 7, 2026",
+    "publishedAtISO": "2026-11-07T19:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-bc86afff5b74",
+    "featuredImage": "/assets/blog-images/at-long-last-beta.webp",
+    "thumbnail": "/assets/blog-images/at-long-last-beta.webp",
+    "imageAlt": "A relieved baker watches a guest savor a slice of birthday cake while a luminous AI assistant continues fussing over the frosting.",
+    "imageCaption": "\"This wasn't the plan!\"",
+    "category": "building",
+    "cluster": "the-alpha",
+    "workDate": "Oct 30, 2026",
+    "workDateISO": "2026-10-30T19:00:00.000Z"
+  },
+  {
     "title": "Don't Overpromise",
     "excerpt": "September 7–8, 2026 I keep going back and forth on how much structure to provide for new users working with Piper Morgan for the first time. Without cues, how is someone supposed to know what to ask for, what to expect? But wizards and onboarding questionnaires feel so rigid and overdetermined be...",
     "url": "/blog/dont-overpromise",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "the-alpha",
     "workDate": "Sep 7, 2026",
-    "workDateISO": "2026-09-07T19:00:00.000Z"
+    "workDateISO": "2026-09-07T19:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #067: What Piper Didn't Check",
