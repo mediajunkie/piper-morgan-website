@@ -16,10 +16,11 @@
     "thumbnail": "/assets/blog-images/at-long-last-beta.webp",
     "imageAlt": "A relieved baker watches a guest savor a slice of birthday cake while a luminous AI assistant continues fussing over the frosting.",
     "imageCaption": "\"This wasn't the plan!\"",
-    "category": "building",
+    "category": "insight",
     "cluster": "the-alpha",
     "workDate": "Oct 30, 2026",
-    "workDateISO": "2026-10-30T19:00:00.000Z"
+    "workDateISO": "2026-10-30T19:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Don't Overpromise",
