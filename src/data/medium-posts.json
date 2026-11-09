@@ -1,5 +1,27 @@
 [
   {
+    "title": "When Accuracy Scores Worse",
+    "excerpt": "October 22–23, 2026 When we got Piper Morgan to stop making things up, an automated quality score went down, because the judge preferred a full-sounding answer over a shorter true one. The 61-question catechism A while back I decided that one way to ensure Piper can provide a core set of experien...",
+    "url": "/blog/when-accuracy-scores-worse",
+    "slug": "when-accuracy-scores-worse",
+    "publishedAt": "Nov 8, 2026",
+    "publishedAtISO": "2026-11-08T19:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-90c15b8af6a3",
+    "featuredImage": "/assets/blog-images/when-accuracy-scores-worse.webp",
+    "thumbnail": "/assets/blog-images/when-accuracy-scores-worse.webp",
+    "imageAlt": "An AI diving judge applauds an enormous, flailing splash while ignoring a nearby diver’s clean, nearly splashless entry.",
+    "imageCaption": "\"Points for style!\"",
+    "category": "insight",
+    "cluster": "the-alpha",
+    "workDate": "Oct 22, 2026",
+    "workDateISO": "2026-10-22T19:00:00.000Z"
+  },
+  {
     "title": "At Long Last, Beta",
     "excerpt": "October 30–31, 2026 When I decided (perhaps prematurely) that Piper Morgan was ready to go into alpha testing, a little under a year ago, I thought the beta test would follow fairly soon thereafter, perhaps by spring or early summer. This summer I opened up the hosted alpha. Would you believe, Se...",
     "url": "/blog/at-long-last-beta",
