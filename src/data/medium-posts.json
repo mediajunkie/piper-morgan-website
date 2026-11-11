@@ -1,5 +1,27 @@
 [
   {
+    "title": "Never Green in a Thousand Runs",
+    "excerpt": "September 9–11, 2026 In early September I felt nervous about our progress toward the MVP milestone. It felt like we were taking one step forward, two steps back. Meanwhile, we were relying on a report of \"green tests\" that only covered four of our seven test workflows, and excluded one that had n...",
+    "url": "/blog/never-green-in-a-thousand-runs",
+    "slug": "never-green-in-a-thousand-runs",
+    "publishedAt": "Nov 10, 2026",
+    "publishedAtISO": "2026-11-10T19:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-c89ca503398e",
+    "featuredImage": "/assets/blog-images/never-green-in-a-thousand-runs.webp",
+    "thumbnail": "/assets/blog-images/never-green-in-a-thousand-runs.webp",
+    "imageAlt": "A cheerful AI mechanic proudly presents a fully inflated spare tire while a puzzled woman gestures toward the car beside them, its tires visibly flat.",
+    "imageCaption": "\"This one passes every time!\"",
+    "category": "building",
+    "cluster": "the-alpha",
+    "workDate": "Sep 9, 2026",
+    "workDateISO": "2026-09-09T19:00:00.000Z"
+  },
+  {
     "title": "When Accuracy Scores Worse",
     "excerpt": "October 22–23, 2026 When we got Piper Morgan to stop making things up, an automated quality score went down, because the judge preferred a full-sounding answer over a shorter true one. The 61-question catechism A while back I decided that one way to ensure Piper can provide a core set of experien...",
     "url": "/blog/when-accuracy-scores-worse",
@@ -19,7 +41,8 @@
     "category": "insight",
     "cluster": "the-alpha",
     "workDate": "Oct 22, 2026",
-    "workDateISO": "2026-10-22T19:00:00.000Z"
+    "workDateISO": "2026-10-22T19:00:00.000Z",
+    "featured": false
   },
   {
     "title": "At Long Last, Beta",
