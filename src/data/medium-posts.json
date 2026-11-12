@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #068: Whose Connection Is It, Anyway?",
+    "excerpt": "October 30 – November 5, 2026 This sprint week started with my birthday on which we hit the MVP milestone and included the launch of private beta. One of the key blockers in the home stretch has been ensuring the data privacy for customers in a \"multi-tenant\" environment (multiple accounts using ...",
+    "url": "/blog/weekly-ship-068-whose-connection-is-it-anyway",
+    "slug": "weekly-ship-068-whose-connection-is-it-anyway",
+    "publishedAt": "Nov 11, 2026",
+    "publishedAtISO": "2026-11-11T19:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-d253b6959e9b",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
+    "imageCaption": "",
+    "category": "ship",
+    "cluster": "the-alpha",
+    "workDate": "Oct 30, 2026",
+    "workDateISO": "2026-10-30T19:00:00.000Z"
+  },
+  {
     "title": "Never Green in a Thousand Runs",
     "excerpt": "September 9–11, 2026 In early September I felt nervous about our progress toward the MVP milestone. It felt like we were taking one step forward, two steps back. Meanwhile, we were relying on a report of \"green tests\" that only covered four of our seven test workflows, and excluded one that had n...",
     "url": "/blog/never-green-in-a-thousand-runs",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "the-alpha",
     "workDate": "Sep 9, 2026",
-    "workDateISO": "2026-09-09T19:00:00.000Z"
+    "workDateISO": "2026-09-09T19:00:00.000Z",
+    "featured": false
   },
   {
     "title": "When Accuracy Scores Worse",
