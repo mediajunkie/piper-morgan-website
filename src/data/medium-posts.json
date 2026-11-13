@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Server Has No Key",
+    "excerpt": "September 13–15, 2026 An outside tester's invitation was ready to send when Lead found that any signed-in user with no key of their own would end up spending against my own key. I held up the invitations and also asked why there was an operator key with money to spend from my Claude account at al...",
+    "url": "/blog/the-server-has-no-key",
+    "slug": "the-server-has-no-key",
+    "publishedAt": "Nov 12, 2026",
+    "publishedAtISO": "2026-11-12T19:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-59035993efdd",
+    "featuredImage": "/assets/blog-images/the-server-has-no-key.webp",
+    "thumbnail": "/assets/blog-images/the-server-has-no-key.webp",
+    "imageAlt": "An AI locksmith secures a coin purse attached to a vending machine while a puzzled proprietor gestures toward it and a customer waits with their own coin.",
+    "imageCaption": "\"Who gave it a wallet?\"",
+    "category": "building",
+    "cluster": "the-alpha",
+    "workDate": "Sep 13, 2026",
+    "workDateISO": "2026-09-13T19:00:00.000Z"
+  },
+  {
     "title": "Weekly Ship #068: Whose Connection Is It, Anyway?",
     "excerpt": "October 30 – November 5, 2026 This sprint week started with my birthday on which we hit the MVP milestone and included the launch of private beta. One of the key blockers in the home stretch has been ensuring the data privacy for customers in a \"multi-tenant\" environment (multiple accounts using ...",
     "url": "/blog/weekly-ship-068-whose-connection-is-it-anyway",
@@ -19,7 +41,8 @@
     "category": "ship",
     "cluster": "the-alpha",
     "workDate": "Oct 30, 2026",
-    "workDateISO": "2026-10-30T19:00:00.000Z"
+    "workDateISO": "2026-10-30T19:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Never Green in a Thousand Runs",
