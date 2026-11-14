@@ -1,5 +1,27 @@
 [
   {
+    "title": "Which Agent Did It?",
+    "excerpt": "October 21–23, 2026 The question of how to attribute and trace work done by agents is more complicated than it looks. For example, Piper Morgan has a project repository at GitHub where I host the codebase, documents, and the rest of the context the agents need to do their jobs. All of the agents ...",
+    "url": "/blog/which-agent-did-it",
+    "slug": "which-agent-did-it",
+    "publishedAt": "Nov 14, 2026",
+    "publishedAtISO": "2026-11-14T19:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-7c62aaf04a9a",
+    "featuredImage": "/assets/blog-images/which-agent-did-it.webp",
+    "thumbnail": "/assets/blog-images/which-agent-did-it.webp",
+    "imageAlt": "A puzzled man gestures toward three translucent AI coworkers at a workbench, each holding an identical cardboard mask of his face in front of their own.",
+    "imageCaption": "\"Which one of me did this?\"",
+    "category": "insight",
+    "cluster": "the-alpha",
+    "workDate": "Oct 21, 2026",
+    "workDateISO": "2026-10-21T19:00:00.000Z"
+  },
+  {
     "title": "The Server Has No Key",
     "excerpt": "September 13–15, 2026 An outside tester's invitation was ready to send when Lead found that any signed-in user with no key of their own would end up spending against my own key. I held up the invitations and also asked why there was an operator key with money to spend from my Claude account at al...",
     "url": "/blog/the-server-has-no-key",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "the-alpha",
     "workDate": "Sep 13, 2026",
-    "workDateISO": "2026-09-13T19:00:00.000Z"
+    "workDateISO": "2026-09-13T19:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #068: Whose Connection Is It, Anyway?",
