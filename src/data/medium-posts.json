@@ -1,5 +1,27 @@
 [
   {
+    "title": "No New Skills This Time",
+    "excerpt": "October 23 – November 6, 2026 As I've tried to build an always-improving system, one thing I added was a regular sweep to see if we need to make any new skills. This most recent time we didn't find anything new to \"skillify\" and what we did find was better handled as an addition to an existing pr...",
+    "url": "/blog/no-new-skills-this-time",
+    "slug": "no-new-skills-this-time",
+    "publishedAt": "Nov 15, 2026",
+    "publishedAtISO": "2026-11-15T19:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-44753dca227f",
+    "featuredImage": "/assets/blog-images/no-new-skills-this-time.webp",
+    "thumbnail": "/assets/blog-images/no-new-skills-this-time.webp",
+    "imageAlt": "A translucent AI contractor holds an enormous blueprint for a walk-in cloakroom while a smiling woman stands beside her completed solution: one coat hanging on a wall hook.",
+    "imageCaption": "\"I tightened the hook!\"",
+    "category": "insight",
+    "cluster": "the-alpha",
+    "workDate": "Oct 23, 2026",
+    "workDateISO": "2026-10-23T19:00:00.000Z"
+  },
+  {
     "title": "Which Agent Did It?",
     "excerpt": "October 21–23, 2026 The question of how to attribute and trace work done by agents is more complicated than it looks. For example, Piper Morgan has a project repository at GitHub where I host the codebase, documents, and the rest of the context the agents need to do their jobs. All of the agents ...",
     "url": "/blog/which-agent-did-it",
@@ -19,7 +41,8 @@
     "category": "insight",
     "cluster": "the-alpha",
     "workDate": "Oct 21, 2026",
-    "workDateISO": "2026-10-21T19:00:00.000Z"
+    "workDateISO": "2026-10-21T19:00:00.000Z",
+    "featured": false
   },
   {
     "title": "The Server Has No Key",
