@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Wall",
+    "excerpt": "September 15–18, 2026 My usage limits reset each Thursday evening at 10pm, coincidentally also the last day of the Piper Morgan workweek (it's a long story). On a Tuesday in mid-September I noticed we had already used 97% of the weekly limit, with more than two full days left to go. It looked lik...",
+    "url": "/blog/the-wall",
+    "slug": "the-wall",
+    "publishedAt": "Nov 17, 2026",
+    "publishedAtISO": "2026-11-17T19:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-3703ac8024e9",
+    "featuredImage": "/assets/blog-images/the-wall.webp",
+    "thumbnail": "/assets/blog-images/the-wall.webp",
+    "imageAlt": "An elderly man holds an empty coin purse upside down beside four glowing AI agents crowded into a coin-operated toy bus, its determined driver gripping the wheel.",
+    "imageCaption": "\"I thought you said it ran itself?\"",
+    "category": "building",
+    "cluster": "the-alpha",
+    "workDate": "Sep 15, 2026",
+    "workDateISO": "2026-09-15T19:00:00.000Z"
+  },
+  {
     "title": "No New Skills This Time",
     "excerpt": "October 23 – November 6, 2026 As I've tried to build an always-improving system, one thing I added was a regular sweep to see if we need to make any new skills. This most recent time we didn't find anything new to \"skillify\" and what we did find was better handled as an addition to an existing pr...",
     "url": "/blog/no-new-skills-this-time",
@@ -19,7 +41,8 @@
     "category": "insight",
     "cluster": "the-alpha",
     "workDate": "Oct 23, 2026",
-    "workDateISO": "2026-10-23T19:00:00.000Z"
+    "workDateISO": "2026-10-23T19:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Which Agent Did It?",
