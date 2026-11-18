@@ -82,8 +82,17 @@ export const ERAS: Era[] = [
     shortName: 'The Alpha',
     description: 'Durable infrastructure lands, hosted alpha opens to outside testers, verification culture hardens',
     startDate: '2026-08-01',
-    endDate: null,
+    endDate: '2026-10-30',
     theme: 'The team moves to always-on infrastructure, the beta-readiness gate proves itself against real defects, first external testers admitted, beta target extended for quality',
+  },
+  {
+    slug: 'the-beta',
+    name: 'Era 8: The Beta',
+    shortName: 'The Beta',
+    description: 'Private beta opens, outside users arrive, invitations pause and resume on the team\'s own conditions',
+    startDate: '2026-10-31',
+    endDate: null,
+    theme: 'Piper Morgan goes from an alpha the team runs to a beta other people use: who gets in, what they can do on day one, and what the team must fix before inviting more',
   },
 ];
 
