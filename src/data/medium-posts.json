@@ -1,5 +1,28 @@
 [
   {
+    "title": "Weekly Ship #069: Off-Limits by Default",
+    "excerpt": "November 6–12, 2026 When I found out agents were using the keychain on my home server as an authentication fallback I declared it off limits. Instead of relying on a rule each agent would have to remember each time, we made this constraint the default in code. I've also moved Piper Morgan's GitHu...",
+    "url": "/blog/weekly-ship-069-off-limits-by-default",
+    "slug": "weekly-ship-069-off-limits-by-default",
+    "publishedAt": "Nov 18, 2026",
+    "publishedAtISO": "2026-11-18T19:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-b394dbbb609d",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "An AI locksmith secures a coin purse attached to a vending machine while a puzzled proprietor gestures toward it and a customer waits with their own coin.",
+    "imageCaption": "\"Who gave it a wallet?\"",
+    "category": "ship",
+    "cluster": "the-beta",
+    "workDate": "Nov 6, 2026",
+    "workDateISO": "2026-11-06T19:00:00.000Z",
+    "featured": false
+  },
+  {
     "title": "The Wall",
     "excerpt": "September 15–18, 2026 My usage limits reset each Thursday evening at 10pm, coincidentally also the last day of the Piper Morgan workweek (it's a long story). On a Tuesday in mid-September I noticed we had already used 97% of the weekly limit, with more than two full days left to go. It looked lik...",
     "url": "/blog/the-wall",
@@ -19,7 +42,8 @@
     "category": "building",
     "cluster": "the-alpha",
     "workDate": "Sep 15, 2026",
-    "workDateISO": "2026-09-15T19:00:00.000Z"
+    "workDateISO": "2026-09-15T19:00:00.000Z",
+    "featured": false
   },
   {
     "title": "No New Skills This Time",
