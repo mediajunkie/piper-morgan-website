@@ -1,5 +1,27 @@
 [
   {
+    "title": "Do I Have To?",
+    "excerpt": "November 10–16, 2026 As I get more comfortable letting my agents run autonomously for long intervals between check-ins, I find that my role as the bottleneck remains central, and my desire to sort out \"smart bottleneck\" cases where I really am needed from \"dumb bottleneck\" cases where I hold up t...",
+    "url": "/blog/do-i-have-to",
+    "slug": "do-i-have-to",
+    "publishedAt": "Nov 22, 2026",
+    "publishedAtISO": "2026-11-22T19:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-5a22b2709f27",
+    "featuredImage": "/assets/blog-images/do-i-have-to.webp",
+    "thumbnail": "/assets/blog-images/do-i-have-to.webp",
+    "imageAlt": "A worker reaches for the first box in a backed-up conveyor line while three translucent agents wait with tools at their stations beyond a narrow gap.",
+    "imageCaption": "\"You only have to do this once for every box!\"",
+    "category": "insight",
+    "cluster": "the-beta",
+    "workDate": "Nov 10, 2026",
+    "workDateISO": "2026-11-10T19:00:00.000Z"
+  },
+  {
     "title": "Inviting Company In",
     "excerpt": "September 19 – October 7, 2026 So far, I've done almost all the testing for Piper Morgan. We started the alpha last year but to participate, folks had to clone my project repo and run the software on their local machine. Earlier this year I decided we need to offer a hosted version and we set tha...",
     "url": "/blog/inviting-company-in",
@@ -19,7 +41,8 @@
     "category": "building",
     "cluster": "the-alpha",
     "workDate": "Sep 19, 2026",
-    "workDateISO": "2026-09-19T19:00:00.000Z"
+    "workDateISO": "2026-09-19T19:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Weekly Ship #069: Off-Limits by Default",
