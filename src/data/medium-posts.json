@@ -1,5 +1,27 @@
 [
   {
+    "title": "Weekly Ship #070: No Workarounds",
+    "excerpt": "November 13–19, 2026 This week the agent team piled up a lot of work that waited for my attention to fully complete or execute. More and more workflows led to manual tasks for me. Eventually, I asked for a review of the state of affairs, writing \"We keep changing how provider keys are used, how g...",
+    "url": "/blog/weekly-ship-070-no-workarounds",
+    "slug": "weekly-ship-070-no-workarounds",
+    "publishedAt": "Nov 24, 2026",
+    "publishedAtISO": "2026-11-24T19:00:00.000Z",
+    "author": "christian crumlish",
+    "readingTime": "5 min read",
+    "tags": [
+      "Building in Public"
+    ],
+    "guid": "blog-first-97386912124f",
+    "featuredImage": "/assets/blog-images/piper-ship.webp",
+    "thumbnail": "/assets/blog-images/piper-ship.webp",
+    "imageAlt": "A child and a crew of robots checking each other's work on a boat.",
+    "imageCaption": "",
+    "category": "ship",
+    "cluster": "the-beta",
+    "workDate": "Nov 13, 2026",
+    "workDateISO": "2026-11-13T19:00:00.000Z"
+  },
+  {
     "title": "Do I Have To?",
     "excerpt": "November 10–16, 2026 As I get more comfortable letting my agents run autonomously for long intervals between check-ins, I find that my role as the bottleneck remains central, and my desire to sort out \"smart bottleneck\" cases where I really am needed from \"dumb bottleneck\" cases where I hold up t...",
     "url": "/blog/do-i-have-to",
@@ -19,7 +41,8 @@
     "category": "insight",
     "cluster": "the-beta",
     "workDate": "Nov 10, 2026",
-    "workDateISO": "2026-11-10T19:00:00.000Z"
+    "workDateISO": "2026-11-10T19:00:00.000Z",
+    "featured": false
   },
   {
     "title": "Inviting Company In",
